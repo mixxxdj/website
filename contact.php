@@ -25,9 +25,14 @@
 
     <!-- ##### Main Copy ##### -->
     <div id="main-copy">
-      <div class="rowOfBoxes features">
-        <div class="fullWidth noBorderOnLeft">   
-	  <h1>Contact Us</h1>
+      <div id="main-copy-inside">
+	<div class="rowOfBoxes features">
+          <div class="fullWidth noBorderOnLeft">   
+	    <h1>Contact Us</h1>
+	  </div>
+	</div>
+
+	<div class="features">
 	  <p>
 	    Support for <b>users</b> of Mixxx is available through
 	    our <a href="/forums">community forums</a> and our IRC channel as
@@ -35,32 +40,32 @@
 	    
 	    If you think you've found a bug, please file a bug report in
 	    our <a href="https://bugs.launchpad.net/mixxx/">bug
-	    tracker</a>.
+	      tracker</a>.
 	  </p>
-				
+	  
 	  <p>
 	    <b>Developers</b> working on Mixxx collaborate with each other via
 	    the <a href="http://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a>
 	    mailing list and our IRC channel (#mixxx on Freenode). To send an
 	    email to the list, you
 	    must <a href="http://lists.sourceforge.net/lists/listinfo/mixxx-devel">subscribe
-	    first</a>. The list is low traffic.
+	      first</a>. The list is low traffic.
 	  </p>
 
 	  <p>
 	    If you're a <b>DJ hardware manufacturer</b> and would like your
 	    product to work with Mixxx, please contact our Project
 	    Manager, <a href="http://www.hep.ucl.ac.uk/~adamd">Adam
-	    Davison</a>. We accept donations of DJ equipment which we use to
+	      Davison</a>. We accept donations of DJ equipment which we use to
 	    improve both specific and general hardware support in Mixxx.
 	  </p>
-			
+	  
 	  <p>
 	    <b>For other inquiries</b>, please
 	    contact <a href="http://www.hep.ucl.ac.uk/~adamd">Adam
-	    Davison</a>.
+	      Davison</a>.
 	  </p>
-			   
+	  
 	  <h2>Credits</h2>
 	  <p>
 	    In 2001, Mixxx was started
@@ -230,10 +235,10 @@
 	    <br/><br/>
 	    Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.
 	  </p>
-    	</div>
+	</div>
       </div>
     </div>
-    
+
     <!-- ##### Footer ##### -->
     <?php include 'footer.php' ?>
     
