@@ -189,7 +189,7 @@ $(function() {
 		}
 		</script>
                 <p class="downloadSmall" style="text-align: center;">
-                    Mixxx 1.9.0 for 
+                    Mixxx 1.9.2 for 
                 <script type="text/javascript">
                         document.write(OSName);
                 </script>
