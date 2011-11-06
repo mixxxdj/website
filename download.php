@@ -231,7 +231,7 @@
 		      Mixxx 1.10.0-beta1 for Ubuntu 10.10 (i386, amd64)
 		    </a>
 		  </li>
-		  <li><a href="http://downloads.mixxx.org/mixxx-1.10.0-beta1/mixxx-1.10.0-beta1-macintel.dmg" 
+		  <li><a href="http://downloads.mixxx.org/mixxx-1.10.0-beta1/mixxx-1.10.0-beta1-macintel32.dmg" 
 			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0beta1osx'); ">
 		      Mixxx 1.10.0-beta1 for Mac OS X 10.5+ (Intel)
 		    </a>
