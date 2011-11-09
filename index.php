@@ -6,14 +6,15 @@
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
     <meta name="author" content="haran" />
     <meta name="generator" content="haran" />
-	<META NAME="description" CONTENT="Mixxx is free cross-platform digital DJ mixing software with professional features like
+    <META NAME="description" CONTENT="Mixxx is free cross-platform digital DJ mixing software with professional features like
 									  automatic BPM matching, seamless looping, quick song search, skins, high quality EQs, ..." />
-	<META NAME="keywords" CONTENT="dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer" />
-	<link rel="icon" type="image/png" href="favicon.png" />
+    <META NAME="keywords" CONTENT="dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/prosimii-screen.css" media="screen, tv, projection" title="Default" />
     <link rel="stylesheet" type="text/css" href="css/slider.css" media="screen" /> 
     <link rel="stylesheet" type="text/css" href="prettyPhoto/css/prettyPhoto.css" media="screen" /> 
-	<link rel="alternate" type="application/rss+xml" title="Mixxx RSS Feed" href="http://feeds.feedburner.com/MixxxNews" />
+    <link rel="alternate" type="application/rss+xml" title="Mixxx RSS Feed" href="http://feeds.feedburner.com/MixxxNews" />
+    <link href="https://plus.google.com/102441931224839455484" rel="publisher" />
     <!--[if lt IE 7.]>
     <script defer type="text/javascript" src="js/pngfix.js"></script>
     <![endif]-->
@@ -22,6 +23,9 @@
     <script type="text/javascript" src="prettyPhoto/js/jquery.prettyPhoto.js"></script>
     
     <title>Mixxx | Free Digital DJ Software</title>
+
+    
+
     <script type="text/javascript">
  
 function formatText(index, panel) {
@@ -213,6 +217,7 @@ $(function() {
                         $('a.screen').fancyZoom({directory: "images/fancyzoom", closeOnClick: true});
                     </script>
 -->
+                    
                 </center>
             </div>
             <!-- Clear the floats so that the main-copy div expands vertically. -->
@@ -286,6 +291,16 @@ $(function() {
     <!-- -NEWS END- -->
 
         </div> <!-- newsbox -->
+
+    <div id="social-media" align="center" style="margin: auto auto;"> 
+      <a href="https://plus.google.com/102441931224839455484?prsrc=3" style="text-decoration: none;">
+	<img src="https://ssl.gstatic.com/images/icons/gplus-32.png" width="36" height="36" style="border: 0;"/>
+      </a>
+      <a href="http://www.twitter.com/mixxxdj"><img src="http://twitter-badges.s3.amazonaws.com/t_logo-c.png" alt="Follow mixxxdj on Twitter"/></a>
+      <a href="http://facebook.com/pages/MIXXX-Digital-DJ/21723485212">
+	<img src="http://platform.ak.fbcdn.net/www/app_full_proxy.php?app=7146470109&v=1&size=o&cksum=8011a2f81307ab0730bb21c45327d1a2&src=http%3A%2F%2Fwww.threefoldstudio.com%2Ffacebook123%2Ffb_socialmedia%2Ffacebook_icon.png" width="36" height="36" style="border: 0;"/>
+      </a>
+    </div>
 
     </div> <!-- main-copy-inside -->
     </div> <!-- main-copy ?? -->
