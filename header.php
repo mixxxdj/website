@@ -22,6 +22,7 @@
         <a href="http://mixxxblog.blogspot.com">Blog</a>
         <a href="./press.php">Press</a>
         <a href="./contact.php">Contact</a>
+	<a href="./manual/latest">Manual</a>
         <!-- <a href="./development">Developers</a> -->
       </div> <!-- subHeaderCommunity -->
 </div> <!-- Header -->

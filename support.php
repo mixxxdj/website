@@ -38,9 +38,9 @@
     	</div>
     	<div class="oneThird">   
 		        <h1>Manual</h1>    
-		        <p>The <a href="wiki/doku.php/manual">Mixxx Manual</a> provides an overview of Mixxx's user interface,
+		        <p>The <a href="manual/latest">Mixxx Manual</a> provides an overview of Mixxx's user interface,
 		           information about <b>configuration</b> and hardware, and much more. It also contains useful information
-		           for <b>beginners</b> under <a href="wiki/doku.php/manual#djing_with_mixxx">DJing with Mixxx</a>.
+		           for <b>beginners</b> under <a href="manual/latest/chapters/djing_with_mixxx.html">DJing with Mixxx</a>.
     	</div>
     	<div class="oneThird">   
 		        <h1>Community Forum</h1>    
