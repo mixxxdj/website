@@ -4,8 +4,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="author" content="haran" />
-    <meta name="generator" content="haran" />
     <META NAME="description" CONTENT="Mixxx is free cross-platform digital DJ mixing software with professional features like
 									  automatic BPM matching, seamless looping, quick song search, skins, high quality EQs, ..." />
     <META NAME="keywords" CONTENT="dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer" />
@@ -23,8 +21,6 @@
     <script type="text/javascript" src="prettyPhoto/js/jquery.prettyPhoto.js"></script>
     
     <title>Mixxx | Free Digital DJ Software</title>
-
-    
 
     <script type="text/javascript">
  
@@ -193,7 +189,7 @@ $(function() {
 		}
 		</script>
                 <p class="downloadSmall" style="text-align: center;">
-                    Mixxx 1.9.2 for 
+                    Mixxx 1.10.0 for 
                 <script type="text/javascript">
                         document.write(OSName);
                 </script>

@@ -129,14 +129,14 @@
 		    <img src="images/downloads_win.png"/>
 		  </td>
 		  <td width="50%">
-		    <a href="http://downloads.mixxx.org/mixxx-1.9.2/mixxx-1.9.2-win32.exe"  
-		       onClick="javascript: pageTracker._trackPageview('/downloads/192win32'); ">
-		      Mixxx 1.9.2</a><br/>(32-bit)
+		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win32.exe"  
+		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win32'); ">
+		      Mixxx 1.10.0</a><br/>(32-bit)
 		  </td>
 		  <td width="50%">
-		    <a href="http://downloads.mixxx.org/mixxx-1.9.2/mixxx-1.9.2-win64.exe"  
-		       onClick="javascript: pageTracker._trackPageview('/downloads/192win64'); ">
-		      Mixxx 1.9.2
+		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win64.exe"  
+		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win64'); ">
+		      Mixxx 1.10.0
 		    </a><br/>(64-bit)
 		  </td>
 		  <td><img src="images/windows.png"/></td>
@@ -156,6 +156,7 @@
 		  <td>
 		    <img src="images/downloads_mac.png"/>
 		  </td>
+		  <!--
 		  <td width="100%">
 		    <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
 		      <img src="images/available-on-mac-app-store-mixxxdownload.png"/>
@@ -163,8 +164,8 @@
 		    <br/>
 		    <p style="font-size: 0.6em;margin:0px;padding:0px;">
 		      Also available for 
-		      <a href="http://downloads.mixxx.org/mixxx-1.9.2/mixxx-1.9.2-macintel32.dmg"
-			 onClick="javascript: pageTracker._trackPageview('/downloads/192osxintel'); ">
+		      <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"
+			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
 			OS X 10.5+ (32-bit)
 		      </a> 
 		      and 
@@ -172,6 +173,12 @@
 			 onClick="javascript: pageTracker._trackPageview('/downloads/190osxppc'); ">PPC (1.9.0)
 		      </a>.
 		    </p>
+		  </td>-->
+		  <td width="100%">
+		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"  
+		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
+		      Mixxx 1.10.0 
+		    </a><br/>(OS X 10.5+ 32-bit)
 		  </td>
 		  <td><img src="images/mac.png"/></td>
 		  </tr>
@@ -183,15 +190,15 @@
 		  <tr>
 		    <td><img src="images/downloads_linux.png"/></td>
 		    <td width="30%">
-		      <a href="http://downloads.mixxx.org/mixxx-1.9.2/mixxx-1.9.2-src.tar.gz"  
-			 onClick="javascript: pageTracker._trackPageview('/downloads/192linuxsrc'); ">
-			Mixxx 1.9.2
+		      <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz"  
+			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
+			Mixxx 1.10.0
 		      </a><br/>(Source)
 		    </td>
 		    <td width="30%">
 		      <a id="getubu" href="#ubuntudlg" 
-			 onClick="javascript: pageTracker._trackPageview('/downloads/190ubuntu'); ">
-			Mixxx 1.9.2</a><br/>(Ubuntu)
+			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0ubuntu'); ">
+			Mixxx 1.10.0</a><br/>(Ubuntu)
 		    </td>
 		    <td>
 		      <img src="images/ubuntu.png" align="center" border="0px"/>
@@ -200,6 +207,7 @@
 		</table>						   
 	      </div>
 
+	      <!--
 	      <div id="beta">
 		<img src="images/beta.png" style="float: left; padding: 10px"/>
 		<p>
@@ -247,6 +255,7 @@
 		  recommend</b> using beta software for live performances.
 		<br/>
 	      </div>
+	      -->
 
 	      <div id="donate">
 		<h2>Show your Support</h2><br/>
@@ -285,9 +294,9 @@
 		</p>
 		<ul>
 		  <li>
-		    <a href="http://downloads.mixxx.org/mixxx-1.9.2/mixxx-1.9.2-src.tar.gz" 
-		       onClick="javascript: pageTracker._trackPageview('/downloads/192linuxsrc'); ">
-		      Mixxx 1.9.2 source code</a></li>
+		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz" 
+		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
+		      Mixxx 1.10.0 source code</a></li>
 		  <li>Checking out from BZR:
 		    <pre>bzr branch lp:mixxx</pre></li>
 		  <li>
