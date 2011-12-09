@@ -19,6 +19,8 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
     <script type="text/javascript" src="js/mini.js"></script>
     <script type="text/javascript" src="prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
+
     
     <title>Mixxx | Free Digital DJ Software</title>
 
@@ -223,68 +225,15 @@ $(function() {
 			<br/>
 
 
+        <!-- -NEWS START- -->
         <div id="newsbox">
         
             <h1>Latest News <a href="http://feeds.feedburner.com/MixxxNews" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0;padding-bottom:2px;" /></a></h1>
-
-    <!-- -NEWS START- -->
-    <?php 
-        //Mixxx RSS feed (news with full text)
-        //$url = "http://mixxxblog.blogspot.com/feeds/posts/default"; 
-        $url = "http://feeds.feedburner.com/MixxxNews";
-        //$url = "http://feeds.feedburner.com/MixxxNews?format=rss2";
-
-        require 'SimplePie/simplepie.inc';
-        
-        $feed = new SimplePie();
-        $feed->set_feed_url($url);
-        $feed->init();
-        $feed->handle_content_type();
-
-        //Useful for figuring out which fields we're supposed to use in the loop below
-        //die(var_dump($rss));
-
-        //Iterate through each item in the RSS feed.
-        $itemcount = $feed->get_item_quantity();
-        $count = 0;
-        for ($i = 0; $i < $itemcount && $count < 2; $i++)
-        {
-            $item = $feed->get_item($i);
-            $title = $item->get_title();
-            $desc  = $item->get_content();
-            $url   = $item->get_link();
-            $date  = $item->get_date('l, F jS Y');
-            
-            //Trim the description and add a link to the full thing, if necessary.
-            if (strlen($desc) > 60)
-            {
-                $desc = str_replace("<br />", " ", $desc); //Replace line breaks with spaces. (Looks better)
-                $desc = strip_tags($desc); //Strip remaining HTML tags...
-                $desc = substr($desc, 0, 150); //Truncate the description to 150 characters
-                $desc = trim($desc); //Strip whitespace
-
-                // Truncate at end of last word and remove any trailing punctuation
-                $desc = preg_replace('/\s+?(\S+)?$/', '', $desc);
-                $desc = preg_replace('/[^a-zA-Z]$/', '', $desc);
-
-                $desc .= "... <a href=\"$url\">Read more</a>";
-            }
-            
-            // Create timestamp from date, then format
-            //$stamp =  mktime(0, 0, 0, substr($date, 5, 2), substr($date, 8, 2), substr($date, 0, 4));
-            //$date = date('l, F jS Y', $stamp);
-            
-            echo "<a href=$url class=\"newsHeading\">$title</a>\n";
-            echo "<p class=\"newsDate\">$date</p>\n";
-            echo "<p class=\"newsSummary\">$desc</p>\n\n";
-
-            // Update displayed item count
-            $count++;
-        }
-    ?>         
+      <div id="newsitems">
+      </div> <!-- newsitems -->
             <div class="more"><a href="http://mixxxblog.blogspot.com">More News &raquo;</a></div>
 
-    <!-- -NEWS END- -->
+        <!-- -NEWS END- -->
 
         </div> <!-- newsbox -->
 
@@ -300,9 +249,57 @@ $(function() {
 
     </div> <!-- main-copy-inside -->
     </div> <!-- main-copy ?? -->
-
+		   
 
     <!-- ##### Footer ##### -->
 	<?php include 'footer.php' ?>
   </body>
+
+  <head>
+    <script>
+      function processFeed(feed) {
+        //var author = feed.author;
+        //var title = feed.title;
+        //var link = feed.link;
+        var entries = feed.entries; // Array[X]
+        for (var entry_idx in entries) {
+          var entry = entries[entry_idx];
+          //var author = entry.author;
+          var link = entry.link;
+          // Date is in this format: Tue, 24 May 2011 08:29:00 -0700
+          var published_date = Date.parse(entry.publishedDate); 
+          var title = entry.title; 
+          //var content = entry.content;
+          var contentSnippet = entry.contentSnippet;
+          //var categories = entry.categories; // Array[X]
+          // Pad with a space.
+          contentSnippet = contentSnippet + " ";
+          // Format with Date.js
+          published_date = published_date.toString('dddd, MMMM dS yyyy');
+          
+          var entry_div = $('<div/>', { class: 'newsItem' });
+          //var entry_title = $('<p/>', { class: 'newsHeading' }).appendTo(entry_div);
+          var entry_link = $('<a/>', { href: link, class: 'newsHeading', text: title }).appendTo(entry_div);
+          var entry_date = $('<p/>', { class: 'newsDate', text: published_date }).appendTo(entry_div);
+          var entry_content = $('<p/>', { class: 'newsSummary', text: contentSnippet }).appendTo(entry_div);
+          var read_more_link = $('<a/>', { href: link, text: 'Read more' }).appendTo(entry_content);
+          entry_div.appendTo('#newsitems');
+        }
+      }
+      $(document).ready(function() {
+        // Lazy load so the page doesn't block rendering.
+        $.ajax({
+          url: "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=2&q=http://feeds.feedburner.com/MixxxNews",
+          crossDomain: true,
+          dataType: "jsonp",
+          success: function(data, textStatus, jqXHR) {
+            processFeed(data.responseData.feed);
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+             $('<div/>', { class: 'newsHeading', 
+                           text: 'Could not load news feed.' }).appendTo('#newslist');
+          }});
+      });
+    </script>
+  </head>
 </html>
