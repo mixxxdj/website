@@ -198,8 +198,8 @@ $(function() {
                 <a href="download.php">Get Mixxx for other platforms...</a>
                 </p>
                 <center>
-                   <a href="images/splash_mixxx_screenshot.png" rel="prettyPhoto" class="screen"><img src="images/splash_mixxx_screenshot_mini.png"></a><br>
-                   <a href="images/splash_mixxx_screenshot_deere.png" rel="prettyPhoto"  class="screen"><img src="images/splash_mixxx_screenshot_deere_mini.png"></a>
+                   <a href="images/splash_mixxx_screenshot_deere.png" rel="prettyPhoto" class="screen"><img src="images/splash_mixxx_screenshot_deere_mini.png"></a><br>
+                   <a href="images/splash_mixxx_screenshot_latenightblues.png" rel="prettyPhoto"  class="screen"><img src="images/splash_mixxx_screenshot_latenightblues_mini.png"></a>
 <!--
                    <a href="#screenshot_default" class="screen"><img src="images/splash_mixxx_screenshot_mini.png"></a><br>
                    <a href="#screenshot_deere" class="screen"><img src="images/splash_mixxx_screenshot_deere_mini.png"></a>

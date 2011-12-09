@@ -72,8 +72,8 @@
 	    by <a href="http://www.nbi.dk/~kenand/">Ken</a>
 	    and <a href="http://haste.dk/tue/">Tue</a> Haste Andersen. Today,
 	    development is done by an open source development team from around
-	    the world, led by Adam Davison (Project Manager) and RJ Ryan (Lead
-	    Developer):
+	    the world, led by Adam Davison (Project Manager), RJ Ryan (Lead
+	    Developer), and S. Brandt (Lead Artist).
 	  </p>
 
 	  <p class="credits"><b>Mixxx 1.10.0 Development Team</b></p>
