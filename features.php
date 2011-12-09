@@ -123,20 +123,23 @@ $(function() {
           <ul>
           <li>Cross-platform (Windows XP/Vista/7, Mac OS X, Linux)</li>
           <li>Free and open source (GPL v2)</li>          
-          <li>Parallel waveform displays</li>
-          <li>Waveform summaries</li>
-          <li>MP3, OGG, WAVE, and FLAC playback</li>
+	  <li>Parallel or split scratchable waveform displays</li>
+	  <li>Waveform summaries</li>
+	  <li>Spinning vinyl widgets</li>
+          <li>MP3, OGG, WAVE, M4A, and FLAC playback</li>
           <li>Extra playback formats through plugins</li>
           <li>Fast, database-powered library</li>
 	  <li>Shoutcast and Icecast broadcasting</li>
+	  <li>Microphone Support</li>
           <li>Automatic crossfading with Auto DJ</li>
           <li>Crates and playlists</li>
-          <li>Reads iTunes and Rhythmbox libraries</li>
+          <li>Reads iTunes, Traktor, and Rhythmbox libraries</li>
           <li>Pitch-independent time stretch (key lock)</li>
           <li>Vinyl emulation</li>
-          <li>Hot cues</li>
-          <li>Looping</li>
-          <li>Wave recording</li>
+          <li>Quantized loops, hot cues, and beatloops</li>
+	  <li>Synchronization and auto-beatmatching</li>
+	  <li>4 Sampler Decks</li>
+	  <li>Wave and Ogg recording with optional MP3 support.</li>
           <li>BPM detection and estimation</li>
           <li>Bulk BPM analysis</li>
           <li>Community Supported MIDI Controllers:
@@ -155,14 +158,29 @@ $(function() {
             <li>FaderFox DJ2</li>
             <li>Vestax VCI-100</li>
             <li>Numark Total Control</li>
+	    <li>American Audio VMS4</li>
             <li>... and more! See our <a href="http://mixxx.org/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.</li>
             </ul>
           </li>  
+	  <li>Translations for:
+	    <ul>
+	      <li>Spanish</li>
+	      <li>Catalan</li>
+	      <li>French</li>
+	      <li>German</li>
+	      <li>Italian</li>
+	      <li>Russian</li>
+	      <li>Finnish</li>
+	      <li>Czech</li>
+	      <li>Dutch</li>
+	      <li>Polish</li>
+	      <li>Japanese</li>
+	  </ul></li>
             <li>Multichannel soundcard support (playback and capture)</li>
             <li>Multiple soundcard support</li>
             <li>Adjustable EQ shelves</li>
             <li>Crossfader curve control</li>
-            <li>Skinnable interface with extra skins bundled</li>
+            <li>Skinnable interface with 5 pixel-perfect skins bundled</li>
             <li>Advanced MIDI scripting engine</li>
             <li>Multiple simultaneous MIDI controllers</li>
             <li>Adjustable pitch range</li>
