@@ -14,19 +14,25 @@
 	<priority>0.7</priority>
 </url>
 <url>
-	<loc>http://www.mixxx.org/screenshots.php</loc>
-	<lastmod>2007-02-27</lastmod>
-	<changefreq>weekly</changefreq>
-	<priority>0.5</priority>
-</url>
-<url>
 	<loc>http://www.mixxx.org/download.php</loc>
 	<lastmod>2007-02-27</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
+	<loc>http://www.mixxx.org/features.php</loc>
+	<lastmod>2007-02-27</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
 	<loc>http://www.mixxx.org/support.php</loc>
+	<lastmod>2007-02-27</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>http://www.mixxx.org/manual/latest</loc>
 	<lastmod>2007-02-27</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>0.5</priority>
@@ -44,7 +50,7 @@
 	<priority>0.5</priority>
 </url>
 <url>
-	<loc>http://www.mixxx.org/Mixxx-Manual.pdf</loc>
+	<loc>http://www.mixxx.org/press.php</loc>
 	<lastmod>2007-02-27</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>0.5</priority>
