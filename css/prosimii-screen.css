@@ -322,7 +322,12 @@ img {
   padding-bottom: 15px;
 }
 
+#social-media {
+  padding-top: 2em;
+}
+
 #newsbox {
+  margin-top: 2em;
   width: 95%;
   background-color: #111111;
   padding: 20px;

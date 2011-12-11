@@ -200,34 +200,15 @@ $(function() {
                 <a href="download.php">Get Mixxx for other platforms...</a>
                 </p>
                 <center>
-                   <a href="images/splash_mixxx_screenshot_deere.png" rel="prettyPhoto" class="screen"><img src="images/splash_mixxx_screenshot_deere_mini.png"></a><br>
+                   <a href="images/splash_mixxx_screenshot_deere.png" rel="prettyPhoto" class="screen"><img src="images/splash_mixxx_screenshot_deere_mini.png"></a><br><br/>
                    <a href="images/splash_mixxx_screenshot_latenightblues.png" rel="prettyPhoto"  class="screen"><img src="images/splash_mixxx_screenshot_latenightblues_mini.png"></a>
-<!--
-                   <a href="#screenshot_default" class="screen"><img src="images/splash_mixxx_screenshot_mini.png"></a><br>
-                   <a href="#screenshot_deere" class="screen"><img src="images/splash_mixxx_screenshot_deere_mini.png"></a>
-                   <div id="screenshot_default">
-                     <img src="images/splash_mixxx_screenshot.png">
-                   </div>
-                   <div id="screenshot_deere">
-                      <img src="images/splash_mixxx_screenshot_deere_medium.png">
-                   </div>
-                    <script type="text/javascript">
-                        $('a.screen').fancyZoom({directory: "images/fancyzoom", closeOnClick: true});
-                    </script>
--->
-                    
                 </center>
             </div>
             <!-- Clear the floats so that the main-copy div expands vertically. -->
-			<div style="clear:both"></div>
-
-			<br/>
-			<br/>
-
+	    <div style="clear:both"></div>
 
         <!-- -NEWS START- -->
         <div id="newsbox">
-        
             <h1>Latest News <a href="http://feeds.feedburner.com/MixxxNews" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0;padding-bottom:2px;" /></a></h1>
       <div id="newsitems">
       </div> <!-- newsitems -->
