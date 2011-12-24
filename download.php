@@ -131,13 +131,13 @@
 		  <td width="50%">
 		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win32.exe"  
 		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win32'); ">
-		      Mixxx 1.10.0</a><br/>(32-bit)
+		      Mixxx 1.10.0</a><br/><span style="font-size: 0.8em;">(32-bit)</span>
 		  </td>
 		  <td width="50%">
 		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win64.exe"  
 		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win64'); ">
 		      Mixxx 1.10.0
-		    </a><br/>(64-bit)
+		    </a><br/><span style="font-size: 0.8em;">(64-bit)</span>
 		  </td>
 		  <td><img src="images/windows.png"/></td>
 		</tr>
@@ -174,11 +174,17 @@
 		      </a>.
 		    </p>
 		  </td>-->
-		  <td width="100%">
+		  <td width="50%">
 		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"  
 		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
 		      Mixxx 1.10.0 
-		    </a><br/>(OS X 10.5+ 32-bit)
+		    </a><br/><span style="font-size: 0.8em;">(OS X 10.5+ 32-bit)</span>
+		  </td>
+		  <td width="50%">
+		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macuniversal.dmg"  
+		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxuniversal'); ">
+		      Mixxx 1.10.0 
+		    </a><br/><span style="font-size: 0.8em;">(OS X 10.5+ Universal)</span>
 		  </td>
 		  <td><img src="images/mac.png"/></td>
 		  </tr>
@@ -193,12 +199,12 @@
 		      <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz"  
 			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
 			Mixxx 1.10.0
-		      </a><br/>(Source)
+		      </a><br/><span style="font-size: 0.8em;">(Source)</span>
 		    </td>
 		    <td width="30%">
 		      <a id="getubu" href="#ubuntudlg" 
 			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0ubuntu'); ">
-			Mixxx 1.10.0</a><br/>(Ubuntu)
+			Mixxx 1.10.0</a><br/><span style="font-size: 0.8em;">(Ubuntu)</span>
 		    </td>
 		    <td>
 		      <img src="images/ubuntu.png" align="center" border="0px"/>
