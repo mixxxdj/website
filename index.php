@@ -138,26 +138,26 @@ $(function() {
                         <li>
                             <a href="#" onClick="switchSlide(3);">
                                 <img src="http://web.mit.edu/rryan/www/mixxx.org/images/splash_5_djmixes.png" alt="Create your own live DJ mixes. 
-                                     And play them really, really loud." width="680px" height="318px">
+                                     And play them really, really loud." width="680" height="318" />
                             </a>
                         </li>
                         <li>
                             <a href="#" onClick="switchSlide(4);">
                                 <img src="http://web.mit.edu/rryan/www/mixxx.org/images/splash_3_library.png" alt="Crates. Auto DJ. Hot Cues. iTunes.
-                                      Designed by DJs, for DJs." width="680px" height="318px">
+                                      Designed by DJs, for DJs." width="680" height="318" />
                             </a>
                         </li>
                         <li>
                             <a href="#" onClick="switchSlide(5);">
                                 <img src="http://web.mit.edu/rryan/www/mixxx.org/images/splash_2_skins.png" alt="Choose your layout. Skins make it happens."
-                                 width="680px" height="318px">
+                                 width="680" height="318" />
                             </a>
                         </li>
                         <li>
                             <a href="#" onClick="switchSlide(6);">
                                 <img src="http://web.mit.edu/rryan/www/mixxx.org/images/splash_4.png" alt="We could have hired superstar DJs to endorse us,
                                       but instead we spent our money making Mixxx better."
-                                      width="680px" height="318px">
+                                      width="680" height="318" />
                             </a>   
                         </li>       
                     </ul>

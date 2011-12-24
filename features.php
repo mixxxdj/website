@@ -61,7 +61,6 @@ $(function() {
 				  To obtain the lowest latency and highest responsiveness, Mixxx uses hardware video acceleration
 				  and takes advantage of multi-core CPUs.</p> 
 				  <br/>
-				<center><img src="images/features_mixing.png"></center>
 				<h1>Advanced Mixing Engine</h1>
 				<p>Whether you're blending psy-trance or mashing up
                     the latest Top 40 tracks, Mixxx's looping and hot
@@ -90,10 +89,9 @@ $(function() {
                 <p>Using a turntable and <b>timecoded vinyl</b>, Mixxx's playback can
                    be syncronized to the turntable. This let's you scratch and 
                    mix with your digital music collection as if it were on vinyl!</p>
-                <p>Mixxx supports Serato, Traktor Scratch, and FinalScratch vinyl, as
-                   well as Serato CD for control from CDJ units. Position synchronization
-                   ("Absolute Mode") is fully supported for each of
-                   these timecodes as well.</p>
+                <p>Mixxx supports Serato and Traktor Scratch vinyl, as well as Serato CD 
+                   for control from CDJ units. Position synchronization("Absolute Mode") 
+                   is fully supported for each of these timecodes as well.</p>
                 <p>Even better, you can <b>save money and use your existing soundcard</b>.
                    Mixxx's vinyl control works 
                    with any soundcard that has a stereo line-input jack. This
@@ -101,7 +99,6 @@ $(function() {
                    with Mixxx, so there's no need to purchase expensive vinyl control hardware.
                 </p>
                 <center><iframe class="youtube-player" type="text/html" width="445" height="364" src="http://www.youtube.com/embed/nAqI4HAcQi4" frameborder="0"></iframe></center>
-				<center><img src="images/features_flexibility.png"</img></center>
 				<h1>Flexibility and Freedom</h1>
 				<p>We love to customize and tinker, and so we've made Mixxx as 
 				   flexible as we can. From our cross-platform approach, to Mixxx's
@@ -142,24 +139,20 @@ $(function() {
 	  <li>Wave and Ogg recording with optional MP3 support.</li>
           <li>BPM detection and estimation</li>
           <li>Bulk BPM analysis</li>
-          <li>Community Supported MIDI Controllers:
+          <li>Supported MIDI Controllers:
             <ul>
+            <li>American Audio VMS4</li>
+            <li>DJ TechTools MIDIFighter</li>
+            <li>Hercules DJ Console RMX</li>
+            <li>Hercules DJ Console MK2</li>
+            <li>Hercules DJ Control MP3 e2</li>
+            <li>M-Audio X-Session Pro</li>
+            <li>Reloop Digital Jockey 2</li>
             <li>Stanton SCS.3d</li>
             <li>Stanton SCS.3m</li>
-            <li>Hercules DJ Console MK2</li>
-            <li>Hercules DJ MP3 Control</li>
-            <li>Hercules DJ Console RMX</li>
-            <li>Hercules DJ Console Steel</li>
             <li>Stanton SCS.1m</li>
-            <li>Mixman DM2</li>
-            <li>Tascam US-428</li>
-            <li>M-Audio X-Session Pro</li>
-            <li>Evolution X-Session</li>
-            <li>FaderFox DJ2</li>
-            <li>Vestax VCI-100</li>
-            <li>Numark Total Control</li>
-	    <li>American Audio VMS4</li>
-            <li>... and more! See our <a href="http://mixxx.org/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.</li>
+            <li>Stanton SCS.1d</li>
+            <li>... and much more! See our <a href="http://mixxx.org/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.</li>
             </ul>
           </li>  
 	  <li>Translations for:
@@ -193,8 +186,6 @@ $(function() {
                 <ul>
                     <li>Serato CV02 vinyl</li>
                     <li>Traktor Scratch vinyl</li>
-                    <li>FinalScratch Standard vinyl</li>
-                    <li>FinalScratch Scratch vinyl</li>
                     <li>Serato CD</li>
                     <li><a href="http://www.mixxx.org/wiki/doku.php/vinyl_control">Read more...</a></li>
                 </ul>
