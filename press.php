@@ -112,10 +112,8 @@
 	      <a href="images/press_art/logocolour_nopadding_large.tiff">TIFF Large</a> (1115 x 278 px)
 	    </p>
 	    <p style="text-indent: 0px;">Reference Screenshots:<br/>
-	      <a href="images/press_art/mixxx_defaultskin.png">Mixxx 1.9 (Default Skin)</a><br/>
-	      <a href="images/press_art/mixxx_deereskin.png">Mixxx 1.9 (Deere Skin)</a><br/>
-	      <a href="images/press_art/mixxx_latenightskin.png">Mixxx 1.9 (Late Night Skin)</a><br/>
-	      <a href="images/press_art/mixxx_latenightbluesskin.png">Mixxx 1.9 (Late Night Blues Skin)</a>
+	      <a href="images/press_art/mixxx_1100_default_deere_skin.png">Mixxx 1.10 default (Deere Skin)</a><br/>
+	      <a href="images/press_art/mixxx_1100_latenightblues_skin.png">Mixxx 1.10 (Late Night Blues Skin)</a><br/>
             </p>
 	    
 	    <h1>Past Press</h1>
