@@ -145,16 +145,19 @@ $(function() {
             <li>American Audio RADIUS 2000</li>
             <li>American Audio VMS4</li>
             <li>Behringer BCD3000</li>
+            <li>DJ TechTools MIDIFighter</li>
             <li>DJ-Tech i-Mix Reload</li>
-            <li>Ecler NUO4</li>
             <li>Evolution X-Session</li>
             <li>FaderFox DJ2</li>
             <li>Hercules DJ Console Mac Edition</li>
-            <li>Hercules DJ Console Mk4</li>
+            <li>Hercules DJ Console MK2</li>
+            <li>Hercules DJ Console MK4</li>
             <li>Hercules DJ Console MP3</li>
             <li>Hercules DJ Console RMX</li>
+            <li>Hercules DJ Control MP3 e2</li>
             <li>Hercules DJ Control Steel</li>
             <li>Ion Discover DJ</li>
+            <li>M-Audio X-Session Pro</li>
             <li>M-Audio Xponent</li>
             <li>Mixman DM2</li>
             <li>Numark MixTrack</li>
