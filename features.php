@@ -139,20 +139,42 @@ $(function() {
 	  <li>Wave and Ogg recording with optional MP3 support.</li>
           <li>BPM detection and estimation</li>
           <li>Bulk BPM analysis</li>
-          <li>Supported MIDI Controllers:
+          <li>Community supported MIDI Controllers:
             <ul>
+            <li>Akai MPD24</li>
+            <li>American Audio RADIUS 2000</li>
             <li>American Audio VMS4</li>
-            <li>DJ TechTools MIDIFighter</li>
+            <li>Behringer BCD3000</li>
+            <li>DJ-Tech i-Mix Reload</li>
+            <li>Ecler NUO4</li>
+            <li>Evolution X-Session</li>
+            <li>FaderFox DJ2</li>
+            <li>Hercules DJ Console Mac Edition</li>
+            <li>Hercules DJ Console Mk4</li>
+            <li>Hercules DJ Console MP3</li>
             <li>Hercules DJ Console RMX</li>
-            <li>Hercules DJ Console MK2</li>
-            <li>Hercules DJ Control MP3 e2</li>
-            <li>M-Audio X-Session Pro</li>
+            <li>Hercules DJ Control Steel</li>
+            <li>Ion Discover DJ</li>
+            <li>M-Audio Xponent</li>
+            <li>Mixman DM2</li>
+            <li>Numark MixTrack</li>
+            <li>Numark NS7</li>
+            <li>Numark Total Control</li>
+            <li>Pioneer CDJ-2000</li>
+            <li>Pioneer CDJ-350</li>
+            <li>Pioneer CDJ-850</li>
             <li>Reloop Digital Jockey 2</li>
+            <li>Stanton SCS.1d</li>
+            <li>Stanton SCS.1m</li>
             <li>Stanton SCS.3d</li>
             <li>Stanton SCS.3m</li>
-            <li>Stanton SCS.1m</li>
-            <li>Stanton SCS.1d</li>
-            <li>... and much more! See our <a href="http://mixxx.org/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.</li>
+            <li>Tascam US-428</li>
+            <li>TrakProDJ App (iOS)</li>
+            <li>Vestax Spin</li>
+            <li>Vestax Typhoon</li>
+            <li>Vestax VCI-100</li>
+            <li>Wireless DJ App (iOS)</li>
+            <li>... and more! See our <a href="http://mixxx.org/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.</li>
             </ul>
           </li>  
 	  <li>Translations for:
@@ -168,6 +190,7 @@ $(function() {
 	      <li>Dutch</li>
 	      <li>Polish</li>
 	      <li>Japanese</li>
+            <li>... and more! See our <a href="https://translations.launchpad.net/mixxx">Translation overview</a> page.</li>
 	  </ul></li>
             <li>Multichannel soundcard support (playback and capture)</li>
             <li>Multiple soundcard support</li>
