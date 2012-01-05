@@ -81,7 +81,7 @@
     <div id="ubuntudlg" style="display: none;" title="Ubuntu Downloads">
 	<center><b>Download:</b></center>
 	<br/>
-	<b>Ubuntu 10.04 (Lucid) and 10.10 (Maverick):</b><br/>
+	<b>Ubuntu PPA: 10.04 (Lucid) through 11.10 (Oneiric):</b><br/>
 	  Open a terminal, and enter:
 	  <pre>
 	    sudo add-apt-repository ppa:mixxx/mixxx
@@ -93,8 +93,10 @@
 	    PPA</a> on Launchpad.
 	  <br/><br/>
 	  
-	  <b>Ubuntu 10.10 (Maverick):</b><br/>
-	  Our older Mixxx 1.8.0 release can be installed directly from the Ubuntu Software Centre.
+	  <b>Ubuntu Repositories:</b><br/> Ubuntu also provides a version of Mixxx
+	  which can be installed directly from the Ubuntu Software
+	  Centre. This version is usually woefully out of date; therefore
+	  using the PPA is preferable. 
 	  <br/><br/>
 	</div>
 
