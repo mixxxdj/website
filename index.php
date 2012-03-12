@@ -37,7 +37,7 @@ require('navbar.php');
 </div>
 
 <div id="splash">
-    <img src="/images/splash1-noalpha.png" height=380 width=920>
+    <img src="/images/splash1.png" height=380 width=920>
 </div>
 
 
