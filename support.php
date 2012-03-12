@@ -27,19 +27,19 @@ require('navbar.php');
 <div style="clear: both;"></div>
 <div class="halfbox_left">
     <H2>Wiki / FAQ</H2>
-		<p>The <a href="wiki/">Mixxx Wiki</a> and <a href="wiki/doku.php/faq">FAQ</a> are the best places to start for <b>documentation and support</b>. They contain useful documentation for both users and developers.
+		<p>The <a href="/wiki/">Mixxx Wiki</a> and <a href="/wiki/doku.php/faq">FAQ</a> are the best places to start for <b>documentation and support</b>. They contain useful documentation for both users and developers.
 </div>
 <div class="halfbox_right">
     <H2>User Manual</H2>
-    <p>The <a href="manual/latest">Mixxx Manual</a> provides an overview of Mixxx's user interface,
+    <p>The <a href="/manual/latest">Mixxx Manual</a> provides an overview of Mixxx's user interface,
         information about <b>configuration</b> and hardware, and much more. It also contains useful information
-        for <b>beginners</b> under <a href="manual/latest/chapters/djing_with_mixxx.html">DJing with Mixxx</a>.
+        for <b>beginners</b> under <a href="/manual/latest/chapters/djing_with_mixxx.html">DJing with Mixxx</a>.
 </div>
 <div style="clear: both;"></div>
 
 <div class="halfbox_left">
     <h2>Community Forums</h2>    
-    <p>Have a Mixxx-related question? Something other DJs can help you with? Ask in the <a href="forums">Mixxx Community Forums</a>. 
+    <p>Have a Mixxx-related question? Something other DJs can help you with? Ask in the <a href="/forums">Mixxx Community Forums</a>. 
 </div>
 <div class="halfbox_right">
     <h2>Developer Mailing List</h2>
