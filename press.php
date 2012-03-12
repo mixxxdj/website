@@ -1,40 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php 
+$title = "Press";
+$meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
-  <head>
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="author" content="haran" />
-    <meta name="generator" content="haran" />
+require('header.php'); 
+?>
+<?php
+require('navbar.php'); 
+?>
 
-    <link rel="stylesheet" type="text/css" href="css/prosimii-screen.css" media="screen, tv, projection" title="Default" />
-    <link rel="stylesheet alternative" type="text/css" href="css/prosimii-print.css" media="screen" title="Print Preview" />
-    <link rel="stylesheet" type="text/css" href="css/prosimii-print.css" media="print" />
-    <!--[if lt IE 7.]>
-    <script defer type="text/javascript" src="js/pngfix.js"></script>
-    <![endif]-->
+<div id="wrapper">
 
-    <title>Mixxx | Press</title>
-  </head>
-  
-  <body>
-    <!-- For non-visual user agents: -->
-    <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
-    
-    <!-- ##### Header ##### -->
-    <?php  include 'header.php';?>
-    
-    <!-- ##### Main Copy ##### -->
-    <div id="main-copy">
-      <div id="main-copy-inside">
-
-	<div class="rowOfBoxes">
-	  <div class="fullWidth noBorderOnLeft">  
-    	    <h1>Press</h1>
-	  </div>
-	</div>
-        
-	<div class="features"><h1>About Mixxx</h1>
+<div class="content">
+<H1>Press</H1>
+<H2>About Mixxx</H2>
 	  <p>
 	    Mixxx was originally created in 2002 as part of a PhD thesis on new
 	    interfaces for DJing by Tue Haste Andersen.  After releasing the
@@ -69,7 +47,7 @@
             software.
 	  </p>
 
-	  <h1>Why?</h1>
+<h2>Why?</h2>
 
 	  <p>
 	    Mixxx started as an open source project because of demand for DJing
@@ -91,32 +69,32 @@
             for a fun development team that helps Mixxx continue to grow.
 	  </p> 
         
-	  <h1>Interviews</h1>
+	  <h2>Interviews</h2>
 	  <p>
 	    Please contact our project
 	    manager, <a href="mailto:adamd@mixxx.org">Adam Davison</a> for
 	    interviews. We won't bite, we promise.
 	  </p>
     
-	  <h1>Artwork</h1>
+	  <h2>Artwork</h2>
 	  <br/>
 	  <center>
-	    <img src="images/press_art/logocolour_nopadding_small.png">
+	    <img src="/images/press_art/logocolour_nopadding_small.png">
 	    </center><br/>
 	    <p style="text-indent: 0px;">
 	      Mixxx Colour Logo, no padding:<br/>
-	      <a href="images/press_art/logocolour_nopadding.svg">SVG</a><br/>
-	      <a href="images/press_art/logocolour_nopadding_small.png">PNG Small</a> (240 x 60 px)<br/>
-	      <a href="images/press_art/logocolour_nopadding_medium.png">PNG Medium</a> (480 x 119 px)<br/>
-	      <a href="images/press_art/logocolour_nopadding_large.png">PNG Large</a> (1115 x 278 px)<br/>
-	      <a href="images/press_art/logocolour_nopadding_large.tiff">TIFF Large</a> (1115 x 278 px)
+	      <a href="/images/press_art/logocolour_nopadding.svg">SVG</a><br/>
+	      <a href="/images/press_art/logocolour_nopadding_small.png">PNG Small</a> (240 x 60 px)<br/>
+	      <a href="/images/press_art/logocolour_nopadding_medium.png">PNG Medium</a> (480 x 119 px)<br/>
+	      <a href="/images/press_art/logocolour_nopadding_large.png">PNG Large</a> (1115 x 278 px)<br/>
+	      <a href="/images/press_art/logocolour_nopadding_large.tiff">TIFF Large</a> (1115 x 278 px)
 	    </p>
 	    <p style="text-indent: 0px;">Reference Screenshots:<br/>
-	      <a href="images/press_art/mixxx_1100_default_deere_skin.png">Mixxx 1.10 default (Deere Skin)</a><br/>
-	      <a href="images/press_art/mixxx_1100_latenightblues_skin.png">Mixxx 1.10 (Late Night Blues Skin)</a><br/>
+	      <a href="/images/press_art/mixxx_1100_default_deere_skin.png">Mixxx 1.10 default (Deere Skin)</a><br/>
+	      <a href="/images/press_art/mixxx_1100_latenightblues_skin.png">Mixxx 1.10 (Late Night Blues Skin)</a><br/>
             </p>
 	    
-	    <h1>Past Press</h1>
+	    <h2>Past Press</h2>
 	    <p class="pressquote">
 	      "Cross-platform upstart <i>Mixxx</i> has the edge for the beat-matching style of mixing" - Daniel James, Linux Format Magazine
 	    </p>
@@ -124,16 +102,10 @@
 	      "This is one program that does it all!" - Leo Laporte, The Lab with Leo (G4TV)
 	    </p>
 	  </div>
+<div class="halfbox_left">
+</div>
+<div class="halfbox_right">
+</div>
+<div style="clear: both;"></div>
 
-	  <!-- Extend the main-copy div past our floating boxes -->
-	  <div style="clear:both;"></div> 
-	</div>
-      </div>
-    </div>
-    
-    <!-- ##### Footer ##### -->
-    <?php include 'footer.php' ?>
-    
-  </body>
-</html>
-  
+<?php require('footer.php'); ?>

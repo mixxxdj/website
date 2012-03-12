@@ -1,38 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php 
+$title = "Contact";
+$meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
-  <head>
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="author" content="haran" />
-    <meta name="generator" content="haran" />
-    
-    <link rel="stylesheet" type="text/css" href="./css/prosimii-screen.css" media="screen, tv, projection" title="Default" />
-    <link rel="stylesheet alternative" type="text/css" href="./css/prosimii-print.css" media="screen" title="Print Preview" />
-    <link rel="stylesheet" type="text/css" href="./css/prosimii-print.css" media="print" />
-    <!--[if lt IE 7.]>
-    <script defer type="text/javascript" src="js/pngfix.js"></script>
-    <![endif]-->
-    <title>Mixxx | Contact</title>
-  </head>
-  
-  <body>
-    <!-- For non-visual user agents: -->
-    <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+require('header.php'); 
+?>
+<?php
+require('navbar.php'); 
+?>
 
-    <!-- ##### Header ##### -->
-    <?php  include 'header.php';?>
+<div id="wrapper">
 
-    <!-- ##### Main Copy ##### -->
-    <div id="main-copy">
-      <div id="main-copy-inside">
-	<div class="rowOfBoxes features">
-          <div class="fullWidth noBorderOnLeft">   
-	    <h1>Contact Us</h1>
-	  </div>
-	</div>
+<div class="content">
+<H1>Get in Touch</H1>
 
-	<div class="features">
+<div style="clear: both;"></div>
+<div class="halfbox_left">
 	  <p>
 	    Support for <b>users</b> of Mixxx is available through
 	    our <a href="/forums">community forums</a> and our IRC channel as
@@ -52,6 +34,8 @@
 	      first</a>. The list is low traffic.
 	  </p>
 
+</div>
+<div class="halfbox_right">
 	  <p>
 	    If you're a <b>DJ hardware manufacturer</b> and would like your
 	    product to work with Mixxx, please contact our Project
@@ -65,7 +49,10 @@
 	    contact <a href="http://www.hep.ucl.ac.uk/~adamd">Adam
 	      Davison</a>.
 	  </p>
-	  
+</div>
+<div style="clear: both;"></div>
+
+<div style="text-align: center;">
 	  <h2>Credits</h2>
 	  <p>
 	    In 2001, Mixxx was started
@@ -213,6 +200,7 @@
 	    Claudio Bantaloukas<br/>
 	    Pavol Rusnak<br/>
 	  </p>
+ </div>
 
 	  <p align="center">
 	    Mixxx also depends on a number of software libraries. Without
@@ -223,24 +211,6 @@
 	    for being fantastic.
 
 	    <br/><br/>
-
-	    <a href="images/splash_4.png">"Superstar DJs"</a> splash image uses
-	    source material licensed under Creative Commons Attribution 3.0
-	    Unported from Google Picasa users
-	    <a href="http://picasaweb.google.com/goatstrumpet/DJs#5382032223720336050">Goat's Trumpet</a> and
-	    <a href="http://picasaweb.google.com/organza.silverwing/RLVOE#5252292050442065426">Organza</a>, and
-	    Flickr user <a href="http://www.flickr.com/photos/ubefoto/4091198318/">Ubefoto</a>,
-	    accessed on August 15, 2010. 
-
-	    <br/><br/>
 	    Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.
-	  </p>
-	</div>
-      </div>
-    </div>
 
-    <!-- ##### Footer ##### -->
-    <?php include 'footer.php' ?>
-    
-  </body>
-</html>
+<?php require('footer.php'); ?>

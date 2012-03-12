@@ -1,52 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<?php 
+$title = "Download the Best Free MP3 DJ Mixing Software";
+$meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
-  <head>
-    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="author" content="haran" />
-    <meta name="generator" content="haran" />
-
-    <link rel="stylesheet" type="text/css" href="./css/prosimii-screen.css" media="screen, tv, projection" title="Default" />
-    <link rel="stylesheet" type="text/css" href="./css/download.css" media="screen, tv, projection" title="Default" />
-    <link rel="stylesheet alternative" type="text/css" href="./css/prosimii-print.css" media="screen" title="Print Preview" />
-    <link rel="stylesheet" type="text/css" href="./css/prosimii-print.css" media="print" />
-    <link rel="stylesheet" type="text/css" href="./css/jquery-ui/dark-hive/jquery-ui-1.7.2.custom.css"/>
-    
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#getwindlg").dialog({autoOpen : false});
-            
-            $("#getwin").bind("click", function(e) {
-                $("#getwindlg").dialog("open");
-                //$("#dgetwindlg").css("visibility", "visible");
-                return false;
-            });
-
-            $("#ubuntudlg").dialog({autoOpen : false, width : 500});
-            
-            $("#getubu").bind("click", function(e) {
-                $("#ubuntudlg").dialog("open");
-                //$("#dgetwindlg").css("visibility", "visible");
-                return false;
-            });
-            
-	    $("#ubuntubetadlg").dialog({autoOpen : false, width : 500});
-            $("#getububeta").bind("click", function(e) {
-                $("#ubuntubetadlg").dialog("open");
-                //$("#dgetwindlg").css("visibility", "visible");
-                return false;
-            });
-            
-        });
-    </script>
-    <!--[if lt IE 7.]>
-    <script defer type="text/javascript" src="js/pngfix.js"></script>
-    <![endif]-->
-    
+function extraHead()
+{
+    echo <<<EOF
 	<script type="text/javascript">
 	/* <![CDATA[ */
 	    (function() {
@@ -58,222 +16,30 @@
 	    })();
 	/* ]]> */
 	</script>
+EOF;
+};
 
-	<title>Mixxx | Download</title>
-  </head>
+require('header.php'); 
+?>
+<?php
+require('navbar.php'); 
+?>
 
-  <body>
-    <!-- For non-visual user agents: -->
-    <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+<script type="text/javascript">
+$(document).ready(function() {
+    if (OSName.search("OS X") >= 0) {
+        var highlightTimerId = window.setTimeout(function() { $('#macbox').addClass('slow_border');}, 1000);
+    }
+    else if (OSName.search("Windows") >= 0) {
+        var highlightTimerId = window.setTimeout(function() { $('#winbox').addClass('slow_border');}, 1000);
+    }
+});
+</script>
 
-    <!-- ##### Header ##### -->
-    <?php  include 'header.php';?>
-    <div id="getwindlg" style="display: none;" title="32-bit or 64-bit?">
-      <p>
-	The 64-bit version of Mixxx requires a <b>64-bit version of Windows</b>. All
-        other Windows users should download the 32-bit version of Mixxx.<br/><br/>
-	  To check if you're running a 64-bit version of Windows:<br/>
-	  1. Open <b>System</b> by clicking the Start button, clicking Control Panel, clicking System and Maintenance, and then clicking System.<br/>
-	  2. Under System, if you see the phrase "64-bit Operating System" or "64-bit Edition", your computer can run the 64-bit version of Mixxx.<br/>
-	</p>
-      </div>
-      
-    <div id="ubuntudlg" style="display: none;" title="Ubuntu Downloads">
-	<center><b>Download:</b></center>
-	<br/>
-	<b>Ubuntu PPA: 10.04 (Lucid) through 11.10 (Oneiric):</b><br/>
-	  Open a terminal, and enter:
-	  <pre>
-	    sudo add-apt-repository ppa:mixxx/mixxx
-	    sudo apt-get update
-	    sudo apt-get install mixxx libportaudio2
-	  </pre>
-	  This will install the latest version of Mixxx from
-	  the <a href="https://launchpad.net/~mixxx/+archive/mixxx">Mixxx
-	    PPA</a> on Launchpad.
-	  <br/><br/>
-	  
-	  <b>Ubuntu Repositories:</b><br/> Ubuntu also provides a version of Mixxx
-	  which can be installed directly from the Ubuntu Software
-	  Centre. This version is usually woefully out of date; therefore
-	  using the PPA is preferable. 
-	  <br/><br/>
-	</div>
+<div id="wrapper">
 
-	<div id="ubuntubetadlg" style="display: none;" title="Ubuntu Downloads">
-	  <center><b>Download:</b></center>
-	  <br/>
-	  <b>Mixxx Betas for Ubuntu 10.10 (Maverick):</b><br/>
-	    Open a terminal, and enter:
-	    <pre>
-	      sudo add-apt-repository ppa:mixxx/mixxxbetas
-	      sudo apt-get update
-	      sudo apt-get install mixxx 
-	    </pre>
-	    This will install the latest unstable beta of Mixxx from
-	    the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas">Mixxx
-	    Betas PPA</a> on Launchpad.  <br/><br/>
-	</div>
-	
-    <!-- ##### Main Copy ##### -->
-
-    <div id="main-copy">
-      <div id="main-copy-inside">
-	<br/>
-	<h1>Download</h1>
-	<div>
-	  <div id="download">
-	    <br/>
-	    <div id="windows">
-	      <table> 
-		<tr>
-		  <td>
-		    <img src="images/downloads_win.png"/>
-		  </td>
-		  <td width="50%">
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win32.exe"  
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win32'); ">
-		      Mixxx 1.10.0</a><br/><span style="font-size: 0.8em;">(32-bit)</span>
-		  </td>
-		  <td width="50%">
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win64.exe"  
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win64'); ">
-		      Mixxx 1.10.0
-		    </a><br/><span style="font-size: 0.8em;">(64-bit)</span>
-		  </td>
-		  <td><img src="images/windows.png"/></td>
-		</tr>
-		<tr>
-		  <td colspan=2 style="vertical-align: bottom;">
-		    <div style="float:middle; clear:left;">
-		    </div>
-		  </td>
-		</tr>
-	      </table>
-	    </div>
-
-	    <div id="mac">
-	      <table>
-		<tr>
-		  <td>
-		    <img src="images/downloads_mac.png"/>
-		  </td>
-		  <!--
-		  <td width="100%">
-		    <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-		      <img src="images/available-on-mac-app-store-mixxxdownload.png"/>
-		    </a>
-		    <br/>
-		    <p style="font-size: 0.6em;margin:0px;padding:0px;">
-		      Also available for 
-		      <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"
-			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
-			OS X 10.5+ (32-bit)
-		      </a> 
-		      and 
-		      <a href="http://downloads.mixxx.org/mixxx-1.9.0/mixxx-1.9.0-macppc.dmg"  
-			 onClick="javascript: pageTracker._trackPageview('/downloads/190osxppc'); ">PPC (1.9.0)
-		      </a>.
-		    </p>
-		  </td>-->
-		  <td width="50%">
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"  
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
-		      Mixxx 1.10.0 
-		    </a><br/><span style="font-size: 0.8em;">(OS X 10.5+ 32-bit)</span>
-		  </td>
-		  <td width="50%">
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macuniversal.dmg"  
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxuniversal'); ">
-		      Mixxx 1.10.0 
-		    </a><br/><span style="font-size: 0.8em;">(OS X 10.5+ Universal)</span>
-		  </td>
-		  <td><img src="images/mac.png"/></td>
-		  </tr>
-		</table>						    
-	      </div>
-
-	      <div id="linux">
-		<table>
-		  <tr>
-		    <td><img src="images/downloads_linux.png"/></td>
-		    <td width="30%">
-		      <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz"  
-			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
-			Mixxx 1.10.0
-		      </a><br/><span style="font-size: 0.8em;">(Source)</span>
-		    </td>
-		    <td width="30%">
-		      <a id="getubu" href="#ubuntudlg" 
-			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0ubuntu'); ">
-			Mixxx 1.10.0</a><br/><span style="font-size: 0.8em;">(Ubuntu)</span>
-		    </td>
-		    <td>
-		      <img src="images/ubuntu.png" align="center" border="0px"/>
-		    </td>
-		  </tr>
-		</table>						   
-	      </div>
-
-	      <!--
-	      <div id="beta">
-		<img src="images/beta.png" style="float: left; padding: 10px"/>
-		<p>
-		  The Mixxx 1.10.0 beta includes vinyl control improvements, sample
-		  decks, beatlooping, library updates and more!
-		</p> 
-		<p>
-		  If you'd like to try out the latest features and are willing
-		  to <a href="https://bugs.launchpad.net/mixxx/">report any bugs</a>
-		  you find, try the latest <b>(unstable) beta release</b>:
-		</p>
-		<br/>
-		<ul>
-		  <li>
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0-beta1/mixxx-1.10.0-beta1-win32.exe" 
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0beta1win32'); ">
-		      Mixxx 1.10.0-beta1 for Windows (32-bit)
-		    </a> 
-		  </li>
-		  <li>
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0-beta1/mixxx-1.10.0-beta1-win64.exe" 
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0beta1win64'); ">
-		      Mixxx 1.10.0-beta1 for Windows (64-bit)
-		    </a> 
-		  </li>
-		  <li>
-		    <a id="getububeta" href="#ubuntubetadlg" 
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0beta1ubuntu'); ">
-		      Mixxx 1.10.0-beta1 for Ubuntu 10.10 (i386, amd64)
-		    </a>
-		  </li>
-		  <li><a href="http://downloads.mixxx.org/mixxx-1.10.0-beta1/mixxx-1.10.0-beta1-macintel32.dmg" 
-			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0beta1osx'); ">
-		      Mixxx 1.10.0-beta1 for Mac OS X 10.5+ (Intel)
-		    </a>
-		  </li>
-		  <li><a href="http://downloads.mixxx.org/mixxx-1.10.0-beta1/mixxx-1.10.0-beta1-src.tar.gz" 
-			 onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0beta1linuxsrc'); ">
-		      Mixxx 1.10.0-beta1 for Linux (source)
-		    </a>
-		  </li>
-		</ul>
-		<b>Downgrading:</b> If you'd like to downgrade after trying the
-		1.10.0 beta, <b>Mixxx 1.9.0 or later is required</b>. We <b>do not
-		  recommend</b> using beta software for live performances.
-		<br/>
-	      </div>
-	      -->
-
-	      <div id="donate">
-		<h2>Show your Support</h2><br/>
-		  <!--<img src="images/face-grin.png" style="float: left; padding: 10px">-->
-		  <p>
-		    If you enjoy Mixxx or use it professionally,
-		    please consider <b>donating to the project</b>
-		    using the link below to help support and enhance
-		    development.
-		  </p>
+<div class="content">
+<div style="float: right; width: 100px; padding-top: 30px;">
 		  <center>
 		    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 		      <input type="hidden" name="cmd" value="_s-xclick"/>
@@ -284,45 +50,89 @@
 		    <!--
 			<a href="http://www.pledgie.com/campaigns/13624" style="margin-left: 1em; margin-right: 1em;"><img alt="Click here to lend your support to: Mixxx 1.9 Build Server Fundraiser and make a donation at www.pledgie.com !" border="0" src="http://www.pledgie.com/campaigns/13624.png?skin_name=chrome" /></a>
 			-->
-		    <br/>
-		    <a class="FlattrButton" style="display:none;" href="http://www.mixxx.org"></a>
 		  </center>
-		  <br/>
-		</div>
-
-	      <div id="sourcecode">
-		<h2>Source Code</h2><br/>
-		<img src="images/source.png" style="float: right; padding: 10px;"/>
-		<p>
-		  Mixxx is also available as source code, licensed
-		  under the GPL v2. Please check the LICENSE file
-		  for complete licensing information. You can grab
-		  the latest distribution or get the latest code
-		  directly from BZR:
-		</p>
-		<ul>
-		  <li>
-		    <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz" 
-		       onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
-		      Mixxx 1.10.0 source code</a></li>
-		  <li>Checking out from BZR:
-		    <pre>bzr branch lp:mixxx</pre></li>
-		  <li>
-		    Source code for the App Store version is 
-		    <a href="https://code.launchpad.net/~mixxxdevelopers/mixxx/features_coreaudio">available here</a>
-		    , with a 
-		    <a href="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg">corresponding binary.</a>
-		  </li>
-		</ul>
-	      </div>
-	  </div>
-	</div>
+</div>
+<H1>Download Now</H1>
+Mixxx is available for Windows, Mac OS X, and Linux:
+<div style="clear: both;"></div>
+<div class="halfbox_left darkborder" id="winbox">
+    <H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
+    <p>
+        <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win32.exe"  
+           onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win32'); ">
+        Download Mixxx 1.10 for 32-bit Windows</a>
+    </p>
+    <p>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win64.exe"  
+		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win64'); ">
+        Download Mixxx 1.10 for 64-bit Windows</a>
+    </p>
+    <br>
+    <p><small>AAC playback requires Windows 7 or greater.</small></p>
+</div>
+<div class="halfbox_right darkborder" id="macbox">
+    <H2><img src="/images/download_mac.png" class="feature_icon" style="margin-top: -7px;">Mac OS X</H2>
+    <p>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"  
+		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
+        Download Mixxx 1.10 for Mac OS X 10.5+ (Intel)</a>
+    </p>
+    <p>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macuniversal.dmg"  
+		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxuniversal'); ">
+        Download Mixxx 1.10 for Mac OS X 10.5+ (PPC/Intel Universal)</a>
+    </p>
+    <div style="text-align: center;">
+ <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1"><img src="/images/available-on-mac-app-store-frontpage.png" style="padding-bottom: 5px;"></a>
+ </div>
+    <p><small>Please note due to licensing restrictions, vinyl control is not available in Mixxx
+              from the Mac App Store.</small></p>
+</div>
+<div style="padding: 20px;">
+<H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
+    <p>Download Mixxx 1.10 for Ubuntu 10.04 (Lucid) through 11.10 (Oneiric):</p>
+	  <p>Open a terminal, and enter:</p>
+	  <pre>
+	    sudo add-apt-repository ppa:mixxx/mixxx
+	    sudo apt-get update
+	    sudo apt-get install mixxx libportaudio2
+	  </pre>
+	  <p>This will install the latest version of Mixxx from
+	  the <a href="https://launchpad.net/~mixxx/+archive/mixxx">Mixxx
+	    PPA</a> on Launchpad.</p>
+    <div style="width: 66%; margin: 0 auto;">	
+    <small><b>Ubuntu Repositories:</b><br/> Ubuntu also provides a version of Mixxx
+	  which can be installed directly from the Ubuntu Software
+	  Centre. This version is usually woefully out of date; therefore
+	  using the PPA is preferable. </small>
       </div>
-    </div>
-  </div>
-  
-  <!-- ##### Footer ##### -->
-  <?php include 'footer.php' ?>
-  
-</body>
-</html>
+<H2>Linux / Source Code</H2>
+    <p>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz"  
+		    onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
+        Download Mixxx 1.10 Source Code
+        </a>
+    </p>
+    <p>
+		  The Mixxx source code is made available under the GPL v2. Please check the LICENSE file
+		  in our source tree for complete licensing information. The latest code from Mixxx's trunk           can be downloaded through Bazaar:
+		    <pre>        bzr branch lp:mixxx</pre>
+    </p>
+    <p>
+          Compilation instructions are available for <a href="http://mixxx.org/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="http://mixxx.org/wiki/doku.php/compiling_on_os_x">Mac OS X</a>, and <a href="http://mixxx.org/wiki/doku.php/compiling_on_linux">Linux</a>.
+    </p>
+</div>
+
+<div class="gapfiller" style="height: 57px">
+    <div style="float: right;" >
+        <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=downloads_moresoftware&utm_campaign=mixxx"><img src="/images/oscillicious_logo1.png"></a>
+     </div>
+    <p style="text-align: center;">More software from the Mixxx Developers available at:</p>
+    <div style="clear: both;"></div>
+</div>
+
+<H2>Errata</H2>
+<p>Source code for the Mac App Store version is available in each release branch in Bazaar. A 
+<a href="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg">corresponding binary</a> is also available.</p>
+
+<?php require('footer.php'); ?>
