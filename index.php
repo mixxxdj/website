@@ -18,7 +18,7 @@ require('navbar.php');
 
     <li>
     <!-- Place this tag where you want the +1 button to render -->
-    <g:plusone size="tall" href="https://plus.google.com/102441931224839455484"></g:plusone>
+    <g:plusone size="tall" href="http://www.mixxx.org"></g:plusone>
 
     <!-- Place this render call where appropriate -->
     <script type="text/javascript">
