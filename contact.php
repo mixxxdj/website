@@ -18,7 +18,7 @@ require('navbar.php');
 	  <p>
 	    Support for <b>users</b> of Mixxx is available through
 	    our <a href="/forums">community forums</a> and our IRC channel as
-	    described on our <a href="support.php">Support page</a>.
+	    described on our <a href="/support">Support page</a>.
 	    
 	    If you think you've found a bug, please file a bug report in
 	    our <a href="https://bugs.launchpad.net/mixxx/">bug

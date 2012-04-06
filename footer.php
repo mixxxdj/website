@@ -38,7 +38,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
         <h2>Community</h2>
         <a href="/forums">Forums</a><br>
         <a href="/wiki">Wiki</a><br>
-        <a href="/blog">Blog</a><br>
+        <a href="http://mixxxblog.blogspot.com">Blog</a><br>
     </div>
     <div class="footer_sitemap_column">
         <h2>About</h2>

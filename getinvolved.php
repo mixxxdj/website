@@ -1,5 +1,5 @@
 <?php 
-$title = "Press";
+$title = "Get Involved";
 $meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
 
 require('header.php'); 
