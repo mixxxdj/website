@@ -143,7 +143,7 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
 
 <div class="gapfiller" style="height: 57px">
     <div class="download_button">
-        <img src="/images/download.png" alt="Download Now for FREE!" onclick="location.href='downloadlatest.php?os=' + OSName;" border="0px" style="vertical-align: middle; cursor:pointer; margin-top: -30px; margin-bottom: -30px;" />
+        <img src="/images/download.png" alt="Download Now for FREE!" onclick="location.href='/downloadlatest.php?os=' + OSName;" border="0px" style="vertical-align: middle; cursor:pointer; margin-top: -30px; margin-bottom: -30px;" />
      </div>
     <p style="text-align: center;">Don't wait - Download Mixxx and start DJing now for FREE:</p>
 </div>

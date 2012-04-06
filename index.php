@@ -45,7 +45,7 @@ require('navbar.php');
 
 <div class="gapfiller" style="margin-bottom: 0px;">
     <div class="download_button">
-        <img src="/images/download.png" alt="Download Now for FREE!" onclick="location.href='downloadlatest.php?os=' + OSName;" border="0px" style="vertical-align: middle; cursor:pointer; margin-top: -30px; margin-bottom: -30px;" />
+        <img src="/images/download.png" alt="Download Now for FREE!" onclick="location.href='/downloadlatest.php?os=' + OSName;" border="0px" style="vertical-align: middle; cursor:pointer; margin-top: -30px; margin-bottom: -30px;" />
         <!--
         <div style="padding-left: 24px; width: 192px;">
         <p>Download FREE for <script type="text/javascript"> document.write(OSName); </script> </p>
