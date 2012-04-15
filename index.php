@@ -148,7 +148,7 @@ Each year, a community of DJs, programmers, and artists contribute dozens of new
 <div style="float: right;">
     <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"><img src="/images/oscillicious_logo1.png"></a>
 </div>
-<p>The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.oscillicious.com/sodasynth?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">SodaSynth</a>, check them out!
+<p>The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.oscillicious.com/sodasynth?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">SodaSynth</a>, check them out!
 </p>
 <div style="clear: both;"></div>
 
