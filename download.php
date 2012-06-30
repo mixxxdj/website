@@ -58,14 +58,14 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 <div class="halfbox_left darkborder" id="winbox">
     <H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
     <p>
-        <a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win32.exe"  
-           onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win32'); ">
-        Download Mixxx 1.10 for 32-bit Windows</a>
+        <a href="http://downloads.mixxx.org/mixxx-1.10.1/mixxx-1.10.1-win32.exe"  
+           onClick="javascript: pageTracker._trackPageview('/downloads/1.10.1win32'); ">
+        Download Mixxx 1.10.1 for 32-bit Windows</a>
     </p>
     <p>
-		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-win64.exe"  
-		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0win64'); ">
-        Download Mixxx 1.10 for 64-bit Windows</a>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.1/mixxx-1.10.1-win64.exe"  
+		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.1win64'); ">
+        Download Mixxx 1.10.1 for 64-bit Windows</a>
     </p>
     <br>
     <p><small>AAC playback requires Windows 7 or greater.</small></p>
@@ -73,14 +73,14 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 <div class="halfbox_right darkborder" id="macbox">
     <H2><img src="/images/download_mac.png" class="feature_icon" style="margin-top: -7px;">Mac OS X</H2>
     <p>
-		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macintel32.dmg"  
-		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxintel'); ">
-        Download Mixxx 1.10 for Mac OS X 10.5+ (Intel)</a>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.1/mixxx-1.10.1-macintel32.dmg"  
+		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.1osxintel'); ">
+        Download Mixxx 1.10.1 for Mac OS X 10.5+ (Intel)</a>
     </p>
     <p>
-		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-macuniversal.dmg"  
-		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0osxuniversal'); ">
-        Download Mixxx 1.10 for Mac OS X 10.5+ (PPC/Intel Universal)</a>
+		<a href="http://downloads.mixxx.org/mixxx-1.10.1/mixxx-1.10.1-macuniversal.dmg"  
+		   onClick="javascript: pageTracker._trackPageview('/downloads/1.10.1osxuniversal'); ">
+        Download Mixxx 1.10.1 for Mac OS X 10.5+ (PPC/Intel Universal)</a>
     </p>
     <div style="text-align: center;">
  <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1"><img src="/images/available-on-mac-app-store-frontpage.png" style="padding-bottom: 5px;"></a>
@@ -90,7 +90,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 </div>
 <div style="padding: 20px;">
 <H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
-    <p>Download Mixxx 1.10 for Ubuntu 10.04 (Lucid) through 11.10 (Oneiric):</p>
+    <p>Download Mixxx 1.10.1 for Ubuntu 10.04 (Lucid) through 12.04 (Precise):</p>
 	  <p>Open a terminal, and enter:</p>
 	  <pre>
 	    sudo add-apt-repository ppa:mixxx/mixxx
@@ -108,9 +108,9 @@ Mixxx is available for Windows, Mac OS X, and Linux:
       </div>
 <H2>Linux / Source Code</H2>
     <p>
-		<a href="http://downloads.mixxx.org/mixxx-1.10.0/mixxx-1.10.0-src.tar.gz"  
-		    onClick="javascript: pageTracker._trackPageview('/downloads/1.10.0linuxsrc'); ">
-        Download Mixxx 1.10 Source Code
+		<a href="http://downloads.mixxx.org/mixxx-1.10.1/mixxx-1.10.1-src.tar.gz"  
+		    onClick="javascript: pageTracker._trackPageview('/downloads/1.10.1linuxsrc'); ">
+        Download Mixxx 1.10.1 Source Code
         </a>
     </p>
     <p>
