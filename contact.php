@@ -63,7 +63,7 @@ require('navbar.php');
 	    Developer), and S. Brandt (Lead Artist).
 	  </p>
 
-	  <p class="credits"><b>Mixxx 1.10.0 Development Team</b></p>
+	  <p class="credits"><b>Mixxx 1.10.1 Development Team</b></p>
 
 	  <p class="credits">
 	    <a href="http://www.hep.ucl.ac.uk/~adamd">Adam Davison</a><br/>
