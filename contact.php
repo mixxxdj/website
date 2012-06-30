@@ -77,6 +77,7 @@ require('navbar.php');
 	    Owen Williams<br/>
 	    Bill Good<br/>
 	    Vittorio Colao<br/>
+	    Daniel Sch&uuml;rmann<br/>
 	  </p>
 
 	  <p class="credits"><b>With contributions from:</b></p>
@@ -125,6 +126,11 @@ require('navbar.php');
 	    Peter V&aacute;gner<br/>
 	    Thanasis Liappis<br/>
 	    Jens Nachtigall<br/>
+	    Scott Ullrich<br/>
+	    Jonas &Aring;dahl<br/>
+	    Maxime Bochon<br/>
+	    Akash Shetye
+	    Ben Clark
 	  </p>
 
 	  <p class="credits"><b>And special thanks to:</b></p>
