@@ -149,6 +149,7 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
 </div>
 
 <div id="full_specs">
+<a name="full_specs"></a>
 <H2>Full Specification</H2>
 
 <div style="float: left; width: 30%; padding-right: 50px;">
@@ -192,42 +193,77 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
 </div>
 <div style="float: left; width: 25%; padding-right: 50px;">
     <ul>
+    <p><b>Mixxx Certified<br>MIDI Controllers</b></p>
+        <li>Allen &amp; Heath Xone K2</li>
+        <li>EKS Otus</li>
+        <li>Keith McMillen Instruments QuNeo</li>
+        <li>Vestax VCI-400</li>
+    </ul>
+    <ul>
     <p><b>Community Supported <br>MIDI Controllers</b></p>
         <li>Akai MPD24</li>
+        <li>Akai LPD8</li>
         <li>American Audio RADIUS 2000</li>
         <li>American Audio VMS4</li>
+        <li>American Audio VMS2</li>
         <li>Behringer BCD3000</li>
-        <li>DJ TechTools MIDIFighter</li>
+        <li>Behringer BCD2000</li>
+        <li>DJ-Tech CDJ-101</li>
+        <li>DJ-Tech DJM-101</li>
         <li>DJ-Tech i-Mix Reload</li>
+        <li>DJ TechTools MIDIFighter</li>
+        <li>EKS Otus</li>
         <li>Evolution X-Session</li>
         <li>FaderFox DJ2</li>
+        <li>Gemini FirstMix</li>
+        <li>Hercules DJ Console 4-Mx</li>
+        <li>Hercules DJ Control AIR</li>
+        <li>Hercules DJ Control Instinct</li>
         <li>Hercules DJ Console Mac Edition</li>
+        <li>Hercules DJ Console ML1</li>
         <li>Hercules DJ Console MK2</li>
         <li>Hercules DJ Console MK4</li>
         <li>Hercules DJ Console MP3</li>
-        <li>Hercules DJ Console RMX</li>
         <li>Hercules DJ Control MP3 e2</li>
+        <li>Hercules DJ Console RMX</li>
         <li>Hercules DJ Control Steel</li>
         <li>Ion Discover DJ</li>
+        <li>Kontrol Dj KDJ500</li>
+        <li>Korg nanoKONTROL</li>
+        <li>Korg nanoPAD2</li>
         <li>M-Audio X-Session Pro</li>
         <li>M-Audio Xponent</li>
         <li>Mixman DM2</li>
+        <li>MixVibes U-Mix Control 2</li>
+        <li>Nintendo Wiimote</li>
+        <li>Novation Dicer</li>
+        <li>Novation Launchpad</li>
+        <li>Numark DJ2Go</li>
+        <li>Numark MixTrack Pro</li>
         <li>Numark MixTrack</li>
+        <li>Numark N4</li>
         <li>Numark NS7</li>
+        <li>Numark Omni Control</li>
         <li>Numark Total Control</li>
+        <li>Numark V7</li>
         <li>Pioneer CDJ-2000</li>
         <li>Pioneer CDJ-350</li>
         <li>Pioneer CDJ-850</li>
         <li>Reloop Digital Jockey 2</li>
+        <li>Reloop Terminal Mix 4</li>
+        <li>Sony Sixxaxis</li>
         <li>Stanton SCS.1d</li>
         <li>Stanton SCS.1m</li>
         <li>Stanton SCS.3d</li>
         <li>Stanton SCS.3m</li>
         <li>Tascam US-428</li>
         <li>TrakProDJ App (iOS)</li>
+        <li>Traktor Kontrol F1</li>
         <li>Vestax Spin</li>
         <li>Vestax Typhoon</li>
         <li>Vestax VCI-100</li>
+        <li>Vestax VCI-100 3DEX Edition</li>
+        <li>Vestax VCI-300</li>
         <li>Wireless DJ App (iOS)</li>
         <li><p style="margin: 0px;">... and more! See our <a href="http://mixxx.org/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.</p></li>
           </ul>

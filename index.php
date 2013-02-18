@@ -38,6 +38,9 @@ require('navbar.php');
 
 <div id="splash">
     <img src="/images/splash1.png" height=380 width=920>
+    <div id="splash_newversion_button">
+        <a href="/whats-new-in-mixxx-1-11"><img src="/images/splash_newversion.png"></a>
+    </div>
 </div>
 
 
@@ -121,22 +124,22 @@ Each year, a community of DJs, programmers, and artists contribute dozens of new
 
 <div id="achievements">
     <div class="achievement" style="width: 180px;">
-    <img src="/images/rating_macappstore.png" alt="#1" style="padding-top: 10px;">
+    <img src="/images/rating_macappstore.png" alt="#1" style="padding-top: 0px;">
     <br>
-    Top Free Mac App,<br>
+    #1 Top Free Mac App Worldwide<br>
     Mac App Store<br>
     <small>February 2011</small>
     </div>
-    <div class="achievement">
+    <div class="achievement" style="margin-top: 10px;">
         <img src="/images/rating_cnet.png" alt="CNet">
     </div>
-    <div class="achievement">
+    <div class="achievement" style="margin-top: 30px;">
         <img src="/images/rating_cm.png" alt="Computer Music"><br>
         Free Pick of the Month<br>
         <small>September 2007</small>
     </div>
-    <div class="achievement">
-        <img src="/images/rating_synthtopia.png" alt="Synthtopia" style="padding-top: 45px;">
+    <div class="achievement" style="margin-top: 50px">
+        <img src="/images/rating_synthtopia.png" alt="Synthtopia">
         <br>
         "The coolest open source<br>application ever?"<br>
         <small>February 2011</small>
@@ -148,7 +151,7 @@ Each year, a community of DJs, programmers, and artists contribute dozens of new
 <div style="float: right;">
     <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"><img src="/images/oscillicious_logo1.png"></a>
 </div>
-<p>The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.oscillicious.com/sodasynth?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">SodaSynth</a>, check them out!
+<p>The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.jamdeck.net/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">JamDeck</a>, check them out!
 </p>
 <div style="clear: both;"></div>
 

@@ -21,9 +21,10 @@ body
 }
 
 a {
-  color: #d0d0d0; 
-  /*color: #ff9000; orange  */
+  /* color: #d0d0d0; very light grey */
+  color: #ff9000; /* orange */
   /** color: #3030ff; blue **/
+  /* color: #4E55FF;  waveform blue */
   background-color: transparent;
   text-decoration: none; /*underline;*/
 }
@@ -35,7 +36,8 @@ img
 
 a:hover {
   /* text-decoration: underline; */
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #ffB000; /* lighter orange */
 }
 
 p a
@@ -97,6 +99,13 @@ h2 a {
     padding-bottom: 15px;
     background-color: #000000;
     text-align: center;
+}
+
+#splash_newversion_button
+{
+    position: absolute;
+    left: 85px;
+    bottom: 250px;
 }
 
 .download_button

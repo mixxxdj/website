@@ -48,7 +48,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
     <div class="footer_sitemap_column">
         <h2>Partners</h2>
         <a href="http://www.oscillicious.com">Oscillicious</a><br>
-        <a href="http://www.oscillicious.com/sodasynth">SodaSynth VSTi Plug-in</a><br>
+        <a href="http://www.jamdeck.net/">JamDeck Music Sketchpad</a><br>
+        <a href="http://www.oscillicious.com/sodasynth">SodaSynth VST Plug-in</a><br>
         <a href="http://www.oscillicious.com/beatcleaver">BeatCleaver</a><br>
     </div>
     <div style="clear; both;"></div>
