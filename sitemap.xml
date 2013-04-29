@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--  generator="Inspyder Sitemap Creator 1.0.4"  -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
@@ -39,6 +39,12 @@
 </url>
 <url>
 	<loc>http://www.mixxx.org/forums/index.php</loc>
+	<lastmod>2012-03-11</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>http://www.mixxx.org/wiki/doku.php</loc>
 	<lastmod>2012-03-11</lastmod>
 	<changefreq>weekly</changefreq>
 	<priority>0.5</priority>
