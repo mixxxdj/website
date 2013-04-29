@@ -63,21 +63,22 @@ require('navbar.php');
 	    Developer), and S. Brandt (Lead Artist).
 	  </p>
 
-	  <p class="credits"><b>Mixxx 1.10.1 Development Team</b></p>
+	  <p class="credits"><b>Mixxx 1.11.0 Development Team</b></p>
 
 	  <p class="credits">
-	    <a href="http://www.hep.ucl.ac.uk/~adamd">Adam Davison</a><br/>
 	    <a href="http://www.santoni.ca/albert">Albert Santoni</a><br/>
 	    <a href="http://www.rustyryan.net">RJ Ryan</a><br/>
-	    <a href="http://stacktrace.org/">Garth Dahlstrom</a><br/>
 	    <a href="http://www.seanpappalardo.com">Sean Pappalardo</a><br/>
 	    Phillip Whelan<br/>
 	    Tobias Rafreider<br/>
 	    S. Brandt<br/>
+            Bill Good<br/>
 	    Owen Williams<br/>
-	    Bill Good<br/>
 	    Vittorio Colao<br/>
 	    Daniel Sch&uuml;rmann<br/>
+            Thomas Vincent<br/>
+            Ilkka Tuohela<br/>
+            Max Linke<br/>
 	  </p>
 
 	  <p class="credits"><b>With contributions from:</b></p>
@@ -128,18 +129,33 @@ require('navbar.php');
 	    Jens Nachtigall<br/>
 	    Scott Ullrich<br/>
 	    Jonas &Aring;dahl<br/>
+            Jonathan Costers<br/>
+            Daniel Lindenfelser<br/>
 	    Maxime Bochon<br/>
 	    Akash Shetye
+            Pascal Bleser<br/>
+            Florian Mahlknecht<br/>
 	    Ben Clark
+            Tom Gascoigne<br/>
+            Neale Pickett<br/>
+            Aaron Mavrinac<br/>
+            Markus H&auml;rer<br/>
+            Andrey Smelov<br/>
+            Scott Stewart<br/>
+            Nimatek<br/>
+            Alban Bedel<br/>
+            Steven Boswell<br/>
+            Jo&atilde;o Reys Santos<br/>
 	  </p>
 
 	  <p class="credits"><b>And special thanks to:</b></p>
 	  <p class="credits">
+            <a href="http://www.vestax.com">Vestax</a><br/>
 	    <a href="http://www.stantondj.com">Stanton</a><br/>
 	    <a href="http://www.hercules.com">Hercules</a><br/>
-	    <a href="http://www.vestax.com">Vestax</a><br/>
-	    <a href="http://www.echoaudio.com">Echo Digital Audio</a><br/>
 	    <a href="http://www.eks.fi">EKS</a><br/>
+            <a href="http://www.echoaudio.com">Echo Digital Audio</a><br/>
+            JP Disco<br/>
 	    <a href="http://code.google.com/soc">Google Summer of Code</a><br/>
 	    Adam Bellinson<br/>
 	    Alexandre Bancel<br/>
@@ -168,6 +184,8 @@ require('navbar.php');
 	    Tom Care<br/>
 	    Pawel Bartkiewicz<br/>
 	    <a href="http://kousu.ca/">Nick Guenther</a><br/>
+            <a href="http://www.hep.ucl.ac.uk/~adamd">Adam Davison</a><br/>
+	    <a href="http://stacktrace.org/">Garth Dahlstrom</a><br/>
 	  </p>
 
 	  <p class="credits"><b>Past Contributors</b></p>
@@ -205,6 +223,8 @@ require('navbar.php');
 	    Michael Pujos<br/>
 	    Claudio Bantaloukas<br/>
 	    Pavol Rusnak<br/>
+            Bruno Buccolo<br/>
+            Ryan Baker<br/>
 	  </p>
  </div>
 
