@@ -1,11 +1,11 @@
-<?php 
+<?php
 $title = "Contact";
 $meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
 
-require('header.php'); 
+require('header.php');
 ?>
 <?php
-require('navbar.php'); 
+require('navbar.php');
 ?>
 
 <div id="wrapper">
@@ -19,12 +19,12 @@ require('navbar.php');
 	    Support for <b>users</b> of Mixxx is available through
 	    our <a href="/forums">community forums</a> and our IRC channel as
 	    described on our <a href="/support">Support page</a>.
-	    
+
 	    If you think you've found a bug, please file a bug report in
 	    our <a href="https://bugs.launchpad.net/mixxx/">bug
 	      tracker</a>.
 	  </p>
-	  
+
 	  <p>
 	    <b>Developers</b> working on Mixxx collaborate with each other via
 	    the <a href="http://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a>
@@ -43,7 +43,7 @@ require('navbar.php');
 	      Davison</a>. We accept donations of DJ equipment which we use to
 	    improve both specific and general hardware support in Mixxx.
 	  </p>
-	  
+
 	  <p>
 	    <b>For other inquiries</b>, please
 	    contact <a href="http://www.hep.ucl.ac.uk/~adamd">Adam
@@ -113,7 +113,7 @@ require('navbar.php');
 	    Micz Flor<br/>
 	    Daniel James<br/>
 	    Mika Haulo<br/>
-	    Till Hofmann<br/> 
+	    Till Hofmann<br/>
 	    Matthew Mikolay<br/>
 	    Tom Mast<br/>
 	    Bruno Buccolo<br/>

@@ -14,13 +14,13 @@
         <a href="/get-involved">Get&nbsp;Involved</a>
         <a href="/contact">Contact</a>
     </p>
-    </div> 
+    </div>
     <div id="navbar_biglinks">
         <!-- <a href="./">Home</a> -->
         <!-- using non-breaking spaces here! -->
         <a href="/download">Download&nbsp;It</a>
         <a href="/features">See&nbsp;Features</a>
         <a href="/support">Get&nbsp;Support</a>
-    </div> 
+    </div>
     <div style="clear: both;"></div>
 </div> <!-- navbar -->

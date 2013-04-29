@@ -1,10 +1,10 @@
-<?php 
+<?php
 $title = "Features";
 $meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
-require('header.php'); 
+require('header.php');
 ?>
 <?php
-require('navbar.php'); 
+require('navbar.php');
 ?>
 
 <div id="wrapper">
@@ -15,7 +15,7 @@ Don't just beatmix, beatmix better.
 <div style="clear: both;"></div>
 <div class="halfbox_left">
     <H2>Dual Decks, Advanced Controls</H2>
-    <p> 
+    <p>
     Drop a song onto a deck in Mixxx to kick off your next mix. Each deck features a scratchable, scrolling waveform that marks beats and cue points, along with a whole-song waveform overview for quick seeking.
     </p>
     <p><b>Time Stretch and Vinyl Emulation</b><br>
@@ -29,7 +29,7 @@ Don't just beatmix, beatmix better.
 <div class="halfbox_right">
 <img src="/images/feature_waveform.png">
     <p><b>Intuitive Pitchbend</b><br>
-    Ramping pitchbend ensures any tempo nudging is smoothly applied, just like with vinyl. 
+    Ramping pitchbend ensures any tempo nudging is smoothly applied, just like with vinyl.
     <p><b>Broad Format Support</b><br>
     Our mature audio decoders deliver pristine sound with rock-solid stability. Mixxx plays MP3, M4A/AAC, Ogg Vorbis, FLAC, WAVE, and AIFF formats.
     <p><b>EQ and Crossfader Control </b><br>
@@ -44,21 +44,21 @@ Don't just beatmix, beatmix better.
 <div style="clear: both;"></div>
 
 <H1>Powerful Library</H1>
-The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive. 
+The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive.
 <div style="clear: both;"></div>
 <div class="halfbox_left">
     <H2><img src="/images/ic_library_itunes.png" class="feature_icon">Organization</H2>
     <p class="feature_indent">
-    <b>Crates and Playlists</b><br> 
-    Sort your music the way you want. 
+    <b>Crates and Playlists</b><br>
+    Sort your music the way you want.
     </p>
     <p class="feature_indent">
-    <b>Disk Browsing</b><br> 
-    Need to find music outside your library? Browse and load tunes from any hard disk. 
+    <b>Disk Browsing</b><br>
+    Need to find music outside your library? Browse and load tunes from any hard disk.
     </p>
     <p class="feature_indent">
-    <b>iTunes Integration</b><br> 
-    Drop fresh tracks from your iTunes library right into your mix. 
+    <b>iTunes Integration</b><br>
+    Drop fresh tracks from your iTunes library right into your mix.
     </p>
 </div>
 <div class="halfbox_right">
@@ -156,7 +156,7 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
 <ul>
     <p><b>Core Features</b></p>
     <li>Cross-platform (Windows XP/Vista/7/8, Mac OS X, Linux)</li>
-    <li>Free and open source (GPL v2)</li>          
+    <li>Free and open source (GPL v2)</li>
     <li>Parallel or split scratchable waveform displays</li>
     <li>Waveform summaries</li>
     <li>Spinning vinyl widgets</li>
@@ -284,7 +284,7 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
 	      <li>Japanese</li>
             <li><p style="margin: 0px;">... and more! See our <a href="https://translations.launchpad.net/mixxx">Translation overview</a> page.</p></li>
 	  </ul>
-    
+
     <ul>
         <p><b>Timecode Vinyl Control:</b></p>
         <li>Serato CV02 vinyl</li>

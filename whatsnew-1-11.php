@@ -1,10 +1,10 @@
-<?php 
+<?php
 $title = "What's New in Mixxx 1.11";
 $meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
-require('header.php'); 
+require('header.php');
 ?>
 <?php
-require('navbar.php'); 
+require('navbar.php');
 ?>
 
 <div id="wrapper">
@@ -16,7 +16,7 @@ And as always, Mixxx 1.11 is available as a <b>free upgrade</b> for all existing
 <div style="clear: both;"></div>
 <div class="halfbox_left">
     <H2>Vibrant Waveforms</H2>
-    <p> 
+    <p>
         Visualize the dynamics of every beat with the brand new triple-band color waveforms in Mixxx 1.11. Watch each band morph as you tweak each EQ.
     </p>
     <p>These new, butter-smooth waveforms run at up to 60 FPS, taking advantage of hardware OpenGL
@@ -97,20 +97,20 @@ And as always, Mixxx 1.11 is available as a <b>free upgrade</b> for all existing
 </div>
 <div style="text-align: center; margin-bottom: 100px;">
     <img src="/images/feature_samplegrid.png">
-    <p>With 16 sample decks, this skin is perfect for radio DJs and 
+    <p>With 16 sample decks, this skin is perfect for radio DJs and
        advanced beat-jugglers alike.</p>
 </div>
 <div style="clear: both;"></div>
 
 
 <H1>Upgraded Library</H1>
-The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive. 
+The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive.
 <div style="clear: both;"></div>
 <div class="halfbox_left">
     <H2><img src="/images/ic_library_itunes.png" class="feature_icon">Advanced Search</H2>
     <p class="feature_indent">
     </p>
-    The library search box is now capable of advanced queries to help you pinpoint that perfect track. 
+    The library search box is now capable of advanced queries to help you pinpoint that perfect track.
     </p>
     <p><b>Try out some of these example searches:</b></p>
     All tracks between 100 and 120BPM with rating greater than 4:
@@ -146,7 +146,7 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
 <div class="halfbox_left">
     <H2>USB HID and USB Bulk Mode DJ Controller Support</H2>
     <p>
-    Mixxx now supports non-MIDI devices using its powerful scripting system. 
+    Mixxx now supports non-MIDI devices using its powerful scripting system.
     Mixxx 1.11.0 comes with HID presets for the following devices:
     <ul>
         <li>Traktor Kontrol F1</li>
