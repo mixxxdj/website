@@ -288,8 +288,9 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
     <ul>
         <p><b>Timecode Vinyl Control:</b></p>
         <li>Serato CV02 vinyl</li>
-        <li>Traktor Scratch 1 vinyl</li>
-        <li>Serato CD</li>
+        <li>Traktor Scratch MK1 Vinyl</li>
+        <li>MixVibes DVS V2 Vinyl</li>
+        <li>Serato CV02 CD</li>
         <li><p style="margin: 0px;"><a href="http://www.mixxx.org/wiki/doku.php/vinyl_control">Read more...</a></p></li>
     </ul>
 
