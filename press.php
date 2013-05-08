@@ -95,9 +95,9 @@ require('navbar.php');
 	      <a href="/images/press_art/logocolour_nopadding_large.tiff">TIFF Large</a> (1115 x 278 px)
 	    </p>
 	    <p style="text-indent: 0px;">Reference Screenshots:<br/>
-	      <a href="/images/press_art/mixxx_1110_default_deere_skin.png">Mixxx 1.10 default (Deere Skin)</a><br/>
-	      <a href="/images/press_art/mixxx_1110_latenightblues_skin.png">Mixxx 1.10 (Late Night Blues Skin)</a><br/>
-              <a href="/images/press_art/mixxx_1110_shade_skin.png">Mixxx 1.10 (Shade Skin)</a><br/>
+	      <a href="/images/press_art/mixxx_1110_default_deere_skin.png">Mixxx 1.11 default (Deere Skin)</a><br/>
+	      <a href="/images/press_art/mixxx_1110_latenightblues_skin.png">Mixxx 1.11 (Late Night Blues Skin)</a><br/>
+              <a href="/images/press_art/mixxx_1110_shade_skin.png">Mixxx 1.11 (Shade Skin)</a><br/>
             </p>
 
 	    <h2>Past Press</h2>
