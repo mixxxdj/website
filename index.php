@@ -1,10 +1,10 @@
-<?php 
+<?php
 $title = "Free MP3 DJ Mixing Software";
 $meta = "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.";
-require('header.php'); 
+require('header.php');
 ?>
 <?php
-require('navbar.php'); 
+require('navbar.php');
 ?>
 
 <div id="driveby_social">
@@ -37,9 +37,9 @@ require('navbar.php');
 </div>
 
 <div id="splash">
-    <img src="/images/splash1.png" height=380 width=920>
+    <img src="/images/splash1.png">
     <div id="splash_newversion_button">
-        <a href="/whats-new-in-mixxx-1-11"><img src="/images/splash_newversion.png"></a>
+        <a href="/whats-new-in-mixxx-1-11"><img alt="Check out what's new in Mixxx 1.11" src="/images/splash_newversion.png"></a>
     </div>
 </div>
 
@@ -52,7 +52,7 @@ require('navbar.php');
         <!--
         <div style="padding-left: 24px; width: 192px;">
         <p>Download FREE for <script type="text/javascript"> document.write(OSName); </script> </p>
-        </div>  
+        </div>
         -->
     </div>
     <div style="float: right; margin-top: 0px; margin-right: -14px;">
@@ -76,7 +76,7 @@ require('navbar.php');
     </div>
     <div style="clear: both;"></div>
 </div> <!-- gapfiller -->
- 
+
 
 <div class="content">
 <H1>Incredible Features, Unbeatable Value</H1>

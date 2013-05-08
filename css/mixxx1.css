@@ -6,7 +6,7 @@ body
     color: #eeeeee;
 }
 
-#wrapper 
+#wrapper
 {
     width: 960px;
     position: relative;
@@ -42,11 +42,11 @@ a:hover {
 
 p a
 {
-  color: #ff9000; /* orange */ 
+  color: #ff9000; /* orange */
 }
 
 h2 a {
-  color: #ff9000; /* orange */ 
+  color: #ff9000; /* orange */
 }
 
 #navbar
@@ -56,7 +56,7 @@ h2 a {
 
 #navbar a
 {
-  color: #d0d0d0; 
+  color: #d0d0d0;
 }
 
 
@@ -101,6 +101,11 @@ h2 a {
     text-align: center;
 }
 
+#splash img {
+    width: 920px;
+    height: 380px;
+}
+
 #splash_newversion_button
 {
     position: absolute;
@@ -133,7 +138,7 @@ h2 a {
     padding-top: 30px;
 }
 
-#full_specs li 
+#full_specs li
 {
     font-size: 0.9em;
 }
