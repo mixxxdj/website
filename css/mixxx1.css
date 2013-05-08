@@ -109,8 +109,8 @@ h2 a {
 #splash_newversion_button
 {
     position: absolute;
-    left: 85px;
-    bottom: 250px;
+    left: 150px;
+    top: 300px;
 }
 
 .download_button
