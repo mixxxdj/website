@@ -146,6 +146,7 @@ require('navbar.php');
         Alban Bedel<br/>
         Steven Boswell<br/>
         Jo&atilde;o Reys Santos<br/>
+        Carl Pillot<br/>
       </p>
 
       <p class="credits"><b>And special thanks to:</b></p>
