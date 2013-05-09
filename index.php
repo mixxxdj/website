@@ -30,14 +30,14 @@ require('navbar.php');
     </script>
     </li>
 
-        <fb:like href="http://www.mixxx.org" send="false" layout="box_count" width="60" show_faces="false" style="position: relative; top: -4px;"></fb:like>
+        <fb:like href="http://www.mixxx.org" send="false" layout="box_count" width="60" show_faces="false" style="position: relative; top: 0px;"></fb:like>
         <li>
         </li>
     </ul>
 </div>
 
 <div id="splash">
-    <img src="/images/splash1.png">
+    <img class="background" src="/images/splash1.png">
     <div id="splash_newversion_button">
         <a href="/whats-new-in-mixxx-1-11"><img alt="Check out what's new in Mixxx 1.11" src="/images/splash_newversion.png"></a>
     </div>

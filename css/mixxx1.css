@@ -101,7 +101,7 @@ h2 a {
     text-align: center;
 }
 
-#splash img {
+#splash img.background {
     width: 920px;
     height: 380px;
 }
