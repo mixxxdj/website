@@ -10,10 +10,19 @@ require('navbar.php');
 <div id="wrapper">
 
 <div class="content">
+<div style="float: right; width: 370px; border: 1px solid #222; border-radius: 5px; margin-top: 0px; padding: 16px; margin-left: 70px; margin-right: 20px;">
+<H2 style="margin-top: 0px;">New to Mixxx?</H2>
+Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix
+music live at your next party or club gig. <a href="/download">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux. 
+</div>
 <H1>What's New in Mixxx 1.11?</H1>
-<p>Take your DJing to the next level. Mixxx 1.11 adds dozens of powerful new features for the pro DJ.<br>
-And as always, Mixxx 1.11 is available as a <b>free upgrade</b> for all existing Mixxx users.</p>
+<p>Take your DJing to the next level. Mixxx 1.11 adds dozens of powerful new features for the pro DJ. And as always, Mixxx 1.11 is available as a <b>free upgrade</b> for all existing Mixxx users.</p>
 <div style="clear: both;"></div>
+
+<div style="text-align: center; margin-top: 50px; margin-bottom: 50px;">
+    <img src="/images/mixxx_tilt.png" height=300>
+</div>
+
 <div class="halfbox_left">
     <H2>Vibrant Waveforms</H2>
     <p>
