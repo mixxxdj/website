@@ -95,6 +95,11 @@ h2 a {
 
 #splash
 {
+    position: relative;
+    text-align: center;
+    width: 960px;
+    z-index: 0;
+    margin: 0 auto;
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: #000000;
@@ -104,13 +109,14 @@ h2 a {
 #splash img.background {
     width: 920px;
     height: 380px;
+    text-align: center;
 }
 
 #splash_newversion_button
 {
     position: absolute;
-    left: 150px;
-    top: 300px;
+    left: 20px;
+    bottom: 20px;
 }
 
 .download_button
@@ -203,6 +209,7 @@ h2 a {
 #driveby_social
 {
     display: none;
+    z-index: 5;
     position: absolute;
     right: 10px;
     float: right;
