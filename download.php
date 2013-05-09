@@ -88,6 +88,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
     <p><small>Please note due to licensing restrictions, vinyl control is not available in Mixxx
               from the Mac App Store.</small></p>-->
 </div>
+<div style="clear: both;"></div>
 <div style="padding: 20px;">
 <H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
     <p>Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.04 (Raring):</p>
