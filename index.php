@@ -55,6 +55,7 @@ require('navbar.php');
         </div>
         -->
     </div>
+	<!-- Deactivate linking to outdated MAS version 10/6/13 8:26 AM //jus
     <div style="float: right; margin-top: 0px; margin-right: -14px;">
         <script type="text/javascript">
             if (OSName.search("OS X") >= 0) {
@@ -65,15 +66,12 @@ require('navbar.php');
             }
             </script>
     </div>
+ 	-->
     <!--
     <div style="float: right; margin-top: 16px; padding-right: 8px;">
         <img src="/images/squiggle.png">
     </div>-->
-    <div style="width: 500px; padding-top: 6px;" >
-        <p style="padding: 0px; margin: 0px; text-align: center;">The most advanced free DJ software <br>can be yours in seconds.
-        <!--Start creating live MP3 DJ mixes today.-->
-        </p>
-    </div>
+    <p style="text-align: center;">The most advanced free DJ software can be yours in seconds.</p>
     <div style="clear: both;"></div>
 </div> <!-- gapfiller -->
 

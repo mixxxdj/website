@@ -4,10 +4,10 @@
     </div>
     <div id="navbar_smalllinks">
     <p>
+        <a href="/manual/latest">Manual</a>
         <a href="/forums">Forums</a>
         <a href="/wiki">Wiki</a>
         <a href="http://mixxxblog.blogspot.com">Blog</a>
-        <a href="/manual/latest">Manual</a>
     </p>
     <p style="font-size: 0.7em">
         <a href="/press">Press</a>

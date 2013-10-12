@@ -26,7 +26,7 @@ Mixxx is written in C++ and uses the <a href="http://www.qt-project.org">Qt</a> 
 <div class="halfbox_right">
 <H3>Start Developing Now</H3>
 <ul>
-    <li><p>Get a <a href="http://www.launchpad.net">Launchpad</a> account and <a href="http://mixxx.org/wiki/doku.php/using_bazaar">fork your own branch</a>!</p></li>
+    <li><p>Get a <a href="https://github.com">Github</a> account and <a href="http://mixxx.org/wiki/doku.php/using_git">fork your own branch</a>!</p></li>
     <li><p>Pick a bug off our <a href="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="http://mixxx.org/contact.php">Mixxx credits</a>!</p></li>
     <li><p>When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="http://www.freenode.net">Freenode</a></p></li>
     <li><p>Join our mailing list: <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a></li>
