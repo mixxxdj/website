@@ -91,7 +91,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 <div style="clear: both;"></div>
 <div style="padding: 20px;">
 <H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
-    <p>Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.04 (Raring):</p>
+    <p>Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):</p>
 	  <p>Open a terminal, and enter:</p>
 	  <pre>
 	    sudo add-apt-repository ppa:mixxx/mixxx
