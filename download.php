@@ -116,8 +116,9 @@ Mixxx is available for Windows, Mac OS X, and Linux:
     </p>
     <p>
 		  The Mixxx source code is made available under the GPL v2. Please check the LICENSE file
-		  in our source tree for complete licensing information. The latest code from Mixxx's trunk           can be downloaded through Bazaar:
-		    <pre>        bzr branch lp:mixxx</pre>
+		  in our source tree for complete licensing information. The latest code from Mixxx's development branch
+		  can be downloaded through <a href="https://github.com/mixxxdj/mixxx">Github</a>:
+		    <pre>        git clone https://github.com/mixxxdj/mixxx.git</pre>
     </p>
     <p>
           Compilation instructions are available for <a href="http://mixxx.org/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="http://mixxx.org/wiki/doku.php/compiling_on_os_x">Mac OS X</a>, and <a href="http://mixxx.org/wiki/doku.php/compiling_on_linux">Linux</a>.
