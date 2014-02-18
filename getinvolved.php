@@ -58,9 +58,8 @@ There are many ways to help out as a DJ:
 <a name="translators"></a>
 <div class="halfbox_right">
 <H2>Translators</H2>
-<p>We're pleased to offer Mixxx in many languages as of version 1.10. Our translations are <b>entirely</b> community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations. </p>
-<p>
-You can help translate by visiting our <a href="https://translations.launchpad.net/mixxx/trunk/+translations">translations page on Launchpad</a>. Be sure to click "All Languages" to see a better overview.</p>
+<p>We're pleased to offer Mixxx in many languages. Our translations are <b>entirely</b> community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.</p>
+<p>You can help translate by visiting our <a href="https://www.transifex.com/projects/p/mixxxdj/">translations page</a>. To get help when translating, visit the <a href="http://mixxx.org/forums/viewforum.php?f=10">Mixxx Localization forum</a>.</p>
 </div>
 <div class="halfbox_right">
 <H2>Graphic Artists</H2>
