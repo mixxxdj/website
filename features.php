@@ -134,7 +134,7 @@ The Mixxx music library was designed from the ground up for DJs. Powered by a hi
     <p><b>Vinyl jockeys love it</b><br>
     Control Mixxx from your existing turntables or CDJs and a mixer using timecoded vinyl or CDs.
     We're the only free timecode vinyl control software for Windows, Mac OS X, and Linux, so we made sure to do it right.</p>
-    <p>Serato and Traktor Scratch 1 timecodes are supported with absolute positioning, needle cueing, and our own needle skip prevention code. Mixxx even works with the soundcard you already have! <a href="http://mixxx.org/wiki/doku.php/vinyl_control">Read more</a>
+    <p>Serato and Traktor Scratch 1 timecodes are supported with absolute positioning, needle cueing, and end-of-record detection. Mixxx even works with the soundcard you already have! <a href="http://mixxx.org/wiki/doku.php/vinyl_control">Read more</a>
     </p>
 </div>
 
