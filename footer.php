@@ -56,7 +56,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
 </div>
 
 <div id="footer_legal">
-Copyright &copy; 2012 Mixxx Development Team<br>
+Copyright &copy; 2015 Mixxx Development Team<br>
 Logo by Paul Bloch | Website by <a href="http://www.oscillicious.com">Oscillicious</a>
 </div>
 </div> <!-- wrapper -->
