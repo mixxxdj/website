@@ -5,7 +5,7 @@ header("HTTP/1.1 503 Service Unavailable");
 
 <html>
 <head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-    <title>Mixxx - Temporary Maintenance></title>
+    <title>Mixxx - Temporary Maintenance</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/css/mixxx1.css">
     <link href='http://fonts.googleapis.com/css?family=Muli&v1' rel='stylesheet' type='text/css'>
