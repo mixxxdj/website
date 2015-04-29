@@ -2,11 +2,11 @@
 <html xmlns:fb="http://ogp.me/ns/fb#" style="background-color: #000000;"> <!-- workaround for Chrome white flash -->
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
-<?php 
+<?php
     if ($meta != "")
     {
         echo("    <meta name=\"description\" content=\"" . $meta . "\" />\n");
-    } 
+    }
 ?>
     <title>Mixxx - <?php echo($title); ?></title>
     <META NAME="keywords" CONTENT="dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer" />
@@ -18,9 +18,9 @@
     <!--[if lt IE 7.]>
     <script defer type="text/javascript" src="/js/pngfix.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<?php if (function_exists("extraHead")) {
-			 extraHead(); 
+			 extraHead();
 		  }
 	?>
 
@@ -42,12 +42,12 @@
     })();
     </script>
 
-<script type="text/javascript">    
+<script type="text/javascript">
     var OSName="your OS";
     if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-    
+
     // OS X why do you come in so many binary-incompatible flavours?
-    if (navigator.appVersion.indexOf("Mac")!=-1) 
+    if (navigator.appVersion.indexOf("Mac")!=-1)
     {
         OSName="Mac OS X";
         if ((navigator.userAgent.indexOf("10.5") != -1) //Leopard, Firefox
@@ -60,7 +60,7 @@
         {
             OSName += " 10.4";
         }
-        
+
         if (navigator.userAgent.indexOf("Intel Mac")!=-1) //Intel machines
         {
             //OSName += " (Intel)";
@@ -70,7 +70,7 @@
 
     if (navigator.appVersion.indexOf("X11")!=-1) OSName="Linux";
     if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
-    
+
 </script>
 
 </head>
