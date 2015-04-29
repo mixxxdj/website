@@ -106,7 +106,8 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 	  which can be installed directly from the Ubuntu Software
 	  Centre. This version is usually woefully out of date; therefore
 	  using the PPA is preferable. </small>
-      </div>
+    </div>
+
 <H2>Linux / Source Code</H2>
     <p>
 		<a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz"
@@ -117,7 +118,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
     <p>
 		  The Mixxx source code is made available under the GPL v2. Please check the LICENSE file
 		  in our source tree for complete licensing information. The latest code from Mixxx's development branch
-		  can be downloaded through <a href="https://github.com/mixxxdj/mixxx">Github</a>:
+		  is hosted on <a href="https://github.com/mixxxdj/mixxx">GitHub</a>:
 		    <pre>        git clone https://github.com/mixxxdj/mixxx.git</pre>
     </p>
     <p>
