@@ -52,6 +52,74 @@ $(document).ready(function() {
 			-->
 		  </center>
 </div>
+
+<a name="beta"></a>
+<H1>Download Now (Mixxx 1.12 Beta)</H1>
+<div style="padding: 20px;">
+<p>
+  The Mixxx team has been working hard for <b>over 2 years</b> on Mixxx
+  1.12. We've added hundreds of new features and we need YOUR help testing
+  them. Check out
+  the <a href="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html">release
+    announcement on our blog</a> for a list of the new, hard-hitting
+  features. Tempted? Try these on for size:
+<p>
+
+<p>
+  <b>Important:</b> While these builds have been stable in testing they are not
+  yet recommended for live use unless you are willing to risk a crash. Looking
+  for the stable release? <a href="#stable">Scroll on down.</a>
+</p>
+
+</p>
+<H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
+<p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win32.exe"
+      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-win32');">
+    Mixxx 1.12 Beta (build r5409) for 32-bit Windows</a></p>
+<p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win64.exe"
+      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-win64');">
+    Mixxx 1.12 Beta (build r5409) for 64-bit Windows</a></p>
+<H2><img src="/images/download_mac.png" class="feature_icon">Mac OS X</H2>
+<p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-osxintel.dmg"
+      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-osxintel);">
+    Mixxx 1.12 Beta (build r5409) for Mac OS X 10.5+ (Intel)</a></p>
+<H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
+<p>Open a terminal, and enter:</p>
+<pre>
+  sudo add-apt-repository ppa:mixxx/mixxxbetas
+  sudo apt-get update
+  sudo apt-get install mixxx
+</pre>
+<p>This will install the latest version of Mixxx from
+  the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas"
+         onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-ubuntu-ppa);">Mixxx Beta PPA</a> on Launchpad.</p>
+<p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-i386.deb"
+      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-ubuntu-trusty32);">
+    Mixxx 1.12 Beta (build r5409) for 32-bit Ubuntu Trusty (and newer)</a></p>
+<p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-amd64.deb"
+      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-ubuntu-trusty64);">
+    Mixxx 1.12 Beta (build r5409) for 64-bit Ubuntu Trusty (and newer)</a></p>
+
+<H2>Linux / Source Code</H2>
+<p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-src.tar.gz"
+      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-linuxsrc');">
+    Mixxx 1.12 Beta (build r5409) Source Code</a></p>
+
+<p>
+  The Mixxx source code is made available under the GPL v2. Please check the
+  LICENSE file in our source tree for complete licensing information. The latest
+  code from Mixxx's 1.12 development branch is hosted on
+  <a href="https://github.com/mixxxdj/mixxx">GitHub</a>:
+  <pre>        git clone -b 1.12 https://github.com/mixxxdj/mixxx.git</pre>
+</p>
+<p>
+  Compilation instructions are available
+  for <a href="http://mixxx.org/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="http://mixxx.org/wiki/doku.php/compiling_on_os_x">Mac
+  OS X</a>,
+  and <a href="http://mixxx.org/wiki/doku.php/compiling_on_linux">Linux</a>.
+</p>
+</div>
+
 <a name="stable"></a>
 <H1>Download Now (Mixxx 1.11.0 Stable)</H1>
 Mixxx is available for Windows, Mac OS X, and Linux:
