@@ -28,10 +28,10 @@ require('navbar.php');
 <script type="text/javascript">
 $(document).ready(function() {
     if (OSName.search("OS X") >= 0) {
-        var highlightTimerId = window.setTimeout(function() { $('#macbox').addClass('slow_border');}, 1000);
+        var highlightTimerId = window.setTimeout(function() { $('.macbox').addClass('slow_border');}, 1000);
     }
     else if (OSName.search("Windows") >= 0) {
-        var highlightTimerId = window.setTimeout(function() { $('#winbox').addClass('slow_border');}, 1000);
+        var highlightTimerId = window.setTimeout(function() { $('.winbox').addClass('slow_border');}, 1000);
     }
 });
 </script>
@@ -55,7 +55,7 @@ $(document).ready(function() {
 <H1>Download Now</H1>
 Mixxx is available for Windows, Mac OS X, and Linux:
 <div style="clear: both;"></div>
-<div class="halfbox_left darkborder" id="winbox">
+<div class="halfbox_left darkborder winbox">
     <H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
     <p>
         <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe"
@@ -70,7 +70,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
     <br>
     <p><small>AAC playback requires Windows 7 or greater.</small></p>
 </div>
-<div class="halfbox_right darkborder" id="macbox">
+<div class="halfbox_right darkborder macbox">
     <H2><img src="/images/download_mac.png" class="feature_icon" style="margin-top: -7px;">Mac OS X</H2>
     <p>
 		<a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg"
