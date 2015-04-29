@@ -74,14 +74,14 @@ $(document).ready(function() {
 </p>
 <H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win32.exe"
-      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-win32');">
+      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win32');">
     Mixxx 1.12 Beta (build r5409) for 32-bit Windows</a></p>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win64.exe"
-      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-win64');">
+      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win64');">
     Mixxx 1.12 Beta (build r5409) for 64-bit Windows</a></p>
 <H2><img src="/images/download_mac.png" class="feature_icon">Mac OS X</H2>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-osxintel.dmg"
-      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-osxintel);">
+      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-osxintel');">
     Mixxx 1.12 Beta (build r5409) for Mac OS X 10.5+ (Intel)</a></p>
 <H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
 <p>Open a terminal, and enter:</p>
@@ -92,17 +92,17 @@ $(document).ready(function() {
 </pre>
 <p>This will install the latest version of Mixxx from
   the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas"
-         onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-ubuntu-ppa);">Mixxx Beta PPA</a> on Launchpad.</p>
+         onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-ppa');">Mixxx Beta PPA</a> on Launchpad.</p>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-i386.deb"
-      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-ubuntu-trusty32);">
+      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty32');">
     Mixxx 1.12 Beta (build r5409) for 32-bit Ubuntu Trusty (and newer)</a></p>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-amd64.deb"
-      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-ubuntu-trusty64);">
+      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty64');">
     Mixxx 1.12 Beta (build r5409) for 64-bit Ubuntu Trusty (and newer)</a></p>
 
 <H2>Linux / Source Code</H2>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-src.tar.gz"
-      onclick="javascript: pageTracker._trackPageview('/downloads/1.12.0-beta1-linuxsrc');">
+      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-linuxsrc');">
     Mixxx 1.12 Beta (build r5409) Source Code</a></p>
 
 <p>
@@ -128,12 +128,12 @@ Mixxx is available for Windows, Mac OS X, and Linux:
     <H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
     <p>
         <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe"
-           onClick="javascript: pageTracker._trackPageview('/downloads/1.11.0win32'); ">
+           onClick="javascript:trackDownload('/downloads/1.11.0win32'); ">
         Download Mixxx 1.11.0 for 32-bit Windows</a>
     </p>
     <p>
 		<a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win64.exe"
-		   onClick="javascript: pageTracker._trackPageview('/downloads/1.11.0win64'); ">
+		   onClick="javascript:trackDownload('/downloads/1.11.0win64'); ">
         Download Mixxx 1.11.0 for 64-bit Windows</a>
     </p>
     <br>
@@ -143,12 +143,12 @@ Mixxx is available for Windows, Mac OS X, and Linux:
     <H2><img src="/images/download_mac.png" class="feature_icon" style="margin-top: -7px;">Mac OS X</H2>
     <p>
 		<a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg"
-		   onClick="javascript: pageTracker._trackPageview('/downloads/1.11.0osxintel'); ">
+		   onClick="javascript:trackDownload('/downloads/1.11.0osxintel'); ">
         Download Mixxx 1.11.0 for Mac OS X 10.5+ (Intel)</a>
     </p>
     <p>
 		<a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macppc.dmg"
-		   onClick="javascript: pageTracker._trackPageview('/downloads/1.11.0osxppc'); ">
+		   onClick="javascript:trackDownload('/downloads/1.11.0osxppc'); ">
         Download Mixxx 1.11.0 for Mac OS X 10.5+ (PPC)</a>
     </p>
 <!--    <div style="text-align: center;">
@@ -180,7 +180,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 <H2>Linux / Source Code</H2>
     <p>
 		<a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz"
-		    onClick="javascript: pageTracker._trackPageview('/downloads/1.11.0linuxsrc'); ">
+		    onClick="javascript:trackDownload('/downloads/1.11.0linuxsrc'); ">
         Download Mixxx 1.11.0 Source Code
         </a>
     </p>

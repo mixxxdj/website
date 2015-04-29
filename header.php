@@ -31,6 +31,10 @@
     _gaq.push(['_setAccount', 'UA-3647499-1']);
     _gaq.push(['_trackPageview']);
 
+    function trackDownload(url) {
+      _gaq.push(['_trackPageview', url]);
+    }
+
     (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
