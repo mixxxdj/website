@@ -134,7 +134,7 @@ Mixxx is available for Windows, Mac OS X, and Linux:
 </div>
 
 <H2>Errata</H2>
-<p>Source code for the Mac App Store version is available in each release branch in Bazaar. A
+<p>Source code for the Mac App Store version is available in each release branch in Git. A
 <a href="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg">corresponding binary</a> is also available.</p>
 
 <?php require('footer.php'); ?>
