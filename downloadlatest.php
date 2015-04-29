@@ -13,7 +13,7 @@ else if ($os == "Mac OS X 10.4 (Universal)")
 	//$url = "http://downloads.mixxx.org/mixxx-1.6.0/mixxx-1.6.0-macintel-tiger.dmg";
 else // if ($os == "Linux")
 {
-	header("Location:http://www.mixxx.org/download");
+	header("Location:http://www.mixxx.org/download/#stable");
 	return;
 }
 	header("Location:" . $url);

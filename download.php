@@ -52,7 +52,8 @@ $(document).ready(function() {
 			-->
 		  </center>
 </div>
-<H1>Download Now</H1>
+<a name="stable"></a>
+<H1>Download Now (Mixxx 1.11.0 Stable)</H1>
 Mixxx is available for Windows, Mac OS X, and Linux:
 <div style="clear: both;"></div>
 <div class="halfbox_left darkborder winbox">
