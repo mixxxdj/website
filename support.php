@@ -50,7 +50,7 @@ require('navbar.php');
 
 <div class="halfbox_left">
     	<h2>IRC Channel</h2>
-    	<p>The Mixxx IRC channel (<b>#mixxx</b> on <a href="http://www.freenode.net">Freenode</a>) can be used for support too. If you don't need support, the IRC channel is still a fun place to hang out with the developers and meet some fellow DJs. <a href="/irc.php">Click here</a> to chat via a web client.</p>
+    	<p>The Mixxx IRC channel (<b>#mixxx</b> on <a href="http://www.freenode.net">Freenode</a>) can be used for support too. If you don't need support, the IRC channel is still a fun place to hang out with the developers and meet some fellow DJs. <a href="/irc">Click here</a> to chat via a web client.</p>
 </div>
 <div class="halfbox_right">
     <h2>Bug Tracker</h2>
