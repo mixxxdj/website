@@ -75,14 +75,14 @@ $(document).ready(function() {
 <H2><img src="/images/download_windows.png" class="feature_icon">Windows</H2>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win32.exe"
       onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win32');">
-    Mixxx 1.12 Beta (build r5409) for 32-bit Windows</a></p>
+    Mixxx 1.12 Beta (build r5418) for 32-bit Windows</a></p>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win64.exe"
       onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win64');">
-    Mixxx 1.12 Beta (build r5409) for 64-bit Windows</a></p>
+    Mixxx 1.12 Beta (build r5418) for 64-bit Windows</a></p>
 <H2><img src="/images/download_mac.png" class="feature_icon">Mac OS X</H2>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-osxintel.dmg"
       onclick="javascript:trackDownload('/downloads/1.12.0-beta1-osxintel');">
-    Mixxx 1.12 Beta (build r5409) for Mac OS X 10.5+ (Intel)</a></p>
+    Mixxx 1.12 Beta (build r5418) for Mac OS X 10.5+ (Intel)</a></p>
 <H2><img src="/images/download_ubuntu.png" class="feature_icon">Ubuntu</H2>
 <p>Open a terminal, and enter:</p>
 <pre>
@@ -95,15 +95,15 @@ $(document).ready(function() {
          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-ppa');">Mixxx Beta PPA</a> on Launchpad.</p>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-i386.deb"
       onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty32');">
-    Mixxx 1.12 Beta (build r5409) for 32-bit Ubuntu Trusty (and newer)</a></p>
+    Mixxx 1.12 Beta (build r5418) for 32-bit Ubuntu Trusty (and newer)</a></p>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-amd64.deb"
       onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty64');">
-    Mixxx 1.12 Beta (build r5409) for 64-bit Ubuntu Trusty (and newer)</a></p>
+    Mixxx 1.12 Beta (build r5418) for 64-bit Ubuntu Trusty (and newer)</a></p>
 
 <H2>Linux / Source Code</H2>
 <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-src.tar.gz"
       onclick="javascript:trackDownload('/downloads/1.12.0-beta1-linuxsrc');">
-    Mixxx 1.12 Beta (build r5409) Source Code</a></p>
+    Mixxx 1.12 Beta (build r5418) Source Code</a></p>
 
 <p>
   The Mixxx source code is made available under the GPL v2. Please check the
