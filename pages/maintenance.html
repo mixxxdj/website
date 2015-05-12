@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Temporary Maintenance{% endblock %}
+
+{# Disable the navbar and footer. #}
+{% block navbar %}{% endblock %}
+{% block footer %}{% endblock %}
+
+{% block body %}
+<div id="wrapper" style="margin-top: 50px; padding-top: 50px; margin-bottom: 50px; padding-bottom: 50px;">
+<center>
+<img src="{% static '/static/images/navbar_logo.png' %}">
+<H2>Sorry, down for maintenance...</H2>
+<H2><small>We'll be back in a jiffy!</small></H2>
+<p>In the meantime, check out some other open source projects we love:</p>
+<p>
+<a href="http://www.videolan.org">VLC Movie Player</a> |
+<a href="http://www.audacity.org">Audacity Audio Editor</a> |
+<a href="http://www.pidgin.im">Pidgin Instant Messenger</a> |
+<a href="http://www.mozilla.com/firefox">Mozilla Firefox</a>
+</p>
+</center>
+</div>
+{% endblock %}

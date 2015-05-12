@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mixxx - {% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer{% endblock %}"/>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
+    <link rel="shortcut icon" href="{% static '/static/images/favicon.ico' %}">
+    <link rel="alternate" type="application/rss+xml" title="Mixxx RSS Feed" href="http://feeds.feedburner.com/MixxxNews">
+    <link href="https://plus.google.com/102441931224839455484" rel="publisher">
+    <link rel="stylesheet" href="{% static '/static/css/mixxx.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Muli&v1' rel='stylesheet' type='text/css'>
+
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+
+    {% block navbar %}
+    {% include "navbar.html" %}
+    {% endblock %}
+
+    {% block after_navbar %}
+    {% endblock %}
+
+    <div id="wrapper">
+      {% block body %}
+      {% endblock %}
+
+      {% block footer %}
+      {% include "footer.html" %}
+      {% endblock %}
+    </div>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-3647499-1']);
+          _gaq.push(['_trackPageview']);
+
+          function trackDownload(url) {
+            _gaq.push(['_trackPageview', url]);
+          }
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+    </script>
+
+    <script type="text/javascript">
+          var OSName="your OS";
+          if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+
+          // OS X why do you come in so many binary-incompatible flavours?
+          if (navigator.appVersion.indexOf("Mac")!=-1) {
+            OSName="Mac OS X";
+            if ((navigator.userAgent.indexOf("10.5") != -1) //Leopard, Firefox
+                || (navigator.userAgent.indexOf("10_5") != -1)) //Leopard, Webkit
+            {
+              OSName += " 10.5";
+            }
+            else if ((navigator.userAgent.indexOf("10.4") != -1) //Tiger, Firefox
+                     || (navigator.userAgent.indexOf("10_4") != -1)) //Tiger, Webkit
+            {
+              OSName += " 10.4";
+            }
+
+            if (navigator.userAgent.indexOf("Intel Mac")!=-1) //Intel machines
+            {
+              //OSName += " (Intel)";
+              OSName += " (Intel)";
+            }
+          }
+
+          if (navigator.appVersion.indexOf("X11")!=-1) OSName="Linux";
+          if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+    </script>
+    {% block extra_script %}
+    {% endblock %}
+  </body>
+</html>
