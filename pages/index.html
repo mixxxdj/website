@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load i18n %}
+
 {% block title %}Free MP3 DJ Mixing Software{% endblock %}
 
 {% block after_navbar %}
@@ -8,7 +10,7 @@
     <li>
       <a href="https://twitter.com/share" class="twitter-share-button"
          data-url="http://www.mixxx.org"
-         data-text="Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux"
+         data-text="{% blocktrans %}Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux{% endblocktrans %}"
          data-via="mixxxdj"
          data-count="vertical">Tweet</a>
     </li>
@@ -25,7 +27,8 @@
   <img class="background" src="{% static '/static/images/splash1.png' %}">
   <div id="splash_newversion_button">
     <a href="/whats-new-in-mixxx-1-11">
-      <img alt="Check out what's new in Mixxx 1.11" src="{% static '/static/images/splash_newversion.png' %}">
+      <img alt="{% blocktrans %}Check out what's new in Mixxx 1.11{% endblocktrans %}"
+           src="{% static '/static/images/splash_newversion.png' %}">
     </a>
   </div>
 </div>
@@ -61,44 +64,39 @@
 </div> <!-- gapfiller -->
 
 <div class="content">
-  <H1>Incredible Features, Unbeatable Value</H1>
+  <H1>{% trans "Incredible Features, Unbeatable Value" %}</H1>
 
-  Mixxx has everything you need to start making DJ mixes in a tight, integrated
-  package. Whether you're DJing your next house party, spinning at a club, or
-  broadcasting as a radio DJ, Mixxx has what you need to do it right.
+  {% blocktrans %}Mixxx has everything you need to start making DJ mixes in a tight, integrated package. Whether you're DJing your next house party, spinning at a club, or broadcasting as a radio DJ, Mixxx has what you need to do it right.{% endblocktrans %}
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">iTunes Integration</H2>
+    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "iTunes Integration" %}</H2>
     <p class="feature_indent">
-      All your playlists and songs from iTunes, automatically ready to go for
-      your next live DJ performance.
+      {% blocktrans %}All your playlists and songs from iTunes, automatically ready to go for your next live DJ performance.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">DJ MIDI Controller Support</H2>
+    <H2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "DJ MIDI Controller Support" %}</H2>
     <p class="feature_indent">
-      With over 30 DJ MIDI controllers supported out-of-the-box, Mixxx gives you
-      comprehensive hardware control for your DJ mixes.
+      {% blocktrans %}With over 30 DJ MIDI controllers supported out-of-the-box, Mixxx gives you comprehensive hardware control for your DJ mixes.{% endblocktrans %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">BPM Detection and Sync</H2>
+    <H2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM Detection and Sync" %}</H2>
     <p class="feature_indent">
-      Instantly sync the tempo of two songs for seamless beatmixing. Need a
-      break? Create a quick playlist and let Auto DJ take over.
+      {% blocktrans %}Instantly sync the tempo of two songs for seamless beatmixing. Need a break? Create a quick playlist and let Auto DJ take over.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_crossfader.png' %}" class="feature_icon">Powerful Mixing Engine</H2>
+    <H2><img src="{% static '/static/images/ic_preferences_crossfader.png' %}" class="feature_icon">{% trans "Powerful Mixing Engine" %}</H2>
     <p class="feature_indent">
-      Mixxx has a cutting-edge mixing engine including support for MP3, M4A/AAC,
-      OGG, and FLAC audio, adjustable EQ shelves, timecode vinyl control,
-      recording, and Shoutcast broadcasting. <a href="/features">Read more</a>
+      {% blocktrans %}Mixxx has a cutting-edge mixing engine including support for MP3, M4A/AAC, OGG, and FLAC audio, adjustable EQ shelves, timecode vinyl control, recording, and Shoutcast broadcasting.{% endblocktrans %}
+      <a href="/features">{% trans "Read more" %}</a>
+
     </p>
   </div>
 
@@ -106,34 +104,32 @@
 
   <div class="gapfiller" style="height: 57px;">
     {% include "download_button.html" %}
-    <p style="text-align: center;">See <a href="/features">dozens more features</a> or start downloading Mixxx for FREE now:</p>
+    <p style="text-align: center;">
+      {% blocktrans %}See <a href="/features">dozens more features</a> or start downloading Mixxx for FREE now:{% endblocktrans %}
+
+    </p>
   </div>
 
-  <H1>And It Just Keeps Getting Better</H1>
+  <H1>{% trans "And It Just Keeps Getting Better" %}</H1>
   <p>
-    Each year, a community of DJs, programmers, and artists contribute dozens of new features to Mixxx. <br>
-    <b>And it doesn't cost you a dime.</b>
+    {% blocktrans %}Each year, a community of DJs, programmers, and artists contribute dozens of new features to Mixxx. <br> <b>And it doesn't cost you a dime.</b>{% endblocktrans %}
   </p>
 
   <p>
-    Because Mixxx is <b>open source</b>, anyone can remix or add new features to it. And that includes you!
+    {% blocktrans %}Because Mixxx is <b>open source</b>, anyone can remix or add new features to it. And that includes you!{% endblocktrans %}
   </p>
 
   <p>
-    You can get involved with Mixxx today
-    by <a href="/get-involved#developers">creating your own
-    branch</a>, <a href="/get-involved#translators">helping with
-    translations</a>, or working on one of our
-    other <a href="/get-involved">starter tasks</a>.
+    {% blocktrans %}You can get involved with Mixxx today by <a href="/get-involved#developers">creating your own branch</a>, <a href="/get-involved#translators">helping with translations</a>, or working on one of our other <a href="/get-involved">starter tasks</a>.{% endblocktrans %}
   </p>
 
   <div id="achievements">
     <div class="achievement" style="width: 180px;">
       <img src="{% static '/static/images/rating_macappstore.png' %}" alt="#1" style="padding-top: 0px;">
       <br>
-      #1 Top Free Mac App Worldwide<br>
+      {% trans "#1 Top Free Mac App Worldwide" %}<br>
       Mac App Store<br>
-      <small>February 2011</small>
+      <small>{% trans "February 2011" %}</small>
     </div>
 
     <div class="achievement" style="margin-top: 10px;">
@@ -142,25 +138,25 @@
 
     <div class="achievement" style="margin-top: 30px;">
       <img src="{% static '/static/images/rating_cm.png' %}" alt="Computer Music"><br>
-      Free Pick of the Month<br>
-      <small>September 2007</small>
+      {% trans "Free Pick of the Month" %}<br>
+      <small>{% trans "September 2007" %}</small>
     </div>
 
     <div class="achievement" style="margin-top: 50px">
       <img src="{% static '/static/images/rating_synthtopia.png' %}" alt="Synthtopia">
       <br>
-      "The coolest open source<br>application ever?"<br>
-      <small>February 2011</small>
+      {% trans '"The coolest open source<br>application ever?"' %}<br>
+      <small>{% trans "February 2011" %}</small>
     </div>
 
     <div style="clear: both;"></div>
   </div>
 
-  <H1>If you like Mixxx...</H1>
+  <H1>{% trans "If you like Mixxx..." %}</H1>
   <div style="float: right;">
     <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"><img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
   </div>
-  <p>The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.jamdeck.net/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">JamDeck</a>, check them out!
+  <p>{% blocktrans %}The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.jamdeck.net/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">JamDeck</a>, check them out!{% endblocktrans %}
   </p>
   <div style="clear: both;"></div>
 

@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-13 18:03-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pages/index.html:11
+msgid ""
+"Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and "
+"Linux"
+msgstr ""
+
+#: pages/index.html:28
+msgid "Check out what's new in Mixxx 1.11"
+msgstr ""
+
+#: pages/index.html:65
+msgid "Incredible Features, Unbeatable Value"
+msgstr ""
+
+#: pages/index.html:67
+msgid ""
+"Mixxx has everything you need to start making DJ mixes in a tight, "
+"integrated package. Whether you're DJing your next house party, spinning at "
+"a club, or broadcasting as a radio DJ, Mixxx has what you need to do it "
+"right."
+msgstr ""
+
+#: pages/index.html:70
+msgid "iTunes Integration"
+msgstr ""
+
+#: pages/index.html:72
+msgid ""
+"All your playlists and songs from iTunes, automatically ready to go for your "
+"next live DJ performance."
+msgstr ""
+
+#: pages/index.html:77
+msgid "DJ MIDI Controller Support"
+msgstr ""
+
+#: pages/index.html:79
+msgid ""
+"With over 30 DJ MIDI controllers supported out-of-the-box, Mixxx gives you "
+"comprehensive hardware control for your DJ mixes."
+msgstr ""
+
+#: pages/index.html:86
+msgid "BPM Detection and Sync"
+msgstr ""
+
+#: pages/index.html:88
+msgid ""
+"Instantly sync the tempo of two songs for seamless beatmixing. Need a break? "
+"Create a quick playlist and let Auto DJ take over."
+msgstr ""
+
+#: pages/index.html:93
+msgid "Powerful Mixing Engine"
+msgstr ""
+
+#: pages/index.html:95
+msgid ""
+"Mixxx has a cutting-edge mixing engine including support for MP3, M4A/AAC, "
+"OGG, and FLAC audio, adjustable EQ shelves, timecode vinyl control, "
+"recording, and Shoutcast broadcasting."
+msgstr ""
+
+#: pages/index.html:96
+msgid "Read more"
+msgstr ""
+
+#: pages/index.html:106
+msgid ""
+"See <a href=\"/features\">dozens more features</a> or start downloading "
+"Mixxx for FREE now:"
+msgstr ""
+
+#: pages/index.html:111
+msgid "And It Just Keeps Getting Better"
+msgstr ""
+
+#: pages/index.html:113
+msgid ""
+"Each year, a community of DJs, programmers, and artists contribute dozens of "
+"new features to Mixxx. <br> <b>And it doesn't cost you a dime.</b>"
+msgstr ""
+
+#: pages/index.html:117
+msgid ""
+"Because Mixxx is <b>open source</b>, anyone can remix or add new features to "
+"it. And that includes you!"
+msgstr ""
+
+#: pages/index.html:121
+msgid ""
+"You can get involved with Mixxx today by <a href=\"/get-involved#developers"
+"\">creating your own branch</a>, <a href=\"/get-involved#translators"
+"\">helping with translations</a>, or working on one of our other <a href=\"/"
+"get-involved\">starter tasks</a>."
+msgstr ""
+
+#: pages/index.html:128
+msgid "#1 Top Free Mac App Worldwide"
+msgstr ""
+
+#: pages/index.html:130 pages/index.html.py:147
+msgid "February 2011"
+msgstr ""
+
+#: pages/index.html:139
+msgid "Free Pick of the Month"
+msgstr ""
+
+#: pages/index.html:140
+msgid "September 2007"
+msgstr ""
+
+#: pages/index.html:146
+msgid "\"The coolest open source<br>application ever?\""
+msgstr ""
+
+#: pages/index.html:153
+msgid "If you like Mixxx..."
+msgstr ""
+
+#: pages/index.html:157
+msgid ""
+"The developers of Mixxx at <a href=\"http://www.oscillicious.com/?"
+"utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"
+"\">Oscillicious Audio Labs</a> have been working hard on <a href=\"http://"
+"www.oscillicious.com/beatcleaver/sampling-for-mixxx?"
+"utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"
+"\">BeatCleaver</a> and <a href=\"http://www.jamdeck.net/?"
+"utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"
+"\">JamDeck</a>, check them out!"
+msgstr ""
