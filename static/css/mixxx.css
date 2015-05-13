@@ -207,7 +207,6 @@ h2 a {
 
 #driveby_social
 {
-    display: none;
     z-index: 5;
     position: absolute;
     right: 10px;
