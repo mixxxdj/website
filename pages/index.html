@@ -2,22 +2,15 @@
 
 {% block title %}Free MP3 DJ Mixing Software{% endblock %}
 
-{% block extra_script %}
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-{% endblock %}
-
 {% block after_navbar %}
 <div id="driveby_social">
   <ul>
     <li>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.mixxx.org" data-text="Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux" data-via="mixxxdj" data-count="vertical">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <a href="https://twitter.com/share" class="twitter-share-button"
+         data-url="http://www.mixxx.org"
+         data-text="Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux"
+         data-via="mixxxdj"
+         data-count="vertical">Tweet</a>
     </li>
     <li>
       <g:plusone size="tall" href="http://www.mixxx.org"></g:plusone>
