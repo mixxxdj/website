@@ -50,48 +50,48 @@
     </script>
 
     <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-3647499-1']);
-          _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3647499-1']);
+      _gaq.push(['_trackPageview']);
 
-          function trackDownload(url) {
-            _gaq.push(['_trackPageview', url]);
-          }
+      function trackDownload(url) {
+        _gaq.push(['_trackPageview', url]);
+      }
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
 
     <script type="text/javascript">
-          var OSName="your OS";
-          if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+      var OSName="your OS";
+      if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
 
-          // OS X why do you come in so many binary-incompatible flavours?
-          if (navigator.appVersion.indexOf("Mac")!=-1) {
-            OSName="Mac OS X";
-            if ((navigator.userAgent.indexOf("10.5") != -1) //Leopard, Firefox
-                || (navigator.userAgent.indexOf("10_5") != -1)) //Leopard, Webkit
-            {
-              OSName += " 10.5";
-            }
-            else if ((navigator.userAgent.indexOf("10.4") != -1) //Tiger, Firefox
-                     || (navigator.userAgent.indexOf("10_4") != -1)) //Tiger, Webkit
-            {
-              OSName += " 10.4";
-            }
+      // OS X why do you come in so many binary-incompatible flavours?
+      if (navigator.appVersion.indexOf("Mac")!=-1) {
+        OSName="Mac OS X";
+        if ((navigator.userAgent.indexOf("10.5") != -1) //Leopard, Firefox
+            || (navigator.userAgent.indexOf("10_5") != -1)) //Leopard, Webkit
+        {
+          OSName += " 10.5";
+        }
+        else if ((navigator.userAgent.indexOf("10.4") != -1) //Tiger, Firefox
+                 || (navigator.userAgent.indexOf("10_4") != -1)) //Tiger, Webkit
+        {
+          OSName += " 10.4";
+        }
 
-            if (navigator.userAgent.indexOf("Intel Mac")!=-1) //Intel machines
-            {
-              //OSName += " (Intel)";
-              OSName += " (Intel)";
-            }
-          }
+        if (navigator.userAgent.indexOf("Intel Mac")!=-1) //Intel machines
+        {
+          //OSName += " (Intel)";
+          OSName += " (Intel)";
+        }
+      }
 
-          if (navigator.appVersion.indexOf("X11")!=-1) OSName="Linux";
-          if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+      if (navigator.appVersion.indexOf("X11")!=-1) OSName="Linux";
+      if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
     </script>
     {% block extra_script %}
     {% endblock %}
