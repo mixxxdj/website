@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 10:41-0400\n"
+"POT-Creation-Date: 2015-05-14 11:46-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1523,6 +1523,14 @@ msgstr ""
 
 #: pages/whats-new-in-mixxx-1-11.html:275
 msgid "Ready to Upgrade? Download Mixxx for FREE and Start DJing:"
+msgstr ""
+
+#: templates/base.html:8
+msgctxt "Summary of Mixxx shown in social media shares and search engines."
+msgid ""
+"Download the most advanced FREE DJ software available, featuring iTunes "
+"integration, MIDI controller support, internet broadcasting, and integrated "
+"music library."
 msgstr ""
 
 #: templates/navbar.html:8

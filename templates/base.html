@@ -1,10 +1,12 @@
+{% load i18n %}
 <!DOCTYPE html>
 <html xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Mixxx - {% block title %}{% endblock %}</title>
-    <meta name="description" content="{% block meta_description %}Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library.{% endblock %}">
+    {% trans "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library." context "Summary of Mixxx shown in social media shares and search engines." as default_meta_description %}
+    <meta name="description" content="{% block meta_description %}{{ default_meta_description }}{% endblock %}">
     <meta name="keywords" content="{% block meta_keywords %}dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer{% endblock %}"/>
     <meta name="viewport" content="width=device-width">
 
