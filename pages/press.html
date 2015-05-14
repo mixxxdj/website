@@ -26,7 +26,7 @@
   </p>
 
   <p>
-    {% blocktrans %}Mixxx also participated in <a href="http://code.google.com/soc/">Google Summer of Code</a> in 2007, 2008, 2010, 2011, 2012, and 2013. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software.{% endblocktrans %}
+    {% blocktrans with gsoc_link="http://code.google.com/soc/" %}Mixxx also participated in <a href="{{ gsoc_link }}">Google Summer of Code</a> in 2007, 2008, 2010, 2011, 2012, and 2013. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software.{% endblocktrans %}
   </p>
 
   <h2>{% trans "Why?" %}</h2>
@@ -41,7 +41,7 @@
 
   <h2>{% trans "Interviews" %}</h2>
   <p>
-    {% blocktrans %}Please contact our project manager, <a href="mailto:adamd@mixxx.org">Adam Davison</a> for interviews. We won't bite, we promise.{% endblocktrans %}
+    {% blocktrans with project_manager_mail_link="mailto:adamd@mixxx.org" %}Please contact our project manager, <a href="{{ project_manager_mail_link }}">Adam Davison</a> for interviews. We won't bite, we promise.{% endblocktrans %}
   </p>
 
   <h2>{% trans "Artwork" %}</h2>

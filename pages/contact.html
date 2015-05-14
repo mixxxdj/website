@@ -10,21 +10,21 @@
   <div style="clear: both;"></div>
   <div class="halfbox_left">
     <p>
-      {% blocktrans %}Support for <b>users</b> of Mixxx is available through our <a href="/forums">community forums</a> and our IRC channel as described on our <a href="/support">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="https://bugs.launchpad.net/mixxx/">bug tracker</a>.{% endblocktrans %}
+      {% blocktrans with forums_link="/forums" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our IRC channel as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>.{% endblocktrans %}
     </p>
 
     <p>
-      {% blocktrans %}<b>Developers</b> working on Mixxx collaborate with each other via the <a href="http://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a> mailing list and our IRC channel (#mixxx on Freenode). To send an email to the list, you must <a href="http://lists.sourceforge.net/lists/listinfo/mixxx-devel">subscribe first</a>. The list is low traffic.{% endblocktrans %}
+      {% blocktrans with mailing_list_link="http://lists.sourceforge.net/lists/listinfo/mixxx-devel" %}Developers working on Mixxx collaborate with each other via the <a href="{{ mailing_list_link }}">mixxx-devel</a> mailing list and our IRC channel (#mixxx on Freenode). To send an email to the list, you must <a href="{{ mailing_list_link }}">subscribe first</a>. The list is low traffic.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
     <p>
-      {% blocktrans %}If you're a <b>DJ hardware manufacturer</b> and would like your product to work with Mixxx, please contact our Project Manager, <a href="http://www.hep.ucl.ac.uk/~adamd">Adam Davison</a>. We accept donations of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
+      {% blocktrans with project_manager_link="http://www.hep.ucl.ac.uk/~adamd" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact our Project Manager, <a href="{{ project_manager_link }}">Adam Davison</a>. We accept donations of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
     </p>
 
     <p>
-      {% blocktrans %}<b>For other inquiries</b>, please contact <a href="http://www.hep.ucl.ac.uk/~adamd">Adam Davison</a>.{% endblocktrans %}
+      {% blocktrans with project_manager_link="http://www.hep.ucl.ac.uk/~adamd" %}For other inquiries, please contact <a href="{{ project_manager_link }}">Adam Davison</a>.{% endblocktrans %}
     </p>
   </div>
   <div style="clear: both;"></div>
@@ -32,7 +32,7 @@
   <div style="text-align: center;">
     <h2>{% trans "Credits" %}</h2>
     <p>
-      {% blocktrans %}In 2001, Mixxx was started by <a href="http://www.nbi.dk/~kenand/">Ken</a> and <a href="http://haste.dk/tue/">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by Adam Davison (Project Manager), RJ Ryan (Lead Developer), S. Brandt (Lead Artist).{% endblocktrans %}
+      {% blocktrans with ken_anderson_link="http://www.nbi.dk/~kenand/" tue_anderson_link="http://haste.dk/tue/"%}In 2001, Mixxx was started by <a href="{{ ken_anderson_link }}">Ken</a> and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by Adam Davison (Project Manager), RJ Ryan (Lead Developer), S. Brandt (Lead Artist).{% endblocktrans %}
     </p>
 
     <p class="credits"><b>{% trans "Mixxx 1.11.0 Development Team" %}</b></p>
@@ -201,7 +201,7 @@
   </div>
 
   <p align="center">
-    {% blocktrans %}Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, especially as a cross-platform application. Big thanks to <a href="http://qt.io">Qt</a>, <a href="http://www.portaudio.com">PortAudio</a>, and <a href="http://portmedia.sourceforge.net/">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.{% endblocktrans %}
+    {% blocktrans with qt_link="http://qt.io" portaudio_link="http://www.portaudio.com" portmidi_link="http://portmedia.sourceforge.net/portmidi/" %}Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, especially as a cross-platform application. Big thanks to <a href="{{ qt_link }}">Qt</a>, <a href="{{portaudio_link }}">PortAudio</a>, and <a href="{{ portmidi_link }}">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.{% endblocktrans %}
   </p>
 
 </div>

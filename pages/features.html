@@ -128,7 +128,7 @@
     <div class="halfbox_right">
       <H2><img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature_icon">{% trans "Shoutcast Broadcasting" %}</H2>
       <p>
-        {% blocktrans %}Stream your mixes live over the internet to your audience and friends through a Shoutcast or Icecast server. <a href="/wiki/doku.php/internet_broadcasting">Read more{% endblocktrans %}</a>
+        {% blocktrans with broadcasting_wiki_link="/wiki/doku.php/internet_broadcasting" %}Stream your mixes live over the internet to your audience and friends through a Shoutcast or Icecast server. <a href="{{ broadcasting_wiki_link }}">Read more{% endblocktrans %}</a>
       </p>
     </div>
 
@@ -158,11 +158,11 @@
 
       <H2>{% trans "MIDI Controller Support" %}</H2>
       <p>
-        {% blocktrans %}<b>Over 30 controllers supported</b><br> including the Hercules RMX, Numark Mixtrack, Vestax Spin and Typhoon, Stanton SCS.3d, and many more. <a href="/wiki/doku.php/hardware_compatibility">Read more{% endblocktrans %}</a>
+        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Over 30 controllers supported</b><br> including the Hercules RMX, Numark Mixtrack, Vestax Spin and Typhoon, Stanton SCS.3d, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Read more{% endblocktrans %}</a>
       </p>
 
       <p><b>{% trans "Advanced MIDI Scripting Engine" %}</b><br>
-        {% blocktrans %}Mixxx features a cutting-edge JavaScript-based scripting engine for maximum flexibility. MIDI messages can be mapped onto custom functions which execute complex behaviour. <a href="/wiki/doku.php/midi_scripting">Read more</a>{% endblocktrans %}
+        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}Mixxx features a cutting-edge JavaScript-based scripting engine for maximum flexibility. MIDI messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
 
@@ -179,7 +179,7 @@
       </p>
 
       <p>
-        {% blocktrans %}Serato and Traktor Scratch 1 timecodes are supported with absolute positioning, needle cueing, and end-of-record detection. Mixxx even works with the soundcard you already have! <a href="/wiki/doku.php/vinyl_control">Read more</a>{% endblocktrans %}
+        {% blocktrans with vinyl_control_wiki_link="/wiki/doku.php/vinyl_control" %}Serato and Traktor Scratch 1 timecodes are supported with absolute positioning, needle cueing, and end-of-record detection. Mixxx even works with the soundcard you already have! <a href="{{ vinyl_control_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
 
@@ -219,7 +219,7 @@
           <li>{% trans "BPM detection and estimation" %}</li>
           <li>{% trans "Bulk BPM analysis" %}</li>
           <li>{% trans "Multichannel soundcard support (playback and capture)" %}</li>
-          <li>{% trans "Headphone cueing with multiple soundcard support<" %}/li>
+          <li>{% trans "Headphone cueing with multiple soundcard support" %}</li>
           <li>{% trans "Adjustable EQ shelves" %}</li>
           <li>{% trans "Crossfader curve control" %}</li>
           <li>{% trans "Skinnable interface with 5 pixel-perfect skins bundled" %}</li>
@@ -309,7 +309,7 @@
           <li>Wireless DJ App (iOS)</li>
           <li>
             <p style="margin: 0px;">
-              {% blocktrans %}... and more! See our <a href="/wiki/doku.php/hardware_compatibility">Hardware Compatibility</a> page.{% endblocktrans %}
+              {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}... and more! See our <a href="{{ hardware_compatibility_wiki_link }}">Hardware Compatibility</a> page.{% endblocktrans %}
             </p>
           </li>
         </ul>
@@ -330,7 +330,7 @@
 	  <li>{% trans "Japanese" %}</li>
           <li>
             <p style="margin: 0px;">
-              {% blocktrans %}... and more! See our <a href="https://translations.launchpad.net/mixxx">Translation overview</a> page.{% endblocktrans %}
+              {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %}... and more! See our <a href="{{ com_transifex_mixxxdj_link }">Translation overview</a> page.{% endblocktrans %}
             </p>
           </li>
 	</ul>

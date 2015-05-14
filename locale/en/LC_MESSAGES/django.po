@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 11:46-0400\n"
+"POT-Creation-Date: 2015-05-14 21:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: pages/contact.html:5
+#: pages/contact.html:5 templates/footer.html:39
 msgid "Contact"
 msgstr ""
 
@@ -26,35 +26,39 @@ msgid "Get in Touch"
 msgstr ""
 
 #: pages/contact.html:13
+#, python-format
 msgid ""
-"Support for <b>users</b> of Mixxx is available through our <a href=\"/forums"
-"\">community forums</a> and our IRC channel as described on our <a href=\"/"
-"support\">Support page</a>. If you think you've found a bug, please file a "
-"bug report in our <a href=\"https://bugs.launchpad.net/mixxx/\">bug tracker</"
-"a>."
+"Support for users of Mixxx is available through our <a href=\"%(forums_link)s"
+"\">community forums</a> and our IRC channel as described on our <a href="
+"\"%(support_page_link)s\">Support page</a>. If you think you've found a bug, "
+"please file a bug report in our <a href=\"%(bug_tracker_link)s\">bug "
+"tracker</a>."
 msgstr ""
 
 #: pages/contact.html:17
+#, python-format
 msgid ""
-"<b>Developers</b> working on Mixxx collaborate with each other via the <a "
-"href=\"http://lists.sourceforge.net/lists/listinfo/mixxx-devel\">mixxx-"
-"devel</a> mailing list and our IRC channel (#mixxx on Freenode). To send an "
-"email to the list, you must <a href=\"http://lists.sourceforge.net/lists/"
-"listinfo/mixxx-devel\">subscribe first</a>. The list is low traffic."
+"Developers working on Mixxx collaborate with each other via the <a href="
+"\"%(mailing_list_link)s\">mixxx-devel</a> mailing list and our IRC channel "
+"(#mixxx on Freenode). To send an email to the list, you must <a href="
+"\"%(mailing_list_link)s\">subscribe first</a>. The list is low traffic."
 msgstr ""
 
 #: pages/contact.html:23
+#, python-format
 msgid ""
-"If you're a <b>DJ hardware manufacturer</b> and would like your product to "
-"work with Mixxx, please contact our Project Manager, <a href=\"http://www."
-"hep.ucl.ac.uk/~adamd\">Adam Davison</a>. We accept donations of DJ equipment "
-"which we use to improve both specific and general hardware support in Mixxx."
+"If you're a DJ hardware manufacturer and would like your product to work "
+"with Mixxx, please contact our Project Manager, <a href="
+"\"%(project_manager_link)s\">Adam Davison</a>. We accept donations of DJ "
+"equipment which we use to improve both specific and general hardware support "
+"in Mixxx."
 msgstr ""
 
 #: pages/contact.html:27
+#, python-format
 msgid ""
-"<b>For other inquiries</b>, please contact <a href=\"http://www.hep.ucl.ac."
-"uk/~adamd\">Adam Davison</a>."
+"For other inquiries, please contact <a href=\"%(project_manager_link)s"
+"\">Adam Davison</a>."
 msgstr ""
 
 #: pages/contact.html:33
@@ -62,12 +66,13 @@ msgid "Credits"
 msgstr ""
 
 #: pages/contact.html:35
+#, python-format
 msgid ""
-"In 2001, Mixxx was started by <a href=\"http://www.nbi.dk/~kenand/\">Ken</a> "
-"and <a href=\"http://haste.dk/tue/\">Tue</a> Haste Andersen. Today, "
-"development is done by an open source development team from around the "
-"world, led by Adam Davison (Project Manager), RJ Ryan (Lead Developer), S. "
-"Brandt (Lead Artist)."
+"In 2001, Mixxx was started by <a href=\"%(ken_anderson_link)s\">Ken</a> and "
+"<a href=\"%(tue_anderson_link)s\">Tue</a> Haste Andersen. Today, development "
+"is done by an open source development team from around the world, led by "
+"Adam Davison (Project Manager), RJ Ryan (Lead Developer), S. Brandt (Lead "
+"Artist)."
 msgstr ""
 
 #: pages/contact.html:38
@@ -91,13 +96,14 @@ msgid "Past Contributors"
 msgstr ""
 
 #: pages/contact.html:204
+#, python-format
 msgid ""
 "Mixxx also depends on a number of software libraries. Without these, Mixxx "
 "would not be possible, especially as a cross-platform application. Big "
-"thanks to <a href=\"http://qt.io\">Qt</a>, <a href=\"http://www.portaudio.com"
-"\">PortAudio</a>, and <a href=\"http://portmedia.sourceforge.net/"
-"\">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the "
-"many musicians and DJs that have helped in designing Mixxx."
+"thanks to <a href=\"%(qt_link)s\">Qt</a>, <a href=\"%(portaudio_link)s"
+"\">PortAudio</a>, and <a href=\"%(portmidi_link)s\">PortMidi</a> for being "
+"fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs "
+"that have helped in designing Mixxx."
 msgstr ""
 
 #: pages/download.html:5
@@ -109,22 +115,28 @@ msgid "Download Now (Mixxx 1.12 Beta)"
 msgstr ""
 
 #: pages/download.html:40
+#, python-format
 msgid ""
-"The Mixxx team has been working hard for <b>over 2 years</b> on Mixxx 1.12. "
-"We've added hundreds of new features and we need YOUR help testing them. "
-"Check out the <a href=\"http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-"
-"released.html\">release announcement on our blog</a> for a list of the new, "
-"hard-hitting features. Tempted? Try these on for size:"
+"The Mixxx team has been working hard for over 2 years on Mixxx 1.12. We've "
+"added hundreds of new features and we need YOUR help testing them. Check out "
+"the <a href=\"%(mixxx_112_beta_blog_link)s\">release announcement on our "
+"blog</a> for a list of the new, hard-hitting features. Tempted? Try these on "
+"for size:"
 msgstr ""
 
 #: pages/download.html:44
-msgid ""
-"<b>Important:</b> While these builds have been stable in testing they are "
-"not yet recommended for live use unless you are willing to risk a crash. "
-"Looking for the stable release? <a href=\"#stable\">Scroll on down.</a>"
+msgid "Important:"
 msgstr ""
 
-#: pages/download.html:47 pages/download.html.py:106
+#: pages/download.html:44
+#, python-format
+msgid ""
+" While these builds have been stable in testing they are not yet recommended "
+"for live use unless you are willing to risk a crash. Looking for the stable "
+"release? <a href=\"%(stable_link)s\">Scroll on down.</a>"
+msgstr ""
+
+#: pages/download.html:47 pages/download.html.py:107
 msgid "Windows"
 msgstr ""
 
@@ -136,7 +148,7 @@ msgstr ""
 msgid "Mixxx 1.12 Beta (build r5442) for 64-bit Windows"
 msgstr ""
 
-#: pages/download.html:57 pages/download.html.py:125
+#: pages/download.html:57 pages/download.html.py:126
 msgid "Mac OS X"
 msgstr ""
 
@@ -144,15 +156,15 @@ msgstr ""
 msgid "Mixxx 1.12 Beta (build r5442) for Mac OS X 10.5+ (Intel)"
 msgstr ""
 
-#: pages/download.html:63 pages/download.html.py:151
+#: pages/download.html:63 pages/download.html.py:152
 msgid "Ubuntu"
 msgstr ""
 
-#: pages/download.html:65 pages/download.html.py:153
+#: pages/download.html:65 pages/download.html.py:154
 msgid "Open a terminal, and enter:"
 msgstr ""
 
-#: pages/download.html:73
+#: pages/download.html:74
 msgid ""
 "This will install the latest version of Mixxx from the <a href=\"https://"
 "launchpad.net/~mixxx/+archive/mixxxbetas\" onclick=\"javascript:"
@@ -160,106 +172,120 @@ msgid ""
 "Launchpad."
 msgstr ""
 
-#: pages/download.html:78
+#: pages/download.html:79
 msgid "Mixxx 1.12 Beta (build r5442) for 32-bit Ubuntu Trusty (and newer)"
 msgstr ""
 
-#: pages/download.html:82
+#: pages/download.html:83
 msgid "Mixxx 1.12 Beta (build r5442) for 64-bit Ubuntu Trusty (and newer)"
 msgstr ""
 
-#: pages/download.html:84 pages/download.html.py:164
+#: pages/download.html:85 pages/download.html.py:165
 msgid "Linux / Source Code"
 msgstr ""
 
-#: pages/download.html:88
+#: pages/download.html:89
 msgid "Mixxx 1.12 Beta (build r5442) Source Code"
 msgstr ""
 
-#: pages/download.html:91
+#: pages/download.html:92
+#, python-format
 msgid ""
 "The Mixxx source code is made available under the GPL v2. Please check the "
 "LICENSE file in our source tree for complete licensing information. The "
 "latest code from Mixxx's 1.12 development branch is hosted on <a href="
-"\"https://github.com/mixxxdj/mixxx\">GitHub</a>:"
+"\"%(mixxx_github_link)s\">GitHub</a>:"
 msgstr ""
 
-#: pages/download.html:96 pages/download.html.py:178
+#: pages/download.html:97 pages/download.html.py:179
+#, python-format
 msgid ""
-"Compilation instructions are available for <a href=\"/wiki/doku.php/"
-"compiling_on_windows\">Windows</a>, <a href=\"/wiki/doku.php/"
-"compiling_on_os_x\">Mac OS X</a>, and <a href=\"/wiki/doku.php/"
-"compiling_on_linux\">Linux</a>."
-msgstr ""
-
-#: pages/download.html:101
-msgid "Download Now (Mixxx 1.11.0 Stable)"
+"Compilation instructions are available for <a href="
+"\"%(compiling_windows_wiki_link)s\">Windows</a>, <a href="
+"\"%(compiling_osx_wiki_link)s\">Mac OS X</a>, and <a href="
+"\"%(compiling_linux_wiki_link)s\">Linux</a>."
 msgstr ""
 
 #: pages/download.html:102
+msgid "Download Now (Mixxx 1.11.0 Stable)"
+msgstr ""
+
+#: pages/download.html:103
 msgid "Mixxx is available for Windows, Mac OS X, and Linux:"
 msgstr ""
 
-#: pages/download.html:111
+#: pages/download.html:112
 msgid "Download Mixxx 1.11.0 for 32-bit Windows"
 msgstr ""
 
-#: pages/download.html:117
+#: pages/download.html:118
 msgid "Download Mixxx 1.11.0 for 64-bit Windows"
 msgstr ""
 
-#: pages/download.html:121
+#: pages/download.html:122
 #, python-format
 msgid ""
 "AAC playback requires Windows 7 or greater or Windows Vista with a <a href="
 "\"%(platform_update_link)s\">platform update</a>."
 msgstr ""
 
-#: pages/download.html:129
+#: pages/download.html:130
 msgid "Download Mixxx 1.11.0 for Mac OS X 10.5+ (Intel)"
 msgstr ""
 
-#: pages/download.html:134
+#: pages/download.html:135
 msgid "Download Mixxx 1.11.0 for Mac OS X 10.5+ (PPC)"
 msgstr ""
 
-#: pages/download.html:152
+#: pages/download.html:153
 msgid "Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):"
 msgstr ""
 
-#: pages/download.html:161
+#: pages/download.html:160
+#, python-format
 msgid ""
-"<b>Ubuntu Repositories:</b><br/>Ubuntu also provides a version of Mixxx "
-"which can be installed directly from the Ubuntu Software Centre. This "
-"version is usually woefully out of date; therefore using the PPA is "
-"preferable."
+"This will install the latest version of Mixxx from the <a href="
+"\"%(mixxx_ppa_link)s\">Mixxx PPA</a> on Launchpad."
 msgstr ""
 
-#: pages/download.html:168
+#: pages/download.html:162
+msgid "Ubuntu Repositories"
+msgstr ""
+
+#: pages/download.html:162
+msgid ""
+"Ubuntu also provides a version of Mixxx which can be installed directly from "
+"the Ubuntu Software Centre. This version is usually woefully out of date; "
+"therefore using the PPA is preferable."
+msgstr ""
+
+#: pages/download.html:169
 msgid "Download Mixxx 1.11.0 Source Code"
 msgstr ""
 
-#: pages/download.html:173
+#: pages/download.html:174
+#, python-format
 msgid ""
 "The Mixxx source code is made available under the GPL v2. Please check the "
 "LICENSE file in our source tree for complete licensing information. The "
-"latest code from Mixxx's development branch is hosted on <a href=\"https://"
-"github.com/mixxxdj/mixxx\">GitHub</a>:"
+"latest code from Mixxx's development branch is hosted on <a href="
+"\"%(mixxx_github_link)s\">GitHub</a>:"
 msgstr ""
 
-#: pages/download.html:187 pages/support.html:66
+#: pages/download.html:188 pages/support.html:66
 msgid "More software from the Mixxx Developers available at:"
 msgstr ""
 
-#: pages/download.html:191
+#: pages/download.html:192
 msgid "Errata"
 msgstr ""
 
-#: pages/download.html:193
+#: pages/download.html:194
+#, python-format
 msgid ""
 "Source code for the Mac App Store version is available in each release "
-"branch in Git. A <a href=\"http://downloads.mixxx.org/mess/mixxx-1.9.1-"
-"macintel-appstore.dmg\">corresponding binary</a> is also available."
+"branch in Git. A <a href=\"%(mixxx_191_appstore_link)s\">corresponding "
+"binary</a> is also available."
 msgstr ""
 
 #: pages/error.html:8
@@ -270,7 +296,7 @@ msgstr ""
 msgid "The page <b id=\"url\"></b> couldn't be found."
 msgstr ""
 
-#: pages/features.html:5
+#: pages/features.html:5 templates/footer.html:26
 msgid "Features"
 msgstr ""
 
@@ -457,10 +483,11 @@ msgid "Shoutcast Broadcasting"
 msgstr ""
 
 #: pages/features.html:131
+#, python-format
 msgid ""
 "Stream your mixes live over the internet to your audience and friends "
-"through a Shoutcast or Icecast server. <a href=\"/wiki/doku.php/"
-"internet_broadcasting\">Read more"
+"through a Shoutcast or Icecast server. <a href=\"%(broadcasting_wiki_link)s"
+"\">Read more"
 msgstr ""
 
 #: pages/features.html:138
@@ -493,10 +520,11 @@ msgid "MIDI Controller Support"
 msgstr ""
 
 #: pages/features.html:161
+#, python-format
 msgid ""
 "<b>Over 30 controllers supported</b><br> including the Hercules RMX, Numark "
-"Mixtrack, Vestax Spin and Typhoon, Stanton SCS.3d, and many more. <a href=\"/"
-"wiki/doku.php/hardware_compatibility\">Read more"
+"Mixtrack, Vestax Spin and Typhoon, Stanton SCS.3d, and many more. <a href="
+"\"%(hardware_compatibility_wiki_link)s\">Read more"
 msgstr ""
 
 #: pages/features.html:164
@@ -504,10 +532,11 @@ msgid "Advanced MIDI Scripting Engine"
 msgstr ""
 
 #: pages/features.html:165
+#, python-format
 msgid ""
 "Mixxx features a cutting-edge JavaScript-based scripting engine for maximum "
 "flexibility. MIDI messages can be mapped onto custom functions which execute "
-"complex behaviour. <a href=\"/wiki/doku.php/midi_scripting\">Read more</a>"
+"complex behaviour. <a href=\"%(midi_scripting_wiki_link)s\">Read more</a>"
 msgstr ""
 
 #: pages/features.html:174
@@ -526,10 +555,11 @@ msgid ""
 msgstr ""
 
 #: pages/features.html:182
+#, python-format
 msgid ""
 "Serato and Traktor Scratch 1 timecodes are supported with absolute "
 "positioning, needle cueing, and end-of-record detection. Mixxx even works "
-"with the soundcard you already have! <a href=\"/wiki/doku.php/vinyl_control"
+"with the soundcard you already have! <a href=\"%(vinyl_control_wiki_link)s"
 "\">Read more</a>"
 msgstr ""
 
@@ -634,7 +664,7 @@ msgid "Multichannel soundcard support (playback and capture)"
 msgstr ""
 
 #: pages/features.html:222
-msgid "Headphone cueing with multiple soundcard support<"
+msgid "Headphone cueing with multiple soundcard support"
 msgstr ""
 
 #: pages/features.html:223
@@ -690,8 +720,9 @@ msgid "Community Supported<br>MIDI Controllers"
 msgstr ""
 
 #: pages/features.html:312
+#, python-format
 msgid ""
-"... and more! See our <a href=\"/wiki/doku.php/hardware_compatibility"
+"... and more! See our <a href=\"%(hardware_compatibility_wiki_link)s"
 "\">Hardware Compatibility</a> page."
 msgstr ""
 
@@ -745,8 +776,8 @@ msgstr ""
 
 #: pages/features.html:333
 msgid ""
-"... and more! See our <a href=\"https://translations.launchpad.net/mixxx"
-"\">Translation overview</a> page."
+"... and more! See our <a href="
+"\"{{ com_transifex_mixxxdj_link }\">Translation overview</a> page."
 msgstr ""
 
 #: pages/features.html:339
@@ -774,6 +805,7 @@ msgid "Read more..."
 msgstr ""
 
 #: pages/get-involved.html:5 pages/get-involved.html.py:13
+#: templates/footer.html:28
 msgid "Get Involved"
 msgstr ""
 
@@ -786,12 +818,13 @@ msgid "Software Developers"
 msgstr ""
 
 #: pages/get-involved.html:17
+#, python-format
 msgid ""
-"Mixxx is written in C++ and uses the <a href=\"http://www.qt.io\">Qt</a> "
-"platform library for most data structures, graphics drawing, and window "
-"handling. Fortunately, Qt is easy to use and very well documented, <b>so you "
-"don't need any prior Qt or audio programming experience to start hacking on "
-"Mixxx</b>."
+"Mixxx is written in C++ and uses the <a href=\"%(qt_link)s\">Qt</a> platform "
+"library for most data structures, graphics drawing, and window handling. "
+"Fortunately, Qt is easy to use and very well documented, <b>so you don't "
+"need any prior Qt or audio programming experience to start hacking on Mixxx</"
+"b>."
 msgstr ""
 
 #: pages/get-involved.html:21
@@ -807,28 +840,31 @@ msgid "Start Developing Now"
 msgstr ""
 
 #: pages/get-involved.html:30
+#, python-format
 msgid ""
-"Get a <a href=\"https://github.com\">Github</a> account and <a href=\"/wiki/"
-"doku.php/using_git\">fork your own branch</a>!"
+"Get a <a href=\"%(com_github_link)s\">Github</a> account and <a href="
+"\"%(using_git_wiki_link)s \">fork your own branch</a>!"
 msgstr ""
 
 #: pages/get-involved.html:35
+#, python-format
 msgid ""
-"Pick a bug off our <a href=\"https://bugs.launchpad.net/mixxx/+bugs?field."
-"tag=easy\">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name "
-"will be in the <a href=\"/contact/\">Mixxx credits</a>!"
+"Pick a bug off our <a href=\"%(easy_bug_list_link)s \">Easy Bugs List</a> "
+"and start hacking!<br><br> Fixed it? Your name will be in the <a href="
+"\"%(mixxx_contakt_link)s\">Mixxx credits</a>!"
 msgstr ""
 
 #: pages/get-involved.html:40
+#, python-format
 msgid ""
 "When you're stuck, get help from our existing developers our IRC channel: "
-"#mixxx on <a href=\"http://www.freenode.net\">Freenode</a>"
+"#mixxx on <a href=\"%(irc_channel_link)s\">Freenode</a>"
 msgstr ""
 
 #: pages/get-involved.html:45
+#, python-format
 msgid ""
-"Join our mailing list: <a href=\"https://lists.sourceforge.net/lists/"
-"listinfo/mixxx-devel\">mixxx-devel</a>"
+"Join our mailing list: <a href=\"%(mailing_list_link)s\">mixxx-devel</a>"
 msgstr ""
 
 #: pages/get-involved.html:50
@@ -841,6 +877,10 @@ msgstr ""
 msgid "Development Cycle in a Nutshell"
 msgstr ""
 
+#: pages/get-involved.html:60
+msgid "Mixxx Development Cycle"
+msgstr ""
+
 #: pages/get-involved.html:65
 msgid "DJs"
 msgstr ""
@@ -850,45 +890,53 @@ msgid "There are many ways to help out as a DJ:"
 msgstr ""
 
 #: pages/get-involved.html:70
+#, python-format
 msgid ""
-"<a href=\"/wiki/doku.php/midi_controller_mapping_file_format\">Create or "
-"improve MIDI mappings</a> for your controller"
+"<a href=\"%(midi_file_format_wiki_link)s\">Create or improve MIDI mappings</"
+"a> for your controller."
 msgstr ""
 
 #: pages/get-involved.html:75
-msgid ""
-"<a href=\"http://bugs.launchpad.net/mixxx\">Report bugs</a> as you find them."
+#, python-format
+msgid "<a href=\"%(bug_tracker_link)s\">Report bugs</a> as you find them."
 msgstr ""
 
 #: pages/get-involved.html:80
-msgid "Help keep our <a href=\"/wiki\">Wiki</a> up-to-date."
+#, python-format
+msgid "Help keep our <a href=\"%(mixxx_wiki_link)s\">Wiki</a> up-to-date."
 msgstr ""
 
-#: pages/get-involved.html:83
+#: pages/get-involved.html:84
+#, python-format
 msgid ""
-"Answer questions on the <a href=\"/forums/viewforum.php?"
-"f=3\">Troubleshooting Forum</a> and our <a href=\"https://answers.launchpad."
-"net/mixxx\">Launchpad Answers page</a>."
+"Answer questions on the <a href=\"%(troubleshooting_forum_link)s"
+"\">Troubleshooting Forum</a> and our <a href=\"%(net_launchpad_answers_link)s"
+"\">Launchpad Answers page</a>."
 msgstr ""
 
-#: pages/get-involved.html:88
+#: pages/get-involved.html:89
+msgid "Promote Mixxx:"
+msgstr ""
+
+#: pages/get-involved.html:89
 msgid ""
-"<b>Promote Mixxx:</b> Write an article about how you use Mixxx for your "
-"blog, or mention us when new releases come out. Any exposure on the web and "
-"in print helps our project grow, and is much appreciated!"
+"Write an article about how you use Mixxx for your blog, or mention us when "
+"new releases come out. Any exposure on the web and in print helps our "
+"project grow, and is much appreciated!"
 msgstr ""
 
-#: pages/get-involved.html:93
+#: pages/get-involved.html:94
+#, python-format
 msgid ""
-"<a href=\"/forums/viewtopic.php?f=5&t=1025\">Post some photos</a> of you "
-"using Mixxx at a gig!"
+"<a href=\"%(photos_phorum_link)s\">Post some photos</a> of you using Mixxx "
+"at a gig!"
 msgstr ""
 
-#: pages/get-involved.html:101
+#: pages/get-involved.html:102
 msgid "Translators"
 msgstr ""
 
-#: pages/get-involved.html:103
+#: pages/get-involved.html:104
 msgid ""
 "We're pleased to offer Mixxx in many languages. Our translations are "
 "<b>entirely</b> community provided, so we need your help to spread Mixxx "
@@ -896,22 +944,24 @@ msgid ""
 "accuracy of existing translations."
 msgstr ""
 
-#: pages/get-involved.html:106
+#: pages/get-involved.html:107
+#, python-format
 msgid ""
-"You can help translate by visiting our <a href=\"https://www.transifex.com/"
-"projects/p/mixxxdj/\">translations page</a>. To get help when translating, "
-"visit the <a href=\"/forums/viewforum.php?f=10\">Mixxx Localization forum</"
-"a>."
+"You can help translate by visiting our <a href="
+"\"%(com_transifex_mixxxdj_link)s\">translations page</a>. To get help when "
+"translating, visit the <a href=\"%(i18n_forum_link)s\">Mixxx Localization "
+"forum</a>."
 msgstr ""
 
-#: pages/get-involved.html:111
+#: pages/get-involved.html:112
 msgid "Graphic Artists"
 msgstr ""
 
-#: pages/get-involved.html:115
+#: pages/get-involved.html:116
+#, python-format
 msgid ""
-"<a href=\"/wiki/doku.php/creating_skins\">Make skins</a> and share them on "
-"<a href=\"/forums/viewforum.php?f=8\">our forum</a>"
+"<a href=\"%(creating_skins_wiki_link)s\">Make skins</a> and share them on <a "
+"href=\"%(skins_forum_link=)s\">our forum</a>."
 msgstr ""
 
 #: pages/index.html:5
@@ -1062,7 +1112,7 @@ msgstr ""
 msgid "In the meantime, check out some other open source projects we love:"
 msgstr ""
 
-#: pages/press.html:5 pages/press.html.py:9
+#: pages/press.html:5 pages/press.html.py:9 templates/footer.html:38
 msgid "Press"
 msgstr ""
 
@@ -1101,13 +1151,14 @@ msgid ""
 msgstr ""
 
 #: pages/press.html:29
+#, python-format
 msgid ""
-"Mixxx also participated in <a href=\"http://code.google.com/soc/\">Google "
-"Summer of Code</a> in 2007, 2008, 2010, 2011, 2012, and 2013. Google Summer "
-"of Code is a program that provides college students with a stipend over the "
-"summer to work on open source projects. Mentors from Mixxx introduced "
-"students to open source software development and helped them gain experience "
-"working with multi-threaded, real-time multimedia software."
+"Mixxx also participated in <a href=\"%(gsoc_link)s\">Google Summer of Code</"
+"a> in 2007, 2008, 2010, 2011, 2012, and 2013. Google Summer of Code is a "
+"program that provides college students with a stipend over the summer to "
+"work on open source projects. Mentors from Mixxx introduced students to open "
+"source software development and helped them gain experience working with "
+"multi-threaded, real-time multimedia software."
 msgstr ""
 
 #: pages/press.html:32
@@ -1140,9 +1191,10 @@ msgid "Interviews"
 msgstr ""
 
 #: pages/press.html:44
+#, python-format
 msgid ""
-"Please contact our project manager, <a href=\"mailto:adamd@mixxx.org\">Adam "
-"Davison</a> for interviews. We won't bite, we promise."
+"Please contact our project manager, <a href=\"%(project_manager_mail_link)s"
+"\">Adam Davison</a> for interviews. We won't bite, we promise."
 msgstr ""
 
 #: pages/press.html:47
@@ -1193,7 +1245,7 @@ msgid ""
 "(G4TV)"
 msgstr ""
 
-#: pages/support.html:5
+#: pages/support.html:5 templates/footer.html:27
 msgid "Support"
 msgstr ""
 
@@ -1206,10 +1258,12 @@ msgid "Wiki / FAQ"
 msgstr ""
 
 #: pages/support.html:19
+#, python-format
 msgid ""
-"The <a href=\"/wiki/\">Mixxx Wiki</a> and <a href=\"/wiki/doku.php/faq"
-"\">FAQ</a> are the best places to start for <b>documentation and support</"
-"b>. They contain useful documentation for both users and developers."
+"The <a href=\"%(mixxx_wiki_link)s\">Mixxx Wiki</a> and <a href="
+"\"%(mixxx_faq_link)s\">FAQ</a> are the best places to start for "
+"<b>documentation and support</b>. They contain useful documentation for both "
+"users and developers."
 msgstr ""
 
 #: pages/support.html:24
@@ -1217,11 +1271,12 @@ msgid "User Manual"
 msgstr ""
 
 #: pages/support.html:26
+#, python-format
 msgid ""
-"The <a href=\"/manual/latest\">Mixxx Manual</a> provides an overview of "
-"Mixxx's user interface, information about <b>configuration</b> and hardware, "
-"and much more. It also contains useful information for <b>beginners</b> "
-"under <a href=\"/manual/latest/chapters/djing_with_mixxx.html\">DJing with "
+"The <a href=\"%(manual_latest_link)s\">Mixxx Manual</a> provides an overview "
+"of Mixxx's user interface, information about <b>configuration</b> and "
+"hardware, and much more. It also contains useful information for "
+"<b>beginners</b> under <a href=\"%(manual_beginner_link)s\">DJing with "
 "Mixxx</a>."
 msgstr ""
 
@@ -1230,9 +1285,10 @@ msgid "Community Forums"
 msgstr ""
 
 #: pages/support.html:34
+#, python-format
 msgid ""
 "Have a Mixxx-related question? Something other DJs can help you with? Ask in "
-"the <a href=\"/forums\">Mixxx Community Forums</a>."
+"the <a href=\"%(forums_link)s\">Mixxx Community Forums</a>."
 msgstr ""
 
 #: pages/support.html:39
@@ -1240,21 +1296,23 @@ msgid "Developer Mailing List"
 msgstr ""
 
 #: pages/support.html:41
+#, python-format
 msgid ""
-"The <a href=\"https://lists.sourceforge.net/lists/listinfo/mixxx-devel"
-"\">mixxx-devel</a>  developer mailing list (<a href=\"http://sourceforge.net/"
-"mailarchive/forum.php?forum=mixxx-devel\">SF</a> and <a href=\"http://news."
-"gmane.org/gmane.comp.multimedia.mixxx.devel\">Gmane</a> archives) is the "
-"primary means of developer communication.  The mailing list is where the "
-"Mixxx team discusses upcoming changes and programming related stuff."
+"The <a href=\"%(mailing_list_link)s \">mixxx-devel</a> developer mailing "
+"list (<a href=\"%(sourceforge_archive_link)s\">SourceForge</a> and <a href="
+"\"%(gmane_archive_link)s\">Gmane</a> archives) is the primary means of "
+"developer communication.  The mailing list is where the Mixxx team discusses "
+"upcoming changes and programming related stuff."
 msgstr ""
 
 #: pages/support.html:50
+#, python-format
 msgid ""
-"The Mixxx IRC channel (<b>#mixxx</b> on <a href=\"http://www.freenode.net"
+"The Mixxx IRC channel (<b>#mixxx</b> on <a href=\"%(irc_channel_link)s"
 "\">Freenode</a>) can be used for support too. If you don't need support, the "
 "IRC channel is still a fun place to hang out with the developers and meet "
-"some fellow DJs. <a href=\"/irc\">Click here</a> to chat via a web client."
+"some fellow DJs. <a href=\"%(irc_web_client_link)s \">Click here</a> to chat "
+"via a web client."
 msgstr ""
 
 #: pages/support.html:55
@@ -1262,10 +1320,11 @@ msgid "Bug Tracker"
 msgstr ""
 
 #: pages/support.html:57
+#, python-format
 msgid ""
-"Please report any bugs you find to our <a href=\"https://bugs.launchpad.net/"
-"mixxx/\">Bug Tracker</a>. The bug tracker gives us a centralized place to "
-"pool our information on bugs, and prevents us from getting disorganized and "
+"Please report any bugs you find to our <a href=\" %(bug_tracker_link)s\">Bug "
+"Tracker</a>. The bug tracker gives us a centralized place to pool our "
+"information on bugs, and prevents us from getting disorganized and "
 "forgetting about them."
 msgstr ""
 
@@ -1531,6 +1590,34 @@ msgid ""
 "Download the most advanced FREE DJ software available, featuring iTunes "
 "integration, MIDI controller support, internet broadcasting, and integrated "
 "music library."
+msgstr ""
+
+#: templates/footer.html:2
+msgid "Spread the Word"
+msgstr ""
+
+#: templates/footer.html:24
+msgid "Pages"
+msgstr ""
+
+#: templates/footer.html:31
+msgid "Community"
+msgstr ""
+
+#: templates/footer.html:32
+msgid "Forums"
+msgstr ""
+
+#: templates/footer.html:33
+msgid "Wiki"
+msgstr ""
+
+#: templates/footer.html:34
+msgid "Blog"
+msgstr ""
+
+#: templates/footer.html:42
+msgid "Partners"
 msgstr ""
 
 #: templates/navbar.html:8

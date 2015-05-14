@@ -14,7 +14,7 @@
   <div class="halfbox_left">
     <H2>{% trans "Software Developers" %}</H2>
     <p>
-      {% blocktrans %}Mixxx is written in C++ and uses the <a href="http://www.qt.io">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endblocktrans %}
+      {% blocktrans with qt_link="http://www.qt.io" %}Mixxx is written in C++ and uses the <a href="{{ qt_link }}">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endblocktrans %}
     </p>
 
     <p>
@@ -27,22 +27,22 @@
     <ul>
       <li>
         <p>
-          {% blocktrans %}Get a <a href="https://github.com">Github</a> account and <a href="/wiki/doku.php/using_git">fork your own branch</a>!{% endblocktrans %}
+          {% blocktrans with com_github_link="https://github.com" using_git_wiki_link="/wiki/doku.php/using_git" %}Get a <a href="{{ com_github_link }}">Github</a> account and <a href="{{ using_git_wiki_link }} ">fork your own branch</a>!{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}Pick a bug off our <a href="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="/contact/">Mixxx credits</a>!{% endblocktrans %}
+          {% blocktrans with easy_bug_list_link="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy" mixxx_contakt_link="/contact/" %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_contakt_link }}">Mixxx credits</a>!{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="http://www.freenode.net">Freenode</a>{% endblocktrans %}
+          {% blocktrans with irc_channel_link="http://www.freenode.net" %}When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="{{ irc_channel_link }}">Freenode</a>{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}Join our mailing list: <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a>{% endblocktrans %}
+          {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" %}Join our mailing list: <a href="{{ mailing_list_link }}">mixxx-devel</a>{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -57,7 +57,7 @@
 
   <div class="gapfiller">
     <H3>{% trans "Development Cycle in a Nutshell" %}</H3>
-    <img src="{% static '/static/images/developmentcycle.png' %}" alt="Mixxx Development Cycle">
+    <img src="{% static '/static/images/developmentcycle.png' %}" alt="{% trans "Mixxx Development Cycle" %}">
   </div>
 
   <div class="halfbox_left">
@@ -67,30 +67,31 @@
     <ul>
       <li>
         <p>
-          {% blocktrans %}<a href="/wiki/doku.php/midi_controller_mapping_file_format">Create or improve MIDI mappings</a> for your controller{% endblocktrans %}
+          {% blocktrans with midi_file_format_wiki_link="/wiki/doku.php/midi_controller_mapping_file_format" %}<a href="{{ midi_file_format_wiki_link }}">Create or improve MIDI mappings</a> for your controller.{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}<a href="http://bugs.launchpad.net/mixxx">Report bugs</a> as you find them.{% endblocktrans %}
+          {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}Help keep our <a href="/wiki">Wiki</a> up-to-date.{% endblocktrans %}
+          {% blocktrans with mixxx_wiki_link="/wiki/" %}Help keep our <a href="{{ mixxx_wiki_link }}">Wiki</a> up-to-date.{% endblocktrans %}
         </p>
-      </li>   <p>
-          {% blocktrans %}Answer questions on the <a href="/forums/viewforum.php?f=3">Troubleshooting Forum</a> and our <a href="https://answers.launchpad.net/mixxx">Launchpad Answers page</a>.{% endblocktrans %}
+      </li>
+        <p>
+          {% blocktrans with troubleshooting_forum_link="/forums/viewforum.php?f=3" net_launchpad_answers_link="https://answers.launchpad.net/mixxx" %}Answer questions on the <a href="{{ troubleshooting_forum_link }}">Troubleshooting Forum</a> and our <a href="{{ net_launchpad_answers_link }}">Launchpad Answers page</a>.{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}<b>Promote Mixxx:</b> Write an article about how you use Mixxx for your blog, or mention us when new releases come out. Any exposure on the web and in print helps our project grow, and is much appreciated!{% endblocktrans %}
+          <b>{% trans "Promote Mixxx:" %} </b>{% blocktrans %}Write an article about how you use Mixxx for your blog, or mention us when new releases come out. Any exposure on the web and in print helps our project grow, and is much appreciated!{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans %}<a href="/forums/viewtopic.php?f=5&t=1025">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
+          {% blocktrans with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}<a href="{{ photos_phorum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
         </p>
       </li>
     </ul>
@@ -100,10 +101,10 @@
   <div class="halfbox_right">
     <H2>{% trans "Translators" %}</H2>
     <p>
-      {% blocktrans %}We're pleased to offer Mixxx in many languages. Our translations are <b>entirely</b> community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endblocktrans %}
+      {% blocktrans %}We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endblocktrans %}
     </p>
     <p>
-      {% blocktrans %}You can help translate by visiting our <a href="https://www.transifex.com/projects/p/mixxxdj/">translations page</a>. To get help when translating, visit the <a href="/forums/viewforum.php?f=10">Mixxx Localization forum</a>.{% endblocktrans %}
+      {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" i18n_forum_link="/forums/viewforum.php?f=10" %}You can help translate by visiting our <a href="{{ com_transifex_mixxxdj_link }}">translations page</a>. To get help when translating, visit the <a href="{{ i18n_forum_link }}">Mixxx Localization forum</a>.{% endblocktrans %}
     </p>
   </div>
 
@@ -112,7 +113,7 @@
     <ul>
       <li>
         <p>
-          {% blocktrans %}<a href="/wiki/doku.php/creating_skins">Make skins</a> and share them on <a href="/forums/viewforum.php?f=8">our forum</a>{% endblocktrans %}
+          {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link= }}">our forum</a>.{% endblocktrans %}
         </p>
       </li>
     </ul>
