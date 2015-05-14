@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 10:16-0400\n"
+"POT-Creation-Date: 2015-05-14 10:17-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -550,7 +550,7 @@ msgid "Cross-platform (Windows XP/Vista/7/8, Mac OS X, Linux)"
 msgstr ""
 
 #: pages/features.html:201
-msgid "Free and open source (GPL v2"
+msgid "Free and open source (GPL v2)"
 msgstr ""
 
 #: pages/features.html:202
