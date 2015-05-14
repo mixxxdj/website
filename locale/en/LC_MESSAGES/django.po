@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 15:59+0200\n"
+"POT-Creation-Date: 2015-05-14 10:14-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -975,69 +975,68 @@ msgid "Read more"
 msgstr ""
 
 #: pages/index.html:108
+#, python-format
 msgid ""
-"See <a href=\"/features\">dozens more features</a> or start downloading "
-"Mixxx for FREE now:"
+"See <a href=\"%(features_link)s\">dozens more features</a> or start "
+"downloading Mixxx for FREE now:"
 msgstr ""
 
-#: pages/index.html:113
+#: pages/index.html:112
 msgid "And It Just Keeps Getting Better"
 msgstr ""
 
-#: pages/index.html:115
+#: pages/index.html:114
 msgid ""
 "Each year, a community of DJs, programmers, and artists contribute dozens of "
 "new features to Mixxx. <br> <b>And it doesn't cost you a dime.</b>"
 msgstr ""
 
-#: pages/index.html:119
+#: pages/index.html:118
 msgid ""
 "Because Mixxx is <b>open source</b>, anyone can remix or add new features to "
 "it. And that includes you!"
 msgstr ""
 
-#: pages/index.html:123
+#: pages/index.html:122
+#, python-format
 msgid ""
-"You can get involved with Mixxx today by <a href=\"/get-involved#developers"
-"\">creating your own branch</a>, <a href=\"/get-involved#translators"
-"\">helping with translations</a>, or working on one of our other <a href=\"/"
-"get-involved\">starter tasks</a>."
+"You can get involved with Mixxx today by <a href=\"%(create_a_branch_link)s"
+"\">creating your own branch</a>, <a href=\"%(help_with_translations_link)s"
+"\">helping with translations</a>, or working on one of our other <a href="
+"\"%(starter_tasks_link)s\">starter tasks</a>."
 msgstr ""
 
-#: pages/index.html:130
+#: pages/index.html:129
 msgid "#1 Top Free Mac App Worldwide"
 msgstr ""
 
-#: pages/index.html:132 pages/index.html.py:149
+#: pages/index.html:131 pages/index.html.py:148
 msgid "February 2011"
 msgstr ""
 
-#: pages/index.html:141
+#: pages/index.html:140
 msgid "Free Pick of the Month"
 msgstr ""
 
-#: pages/index.html:142
+#: pages/index.html:141
 msgid "September 2007"
 msgstr ""
 
-#: pages/index.html:148
+#: pages/index.html:147
 msgid "\"The coolest open source<br>application ever?\""
 msgstr ""
 
-#: pages/index.html:155
+#: pages/index.html:154
 msgid "If you like Mixxx..."
 msgstr ""
 
-#: pages/index.html:159
+#: pages/index.html:158
+#, python-format
 msgid ""
-"The developers of Mixxx at <a href=\"http://www.oscillicious.com/?"
-"utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"
-"\">Oscillicious Audio Labs</a> have been working hard on <a href=\"http://"
-"www.oscillicious.com/beatcleaver/sampling-for-mixxx?"
-"utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"
-"\">BeatCleaver</a> and <a href=\"http://www.jamdeck.net/?"
-"utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"
-"\">JamDeck</a>, check them out!"
+"The developers of Mixxx at <a href=\"%(oscillicious_link)s\">Oscillicious "
+"Audio Labs</a> have been working hard on <a href=\"%(beatcleaver_link)s"
+"\">BeatCleaver</a> and <a href=\"%(jamdeck_link)s\">JamDeck</a>, check them "
+"out!"
 msgstr ""
 
 #: pages/irc.html:9 pages/support.html:48

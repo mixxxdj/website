@@ -105,8 +105,7 @@
   <div class="gapfiller" style="height: 57px;">
     {% include "download_button.html" %}
     <p style="text-align: center;">
-      {% blocktrans %}See <a href="/features">dozens more features</a> or start downloading Mixxx for FREE now:{% endblocktrans %}
-
+      {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for FREE now:{% endblocktrans %}
     </p>
   </div>
 
@@ -120,7 +119,7 @@
   </p>
 
   <p>
-    {% blocktrans %}You can get involved with Mixxx today by <a href="/get-involved#developers">creating your own branch</a>, <a href="/get-involved#translators">helping with translations</a>, or working on one of our other <a href="/get-involved">starter tasks</a>.{% endblocktrans %}
+    {% blocktrans with create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved" %}You can get involved with Mixxx today by <a href="{{ create_a_branch_link }}">creating your own branch</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
   </p>
 
   <div id="achievements">
@@ -156,7 +155,7 @@
   <div style="float: right;">
     <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"><img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
   </div>
-  <p>{% blocktrans %}The developers of Mixxx at <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">Oscillicious Audio Labs</a> have been working hard on <a href="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">BeatCleaver</a> and <a href="http://www.jamdeck.net/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx">JamDeck</a>, check them out!{% endblocktrans %}
+  <p>{% blocktrans with oscillicious_link="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx" beatcleaver_link="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx" jamdeck_link="http://www.jamdeck.net/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx" %}The developers of Mixxx at <a href="{{ oscillicious_link }}">Oscillicious Audio Labs</a> have been working hard on <a href="{{ beatcleaver_link }}">BeatCleaver</a> and <a href="{{ jamdeck_link }}">JamDeck</a>, check them out!{% endblocktrans %}
   </p>
   <div style="clear: both;"></div>
 
