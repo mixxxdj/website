@@ -118,7 +118,7 @@ $(document).ready(function() {
     </p>
 
     <br>
-    <p><small>{% trans "AAC playback requires Windows 7 or greater." %}</small></p>
+    <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
   </div>
 
   <div class="halfbox_right darkborder macbox">

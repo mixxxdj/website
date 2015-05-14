@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 10:14-0400\n"
+"POT-Creation-Date: 2015-05-14 10:16-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,7 +209,10 @@ msgid "Download Mixxx 1.11.0 for 64-bit Windows"
 msgstr ""
 
 #: pages/download.html:121
-msgid "AAC playback requires Windows 7 or greater."
+#, python-format
+msgid ""
+"AAC playback requires Windows 7 or greater or Windows Vista with a <a href="
+"\"%(platform_update_link)s\">platform update</a>."
 msgstr ""
 
 #: pages/download.html:129
