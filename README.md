@@ -21,6 +21,19 @@ directory. To stand up a development server to test out your change, type:
 You can then visit ```http://127.0.0.1:8000``` to see your development version
 of the site.
 
+## Documentation
+
+Cactus uses [Django][djangoproject]'s templates for rendering pages.
+
+The main templates are stored in the ```templates/``` folder. Leaf pages are
+stored in ```pages/```. If there is a snippet of code you want to use in
+multiple places on the site, place it in the ```templates/``` folder -- for
+example [templates/download_button.html][download_button.html].
+
+* [Django template language][django_templates]
+* [template internationalization][django_template_i18n]
+* [Cactus documentation][cactus_docs] (not super useful)
+
 ## Internationalization / Translation
 
 All strings wrapped with ```{% trans 'Hello World' %}``` are flagged for
@@ -29,3 +42,8 @@ them in a ```{% trans 'Hello World' %}``` block.
 
 [mixxx.org]: http://mixxx.org/
 [cactus]: https://www.staticgen.com/cactus
+[cactus_docs]: http://cactusformac.com/docs/
+[django]: http://djangoproject.com/
+[django_templates]: https://docs.djangoproject.com/en/1.8/ref/templates/language/
+[django_template_i18n]: https://docs.djangoproject.com/en/1.8/topics/i18n/translation/#internationalization-in-template-code
+[download_button.html]: https://github.com/mixxxdj/website/blob/website/templates/download_button.html
