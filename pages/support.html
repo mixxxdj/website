@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}Support{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Support" %}{% endblock %}
 
 {% block body %}
 <div class="content">
@@ -8,72 +10,51 @@
     <center>{% include "donate_paypal.html" %}</center>
   </div>
 
-  <H1>Community Support</H1>
+  <H1>{% trans "Community Support" %}</H1>
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2>Wiki / FAQ</H2>
+    <H2>{% trans "Wiki / FAQ" %}</H2>
     <p>
-      The <a href="/wiki/">Mixxx Wiki</a>
-      and <a href="/wiki/doku.php/faq">FAQ</a> are the best places to start
-      for <b>documentation and support</b>. They contain useful documentation
-      for both users and developers.
+      {% blocktrans %}The <a href="/wiki/">Mixxx Wiki</a> and <a href="/wiki/doku.php/faq">FAQ</a> are the best places to start for <b>documentation and support</b>. They contain useful documentation for both users and developers.{% endblocktrans %}
     </p>
-  </div>
+  </div>{
 
   <div class="halfbox_right">
-    <H2>User Manual</H2>
+    <H2>{% trans "User Manual" %}</H2>
     <p>
-      The <a href="/manual/latest">Mixxx Manual</a> provides an overview of
-      Mixxx's user interface, information about <b>configuration</b> and
-      hardware, and much more. It also contains useful information
-      for <b>beginners</b>
-      under <a href="/manual/latest/chapters/djing_with_mixxx.html">DJing with
-      Mixxx</a>.
+      {% blocktrans %}The <a href="/manual/latest">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about <b>configuration</b> and hardware, and much more. It also contains useful information for <b>beginners</b> under <a href="/manual/latest/chapters/djing_with_mixxx.html">DJing with Mixxx</a>.{% endblocktrans %}
     </p>
   </div>
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <h2>Community Forums</h2>
+    <h2>{% trans "Community Forums" %}</h2>
     <p>
-      Have a Mixxx-related question? Something other DJs can help you with? Ask
-      in the <a href="/forums">Mixxx Community Forums</a>.
+      {% blocktrans %}Have a Mixxx-related question? Something other DJs can help you with? Ask in the <a href="/forums">Mixxx Community Forums</a>.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <h2>Developer Mailing List</h2>
+    <h2>{% trans "Developer Mailing List" %}</h2>
     <p>
-      The <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a>
-      developer mailing list
-      (<a href="http://sourceforge.net/mailarchive/forum.php?forum=mixxx-devel">SF</a>
-      and <a href="http://news.gmane.org/gmane.comp.multimedia.mixxx.devel">Gmane</a>
-      archives) is the primary means of developer communication.  The mailing
-      list is where the Mixxx team discusses upcoming changes and programming
-      related stuff.
+      {% blocktrans %}The <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">mixxx-devel</a>  developer mailing list (<a href="http://sourceforge.net/mailarchive/forum.php?forum=mixxx-devel">SF</a> and <a href="http://news.gmane.org/gmane.comp.multimedia.mixxx.devel">Gmane</a> archives) is the primary means of developer communication.  The mailing list is where the Mixxx team discusses upcoming changes and programming related stuff.{% endblocktrans %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <h2>IRC Channel</h2>
+    <h2>{% trans "IRC Channel" %}</h2>
     <p>
-      The Mixxx IRC channel (<b>#mixxx</b>
-      on <a href="http://www.freenode.net">Freenode</a>) can be used for support
-      too. If you don't need support, the IRC channel is still a fun place to
-      hang out with the developers and meet some fellow
-      DJs. <a href="/irc">Click here</a> to chat via a web client.
+      {% blocktrans %}The Mixxx IRC channel (<b>#mixxx</b> on <a href="http://www.freenode.net">Freenode</a>) can be used for support too. If you don't need support, the IRC channel is still a fun place to hang out with the developers and meet some fellow DJs. <a href="/irc">Click here</a> to chat via a web client.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <h2>Bug Tracker</h2>
+    <h2>{% trans "Bug Tracker" %}</h2>
     <p>
-      Please report any bugs you find to our <a href="https://bugs.launchpad.net/mixxx/">Bug Tracker</a>. The bug tracker
-      gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and
-      forgetting about them.
+      {% blocktrans %}Please report any bugs you find to our <a href="https://bugs.launchpad.net/mixxx/">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
     </p>
   </div>
   <div style="clear: both;"></div>
@@ -82,7 +63,7 @@
     <div style="float: right;" >
       <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=support_moresoftware&utm_campaign=mixxx"><img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
     </div>
-    <p style="text-align: center;">More software from the Mixxx Developers available at:</p>
+    <p style="text-align: center;">{% trans "More software from the Mixxx Developers available at:" %}</p>
     <div style="clear: both;"></div>
   </div>
 </div>

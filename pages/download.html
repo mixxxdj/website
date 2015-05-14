@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}Download the Best Free MP3 DJ Mixing Software{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Download the Best Free MP3 DJ Mixing Software" %}{% endblock %}
 
 {% block extra_script %}
 <script type="text/javascript">
@@ -32,43 +34,35 @@ $(document).ready(function() {
   </div>
 
   <a name="beta"></a>
-  <H1>Download Now (Mixxx 1.12 Beta)</H1>
+  <H1>{% trans "Download Now (Mixxx 1.12 Beta)" %}</H1>
   <div style="padding: 20px;">
     <p>
-      The Mixxx team has been working hard for <b>over 2 years</b> on Mixxx
-      1.12. We've added hundreds of new features and we need YOUR help testing
-      them. Check out
-      the <a href="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html">release
-      announcement on our blog</a> for a list of the new, hard-hitting
-      features. Tempted? Try these on for size:
+      {% blocktrans %}The Mixxx team has been working hard for <b>over 2 years</b> on Mixxx 1.12. We've added hundreds of new features and we need YOUR help testing them. Check out the <a href="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html">release announcement on our blog</a> for a list of the new, hard-hitting features. Tempted? Try these on for size:{% endblocktrans %}
     <p>
 
     <p>
-      <b>Important:</b> While these builds have been stable in testing they are
-      not yet recommended for live use unless you are willing to risk a
-      crash. Looking for the stable release? <a href="#stable">Scroll on
-      down.</a>
+      {% blocktrans %}<b>Important:</b> While these builds have been stable in testing they are not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="#stable">Scroll on down.</a>{% endblocktrans %}
     </p>
 
-    <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">Windows</H2>
+    <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{% trans "Windows" %}</H2>
 
     <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win32.exe"
           onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win32');">
-        Mixxx 1.12 Beta (build r5442) for 32-bit Windows</a></p>
+        {% trans "Mixxx 1.12 Beta (build r5442) for 32-bit Windows" %}</a></p>
 
     <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win64.exe"
           onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win64');">
-        Mixxx 1.12 Beta (build r5442) for 64-bit Windows</a></p>
+        {% trans "Mixxx 1.12 Beta (build r5442) for 64-bit Windows" %}</a></p>
 
-    <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">Mac OS X</H2>
+    <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">{% trans "Mac OS X" %}</H2>
 
     <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-osxintel.dmg"
           onclick="javascript:trackDownload('/downloads/1.12.0-beta1-osxintel');">
-        Mixxx 1.12 Beta (build r5442) for Mac OS X 10.5+ (Intel)</a></p>
+        {% trans "Mixxx 1.12 Beta (build r5442) for Mac OS X 10.5+ (Intel)" %}</a></p>
 
-    <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">Ubuntu</H2>
+    <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{% trans "Ubuntu" %}</H2>
 
-    <p>Open a terminal, and enter:</p>
+    <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
       sudo add-apt-repository ppa:mixxx/mixxxbetas
       sudo apt-get update
@@ -76,76 +70,68 @@ $(document).ready(function() {
     </pre>
 
     <p>
-      This will install the latest version of Mixxx from
-      the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas"
-      onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-ppa');">Mixxx
-      Beta PPA</a> on Launchpad.
+      {% blocktrans %}This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas" onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-ppa');">Mixxx PPA</a> on Launchpad.{% endblocktrans %}
     </p>
 
     <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-i386.deb"
           onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty32');">
-        Mixxx 1.12 Beta (build r5442) for 32-bit Ubuntu Trusty (and newer)</a></p>
+        {% trans "Mixxx 1.12 Beta (build r5442) for 32-bit Ubuntu Trusty (and newer)" %}</a></p>
 
     <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-amd64.deb"
           onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty64');">
-        Mixxx 1.12 Beta (build r5442) for 64-bit Ubuntu Trusty (and newer)</a></p>
+        {% trans "Mixxx 1.12 Beta (build r5442) for 64-bit Ubuntu Trusty (and newer)" %}</a></p>
 
-    <H2>Linux / Source Code</H2>
+    <H2>{% trans "Linux / Source Code" %}</H2>
 
     <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-src.tar.gz"
           onclick="javascript:trackDownload('/downloads/1.12.0-beta1-linuxsrc');">
-        Mixxx 1.12 Beta (build r5442) Source Code</a></p>
+        {% trans "Mixxx 1.12 Beta (build r5442) Source Code" %}</a></p>
 
     <p>
-      The Mixxx source code is made available under the GPL v2. Please check the
-      LICENSE file in our source tree for complete licensing information. The latest
-      code from Mixxx's 1.12 development branch is hosted on
-      <a href="https://github.com/mixxxdj/mixxx">GitHub</a>:
+      {% blocktrans %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's 1.12 development branch is hosted on <a href="https://github.com/mixxxdj/mixxx">GitHub</a>:{% endblocktrans %}
       <pre>        git clone -b 1.12 https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
     <p>
-      Compilation instructions are available
-      for <a href="/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="/wiki/doku.php/compiling_on_os_x">Mac
-      OS X</a>, and <a href="/wiki/doku.php/compiling_on_linux">Linux</a>.
+      {% blocktrans %}Compilation instructions are available for <a href="/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="/wiki/doku.php/compiling_on_os_x">Mac OS X</a>, and <a href="/wiki/doku.php/compiling_on_linux">Linux</a>.{% endblocktrans %}
     </p>
   </div>
 
   <a name="stable"></a>
-  <H1>Download Now (Mixxx 1.11.0 Stable)</H1>
-  Mixxx is available for Windows, Mac OS X, and Linux:
+  <H1>{% trans "Download Now (Mixxx 1.11.0 Stable)" %}</H1>
+  {% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
 
-    <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">Windows</H2>
+    <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{% trans "Windows" %}</H2>
 
     <p>
       <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe"
          onClick="javascript:trackDownload('/downloads/1.11.0win32');">
-        Download Mixxx 1.11.0 for 32-bit Windows</a>
+        {% trans "Download Mixxx 1.11.0 for 32-bit Windows" %}</a>
     </p>
 
     <p>
       <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win64.exe"
 	 onClick="javascript:trackDownload('/downloads/1.11.0win64'); ">
-        Download Mixxx 1.11.0 for 64-bit Windows</a>
+        {% trans "Download Mixxx 1.11.0 for 64-bit Windows" %}</a>
     </p>
 
     <br>
-    <p><small>AAC playback requires Windows 7 or greater.</small></p>
+    <p><small>{% trans "AAC playback requires Windows 7 or greater." %}</small></p>
   </div>
 
   <div class="halfbox_right darkborder macbox">
-    <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">Mac OS X</H2>
+    <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{% trans "Mac OS X" %}</H2>
     <p>
       <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg"
 	 onClick="javascript:trackDownload('/downloads/1.11.0osxintel'); ">
-        Download Mixxx 1.11.0 for Mac OS X 10.5+ (Intel)</a>
+        {% trans "Download Mixxx 1.11.0 for Mac OS X 10.5+ (Intel)" %}</a>
     </p>
     <p>
       <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macppc.dmg"
 	 onClick="javascript:trackDownload('/downloads/1.11.0osxppc'); ">
-        Download Mixxx 1.11.0 for Mac OS X 10.5+ (PPC)</a>
+        {% trans "Download Mixxx 1.11.0 for Mac OS X 10.5+ (PPC)" %}</a>
     </p>
 
     <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
@@ -162,43 +148,34 @@ $(document).ready(function() {
   <div style="clear: both;"></div>
 
   <div style="padding: 20px;">
-    <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">Ubuntu</H2>
-    <p>Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):</p>
-    <p>Open a terminal, and enter:</p>
+    <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{% trans "Ubuntu" %}</H2>
+    <p>{% trans "Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):" %}</p>
+    <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
       sudo add-apt-repository ppa:mixxx/mixxx
       sudo apt-get update
       sudo apt-get install mixxx libportaudio2
     </pre>
-    <p>This will install the latest version of Mixxx from
-      the <a href="https://launchpad.net/~mixxx/+archive/mixxx">Mixxx
-	PPA</a> on Launchpad.</p>
+    <p>This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxx">Mixxx PPA</a> on Launchpad.</p>
     <div style="width: 66%; margin: 0 auto;">
-      <small><b>Ubuntu Repositories:</b><br/> Ubuntu also provides a version of Mixxx
-	which can be installed directly from the Ubuntu Software
-	Centre. This version is usually woefully out of date; therefore
-	using the PPA is preferable. </small>
+      <small>{% blocktrans %}<b>Ubuntu Repositories:</b><br/>Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
     </div>
 
-    <H2>Linux / Source Code</H2>
+    <H2>{% trans "Linux / Source Code" %}</H2>
     <p>
       <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz"
 	 onClick="javascript:trackDownload('/downloads/1.11.0linuxsrc'); ">
-        Download Mixxx 1.11.0 Source Code
+        {% trans "Download Mixxx 1.11.0 Source Code" %}
       </a>
     </p>
 
     <p>
-      The Mixxx source code is made available under the GPL v2. Please check the LICENSE file
-      in our source tree for complete licensing information. The latest code from Mixxx's development branch
-      is hosted on <a href="https://github.com/mixxxdj/mixxx">GitHub</a>:
+      {% blocktrans %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's development branch is hosted on <a href="https://github.com/mixxxdj/mixxx">GitHub</a>:{% endblocktrans %}
       <pre>        git clone https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
     <p>
-      Compilation instructions are available
-      for <a href="/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="/wiki/doku.php/compiling_on_os_x">Mac
-      OS X</a>, and <a href="/wiki/doku.php/compiling_on_linux">Linux</a>.
+      {% blocktrans %}Compilation instructions are available for <a href="/wiki/doku.php/compiling_on_windows">Windows</a>, <a href="/wiki/doku.php/compiling_on_os_x">Mac OS X</a>, and <a href="/wiki/doku.php/compiling_on_linux">Linux</a>.{% endblocktrans %}
     </p>
   </div>
 
@@ -207,15 +184,13 @@ $(document).ready(function() {
       <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=downloads_moresoftware&utm_campaign=mixxx">
         <img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
     </div>
-    <p style="text-align: center;">More software from the Mixxx Developers available at:</p>
+    <p style="text-align: center;">{% trans "More software from the Mixxx Developers available at:" %}</p>
     <div style="clear: both;"></div>
   </div>
 
-  <H2>Errata</H2>
+  <H2>{% trans "Errata" %}</H2>
   <p>
-    Source code for the Mac App Store version is available in each release branch in Git. A
-    <a href="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg">corresponding
-    binary</a> is also available.
+    {% blocktrans %}Source code for the Mac App Store version is available in each release branch in Git. A <a href="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg">corresponding binary</a> is also available.{% endblocktrans %}
   </p>
 
 </div>

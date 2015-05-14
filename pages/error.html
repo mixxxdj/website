@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 
+{% load i18n %}
+
 {% block body %}
 
 <div class="container">
-  <h1>We're sorry!</h1>
-  <p>The page <b id="url"></b> couldn't be found.</p>
+  <h1>{% trans "We're sorry!" %}</h1>
+  <p>{% blocktrans %}The page <b id="url"></b> couldn't be found.{% endblocktrans %}</p>
 </div>
 
 {% endblock %}
