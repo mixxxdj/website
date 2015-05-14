@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 21:30+0200\n"
+"POT-Creation-Date: 2015-05-14 22:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: pages/contact.html:5 templates/footer.html:39
+#: pages/contact.html:5
 msgid "Contact"
 msgstr ""
 
@@ -296,7 +296,7 @@ msgstr ""
 msgid "The page <b id=\"url\"></b> couldn't be found."
 msgstr ""
 
-#: pages/features.html:5 templates/footer.html:26
+#: pages/features.html:5
 msgid "Features"
 msgstr ""
 
@@ -805,7 +805,6 @@ msgid "Read more..."
 msgstr ""
 
 #: pages/get-involved.html:5 pages/get-involved.html.py:13
-#: templates/footer.html:28
 msgid "Get Involved"
 msgstr ""
 
@@ -851,7 +850,7 @@ msgstr ""
 msgid ""
 "Pick a bug off our <a href=\"%(easy_bug_list_link)s \">Easy Bugs List</a> "
 "and start hacking!<br><br> Fixed it? Your name will be in the <a href="
-"\"%(mixxx_contakt_link)s\">Mixxx credits</a>!"
+"\"%(mixxx_credits_link)s\">Mixxx credits</a>!"
 msgstr ""
 
 #: pages/get-involved.html:40
@@ -939,8 +938,8 @@ msgstr ""
 #: pages/get-involved.html:104
 msgid ""
 "We're pleased to offer Mixxx in many languages. Our translations are "
-"<b>entirely</b> community provided, so we need your help to spread Mixxx "
-"with translations into more languages, as well as to update and ensure the "
+"entirely community provided, so we need your help to spread Mixxx with "
+"translations into more languages, as well as to update and ensure the "
 "accuracy of existing translations."
 msgstr ""
 
@@ -1112,7 +1111,7 @@ msgstr ""
 msgid "In the meantime, check out some other open source projects we love:"
 msgstr ""
 
-#: pages/press.html:5 pages/press.html.py:9 templates/footer.html:38
+#: pages/press.html:5 pages/press.html.py:9
 msgid "Press"
 msgstr ""
 
@@ -1245,7 +1244,7 @@ msgid ""
 "(G4TV)"
 msgstr ""
 
-#: pages/support.html:5 templates/footer.html:27
+#: pages/support.html:5
 msgid "Support"
 msgstr ""
 
@@ -1590,34 +1589,6 @@ msgid ""
 "Download the most advanced FREE DJ software available, featuring iTunes "
 "integration, MIDI controller support, internet broadcasting, and integrated "
 "music library."
-msgstr ""
-
-#: templates/footer.html:2
-msgid "Spread the Word"
-msgstr ""
-
-#: templates/footer.html:24
-msgid "Pages"
-msgstr ""
-
-#: templates/footer.html:31
-msgid "Community"
-msgstr ""
-
-#: templates/footer.html:32
-msgid "Forums"
-msgstr ""
-
-#: templates/footer.html:33
-msgid "Wiki"
-msgstr ""
-
-#: templates/footer.html:34
-msgid "Blog"
-msgstr ""
-
-#: templates/footer.html:42
-msgid "Partners"
 msgstr ""
 
 #: templates/navbar.html:8
