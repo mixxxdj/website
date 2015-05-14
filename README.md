@@ -23,7 +23,7 @@ of the site.
 
 ## Documentation
 
-Cactus uses [Django][djangoproject]'s templates for rendering pages.
+Cactus uses [Django][django]'s templates for rendering pages.
 
 The main templates are stored in the ```templates/``` folder. Leaf pages are
 stored in ```pages/```. If there is a snippet of code you want to use in
