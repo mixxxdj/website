@@ -10,6 +10,14 @@
     <meta name="keywords" content="{% block meta_keywords %}dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer{% endblock %}"/>
     <meta name="viewport" content="width=device-width">
 
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="{{ default_meta_description }}"/>
+    <meta property="og:site_name" content="Mixxx DJ Software"/>
+    <meta property="og:image" content="{% config 'site-url' %}{% static '/static/images/splash1.png' %}"/>
+    {# should be equivalent to rel=canonical -- used for aggregating likes #}
+    <meta property="og:url" content="{{ CURRENT_PAGE.absolute_final_url }}"/>
+    <meta property="article:publisher" content="https://www.facebook.com/pages/Mixxx-DJ-Software/21723485212"/>
+
     <link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
     <link rel="shortcut icon" href="{% static '/static/images/favicon.ico' %}">
     <link rel="alternate" type="application/rss+xml" title="Mixxx RSS Feed" href="http://feeds.feedburner.com/MixxxNews">
