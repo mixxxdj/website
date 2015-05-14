@@ -1,25 +1,26 @@
+{% load i18n %}
 <div id="navbar">
   <div style="float: left;">
     <a href="/"><img src="{% static '/static/images/navbar_logo.png' %}" alt="Mixxx"></a>
   </div>
   <div id="navbar_smalllinks">
     <p>
-      <a href="/manual/latest">Manual</a>
-      <a href="/forums">Forums</a>
-      <a href="/wiki">Wiki</a>
-      <a href="http://mixxxblog.blogspot.com">Blog</a>
+      <a href="/manual/latest">{% trans "Manual" context "Navigation bar link to Mixxx Manual." %}</a>
+      <a href="/forums">{% trans "Forums" context "Navigation bar link to Mixxx Forums." %}</a>
+      <a href="/wiki">{% trans "Wiki" context "Navigation bar link to Mixxx Wiki." %}</a>
+      <a href="http://mixxxblog.blogspot.com">{% trans "Blog" context "Navigation bar link to Mixxx blog." %}</a>
     </p>
     <p style="font-size: 0.7em">
-      <a href="/press">Press</a>
-      <a href="/get-involved">Get&nbsp;Involved</a>
-      <a href="/contact">Contact</a>
+      <a href="/press">{% trans "Press" context "Navigation bar link to Mixxx Press page" %}</a>
+      <a href="/get-involved">{% trans "Get&nbsp;Involved" context "Navigation bar link to Mixxx Get Involved page." %} </a>
+      <a href="/contact">{% trans "Contact" context "Navigation bar link to Mixxx contact page." %}</a>
     </p>
   </div>
   <div id="navbar_biglinks">
     <!-- using non-breaking spaces here! -->
-    <a href="/download">Download&nbsp;It</a>
-    <a href="/features">See&nbsp;Features</a>
-    <a href="/support">Get&nbsp;Support</a>
+    <a href="/download">{% trans "Download&nbsp;It" context "Navigation bar link to Mixxx download page." %}</a>
+    <a href="/features">{% trans "See&nbsp;Features" context "Navigation bar link to Mixxx features page." %}</a>
+    <a href="/support">{% trans "Get&nbsp;Support" context "Navigation bar link to Mixxx support page." %}</a>
   </div>
   <div style="clear: both;"></div>
 </div>

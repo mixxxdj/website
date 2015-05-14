@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-14 10:17-0400\n"
+"POT-Creation-Date: 2015-05-14 10:41-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1523,4 +1523,54 @@ msgstr ""
 
 #: pages/whats-new-in-mixxx-1-11.html:275
 msgid "Ready to Upgrade? Download Mixxx for FREE and Start DJing:"
+msgstr ""
+
+#: templates/navbar.html:8
+msgctxt "Navigation bar link to Mixxx Manual."
+msgid "Manual"
+msgstr ""
+
+#: templates/navbar.html:9
+msgctxt "Navigation bar link to Mixxx Forums."
+msgid "Forums"
+msgstr ""
+
+#: templates/navbar.html:10
+msgctxt "Navigation bar link to Mixxx Wiki."
+msgid "Wiki"
+msgstr ""
+
+#: templates/navbar.html:11
+msgctxt "Navigation bar link to Mixxx blog."
+msgid "Blog"
+msgstr ""
+
+#: templates/navbar.html:14
+msgctxt "Navigation bar link to Mixxx Press page"
+msgid "Press"
+msgstr ""
+
+#: templates/navbar.html:15
+msgctxt "Navigation bar link to Mixxx Get Involved page."
+msgid "Get&nbsp;Involved"
+msgstr ""
+
+#: templates/navbar.html:16
+msgctxt "Navigation bar link to Mixxx contact page."
+msgid "Contact"
+msgstr ""
+
+#: templates/navbar.html:21
+msgctxt "Navigation bar link to Mixxx download page."
+msgid "Download&nbsp;It"
+msgstr ""
+
+#: templates/navbar.html:22
+msgctxt "Navigation bar link to Mixxx features page."
+msgid "See&nbsp;Features"
+msgstr ""
+
+#: templates/navbar.html:23
+msgctxt "Navigation bar link to Mixxx support page."
+msgid "Get&nbsp;Support"
 msgstr ""
