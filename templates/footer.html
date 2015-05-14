@@ -22,10 +22,10 @@
 <div id="footer_sitemap">
   <div class="footer_sitemap_column">
     <h2>Pages</h2>
-    <a href="/">Overview</a><br>
-    <a href="/features">Features</a><br>
-    <a href="/support">Support</a><br>
-    <a href="/get-involved">Get Involved</a><br>
+    <a href="{% url '/index.html' %}">Overview</a><br>
+    <a href="{% url '/features.html' %}">Features</a><br>
+    <a href="{% url '/support.html' %}">Support</a><br>
+    <a href="{% url '/get-involved.html' %}">Get Involved</a><br>
   </div>
   <div class="footer_sitemap_column">
     <h2>Community</h2>
@@ -35,8 +35,8 @@
   </div>
   <div class="footer_sitemap_column">
     <h2>About</h2>
-    <a href="/press">Press</a><br>
-    <a href="/contact">Contact</a><br>
+    <a href="{% url '/press.html' %}">Press</a><br>
+    <a href="{% url '/contact.html' %}">Contact</a><br>
   </div>
   <div class="footer_sitemap_column">
     <h2>Partners</h2>
