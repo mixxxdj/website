@@ -44,7 +44,7 @@
   <div class="halfbox_right">
     <H2>{% trans "Next Generation Beat Detection" %}</H2>
     <p>
-      S{% trans "ync, drop loops, and lay hotcues with deadly accuracy. A cutting-edge beat detection engine from Queen Mary University delivers <b>unrivaled   precision</b> in detecting song tempos and individual beats." %}
+      {% trans "Sync, drop loops, and lay hotcues with deadly accuracy. A cutting-edge beat detection engine from Queen Mary University delivers <b>unrivaled precision</b> in detecting song tempos and individual beats." %}
     </p>
     <p>
       {% trans "You've never seen BPM detection quite like this before." %}
@@ -132,7 +132,7 @@
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">A{% trans "dvanced Search" %}</H2>
+    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "Advanced Search" %}</H2>
     <p class="feature_indent"></p>
 
     {% trans "The library search box is now capable of advanced queries to help you pinpoint that perfect track." %}
@@ -143,7 +143,7 @@
     <p class="feature_indent">
       bpm:100-120 rating:&gt;4
     </p>
-    {% trans "All tracks with "Aphex Twin" in the artist column:" %}
+     {% blocktrans %}All tracks with "Aphex Twin" in the artist column:{% endblocktrans %}
     <p class="feature_indent">
       artist:"Aphex Twin"
     </p>
@@ -161,7 +161,7 @@
       {% trans "Set playlists can now be exported as text files, CUE files, and M3U playlists." %}
     </p>
 
-    <b>{% trans "Editable Quick Links<" %}/b>
+    <b>{% trans "Editable Quick Links" %}</b>
     <p>
       {% trans "Quick Links in the library Browse view can now be edited." %}
     </p>
@@ -209,7 +209,7 @@
   </div>
 
   <p>
-    <b>{% trans "New Mixxx Certified Controllers<" %}/b>
+    <b>{% trans "New Mixxx Certified Controllers" %}</b>
   </p>
   <ul>
     <li>Allen &amp; Heath Xone K2</li>
