@@ -1,0 +1,1354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Translators:
+# S.Brandt <s.brandt@mixxx.org>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Mixxx DJ website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-15 23:31+0200\n"
+"PO-Revision-Date: 2015-05-16 00:09+0100\n"
+"Last-Translator: S.Brandt <s.brandt@mixxx.org>\n"
+"Language-Team: German (Germany) (http://www.transifex.com/projects/p/mixxxdj-website/language/de_DE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.3\n"
+
+#: pages/contact.html:5
+msgid "Contact"
+msgstr "Kontakt"
+
+#: pages/contact.html:8
+msgid "Get in Touch"
+msgstr "﻿Kontaktiere uns"
+
+#: pages/contact.html:13
+#, python-format
+msgid "Support for users of Mixxx is available through our <a href=\"%(forums_link)s\">community forums</a> and our IRC channel as described on our <a href=\"%(support_page_link)s\">Support page</a>. If you think you've found a bug, please file a bug report in our <a href=\"%(bug_tracker_link)s\">bug tracker</a>."
+msgstr ""
+
+#: pages/contact.html:17
+#, python-format
+msgid "Developers working on Mixxx collaborate with each other via the <a href=\"%(mailing_list_link)s\">mixxx-devel</a> mailing list and our IRC channel (#mixxx on Freenode). To send an email to the list, you must <a href=\"%(mailing_list_link)s\">subscribe first</a>. The list is low traffic."
+msgstr ""
+
+#: pages/contact.html:23
+#, python-format
+msgid "If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact our Project Manager, <a href=\"%(project_manager_link)s\">Adam Davison</a>. We accept donations of DJ equipment which we use to improve both specific and general hardware support in Mixxx."
+msgstr "Wenn Sie ein DJ-Hardware-Hersteller sind und wollen das Ihr Produkt mit Mixxx arbeitet, kontaktieren Sie bitte unsere Projektmanager, <a href=\"%(project_manager_link)s\">Adam Davison</a>. Wir akzeptieren Spenden von DJ-Equipment, die wir verwenden, um sowohl allgemeine als auch spezifische Hardwareunterstützung in Mixxx zu verbessern."
+
+#: pages/contact.html:27
+#, python-format
+msgid "For other inquiries, please contact <a href=\"%(project_manager_link)s\">Adam Davison</a>."
+msgstr "Kontaktieren Sie für weitere Anfragen bitte <a href=\"%(project_manager_link)s\">Adam Davison</a>."
+
+#: pages/contact.html:33
+msgid "Credits"
+msgstr "Impressum"
+
+#: pages/contact.html:35
+#, python-format
+msgid "In 2001, Mixxx was started by <a href=\"%(ken_anderson_link)s\">Ken</a> and <a href=\"%(tue_anderson_link)s\">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by Adam Davison (Project Manager), RJ Ryan (Lead Developer), S. Brandt (Lead Artist)."
+msgstr "Im Jahr 2001 wurde Mixxx von <a href=\"%(ken_anderson_link)s\">Ken</a> und <a href=\"%(tue_anderson_link)s\">Tue</a> Haste Andersen begonnen. Heute erfolgt die Entwicklung durch ein Open-Source Entwicklerteam aus der ganzen Welt, unter der Leitung von Adam Davison (Projektleiter), RJ Ryan (Lead-Entwickler), S. Brandt (Lead Artist)."
+
+#: pages/contact.html:38
+msgid "Mixxx 1.11.0 Development Team"
+msgstr "Mixxx 1.11.0 Entwicklungs-Team"
+
+#: pages/contact.html:56
+msgid "With contributions from:"
+msgstr "Mit Beiträgen von:"
+
+#: pages/contact.html:124
+msgid "And special thanks to:"
+msgstr "Und besonderen Dank an:"
+
+#: pages/contact.html:143
+msgid "Past Developers"
+msgstr "Frühere Entwickler"
+
+#: pages/contact.html:163
+msgid "Past Contributors"
+msgstr "Frühere Beitragende"
+
+#: pages/contact.html:204
+#, python-format
+msgid "Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, especially as a cross-platform application. Big thanks to <a href=\"%(qt_link)s\">Qt</a>, <a href=\"%(portaudio_link)s\">PortAudio</a>, and <a href=\"%(portmidi_link)s\">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx."
+msgstr "Mixxx ist von einer Reihe von Softwarebibliotheken abhängig. Mixxx wäre ohne diese nicht möglich, zumal als eine Cross-Plattform-Anwendung. Vielen Dank an <a href=\"%(qt_link)s\">Qt</a>, <a href=\"%(portaudio_link)s\">PortAudio</a> und <a href=\"%(portmidi_link)s\">PortMidi</a> fürs fantastisch sein.<br/> <br/>Schließlich möchten wir den viele Musikern und DJs danken, die bei der Gestaltung von Mixxx geholfen haben."
+
+#: pages/download.html:5
+msgid "Download the Best Free MP3 DJ Mixing Software"
+msgstr "Die beste kostenlose MP3 DJ-Mixing-Software herunterladen"
+
+#: pages/download.html:37
+msgid "Download Now (Mixxx 1.12 Beta)"
+msgstr "Jetzt herunterladen (Mixxx 1.12 Beta)"
+
+#: pages/download.html:40
+#, python-format
+msgid "The Mixxx team has been working hard for over 2 years on Mixxx 1.12. We've added hundreds of new features and we need YOUR help testing them. Check out the <a href=\"%(mixxx_112_beta_blog_link)s\">release announcement on our blog</a> for a list of the new, hard-hitting features. Tempted? Try these on for size:"
+msgstr "﻿Das Mixxx-Team hat seit über 2 Jahren an Mixxx 1.12 gearbeitet. Wir haben Hunderte von neuen Funktionen hinzugefügt, und wir brauchen DEINE Hilfe, sie zu testen. Schaue dir die <a href=\"%(mixxx_112_beta_blog_link)s\">Pressemitteilung auf unserem Blog</a>an für eine Liste der neue, schlagkräftige Funktionen. In Versuchung? Versuche diese:"
+
+#: pages/download.html:44
+msgid "Important:"
+msgstr "Wichtig:"
+
+#: pages/download.html:44
+#, python-format
+msgid " While these builds have been stable in testing they are not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href=\"%(stable_link)s\">Scroll on down.</a>"
+msgstr " Während diese Builds stabil in der Testphase waren, sind sie nicht noch für Live-Einsatz empfohlen, ausser wenn du bereit bist einen Absturz zu riskieren. Du suchst nach der stabilen Version? <a href=\"%(stable_link)s\"> Scroll weiter runter.</a>"
+
+#: pages/download.html:47 pages/download.html.py:107
+msgid "Windows"
+msgstr "Windows"
+
+#: pages/download.html:51
+msgid "Mixxx 1.12 Beta (build r5442) for 32-bit Windows"
+msgstr "Mixxx 1.12 Beta (build r5442) für 32-bit Windows"
+
+#: pages/download.html:55
+msgid "Mixxx 1.12 Beta (build r5442) for 64-bit Windows"
+msgstr "Mixxx 1.12 Beta (build r5442) für 64-bit Windows"
+
+#: pages/download.html:57 pages/download.html.py:126
+msgid "Mac OS X"
+msgstr "Mac OS X"
+
+#: pages/download.html:61
+msgid "Mixxx 1.12 Beta (build r5442) for Mac OS X 10.5+ (Intel)"
+msgstr "Mixxx 1.12 Beta (build r5442) für Mac OS X 10.5+ (Intel)"
+
+#: pages/download.html:63 pages/download.html.py:152
+msgid "Ubuntu"
+msgstr "Ubuntu"
+
+#: pages/download.html:65 pages/download.html.py:154
+msgid "Open a terminal, and enter:"
+msgstr "Öffne ein Terminal und gebe ein:"
+
+#: pages/download.html:74
+msgid "This will install the latest version of Mixxx from the <a href=\"https://launchpad.net/~mixxx/+archive/mixxxbetas\" onclick=\"javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-ppa');\">Mixxx PPA</a> on Launchpad."
+msgstr ""
+
+#: pages/download.html:79
+msgid "Mixxx 1.12 Beta (build r5442) for 32-bit Ubuntu Trusty (and newer)"
+msgstr "Mixxx 1.12 Beta (build r5442) für 32-bit Ubuntu Trusty (und neuer)"
+
+#: pages/download.html:83
+msgid "Mixxx 1.12 Beta (build r5442) for 64-bit Ubuntu Trusty (and newer)"
+msgstr "Mixxx 1.12 Beta (build r5442) für 64-bit Ubuntu Trusty (und neuer)"
+
+#: pages/download.html:85 pages/download.html.py:165
+msgid "Linux / Source Code"
+msgstr "Linux / Quellcode"
+
+#: pages/download.html:89
+msgid "Mixxx 1.12 Beta (build r5442) Source Code"
+msgstr "Mixxx 1.12 Beta (build r5442) Quellcode"
+
+#: pages/download.html:92
+#, python-format
+msgid "The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's 1.12 development branch is hosted on <a href=\"%(mixxx_github_link)s\">GitHub</a>:"
+msgstr "Der Mixxx-Quellcode steht unter der GPL v2 zur Verfügung. Bitte überprüfen Sie die Lizenzdatei in unserem Source-Tree für komplette Lizenzinformationen. Der neueste Code des Mixxx 1.12-Entwicklungszweiges wird auf <a href=\"%(mixxx_github_link)s\"> GitHub</a> gehostet:"
+
+#: pages/download.html:97 pages/download.html.py:179
+#, python-format
+msgid "Compilation instructions are available for <a href=\"%(compiling_windows_wiki_link)s\">Windows</a>, <a href=\"%(compiling_osx_wiki_link)s\">Mac OS X</a>, and <a href=\"%(compiling_linux_wiki_link)s\">Linux</a>."
+msgstr "Kompilierungsanweisungen stehen für <a href=\"%(compiling_windows_wiki_link)s\">Windows</a>, <a href=\"%(compiling_osx_wiki_link)s\">Mac OS X</a> und <a href=\"%(compiling_linux_wiki_link)s\">Linux</a> zur Verfügung."
+
+#: pages/download.html:102
+msgid "Download Now (Mixxx 1.11.0 Stable)"
+msgstr "Jetzt herunterladen (Mixxx 1.11.0 Stabil)"
+
+#: pages/download.html:103
+msgid "Mixxx is available for Windows, Mac OS X, and Linux:"
+msgstr "Mixxx ist für Windows, Mac OS X und Linux verfügbar:"
+
+#: pages/download.html:112
+msgid "Download Mixxx 1.11.0 for 32-bit Windows"
+msgstr "Mixxx 1.11.0 für 32-bit Windows herunterladen"
+
+#: pages/download.html:118
+msgid "Download Mixxx 1.11.0 for 64-bit Windows"
+msgstr "Mixxx 1.11.0 für 64-bit Windows herunterladen"
+
+#: pages/download.html:122
+#, python-format
+msgid "AAC playback requires Windows 7 or greater or Windows Vista with a <a href=\"%(platform_update_link)s\">platform update</a>."
+msgstr "AAC Wiedergabe erfordert Windows 7 oder höher oder Windows Vista mit einer <a href=\"%(platform_update_link)s\"> Plattform-Aktualisierung</a>."
+
+#: pages/download.html:130
+msgid "Download Mixxx 1.11.0 for Mac OS X 10.5+ (Intel)"
+msgstr "Mixxx 1.11.0 für Mac OS X 10.5+ (Intel) herunterladen"
+
+#: pages/download.html:135
+msgid "Download Mixxx 1.11.0 for Mac OS X 10.5+ (PPC)"
+msgstr "Mixxx 1.11.0 für Mac OS X 10.5+ (PPC) herunterladen"
+
+#: pages/download.html:153
+msgid "Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):"
+msgstr "Mixxx 1.11.0 für Ubuntu 10.04 (Lucid) bis 13.10 (frechen) herunterladen:"
+
+#: pages/download.html:160
+#, python-format
+msgid "This will install the latest version of Mixxx from the <a href=\"%(mixxx_ppa_link)s\">Mixxx PPA</a> on Launchpad."
+msgstr "Dies installiert die neueste Version von Mixxx von <a href=\"%(mixxx_ppa_link)s\"> Mixxx PPA</a> auf Launchpad."
+
+#: pages/download.html:162
+msgid "Ubuntu Repositories"
+msgstr "Ubuntu-Repositories"
+
+#: pages/download.html:162
+msgid "Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable."
+msgstr "Ubuntu bietet auch eine Version von Mixxx, die direkt von der Ubuntu Software Center installiert werden kann. Diese Version ist in der Regel völlig veraltet; daher ist die Nutzung dieses PPA vorzuziehen."
+
+#: pages/download.html:169
+msgid "Download Mixxx 1.11.0 Source Code"
+msgstr "Mixxx 1.11.0 Quellcode herunterladen"
+
+#: pages/download.html:174
+#, python-format
+msgid "The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's development branch is hosted on <a href=\"%(mixxx_github_link)s\">GitHub</a>:"
+msgstr "Der Mixxx-Quellcode steht unter der GPL v2 zur Verfügung. Bitte überprüfen Sie die Lizenzdatei in unserem Source-Tree für komplette Lizenzinformationen. Der neueste Code des Mixxx-Entwicklungszweiges wird auf <a href=\"%(mixxx_github_link)s\"> GitHub</a> gehostet:"
+
+#: pages/download.html:188 pages/support.html:66
+msgid "More software from the Mixxx Developers available at:"
+msgstr "Weitere Software von den Mixxx Entwickler ist verfügbar unter:"
+
+#: pages/download.html:192
+msgid "Errata"
+msgstr ""
+
+#: pages/download.html:194
+#, python-format
+msgid "Source code for the Mac App Store version is available in each release branch in Git. A <a href=\"%(mixxx_191_appstore_link)s\">corresponding binary</a> is also available."
+msgstr "Source-Code für den Mac App Store-Version gibt es in jedem Versionszweig in Git. Eine <a href=\"%(mixxx_191_appstore_link)s\">entsprechende Binärdatei</a> ist ebenfalls verfügbar."
+
+#: pages/error.html:8
+msgid "We're sorry!"
+msgstr "Es tut uns leid!"
+
+#: pages/error.html:9
+msgid "The page <b id=\"url\"></b> couldn't be found."
+msgstr "Die Seite <b id=\"url\"></b> konnte nicht gefunden werden."
+
+#: pages/features.html:5
+msgid "Features"
+msgstr "Funktionen"
+
+#: pages/features.html:9
+msgid "World-Class Mixing Engine"
+msgstr "Weltklasse Mixing-Engine"
+
+#: pages/features.html:10
+msgid "Don't just beatmix, beatmix better."
+msgstr ""
+
+#: pages/features.html:14
+msgid "Dual Decks, Advanced Controls"
+msgstr "Duale Decks, erweiterte Steuerelemente"
+
+#: pages/features.html:16
+msgid "Drop a song onto a deck in Mixxx to kick off your next mix. Each deck features a scratchable, scrolling waveform that marks beats and cue points, along with a whole-song waveform overview for quick seeking."
+msgstr ""
+
+#: pages/features.html:19
+msgid "Time Stretch and Vinyl Emulation"
+msgstr ""
+
+#: pages/features.html:20
+msgid "Speed up and slow down songs without changing their pitch with time stretching. Our high-quality interpolator can also reproduce classic vinyl sounds like backspins."
+msgstr ""
+
+#: pages/features.html:23
+msgid "Beat Looping"
+msgstr "Beat-Looping"
+
+#: pages/features.html:24
+msgid "Found a sweet loop or need to extend your mix while you prep the next track? Instantly loop a 4, 8, or 16 beat segment with the click of a button."
+msgstr ""
+
+#: pages/features.html:27
+msgid "Hotcues"
+msgstr "Hotcues"
+
+#: pages/features.html:28
+msgid "Four hotcue points can be dropped or triggered with ease. Our playback engine is finely tuned for accurate, rapid fire hotcue triggering so you can mash and remix as hard as you want to without a hiccup."
+msgstr ""
+
+#: pages/features.html:34
+msgid "Intuitive Pitchbend"
+msgstr ""
+
+#: pages/features.html:35
+msgid "Ramping pitchbend ensures any tempo nudging is smoothly applied, just like with vinyl."
+msgstr ""
+
+#: pages/features.html:38
+msgid "Broad Format Support"
+msgstr "Breite Formatunterstützung"
+
+#: pages/features.html:39
+msgid "Our mature audio decoders deliver pristine sound with rock-solid stability. Mixxx plays MP3, M4A/AAC, Ogg Vorbis, FLAC, WAVE, and AIFF formats."
+msgstr "Unsere ausgereiften Audio-Decoder liefern unverfälschten Klang mit felsenfester Stabilität. Mixxx gibt MP3, M4A/AAC, Ogg Vorbis, FLAC, WAVE und AIFF-Formate wieder."
+
+#: pages/features.html:42
+msgid "EQ and Crossfader Control"
+msgstr "EQ und Crossfader"
+
+#: pages/features.html:43
+msgid "Mixxx features audiophile butterworth filters with adjustable EQ shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades"
+msgstr ""
+
+#: pages/features.html:50
+msgid "Quad Sampler Decks"
+msgstr ""
+
+#: pages/features.html:52
+msgid "Perfect for dropping that vocal sample or airhorn, our quad sampler decks are routable through either playback channel."
+msgstr ""
+
+#: pages/features.html:59
+msgid "Powerful Library"
+msgstr "Leistungsfähige Bibliothek"
+
+#: pages/features.html:61 pages/whats-new-in-mixxx-1-11.html:131
+msgid "The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive."
+msgstr ""
+
+#: pages/features.html:67
+msgid "Organization"
+msgstr "Organisation"
+
+#: pages/features.html:69
+msgid "Crates and Playlists"
+msgstr "Plattenkisten und Wiedergabelisten"
+
+#: pages/features.html:70
+msgid "Sort your music the way you want."
+msgstr "Sortieren deine Musik wie du willst."
+
+#: pages/features.html:73
+msgid "Disk Browsing"
+msgstr "Festplatte durchsuchen"
+
+#: pages/features.html:74
+msgid "Need to find music outside your library? Browse and load tunes from any hard disk."
+msgstr ""
+
+#: pages/features.html:77 pages/index.html:72
+msgid "iTunes Integration"
+msgstr "iTunes Integration"
+
+#: pages/features.html:78
+msgid "Drop fresh tracks from your iTunes library right into your mix."
+msgstr ""
+
+#: pages/features.html:89 pages/index.html:88
+msgid "BPM Detection and Sync"
+msgstr "BPM-Erkennung und Synchronisierung"
+
+#: pages/features.html:90
+msgid "Instantly sync the tempo of two songs for seamless beatmixing. Each waveform view marks each beat to help guide your mixing."
+msgstr ""
+
+#: pages/features.html:94
+msgid "Auto DJ"
+msgstr "Auto-DJ"
+
+#: pages/features.html:96
+msgid "Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches your back until you return."
+msgstr ""
+
+#: pages/features.html:103
+msgid "Designer Skins"
+msgstr ""
+
+#: pages/features.html:106
+msgid "Includes 5 exclusive designer skins with various layouts"
+msgstr ""
+
+#: pages/features.html:117
+msgid "Record and Broadcast your Mix"
+msgstr ""
+
+#: pages/features.html:119
+msgid "Mixxx includes a number of recording and broadcasting features because you can't get your name out there without sharing your DJ mixes."
+msgstr ""
+
+#: pages/features.html:125
+msgid "Record your live mixes to the lossless WAVE or compressed Ogg Vorbis formats, and optional MP3 support. Recordings are automatically archived in the library for fast access."
+msgstr ""
+
+#: pages/features.html:129
+msgid "Shoutcast Broadcasting"
+msgstr ""
+
+#: pages/features.html:131
+#, python-format
+msgid "Stream your mixes live over the internet to your audience and friends through a Shoutcast or Icecast server. <a href=\"%(broadcasting_wiki_link)s\">Read more"
+msgstr ""
+
+#: pages/features.html:138
+msgid "ReplayGain Normalization"
+msgstr ""
+
+#: pages/features.html:140
+msgid "Song gain is automatically adjusted when loading a deck so your mixes always maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them."
+msgstr ""
+
+#: pages/features.html:145
+msgid "Microphone Input"
+msgstr "Mikrofon-Eingang"
+
+#: pages/features.html:147
+msgid "Whether you're dropping thick reggae vocals over some dub or giving shoutouts on the air, microphone input is as easy as toggling talkover."
+msgstr ""
+
+#: pages/features.html:153
+msgid "Comprehensive DJ Hardware Support"
+msgstr "Umfassende DJ-Hardware-Unterstützung"
+
+#: pages/features.html:159
+msgid "MIDI Controller Support"
+msgstr "MIDI Controller-Unterstützung"
+
+#: pages/features.html:161
+#, python-format
+msgid "<b>Over 30 controllers supported</b><br> including the Hercules RMX, Numark Mixtrack, Vestax Spin and Typhoon, Stanton SCS.3d, and many more. <a href=\"%(hardware_compatibility_wiki_link)s\">Read more"
+msgstr ""
+
+#: pages/features.html:164
+msgid "Advanced MIDI Scripting Engine"
+msgstr "Erweiterte MIDI-Scripting-Engine"
+
+#: pages/features.html:165
+#, python-format
+msgid "Mixxx features a cutting-edge JavaScript-based scripting engine for maximum flexibility. MIDI messages can be mapped onto custom functions which execute complex behaviour. <a href=\"%(midi_scripting_wiki_link)s\">Read more</a>"
+msgstr ""
+
+#: pages/features.html:174
+msgid "Free Timecode Vinyl Control"
+msgstr ""
+
+#: pages/features.html:176
+msgid "Vinyl jockeys love it"
+msgstr "Vinyl-DJs liebe es"
+
+#: pages/features.html:178
+msgid "Control Mixxx from your existing turntables or CDJs and a mixer using timecoded vinyl or CDs.  We're the only free timecode vinyl control software for Windows, Mac OS X, and Linux, so we made sure to do it right."
+msgstr ""
+
+#: pages/features.html:182
+#, python-format
+msgid "Serato and Traktor Scratch 1 timecodes are supported with absolute positioning, needle cueing, and end-of-record detection. Mixxx even works with the soundcard you already have! <a href=\"%(vinyl_control_wiki_link)s\">Read more</a>"
+msgstr ""
+
+#: pages/features.html:190
+msgid "Don't wait - Download Mixxx and start DJing now for FREE:"
+msgstr ""
+
+#: pages/features.html:195
+msgid "Full Specification"
+msgstr "Vollständige Spezifikation"
+
+#: pages/features.html:199
+msgid "Core Features"
+msgstr "Kernfunktionen"
+
+#: pages/features.html:200
+msgid "Cross-platform (Windows XP/Vista/7/8, Mac OS X, Linux)"
+msgstr "Cross-Plattform (Windows XP/Vista/7/8, Mac OS X, Linux)"
+
+#: pages/features.html:201
+msgid "Free and open source (GPL v2)"
+msgstr "Frei und Open-Source (GPL v2)"
+
+#: pages/features.html:202
+msgid "Parallel or split scratchable waveform displays"
+msgstr ""
+
+#: pages/features.html:203
+msgid "Waveform summaries"
+msgstr ""
+
+#: pages/features.html:204
+msgid "Spinning vinyl widgets"
+msgstr ""
+
+#: pages/features.html:205
+msgid "MP3, OGG, WAVE, M4A / AAC, and FLAC playback"
+msgstr "WAVE, MP3, OGG, M4A / AAC und FLAC-Wiedergabe"
+
+#: pages/features.html:206
+msgid "Extra playback formats through plugins"
+msgstr "Zusätzliche Wiedergabe-Formate durch Plugins"
+
+#: pages/features.html:207
+msgid "Fast, database-powered library"
+msgstr "Schnelle, Datenbank gestützte Bibliothek"
+
+#: pages/features.html:208
+msgid "Shoutcast and Icecast broadcasting"
+msgstr "SHOUTcast und Icecast Live-Übertragung"
+
+#: pages/features.html:209
+msgid "Microphone Support"
+msgstr "Mikrofon-Unterstützung"
+
+#: pages/features.html:210
+msgid "Automatic crossfading with Auto DJ"
+msgstr "Automatisches Überblenden mit Auto-DJ"
+
+#: pages/features.html:211
+msgid "Crates and playlists"
+msgstr "Plattenkisten und Wiedergabelisten"
+
+#: pages/features.html:212
+msgid "Reads iTunes, Traktor, and Rhythmbox libraries"
+msgstr "Liest iTunes, Traktor und Rhythmbox Bibliotheken"
+
+#: pages/features.html:213
+msgid "Pitch-independent time stretch (key lock)"
+msgstr ""
+
+#: pages/features.html:214
+msgid "Vinyl emulation"
+msgstr "Vinyl-Emulation"
+
+#: pages/features.html:215
+msgid "Quantized loops, hot cues, and beatloops"
+msgstr "Quantisierte Loops, Hotues und Beatloops"
+
+#: pages/features.html:216
+msgid "Synchronization and auto-beatmatching"
+msgstr "Synchronisation und Auto-Beatmatching"
+
+#: pages/features.html:217
+msgid "4 Sampler Decks"
+msgstr "4 Sampler-Decks"
+
+#: pages/features.html:218
+msgid "Wave and Ogg recording with optional MP3 support."
+msgstr "WAVE and OGG Aufnahme mit optionaler MP3 Unterstützung."
+
+#: pages/features.html:219
+msgid "BPM detection and estimation"
+msgstr "BPM-Erkennung und Bestimmung"
+
+#: pages/features.html:220
+msgid "Bulk BPM analysis"
+msgstr "Massen-BPM-Analyse"
+
+#: pages/features.html:221
+msgid "Multichannel soundcard support (playback and capture)"
+msgstr "Mehrkanal-Soundkarten Unterstützung (Wiedergabe und Aufnahme)"
+
+#: pages/features.html:222
+msgid "Headphone cueing with multiple soundcard support"
+msgstr ""
+
+#: pages/features.html:223
+msgid "Adjustable EQ shelves"
+msgstr ""
+
+#: pages/features.html:224
+msgid "Crossfader curve control"
+msgstr "Einstellbare Crossfader-Kurve"
+
+#: pages/features.html:225
+msgid "Skinnable interface with 5 pixel-perfect skins bundled"
+msgstr ""
+
+#: pages/features.html:226
+msgid "Advanced MIDI scripting engine"
+msgstr "Erweiterte MIDI-Scripting-Engine"
+
+#: pages/features.html:227
+msgid "Multiple simultaneous MIDI controllers"
+msgstr "Mehrere gleichzeitige MIDI-Controller"
+
+#: pages/features.html:228
+msgid "Adjustable pitch range"
+msgstr ""
+
+#: pages/features.html:229
+msgid "Ramping pitchbend controls"
+msgstr ""
+
+#: pages/features.html:230
+msgid "Multi-core CPU support"
+msgstr "Multi-Core-CPU-Unterstützung"
+
+#: pages/features.html:231
+msgid "24-bit/96000 Hz playback and capture"
+msgstr ""
+
+#: pages/features.html:232
+msgid "Crystal clear audio"
+msgstr "Kristallklarer Klang"
+
+#: pages/features.html:233
+msgid "Hardware video acceleration"
+msgstr "Hardware-Videobeschleunigung"
+
+#: pages/features.html:238
+msgid "Mixxx Certified<br>MIDI Controllers"
+msgstr ""
+
+#: pages/features.html:245
+msgid "Community Supported<br>MIDI Controllers"
+msgstr ""
+
+#: pages/features.html:312
+#, python-format
+msgid "... and more! See our <a href=\"%(hardware_compatibility_wiki_link)s\">Hardware Compatibility</a> page."
+msgstr ""
+
+#: pages/features.html:319
+msgid "Translations"
+msgstr "Übersetzungen"
+
+#: pages/features.html:320
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: pages/features.html:321
+msgid "Catalan"
+msgstr "Katalanisch"
+
+#: pages/features.html:322
+msgid "French"
+msgstr "Französisch"
+
+#: pages/features.html:323
+msgid "German"
+msgstr "Deutsch"
+
+#: pages/features.html:324
+msgid "Italian"
+msgstr "Italienisch"
+
+#: pages/features.html:325
+msgid "Russian"
+msgstr "Russisch"
+
+#: pages/features.html:326
+msgid "Finnish"
+msgstr "Finnisch"
+
+#: pages/features.html:327
+msgid "Czech"
+msgstr "Tschechisch"
+
+#: pages/features.html:328
+msgid "Dutch"
+msgstr "Holländisch"
+
+#: pages/features.html:329
+msgid "Polish"
+msgstr "Polnisch"
+
+#: pages/features.html:330
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: pages/features.html:333
+msgid "... and more! See our <a href=\"{{ com_transifex_mixxxdj_link }\">Translation overview</a> page."
+msgstr ""
+
+#: pages/features.html:339
+msgid "Timecode Vinyl Control:"
+msgstr "Timecode Vinyl-Steuerung"
+
+#: pages/features.html:340
+msgid "Serato CV02 vinyl"
+msgstr "Serato CV02 Vinyl"
+
+#: pages/features.html:341
+msgid "Traktor Scratch MK1 Vinyl"
+msgstr "Traktor Scratch MK1 Vinyl"
+
+#: pages/features.html:342
+msgid "MixVibes DVS V2 Vinyl"
+msgstr "MixVibes DVS V2 Vinyl"
+
+#: pages/features.html:343
+msgid "Serato CV02 CD"
+msgstr "Serato CV02 CD"
+
+#: pages/features.html:346
+msgid "Read more..."
+msgstr "Weiterlesen..."
+
+#: pages/get-involved.html:5 pages/get-involved.html.py:13
+msgid "Get Involved"
+msgstr "Mitmachen"
+
+#: pages/get-involved.html:10
+msgid "Not a coder? Scroll down!"
+msgstr "Kein Programmierer? Blättere nach unten!"
+
+#: pages/get-involved.html:15
+msgid "Software Developers"
+msgstr "Software-Entwickler"
+
+#: pages/get-involved.html:17
+#, python-format
+msgid "Mixxx is written in C++ and uses the <a href=\"%(qt_link)s\">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>."
+msgstr ""
+
+#: pages/get-involved.html:21
+msgid "Besides creating cool DJ software and working with a fun team, contributing to Mixxx also looks great on your resume or CV. It's also an ideal way to learn about real-time audio programming, Qt, or even just hone your C++ skills."
+msgstr ""
+
+#: pages/get-involved.html:26
+msgid "Start Developing Now"
+msgstr "Beginnen jetzt zu entwickeln"
+
+#: pages/get-involved.html:30
+#, python-format
+msgid "Get a <a href=\"%(com_github_link)s\">Github</a> account and <a href=\"%(using_git_wiki_link)s \">fork your own branch</a>!"
+msgstr ""
+
+#: pages/get-involved.html:35
+#, python-format
+msgid "Pick a bug off our <a href=\"%(easy_bug_list_link)s \">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href=\"%(mixxx_credits_link)s\">Mixxx credits</a>!"
+msgstr ""
+
+#: pages/get-involved.html:40
+#, python-format
+msgid "When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href=\"%(irc_channel_link)s\">Freenode</a>"
+msgstr "Wenn du nicht feststeckst, erhalte Hilfe von unseren Entwicklern in unserem IRC-Kanal: #mixxx auf <a href=\"%(irc_channel_link)s\">Freenode</a>"
+
+#: pages/get-involved.html:45
+#, python-format
+msgid "Join our mailing list: <a href=\"%(mailing_list_link)s\">mixxx-devel</a>"
+msgstr "Trete unserer Mailingliste bei: <a href=\"%(mailing_list_link)s\">mixxx-Devel</a>"
+
+#: pages/get-involved.html:50
+msgid "You don't even have to know C++. There are developers who got into Mixxx development while learning C++ along the way."
+msgstr "Du musst nicht mal C++ beherrschen. Es gibt Entwickler, die Mixxx mitentwickelt haben und nebenbei C++ gelernt haben."
+
+#: pages/get-involved.html:59
+msgid "Development Cycle in a Nutshell"
+msgstr "Entwicklungszyklus auf einen Blick"
+
+#: pages/get-involved.html:60
+msgid "Mixxx Development Cycle"
+msgstr "Mixxx-Entwicklungszyklus"
+
+#: pages/get-involved.html:65
+msgid "DJs"
+msgstr "DJs"
+
+#: pages/get-involved.html:66
+msgid "There are many ways to help out as a DJ:"
+msgstr "Es gibt viele Möglichkeiten als DJ zu helfen:"
+
+#: pages/get-involved.html:70
+#, python-format
+msgid "<a href=\"%(midi_file_format_wiki_link)s\">Create or improve MIDI mappings</a> for your controller."
+msgstr ""
+
+#: pages/get-involved.html:75
+#, python-format
+msgid "<a href=\"%(bug_tracker_link)s\">Report bugs</a> as you find them."
+msgstr "<a href=\"%(bug_tracker_link)s\">Melde Fehler</a> wie du sie findest."
+
+#: pages/get-involved.html:80
+#, python-format
+msgid "Help keep our <a href=\"%(mixxx_wiki_link)s\">Wiki</a> up-to-date."
+msgstr "Helfe mit unser <a href=\"%(mixxx_wiki_link)s\">Wiki</a> aktuell zu halten."
+
+#: pages/get-involved.html:84
+#, python-format
+msgid "Answer questions on the <a href=\"%(troubleshooting_forum_link)s\">Troubleshooting Forum</a> and our <a href=\"%(net_launchpad_answers_link)s\">Launchpad Answers page</a>."
+msgstr "﻿Beantworten Sie die Fragen auf unserer <a href=\"%(net_launchpad_answers_link)s\">Launchpad-Antworten-Seite</a> und dem <a href=\"%(troubleshooting_forum_link)s\">Fehlerbehebungs-Forum</a>."
+
+#: pages/get-involved.html:89
+msgid "Promote Mixxx:"
+msgstr "Fördere Mixxx:"
+
+#: pages/get-involved.html:89
+msgid "Write an article about how you use Mixxx for your blog, or mention us when new releases come out. Any exposure on the web and in print helps our project grow, and is much appreciated!"
+msgstr "﻿Schreiben Sie einen Artikel zur Verwendung von Mixxx für Ihr Blog oder erwähnen Sie uns, wenn neue Versionen rauskommen. Jede Exposition im Internet und in gedruckter Form unterstützt unser Projekt zu wachsen und wird sehr wertgeschätzt!"
+
+#: pages/get-involved.html:94
+#, python-format
+msgid "<a href=\"%(photos_phorum_link)s\">Post some photos</a> of you using Mixxx at a gig!"
+msgstr "<a href=\"%(photos_phorum_link)s\">Poste Fotos</a> von dir mit Mixxx bei einem Gig!"
+
+#: pages/get-involved.html:102
+msgid "Translators"
+msgstr "Übersetzer"
+
+#: pages/get-involved.html:104
+msgid "We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations."
+msgstr ""
+
+#: pages/get-involved.html:107
+#, python-format
+msgid "You can help translate by visiting our <a href=\"%(com_transifex_mixxxdj_link)s\">translations page</a>. To get help when translating, visit the <a href=\"%(i18n_forum_link)s\">Mixxx Localization forum</a>."
+msgstr ""
+
+#: pages/get-involved.html:112
+msgid "Graphic Artists"
+msgstr "Grafiker"
+
+#: pages/get-involved.html:116
+#, python-format
+msgid "<a href=\"%(creating_skins_wiki_link)s\">Make skins</a> and share them on <a href=\"%(skins_forum_link=)s\">our forum</a>."
+msgstr ""
+
+#: pages/index.html:5
+msgid "Free MP3 DJ Mixing Software"
+msgstr "Kostenlose MP3-DJ-Mixing-Software"
+
+#: pages/index.html:13
+msgid "Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux"
+msgstr "Probiere Mixxx aus- Kostenlose MP3 DJ-Mixing-Software für Windows, Mac OS X und Linux"
+
+#: pages/index.html:30
+msgid "Check out what's new in Mixxx 1.11"
+msgstr "Finde heraus was es Neues gibt in Mixxx 1.11"
+
+#: pages/index.html:67
+msgid "Incredible Features, Unbeatable Value"
+msgstr "Unglaubliche Funktionen, unschlagbarer Preis"
+
+#: pages/index.html:69
+msgid "Mixxx has everything you need to start making DJ mixes in a tight, integrated package. Whether you're DJing your next house party, spinning at a club, or broadcasting as a radio DJ, Mixxx has what you need to do it right."
+msgstr "Mixxx vereint alles was du brauchst um DJ-Mixes zu machen in einem kompakten Paket. Ob bei deiner nächsten Party zu Hause, beim Auflegen im Club, oder bei der Live-Übertragung als Radio-DJ, Mixxx hat was du brauchst um es richtig zu machen."
+
+#: pages/index.html:74
+msgid "All your playlists and songs from iTunes, automatically ready to go for your next live DJ performance."
+msgstr "Alle deine Wiedergabelisten und Titel aus iTunes, automatisch bereit für deine nächste live DJ-Performance."
+
+#: pages/index.html:79
+msgid "DJ MIDI Controller Support"
+msgstr "DJ MIDI Controller-Unterstützung"
+
+#: pages/index.html:81
+msgid "With over 30 DJ MIDI controllers supported out-of-the-box, Mixxx gives you comprehensive hardware control for your DJ mixes."
+msgstr "Mit über 30 unterstützten DJ MIDI-Controller bietet Mixxx dir umfassende Hardware-Steuerung für deine DJ-Mixes."
+
+#: pages/index.html:90
+msgid "Instantly sync the tempo of two songs for seamless beatmixing. Need a break? Create a quick playlist and let Auto DJ take over."
+msgstr "Synchronisiere  sofort das Tempo von zwei Songs für nahtloses Beatmixing. Brauchst du eine Pause? Erstelle eine Wiedergabeliste und lass den Auto-DJ übernehmen."
+
+#: pages/index.html:95
+msgid "Powerful Mixing Engine"
+msgstr "Leistungsstarke Mixing-Engine"
+
+#: pages/index.html:97
+msgid "Mixxx has a cutting-edge mixing engine including support for MP3, M4A/AAC, OGG, and FLAC audio, adjustable EQ shelves, timecode vinyl control, recording, and Shoutcast broadcasting."
+msgstr "Mixxx hat eine leistungsstarke Mixing-Engine mit Unterstützung für MP3, M4A/AAC, OGG und FLAC Audio, einstellbare EQs, Timecode-Vinyl-Steuerung, Aufnahme und Shoutcast Live-Übertragung."
+
+#: pages/index.html:98
+msgid "Read more"
+msgstr "Weiterlesen"
+
+#: pages/index.html:108
+#, python-format
+msgid "See <a href=\"%(features_link)s\">dozens more features</a> or start downloading Mixxx for FREE now:"
+msgstr "Erfahre mehr über <a href=\"%(features_link)s\">Dutzende weitere Funktionen</a> oder starte jetzt den kostenlosen Download von Mixxx:"
+
+#: pages/index.html:112
+msgid "And It Just Keeps Getting Better"
+msgstr "Und es wird immer besser"
+
+#: pages/index.html:114
+msgid "Each year, a community of DJs, programmers, and artists contribute dozens of new features to Mixxx. <br> <b>And it doesn't cost you a dime.</b>"
+msgstr "Jedes Jahr, eine Gemeinschaft von DJs, Programmierer und Künstler fügen Dutzende neuer Funktionen für Mixxx hinzu. <br><b>Und es kostet dich keinen Cent.</b>"
+
+#: pages/index.html:118
+msgid "Because Mixxx is <b>open source</b>, anyone can remix or add new features to it. And that includes you!"
+msgstr "Da Mixxx <b>Open-Source</b> ist, kann es jeder umändern oder neue Funktionen hinzufügen. Und du gehörst dazu!"
+
+#: pages/index.html:122
+#, python-format
+msgid "You can get involved with Mixxx today by <a href=\"%(create_a_branch_link)s\">creating your own branch</a>, <a href=\"%(help_with_translations_link)s\">helping with translations</a>, or working on one of our other <a href=\"%(starter_tasks_link)s\">starter tasks</a>."
+msgstr ""
+
+#: pages/index.html:129
+msgid "#1 Top Free Mac App Worldwide"
+msgstr "#1 Top kostenlose Mac-App weltweit"
+
+#: pages/index.html:131 pages/index.html.py:148
+msgid "February 2011"
+msgstr "Februar 2011"
+
+#: pages/index.html:140
+msgid "Free Pick of the Month"
+msgstr "Free Pick des Monats"
+
+#: pages/index.html:141
+msgid "September 2007"
+msgstr "September 2007"
+
+#: pages/index.html:147
+msgid "\"The coolest open source<br>application ever?\""
+msgstr "\"Die coolste Open-Source<br>Anwendung überhaupt?\""
+
+#: pages/index.html:154
+msgid "If you like Mixxx..."
+msgstr "Wenn du Mixxx magst ..."
+
+#: pages/index.html:158
+#, python-format
+msgid "The developers of Mixxx at <a href=\"%(oscillicious_link)s\">Oscillicious Audio Labs</a> have been working hard on <a href=\"%(beatcleaver_link)s\">BeatCleaver</a> and <a href=\"%(jamdeck_link)s\">JamDeck</a>, check them out!"
+msgstr ""
+
+#: pages/irc.html:9 pages/support.html:48
+msgid "IRC Channel"
+msgstr "IRC-Kanal"
+
+#: pages/maintenance.html:5
+msgid "Temporary Maintenance"
+msgstr "Temporäre Wartung"
+
+#: pages/maintenance.html:15
+msgid "Sorry, down for maintenance..."
+msgstr "Sorry, Seite offline wegen Wartung..."
+
+#: pages/maintenance.html:16
+msgid "We'll be back in a jiffy!"
+msgstr "Wir werden im Handumdrehen wieder da sein!"
+
+#: pages/maintenance.html:17
+msgid "In the meantime, check out some other open source projects we love:"
+msgstr "In der Zwischenzeit schaue dir einige andere Open-Source Projekte an die wir lieben:"
+
+#: pages/press.html:5 pages/press.html.py:9
+msgid "Press"
+msgstr "Presse"
+
+#: pages/press.html:10
+msgid "About Mixxx"
+msgstr "Über Mixxx"
+
+#: pages/press.html:13
+msgid "Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces for DJing by Tue Haste Andersen.  After releasing the project as open source, dozens of contributors began modifying and improving Mixxx."
+msgstr "Mixxx ursprünglich entstand im Jahr 2002 im Rahmen einer Doktorarbeit für neue Schnittstellen für DJing von Tue Haste Andersen. Nach der Veröffentlichung des Projekts als Open-Source, begannen dutzende Mitwirkende Mixxx zu verändern und zu verbessern."
+
+#: pages/press.html:17
+msgid ""
+"In 2006, a new development team lead by Adam Davison and Albert Santoni began reorganizing the project to ensure smooth growth of both the codebase and the number of contributors. A renewed focus on usability and stability has helped Mixxx grow to become the most popular free DJ software in the world, receiving <b>over 1,000,000 downloads annually</b>. Our committed team has worked hard to create great DJ software, and "
+"this growth is a sign of our success."
+msgstr ""
+
+#: pages/press.html:21
+msgid "In 2011, RJ Ryan took over as Lead Developer to successfully continue the team's endeavor to make Mixxx a world-class DJ software."
+msgstr "Im Jahr 2011 übernahm RJ Ryan als Haupt-Entwickler um weiterhin erfolgreich die Bemühungen des Teams fortzuführen, Mixxx zu einer Weltklasse DJ-Software zu machen."
+
+#: pages/press.html:25
+msgid "As our user community grows, so does our development team - As of Mixxx 1.11.0, <b>over 100 developers and artists</b> have helped create Mixxx!"
+msgstr ""
+
+#: pages/press.html:29
+#, python-format
+msgid "Mixxx also participated in <a href=\"%(gsoc_link)s\">Google Summer of Code</a> in 2007, 2008, 2010, 2011, 2012, and 2013. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software."
+msgstr ""
+
+#: pages/press.html:32
+msgid "Why?"
+msgstr "Warum?"
+
+#: pages/press.html:35
+msgid ""
+"Mixxx started as an open source project because of demand for DJing software on Linux, and discontent with proprietary DJ software on Windows and Mac OS X. Today, Mixxx development is driven by the simple idea that together we can create a better way to DJ, and that has brought Mixxx to the cutting edge. Mixxx is the only free cross-platform vinyl control software and has the most advanced MIDI controller support via our "
+"innovative Javascript-based MIDI scripting engine. We are continuing to pursue new and exciting features that give DJs more tools to create better live mixes."
+msgstr ""
+
+#: pages/press.html:39
+msgid "Besides scratching our own itches, many people work on Mixxx as a way to learn about audio programming, or even just because it's fun and they enjoy programming. The creative aspect of Mixxx attracts developers with a broad range of skills and talents, and that makes for a fun development team that helps Mixxx continue to grow."
+msgstr ""
+
+#: pages/press.html:42
+msgid "Interviews"
+msgstr "Interviews"
+
+#: pages/press.html:44
+#, python-format
+msgid "Please contact our project manager, <a href=\"%(project_manager_mail_link)s\">Adam Davison</a> for interviews. We won't bite, we promise."
+msgstr "﻿Bitte kontaktieren Sie unsere Projektmanager, <a href=\"%(project_manager_mail_link)s\">Adam Davison</a> für Interviews. Wir werden nicht beißen, versprochen."
+
+#: pages/press.html:47
+msgid "Artwork"
+msgstr "Bildmaterial"
+
+#: pages/press.html:55
+msgid "Mixxx Color Logo, no padding:"
+msgstr "Farbiges Mixxx Logo, ohne Padding:"
+
+#: pages/press.html:56
+msgid "SVG"
+msgstr "SVG"
+
+#: pages/press.html:57
+msgid "PNG Small"
+msgstr "PNG klein"
+
+#: pages/press.html:58
+msgid "PNG Medium"
+msgstr "PNG mittel"
+
+#: pages/press.html:59
+msgid "PNG Large"
+msgstr "PNG gross"
+
+#: pages/press.html:60
+msgid "TIFF Large"
+msgstr "TIFF gross"
+
+#: pages/press.html:62
+msgid "Reference Screenshots:"
+msgstr "Referenz-Screenshots:"
+
+#: pages/press.html:68
+msgid "Past Press"
+msgstr "Frühere Presse"
+
+#: pages/press.html:70
+msgid "\"Cross-platform upstart <i>Mixxx</i> has the edge for the beat-matching style of mixing\" - Daniel James, Linux Format Magazine"
+msgstr ""
+
+#: pages/press.html:73
+msgid "\"This is one program that does it all!\" - Leo Laporte, The Lab with Leo (G4TV)"
+msgstr ""
+
+#: pages/support.html:5
+msgid "Support"
+msgstr "Unterstützung"
+
+#: pages/support.html:13
+msgid "Community Support"
+msgstr "Community-Unterstützung"
+
+#: pages/support.html:17
+msgid "Wiki / FAQ"
+msgstr "Wiki / FAQ"
+
+#: pages/support.html:19
+#, python-format
+msgid "The <a href=\"%(mixxx_wiki_link)s\">Mixxx Wiki</a> and <a href=\"%(mixxx_faq_link)s\">FAQ</a> are the best places to start for <b>documentation and support</b>. They contain useful documentation for both users and developers."
+msgstr ""
+
+#: pages/support.html:24
+msgid "User Manual"
+msgstr "Benutzerhandbuch"
+
+#: pages/support.html:26
+#, python-format
+msgid "The <a href=\"%(manual_latest_link)s\">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about <b>configuration</b> and hardware, and much more. It also contains useful information for <b>beginners</b> under <a href=\"%(manual_beginner_link)s\">DJing with Mixxx</a>."
+msgstr ""
+
+#: pages/support.html:32
+msgid "Community Forums"
+msgstr "Community-Foren"
+
+#: pages/support.html:34
+#, python-format
+msgid "Have a Mixxx-related question? Something other DJs can help you with? Ask in the <a href=\"%(forums_link)s\">Mixxx Community Forums</a>."
+msgstr "Hast du Fragen im Zusammenhang mit Mixxx? Etwas bei dem andere DJs dir helfen können? Frage in den <a href=\"%(forums_link)s\">Mixxx Community Foren</a>."
+
+#: pages/support.html:39
+msgid "Developer Mailing List"
+msgstr "Entwickler-Mailingliste"
+
+#: pages/support.html:41
+#, python-format
+msgid "The <a href=\"%(mailing_list_link)s \">mixxx-devel</a> developer mailing list (<a href=\"%(sourceforge_archive_link)s\">SourceForge</a> and <a href=\"%(gmane_archive_link)s\">Gmane</a> archives) is the primary means of developer communication.  The mailing list is where the Mixxx team discusses upcoming changes and programming related stuff."
+msgstr "Die <a href=\"%(mailing_list_link)s \">mixxx-devel</a> Entwickler-Mailingliste  (<a href=\"%(sourceforge_archive_link)s\">SourceForge</a> und <a href=\"%(gmane_archive_link)s\">Gmane</a> Archivs) ist das wichtigste Mittel zur Kommunikation der Entwickler.  Auf der Mailingliste diskutiert das Mixxx-Team anstehenden Veränderungen und im Zusammenhang mit Programmierung stehende Fragen."
+
+#: pages/support.html:50
+#, python-format
+msgid "The Mixxx IRC channel (<b>#mixxx</b> on <a href=\"%(irc_channel_link)s\">Freenode</a>) can be used for support too. If you don't need support, the IRC channel is still a fun place to hang out with the developers and meet some fellow DJs. <a href=\"%(irc_web_client_link)s \">Click here</a> to chat via a web client."
+msgstr "Der Mixxx IRC-Kanal (<b>#mixxx</b> auf <a href=\"%(irc_channel_link)s\">Freenode</a>) kann auch zur Unterstützung verwendet werden. Wenn du keine Unterstützung brauchst ist der IRC-Kanal immer noch ein lustiger Ort um mit den Entwicklern abzuhängen mit den Entwicklern und einige DJ-Kollegen kennenzulernen. <a href=\"%(irc_web_client_link)s \">Hier klicken</a> um über einen Webclient zu chatten."
+
+#: pages/support.html:55
+msgid "Bug Tracker"
+msgstr "Bug-Tracker"
+
+#: pages/support.html:57
+#, python-format
+msgid "Please report any bugs you find to our <a href=\" %(bug_tracker_link)s\">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them."
+msgstr "Bitte melde gefundene Fehler in unserem <a href=\" %(bug_tracker_link)s\">Bug-Tracker</a>. Der Bug-Tracker gibt uns einen zentralen Platz, unsere Informationen über Fehler zu bündeln, und verhindert, dass sie durcheinandergebracht und vergessen werden."
+
+#: pages/whats-new-in-mixxx-1-11.html:5
+msgid "What's New in Mixxx 1.11"
+msgstr "Was ist neu in Mixxx 1.11"
+
+#: pages/whats-new-in-mixxx-1-11.html:11
+msgid "New to Mixxx?"
+msgstr "Neu bei Mixxx?"
+
+#: pages/whats-new-in-mixxx-1-11.html:12
+msgid "Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix music live at your next party or club gig. <a href=\"/download\">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:15
+msgid "What's New in Mixxx 1.11?"
+msgstr "Was ist neu in Mixxx 1.11?"
+
+#: pages/whats-new-in-mixxx-1-11.html:17
+msgid "Take your DJing to the next level. Mixxx 1.11 adds dozens of powerful new features for the pro DJ. And as always, Mixxx 1.11 is available as a <b>free upgrade</b> for all existing Mixxx users."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:26
+msgid "Vibrant Waveforms"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:28
+msgid "Visualize the dynamics of every beat with the brand new triple-band color waveforms in Mixxx 1.11. Watch each band morph as you tweak each EQ."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:31
+msgid "These new, butter-smooth waveforms run at up to 60 FPS, taking advantage of hardware OpenGL acceleration for maximum performance."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:45
+msgid "Next Generation Beat Detection"
+msgstr "Beat-Erkennung der nächsten Generation"
+
+#: pages/whats-new-in-mixxx-1-11.html:47
+msgid "Sync, drop loops, and lay hotcues with deadly accuracy. A cutting-edge beat detection engine from Queen Mary University delivers <b>unrivaled precision</b> in detecting song tempos and individual beats."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:50
+msgid "You've never seen BPM detection quite like this before."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:56
+msgid "Session History"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:58
+msgid "Whether you need to report your setlists to ASCAP or just remember the tracks you played last night, the new Session History feature keeps track of every tune you drop so that you don't have to."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:72
+msgid "Preview Deck"
+msgstr "Vorschau-Deck"
+
+#: pages/whats-new-in-mixxx-1-11.html:74
+msgid "Never skip a beat - A dedicated deck for track previewing is now directly integrated into the library and routed to your headphones."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:80
+msgid "Beatloop Rolls"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:82
+msgid "Mash and stutter your mix with Beatloop Rolls. This stunning new effect works just like a beatloop except when you release the button the decks jumps to where it would have been as if you hadn't started the loop. Tryout by right-clicking on a beat-loop button."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:93
+msgid "Like what you see? Download Mixxx for FREE and Start DJing:"
+msgstr "Gefällt dir was du siehst? Laden Mixxx kostenlos herunter und starte das DJing:"
+
+#: pages/whats-new-in-mixxx-1-11.html:98
+msgid "Upgraded Sample Decks"
+msgstr "Aktualisierte Sample-Decks"
+
+#: pages/whats-new-in-mixxx-1-11.html:100
+msgid "All sample decks now have sync buttons for automatic tempo and phase sychronization with the main decks."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:106
+msgid "Core Mixing Engine Improvements"
+msgstr "Grundlegende Verbesserungen der Mixing-Engine"
+
+#: pages/whats-new-in-mixxx-1-11.html:108
+msgid "Improved waveform scratching"
+msgstr "Verbessertes Wellenform-Scratchen"
+
+#: pages/whats-new-in-mixxx-1-11.html:109
+msgid "Hamster (reverse) crossfader option"
+msgstr "Hamster- (Rückwärts) Crossfader Option"
+
+#: pages/whats-new-in-mixxx-1-11.html:110
+msgid "End of track warning"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:111
+msgid "Mixing interface remembers more settings"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:112
+msgid "Microphone talkover button sticks if you tap it (like power windows)"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:113
+msgid "MixVibes Timecode Vinyl support"
+msgstr "MixVibes Timecode Vinyl-Unterstützung"
+
+#: pages/whats-new-in-mixxx-1-11.html:124
+msgid "With 16 sample decks, this skin is perfect for radio DJs and advanced beat-jugglers alike."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:129
+msgid "Upgraded Library"
+msgstr "Aktualisierte Bibliothek"
+
+#: pages/whats-new-in-mixxx-1-11.html:135
+msgid "Advanced Search"
+msgstr "Erweiterte Suche"
+
+#: pages/whats-new-in-mixxx-1-11.html:138
+msgid "The library search box is now capable of advanced queries to help you pinpoint that perfect track."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:140
+msgid "Try out some of these example searches:"
+msgstr "Probiere einige der folgenden Suchbeispiele:"
+
+#: pages/whats-new-in-mixxx-1-11.html:142
+msgid "All tracks between 100 and 120BPM with rating greater than 4:"
+msgstr "Alle Titel zwischen 100 und 120 BPM mit Bewertung größer als 4:"
+
+#: pages/whats-new-in-mixxx-1-11.html:146
+msgid "All tracks with \"Aphex Twin\" in the artist column:"
+msgstr "Alle Titel mit \"Aphex Twin\" in der Künstler-Spalte:"
+
+#: pages/whats-new-in-mixxx-1-11.html:150
+msgid "All Electro tracks with BPM greater than 115:"
+msgstr "Alle Elektro-Titel mit mehr als 115 BPM:"
+
+#: pages/whats-new-in-mixxx-1-11.html:159
+msgid "Exportable Set Lists"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:161
+msgid "Set playlists can now be exported as text files, CUE files, and M3U playlists."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:164
+msgid "Editable Quick Links"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:166
+msgid "Quick Links in the library Browse view can now be edited."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:169
+msgid "Improved Auto DJ"
+msgstr "Verbesserter Auto-DJ"
+
+#: pages/whats-new-in-mixxx-1-11.html:171
+msgid "The crossfade length can now be changed, tracks can be re-queued instead of removing them, and more."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:176
+msgid "Improved, Expanded Support for DJ Controllers"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:178
+msgid "Mixxx 1.11 brings support for an exciting new range of DJ controllers and a new point and click MIDI mapping interface that makes it easier to create and customize the way your controller works with Mixxx."
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:182
+msgid "USB HID and USB Bulk Mode DJ Controller Support"
+msgstr "USB HID und USB Bulk-Modus DJ-Controller-Unterstützung"
+
+#: pages/whats-new-in-mixxx-1-11.html:184
+msgid "Mixxx now supports non-MIDI devices using its powerful scripting system. Mixxx 1.11.0 comes with HID presets for the following devices:"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:190
+msgid "Hercules DJ Control MP3 e2 (driver no longer necessary on Linux)"
+msgstr "Hercules DJ Control MP3 e2 (Treiber auf Linux nicht mehr notwendig)"
+
+#: pages/whats-new-in-mixxx-1-11.html:199
+msgid "Point and Click MIDI Mapping"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:201
+msgid "Getting your controller mapped is now easier than ever. Just click on the  button or knob you want to map in Mixxx and then wiggle the control on your MIDI controller to wire it up."
+msgstr "Deinen Controller zuordnen ist jetzt einfacher als je zuvor. Klicke  einfach auf die Schaltfläche oder den Knopf den du in Mixxx zuordnen willst und bewege dann das Steuerelement auf deinem MIDI-Controller um es zu verbinden."
+
+#: pages/whats-new-in-mixxx-1-11.html:206
+msgid "Newly Supported DJ MIDI Controllers"
+msgstr "Neu unterstützte DJ-MIDI-Controller"
+
+#: pages/whats-new-in-mixxx-1-11.html:212
+msgid "New Mixxx Certified Controllers"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:222
+msgid "New Mixxx Community Supported Controllers"
+msgstr ""
+
+#: pages/whats-new-in-mixxx-1-11.html:266
+msgid "Want to know if your DJ MIDI controller is supported in Mixxx?"
+msgstr "Möchtest du wissen, ob dein DJ MIDI-Controller im Mixxx unterstützt wird?"
+
+#: pages/whats-new-in-mixxx-1-11.html:266
+msgid "Please check the <a href=\"/features/#full_specs\">full technical specifications</a>."
+msgstr "Bitte siehe auch die <a href=\"/features/#full_specs\"> vollständigen technischen Spezifikationen</a>."
+
+#: pages/whats-new-in-mixxx-1-11.html:275
+msgid "Ready to Upgrade? Download Mixxx for FREE and Start DJing:"
+msgstr ""
+
+#: templates/base.html:8
+msgctxt "Summary of Mixxx shown in social media shares and search engines."
+msgid "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library."
+msgstr ""
+
+#: templates/navbar.html:8
+msgctxt "Navigation bar link to Mixxx Manual."
+msgid "Manual"
+msgstr "Handbuch"
+
+#: templates/navbar.html:9
+msgctxt "Navigation bar link to Mixxx Forums."
+msgid "Forums"
+msgstr "Foren"
+
+#: templates/navbar.html:10
+msgctxt "Navigation bar link to Mixxx Wiki."
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/navbar.html:11
+msgctxt "Navigation bar link to Mixxx blog."
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/navbar.html:14
+msgctxt "Navigation bar link to Mixxx Press page"
+msgid "Press"
+msgstr "Presse"
+
+#: templates/navbar.html:15
+msgctxt "Navigation bar link to Mixxx Get Involved page."
+msgid "Get&nbsp;Involved"
+msgstr ""
+
+#: templates/navbar.html:16
+msgctxt "Navigation bar link to Mixxx contact page."
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/navbar.html:21
+msgctxt "Navigation bar link to Mixxx download page."
+msgid "Download&nbsp;It"
+msgstr ""
+
+#: templates/navbar.html:22
+msgctxt "Navigation bar link to Mixxx features page."
+msgid "See&nbsp;Features"
+msgstr ""
+
+#: templates/navbar.html:23
+msgctxt "Navigation bar link to Mixxx support page."
+msgid "Get&nbsp;Support"
+msgstr ""
