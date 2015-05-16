@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-16 13:35-0400\n"
+"POT-Creation-Date: 2015-05-16 13:48-0400\n"
 "PO-Revision-Date: 2015-05-15 21:31+0000\n"
 "Last-Translator: S.Brandt <s.brandt@mixxx.org>\n"
 "Language-Team: English (http://www.transifex.com/projects/p/mixxxdj-website/"
@@ -1918,9 +1918,10 @@ msgid "Press"
 msgstr "Press"
 
 #: templates/navbar.html:15
+#, fuzzy
 msgctxt "Navigation bar link to Mixxx Get Involved page."
-msgid "Get&nbsp;Involved"
-msgstr "Get&nbsp;Involved"
+msgid "Get Involved"
+msgstr "Get Involved"
 
 #: templates/navbar.html:16
 msgctxt "Navigation bar link to Mixxx contact page."
@@ -1944,6 +1945,10 @@ msgstr "Core Features"
 msgctxt "Navigation bar link to Mixxx support page."
 msgid "Get Support"
 msgstr "Support"
+
+#~ msgctxt "Navigation bar link to Mixxx Get Involved page."
+#~ msgid "Get&nbsp;Involved"
+#~ msgstr "Get&nbsp;Involved"
 
 #~ msgid "Want to know if your DJ MIDI controller is supported in Mixxx?"
 #~ msgstr "Want to know if your DJ MIDI controller is supported in Mixxx?"

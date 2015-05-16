@@ -12,7 +12,7 @@
     </p>
     <p style="font-size: 0.7em">
       <a href="{% url '/press.html' %}">{% trans "Press" context "Navigation bar link to Mixxx Press page" %}</a>
-      <a href="{% url '/get-involved.html' %}">{% trans "Get&nbsp;Involved" context "Navigation bar link to Mixxx Get Involved page." %} </a>
+      <a href="{% url '/get-involved.html' %}">{% filter nbsp %}{% trans "Get Involved" context "Navigation bar link to Mixxx Get Involved page." %}{% endfilter %}</a>
       <a href="{% url '/contact.html' %}">{% trans "Contact" context "Navigation bar link to Mixxx contact page." %}</a>
     </p>
   </div>
