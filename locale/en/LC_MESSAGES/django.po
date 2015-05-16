@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-16 00:12+0200\n"
+"POT-Creation-Date: 2015-05-16 13:35-0400\n"
 "PO-Revision-Date: 2015-05-15 21:31+0000\n"
 "Last-Translator: S.Brandt <s.brandt@mixxx.org>\n"
 "Language-Team: English (http://www.transifex.com/projects/p/mixxxdj-website/"
@@ -1868,13 +1868,11 @@ msgid "New Mixxx Community Supported Controllers"
 msgstr "New Mixxx Community Supported Controllers"
 
 #: pages/whats-new-in-mixxx-1-11.html:266
-msgid "Want to know if your DJ MIDI controller is supported in Mixxx?"
-msgstr "Want to know if your DJ MIDI controller is supported in Mixxx?"
-
-#: pages/whats-new-in-mixxx-1-11.html:266
+#, fuzzy
 msgid ""
-"Please check the <a href=\"/features/#full_specs\">full technical "
-"specifications</a>."
+"<b>Want to know if your DJ MIDI controller is supported in Mixxx?</b> Please "
+"check the <a href=\"/features/#full_specs\">full technical specifications</"
+"a>."
 msgstr ""
 "Please check the <a href=\"/features/#full_specs\">full technical "
 "specifications</a>."
@@ -1930,16 +1928,30 @@ msgid "Contact"
 msgstr "Contact"
 
 #: templates/navbar.html:21
+#, fuzzy
 msgctxt "Navigation bar link to Mixxx download page."
-msgid "Download&nbsp;It"
+msgid "Download It"
 msgstr "Download&nbsp;It"
 
 #: templates/navbar.html:22
+#, fuzzy
 msgctxt "Navigation bar link to Mixxx features page."
-msgid "See&nbsp;Features"
-msgstr "See&nbsp;Features"
+msgid "See Features"
+msgstr "Core Features"
 
 #: templates/navbar.html:23
+#, fuzzy
 msgctxt "Navigation bar link to Mixxx support page."
-msgid "Get&nbsp;Support"
-msgstr "Get&nbsp;Support"
+msgid "Get Support"
+msgstr "Support"
+
+#~ msgid "Want to know if your DJ MIDI controller is supported in Mixxx?"
+#~ msgstr "Want to know if your DJ MIDI controller is supported in Mixxx?"
+
+#~ msgctxt "Navigation bar link to Mixxx features page."
+#~ msgid "See&nbsp;Features"
+#~ msgstr "See&nbsp;Features"
+
+#~ msgctxt "Navigation bar link to Mixxx support page."
+#~ msgid "Get&nbsp;Support"
+#~ msgstr "Get&nbsp;Support"

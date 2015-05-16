@@ -18,9 +18,9 @@
   </div>
   <div id="navbar_biglinks">
     <!-- using non-breaking spaces here! -->
-    <a href="{% url '/download.html' %}">{% trans "Download&nbsp;It" context "Navigation bar link to Mixxx download page." %}</a>
-    <a href="{% url '/features.html' %}">{% trans "See&nbsp;Features" context "Navigation bar link to Mixxx features page." %}</a>
-    <a href="{% url '/support.html' %}">{% trans "Get&nbsp;Support" context "Navigation bar link to Mixxx support page." %}</a>
+    <a href="{% url '/download.html' %}">{% filter nbsp %}{% trans "Download It" context "Navigation bar link to Mixxx download page." %}{% endfilter %}</a>
+    <a href="{% url '/features.html' %}">{% filter nbsp %}{% trans "See Features" context "Navigation bar link to Mixxx features page." %}{% endfilter %}</a>
+    <a href="{% url '/support.html' %}">{% filter nbsp %}{% trans "Get Support" context "Navigation bar link to Mixxx support page." %}{% endfilter %}</a>
   </div>
   <div style="clear: both;"></div>
 </div>
