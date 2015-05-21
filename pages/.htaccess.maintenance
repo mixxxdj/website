@@ -1,6 +1,8 @@
+{% verbatim %}
 RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_URI} !^/images/.*$
 RewriteCond %{REQUEST_URI} !^/css/.*$
 RewriteCond %{REQUEST_URI} !^/maintenance/$
 RewriteRule ^(.*)$ /maintenance/ [R=307,L]
+{% endverbatim %}
