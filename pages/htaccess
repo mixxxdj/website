@@ -1,0 +1,19 @@
+{% verbatim %}
+RewriteEngine on
+
+# To allow the user to choose their language we only match on visits to the root
+# page of the site and we permanently re-direct them to the first language
+# matching the HTTP Accept-Language header. Since the Accept-Language header is
+# typically a list, we match using "^" to only match the first one. This also
+# gets us language fallback (i.e. we don't have a de-CH version but de will
+# match so the user gets the de site).
+#
+# New languages must be listed here for redirects to work. More specific locales
+# must come before general ones (i.e. de-DE before de).
+
+RewriteCond %{HTTP:Accept-Language} ^de-DE [NC]
+RewriteRule ^$ /de-DE/ [R=301,L,NC]
+
+RewriteCond %{HTTP:Accept-Language} ^de [NC]
+RewriteRule ^$ /de/ [R=301,L,NC]
+{% endverbatim %}
