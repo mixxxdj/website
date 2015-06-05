@@ -1,6 +1,9 @@
 {% verbatim %}
 RewriteEngine on
 
+# Don't rewrite any forums or wiki URLs.
+RewriteRule ^(wiki|forums)($|/) - [L]
+
 # To allow the user to choose their language we only match on visits to the root
 # page of the site and we permanently re-direct them to the first language
 # matching the HTTP Accept-Language header. Since the Accept-Language header is
