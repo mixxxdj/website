@@ -16,4 +16,10 @@ RewriteRule ^$ /de-DE/ [R=301,L,NC]
 
 RewriteCond %{HTTP:Accept-Language} ^de [NC]
 RewriteRule ^$ /de/ [R=301,L,NC]
+
+# If the request ends in '.php' strip it and re-direct. This re-directs any URLs
+# on the web to the old website to the permanent new locations.
+RewriteCond %{REQUEST_URI} ^([^.]+)\.php$ [NC]
+RewriteRule ^ %1 [R=301,L]
+
 {% endverbatim %}
