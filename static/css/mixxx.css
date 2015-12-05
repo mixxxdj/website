@@ -261,3 +261,19 @@ h2 a {
     font-size: 0.7em;
     text-align: center;
 }
+#downloadmenu {
+    position:fixed;
+    width:100px;
+    top:10%;
+    left:5px
+}
+@media only screen and (max-width: 1150px) {
+    #downloadmenu {
+        display: none;
+    }
+}
+#downloadmenu ul
+{
+    padding: 0px;
+    list-style-type: none;
+}
