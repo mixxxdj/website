@@ -34,8 +34,9 @@ $(document).ready(function() {
   </div>
 
   <a name="beta"></a>
-  <H1>{% trans "Download Now (Mixxx 1.12 Beta)" %}</H1>
+  <H1>{% trans "Download Now (Mixxx 2.0 Unstable)" %}</H1>
   <div style="padding: 20px;">
+    <p><h2>For live use, we recommend <a href="#stable">Mixxx 1.11.0 Stable</a> below.</h2></p>
     <p>
       {% blocktrans with mixxx_112_beta_blog_link="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html" %}The Mixxx team has been working hard for over 2 years on Mixxx 1.12. We've added hundreds of new features and we need YOUR help testing them. Check out the <a href="{{ mixxx_112_beta_blog_link }}">release announcement on our blog</a> for a list of the new, hard-hitting features. Tempted? Try these on for size:{% endblocktrans %}
     <p>
@@ -46,19 +47,19 @@ $(document).ready(function() {
 
     <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{% trans "Windows" %}</H2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win32.exe"
-          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win32');">
-        {% trans "Mixxx 1.12 Beta (build r5442) for 32-bit Windows" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-win32.exe"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-win32');">
+        {% trans "Mixxx 2.0 RC1 (build r5678) for 32-bit Windows" %}</a></p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-win64.exe"
-          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-win64');">
-        {% trans "Mixxx 1.12 Beta (build r5442) for 64-bit Windows" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-win64.exe"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-win64');">
+        {% trans "Mixxx 2.0 RC1 (build r5678) for 64-bit Windows" %}</a></p>
 
     <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">{% trans "Mac OS X" %}</H2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-osxintel.dmg"
-          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-osxintel');">
-        {% trans "Mixxx 1.12 Beta (build r5442) for Mac OS X 10.5+ (Intel)" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-osxintel.dmg"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-osxintel');">
+        {% trans "Mixxx 2.0 RC1 (build r5678) for Mac OS X 10.5+ (Intel)" %}</a></p>
 
     <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{% trans "Ubuntu" %}</H2>
 
@@ -71,25 +72,25 @@ $(document).ready(function() {
 
     <p>
       <!-- TODO(jus): figure syntax out for { blocktrans with } & javascript links -->
-      {% blocktrans %}This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas" onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-ppa');">Mixxx PPA</a> on Launchpad.{% endblocktrans %}
+      {% blocktrans %}This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas" onclick="javascript:trackDownload('/downloads/2.0.0-rc1-ubuntu-ppa');">Mixxx PPA</a> on Launchpad.{% endblocktrans %}
     </p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-i386.deb"
-          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty32');">
-        {% trans "Mixxx 1.12 Beta (build r5442) for 32-bit Ubuntu Trusty (and newer)" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-trusty-i386.deb"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-ubuntu-trusty32');">
+        {% trans "Mixxx 2.0 RC1 (build r5678) for 32-bit Ubuntu Trusty (and newer)" %}</a></p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-trusty-amd64.deb"
-          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-ubuntu-trusty64');">
-        {% trans "Mixxx 1.12 Beta (build r5442) for 64-bit Ubuntu Trusty (and newer)" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-trusty-amd64.deb"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-ubuntu-trusty64');">
+        {% trans "Mixxx 2.0 RC1 (build r5678) for 64-bit Ubuntu Trusty (and newer)" %}</a></p>
 
     <H2>{% trans "Linux / Source Code" %}</H2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-1.12.0-beta1/mixxx-1.12.0-beta1-src.tar.gz"
-          onclick="javascript:trackDownload('/downloads/1.12.0-beta1-linuxsrc');">
-        {% trans "Mixxx 1.12 Beta (build r5442) Source Code" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-src.tar.gz"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-linuxsrc');">
+        {% trans "Mixxx 2.0 RC1 (build r5678) Source Code" %}</a></p>
 
     <p>
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's 1.12 development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
+      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's 2.0 development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
       <pre>        git clone -b 1.12 https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
