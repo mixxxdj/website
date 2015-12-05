@@ -277,3 +277,6 @@ h2 a {
     padding: 0px;
     list-style-type: none;
 }
+#downloadmenu li {
+    margin: 0.2em 0;
+}
