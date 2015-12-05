@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Mixxx - {% block title %}{% endblock %}</title>
     {% trans "Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI controller support, internet broadcasting, and integrated music library." context "Summary of Mixxx shown in social media shares and search engines." as default_meta_description %}
+    {# Don't remove since it verifies ownership of mixxx.org in Google Webmaster Tools #}
+    <meta name="google-site-verification" content="e7xeN8MhmdNedrrTVu7RRKXNl_8UBjg418brYV3XIPE" />
     <meta name="description" content="{% block meta_description %}{{ default_meta_description }}{% endblock %}">
     <meta name="keywords" content="{% block meta_keywords %}dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer{% endblock %}"/>
     <meta name="viewport" content="width=device-width">
