@@ -14,11 +14,11 @@ RewriteRule ^(wiki|forums)($|/) - [L]
 # New languages must be listed here for redirects to work. More specific locales
 # must come before general ones (i.e. de-DE before de).
 
-RewriteCond %{HTTP:Accept-Language} ^de-DE [NC]
-RewriteRule ^$ /de-DE/ [R=301,L,NC]
+# RewriteCond %{HTTP:Accept-Language} ^de-DE [NC]
+# RewriteRule ^$ /de-DE/ [R=301,L,NC]
 
-RewriteCond %{HTTP:Accept-Language} ^de [NC]
-RewriteRule ^$ /de/ [R=301,L,NC]
+# RewriteCond %{HTTP:Accept-Language} ^de [NC]
+# RewriteRule ^$ /de/ [R=301,L,NC]
 
 # If the request ends in '.php' strip it and re-direct. This re-directs any URLs
 # on the web to the old website to the permanent new locations.
