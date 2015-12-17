@@ -47,19 +47,19 @@ $(document).ready(function() {
 
     <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{% trans "Windows" %}</H2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-win32.exe"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-win32');">
-        {% trans "Mixxx 2.0 RC1 (build r5678) for 32-bit Windows" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win32.exe"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-win32');">
+        {% trans "Mixxx 2.0 RC2 (build r5717) for 32-bit Windows" %}</a></p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-win64.exe"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-win64');">
-        {% trans "Mixxx 2.0 RC1 (build r5678) for 64-bit Windows" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win64.exe"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-win64');">
+        {% trans "Mixxx 2.0 RC2 (build r5717) for 64-bit Windows" %}</a></p>
 
     <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">{% trans "Mac OS X" %}</H2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-osxintel.dmg"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-osxintel');">
-        {% trans "Mixxx 2.0 RC1 (build r5678) for Mac OS X 10.5+ (Intel)" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-osxintel.dmg"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-osxintel');">
+        {% trans "Mixxx 2.0 RC2 (build r5717) for Mac OS X 10.5+ (Intel)" %}</a></p>
 
     <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{% trans "Ubuntu" %}</H2>
 
@@ -72,22 +72,22 @@ $(document).ready(function() {
 
     <p>
       <!-- TODO(jus): figure syntax out for { blocktrans with } & javascript links -->
-      {% blocktrans %}This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas" onclick="javascript:trackDownload('/downloads/2.0.0-rc1-ubuntu-ppa');">Mixxx PPA</a> on Launchpad.{% endblocktrans %}
+      {% blocktrans %}This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas" onclick="javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-ppa');">Mixxx PPA</a> on Launchpad.{% endblocktrans %}
     </p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-trusty-i386.deb"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-ubuntu-trusty32');">
-        {% trans "Mixxx 2.0 RC1 (build r5678) for 32-bit Ubuntu Trusty (and newer)" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-trusty-i386.deb"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-trusty32');">
+        {% trans "Mixxx 2.0 RC2 (build r5717) for 32-bit Ubuntu Trusty (and newer)" %}</a></p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-trusty-amd64.deb"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-ubuntu-trusty64');">
-        {% trans "Mixxx 2.0 RC1 (build r5678) for 64-bit Ubuntu Trusty (and newer)" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-trusty-amd64.deb"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-trusty64');">
+        {% trans "Mixxx 2.0 RC2 (build r5717) for 64-bit Ubuntu Trusty (and newer)" %}</a></p>
 
     <H2>{% trans "Linux / Source Code" %}</H2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc1/mixxx-2.0.0-rc1-src.tar.gz"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc1-linuxsrc');">
-        {% trans "Mixxx 2.0 RC1 (build r5678) Source Code" %}</a></p>
+    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-src.tar.gz"
+          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-linuxsrc');">
+        {% trans "Mixxx 2.0 RC2 (build r5717) Source Code" %}</a></p>
 
     <p>
       {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's 2.0 development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
