@@ -28,6 +28,12 @@ $(document).ready(function() {
 {% endblock %}
 
 {% block body %}
+<div id="downloadmenu">
+<ul>
+<li><a href="#stable">{% trans "Stable 1.11" %}</li>
+<li><a href="#beta">{% trans "Dev 2.0-rc1" %}</li>
+</ul>
+</div>
 <div class="content">
   <div style="float: right; width: 100px; padding-top: 30px;">
     <center>{% include "donate_paypal.html" %}</center>
