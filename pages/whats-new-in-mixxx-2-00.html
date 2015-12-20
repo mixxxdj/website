@@ -129,43 +129,28 @@
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "Advanced Search" %}</H2>
-    <p class="feature_indent"></p>
-
-    {% trans "The library search box is now capable of advanced queries to help you pinpoint that perfect track." %}
-
-    <p><b>{% trans "Try out some of these example searches:" %}</b></p>
-
-    {% trans "All tracks between 100 and 120BPM with rating greater than 4:" %}
-    <p class="feature_indent">
-      bpm:100-120 rating:&gt;4
-    </p>
-     {% blocktrans %}All tracks with "Aphex Twin" in the artist column:{% endblocktrans %}
-    <p class="feature_indent">
-      artist:"Aphex Twin"
-    </p>
-    {% trans "All Electro tracks with BPM greater than 115:" %}
-    <p class="feature_indent">
-      genre:electro bpm:&gt;115
-    </p>
-    <!-- For full details, see XXXXXX. -->
+    <img src="{% static '/static/images/feature_library.png' %}" style="margin-left: 60px;">
   </div>
 
   <div class="halfbox_right">
-    <img width="400px" src="{% static '/static/images/feature_library.png' %}" style="padding-top: 30px;">
-    <b>{% trans "Exportable Set Lists" %}</b>
+    <b>{% trans "AutoDJ Crates" %}</b>
     <p>
-      {% trans "Set playlists can now be exported as text files, CUE files, and M3U playlists." %}
+      {% trans "Need an extended bathroom-break? Automatically expand your AutoDJ queue with AutoDJ crates." %}
     </p>
 
-    <b>{% trans "Editable Quick Links" %}</b>
+    <b>{% trans "Multi-Core Library Scanner" %}</b>
     <p>
-      {% trans "Quick Links in the library Browse view can now be edited." %}
+      {% trans "Got a huge library? Mixxx will fly through it with its new multi-core scanning support." %}
     </p>
 
-    <b>{% trans "Improved Auto DJ" %}</b>
+    <b>{% trans "Cover Art Support" %}</b>
     <p>
-      {% trans "The crossfade length can now be changed, tracks can be re-queued instead of removing them, and more." %}
+      {% trans "Evoke the feel of thumbing through your record crate. Mixxx now shows slivers of cover art in the library table." %}
+    </p>
+
+    <b>{% trans "Improved Auto DJ Stability" %}</b>
+    <p>
+      {% trans "TODO it sucks less!" %}
     </p>
   </div>
   <div style="clear: both;"></div>
