@@ -11,17 +11,21 @@
 
   <div style="clear: both;"></div>
   <div class="halfbox_left">
-    <H2>{% trans "Dual Decks, Advanced Controls" %}</H2>
+    <H2>{% trans "Four Decks, Advanced Controls" %}</H2>
     <p>
       {% trans "Drop a song onto a deck in Mixxx to kick off your next mix. Each deck features a scratchable, scrolling waveform that marks beats and cue points, along with a whole-song waveform overview for quick seeking." %}
     </p>
 
     <p><b>{% trans "Time Stretch and Vinyl Emulation" %}</b><br>
-      {% trans "Speed up and slow down songs without changing their pitch with time stretching. Our high-quality interpolator can also reproduce classic vinyl sounds like backspins." %}
+      {% trans "Speed up and slow down songs without changing their pitch with time stretching, or just change the musical pitch so your songs play in harmony. Our high-quality interpolator can also reproduce classic vinyl sounds like backspins." %}
     </p>
 
     <p><b>{% trans "Beat Looping" %}</b><br>
       {% trans "Found a sweet loop or need to extend your mix while you prep the next track? Instantly loop a 4, 8, or 16 beat segment with the click of a button." %}
+    </p>
+
+    <p><b>{% trans "Powerful Master Sync" %}</b><br>
+      {% trans "Engage master sync on your decks and they'll stay locked in time even if you change speed.  Construct remixes on the fly with multiple tracks and loops without losing control." %}
     </p>
 
     <p><b>{% trans "Hotcues" %}</b><br>
@@ -30,17 +34,21 @@
   </div>
 
   <div class="halfbox_right">
-    <img src="{% static '/static/images/feature_waveform.png' %}">
+    <img width="362px" src="{% static '/static/images/feature_waveform.png' %}">
+    <p><b>{% trans "Beat Rolls and Censor" %}</b><br>
+      {% trans "Play with rhythm by triggering short loops and reverse-playback effects.  The track stays in time so you don't miss a beat." %}
+    </p>
+
     <p><b>{% trans "Intuitive Pitchbend" %}</b><br>
       {% trans "Ramping pitchbend ensures any tempo nudging is smoothly applied, just like with vinyl." %}
     </p>
 
     <p><b>{% trans "Broad Format Support" %}</b><br>
-      {% trans "Our mature audio decoders deliver pristine sound with rock-solid stability. Mixxx plays MP3, M4A/AAC, Ogg Vorbis, FLAC, WAVE, and AIFF formats." %}
+      {% trans "Our mature audio decoders deliver pristine sound with rock-solid stability. Mixxx plays MP3, M4A/AAC, Ogg Vorbis, Opus, FLAC, WAVE, and AIFF formats." %}
     </p>
 
     <p><b>{% trans "EQ and Crossfader Control" %}</b><br>
-      {% trans "Mixxx features audiophile butterworth filters with adjustable EQ shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades" %}.
+      {% trans "Mixxx features multiple choices of audiophile filters with adjustable EQ shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades" %}.
     </p>
   </div>
 
@@ -53,6 +61,11 @@
     </p>
 
     <center><img src="{% static '/static/images/feature_sampler2.png' %}"></center>
+
+    <H2>{% trans "Built-in Effects" %}</H2>
+    <p>
+      {% trans "Add sizzle to your mix with reverb, echo, flange, and more." %}
+    </p>
 
     <div style="clear: both;"></div>
 
@@ -74,20 +87,20 @@
         {% trans "Need to find music outside your library? Browse and load tunes from any hard disk." %}
       </p>
       <p class="feature_indent">
-        <b>{% trans "iTunes Integration" %}</b><br>
-        {% trans "Drop fresh tracks from your iTunes library right into your mix." %}
+        <b>{% trans "iTunes and Traktor Library Integration" %}</b><br>
+        {% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}
       </p>
     </div>
 
     <div class="halfbox_right">
-      <img src="{% static '/static/images/feature_library.png' %}" style="padding-top: 30px;">
+      <img width="362px" src="{% static '/static/images/feature_library.png' %}" style="padding-top: 30px;">
     </div>
 
     <div style="clear: both;"></div>
 
     <div class="halfbox_left">
       <H2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM Detection and Sync" %}</H2>
-      <p class="feature_indent">{% trans "Instantly sync the tempo of two songs for seamless beatmixing. Each waveform view marks each beat to help guide your mixing." %}</p>
+      <p class="feature_indent">{% trans "Newly upgraded BPM detection library does an even better job finding the beat in even the toughest rhythms.  Instantly sync the tempo of four songs for seamless beatmixing. Each waveform view marks each beat to help guide your mixing." %}</p>
     </div>
 
     <div class="halfbox_right">
@@ -102,17 +115,17 @@
     <div class="gapfiller">
       <H1 style="margin-left: 30px;">{% trans "Designer Skins" %}</H1>
       <center>
-        <img src="{% static '/static/images/skins.png' %}">
-        <p>{% trans "Includes 5 exclusive designer skins with various layouts" %}.</p>
+        <img width="800px" src="{% static '/static/images/skins.png' %}">
+        <p>{% trans "Includes 3 exclusive designer skins with various layouts" %}.</p>
       </center>
     </div>
 
-    <!-- YouTube video -->
+    <!-- YouTube video
     <div style="padding-bottom: 30px;">
       <center>
         <iframe width="640" height="360" src="http://www.youtube.com/embed/axlW5Q_8y6c?start=499&hd=1&modestbranding=0&rel=0&controls=1" frameborder="0" allowfullscreen></iframe>
       </center>
-    </div>
+    </div> -->
 
     <H1>{% trans "Record and Broadcast your Mix" %}</H1>
     <p>
@@ -142,9 +155,9 @@
     </div>
 
     <div class="halfbox_right">
-      <H2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Microphone Input" %}</H2>
+      <H2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Quad Microphone Input" %}</H2>
       <p>
-        {% trans "Whether you're dropping thick reggae vocals over some dub or giving shoutouts on the air, microphone input is as easy as toggling talkover." %}
+        {% trans "Whether you're dropping thick reggae vocals over some dub, giving shoutouts on the air, or throwing a rap battle, microphone input is as easy as toggling one of the talkover buttons." %}
       </p>
     </div>
 
@@ -153,16 +166,16 @@
     <H1>{% trans "Comprehensive DJ Hardware Support" %}</H1>
     <div class="halfbox_left">
       <div style="height: 200px;">
-        <center><img src="{% static '/static/images/feature_midi2.png' %}" style="padding-top: 20px;"></center>
+        <center><img width="340px" src="{% static '/static/images/feature_midi2.png' %}" style="padding-top: 20px;"></center>
       </div>
 
-      <H2>{% trans "MIDI Controller Support" %}</H2>
+      <H2>{% trans "MIDI and HID Controller Support" %}</H2>
       <p>
-        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Over 30 controllers supported</b><br> including the Hercules RMX, Numark Mixtrack, Vestax Spin and Typhoon, Stanton SCS.3d, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Read more{% endblocktrans %}</a>
+        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Over 30 controllers supported</b><br> including the Traktor Kontrol S4 MK2, Vestax VCI-400, Hercules RMX, Numark Mixtrack, Stanton SCS.3d, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Read more{% endblocktrans %}</a>
       </p>
 
       <p><b>{% trans "Advanced MIDI Scripting Engine" %}</b><br>
-        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}Mixxx features a cutting-edge JavaScript-based scripting engine for maximum flexibility. MIDI messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
+        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}Mixxx features a cutting-edge JavaScript-based scripting engine for maximum flexibility. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
 
@@ -197,34 +210,37 @@
       <div style="float: left; width: 30%; padding-right: 50px;">
         <ul>
           <p><b>{% trans "Core Features" %}</b></p>
-          <li>{% trans "Cross-platform (Windows XP/Vista/7/8, Mac OS X, Linux)" %}</li>
+          <li>{% trans "Cross-platform (Windows XP/Vista/7/8/10, Mac OS X, Linux)" %}</li>
           <li>{% trans "Free and open source (GPL v2)" %}</li>
           <li>{% trans "Parallel or split scratchable waveform displays" %}</li>
           <li>{% trans "Waveform summaries" %}</li>
           <li>{% trans "Spinning vinyl widgets" %}</li>
-          <li>{% trans "MP3, OGG, WAVE, M4A / AAC, and FLAC playback" %}</li>
+          <li>{% trans "Cover Art" %}</li>
+          <li>{% trans "MP3, OGG, WAVE, M4A / AAC, Opus, and FLAC playback" %}</li>
           <li>{% trans "Extra playback formats through plugins" %}</li>
           <li>{% trans "Fast, database-powered library" %}</li>
           <li>{% trans "Shoutcast and Icecast broadcasting" %}</li>
-          <li>{% trans "Microphone Support" %}</li>
+          <li>{% trans "4 Microphone Inputs" %}</li>
+          <li>{% trans "4 Auxiliary Inputs" %}</li>
           <li>{% trans "Automatic crossfading with Auto DJ" %}</li>
           <li>{% trans "Crates and playlists" %}</li>
-          <li>{% trans "Reads iTunes, Traktor, and Rhythmbox libraries" %}</li>
+          <li>{% trans "Reads iTunes, Traktor, Banshee and Rhythmbox libraries" %}</li>
           <li>{% trans "Pitch-independent time stretch (key lock)" %}</li>
+          <li>{% trans "Speed-neutral musical key adjustment" %}</li>
           <li>{% trans "Vinyl emulation" %}</li>
           <li>{% trans "Quantized loops, hot cues, and beatloops" %}</li>
-          <li>{% trans "Synchronization and auto-beatmatching" %}</li>
+          <li>{% trans "4-deck Master Sync and auto-beatmatching" %}</li>
           <li>{% trans "4 Sampler Decks" %}</li>
           <li>{% trans "Wave and Ogg recording with optional MP3 support." %}</li>
           <li>{% trans "BPM detection and estimation" %}</li>
           <li>{% trans "Bulk BPM analysis" %}</li>
           <li>{% trans "Multichannel soundcard support (playback and capture)" %}</li>
           <li>{% trans "Headphone cueing with multiple soundcard support" %}</li>
-          <li>{% trans "Adjustable EQ shelves" %}</li>
+          <li>{% trans "Selectable EQ filters with adjustable shelves" %}</li>
           <li>{% trans "Crossfader curve control" %}</li>
-          <li>{% trans "Skinnable interface with 5 pixel-perfect skins bundled" %}</li>
-          <li>{% trans "Advanced MIDI scripting engine" %}</li>
-          <li>{% trans "Multiple simultaneous MIDI controllers" %}</li>
+          <li>{% trans "Skinnable interface with 3 scalable skins bundled" %}</li>
+          <li>{% trans "Advanced MIDI and HID scripting engine" %}</li>
+          <li>{% trans "Multiple simultaneous MIDI and HID controllers" %}</li>
           <li>{% trans "Adjustable pitch range" %}</li>
           <li>{% trans "Ramping pitchbend controls" %}</li>
           <li>{% trans "Multi-core CPU support" %}</li>
@@ -235,26 +251,45 @@
       </div>
       <div style="float: left; width: 25%; padding-right: 50px;">
         <ul>
-          <p><b>{% blocktrans %}Mixxx Certified<br>MIDI Controllers{% endblocktrans %}</b></p>
-          <li>Allen &amp; Heath Xone K2</li>
-          <li>EKS Otus</li>
-          <li>Keith McMillen Instruments QuNeo</li>
+          <p><b>{% blocktrans %}Mixxx Certified<br>Controllers{% endblocktrans %}</b></p>
+          <li>Traktor Kontrol S4 MK2</li>
           <li>Vestax VCI-400</li>
+          <li>Allen &amp; Heath Xone K2</li>
+          <li>American Audio VMS 4 / 4.1</li>
+          <li>DJ TechTools MIDI Fighter Classic</li>
+          <li>Denon HS5500</li>
+          <li>Hercules DJ Console MP3 e2</li>
+          <li>Hercules DJ Console Mk2</li>
+          <li>Hercules DJ Console RMX</li>
+          <li>Hercules DJ Console RMX 2</li>
+          <li>Keith McMillen Instruments QuNeo</li>
+          <li>M-Audio X-Session Pro</li>
+          <li>Stanton SCS.1d</li>
+          <li>Stanton SCS.1m</li>
+          <li>Stanton SCS.3d</li>
+          <li>Stanton SCS.3m</li>
         </ul>
         <ul>
-          <p><b>{% blocktrans %}Community Supported<br>MIDI Controllers{% endblocktrans %}</b></p>
+          <p><b>{% blocktrans %}Community Supported<br>Controllers{% endblocktrans %}</b></p>
           <li>Akai MPD24</li>
           <li>Akai LPD8</li>
+          <li>American Audio RADIUS 1000</li>
           <li>American Audio RADIUS 2000</li>
+          <li>American Audio RADIUS 3000</li>
           <li>American Audio VMS4</li>
           <li>American Audio VMS2</li>
-          <li>Behringer BCD3000</li>
           <li>Behringer BCD2000</li>
+          <li>Behringer BCD3000</li>
+          <li>Denon MC6000MK2</li>
+          <li>Denon SC2000</li>
           <li>DJ-Tech CDJ-101</li>
           <li>DJ-Tech DJM-101</li>
           <li>DJ-Tech i-Mix Reload</li>
+          <li>DJ-Tech Kontrol One</li>
+          <li>DJ-Tech Mixer One</li>
           <li>DJ TechTools MIDIFighter</li>
           <li>EKS Otus</li>
+          <li>Electrix Tweaker</li>
           <li>Evolution X-Session</li>
           <li>FaderFox DJ2</li>
           <li>Gemini FirstMix</li>
@@ -262,7 +297,7 @@
           <li>Hercules DJ Control AIR</li>
           <li>Hercules DJ Control Instinct</li>
           <li>Hercules DJ Console Mac Edition</li>
-          <li>Hercules DJ Console ML1</li>
+          <li>Hercules DJ Console MK1</li>
           <li>Hercules DJ Console MK2</li>
           <li>Hercules DJ Console MK4</li>
           <li>Hercules DJ Console MP3</li>
@@ -272,16 +307,20 @@
           <li>Ion Discover DJ</li>
           <li>Kontrol Dj KDJ500</li>
           <li>Korg nanoKONTROL</li>
+          <li>Korg nanoKONTROL 2</li>
           <li>Korg nanoPAD2</li>
           <li>M-Audio X-Session Pro</li>
           <li>M-Audio Xponent</li>
           <li>Mixman DM2</li>
           <li>MixVibes U-Mix Control 2</li>
+          <li>MixVibes U-Mix Control 2 Pro</li>
           <li>Nintendo Wiimote</li>
           <li>Novation Dicer</li>
-          <li>Novation Launchpad</li>
+          <li>Novation Launchpad Mk1</li>
+          <li>Novation Launchpad Mini</li>
           <li>Numark DJ2Go</li>
           <li>Numark MixTrack Pro</li>
+          <li>Numark MixTrack Pro II</li>
           <li>Numark MixTrack</li>
           <li>Numark N4</li>
           <li>Numark NS7</li>
@@ -291,7 +330,12 @@
           <li>Pioneer CDJ-2000</li>
           <li>Pioneer CDJ-350</li>
           <li>Pioneer CDJ-850</li>
-          <li>Reloop Digital Jockey 2</li>
+          <li>Pioneer DDJ-SB</li>
+          <li>Pioneer DDJ-SB2</li>
+          <li>Reloop Beatpad</li>
+          <li>Reloop Digital Jockey 2 Controller Edition</li>
+          <li>Reloop Digital Jockey 2 Master Edition</li>
+          <li>Reloop Terminal Mix 2</li>
           <li>Reloop Terminal Mix 4</li>
           <li>Sony Sixxaxis</li>
           <li>Stanton SCS.1d</li>
@@ -305,6 +349,7 @@
           <li>Vestax Typhoon</li>
           <li>Vestax VCI-100</li>
           <li>Vestax VCI-100 3DEX Edition</li>
+          <li>Vestax VCI-100 MKII</li>
           <li>Vestax VCI-300</li>
           <li>Wireless DJ App (iOS)</li>
           <li>

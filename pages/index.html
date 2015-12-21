@@ -10,7 +10,7 @@
     <li>
       <a href="https://twitter.com/share" class="twitter-share-button"
          data-url="http://www.mixxx.org"
-         data-text="{% blocktrans %}Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux{% endblocktrans %}"
+         data-text="{% blocktrans %}Check out Mixxx - Free Digital DJ MP3 mixing software for Windows, Mac OS X, and Linux{% endblocktrans %}"
          data-via="mixxxdj"
          data-count="vertical">Tweet</a>
     </li>
@@ -24,7 +24,14 @@
 </div>
 
 <div id="splash">
+
   <img class="background" src="{% static '/static/images/splash1.png' %}">
+  <div id="splash_newversion_button">
+    <a href="/whats-new-in-mixxx-2-0">
+      <img alt="{% blocktrans %}Check out what's new in Mixxx 2.0{% endblocktrans %}"
+           src="{% static '/static/images/splash_newversion.png' %}">
+    </a>
+  </div>
 </div>
 {% endblock %}
 
@@ -53,44 +60,43 @@
     <div style="float: right; margin-top: 16px; padding-right: 8px;">
         <img src="{% static '/static/images/squiggle.png' %}">
     </div>-->
-  <p style="text-align: center;">The most advanced free DJ software can be yours in seconds.</p>
+  <p style="text-align: center;">DJ your way. For free.</p>
   <div style="clear: both;"></div>
 </div> <!-- gapfiller -->
 
 <div class="content">
-  <H1>{% trans "Incredible Features, Unbeatable Value" %}</H1>
+  <h1>{% trans "Powerful Features For All DJs" %}</h1>
 
-  {% blocktrans %}Mixxx has everything you need to start making DJ mixes in a tight, integrated package. Whether you're DJing your next house party, spinning at a club, or broadcasting as a radio DJ, Mixxx has what you need to do it right.{% endblocktrans %}
+  {% blocktrans %}Mixxx has the tools DJs need to perform creative live mixes with digital music files. Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your way of mixing.{% endblocktrans %}
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "iTunes Integration" %}</H2>
+    <h2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "Color-Coded Waveforms" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}All your playlists and songs from iTunes, automatically ready to go for your next live DJ performance.{% endblocktrans %}
+      {% blocktrans %}RGB waveforms show the high, middle, and low frequencies in the music. Zoomed in scrolling waveforms show the current play position and overview waveforms help you see what's coming next.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "DJ MIDI Controller Support" %}</H2>
+    <h2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon"><!--TODO: Replace with icon that looks like a DJ controller rather than a piano keyboard-->{% trans "DJ Controller Support" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}With over 30 DJ MIDI controllers supported out-of-the-box, Mixxx gives you comprehensive hardware control for your DJ mixes.{% endblocktrans %}
+      {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the flexible mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM Detection and Sync" %}</H2>
+    <h2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM, Key Detection and Sync" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}Instantly sync the tempo of two songs for seamless beatmixing. Need a break? Create a quick playlist and let Auto DJ take over.{% endblocktrans %}
+      {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing. Need a break? Create a quick playlist and let Auto DJ take over.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_crossfader.png' %}" class="feature_icon">{% trans "Powerful Mixing Engine" %}</H2>
+    <h2><img src="{% static '/static/images/ic_preferences_crossfader.png' %}" class="feature_icon"><!--TODO: Replace with turntable icon-->{% trans "Vinyl Record Control" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}Mixxx has a cutting-edge mixing engine including support for MP3, M4A/AAC, OGG, and FLAC audio, adjustable EQ shelves, timecode vinyl control, recording, and Shoutcast broadcasting.{% endblocktrans %}
+      {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl.{% endblocktrans %}
       <a href="/features">{% trans "Read more" %}</a>
-
     </p>
   </div>
 
@@ -103,13 +109,9 @@
     </p>
   </div>
 
-  <H1>{% trans "And It Just Keeps Getting Better" %}</H1>
+  <h1>{% trans "Friendly Community" %}</h1>
   <p>
-    {% blocktrans %}Each year, a community of DJs, programmers, and artists contribute dozens of new features to Mixxx. <br> <b>And it doesn't cost you a dime.</b>{% endblocktrans %}
-  </p>
-
-  <p>
-    {% blocktrans %}Because Mixxx is <b>open source</b>, anyone can remix or add new features to it. And that includes you!{% endblocktrans %}
+    {% blocktrans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (as in freedom and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endblocktrans %}
   </p>
 
   <p>
@@ -145,7 +147,7 @@
     <div style="clear: both;"></div>
   </div>
 
-  <H1>{% trans "If you like Mixxx..." %}</H1>
+  <h1>{% trans "If you like Mixxx..." %}</h1>
   <div style="float: right;">
     <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"><img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
   </div>
