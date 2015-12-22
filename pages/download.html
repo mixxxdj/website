@@ -1,3 +1,30 @@
+stable_long_version: Mixxx 1.11.0
+unstable_short_version: Mixxx 2.0
+unstable_long_version: Mixxx 2.0 RC2 (build r5717)
+unstable_win32: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win32.exe
+unstable_win64: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win64.exe
+unstable_osxintel: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-osxintel.dmg
+unstable_ubuntu32: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-trusty-i386.deb
+unstable_ubuntu64: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-trusty-amd64.deb
+unstable_linuxsrc: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-src.tar.gz
+unstable_win32_analytics_conversion: /downloads/2.0.0-rc2-win32
+unstable_win64_analytics_conversion: /downloads/2.0.0-rc2-win64
+unstable_osxintel_analytics_conversion: /downloads/2.0.0-rc2-osxintel
+unstable_ubuntu32_analytics_conversion: /downloads/2.0.0-rc2-ubuntu-trusty32
+unstable_ubuntu64_analytics_conversion: /downloads/2.0.0-rc2-ubuntu-trusty64
+unstable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
+unstable_linuxsrc_analytics_conversion: /downloads/2.0.0-rc2-linuxsrc
+stable_win32: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe
+stable_win64: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win64.exe
+stable_osxintel: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg
+stable_osxppc: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macppc.dmg
+stable_linuxsrc: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz
+stable_win32_analytics_conversion: /downloads/1.11.0win32
+stable_win64_analytics_conversion: /downloads/1.11.0win64
+stable_osxintel_analytics_conversion: /downloads/1.11.0osxintel
+stable_osxppc_analytics_conversion: /downloads/1.11.0osxppc
+stable_linuxsrc_analytics_conversion: /downloads/1.11.0linuxsrc
+stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 {% extends "base.html" %}
 
 {% load i18n %}
@@ -28,15 +55,21 @@ $(document).ready(function() {
 {% endblock %}
 
 {% block body %}
+{% trans "Windows" as windows %}
+{% trans "Mac OS X" as mac_osx %}
+{% trans "Linux" as linux %}
+{% trans "Ubuntu" as ubuntu %}
+{% trans "Mixxx PPA" as mixxx_ppa %}
+
 <div class="content">
   <div style="float: right; width: 100px; padding-top: 30px;">
     <center>{% include "donate_paypal.html" %}</center>
   </div>
 
   <a name="beta"></a>
-  <H1>{% trans "Download Now (Mixxx 2.0 Unstable)" %}</H1>
+  <h1>{% blocktrans %}Download Now ({{ unstable_short_version }} Release Candidate){% endblocktrans %}</h1>
   <div style="padding: 20px;">
-    <p><h2>For live use, we recommend <a href="#stable">Mixxx 1.11.0 Stable</a> below.</h2></p>
+    <p><h2>For live use, we recommend <a href="#stable">{{ stable_long_version }} Stable</a> below.</h2></p>
     <p>
       {% blocktrans with mixxx_112_beta_blog_link="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html" %}The Mixxx team has been working hard for over 2 years on Mixxx 2.0. We've added hundreds of new features and we need YOUR help testing them. Check out the <a href="{{ mixxx_112_beta_blog_link }}">release announcement on our blog</a> for a list of the new, hard-hitting features. Tempted? Try these on for size:{% endblocktrans %}
     <p>
@@ -45,23 +78,23 @@ $(document).ready(function() {
       <b>{% trans "Important:" %}</b>{% blocktrans with stable_link="#stable" %} While these builds have been stable in testing they are not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.</a>{% endblocktrans %}
     </p>
 
-    <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{% trans "Windows" %}</H2>
+    <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{{ windows }}</h2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win32.exe"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-win32');">
-        {% trans "Mixxx 2.0 RC2 (build r5717) for 32-bit Windows" %}</a></p>
+    <p><a href="{{ unstable_win32 }}"
+          onclick="javascript:trackDownload('{{ unstable_win32_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for 32-bit Windows{% endblocktrans %}</a></p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win64.exe"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-win64');">
-        {% trans "Mixxx 2.0 RC2 (build r5717) for 64-bit Windows" %}</a></p>
+    <p><a href="{{ unstable_win64 }}"
+          onclick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for 64-bit Windows{% endblocktrans %}</a></p>
 
-    <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">{% trans "Mac OS X" %}</H2>
+    <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">{{ mac_osx }}</h2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-osxintel.dmg"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-osxintel');">
-        {% trans "Mixxx 2.0 RC2 (build r5717) for Mac OS X 10.5+ (Intel)" %}</a></p>
+    <p><a href="{{ unstable_osxintel }}"
+          onclick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for Mac OS X 10.5+ (Intel){% endblocktrans %}</a></p>
 
-    <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{% trans "Ubuntu" %}</H2>
+    <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
 
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
@@ -71,52 +104,56 @@ $(document).ready(function() {
     </pre>
 
     <p>
-      <!-- TODO(jus): figure syntax out for { blocktrans with } & javascript links -->
-      {% blocktrans %}This will install the latest version of Mixxx from the <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas" onclick="javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-ppa');">Mixxx PPA</a> on Launchpad.{% endblocktrans %}
+      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxxbetas' onclick=\"javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+      {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
+      {% endwith %}
     </p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-trusty-i386.deb"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-trusty32');">
-        {% trans "Mixxx 2.0 RC2 (build r5717) for 32-bit Ubuntu Trusty (and newer)" %}</a></p>
+    <p><a href="{{ unstable_ubuntu32 }}"
+          onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for 32-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-trusty-amd64.deb"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-ubuntu-trusty64');">
-        {% trans "Mixxx 2.0 RC2 (build r5717) for 64-bit Ubuntu Trusty (and newer)" %}</a></p>
+    <p><a href="{{ unstable_ubuntu64 }}"
+          onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for 64-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
 
-    <H2>{% trans "Linux / Source Code" %}</H2>
+    <h2>{% trans "Linux / Source Code" %}</h2>
 
-    <p><a href="http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-src.tar.gz"
-          onclick="javascript:trackDownload('/downloads/2.0.0-rc2-linuxsrc');">
-        {% trans "Mixxx 2.0 RC2 (build r5717) Source Code" %}</a></p>
+    <p><a href="{{ unstable_linuxsrc }}"
+          onclick="javascript:trackDownload('{{ unstable_linuxsrc_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} Source Code{% endblocktrans %}</a></p>
 
     <p>
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's 2.0 development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
+      {% trans "The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information." %}
+      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The latest code from Mixxx's 2.0 development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
       <pre>        git clone -b 1.12 https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
     <p>
-      {% blocktrans with compiling_windows_wiki_link="/wiki/doku.php/compiling_on_windows" compiling_osx_wiki_link="/wiki/doku.php/compiling_on_os_x" compiling_linux_wiki_link="/wiki/doku.php/compiling_on_linux"%}Compilation instructions are available for <a href="{{ compiling_windows_wiki_link }}">Windows</a>, <a href="{{ compiling_osx_wiki_link }}">Mac OS X</a>, and <a href="{{ compiling_linux_wiki_link }}">Linux</a>.{% endblocktrans %}
+      {% blocktrans with compiling_windows_wiki_link="<a href=\"/wiki/doku.php/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"/wiki/doku.php/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"/wiki/doku.php/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
+
+
     </p>
   </div>
 
   <a name="stable"></a>
-  <H1>{% trans "Download Now (Mixxx 1.11.0 Stable)" %}</H1>
+  <h1>{% blocktrans %}Download Now ({{ stable_long_version }} Stable){% endblocktrans %}</h1>
   {% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
 
-    <H2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{% trans "Windows" %}</H2>
+    <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{{ windows }}</h2>
 
     <p>
-      <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe"
-         onClick="javascript:trackDownload('/downloads/1.11.0win32');">
-        {% trans "Download Mixxx 1.11.0 for 32-bit Windows" %}</a>
+      <a href="{{ stable_win32 }}"
+         onClick="javascript:trackDownload('{{ stable_win32_analytics_conversion }}');">
+        {% blocktrans %}Download {{ stable_long_version }} for 32-bit Windows{% endblocktrans %}</a>
     </p>
 
     <p>
-      <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win64.exe"
-	 onClick="javascript:trackDownload('/downloads/1.11.0win64'); ">
-        {% trans "Download Mixxx 1.11.0 for 64-bit Windows" %}</a>
+      <a href="{{ stable_win64 }}"
+         onClick="javascript:trackDownload('{{ stable_win64_analytics_conversion }}');">
+        {% blocktrans %}Download {{ stable_long_version }} for 64-bit Windows{% endblocktrans %}</a>
     </p>
 
     <br>
@@ -124,16 +161,16 @@ $(document).ready(function() {
   </div>
 
   <div class="halfbox_right darkborder macbox">
-    <H2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{% trans "Mac OS X" %}</H2>
+    <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{{ mac_osx }}</h2>
     <p>
-      <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg"
-	 onClick="javascript:trackDownload('/downloads/1.11.0osxintel'); ">
-        {% trans "Download Mixxx 1.11.0 for Mac OS X 10.5+ (Intel)" %}</a>
+      <a href="{{ stable_osxintel }}"
+         onClick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">
+        {% blocktrans %}Download {{ stable_long_version }} for Mac OS X 10.5+ (Intel){% endblocktrans %}</a>
     </p>
     <p>
-      <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macppc.dmg"
-	 onClick="javascript:trackDownload('/downloads/1.11.0osxppc'); ">
-        {% trans "Download Mixxx 1.11.0 for Mac OS X 10.5+ (PPC)" %}</a>
+      <a href="{{ stable_osxppc }}"
+         onClick="javascript:trackDownload('{{ stable_osxppc_analytics_conversion }}');">
+        {% blocktrans %}Download {{ stable_long_version }} for Mac OS X 10.5+ (PPC){% endblocktrans %}</a>
     </p>
 
     <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
@@ -150,34 +187,39 @@ $(document).ready(function() {
   <div style="clear: both;"></div>
 
   <div style="padding: 20px;">
-    <H2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{% trans "Ubuntu" %}</H2>
-    <p>{% trans "Download Mixxx 1.11.0 for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):" %}</p>
+    <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
+    <p>{% blocktrans %}Download {{ stable_long_version }} for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
       sudo add-apt-repository ppa:mixxx/mixxx
       sudo apt-get update
       sudo apt-get install mixxx libportaudio2
     </pre>
-    <p>{% blocktrans with mixxx_ppa_link="https://launchpad.net/~mixxx/+archive/mixxx" %}This will install the latest version of Mixxx from the <a href="{{ mixxx_ppa_link }}">Mixxx PPA</a> on Launchpad.{% endblocktrans %}</p>
+    <p>
+      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/1.11.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+      {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
+      {% endwith %}
+    </p>
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
     </div>
 
-    <H2>{% trans "Linux / Source Code" %}</H2>
+    <h2>{% trans "Linux / Source Code" %}</h2>
     <p>
-      <a href="http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz"
-	 onClick="javascript:trackDownload('/downloads/1.11.0linuxsrc'); ">
-        {% trans "Download Mixxx 1.11.0 Source Code" %}
+      <a href="{{ stable_linuxsrc }}"
+         onClick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
+        {% blocktrans %}Download {{ stable_long_version }} Source Code{% endblocktrans %}
       </a>
     </p>
 
     <p>
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information. The latest code from Mixxx's development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
+      {% trans "The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information." %}
+      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The latest code from Mixxx's development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
       <pre>        git clone https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
     <p>
-      {% blocktrans with compiling_windows_wiki_link="/wiki/doku.php/compiling_on_windows" compiling_osx_wiki_link="/wiki/doku.php/compiling_on_os_x" compiling_linux_wiki_link="/wiki/doku.php/compiling_on_linux"%}Compilation instructions are available for <a href="{{ compiling_windows_wiki_link }}">Windows</a>, <a href="{{ compiling_osx_wiki_link }}">Mac OS X</a>, and <a href="{{ compiling_linux_wiki_link }}">Linux</a>.{% endblocktrans %}
+      {% blocktrans with compiling_windows_wiki_link="<a href=\"/wiki/doku.php/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"/wiki/doku.php/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"/wiki/doku.php/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
     </p>
   </div>
 
@@ -190,7 +232,7 @@ $(document).ready(function() {
     <div style="clear: both;"></div>
   </div>
 
-  <H2>{% trans "Errata" %}</H2>
+  <h2>{% trans "Errata" %}</h2>
   <p>
     {% blocktrans with mixxx_191_appstore_link="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg"%}Source code for the Mac App Store version is available in each release branch in Git. A <a href="{{ mixxx_191_appstore_link }}">corresponding binary</a> is also available.{% endblocktrans %}
   </p>
