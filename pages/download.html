@@ -190,7 +190,9 @@ $(document).ready(function() {
 
   <div style="padding: 20px;">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
-    <p>{% blocktrans %}Download {{ stable_long_version }} for Ubuntu 12.04 (Precise) through 15.10 (Wily):{% endblocktrans %}</p>
+    {% trans "Ubuntu 12.04 (Precise)" as stable_ubuntu_min_supported_version %}
+    {% trans "Ubuntu 15.10 (Wily)" as stable_ubuntu_max_supported_version %}
+    <p>{% blocktrans %}Download {{ stable_long_version }} for {{ stable_ubuntu_min_supported_version }} through {{ stable_ubuntu_max_supported_version}}:{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
       sudo add-apt-repository ppa:mixxx/mixxx
