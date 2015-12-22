@@ -1,4 +1,4 @@
-stable_long_version: Mixxx 1.11.0
+show_unstable: no
 unstable_short_version: Mixxx 2.0
 unstable_long_version: Mixxx 2.0 RC2 (build r5717)
 unstable_win32: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win32.exe
@@ -14,17 +14,21 @@ unstable_ubuntu32_analytics_conversion: /downloads/2.0.0-rc2-ubuntu-trusty32
 unstable_ubuntu64_analytics_conversion: /downloads/2.0.0-rc2-ubuntu-trusty64
 unstable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 unstable_linuxsrc_analytics_conversion: /downloads/2.0.0-rc2-linuxsrc
-stable_win32: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe
-stable_win64: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win64.exe
-stable_osxintel: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg
-stable_osxppc: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macppc.dmg
-stable_linuxsrc: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz
-stable_win32_analytics_conversion: /downloads/1.11.0win32
-stable_win64_analytics_conversion: /downloads/1.11.0win64
-stable_osxintel_analytics_conversion: /downloads/1.11.0osxintel
-stable_osxppc_analytics_conversion: /downloads/1.11.0osxppc
-stable_linuxsrc_analytics_conversion: /downloads/1.11.0linuxsrc
+stable_short_version: Mixxx 2.0
+stable_long_version: Mixxx 2.0.0
+stable_win32: http://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win32.exe
+stable_win64: http://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win64.exe
+stable_osxintel: http://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-osxintel.dmg
+stable_ubuntu32: http://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-trusty-i386.deb
+stable_ubuntu64: http://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-trusty-amd64.deb
+stable_linuxsrc: http://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-src.tar.gz
+stable_win32_analytics_conversion: /downloads/2.0.0-win32
+stable_win64_analytics_conversion: /downloads/2.0.0-win64
+stable_osxintel_analytics_conversion: /downloads/2.0.0-osxintel
+stable_ubuntu32_analytics_conversion: /downloads/2.0.0-ubuntu-trusty32
+stable_ubuntu64_analytics_conversion: /downloads/2.0.0-ubuntu-trusty64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
+stable_linuxsrc_analytics_conversion: /downloads/2.0.0-linuxsrc
 {% extends "base.html" %}
 
 {% load i18n %}
@@ -66,10 +70,11 @@ $(document).ready(function() {
     <center>{% include "donate_paypal.html" %}</center>
   </div>
 
+  {% ifequal show_unstable "yes" %}
   <a name="beta"></a>
   <h1>{% blocktrans %}Download Now ({{ unstable_short_version }} Release Candidate){% endblocktrans %}</h1>
   <div style="padding: 20px;">
-    <p><h2>For live use, we recommend <a href="#stable">{{ stable_long_version }} Stable</a> below.</h2></p>
+    <p><h2>For live use, we recommend <a href="#stable">{{ stable_short_version }} Stable</a> below.</h2></p>
     <p>
       {% blocktrans with mixxx_112_beta_blog_link="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html" %}The Mixxx team has been working hard for over 2 years on Mixxx 2.0. We've added hundreds of new features and we need YOUR help testing them. Check out the <a href="{{ mixxx_112_beta_blog_link }}">release announcement on our blog</a> for a list of the new, hard-hitting features. Tempted? Try these on for size:{% endblocktrans %}
     <p>
@@ -87,6 +92,7 @@ $(document).ready(function() {
     <p><a href="{{ unstable_win64 }}"
           onclick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">
         {% blocktrans %}{{ unstable_long_version }} for 64-bit Windows{% endblocktrans %}</a></p>
+    <p><small>{% trans "Supported on Windows XP and newer." %} {% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires at least Windows 7 or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
 
     <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon">{{ mac_osx }}</h2>
 
@@ -135,9 +141,10 @@ $(document).ready(function() {
 
     </p>
   </div>
+  {% endifequal %}
 
   <a name="stable"></a>
-  <h1>{% blocktrans %}Download Now ({{ stable_long_version }} Stable){% endblocktrans %}</h1>
+  <h1>{% blocktrans %}Download Now ({{ stable_short_version }} Stable){% endblocktrans %}</h1>
   {% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
@@ -157,7 +164,7 @@ $(document).ready(function() {
     </p>
 
     <br>
-    <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
+    <p><small>{% trans "Supported on Windows XP and newer." %} {% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires at least Windows 7 or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
   </div>
 
   <div class="halfbox_right darkborder macbox">
@@ -166,11 +173,6 @@ $(document).ready(function() {
       <a href="{{ stable_osxintel }}"
          onClick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">
         {% blocktrans %}Download {{ stable_long_version }} for Mac OS X 10.5+ (Intel){% endblocktrans %}</a>
-    </p>
-    <p>
-      <a href="{{ stable_osxppc }}"
-         onClick="javascript:trackDownload('{{ stable_osxppc_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_long_version }} for Mac OS X 10.5+ (PPC){% endblocktrans %}</a>
     </p>
 
     <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
@@ -188,18 +190,26 @@ $(document).ready(function() {
 
   <div style="padding: 20px;">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
-    <p>{% blocktrans %}Download {{ stable_long_version }} for Ubuntu 10.04 (Lucid) through 13.10 (Saucy):{% endblocktrans %}</p>
+    <p>{% blocktrans %}Download {{ stable_long_version }} for Ubuntu 12.04 (Precise) through 15.10 (Wily):{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
       sudo add-apt-repository ppa:mixxx/mixxx
       sudo apt-get update
-      sudo apt-get install mixxx libportaudio2
+      sudo apt-get install mixxx
     </pre>
     <p>
-      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/1.11.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.0.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
       {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
       {% endwith %}
     </p>
+    <p><a href="{{ stable_ubuntu32 }}"
+          onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">
+        {% blocktrans %}{{ stable_long_version }} for 32-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
+
+    <p><a href="{{ stable_ubuntu64 }}"
+          onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
+        {% blocktrans %}{{ stable_long_version }} for 64-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
+
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
     </div>
