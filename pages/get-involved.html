@@ -37,7 +37,7 @@
       </li>
       <li>
         <p>
-          {% blocktrans with irc_channel_link="http://www.freenode.net" %}When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="{{ irc_channel_link }}">Freenode</a>{% endblocktrans %}
+          {% blocktrans with irc_channel_link="/irc/" %}When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="{{ irc_channel_link }}">Freenode</a>{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -67,12 +67,12 @@
     <ul>
       <li>
         <p>
-          {% blocktrans with mapping_link="/wiki/doku.php/start#controller_mapping_documentation" %}<a href="{{ mapping_link }}">Create or improve a MIDI or HID mapping</a> for your controller.{% endblocktrans %}
+          {% blocktrans with controller_wiki_link="/wiki/doku.php/start#controller_mapping_documentation" %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
+          {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/+filebug" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -82,7 +82,7 @@
       </li>
       <li>
         <p>
-          {% blocktrans with forum_link="/forums/" freenode_link="http://www.freenode.net/" %}Support other DJs with their technical questions on <a href="{{ forum_link }}">the forums</a> and IRC channel (#mixxx on <a href="{{ freenode_link }}">Freenode</a>.{% endblocktrans %}
+          {% blocktrans with forum_link="/forums/" freenode_link="http://www.freenode.net/" irc_channel_link="/irc/" %}Support other DJs with their technical questions on <a href="{{ forum_link }}">the forums</a> and <a href="{{ irc_channel_link }}">IRC channel</a>.{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -92,7 +92,7 @@
       </li>
       <li>
         <p>
-          {% blocktrans with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}<a href="{{ photos_phorum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
+          {% blocktrans with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}<a href="{{ photos_forum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
         </p>
       </li>
     </ul>
@@ -114,7 +114,7 @@
     <ul>
       <li>
         <p>
-          {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link= }}">our forum</a>.{% endblocktrans %}
+          {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link }}">our forum</a>.{% endblocktrans %}
         </p>
       </li>
     </ul>
