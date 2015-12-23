@@ -65,9 +65,9 @@
 </div> <!-- gapfiller -->
 
 <div class="content">
-  <h1>{% trans "Flexible Features For All DJs" %}</h1>
+  <h1>{% trans "Robust Features For All DJs" %}</h1>
 
-  {% blocktrans %}Mixxx has the tools DJs need to perform creative live mixes with digital music files. Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}
+  {% blocktrans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files. Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}
 
   <div class="halfbox_left">
     <h2><img src="{% static '/static/images/ic_preferences_keydetect.png' %}" class="feature_icon">{% trans "BPM, Key Detection and Sync" %}</h2>
@@ -95,7 +95,7 @@
   <div class="halfbox_right">
     <h2><img src="{% static '/static/images/ic_preferences_vinyl.png' %}" class="feature_icon">{% trans "Vinyl Record Control" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl.{% endblocktrans %}
+      {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
       <a href="/features">{% trans "Read more" %}</a>
     </p>
   </div>
@@ -115,7 +115,7 @@
   </p>
 
   <p>
-    {% blocktrans with create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved" mapping_link="/wiki/doku.php/start#controller_mapping_documentation" %}You can get involved with Mixxx today by <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
+    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="/wiki/doku.php/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
   </p>
 
   <div id="achievements">
