@@ -116,6 +116,9 @@ h2 a {
     position: absolute;
     left: 80px;
     bottom: 0px;
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
 }
 
 .download_button

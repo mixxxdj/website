@@ -6,7 +6,7 @@
 
 {% block body %}
 <div class="content">
-  <H1>{% trans "Everything You Need" %}</H1>
+  <H1>{% trans "Everything You Need, However You DJ" %}</H1>
 
   <div style="clear: both;"></div>
   <div class="halfbox_left">
@@ -20,7 +20,7 @@
     </p>
 
     <p><b>{% trans "Beat Looping" %}</b><br>
-      {% trans "Found a sweet loop or need to extend your mix while you prep the next track? Instantly loop a 4, 8, or 16 beat segment with the click of a button." %}
+      {% trans "Found a sweet loop or need to extend your mix while you prep the next track? Instantly loop a 4, 8, or 16 beat segment with the press of a button." %}
     </p>
 
     <p><b>{% trans "Powerful Master Sync" %}</b><br>
@@ -63,7 +63,7 @@
 
     <H2>{% trans "Built-in Effects" %}</H2>
     <p>
-      {% trans "Add sizzle to your mix with reverb, echo, flange, and more." %}
+      {% trans "Add sizzle to your mix with reverb, echo, flange, and more.  Assign a Quick Effect to your controller's filter knob to add color to your sound instantly.  Bad PA system or lousy room?  Use the built-in master EQ to smooth out the sound." %}
     </p>
 
     <div style="clear: both;"></div>
@@ -138,7 +138,7 @@
       </p>
     </div>
     <div class="halfbox_right">
-      <H2><img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature_icon">{% trans "Shoutcast Broadcasting" %}</H2>
+      <H2><img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature_icon">{% trans "Live Broadcasting" %}</H2>
       <p>
         {% blocktrans with broadcasting_wiki_link="/wiki/doku.php/internet_broadcasting" %}Stream your mixes live over the internet to your audience and friends through a Shoutcast or Icecast server. <a href="{{ broadcasting_wiki_link }}">Read more{% endblocktrans %}</a>
       </p>
@@ -204,7 +204,7 @@
 
     <div id="full_specs">
       <a name="full_specs"></a>
-      <H2>{% trans "Full Specification" %}</H2>
+      <H2>{% trans "Full Feature List" %}</H2>
 
       <div style="float: left; width: 30%; padding-right: 50px;">
         <ul>
@@ -244,8 +244,9 @@
           <li>{% trans "Ramping pitchbend controls" %}</li>
           <li>{% trans "Multi-core CPU support" %}</li>
           <li>{% trans "24-bit/96000 Hz playback and capture" %}</li>
-          <li>{% trans "Crystal clear audio" %}</li>
+          <li>{% trans "Crystal clear bit-perfect audio" %}</li>
           <li>{% trans "Hardware video acceleration" %}</li>
+          <li>{% trans "...and more!" %}</li>
         </ul>
       </div>
       <div style="float: left; width: 25%; padding-right: 50px;">
