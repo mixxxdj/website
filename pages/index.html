@@ -24,13 +24,14 @@
 </div>
 
 <div id="splash">
-  <img width="920px" class="background" src="{% static '/static/images/splash1.jpg' %}">
-  <!--<div id="splash_newversion_button">
-    <a href="/whats-new-in-mixxx-1-11">
-      <img alt="{% blocktrans %}Check out what's new in Mixxx 1.11{% endblocktrans %}"
-           src="{% static '/static/images/splash_newversion.png' %}">
+  <H1>{% trans "DJ Your Way. For Free." %}</H1>
+  <img width="920px" class="background" src="{% static '/static/images/splash-2.0.jpg' %}">
+  <div id="splash_newversion_button">
+    <a href="/whats-new-in-mixxx-2-0">
+      <img width="200px" alt="{% blocktrans %}Check out what's new in Mixxx 2.0{% endblocktrans %}"
+           src="{% static '/static/images/splash_newversion-2.0.png' %}">
     </a>
-  </div>-->
+  </div>
 </div>
 {% endblock %}
 
@@ -76,9 +77,9 @@
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "MIDI and HID Controller Support" %}</H2>
+    <H2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "DJ Controller Support" %}</H2>
     <p class="feature_indent">
-      {% blocktrans %}With over 30 DJ MIDI controllers supported out-of-the-box and several HID controllers, Mixxx gives you comprehensive hardware control for your DJ mixes.{% endblocktrans %}
+      {% blocktrans %}With over 30 MIDI DJ controllers supported out-of-the-box and several HID controllers, Mixxx gives you comprehensive hardware control for your DJ mixes.{% endblocktrans %}
     </p>
   </div>
 

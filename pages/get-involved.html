@@ -37,7 +37,7 @@
       </li>
       <li>
         <p>
-          {% blocktrans with irc_channel_link="http://www.freenode.net" %}When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="{{ irc_channel_link }}">Freenode</a>{% endblocktrans %}
+          {% blocktrans with irc_channel_link="/irc/" %}When you're stuck, get help from our existing developers our IRC channel: #mixxx on <a href="{{ irc_channel_link }}">Freenode</a>{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -67,12 +67,12 @@
     <ul>
       <li>
         <p>
-          {% blocktrans with midi_file_format_wiki_link="/wiki/doku.php/midi_controller_mapping_file_format" %}<a href="{{ midi_file_format_wiki_link }}">Create or improve MIDI mappings</a> for your controller.{% endblocktrans %}
+          {% blocktrans with controller_wiki_link="/wiki/doku.php/start#controller_mapping_documentation" %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endblocktrans %}
         </p>
       </li>
       <li>
         <p>
-          {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
+          {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/+filebug" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -80,8 +80,9 @@
           {% blocktrans with mixxx_wiki_link="/wiki/" %}Help keep our <a href="{{ mixxx_wiki_link }}">Wiki</a> up-to-date.{% endblocktrans %}
         </p>
       </li>
+      <li>
         <p>
-          {% blocktrans with troubleshooting_forum_link="/forums/viewforum.php?f=3" net_launchpad_answers_link="https://answers.launchpad.net/mixxx" %}Answer questions on the <a href="{{ troubleshooting_forum_link }}">Troubleshooting Forum</a> and our <a href="{{ net_launchpad_answers_link }}">Launchpad Answers page</a>.{% endblocktrans %}
+          {% blocktrans with troubleshooting_forum_link="/forums/viewforum.php?f=3" irc_channel_link="/irc/" net_launchpad_answers_link="https://answers.launchpad.net/mixxx" %}Answer questions on the <a href="{{ troubleshooting_forum_link }}">Troubleshooting Forum</a>, <a href="{{ irc_channel_link }}">IRC channel</a>, and our <a href="{{ net_launchpad_answers_link }}">Launchpad Answers page</a>.{% endblocktrans %}
         </p>
       </li>
       <li>
@@ -91,7 +92,7 @@
       </li>
       <li>
         <p>
-          {% blocktrans with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}<a href="{{ photos_phorum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
+          {% blocktrans with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}<a href="{{ photos_forum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
         </p>
       </li>
     </ul>
@@ -113,7 +114,7 @@
     <ul>
       <li>
         <p>
-          {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link= }}">our forum</a>.{% endblocktrans %}
+          {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link }}">our forum</a>.{% endblocktrans %}
         </p>
       </li>
     </ul>
