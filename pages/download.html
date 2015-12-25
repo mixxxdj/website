@@ -147,7 +147,7 @@ $(document).ready(function() {
   <h1>{% blocktrans %}Download Now ({{ stable_short_version }} Stable){% endblocktrans %}</h1>
   <!-- TODO: Eventually remove when stable_short_version is no longer 2.0.  Leaving the text literal
   so the bad link is more easily caught. -->
-  <p>{% trans "Check out <a href=\"/whats-new-in-mixxx-2-0\"> what's new in Version 2.0!</a>" %}</p>
+  <p>{% blocktrans with whats_new_link="/whats-new-in-mixxx-2-0" %}Check out <a href="{{ whats_new_link }}">what's new in Version 2.0!</a>{% endblocktrans %}</p>
   <p>{% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}</p>
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
