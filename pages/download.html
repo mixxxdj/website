@@ -238,15 +238,6 @@ $(document).ready(function() {
     </p>
   </div>
 
-  <div class="gapfiller" style="height: 57px">
-    <div style="float: right;" >
-      <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=downloads_moresoftware&utm_campaign=mixxx">
-        <img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
-    </div>
-    <p style="text-align: center;">{% trans "More software from the Mixxx Developers available at:" %}</p>
-    <div style="clear: both;"></div>
-  </div>
-
   <h2>{% trans "Errata" %}</h2>
   <p>
     {% blocktrans with mixxx_191_appstore_link="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg"%}Source code for the Mac App Store version is available in each release branch in Git. A <a href="{{ mixxx_191_appstore_link }}">corresponding binary</a> is also available.{% endblocktrans %}
