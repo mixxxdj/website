@@ -11,11 +11,11 @@ LANGUAGE_CONFIGS = {
 
 env.roledefs = {
     'production': {
-        'hosts': ['stacktrace.org'],
+        'hosts': ['direct.mixxx.org'],
         'dest_path': '/home/mixxx/public_html',
     },
     'staging': {
-        'hosts': ['stacktrace.org'],
+        'hosts': ['direct.mixxx.org'],
         'dest_path': '/home/mixxx/domains/staging.mixxx.org/public_html',
     }
 }
