@@ -9,6 +9,7 @@ LANGUAGE_CONFIGS = {
     'de-DE': { 'dest_path': '/de-DE' }
 }
 
+env.use_ssh_config = True
 env.roledefs = {
     'production': {
         'hosts': ['direct.mixxx.org'],
