@@ -18,6 +18,7 @@ Required:
 * php5.6-xml (used by Dokuwiki)
 * mailutils (postfix, etc.)
 * google-cloud-sdk (for backups)
+* unzip (for phpBB upgrades)
 
 Optional (helpful for tuning / monitoring):
 * apachetop
