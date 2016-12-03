@@ -86,6 +86,7 @@ def gcloud_snapshot_path(instance_name, snapshot_name):
 
 def snapshot(snapshot_name=None):
     instance_path = env.dest_path
+    assert FORUMS_DATABASE_PASSWORD, 'FORUMS_DATABASE_PASSWORD is empty.'
 
     if snapshot_name is None:
         snapshot_name = datetime.datetime.now().strftime('%Y-%m-%d')
