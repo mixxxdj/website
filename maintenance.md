@@ -45,6 +45,21 @@ Set:
 Set RAM usage (e.g. 32MB)
 * `-m 32`
 
+### phpBB HTTPS Mode
+
+If you are reverse-proxying mixxx.org through something that terminates TLS
+(e.g. CloudFlare, which we do as of 4/2017), then you need to inform phpBB that
+it is running over HTTPS. Otherwise, plugins like reCAPTCHA will serve their
+assets over HTTP, which will be blocked.
+
+One way of doing this is to edit `forums/config.php` to include:
+
+* `$_SERVER['HTTPS'] = 'on';`
+* `$_SERVER['SERVER_PORT'] = 443;`
+
+In the phpBB Administrator Control Panel, under Cookie Settings you may also
+want to enable secure cookies. (It's unclear whether this is actually needed.)
+
 # Backup
 
 The website is always deployed from the latest state of the Git repository, so
