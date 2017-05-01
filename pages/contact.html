@@ -5,7 +5,8 @@
 {% block title %}{% trans "Contact" %}{% endblock %}
 
 {% block body %}
-<div class="content">{% trans "Get in Touch" %}</H1>
+<div class="content">
+  <h1>{% trans "Get in Touch" %}</h1>
 
   <div style="clear: both;"></div>
   <div class="halfbox_left">
@@ -20,11 +21,11 @@
 
   <div class="halfbox_right">
     <p>
-      {% blocktrans with project_manager_link="http://www.hep.ucl.ac.uk/~adamd" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact our Project Manager, <a href="{{ project_manager_link }}">Adam Davison</a>. We accept donations of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
+      {% blocktrans with project_manager_link="mailto:hardware@mixxx.org" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
     </p>
 
     <p>
-      {% blocktrans with project_manager_link="http://www.hep.ucl.ac.uk/~adamd" %}For other inquiries, please contact <a href="{{ project_manager_link }}">Adam Davison</a>.{% endblocktrans %}
+      {% blocktrans with project_manager_link="mailto:press@mixxx.org" %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endblocktrans %}
     </p>
   </div>
   <div style="clear: both;"></div>
@@ -32,17 +33,17 @@
   <div style="text-align: center;">
     <h2>{% trans "Credits" %}</h2>
     <p>
-      {% blocktrans with ken_anderson_link="http://www.nbi.dk/~kenand/" tue_anderson_link="http://haste.dk/tue/"%}In 2001, Mixxx was started by <a href="{{ ken_anderson_link }}">Ken</a> and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by Adam Davison (Project Manager), RJ Ryan (Lead Developer), S. Brandt (Lead Artist).{% endblocktrans %}
+      {% blocktrans with tue_anderson_link="http://haste.dk/tue/"%}In 2001, Mixxx was started by Ken and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by RJ Ryan (Lead Developer), Owen Williams (User Experience Lead), Sean Pappalardo (Controller Manager), and S. Brandt (Lead Artist).{% endblocktrans %}
     </p>
 
     <p class="credits"><b>{% trans "Mixxx 2.0.0 Development Team" %}</b></p>
 
     <p class="credits">
       <a href="http://www.rustyryan.net">RJ Ryan</a><br/>
+      <a href="http://ywwg.com">Owen Williams</a><br/>
       <a href="http://www.seanpappalardo.com">Sean Pappalardo</a><br/>
-      S. Brandt<br/>
-      Owen Williams<br/>
       Daniel Sch&uuml;rmann<br/>
+      S. Brandt<br/>
       Ilkka Tuohela<br/>
       Max Linke<br/>
       Marcos Cardinot<br/>
@@ -112,6 +113,7 @@
     <p class="credits"><b>{% trans "And special thanks to:" %}</b></p>
     <p class="credits">
       Mark Hills<br/>
+      <a href="http://www.oscillicious.com">Oscillicious</a><br/>
       <a href="http://www.vestax.com">Vestax</a><br/>
       <a href="http://www.stantondj.com">Stanton</a><br/>
       <a href="http://www.hercules.com">Hercules</a><br/>
@@ -144,8 +146,8 @@
       Zach Elko<br/>
       Tom Care<br/>
       Pawel Bartkiewicz<br/>
-      <a href="http://kousu.ca/">Nick Guenther</a><br/>
-      <a href="http://www.hep.ucl.ac.uk/~adamd">Adam Davison</a><br/>
+      Nick Guenther<br/>
+      <a href="http://themodelnation.com/contact/">Adam Davison</a><br/>
       <a href="http://stacktrace.org/">Garth Dahlstrom</a><br/>
       <a href="http://www.santoni.ca/albert">Albert Santoni</a><br/>
       Phillip Whelan<br/>
