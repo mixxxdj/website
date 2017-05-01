@@ -51,16 +51,16 @@
   </div>
   
     <div style="clear: both;"></div>
-      <h2>{% trans "Quad Sampler Decks" %}</h2>
+      <h2>{% trans "Sampler Decks" %}</h2>
     <p>
-      {% trans "Perfect for dropping that vocal sample or airhorn, our quad sampler decks are routable through either playback channel." %}
+      {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}<!--TODO: Say more. -->
     </p>
 
     <center><img src="{% static '/static/images/feature_sampler2.png' %}"></center>
     
-    <h2>{% trans "Built-in Effects" %}</h2>
+    <h2>{% trans "Powerful Effects System" %}</h2>
     <p>
-      {% trans "Use reverb, echo, flange, and more effects to blend music in your own signature ways or add spice to your mix. Assign a Quick Effect to your controller's filter knob to add color to your sound instantly.  Bad PA system or lousy room?  Use the built-in master EQ to smooth out the sound." %} <!--TODO: Say a little more-->
+      {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to turn with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
     </p>
 
     <!--TODO: Insert FX screenshot here-->
@@ -76,7 +76,7 @@
 
       <h2>{% trans "MIDI and HID Controller Support" %}</h2>
       <p>
-        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Included Presets</b><br> for controllers such as the Traktor Kontrol S4 MK2, Pioneer DDJ-SB &amp; DDJ-SB2, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Full list of supported devices</a>{% endblocktrans %}
+        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Included Presets</b><br> for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Full list of supported devices</a>{% endblocktrans %}
       </p>
 
       <p><b>{% trans "Programmable Mapping Engine" %}</b><br>
@@ -130,7 +130,7 @@
 
     <div class="halfbox_left">
       <h2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM &amp; Key Detection" %}</h2>
-      <p class="feature_indent">{% trans "Upgraded BPM detection library does an even better job finding the beat in even the toughest rhythms. Musical key detection provides more information to help you pick the next track." %}</p>
+      <p class="feature_indent">{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
     </div>
     <div class="halfbox_right">
       <h2><img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature_icon">{% trans "Auto DJ" %}</h2>
@@ -166,8 +166,7 @@
 
     <div class="halfbox_left">
       <h2><img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature_icon">Recording</h2>
-      <!--TODO: clarify. What does "optional" mean?-->
-      <p>{% trans "Record your live mixes to the lossless WAV or lossy Ogg Vorbis formats, with MP3 recording enabled by separate LAME library. Recordings are automatically archived in the library for fast access." %}
+      <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
       </p>
     </div>
     <div class="halfbox_right">
@@ -186,9 +185,9 @@
       </p>
     </div>
     <div class="halfbox_right">
-      <h2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Quad Microphone Input" %}</h2>
+      <h2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Microphone &amp; Auxiliary Inputs" %}</h2>
       <p>
-        {% trans "Whether you're dropping thick reggae vocals over some dub, giving shoutouts on the air, or throwing a rap battle, integrate live audio input from microphones into your mix." %}
+        {% trans "Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs let you include different sound sources without needing an external hardware mixer." %}
       </p>
     </div>
 
