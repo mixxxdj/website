@@ -16,11 +16,11 @@
     </p>
 
     <p><b>{% trans "Pitch and Key Control" %}</b><br>
-      {% trans "Change the tempo of songs without changing their pitch with keylock, or change the pitch apart from tempo so your songs play in harmony. Temporarily nudge the tempo faster or slower for manual beatmatching, with ramping pitchbend smoothly applied like vinyl." %}
+      {% trans "Change the tempo of songs without changing their pitch with keylock, or change the pitch without breaking sync so your songs play in harmony. Temporarily nudge the tempo faster or slower for manual beatmatching, with smooth changes in pitch just like vinyl." %}
     </p>
 
     <p><b>{% trans "Beat Looping" %}</b><br>
-      {% trans "Need to extend your mix while you bring in the next track? Loop a 4, 8, or 16 beat segment with ease." %}
+      {% trans "Need to extend your mix while you bring in the next track? Instantly loop a 4, 8, or 16 beat segment with ease." %}
     </p>
 
     <p><b>{% trans "Master Sync" %}</b><br>
@@ -28,7 +28,7 @@
     </p>
 
     <p><b>{% trans "Hotcues" %}</b><br>
-      {% trans "Set hotcues to mark places in tracks. Remix and mash up tracks with accurate, rapid fire hotcue triggering." %}
+      {% trans "Set hotcues to mark places in tracks. Remix and mash up tracks with accurate, rapid-fire hotcue triggering." %}
     </p>
   </div>
   <div class="halfbox_right">
@@ -42,11 +42,11 @@
     </p>
 
     <p><b>{% trans "Broad Format Support" %}</b><br>
-      {% trans "Compatibile with music files in lossless FLAC, WAV, and AIFF formats as well as lossy MP3, M4A/AAC, Ogg Vorbis, and Opus formats." %}
+      {% trans "Compatabile with music files in lossless FLAC, WAV, and AIFF formats as well as lossy MP3, M4A/AAC, Ogg Vorbis, and Opus formats." %}
     </p>
 
     <p><b>{% trans "EQ and Crossfader Control" %}</b><br>
-      {% trans "Choose between multiple audiophile filters with adjustable EQ shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades." %}
+      {% trans "Choose between multiple equalizers and isolators with adjustable shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades." %}
     </p>
   </div>
   
@@ -60,14 +60,14 @@
     
     <h2>{% trans "Built-in Effects" %}</h2>
     <p>
-      {% trans "Use reverb, echo, flange, and more effects to blend music in your own signature ways. Assign a Quick Effect to your controller's filter knob to add color to your sound instantly.  Bad PA system or lousy room?  Use the built-in master EQ to smooth out the sound." %} <!--TODO: Say a little more-->
+      {% trans "Use reverb, echo, flange, and more effects to blend music in your own signature ways or add spice to your mix. Assign a Quick Effect to your controller's filter knob to add color to your sound instantly.  Bad PA system or lousy room?  Use the built-in master EQ to smooth out the sound." %} <!--TODO: Say a little more-->
     </p>
 
     <!--TODO: Insert FX screenshot here-->
   <div style="clear: both;"></div>
   
     <h1>{% trans "Customizable DJ Hardware Support" %}</h1>
-    {% trans "Free as in freedom as well as price, Mixxx plays nice with a variety of hardware without artificial restrictions or vendor lock-in mechanisms. The free version is the full version. Pick and choose gear from any source to build your unique setup." %}<!--TODO: Alignment somehow is messed up here.-->
+    {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}<!--TODO: Alignment somehow is messed up here.-->
     
     <div class="halfbox_left">
       <div style="height: 200px;">
@@ -80,7 +80,7 @@
       </p>
 
       <p><b>{% trans "Programmable Mapping Engine" %}</b><br>
-        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}Cutting-edge JavaScript-based scripting engine provides maximum flexibility. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
+        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
     <div class="halfbox_right">
@@ -90,11 +90,7 @@
 
       <h2>{% trans "Free Timecode Vinyl Control" %}</h2>
       <p>
-        {% trans "Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Mixxx is the only free timecode vinyl control software for Windows, Mac OS X, and Linux." %}
-      </p>
-
-      <p>
-        {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Serato CV 2, Serato CV 2.5, Traktor Scratch Mk1, and Mixvibes DVS V2 timecode are supported with absolute positioning, needle cueing, and end-of-record detection. Use any sound card(s) your OS supports to read timecode signals and play your music in high quality. <a href="{{ vinyl_control_manual_link }}">Read more</a>{% endblocktrans %}
+        {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, Mac OS X, and Linux. <a href="{{ vinyl_control_manual_link }}">Read more</a> {% endblocktrans %}
       </p>
     </div>
 
@@ -102,7 +98,7 @@
 
     <h1>{% trans "Sophisticated Music Library" %}</h1>
     <p>
-      {% trans "Stay organized and find the music you're looking for the moment you need it. Powered by a high-performance database, navigation and searching your collection is intuitive and fast." %}
+      {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
     </p>
 
     <div style="clear: both;"></div>
@@ -111,11 +107,11 @@
       <h2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "Organization" %}</h2>
       <p class="feature_indent">
         <b>{% trans "Crates and Playlists" %}</b><br>
-        {% trans "Sort your music the way you want. Use playlists to arrange plans for a set and unordered crates to build your own categorization system." %}
+        {% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}
       </p>
       <p class="feature_indent">
         <b>{% trans "Search &amp; Sort" %}</b><br>
-        {% trans "Filter your collection by specific tags to narrow your choices or just start typing to find the track you're thinking of. Sort the library table hierarchically with multiple tags at a time." %}
+        {% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}
       </p>
       <p class="feature_indent">
         <b>{% trans "iTunes and Traktor Library Integration" %}</b><br>
@@ -134,7 +130,7 @@
 
     <div class="halfbox_left">
       <h2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM &amp; Key Detection" %}</h2>
-      <p class="feature_indent">{% trans "Upgraded BPM detection library does an even better job finding the beat in even the toughest rhythms. New musical key detection provides more information to help you pick the next track." %}</p>
+      <p class="feature_indent">{% trans "Upgraded BPM detection library does an even better job finding the beat in even the toughest rhythms. Musical key detection provides more information to help you pick the next track." %}</p>
     </div>
     <div class="halfbox_right">
       <h2><img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature_icon">{% trans "Auto DJ" %}</h2>
@@ -149,7 +145,7 @@
       <h1 style="margin-left: 30px;">{% trans "Designer Skins" %}</h1>
       <center>
         <img width="800px" src="{% static '/static/images/skins.png' %}">
-        <p>{% trans "Three exclusive designer skins with configurable layouts" %}</p>
+        <p>{% trans "Chose your favorite look from different skins, each with a configurable layout" %}</p>
       </center>
     </div>
 
@@ -186,13 +182,13 @@
     <div class="halfbox_left">
       <h2><img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature_icon">{% trans "ReplayGain Normalization" %}</h2>
       <p>
-        {% trans "Song gain is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
+        {% trans "Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
       </p>
     </div>
     <div class="halfbox_right">
       <h2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Quad Microphone Input" %}</h2>
       <p>
-        {% trans "Whether you're dropping thick reggae vocals over some dub, giving shoutouts on the air, or throwing a rap battle, integrate live input from microphones into your mix." %}
+        {% trans "Whether you're dropping thick reggae vocals over some dub, giving shoutouts on the air, or throwing a rap battle, integrate live audio input from microphones into your mix." %}
       </p>
     </div>
 
