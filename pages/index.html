@@ -147,13 +147,5 @@
     <div style="clear: both;"></div>
   </div>
 
-  <h1>{% trans "If you like Mixxx..." %}</h1>
-  <div style="float: right;">
-    <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx"><img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
-  </div>
-  <p>{% blocktrans with oscillicious_link="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx" beatcleaver_link="http://www.oscillicious.com/beatcleaver/sampling-for-mixxx?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx" jamdeck_link="http://www.jamdeck.net/?utm_source=mixxx&utm_medium=gap_banner&utm_content=frontpage_workinghard&utm_campaign=mixxx" %}The developers of Mixxx at <a href="{{ oscillicious_link }}">Oscillicious Audio Labs</a> have been working hard on <a href="{{ beatcleaver_link }}">BeatCleaver</a> and <a href="{{ jamdeck_link }}">JamDeck</a>, check them out!{% endblocktrans %}
-  </p>
-  <div style="clear: both;"></div>
-
 </div> <!-- content -->
 {% endblock %}

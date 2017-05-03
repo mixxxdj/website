@@ -1,7 +1,9 @@
+import datetime
 import os
 
 from fabric.api import *
 import fabric.contrib.project as project
+from fabric.contrib.files import exists
 
 LANGUAGE_CONFIGS = {
     'en': { 'dest_path': '/' },
@@ -9,13 +11,14 @@ LANGUAGE_CONFIGS = {
     'de-DE': { 'dest_path': '/de-DE' }
 }
 
+env.use_ssh_config = True
 env.roledefs = {
     'production': {
-        'hosts': ['stacktrace.org'],
+        'hosts': ['direct.mixxx.org'],
         'dest_path': '/home/mixxx/public_html',
     },
     'staging': {
-        'hosts': ['stacktrace.org'],
+        'hosts': ['direct.mixxx.org'],
         'dest_path': '/home/mixxx/domains/staging.mixxx.org/public_html',
     }
 }
@@ -23,12 +26,20 @@ env.roledefs = {
 env.deploy_path = '.build'
 DEPLOY_PATH = env.deploy_path
 env.user = 'mixxx'
+BACKUP_GS_BUCKET = 'gs://mixxxdj-website-backup/snapshots/'
+BACKUP_USER = 'mixxx'
+BACKUP_PATH = '/home/{}/backups'.format(BACKUP_USER)
+FORUMS_DATABASE_NAME = 'phpbb'
+FORUMS_DATABASE_USER = 'phpbb'
+FORUMS_DATABASE_PASSWORD = '' # Do not commit the password.
 
 def staging():
+    env.instance_name = 'staging'
     env.roles = ['staging']
     env.dest_path = env.roledefs['staging']['dest_path']
 
 def production():
+    env.instance_name = 'production'
     env.roles = ['production']
     env.dest_path = env.roledefs['production']['dest_path']
 
@@ -66,3 +77,59 @@ def publish():
         delete=False,
         extra_opts='-c',
     )
+
+def snapshot_path(instance_name, snapshot_name):
+    return os.path.join(BACKUP_PATH, instance_name, 'snapshots', snapshot_name)
+
+def gcloud_snapshot_path(instance_name, snapshot_name):
+    return os.path.join(BACKUP_GS_BUCKET, instance_name, snapshot_name)
+
+def snapshot(snapshot_name=None):
+    instance_path = env.dest_path
+    assert FORUMS_DATABASE_PASSWORD, 'FORUMS_DATABASE_PASSWORD is empty.'
+
+    if snapshot_name is None:
+        snapshot_name = datetime.datetime.now().strftime('%Y-%m-%d')
+    snap_path = snapshot_path(env.instance_name, snapshot_name)
+
+    assert(snap_path)
+
+    if exists(snap_path):
+        raise Exception("WARNING: Snapshot '{}' already exists at '{}'."
+                        .format(snapshot_name, snap_path))
+
+    sudo('mkdir -p {}'.format(snap_path), user=BACKUP_USER)
+    with cd(snap_path), settings(sudo_user=BACKUP_USER):
+        forums_path = os.path.join(instance_path, 'forums')
+        forums_snapshot = 'forums.tar.gz'
+        sudo('tar czf {} -C {} .'.format(forums_snapshot, forums_path))
+
+        mysql_snapshot = 'forums.sql.gz'
+        sudo('mysqldump -u{} -p{} {} | gzip > {}'.format(
+            FORUMS_DATABASE_USER,
+            FORUMS_DATABASE_PASSWORD,
+            FORUMS_DATABASE_NAME, mysql_snapshot))
+
+        wiki_path = os.path.join(instance_path, 'wiki')
+        wiki_snapshot = 'wiki.tar.gz'
+        sudo('tar czf {} -C {} .'.format(wiki_snapshot, wiki_path))
+
+    # Record snapshot name for chaining commands.
+    env.snapshot_name = snapshot_name
+
+def gcloud_upload(snapshot_name=None):
+    instance_path = env.dest_path
+    if snapshot_name is None:
+        # If we ran snapshot then we recorded the snapshot name in env.
+        if hasattr(env, 'snapshot_name'):
+            snapshot_name = env.snapshot_name
+        else:
+            snapshot_name = datetime.datetime.now().strftime('%Y-%m-%d')
+    snap_path = snapshot_path(env.instance_name, snapshot_name)
+    assert(snap_path)
+    if not exists(snap_path):
+        raise Exception("WARNING: Snapshot '{}' does not exist at '{}'."
+                        .format(snapshot_name, snap_path))
+
+    gcloud_path = gcloud_snapshot_path(env.instance_name, snapshot_name)
+    run('gsutil -m rsync -d -r {} {}'.format(snap_path, gcloud_path))

@@ -1,4 +1,5 @@
 show_unstable: no
+show_previous: yes
 unstable_short_version: Mixxx 2.0
 unstable_long_version: Mixxx 2.0 RC2 (build r5717)
 unstable_win32: http://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win32.exe
@@ -29,6 +30,19 @@ stable_ubuntu32_analytics_conversion: /downloads/2.0.0-ubuntu-trusty32
 stable_ubuntu64_analytics_conversion: /downloads/2.0.0-ubuntu-trusty64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 stable_linuxsrc_analytics_conversion: /downloads/2.0.0-linuxsrc
+previous_short_version: Mixxx 1.11
+previous_long_version: Mixxx 1.11.0
+previous_win32: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win32.exe
+previous_win64: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-win64.exe
+previous_osxintel: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macintel.dmg
+previous_osxppc: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-macppc.dmg
+previous_linuxsrc: http://downloads.mixxx.org/mixxx-1.11.0/mixxx-1.11.0-src.tar.gz
+previous_win32_analytics_conversion: /downloads/1.11.0win32
+previous_win64_analytics_conversion: /downloads/1.11.0win64
+previous_osxintel_analytics_conversion: /downloads/1.11.0osxintel
+previous_osxppc_analytics_conversion: /downloads/1.11.0osxppc
+previous_linuxsrc_analytics_conversion: /downloads/1.11.0linuxsrc
+previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 {% extends "base.html" %}
 
 {% load i18n %}
@@ -98,7 +112,7 @@ $(document).ready(function() {
 
     <p><a href="{{ unstable_osxintel }}"
           onclick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for Mac OS X 10.5+ (Intel){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_long_version }} for Mac OS X 10.6+ (Intel){% endblocktrans %}</a></p>
 
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
 
@@ -145,7 +159,11 @@ $(document).ready(function() {
 
   <a name="stable"></a>
   <h1>{% blocktrans %}Download Now ({{ stable_short_version }} Stable){% endblocktrans %}</h1>
-  {% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}
+  <!-- TODO: Eventually remove when stable_short_version is no longer 2.0.  Leaving the text literal
+  so the bad link is more easily caught. -->
+  <p>{% blocktrans with whats_new_link="/whats-new-in-mixxx-2-0" %}Check out <a href="{{ whats_new_link }}">what's new in Version 2.0!</a>{% endblocktrans %}</p>
+  <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_short_version }} contains many important updates and bugfixes, it's possible some users may experience issues.  If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_short_version }}</a>.){% endblocktrans %}</p>
+  <p>{% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}</p>
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
 
@@ -191,7 +209,7 @@ $(document).ready(function() {
   <div style="padding: 20px;">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
     {% trans "Ubuntu 12.04 (Precise)" as stable_ubuntu_min_supported_version %}
-    {% trans "Ubuntu 15.10 (Wily)" as stable_ubuntu_max_supported_version %}
+    {% trans "Ubuntu 16.04 (Xenial)" as stable_ubuntu_max_supported_version %}
     <p>{% blocktrans %}Download {{ stable_long_version }} for {{ stable_ubuntu_min_supported_version }} through {{ stable_ubuntu_max_supported_version}}:{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
@@ -235,19 +253,66 @@ $(document).ready(function() {
     </p>
   </div>
 
-  <div class="gapfiller" style="height: 57px">
-    <div style="float: right;" >
-      <a href="http://www.oscillicious.com/?utm_source=mixxx&utm_medium=gap_banner&utm_content=downloads_moresoftware&utm_campaign=mixxx">
-        <img src="{% static '/static/images/oscillicious_logo1.png' %}"></a>
-    </div>
-    <p style="text-align: center;">{% trans "More software from the Mixxx Developers available at:" %}</p>
-    <div style="clear: both;"></div>
+  {% ifequal show_previous "yes" %}
+  <a name="previous"></a>
+  <h1>{% blocktrans %}Download Now ({{ previous_long_version }} Previous Stable Version){% endblocktrans %}</h1>
+  {% trans "Mixxx is available for Windows, Mac OS X, and Linux:" %}
+  <div style="clear: both;"></div>
+  <div class="halfbox_left darkborder winbox">
+
+    <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{{ windows }}</h2>
+
+    <p>
+      <a href="{{ previous_win32 }}"
+         onClick="javascript:trackDownload('{{ previous_win32_analytics_conversion }}');">
+        {% blocktrans %}Download {{ previous_long_version }} for 32-bit Windows{% endblocktrans %}</a>
+    </p>
+
+    <p>
+      <a href="{{ previous_win64 }}"
+         onClick="javascript:trackDownload('{{ previous_win64_analytics_conversion }}');">
+        {% blocktrans %}Download {{ previous_long_version }} for 64-bit Windows{% endblocktrans %}</a>
+    </p>
+
+    <br>
+    <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
   </div>
 
-  <h2>{% trans "Errata" %}</h2>
-  <p>
-    {% blocktrans with mixxx_191_appstore_link="http://downloads.mixxx.org/mess/mixxx-1.9.1-macintel-appstore.dmg"%}Source code for the Mac App Store version is available in each release branch in Git. A <a href="{{ mixxx_191_appstore_link }}">corresponding binary</a> is also available.{% endblocktrans %}
-  </p>
+  <div class="halfbox_right darkborder macbox">
+    <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{{ mac_osx }}</h2>
+    <p>
+      <a href="{{ previous_osxintel }}"
+         onClick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">
+        {% blocktrans %}Download {{ previous_long_version }} for Mac OS X 10.5+ (Intel){% endblocktrans %}</a>
+    </p>
+    <p>
+      <a href="{{ previous_osxppc }}"
+         onClick="javascript:trackDownload('{{ previous_osxppc_analytics_conversion }}');">
+        {% blocktrans %}Download {{ previous_long_version }} for Mac OS X 10.5+ (PPC){% endblocktrans %}</a>
+    </p>
+
+    <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
+    <!--
+    <div style="text-align: center;">
+      <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
+        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;"></a>
+    </div>
+    <p><small>Please note due to licensing restrictions, vinyl control is not
+    available in Mixxx from the Mac App Store.</small></p>
+    -->
+  </div>
+
+  <div style="clear: both;"></div>
+
+    <h2>{% trans "Linux / Source Code" %}</h2>
+    <p>
+      <a href="{{ previous_linuxsrc }}"
+         onClick="javascript:trackDownload('{{ previous_linuxsrc_analytics_conversion }}');">
+        {% blocktrans %}Download {{ previous_long_version }} Source Code{% endblocktrans %}
+      </a>
+    </p>
+
+  {% endifequal %}
 
 </div>
 {% endblock %}

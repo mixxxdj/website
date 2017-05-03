@@ -89,6 +89,10 @@
         <b>{% trans "iTunes and Traktor Library Integration" %}</b><br>
         {% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}
       </p>
+      <p class="feature_indent">
+        <b>{% trans "MusicBrainz Tag Lookup" %}</b><br>
+        {% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}
+      </p>
     </div>
 
     <div class="halfbox_right">
@@ -140,7 +144,7 @@
     <div class="halfbox_right">
       <H2><img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature_icon">{% trans "Live Broadcasting" %}</H2>
       <p>
-        {% blocktrans with broadcasting_wiki_link="/wiki/doku.php/internet_broadcasting" %}Stream your mixes live over the internet to your audience and friends through a Shoutcast or Icecast server. <a href="{{ broadcasting_wiki_link }}">Read more{% endblocktrans %}</a>
+        {% blocktrans with broadcasting_wiki_link="/wiki/doku.php/internet_broadcasting" %}Stream your mixes live over the internet to your audience and friends through a Shoutcast or Icecast server. <a href="{{ broadcasting_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
 
@@ -170,7 +174,7 @@
 
       <H2>{% trans "DJ Controller Support" %}</H2>
       <p>
-        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Over 30 controllers supported</b><br> including the Traktor Kontrol S4 MK2, Vestax VCI-400, Hercules RMX, Numark Mixtrack, Stanton SCS.3d, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Read more{% endblocktrans %}</a>
+        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Over 85 controllers supported</b><br> including the Traktor Kontrol S4 MK2, Vestax VCI-400, Hercules RMX, Numark Mixtrack, Stanton SCS.3d, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
 
       <p><b>{% trans "Advanced Controller Scripting Engine" %}</b><br>
@@ -191,7 +195,7 @@
       </p>
 
       <p>
-        {% blocktrans with vinyl_control_wiki_link="/wiki/doku.php/vinyl_control" %}Serato CV02, Traktor Scratch MK1, and MixVibes DVS V2 timecodes are supported with absolute positioning, needle cueing, and end-of-record detection. Mixxx even works with the soundcard you already have! <a href="{{ vinyl_control_wiki_link }}">Read more</a>{% endblocktrans %}
+        {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Serato CV02, Traktor Scratch MK1, and MixVibes DVS V2 timecodes are supported with absolute positioning, needle cueing, and end-of-record detection. Mixxx even works with the soundcard you already have! <a href="{{ vinyl_control_manual_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
 
@@ -209,7 +213,7 @@
       <div style="float: left; width: 30%; padding-right: 50px;">
         <ul>
           <p><b>{% trans "Core Features" %}</b></p>
-          <li>{% trans "Cross-platform (Windows XP/Vista/7/8/10, Mac OS X, Linux)" %}</li>
+          <li>{% trans "Cross-platform (Windows XP/Vista/7/8/10, Mac OS X 10.5+, Linux)" %}</li>
           <li>{% trans "Free and open source (GPL v2)" %}</li>
           <li>{% trans "Parallel or split scratchable waveform displays" %}</li>
           <li>{% trans "Waveform summaries" %}</li>
@@ -224,6 +228,7 @@
           <li>{% trans "Automatic crossfading with Auto DJ" %}</li>
           <li>{% trans "Crates and playlists" %}</li>
           <li>{% trans "Reads iTunes, Traktor, Banshee and Rhythmbox libraries" %}</li>
+          <li>{% trans "Track metadata lookup from MusicBrainz" %}</li>
           <li>{% trans "Pitch-independent time stretch (key lock)" %}</li>
           <li>{% trans "Speed-neutral musical key adjustment" %}</li>
           <li>{% trans "Vinyl emulation" %}</li>
