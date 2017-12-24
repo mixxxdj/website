@@ -1,7 +1,7 @@
-show_unstable: no
+show_unstable: yes
 show_previous: yes
-unstable_short_version: Mixxx 2.0
-unstable_long_version: Mixxx 2.0 RC2 (build r5717)
+unstable_short_version: Mixxx 2.1
+unstable_long_version: Mixxx 2.1 Beta
 unstable_win32: https://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win32.exe
 unstable_win64: https://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-win64.exe
 unstable_osxintel: https://downloads.mixxx.org/mixxx-2.0.0-rc2/mixxx-2.0.0-rc2-osxintel.dmg
@@ -86,16 +86,22 @@ $(document).ready(function() {
 
   {% ifequal show_unstable "yes" %}
   <a name="beta"></a>
-  <h1>{% blocktrans %}Download Now ({{ unstable_short_version }} Release Candidate){% endblocktrans %}</h1>
+  <h1>{% blocktrans %}Download Now ({{ unstable_short_version }} Beta){% endblocktrans %}</h1>
   <div style="padding: 20px;">
     <p><h2>For live use, we recommend <a href="#stable">{{ stable_short_version }} Stable</a> below.</h2></p>
     <p>
-      {% blocktrans with mixxx_112_beta_blog_link="http://mixxxblog.blogspot.com/2015/04/mixxx-112-beta-released.html" %}The Mixxx team has been working hard for over 2 years on Mixxx 2.0. We've added hundreds of new features and we need YOUR help testing them. Check out the <a href="{{ mixxx_112_beta_blog_link }}">release announcement on our blog</a> for a list of the new, hard-hitting features. Tempted? Try these on for size:{% endblocktrans %}
+      {% blocktrans with mixxx_21_beta_forum_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=9518" %}The Mixxx team has been working hard for 2 years on Mixxx 2.1. Check out the <a href="{{ mixxx_21_beta_forum_link }}">release announcement</a> for a list of the exciting new features.{% endblocktrans %}
     <p>
 
     <p>
-      <b>{% trans "Important:" %}</b>{% blocktrans with stable_link="#stable" %} While these builds have been stable in testing they are not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.</a>{% endblocktrans %}
+      <b>{% trans "Important:" %}</b>{% blocktrans with stable_link="#stable" %} While Mixxx 2.1 beta has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.</a>{% endblocktrans %}
     </p>
+
+    <p>
+      {% blocktrans %}Easy-to-use installer packages for Windows, macOS, and Ubuntu are coming soon. Stay tuned!{% endblocktrans %}
+    </p>
+
+    {% comment "FIXME when build server is working for 2.1 branch" %}
 
     <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{{ windows }}</h2>
 
@@ -137,16 +143,20 @@ $(document).ready(function() {
           onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
         {% blocktrans %}{{ unstable_long_version }} for 64-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
 
-    <h2>{% trans "Linux / Source Code" %}</h2>
+    {% endcomment %}
 
+    <h2>{% trans "Source Code" %}</h2>
+
+    {% comment "FIXME when source tarball is on download server" %}
     <p><a href="{{ unstable_linuxsrc }}"
           onclick="javascript:trackDownload('{{ unstable_linuxsrc_analytics_conversion }}');">
         {% blocktrans %}{{ unstable_long_version }} Source Code{% endblocktrans %}</a></p>
+    {% endcomment %}
 
     <p>
-      {% trans "The Mixxx source code is made available under the GPL v2. Please check the LICENSE file in our source tree for complete licensing information." %}
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The latest code from Mixxx's 2.0 development branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
-      <pre>        git clone -b 1.12 https://github.com/mixxxdj/mixxx.git</pre>
+      {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.1/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
+      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's 2.1 beta branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
+      <pre>        git clone -b 2.1 https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
     <p>
