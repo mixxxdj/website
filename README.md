@@ -5,9 +5,11 @@ built with [Cactus][cactus], a static site generator.
 
 ## Quick Start
 
-To get started contributing to the Mixxx website, first install cactus:
+To get started contributing to the Mixxx website, first install all requirements
+(e.g. Cactus). Optionally, use a [Virtualenv][virtualenv] to isolate
+dependencies.
 
-    $ pip install cactus
+    $ pip install -r requirements.txt
 
 Then build the site from its templates:
 
@@ -40,6 +42,24 @@ All strings wrapped with ```{% trans 'Hello World' %}``` are flagged for
 translation. Whenever adding new English strings to the website, please wrap
 them in a ```{% trans 'Hello World' %}``` block.
 
+## Publishing
+
+**Note: Requires SSH access to mixxx.org.**
+
+First, publish to http://staging.mixxx.org:
+
+```
+$ fab staging rebuild publish
+```
+
+Visit the staging site to verify everything looks ok. Then, publish to the production site:
+
+```
+$ fab production rebuild publish
+```
+
+Visit https://mixxx.org to verify everything looks ok.
+
 [mixxx.org]: http://mixxx.org/
 [cactus]: https://www.staticgen.com/cactus
 [cactus_docs]: http://cactusformac.com/docs/
@@ -47,3 +67,4 @@ them in a ```{% trans 'Hello World' %}``` block.
 [django_templates]: https://docs.djangoproject.com/en/1.8/ref/templates/language/
 [django_template_i18n]: https://docs.djangoproject.com/en/1.8/topics/i18n/translation/#internationalization-in-template-code
 [download_button.html]: https://github.com/mixxxdj/website/blob/website/templates/download_button.html
+[virtualenv]: https://virtualenv.pypa.io/en/stable/
