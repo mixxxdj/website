@@ -84,13 +84,13 @@ of every page. To upgrade:
 
 # Forum Upgrade
 
-**WARNING: We are currently on the 3.0.x release. Do not upgrade to 3.1.x with
+**WARNING: We are currently on the 3.1.x release. Do not upgrade to 3.2.x or above with
 these instructions. That process is much more involved.**
 
 * Backup the site (see "Backups" above).
 * Download the latest "autoupdate" package from
   [phpBB](https://www.phpbb.com/downloads/#update). Note that we are currently
-  on the 3.0.x cycle. Do not download an auto-upgrade package for 3.1.x.
+  on the 3.1.x cycle. Do not download an auto-upgrade package for 3.2.x.
 * Unzip the archive into /home/mixxx/public_html/forums/
   * Replace all `doc/` files if asked.
   * Verify `install/` folder is now present.
@@ -100,6 +100,6 @@ these instructions. That process is much more involved.**
 * If unmergeable diffs are identified, view the diffs and verify they are ok.
 * Confirm your choices and download an update archive.
 * Transfer the update archive to /home/mixxx/public_html/forums/ and unarchive it (overwrite all existing files).
-* Move `install` and `upgrade_3.0.x_to_3.0.y.tar.gz` to `junkyard/` (for posterity).
+* Move `install` and `upgrade_3.1.x_to_3.2.y.tar.gz` to `junkyard/` (for posterity).
   * **The forums are now back up.**
 * Log in and verify everything works.
