@@ -1,12 +1,20 @@
 show_unstable: yes
 show_previous: yes
 unstable_short_version: Mixxx 2.1
-unstable_long_version: Mixxx 2.1 Beta
-unstable_builds: http://downloads.mixxx.org/builds/2.1/release/
-unstable_win_analytics_conversion: /downloads/2.1.0-beta-win32
-unstable_osxintel_analytics_conversion: /downloads/2.1.0-beta-osxintel
-unstable_ubuntu_analytics_conversion: /downloads/2.1.0-beta-ubuntu
-unstable_ubuntu_ppa_analytics_conversion: /downloads/2.1.0-beta-ubuntu-ppa
+unstable_long_version: Mixxx 2.1 RC1
+unstable_win32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x86-latest.exe
+unstable_win64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x64-latest.exe
+unstable_osxintel: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-macintel64-latest.dmg
+unstable_ubuntu32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-zesty-i386-latest.deb
+unstable_ubuntu64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-zesty-amd64-latest.deb
+unstable_linuxsrc: FIXME
+unstable_linuxsrc_analytics_conversion: /downloads/2.1.0-rc1-linuxsrc
+unstable_win32_analytics_conversion: /downloads/2.1.0-rc1-win32
+unstable_win64_analytics_conversion: /downloads/2.1.0-rc1-win64
+unstable_osxintel_analytics_conversion: /downloads/2.1.0-rc1-osxintel
+unstable_ubuntu32_analytics_conversion: /downloads/2.1.0-rc1-ubuntu32
+unstable_ubuntu64_analytics_conversion: /downloads/2.1.0-rc1-ubuntu64
+unstable_ubuntu_ppa_analytics_conversion: /downloads/2.1.0-rc1-ubuntu-ppa
 stable_short_version: Mixxx 2.0
 stable_long_version: Mixxx 2.0.0
 stable_win32: https://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win32.exe
@@ -78,7 +86,7 @@ $(document).ready(function() {
 
   {% ifequal show_unstable "yes" %}
   <a name="beta"></a>
-  <h1>{% blocktrans %}Download Now ({{ unstable_short_version }} Beta){% endblocktrans %}</h1>
+  <h1>{% blocktrans %}Download Now ({{ unstable_long_version }}){% endblocktrans %}</h1>
   <div style="padding: 20px;">
     <p><h2>For live use, we recommend <a href="#stable">{{ stable_short_version }} Stable</a> below.</h2></p>
     <p>
@@ -86,7 +94,7 @@ $(document).ready(function() {
     </p>
 
     <p>
-      <b>{% trans "Important:" %}</b> {% blocktrans with stable_link="#stable" %}While Mixxx 2.1 beta has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endblocktrans %}</a>
+      <b>{% trans "Important:" %}</b> {% blocktrans with stable_link="#stable" %}While Mixxx 2.1 has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endblocktrans %}</a>
     </p>
   </div>
 
@@ -94,11 +102,19 @@ $(document).ready(function() {
   <div class="halfbox_left darkborder winbox">
     <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon">{{ windows }}</h2>
 
-    <p><a href="{{ unstable_builds }}"
-          onclick="javascript:trackDownload('{{ unstable_win_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for Windows{% endblocktrans %}</a></p>
+    <p>
+      <a href="{{ unstable_win32 }}"
+         onClick="javascript:trackDownload('{{ unstable_win32_analytics_conversion }}');">
+        {% blocktrans %}Download {{ unstable_long_version }} for 32-bit Windows{% endblocktrans %}</a>
+    </p>
 
-    <p>Use the newest file ending in "-x64.exe" for 64 bit Windows and the newest file ending in "-x32.exe" for 32 bit Windows. New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.</p>
+    <p>
+      <a href="{{ unstable_win64 }}"
+         onClick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">
+        {% blocktrans %}Download {{ unstable_long_version }} for 64-bit Windows{% endblocktrans %}</a>
+    </p>
+
+    <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.</p>
 
     <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}Supported on Windows XP and newer. AAC playback requires at least Windows 7 or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
   </div>
@@ -106,11 +122,13 @@ $(document).ready(function() {
   <div class="halfbox_right darkborder macbox">
     <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{{ mac_osx }}</h2>
 
-    <p><a href="{{ unstable_builds }}"
-          onclick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for Mac OS X 10.6+ (Intel){% endblocktrans %}</a></p>
+    <p>
+      <a href="{{ unstable_osxintel }}"
+         onClick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
+        {% blocktrans %}Download {{ unstable_long_version }} for Mac OS X 10.6+ (Intel){% endblocktrans %}</a>
+    </p>
 
-    <p>{% blocktrans %}Use the newest file ending in "-macintel64.dmg". New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.{% endblocktrans %}</p>
+    <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.{% endblocktrans %}</p>
 
   </div>
   <div style="clear: both;"></div>
@@ -133,17 +151,19 @@ $(document).ready(function() {
 
     <p>{% blocktrans %}New installers will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with apt-get. Otherwise, you can download individual packages to install and check back periodically for updates until Mixxx 2.1 is released:{% endblocktrans %}</p>
 
-    <p><a href="{{ unstable_builds }}"
-          onclick="javascript:trackDownload('{{ unstable_ubuntu_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for Ubuntu 14.04 Trusty (and newer){% endblocktrans %}</a></p>
+    <p><a href="{{ unstable_ubuntu32 }}"
+          onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for 32-bit Ubuntu Zesty (and newer){% endblocktrans %}</a></p>
 
-    <p>{% blocktrans %}Use the newest file ending in "-amd64.deb" for 64 bit Ubuntu and "-i386.deb" for 32 bit Ubuntu.{% endblocktrans %}</p>
+    <p><a href="{{ unstable_ubuntu64 }}"
+          onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
+        {% blocktrans %}{{ unstable_long_version }} for 64-bit Ubuntu Zesty (and newer){% endblocktrans %}</a></p>
 
     <h2>{% trans "Source Code" %}</h2>
 
     <p>
       {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.1/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's 2.1 beta branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
+      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's 2.1 branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
       <pre>        git clone -b 2.1 https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
