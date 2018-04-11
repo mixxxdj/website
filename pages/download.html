@@ -5,8 +5,8 @@ unstable_long_version: Mixxx 2.1 RC1
 unstable_win32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x86-latest.exe
 unstable_win64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x64-latest.exe
 unstable_osxintel: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-macintel64-latest.dmg
-unstable_ubuntu32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-zesty-i386-latest.deb
-unstable_ubuntu64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-zesty-amd64-latest.deb
+unstable_ubuntu32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-artful-i386-latest.deb
+unstable_ubuntu64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-artful-amd64-latest.deb
 unstable_linuxsrc: FIXME
 unstable_linuxsrc_analytics_conversion: /downloads/2.1.0-rc1-linuxsrc
 unstable_win32_analytics_conversion: /downloads/2.1.0-rc1-win32
@@ -153,11 +153,11 @@ $(document).ready(function() {
 
     <p><a href="{{ unstable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for 32-bit Ubuntu Zesty (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_long_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <p><a href="{{ unstable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for 64-bit Ubuntu Zesty (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_long_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <h2>{% trans "Source Code" %}</h2>
 
