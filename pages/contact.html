@@ -11,11 +11,7 @@
   <div style="clear: both;"></div>
   <div class="halfbox_left">
     <p>
-      {% blocktrans with forums_link="/forums" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our IRC channel as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>.{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans with mailing_list_link="http://lists.sourceforge.net/lists/listinfo/mixxx-devel" %}Developers working on Mixxx collaborate with each other via the <a href="{{ mailing_list_link }}">mixxx-devel</a> mailing list and our IRC channel (#mixxx on Freenode). To send an email to the list, you must <a href="{{ mailing_list_link }}">subscribe first</a>. The list is low traffic.{% endblocktrans %}
+      {% blocktrans with forums_link="/forums" zulip_web_link="https://mixxx.zulipchat.com/" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our <a href="{{ zulip_web_link }}">Zulip chat</a> as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, Zulip is the best way to reach us.{% endblocktrans %}
     </p>
   </div>
 

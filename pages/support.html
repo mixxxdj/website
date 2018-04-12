@@ -36,22 +36,15 @@
   </div>
 
   <div class="halfbox_right">
-    <h2>{% trans "Developer Mailing List" %}</h2>
+    <h2>{% trans "Zulip Chat" %}</h2>
     <p>
-      {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" sourceforge_archive_link="http://sourceforge.net/mailarchive/forum.php?forum=mixxx-devel" gmane_archive_link="http://news.gmane.org/gmane.comp.multimedia.mixxx.devel" %}The <a href="{{ mailing_list_link}} ">mixxx-devel</a> developer mailing list (<a href="{{ sourceforge_archive_link }}">SourceForge</a> and <a href="{{ gmane_archive_link }}">Gmane</a> archives) is the primary means of developer communication.  The mailing list is where the Mixxx team discusses upcoming changes and programming related stuff.{% endblocktrans %}
+      {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}If you don't need support, Zulip chat is still a fun place to hang out with the developers and meet some fellow DJs. Join the discussion through <a href="{{ zulip_web_link }} ">Zulip web chat</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com{% endblocktrans %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
 
-  <div class="halfbox_left">
-    <h2>{% trans "IRC Channel" %}</h2>
-    <p>
-      {% blocktrans with irc_channel_link="http://www.freenode.net" irc_web_client_link="/irc" %}The Mixxx IRC channel (<b>#mixxx</b> on <a href="{{ irc_channel_link }}">Freenode</a>) can be used for support too. If you don't need support, the IRC channel is still a fun place to hang out with the developers and meet some fellow DJs. <a href="{{ irc_web_client_link }} ">Click here</a> to chat via a web client.{% endblocktrans %}
-    </p>
-  </div>
-
-  <div class="halfbox_right">
+  <div>
     <h2>{% trans "Bug Tracker" %}</h2>
     <p>
       {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
