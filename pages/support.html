@@ -38,13 +38,13 @@
   <div class="halfbox_right">
     <h2>{% trans "Zulip Chat" %}</h2>
     <p>
-      {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}If you don't need support, Zulip chat is still a fun place to hang out with the developers and meet some fellow DJs. Join the discussion through <a href="{{ zulip_web_link }} ">Zulip web chat</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com{% endblocktrans %}
+      {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}<a href="{{ zulip_web_link }}">Mixxx's Zulip chat instance</a> can be used for support too. If you don't need support, Zulip is still a fun place to hang out with the developers and meet some fellow DJs. Join the discussion <a href="{{ zulip_web_link }} ">on the web</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com{% endblocktrans %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
 
-  <div>
+  <div class="halfbox_right">
     <h2>{% trans "Bug Tracker" %}</h2>
     <p>
       {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
