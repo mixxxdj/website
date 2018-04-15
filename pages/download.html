@@ -81,10 +81,6 @@ $(document).ready(function() {
 {% trans "Mixxx PPA" as mixxx_ppa %}
 
 <div class="content">
-  <div style="float: right; width: 100px; padding-top: 30px;">
-    <center>{% include "donate_paypal.html" %}</center>
-  </div>
-
   {% ifequal show_unstable "yes" %}
   <a name="beta"></a>
   <h1>{% blocktrans %}Download Now ({{ unstable_long_version }}){% endblocktrans %}</h1>
@@ -179,8 +175,9 @@ $(document).ready(function() {
   <!-- TODO: Eventually remove when stable_short_version is no longer 2.0.  Leaving the text literal
   so the bad link is more easily caught. -->
   <p>{% blocktrans with release_announcement_link="" %}Check out the <a href="{{ release_announcement_link }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
-  <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_short_version }} contains many important updates and bugfixes, it's possible some users may experience issues.  If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_short_version }}</a>.){% endblocktrans %}</p>
-  <p>{% trans "Mixxx is available for Windows, macOS, and Linux:" %}</p>
+  <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_short_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_short_version }}</a>.){% endblocktrans %}</p>
+  <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free, and donations are appreciated!" %}</p>
+  {% include "donate_paypal.html" %}
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
 
