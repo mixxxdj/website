@@ -14,9 +14,9 @@
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2>{% trans "Wiki / FAQ" %}</H2>
+    <H2>{% trans "Wiki" %}</H2>
     <p>
-      {% blocktrans with mixxx_wiki_link="/wiki/" mixxx_faq_link="/wiki/" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> and <a href="{{ mixxx_faq_link }}">FAQ</a> are the best places to start for <b>documentation and support</b>. They contain useful documentation for both users and developers.{% endblocktrans %}
+      {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="/wiki/doku.php/beginner_dj_links" wiki_troubleshooting="/wiki/doku.php/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
     </p>
   </div>
 

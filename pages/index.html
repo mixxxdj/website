@@ -2,7 +2,7 @@
 
 {% load i18n %}
 
-{% block title %}{% trans "Free MP3 DJ Mixing Software" %}{% endblock %}
+{% block title %}{% trans "Free Digital DJ MP3 Mixing Software" %}{% endblock %}
 
 {% block after_navbar %}
 <div id="driveby_social">
@@ -10,7 +10,7 @@
     <li>
       <a href="https://twitter.com/share" class="twitter-share-button"
          data-url="http://www.mixxx.org"
-         data-text="{% blocktrans %}Check out Mixxx - Free MP3 DJ mixing software for Windows, Mac OS X, and Linux{% endblocktrans %}"
+         data-text="{% blocktrans %}Check out Mixxx - Free Digital DJ MP3 mixing software for Windows, macOS, and Linux{% endblocktrans %}"
          data-via="mixxxdj"
          data-count="vertical">Tweet</a>
     </li>
@@ -24,14 +24,8 @@
 </div>
 
 <div id="splash">
-  <H1>{% trans "DJ Your Way. For Free." %}</H1>
-  <img width="920px" class="background" src="{% static '/static/images/splash-2.0.jpg' %}">
-  <div id="splash_newversion_button">
-    <a href="/whats-new-in-mixxx-2-0">
-      <img width="200px" alt="{% blocktrans %}Check out what's new in Mixxx 2.0{% endblocktrans %}"
-           src="{% static '/static/images/splash_newversion-2.0.png' %}">
-    </a>
-  </div>
+  <h1>{% trans "DJ Your Way" %}</h1>
+  <img class="background" width="676" height="380" src="{% static '/static/images/splash-2.1.png' %}">
 </div>
 {% endblock %}
 
@@ -60,44 +54,43 @@
     <div style="float: right; margin-top: 16px; padding-right: 8px;">
         <img src="{% static '/static/images/squiggle.png' %}">
     </div>-->
-  <p style="text-align: center;">The most advanced free DJ software can be yours in seconds.</p>
+  <p style="text-align: center;">Free and open source DJ software for Windows, macOS, and Linux</p>
   <div style="clear: both;"></div>
 </div> <!-- gapfiller -->
 
 <div class="content">
-  <H1>{% trans "Incredible Features, Unbeatable Value" %}</H1>
+  <h1>{% trans "Powerful Features For All DJs" %}</h1>
 
-  {% blocktrans %}Mixxx has everything you need to start making DJ mixes in a tight, integrated package. Whether you're DJing your next house party, spinning at a club, or broadcasting as a radio DJ, Mixxx has what you need to do it right.{% endblocktrans %}
+  {% blocktrans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files. Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "iTunes Integration" %}</H2>
+    <h2><img src="{% static '/static/images/ic_preferences_keydetect.png' %}" class="feature_icon">{% trans "BPM, Key Detection and Sync" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}All your playlists and songs from iTunes, automatically ready to go for your next live DJ performance.{% endblocktrans %}
+      {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "DJ Controller Support" %}</H2>
+    <h2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "DJ Controller Support" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}With over 85 MIDI DJ controllers supported out-of-the-box and several HID controllers, Mixxx gives you comprehensive hardware control for your DJ mixes.{% endblocktrans %}
+      {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM Detection and Master Sync" %}</H2>
+    <h2><img src="{% static '/static/images/ic_preferences_waveform.png' %}" class="feature_icon">{% trans "Effects" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}Instantly sync the tempo of four songs for seamless beatmixing. Need a break? Create a quick playlist and let Auto DJ take over.{% endblocktrans %}
+      {% blocktrans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endblocktrans %}
     </p>
   </div>
 
   <div class="halfbox_right">
-    <H2><img src="{% static '/static/images/ic_preferences_crossfader.png' %}" class="feature_icon">{% trans "Powerful Mixing Engine" %}</H2>
+    <h2><img src="{% static '/static/images/ic_preferences_vinyl.png' %}" class="feature_icon">{% trans "Vinyl Record Control" %}</h2>
     <p class="feature_indent">
-      {% blocktrans %}Mixxx has a cutting-edge mixing engine including support for MP3, M4A/AAC, OGG, FLAC, and WAV audio, adjustable EQ shelves, timecode vinyl control, recording, and Shoutcast broadcasting.{% endblocktrans %}
+      {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
       <a href="/features">{% trans "Read more" %}</a>
-
     </p>
   </div>
 
@@ -106,21 +99,17 @@
   <div class="gapfiller" style="height: 57px;">
     {% include "download_button.html" %}
     <p style="text-align: center;">
-      {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for FREE now:{% endblocktrans %}
+      {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for free now:{% endblocktrans %}
     </p>
   </div>
 
-  <H1>{% trans "And It Just Keeps Getting Better" %}</H1>
+  <h1>{% trans "Friendly Community" %}</h1>
   <p>
-    {% blocktrans %}Each year, a community of DJs, programmers, and artists contribute dozens of new features to Mixxx. <br> <b>And it doesn't cost you a dime.</b>{% endblocktrans %}
+    {% blocktrans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (as in freedom and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endblocktrans %}
   </p>
 
   <p>
-    {% blocktrans %}Because Mixxx is <b>open source</b>, anyone can remix or add new features to it. And that includes you!{% endblocktrans %}
-  </p>
-
-  <p>
-    {% blocktrans with create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved" %}You can get involved with Mixxx today by <a href="{{ create_a_branch_link }}">creating your own branch</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
+    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="/wiki/doku.php/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
   </p>
 
   <div id="achievements">
