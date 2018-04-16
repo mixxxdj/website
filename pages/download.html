@@ -174,9 +174,9 @@ $(document).ready(function() {
   <h1>{% blocktrans %}Download Now ({{ stable_short_version }} Stable){% endblocktrans %}</h1>
   <!-- TODO: Eventually remove when stable_short_version is no longer 2.0.  Leaving the text literal
   so the bad link is more easily caught. -->
-  <p>{% blocktrans with release_announcement_link="" %}Check out the <a href="{{ release_announcement_link }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
+  <p>{% blocktrans with release_announcement_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=11761" %}Check out the <a href="{{ release_announcement_link }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
   <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_short_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_short_version }}</a>.){% endblocktrans %}</p>
-  <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free, and donations are appreciated!" %}</p>
+  <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free and donations are appreciated!" %}</p>
   {% include "donate_paypal.html" %}
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
@@ -222,8 +222,8 @@ $(document).ready(function() {
 
   <div style="padding: 20px;">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
-    {% trans "Ubuntu 12.04 (Precise)" as stable_ubuntu_min_supported_version %}
-    {% trans "Ubuntu 16.04 (Xenial)" as stable_ubuntu_max_supported_version %}
+    {% trans "Ubuntu 14.04 (Trusty)" as stable_ubuntu_min_supported_version %}
+    {% trans "Ubuntu 17.10 (Artful)" as stable_ubuntu_max_supported_version %}
     <p>{% blocktrans %}Download {{ stable_long_version }} for {{ stable_ubuntu_min_supported_version }} through {{ stable_ubuntu_max_supported_version}}:{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
@@ -232,7 +232,7 @@ $(document).ready(function() {
       sudo apt-get install mixxx
     </pre>
     <p>
-      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.0.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.1.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
       {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
       {% endwith %}
     </p>
