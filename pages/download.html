@@ -20,14 +20,14 @@ stable_long_version: Mixxx 2.1.0
 stable_win32: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-win32.exe
 stable_win64: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-win64.exe
 stable_osxintel: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-osxintel.dmg
-stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-trusty-i386.deb
-stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-trusty-amd64.deb
+stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-artful-i386.deb
+stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-artful-amd64.deb
 stable_linuxsrc: https://downloads.mixxx.org/mixxx-2.1.0/mixxx-2.1.0-src.tar.gz
 stable_win32_analytics_conversion: /downloads/2.1.0-win32
 stable_win64_analytics_conversion: /downloads/2.1.0-win64
 stable_osxintel_analytics_conversion: /downloads/2.1.0-osxintel
-stable_ubuntu32_analytics_conversion: /downloads/2.1.0-ubuntu-trusty32
-stable_ubuntu64_analytics_conversion: /downloads/2.1.0-ubuntu-trusty64
+stable_ubuntu32_analytics_conversion: /downloads/2.1.0-ubuntu-artful32
+stable_ubuntu64_analytics_conversion: /downloads/2.1.0-ubuntu-artful64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 stable_linuxsrc_analytics_conversion: /downloads/2.1.0-linuxsrc
 previous_short_version: Mixxx 2.0
@@ -238,11 +238,11 @@ $(document).ready(function() {
     </p>
     <p><a href="{{ stable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_long_version }} for 32-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_long_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <p><a href="{{ stable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_long_version }} for 64-bit Ubuntu Trusty (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_long_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
