@@ -14,26 +14,26 @@
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <H2>{% trans "Wiki" %}</H2>
-    <p>
-      {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="/wiki/doku.php/beginner_dj_links" wiki_troubleshooting="/wiki/doku.php/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
-    </p>
-  </div>
-
-  <div class="halfbox_right">
-    <H2>{% trans "User Manual" %}</H2>
-    <p>
-      {% blocktrans with manual_latest_link="/manual/latest" manual_beginner_link="/manual/latest/chapters/djing_with_mixxx.html" %}The <a href="{{ manual_latest_link }}">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about <b>configuration</b> and hardware, and much more. It also contains useful information for <b>beginners</b> under <a href="{{ manual_beginner_link }}">DJing with Mixxx</a>.{% endblocktrans %}
-    </p>
-  </div>
-  <div style="clear: both;"></div>
-
-  <div class="halfbox_left">
     <h2>{% trans "Community Forums" %}</h2>
     <p>
       {% blocktrans with forums_link="/forums" %}Have a Mixxx-related question? Something other DJs can help you with? Ask in the <a href="{{ forums_link }}">Mixxx Community Forums</a>.{% endblocktrans %}
     </p>
   </div>
+
+  <div class="halfbox_right">
+    <h2>{% trans "Wiki" %}</h2>
+    <p>
+      {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="/wiki/doku.php/beginner_dj_links" wiki_troubleshooting="/wiki/doku.php/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
+    </p>
+  </div>
+
+  <div class="halfbox_left">
+    <h2>{% trans "User Manual" %}</h2>
+    <p>
+      {% blocktrans with manual_latest_link="/manual/latest" manual_beginner_link="/manual/latest/chapters/djing_with_mixxx.html" %}The <a href="{{ manual_latest_link }}">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about <b>configuration</b> and hardware, and much more. It also contains useful information for <b>beginners</b> under <a href="{{ manual_beginner_link }}">DJing with Mixxx</a>.{% endblocktrans %}
+    </p>
+  </div>
+  <div style="clear: both;"></div>
 
   <div class="halfbox_right">
     <h2>{% trans "Zulip Chat" %}</h2>
@@ -42,8 +42,12 @@
     </p>
   </div>
 
-  <div style="clear: both;"></div>
-
+  <div class="halfbox_left">
+    <h2>{% trans "Mailing List" %}</h2>
+    <p>
+      {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" sourceforge_archive_link="http://sourceforge.net/mailarchive/forum.php?forum=mixxx-devel" gmane_archive_link="http://news.gmane.org/gmane.comp.multimedia.mixxx.devel" %}The <a href="{{ mailing_list_link}} ">mixxx-devel</a> mailing list (<a href="{{ sourceforge_archive_link }}">SourceForge</a> and <a href="{{ gmane_archive_link }}">Gmane</a> archives) is now a low traffic anouncment channel. Subscribe to this list, if you like to keep informed about new releases and other topics. {% endblocktrans %}
+    </p>
+  </div>
   <div class="halfbox_right">
     <h2>{% trans "Bug Tracker" %}</h2>
     <p>
