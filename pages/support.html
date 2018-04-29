@@ -38,9 +38,9 @@
   <div class="halfbox_right">
     <h2>{% trans "Zulip Chat" %}</h2>
     <p>
-      {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}<a href="{{ zulip_web_link }}">Mixxx's Zulip chat instance</a> can be used for support too. If you don't need support, Zulip is still a fun place to hang out with the developers and meet some fellow DJs. Join the discussion <a href="{{ zulip_web_link }} ">on the web</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com{% endblocktrans %}
+      {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}<a href="{{ zulip_web_link }}">Mixxx's Zulip chat instance</a> is a fun place to hang out with the developers and meet some fellow DJs. Here, the Mixxx team discusses upcoming changes and programming related stuff. It can be used for support too. Join the discussion <a href="{{ zulip_web_link }} ">on the web</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com. {% endblocktrans %}
     </p>
-  </div>
+  </div> 
 
   <div class="halfbox_left">
     <h2>{% trans "Mailing List" %}</h2>
@@ -48,6 +48,7 @@
       {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" sourceforge_archive_link="http://sourceforge.net/mailarchive/forum.php?forum=mixxx-devel" gmane_archive_link="http://news.gmane.org/gmane.comp.multimedia.mixxx.devel" %}The <a href="{{ mailing_list_link}} ">mixxx-devel</a> mailing list (<a href="{{ sourceforge_archive_link }}">SourceForge</a> and <a href="{{ gmane_archive_link }}">Gmane</a> archives) is now a low traffic anouncment channel. Subscribe to this list, if you like to keep informed about new releases and other topics. {% endblocktrans %}
     </p>
   </div>
+
   <div class="halfbox_right">
     <h2>{% trans "Bug Tracker" %}</h2>
     <p>
