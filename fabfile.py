@@ -111,8 +111,8 @@ def snapshot(snapshot_name=None):
             FORUMS_DATABASE_NAME, mysql_snapshot))
 
         wiki_path = os.path.join(instance_path, 'wiki')
-        wiki_snapshot = 'wiki.tar.gz'
-        sudo('tar czf {} -C {} .'.format(wiki_snapshot, wiki_path))
+        wiki_snapshot = 'wiki.tar.bz2'
+        sudo('tar --exclude='data/cache' --exclude='data/index' --exclude='data/locks' --exclude='data/tmp' -cjpf {} -C {} .'.format(wiki_snapshot, wiki_path))
 
     # Record snapshot name for chaining commands.
     env.snapshot_name = snapshot_name
