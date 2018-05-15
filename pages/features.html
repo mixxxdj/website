@@ -50,7 +50,7 @@
       {% trans "Choose between multiple equalizers and isolators with adjustable shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades." %}
     </p>
   </div>
-  
+
     <div style="clear: both;"></div>
       <h2>{% trans "Sampler Decks" %}</h2>
     <p>
@@ -58,7 +58,7 @@
     </p>
 
     <center><img src="{% static '/static/images/feature_sampler2.png' %}"></center>
-    
+
     <h2>{% trans "Effects Chains" %}</h2>
     <p>
       {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
@@ -66,10 +66,10 @@
 
     <center><img src="{% static '/static/images/feature_effect_unit_expanded.png' %}"></center>
   <div style="clear: both;"></div>
-  
+
     <h1>{% trans "Customizable DJ Hardware Support" %}</h1>
     {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
-    
+
     <div class="halfbox_left">
       <div style="height: 200px;">
         <center><img width="340px" src="{% static '/static/images/feature_midi-2.0.png' %}" style="padding-top: 20px;"></center>
@@ -81,7 +81,7 @@
       </p>
 
       <p><b>{% trans "Programmable Mapping Engine" %}</b><br>
-        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
+        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behavior. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
       </p>
     </div>
     <div class="halfbox_right">
@@ -166,7 +166,7 @@
     <p>
       {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
     </p>
-    
+
     <div style="clear: both;"></div>
 
     <div class="halfbox_left">
@@ -201,7 +201,7 @@
     <p>
       {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %} Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a href="{{ com_transifex_mixxxdj_link }}">Translation overview</a> page.{% endblocktrans %}
     </p>
-    
+
     <div class="gapfiller" style="height: 57px">
       {% include "download_button.html" %}
       <p style="text-align: center;">{% trans "Download Mixxx and start DJing now for FREE:" %}</p>

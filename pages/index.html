@@ -112,34 +112,5 @@
     {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="/wiki/doku.php/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
   </p>
 
-  <div id="achievements">
-    <div class="achievement" style="width: 180px;">
-      <img src="{% static '/static/images/rating_macappstore.png' %}" alt="#1" style="padding-top: 0px;">
-      <br>
-      {% trans "#1 Top Free Mac App Worldwide" %}<br>
-      Mac App Store<br>
-      <small>{% trans "February 2011" %}</small>
-    </div>
-
-    <div class="achievement" style="margin-top: 10px;">
-      <img src="{% static '/static/images/rating_cnet.png' %}" alt="CNet">
-    </div>
-
-    <div class="achievement" style="margin-top: 30px;">
-      <img src="{% static '/static/images/rating_cm.png' %}" alt="Computer Music"><br>
-      {% trans "Free Pick of the Month" %}<br>
-      <small>{% trans "September 2007" %}</small>
-    </div>
-
-    <div class="achievement" style="margin-top: 50px">
-      <img src="{% static '/static/images/rating_synthtopia.png' %}" alt="Synthtopia">
-      <br>
-      {% trans '"The coolest open source<br>application ever?"' %}<br>
-      <small>{% trans "February 2011" %}</small>
-    </div>
-
-    <div style="clear: both;"></div>
-  </div>
-
 </div> <!-- content -->
 {% endblock %}
