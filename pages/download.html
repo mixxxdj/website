@@ -1,7 +1,6 @@
 show_unstable: no
 show_previous: yes
-unstable_short_version: Mixxx 2.1
-unstable_long_version: Mixxx 2.1 RC1
+unstable_version: Mixxx 2.1.0 RC1
 unstable_win32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x86-latest.exe
 unstable_win64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x64-latest.exe
 unstable_osxintel: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-macintel64-latest.dmg
@@ -15,8 +14,7 @@ unstable_osxintel_analytics_conversion: /downloads/2.1.0-rc1-osxintel
 unstable_ubuntu32_analytics_conversion: /downloads/2.1.0-rc1-ubuntu32
 unstable_ubuntu64_analytics_conversion: /downloads/2.1.0-rc1-ubuntu64
 unstable_ubuntu_ppa_analytics_conversion: /downloads/2.1.0-rc1-ubuntu-ppa
-stable_short_version: Mixxx 2.1
-stable_long_version: Mixxx 2.1.1
+stable_version: Mixxx 2.1.1
 stable_win32: https://downloads.mixxx.org/mixxx-2.1.1/mixxx-2.1.1-win32.exe
 stable_win64: https://downloads.mixxx.org/mixxx-2.1.1/mixxx-2.1.1-win64.exe
 stable_osxintel: https://downloads.mixxx.org/mixxx-2.1.1/mixxx-2.1.1-osxintel.dmg
@@ -30,8 +28,7 @@ stable_ubuntu32_analytics_conversion: /downloads/2.1.1-ubuntu-artful32
 stable_ubuntu64_analytics_conversion: /downloads/2.1.1-ubuntu-artful64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 stable_linuxsrc_analytics_conversion: /downloads/2.1.1-linuxsrc
-previous_short_version: Mixxx 2.0
-previous_long_version: Mixxx 2.0.0
+previous_version: Mixxx 2.0.0
 previous_win32: https://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win32.exe
 previous_win64: https://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win64.exe
 previous_osxintel: https://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-osxintel.dmg
@@ -83,9 +80,9 @@ $(document).ready(function() {
 <div class="content">
   {% ifequal show_unstable "yes" %}
   <a name="beta"></a>
-  <h1>{% blocktrans %}Download Now ({{ unstable_long_version }}){% endblocktrans %}</h1>
+  <h1>{% blocktrans %}Download Now ({{ unstable_version }}){% endblocktrans %}</h1>
   <div style="padding: 20px;">
-    <p><h2>For live use, we recommend <a href="#stable">{{ stable_short_version }} Stable</a> below.</h2></p>
+    <p><h2>For live use, we recommend <a href="#stable">{{ stable_version }} Stable</a> below.</h2></p>
     <p>
       {% blocktrans with mixxx_21_rc_forum_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=11742" %}The Mixxx team has been working hard for 2 years on Mixxx 2.1. Check out the <a href="{{ mixxx_21_rc_forum_link }}">release announcement</a> for a list of the new features.{% endblocktrans %}
     </p>
@@ -102,13 +99,13 @@ $(document).ready(function() {
     <p>
       <a href="{{ unstable_win32 }}"
          onClick="javascript:trackDownload('{{ unstable_win32_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_long_version }} for 32-bit Windows{% endblocktrans %}</a>
+        {% blocktrans %}Download {{ unstable_version }} for 32-bit Windows{% endblocktrans %}</a>
     </p>
 
     <p>
       <a href="{{ unstable_win64 }}"
          onClick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_long_version }} for 64-bit Windows{% endblocktrans %}</a>
+        {% blocktrans %}Download {{ unstable_version }} for 64-bit Windows{% endblocktrans %}</a>
     </p>
 
     <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.</p>
@@ -122,7 +119,7 @@ $(document).ready(function() {
     <p>
       <a href="{{ unstable_osxintel }}"
          onClick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_long_version }} for macOS 10.8+ (Intel){% endblocktrans %}</a>
+        {% blocktrans %}Download {{ unstable_version }} for macOS 10.8+ (Intel){% endblocktrans %}</a>
     </p>
 
     <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.{% endblocktrans %}</p>
@@ -150,11 +147,11 @@ $(document).ready(function() {
 
     <p><a href="{{ unstable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <p><a href="{{ unstable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_long_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <h2>{% trans "Source Code" %}</h2>
 
@@ -171,11 +168,11 @@ $(document).ready(function() {
   {% endifequal %}
 
   <a name="stable"></a>
-  <h1>{% blocktrans %}Download Now ({{ stable_short_version }} Stable){% endblocktrans %}</h1>
-  <!-- TODO: Eventually remove when stable_short_version is no longer 2.0.  Leaving the text literal
+  <h1>{% blocktrans %}Download Now ({{ stable_version }} Stable){% endblocktrans %}</h1>
+  <!-- TODO: Eventually remove when stable_version is no longer 2.0.  Leaving the text literal
   so the bad link is more easily caught. -->
   <p>{% blocktrans with release_announcement_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=11761" %}Check out the <a href="{{ release_announcement_link }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
-  <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_short_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_short_version }}</a>.){% endblocktrans %}</p>
+  <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.){% endblocktrans %}</p>
   <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free and donations are appreciated!" %}</p>
   {% include "donate_paypal.html" %}
   <div style="clear: both;"></div>
@@ -186,13 +183,13 @@ $(document).ready(function() {
     <p>
       <a href="{{ stable_win32 }}"
          onClick="javascript:trackDownload('{{ stable_win32_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_long_version }} for 32-bit Windows{% endblocktrans %}</a>
+        {% blocktrans %}Download {{ stable_version }} for 32-bit Windows{% endblocktrans %}</a>
     </p>
 
     <p>
       <a href="{{ stable_win64 }}"
          onClick="javascript:trackDownload('{{ stable_win64_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_long_version }} for 64-bit Windows{% endblocktrans %}</a>
+        {% blocktrans %}Download {{ stable_version }} for 64-bit Windows{% endblocktrans %}</a>
     </p>
 
     <br>
@@ -204,7 +201,7 @@ $(document).ready(function() {
     <p>
       <a href="{{ stable_osxintel }}"
          onClick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_long_version }} for macOS 10.8+ (Intel){% endblocktrans %}</a>
+        {% blocktrans %}Download {{ stable_version }} for macOS 10.8+ (Intel){% endblocktrans %}</a>
     </p>
 
     <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
@@ -224,7 +221,7 @@ $(document).ready(function() {
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
     {% trans "Ubuntu 14.04 (Trusty)" as stable_ubuntu_min_supported_version %}
     {% trans "Ubuntu 17.10 (Artful)" as stable_ubuntu_max_supported_version %}
-    <p>{% blocktrans %}Download {{ stable_long_version }} for {{ stable_ubuntu_min_supported_version }} through {{ stable_ubuntu_max_supported_version}}:{% endblocktrans %}</p>
+    <p>{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_supported_version }} through {{ stable_ubuntu_max_supported_version}}:{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
       sudo add-apt-repository ppa:mixxx/mixxx
@@ -238,11 +235,11 @@ $(document).ready(function() {
     </p>
     <p><a href="{{ stable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_long_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <p><a href="{{ stable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_long_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
 
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
@@ -252,7 +249,7 @@ $(document).ready(function() {
     <p>
       <a href="{{ stable_linuxsrc }}"
          onClick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_long_version }} Source Code{% endblocktrans %}
+        {% blocktrans %}Download {{ stable_version }} Source Code{% endblocktrans %}
       </a>
     </p>
 
@@ -269,7 +266,7 @@ $(document).ready(function() {
 
   {% ifequal show_previous "yes" %}
   <a name="previous"></a>
-  <h1>{% blocktrans %}Download Now ({{ previous_long_version }} Previous Stable Version){% endblocktrans %}</h1>
+  <h1>{% blocktrans %}Download Now ({{ previous_version }} Previous Stable Version){% endblocktrans %}</h1>
   {% trans "Mixxx is available for Windows, macOS, and Linux:" %}
   <div style="clear: both;"></div>
   <div class="halfbox_left darkborder winbox">
@@ -279,13 +276,13 @@ $(document).ready(function() {
     <p>
       <a href="{{ previous_win32 }}"
          onClick="javascript:trackDownload('{{ previous_win32_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_long_version }} for 32-bit Windows{% endblocktrans %}</a>
+        {% blocktrans %}Download {{ previous_version }} for 32-bit Windows{% endblocktrans %}</a>
     </p>
 
     <p>
       <a href="{{ previous_win64 }}"
          onClick="javascript:trackDownload('{{ previous_win64_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_long_version }} for 64-bit Windows{% endblocktrans %}</a>
+        {% blocktrans %}Download {{ previous_version }} for 64-bit Windows{% endblocktrans %}</a>
     </p>
 
     <br>
@@ -297,12 +294,12 @@ $(document).ready(function() {
     <p>
       <a href="{{ previous_osxintel }}"
          onClick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_long_version }} for macOS 10.5+ (Intel){% endblocktrans %}</a>
+        {% blocktrans %}Download {{ previous_version }} for macOS 10.5+ (Intel){% endblocktrans %}</a>
     </p>
     <p>
       <a href="{{ previous_osxppc }}"
          onClick="javascript:trackDownload('{{ previous_osxppc_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_long_version }} for macOS 10.5+ (PPC){% endblocktrans %}</a>
+        {% blocktrans %}Download {{ previous_version }} for macOS 10.5+ (PPC){% endblocktrans %}</a>
     </p>
 
     <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
@@ -322,7 +319,7 @@ $(document).ready(function() {
     <p>
       <a href="{{ previous_linuxsrc }}"
          onClick="javascript:trackDownload('{{ previous_linuxsrc_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_long_version }} Source Code{% endblocktrans %}
+        {% blocktrans %}Download {{ previous_version }} Source Code{% endblocktrans %}
       </a>
     </p>
 
