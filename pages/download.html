@@ -147,11 +147,11 @@ $(document).ready(function() {
 
     <p><a href="{{ unstable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_version }} for 32-bit Ubuntu Artful{% endblocktrans %}</a></p>
 
     <p><a href="{{ unstable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu Artful{% endblocktrans %}</a></p>
 
     <h2>{% trans "Source Code" %}</h2>
 
@@ -220,7 +220,7 @@ $(document).ready(function() {
   <div style="padding: 20px;">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
     {% trans "Ubuntu 14.04 (Trusty)" as stable_ubuntu_min_supported_version %}
-    {% trans "Ubuntu 17.10 (Artful)" as stable_ubuntu_max_supported_version %}
+    {% trans "Ubuntu 17.10 (Bionic)" as stable_ubuntu_max_supported_version %}
     <p>{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_supported_version }} through {{ stable_ubuntu_max_supported_version}}:{% endblocktrans %}</p>
     <p>{% trans "Open a terminal, and enter:" %}</p>
     <pre>
@@ -235,11 +235,11 @@ $(document).ready(function() {
     </p>
     <p><a href="{{ stable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_version }} for 32-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_version }} for 32-bit Ubuntu Artful{% endblocktrans %}</a></p>
 
     <p><a href="{{ stable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Artful (and newer){% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Artful{% endblocktrans %}</a></p>
 
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
