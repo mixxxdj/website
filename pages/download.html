@@ -1,11 +1,11 @@
-show_unstable: no
+show_unstable: yes
 show_previous: yes
-unstable_version: Mixxx 2.1.0 RC1
-unstable_win32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x86-latest.exe
-unstable_win64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-x64-latest.exe
-unstable_osxintel: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-macintel64-latest.dmg
-unstable_ubuntu32: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-artful-i386-latest.deb
-unstable_ubuntu64: http://downloads.mixxx.org/builds/2.1/release/mixxx-2.1.0-rc1-2.1-release-artful-amd64-latest.deb
+unstable_version: Mixxx 2.2.0 Beta
+unstable_win32: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-x86-latest.exe
+unstable_win64: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-x64-latest.exe
+unstable_osxintel: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-macintel64-latest.dmg
+unstable_ubuntu32: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-bionic-i386-latest.deb
+unstable_ubuntu64: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-bionic-amd64-latest.deb
 unstable_linuxsrc: FIXME
 unstable_linuxsrc_analytics_conversion: /downloads/2.1.0-rc1-linuxsrc
 unstable_win32_analytics_conversion: /downloads/2.1.0-rc1-win32
@@ -84,11 +84,11 @@ $(document).ready(function() {
   <div style="padding: 20px;">
     <p><h2>For live use, we recommend <a href="#stable">{{ stable_version }} Stable</a> below.</h2></p>
     <p>
-      {% blocktrans with mixxx_21_rc_forum_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=11742" %}The Mixxx team has been working hard for 2 years on Mixxx 2.1. Check out the <a href="{{ mixxx_21_rc_forum_link }}">release announcement</a> for a list of the new features.{% endblocktrans %}
+      {% blocktrans with mixxx_22_beta_forum_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=12152" %}The Mixxx team has been working hard on Mixxx 2.2. Check out the <a href="{{ mixxx_22_beta_forum_link }}">release announcement</a> for a list of the new features.{% endblocktrans %}
     </p>
 
     <p>
-      <b>{% trans "Important:" %}</b> {% blocktrans with stable_link="#stable" %}While Mixxx 2.1 has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endblocktrans %}</a>
+      <b>{% trans "Important:" %}</b> {% blocktrans with stable_link="#stable" %}While Mixxx 2.2 has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endblocktrans %}</a>
     </p>
   </div>
 
@@ -108,7 +108,7 @@ $(document).ready(function() {
         {% blocktrans %}Download {{ unstable_version }} for 64-bit Windows{% endblocktrans %}</a>
     </p>
 
-    <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.</p>
+    <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.2 is released.</p>
 
     <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}Supported on Windows XP and newer. AAC playback requires at least Windows 7 or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
   </div>
@@ -122,7 +122,7 @@ $(document).ready(function() {
         {% blocktrans %}Download {{ unstable_version }} for macOS 10.8+ (Intel){% endblocktrans %}</a>
     </p>
 
-    <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.1 is released.{% endblocktrans %}</p>
+    <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.2 is released.{% endblocktrans %}</p>
 
   </div>
   <div style="clear: both;"></div>
@@ -143,22 +143,22 @@ $(document).ready(function() {
       {% endwith %}
     </p>
 
-    <p>{% blocktrans %}New installers will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with apt-get. Otherwise, you can download individual packages to install and check back periodically for updates until Mixxx 2.1 is released:{% endblocktrans %}</p>
+    <p>{% blocktrans %}New installers will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with apt-get. Otherwise, you can download individual packages to install and check back periodically for updates until Mixxx 2.2 is released:{% endblocktrans %}</p>
 
     <p><a href="{{ unstable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_version }} for 32-bit Ubuntu Artful{% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_version }} for 32-bit Ubuntu Bionic{% endblocktrans %}</a></p>
 
     <p><a href="{{ unstable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu Artful{% endblocktrans %}</a></p>
+        {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu Bionic{% endblocktrans %}</a></p>
 
     <h2>{% trans "Source Code" %}</h2>
 
     <p>
-      {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.1/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's 2.1 branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
-      <pre>        git clone -b 2.1 https://github.com/mixxxdj/mixxx.git</pre>
+      {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.2/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
+      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's 2.2 branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
+      <pre>        git clone -b 2.2 https://github.com/mixxxdj/mixxx.git</pre>
     </p>
 
     <p>
