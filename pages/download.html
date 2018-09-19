@@ -110,7 +110,7 @@ $(document).ready(function() {
 
     <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.2 is released.</p>
 
-    <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}Supported on Windows XP and newer. AAC playback requires at least Windows 7 or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
+    <p><small>{% blocktrans %}Supported on Windows 7 and newer.{% endblocktrans %}</small></p>
   </div>
 
   <div class="halfbox_right darkborder macbox">
@@ -119,7 +119,7 @@ $(document).ready(function() {
     <p>
       <a href="{{ unstable_osxintel }}"
          onClick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_version }} for macOS 10.8+ (Intel){% endblocktrans %}</a>
+        {% blocktrans %}Download {{ unstable_version }} for macOS 10.11+ (Intel){% endblocktrans %}</a>
     </p>
 
     <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.2 is released.{% endblocktrans %}</p>
