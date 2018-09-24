@@ -1,4 +1,4 @@
 cactus
-fabric
+fabric<2.0
 pycrypto
 ecdsa
