@@ -230,17 +230,13 @@ h2 a {
     z-index: 5;
     position: absolute;
     right: 10px;
-    float: right;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
+    top: 50px;
+    text-align: right;
 }
 #driveby_social li
 {
-    display: inline;
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+    margin-bottom: 10px;
 }
 
 #footer_social
