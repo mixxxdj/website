@@ -28,6 +28,7 @@
 
 {% block body %}
 <div class="gapfiller" style="margin-bottom: 0px;">
+  <p>Free and open source DJ software for Windows, macOS, and Linux</p>
   {% include "download_button.html" %}
 
         <!--
@@ -51,7 +52,6 @@
     <div style="float: right; margin-top: 16px; padding-right: 8px;">
         <img src="{% static '/static/images/squiggle.png' %}">
     </div>-->
-  <p style="text-align: center;">Free and open source DJ software for Windows, macOS, and Linux</p>
   <div style="clear: both;"></div>
 </div> <!-- gapfiller -->
 
@@ -93,11 +93,12 @@
 
   <div style="clear: both;"></div>
 
-  <div class="gapfiller" style="height: 57px;">
-    {% include "download_button.html" %}
-    <p style="text-align: center;">
+  <div class="gapfiller">
+    <p>
       {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for free now:{% endblocktrans %}
     </p>
+    {% include "download_button.html" %}
+    <div style="clear: both;"></div>
   </div>
 
   <h1>{% trans "Friendly Community" %}</h1>

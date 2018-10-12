@@ -127,15 +127,6 @@ h2 a {
     margin:0 auto;
 }
 
-.download_button
-{
-    float: right;
-    text-align: center;
-    width: 246px;
-    font-size: 0.7em;
-    margin-right: -30px;
-}
-
 .gapfiller
 {
     font-size: 1.2em;
@@ -145,6 +136,25 @@ h2 a {
     color: #eeeeee;
     border: 1px #222222 solid;
     border-radius: 5px;
+    text-align:center;
+}
+
+.gapfiller p {
+    display:inline-block;
+}
+
+.gapfiller .download_button
+{
+    float:right;
+}
+
+.download_button img
+{
+    width: 246px;
+    height: 116px;
+    cursor: pointer;
+    border: 0;
+    margin: -29px;
 }
 
 .content
@@ -315,14 +325,24 @@ h2 a {
     }
 }
 
+/* less than the full width of the page */
 @media only screen and (max-width: 960px)
 {
     #wrapper, .halfbox_left, .halfbox_right
     {
         width: auto;
     }
+
+    .gapfiller p {
+        margin-top:0;
+    }
+    
+    .gapfiller .download_button {
+        float:inherit;
+    }
 }
 
+/* less than a standard tablet, we switch to hamburger menu */
 @media only screen and (max-width: 768px)
 {
     #navbar_biglinks, #navbar_smalllinks
@@ -335,6 +355,7 @@ h2 a {
     }
 }
 
+/* less than the max size of the splash image, so we start to size it dynamically */
 @media only screen and (max-width: 676px)
 {
     #splash img.background {
@@ -342,7 +363,6 @@ h2 a {
         height: 100%;
     }
 }
-
 
 
 /*
