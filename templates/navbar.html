@@ -29,38 +29,6 @@
     {% endfor %}
     </p>
   </div>
+  {% include "hamburger_menu.html" %}
   <div style="clear: both;"></div>
-  <!--    Made by Erik Terwan    -->
-  <!--   24th of November 2015   -->
-  <!--        MIT License        -->
-  <div id="hamburger_wrap">
-    <div id="hamburger_menu_toggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-      
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="hamburger_menu">
-        <a href="/"><li>{% trans "Home" %}</li></a>
-      {% for href, size, title, cont in NAV_MENU %}
-        <a href="{{ href }}"><li>{% filter nbsp %}{% trans title context cont %}{% endfilter %}</li></a>
-      {% endfor %}
-      </ul>
-    </div>
-  </div>
 </div>
