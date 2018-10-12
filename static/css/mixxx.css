@@ -330,14 +330,6 @@ h2 a {
 
 body
 {
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-  
   overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
 }
 
