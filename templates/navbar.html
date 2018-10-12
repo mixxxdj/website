@@ -33,8 +33,8 @@
   <!--    Made by Erik Terwan    -->
   <!--   24th of November 2015   -->
   <!--        MIT License        -->
-  <nav role='navigation'>
-    <div id="menuToggle">
+  <div id="hamburger_wrap">
+    <div id="hamburger_menu_toggle">
       <!--
       A fake / hidden checkbox is used as click reciever,
       so you can use the :checked selector on it.
@@ -55,12 +55,12 @@
       Too bad the menu has to be inside of the button
       but hey, it's pure CSS magic.
       -->
-      <ul id="menu">
+      <ul id="hamburger_menu">
         <a href="/"><li>{% trans "Home" %}</li></a>
       {% for href, size, title, cont in NAV_MENU %}
         <a href="{{ href }}"><li>{% filter nbsp %}{% trans title context cont %}{% endfilter %}</li></a>
       {% endfor %}
       </ul>
     </div>
-  </nav>
+  </div>
 </div>

@@ -33,7 +33,7 @@ img
     border-style: none;
 }
 
-a:hover, #menu a:hover {
+a:hover, #hamburger_menu a:hover {
   /* text-decoration: underline; */
   /* color: #ffffff; */
   color: #ffB000; /* lighter orange */
@@ -312,7 +312,7 @@ h2 a {
         display: none;
     }
 
-    nav {
+    #hamburger_wrap {
         display: inherit!important;
     }
 }
@@ -333,20 +333,19 @@ body
   overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
 }
 
-a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-nav {
+#hamburger_wrap {
     display: none;
     text-align: left;
     z-index: 8;
 }
-#menuToggle
+
+#hamburger_wrap a
+{
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#hamburger_menu_toggle
 {
   display: block;
   position: absolute;
@@ -358,7 +357,7 @@ nav {
   user-select: none;
 }
 
-#menuToggle input
+#hamburger_menu_toggle input
 {
   display: block;
   width: 40px;
@@ -378,7 +377,7 @@ nav {
 /*
  * Just a quick hamburger
  */
-#menuToggle span
+#hamburger_menu_toggle span
 {
   display: block;
   width: 33px;
@@ -398,12 +397,12 @@ nav {
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
+#hamburger_menu_toggle span:first-child
 {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
+#hamburger_menu_toggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
 }
@@ -412,7 +411,7 @@ nav {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
+#hamburger_menu_toggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -422,7 +421,7 @@ nav {
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+#hamburger_menu_toggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -431,7 +430,7 @@ nav {
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+#hamburger_menu_toggle input:checked ~ span:nth-last-child(2)
 {
   opacity: 1;
   transform: rotate(-45deg) translate(0, -1px);
@@ -441,7 +440,7 @@ nav {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
+#hamburger_menu
 {
   position: absolute;
   width: 300px;
@@ -458,7 +457,7 @@ nav {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
+#hamburger_menu li
 {
   padding: 10px 0;
   font-size: 22px;
@@ -467,7 +466,7 @@ nav {
 /*
  * And let's fade it in from the left
  */
-#menuToggle input:checked ~ ul
+#hamburger_menu_toggle input:checked ~ ul
 {
   transform: scale(1.0, 1.0);
   opacity: 1;
