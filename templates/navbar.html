@@ -1,25 +1,32 @@
 {% load i18n %}
+
 <div id="navbar">
   <div id="nav_logo">
     <a href="/"><img src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx"></a>
   </div>
   <div id="navbar_biglinks">
-    <!-- using non-breaking spaces here! -->
-    <a class="menu_item" href="{% url '/download.html' %}">{% filter nbsp %}{% trans "Download" context "Navigation bar link to Mixxx download page." %}{% endfilter %}</a>
-    <a class="menu_item" href="{% url '/features.html' %}">{% filter nbsp %}{% trans "Features" context "Navigation bar link to Mixxx features page." %}{% endfilter %}</a>
-    <a class="menu_item" href="{% url '/support.html' %}">{% filter nbsp %}{% trans "Support &amp; Community" context "Navigation bar link to Mixxx support page." %}{% endfilter %}</a>
+  {% for href, size, title, cont in NAV_MENU %}
+    {# using non-breaking spaces here! #}
+    {% if size == 'big' %}
+    <a class="menu_item" href="{% url href %}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
+    {% endif %}
+  {% endfor %}
   </div>
   <div id="navbar_smalllinks">
     <p>
-      <a class="menu_item" href="/manual/latest">{% trans "Manual" context "Navigation bar link to Mixxx Manual." %}</a>
-      <a class="menu_item" href="/forums">{% trans "Forums" context "Navigation bar link to Mixxx Forums." %}</a>
-      <a class="menu_item" href="/wiki">{% trans "Wiki" context "Navigation bar link to Mixxx Wiki." %}</a>
-      <a class="menu_item" href="http://mixxxblog.blogspot.com">{% trans "Blog" context "Navigation bar link to Mixxx blog." %}</a>
+    {% for href, size, title, cont in NAV_MENU %}
+      {% if size == 'medium' %}
+      <a class="menu_item" href="{% url href %}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
+      {% endif %}
+    {% endfor %}
+
     </p>
     <p style="font-size: 0.7em">
-      <a class="menu_item" href="{% url '/press.html' %}">{% trans "Press" context "Navigation bar link to Mixxx Press page" %}</a>
-      <a class="menu_item" href="{% url '/get-involved.html' %}">{% filter nbsp %}{% trans "Get Involved" context "Navigation bar link to Mixxx Get Involved page." %}{% endfilter %}</a>
-      <a class="menu_item" href="{% url '/contact.html' %}">{% trans "Contact" context "Navigation bar link to Mixxx contact page." %}</a>
+    {% for href, size, title, cont in NAV_MENU %}
+      {% if size == 'small' %}
+      <a class="menu_item" href="{% url href %}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
+      {% endif %}
+    {% endfor %}
     </p>
   </div>
   <div style="clear: both;"></div>
@@ -49,11 +56,10 @@
       but hey, it's pure CSS magic.
       -->
       <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+        <a href="/"><li>{% trans "Home" %}</li></a>
+      {% for href, size, title, cont in NAV_MENU %}
+        <a href="{% url href %}"><li>{% filter nbsp %}{% trans title context cont %}{% endfilter %}</li></a>
+      {% endfor %}
       </ul>
     </div>
   </nav>
