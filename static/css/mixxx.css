@@ -33,7 +33,7 @@ img
     border-style: none;
 }
 
-a:hover, nav a:hover {
+a:hover, #menu a:hover {
   /* text-decoration: underline; */
   /* color: #ffffff; */
   color: #ffB000; /* lighter orange */
@@ -341,11 +341,6 @@ a
   transition: color 0.3s ease;
 }
 
-/*a:hover
-{
-  color: tomato;
-}*/
-
 nav {
     display: none;
     text-align: left;
@@ -359,7 +354,6 @@ nav {
   right: 17px;
   
   z-index: 9;
-  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -452,18 +446,15 @@ nav {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
+  padding: 30px;
+  padding-top: 100px;
   right: -100px;
-  
   background: #111111;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
