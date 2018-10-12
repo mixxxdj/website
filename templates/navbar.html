@@ -1,26 +1,26 @@
 {% load i18n %}
 <div id="navbar">
-  <div style="float: left;">
-    <a href="/"><img width="190px" src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx"></a>
-  </div>
-  <div id="navbar_smalllinks">
-    <p>
-      <a href="/manual/latest">{% trans "Manual" context "Navigation bar link to Mixxx Manual." %}</a>
-      <a href="/forums">{% trans "Forums" context "Navigation bar link to Mixxx Forums." %}</a>
-      <a href="/wiki">{% trans "Wiki" context "Navigation bar link to Mixxx Wiki." %}</a>
-      <a href="http://mixxxblog.blogspot.com">{% trans "Blog" context "Navigation bar link to Mixxx blog." %}</a>
-    </p>
-    <p style="font-size: 0.7em">
-      <a href="{% url '/press.html' %}">{% trans "Press" context "Navigation bar link to Mixxx Press page" %}</a>
-      <a href="{% url '/get-involved.html' %}">{% filter nbsp %}{% trans "Get Involved" context "Navigation bar link to Mixxx Get Involved page." %}{% endfilter %}</a>
-      <a href="{% url '/contact.html' %}">{% trans "Contact" context "Navigation bar link to Mixxx contact page." %}</a>
-    </p>
+  <div id="nav_logo">
+    <a href="/"><img src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx"></a>
   </div>
   <div id="navbar_biglinks">
     <!-- using non-breaking spaces here! -->
-    <a href="{% url '/download.html' %}">{% filter nbsp %}{% trans "Download" context "Navigation bar link to Mixxx download page." %}{% endfilter %}</a>
-    <a href="{% url '/features.html' %}">{% filter nbsp %}{% trans "Features" context "Navigation bar link to Mixxx features page." %}{% endfilter %}</a>
-    <a href="{% url '/support.html' %}">{% filter nbsp %}{% trans "Support &amp; Community" context "Navigation bar link to Mixxx support page." %}{% endfilter %}</a>
+    <a class="menu_item" href="{% url '/download.html' %}">{% filter nbsp %}{% trans "Download" context "Navigation bar link to Mixxx download page." %}{% endfilter %}</a>
+    <a class="menu_item" href="{% url '/features.html' %}">{% filter nbsp %}{% trans "Features" context "Navigation bar link to Mixxx features page." %}{% endfilter %}</a>
+    <a class="menu_item" href="{% url '/support.html' %}">{% filter nbsp %}{% trans "Support &amp; Community" context "Navigation bar link to Mixxx support page." %}{% endfilter %}</a>
+  </div>
+  <div id="navbar_smalllinks">
+    <p>
+      <a class="menu_item" href="/manual/latest">{% trans "Manual" context "Navigation bar link to Mixxx Manual." %}</a>
+      <a class="menu_item" href="/forums">{% trans "Forums" context "Navigation bar link to Mixxx Forums." %}</a>
+      <a class="menu_item" href="/wiki">{% trans "Wiki" context "Navigation bar link to Mixxx Wiki." %}</a>
+      <a class="menu_item" href="http://mixxxblog.blogspot.com">{% trans "Blog" context "Navigation bar link to Mixxx blog." %}</a>
+    </p>
+    <p style="font-size: 0.7em">
+      <a class="menu_item" href="{% url '/press.html' %}">{% trans "Press" context "Navigation bar link to Mixxx Press page" %}</a>
+      <a class="menu_item" href="{% url '/get-involved.html' %}">{% filter nbsp %}{% trans "Get Involved" context "Navigation bar link to Mixxx Get Involved page." %}{% endfilter %}</a>
+      <a class="menu_item" href="{% url '/contact.html' %}">{% trans "Contact" context "Navigation bar link to Mixxx contact page." %}</a>
+    </p>
   </div>
   <div style="clear: both;"></div>
 </div>
