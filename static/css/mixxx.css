@@ -1,8 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body
 {
     font-family: 'Muli', 'Corbel', 'Tahoma', 'Trebuchet MS', Verdana, arial, serif;
     background-color: #000000;
     color: #eeeeee;
+    margin: 0.5em;
 }
 
 #wrapper
@@ -13,6 +19,7 @@ body
     margin-right: auto;
     z-index: 0;
 }
+
 .oldwrappershadow {
     -moz-box-shadow: 0px 15px 15px #444444; /* FF3.5+ */
     -webkit-box-shadow: 0px 15px 15px #444444; /* Saf3.0+, Chrome */
@@ -117,6 +124,7 @@ h2 a {
 
 #splash img.background {
     text-align: center;
+    margin:0 auto;
 }
 
 .download_button
@@ -158,12 +166,13 @@ h2 a {
     color: #cccccc;
     border: 1px #222222 solid;
     border-radius: 5px;
+    text-align:center;
 }
 
 .achievement
 {
     text-align: center;
-    float: left;
+    display:inline-block;
     padding-right: 30px;
 }
 
@@ -305,6 +314,15 @@ h2 a {
         padding-right: 0;
     }
 }
+
+@media only screen and (max-width: 960px)
+{
+    #wrapper, .halfbox_left, .halfbox_right
+    {
+        width: auto;
+    }
+}
+
 @media only screen and (max-width: 768px)
 {
     #navbar_biglinks, #navbar_smalllinks
@@ -316,6 +334,16 @@ h2 a {
         display: inherit!important;
     }
 }
+
+@media only screen and (max-width: 676px)
+{
+    #splash img.background {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 
 /*
  * Made by Erik Terwan
