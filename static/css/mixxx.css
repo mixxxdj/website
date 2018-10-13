@@ -299,8 +299,7 @@ img.center
     text-align: center;
 }
 
-
-/* squish menu items together for tablet style screens*/
+/* squish menu items together for tablet style screens */
 @media only screen and (max-width: 1100px)
 {
     #navbar_biglinks 
@@ -342,7 +341,10 @@ img.center
     }
 }
 
-/* less than the full width of the page */
+/*
+less than the full width of the page
+content in columns must be allowed to flow
+*/
 @media only screen and (max-width: 960px)
 {
     #wrapper, .halfbox_left, .halfbox_right
@@ -352,17 +354,55 @@ img.center
 
     .gapfiller p
     {
-        margin-top:0;
+        margin-top: 0;
     }
     
     .gapfiller .download_button
     {
-        float:inherit;
+        float: inherit;
     }
 }
 
-/* less than a standard tablet, we switch to hamburger menu */
+/* make menu font-size smaller as screen gets smaller */
 @media only screen and (max-width: 768px)
+{
+    #navbar
+    {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 650px)
+{
+    #navbar
+    {
+        font-size: 1em;
+    }
+
+    #navbar_biglinks
+    {
+        margin-top: 0.2em;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    #navbar
+    {
+        font-size: 0.8em;
+    }
+
+    #navbar_biglinks
+    {
+        margin-top: 0.4em;
+    }
+}
+
+/*
+screen too small to display menu
+switch to hamburger menu 
+*/
+@media only screen and (max-width: 500px)
 {
     #navbar_biglinks, #navbar_smalllinks
     {
