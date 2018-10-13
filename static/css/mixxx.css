@@ -411,6 +411,10 @@ content in columns must be allowed to flow
     {
         margin-top: 0.4em;
     }
+
+    pre {
+        white-space: pre-line;
+    }
 }
 
 /*
