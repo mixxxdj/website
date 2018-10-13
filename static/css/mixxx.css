@@ -362,6 +362,11 @@ content in columns must be allowed to flow
         width: auto;
     }
 
+    .halfbox_right
+    {
+        margin-left: 0;
+    }
+
     .gapfiller p
     {
         margin-top: 0;
