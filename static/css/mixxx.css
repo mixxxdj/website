@@ -38,7 +38,8 @@ a {
 
 img
 {
-    border-style: none;
+    border: 0;
+}
 }
 
 a:hover, #hamburger_menu a:hover {
