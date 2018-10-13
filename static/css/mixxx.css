@@ -211,9 +211,8 @@ p#navbar_tinylinks
 
 .achievement
 {
-    text-align: center;
-    display:inline-block;
-    padding-right: 30px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .feature_icon
