@@ -133,6 +133,11 @@ img.center
     margin: 0px;
 }
 
+p#navbar_tinylinks
+{
+    font-size: 0.7em;
+}
+
 #splash
 {
     position: relative;
@@ -339,6 +344,11 @@ img.center
     {
         padding-right: 0;
     }
+
+    p#navbar_tinylinks
+    {
+        margin-left: 0.8em;
+    }
 }
 
 /*
@@ -402,7 +412,7 @@ content in columns must be allowed to flow
 screen too small to display menu
 switch to hamburger menu 
 */
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 530px)
 {
     #navbar_biglinks, #navbar_smalllinks
     {

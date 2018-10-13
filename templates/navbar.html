@@ -21,7 +21,7 @@
     {% endfor %}
 
     </p>
-    <p style="font-size: 0.7em">
+    <p id="navbar_tinylinks">
     {% for href, size, title, cont in NAV_MENU %}
       {% if size == 'small' %}
       <a class="menu_item" href="{{ href }}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
