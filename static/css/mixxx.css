@@ -199,19 +199,15 @@ h2 a {
     margin-left: 60px;
 }
 
-.halfbox_left
+.halfbox_left, .halfbox_right
 {
     padding: 20px;
     float: left;
     width: 430px;
 }
 
-.halfbox_right
-{
-    padding: 20px;
+.halfbox_right {
     margin-left: 10px;
-    float: left;
-    width: 430px;
 }
 
 .darkborder
