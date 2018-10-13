@@ -75,6 +75,7 @@ img.center {
     font-size: 1.4em;
     height: 55px;
     text-align: center;
+    overflow: hidden;
 }
 
 #navbar a
