@@ -32,7 +32,7 @@
     </p>
   </div>
   <div class="halfbox_right">
-    <img width="362px" src="{% static '/static/images/feature_deck.png' %}">
+    <img class="responsive" width="362px" src="{% static '/static/images/feature_deck.png' %}">
     <p><b>{% trans "Beat Rolls and Censor" %}</b><br>
       {% trans "Play with rhythm by triggering short loops and reverse-playback effects. The track stays in time so you don't miss a beat." %}
       {# TODO: Write a better way of explaining slip mode. #}
@@ -57,14 +57,14 @@
       {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}{# TODO: Say more. #}
     </p>
 
-    <center><img src="{% static '/static/images/feature_sampler2.png' %}"></center>
+    <img class="center responsive" src="{% static '/static/images/feature_sampler2.png' %}">
     
     <h2>{% trans "Effects Chains" %}</h2>
     <p>
       {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
     </p>
 
-    <center><img src="{% static '/static/images/feature_effect_unit_expanded.png' %}"></center>
+    <img class="center responsive" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
   <div style="clear: both;"></div>
   
     <h1>{% trans "Customizable DJ Hardware Support" %}</h1>
@@ -72,7 +72,7 @@
     
     <div class="halfbox_left">
       <div style="height: 200px;">
-        <center><img width="340px" src="{% static '/static/images/feature_midi-2.0.png' %}" style="padding-top: 20px;"></center>
+        <img class="center responsive" width="340px" src="{% static '/static/images/feature_midi-2.0.png' %}" style="padding-top: 20px;">
       </div>
 
       <h2>{% trans "MIDI and HID Controller Support" %}</h2>
@@ -86,7 +86,7 @@
     </div>
     <div class="halfbox_right">
       <div style="height: 200px;">
-        <center><img src="{% static '/static/images/feature_vinylcontrol.png' %}"></center>
+        <img class="center responsive" src="{% static '/static/images/feature_vinylcontrol.png' %}">
       </div>
 
       <h2>{% trans "Free Timecode Vinyl Control" %}</h2>
@@ -124,7 +124,7 @@
       </p>
     </div>
     <div class="halfbox_right">
-      <img width="362px" src="{% static '/static/images/feature_library-2.0.png' %}" style="padding-top: 30px;">
+      <img class="responsive" width="362px" src="{% static '/static/images/feature_library-2.0.png' %}" style="padding-top: 30px;">
     </div>
 
     <div style="clear: both;"></div>
@@ -144,14 +144,13 @@
 
     <div class="gapfiller">
       <h1 style="margin-left: 30px;">{% trans "Choose Your Skin" %}</h1>
-      <center id="skin_screenshots">
-        <img width="445px" src="{% static '/static/images/feature_skins_deere.png' %}">
-        <img width="445px" src="{% static '/static/images/feature_skins_latenight.png' %}">
-        <img width="445px" src="{% static '/static/images/feature_skins_shade.png' %}">
-        <img width="445px" src="{% static '/static/images/feature_skins_tango.png' %}">
-
+      <div id="skin_screenshots" class="center">
+        <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_deere.png' %}">
+        <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_latenight.png' %}">
+        <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_shade.png' %}">
+        <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_tango.png' %}">
         <p>{% trans "Mixxx includes four different skins, each with a different look and a configurable layout" %}</p>
-      </center>
+      </div>
     </div>
 
     <!-- YouTube video

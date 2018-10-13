@@ -40,6 +40,10 @@ img
 {
     border: 0;
 }
+
+img.responsive
+{
+    max-width: 100%;
 }
 
 a:hover, #hamburger_menu a:hover {
@@ -55,6 +59,15 @@ p a
 
 h2 a {
   color: #ff9000; /* orange */
+}
+
+.center {
+    text-align: center;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
 }
 
 #navbar
@@ -124,9 +137,9 @@ h2 a {
     text-align: center;
 }
 
-#splash img.background {
-    text-align: center;
-    margin:0 auto;
+#splash img {
+    height: auto;
+    width: 676px;
 }
 
 .gapfiller
@@ -346,15 +359,6 @@ h2 a {
 
     #hamburger_wrap {
         display: inherit!important;
-    }
-}
-
-/* less than the max size of the splash image, so we start to size it dynamically */
-@media only screen and (max-width: 676px)
-{
-    #splash img.background {
-        width: 100%;
-        height: 100%;
     }
 }
 
