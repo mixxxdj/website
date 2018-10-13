@@ -373,6 +373,12 @@ img.center
     {
         display: inherit!important;
     }
+
+    .footer_sitemap_column
+    {
+        width: auto;
+        margin-right: 20px;
+    }
 }
 
 
