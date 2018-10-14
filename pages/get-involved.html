@@ -6,13 +6,12 @@
 
 {% block body %}
 <div class="content">
+  <h1 style="display:inline-block">{% trans "Get Involved" %}</h1>
   <div style="padding-top: 5px; float: right;">
-    <H2><a href="#djs">{% trans "Not a coder? Scroll down!" %}</a></H2>
+    <h2><a href="#djs">{% trans "Not a coder? Scroll down!" %}</a></h2>
   </div>
-
-  <H1>{% trans "Get Involved" %}</H1>
   <div class="halfbox_left">
-    <H2>{% trans "Software Developers" %}</H2>
+    <h2>{% trans "Software Developers" %}</h2>
     <p>
       {% blocktrans with qt_link="http://www.qt.io" %}Mixxx is written in C++ and uses the <a href="{{ qt_link }}">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endblocktrans %}
     </p>
@@ -23,7 +22,7 @@
   </div>
 
   <div class="halfbox_right">
-    <H3>{% trans "Start Developing Now" %}</H3>
+    <h3>{% trans "Start Developing Now" %}</h3>
     <ul>
       <li>
         <p>
@@ -56,13 +55,13 @@
   <div style="clear: both;"></div>
 
   <div class="gapfiller">
-    <H3>{% trans "Development Cycle in a Nutshell" %}</H3>
-    <img src="{% static '/static/images/developmentcycle.png' %}" alt="{% trans "Mixxx Development Cycle" %}">
+    <h3>{% trans "Development Cycle in a Nutshell" %}</h3>
+    <img class="responsive" src="{% static '/static/images/developmentcycle.png' %}" alt="{% trans "Mixxx Development Cycle" %}">
   </div>
 
   <div class="halfbox_left">
     <a name="djs"></a>
-    <H2>{% trans "DJs" %}</H2>
+    <h2>{% trans "DJs" %}</h2>
     {% trans "There are many ways to help out as a DJ:" %}
     <ul>
       <li>
@@ -100,7 +99,7 @@
 
   <a name="translators"></a>
   <div class="halfbox_right">
-    <H2>{% trans "Translators" %}</H2>
+    <h2>{% trans "Translators" %}</h2>
     <p>
       {% blocktrans %}We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endblocktrans %}
     </p>
@@ -110,7 +109,7 @@
   </div>
 
   <div class="halfbox_right">
-    <H2>{% trans "Graphic Artists" %}</H2>
+    <h2>{% trans "Graphic Artists" %}</h2>
     <ul>
       <li>
         <p>
