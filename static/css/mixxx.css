@@ -13,7 +13,7 @@ body
     font-family: 'Muli', 'Corbel', 'Tahoma', 'Trebuchet MS', Verdana, arial, serif;
     background-color: #000000;
     color: #eeeeee;
-    margin: 0.5em;
+    padding: 0.5em;
 }
 
 #wrapper
@@ -87,7 +87,7 @@ img.center
     font-size: 1.4em;
     height: 55px;
     text-align: center;
-    overflow: hidden;
+    position: relative;
 }
 
 #navbar a
@@ -479,8 +479,8 @@ switch to hamburger menu
 {
   display: block;
   position: absolute;
-  top: 17px;
-  right: 17px;
+  top: 10px;
+  right: 10px;
   
   z-index: 9;
   -webkit-user-select: none;
