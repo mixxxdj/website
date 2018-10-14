@@ -1,3 +1,6 @@
+@charset "utf-8";
+
+/* styles for html, body and wrapper */
 html, body
 {
     margin: 0;
@@ -29,6 +32,7 @@ body
     box-shadow: 0px 15px 15px #444444; /* Opera 10.5, IE9, Chrome 10+ */
 }
 
+/* styles for general elements */
 a
 {
   /* color: #d0d0d0; very light grey */
@@ -77,6 +81,7 @@ img.center
     margin: 0 auto;
 }
 
+/* styles for rest of page */
 #navbar
 {
     font-size: 1.4em;
@@ -304,6 +309,7 @@ p#navbar_tinylinks
     text-align: center;
 }
 
+/* media query styles */
 /* squish menu items together for tablet style screens */
 @media only screen and (max-width: 1100px)
 {
@@ -441,6 +447,7 @@ switch to hamburger menu
 }
 
 
+/* styles for hamburger menu component */
 /*
  * Made by Erik Terwan
  * 24th of November 2015
