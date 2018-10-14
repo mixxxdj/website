@@ -35,12 +35,12 @@ body
 /* styles for general elements */
 a
 {
-  /* color: #d0d0d0; very light grey */
-  color: #ff9000; /* orange */
-  /** color: #3030ff; blue **/
-  /* color: #4E55FF;  waveform blue */
-  background-color: transparent;
-  text-decoration: none; /*underline;*/
+    /* color: #d0d0d0; very light grey */
+    color: #ff9000; /* orange */
+    /** color: #3030ff; blue **/
+    /* color: #4E55FF;  waveform blue */
+    background-color: transparent;
+    text-decoration: none; /*underline;*/
 }
 
 img
@@ -277,14 +277,14 @@ p#navbar_tinylinks
 
 #footer_sitemap
 {
-	margin: 0 auto;
+    margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-bottom: 15px;
     text-align: center;
     color: #888888;
     font-size: 0.7em;
-	background-color: #111111;
+    background-color: #111111;
 }
 
 .footer_sitemap_column h2
@@ -297,9 +297,9 @@ p#navbar_tinylinks
 {
     vertical-align: top;
     display: inline-block;
-	width: 150px;
-	margin: 0 auto;
-	border: 0px dashed;
+    width: 150px;
+    margin: 0 auto;
+    border: 0px dashed;
     text-align: left;
 }
 
@@ -418,7 +418,8 @@ content in columns must be allowed to flow
         margin-top: 0.4em;
     }
 
-    pre {
+    pre
+    {
         white-space: pre-line;
     }
 }
@@ -464,7 +465,7 @@ switch to hamburger menu
     display: none;
     text-align: left;
     z-index: 8;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 #hamburger_wrap a
