@@ -72,14 +72,26 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 </script>
 
 <script type="text/javascript">
-$(document).ready(function() {
-    if (OSName.search("OS X") >= 0) {
-        var highlightTimerId = window.setTimeout(function() { $('.macbox').addClass('slow_border');}, 1000);
+  var classToBox;
+
+  if (OSName.search('OS X') >= 0) {
+    classToBox = 'macbox';
+  }
+  else if (OSName.search('Windows') >= 0) {
+    classToBox = 'winbox';
+  }
+
+  function addClassToEls(klass, els) {
+    for (var i = 0, n = els.length; i < n; i++) {
+      els[i].className = els[i].className + ' ' + klass;
     }
-    else if (OSName.search("Windows") >= 0) {
-        var highlightTimerId = window.setTimeout(function() { $('.winbox').addClass('slow_border');}, 1000);
-    }
-});
+  }
+
+  if (classToBox) {
+    window.setTimeout(
+      addClassToEls.bind(window, 'slow_border', document.getElementsByClassName(classToBox)), 1000
+    )
+  }
 </script>
 {% endblock %}
 
