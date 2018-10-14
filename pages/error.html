@@ -13,9 +13,6 @@
 
 {% block extra_script %}
 <script type="text/javascript" charset="utf-8">
-  $(document).ready(function() {
-
-    // Add the missing url to the text
-    $("#url").text(window.location.pathname);
+  document.getElementById('url').textContent = window.location.pathname;
 </script>
 {% endblock %}
