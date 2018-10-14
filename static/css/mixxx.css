@@ -35,12 +35,13 @@ body
 /* styles for general elements */
 a
 {
-  /* color: #d0d0d0; very light grey */
-  color: #ff9000; /* orange */
-  /** color: #3030ff; blue **/
-  /* color: #4E55FF;  waveform blue */
-  background-color: transparent;
-  text-decoration: none; /*underline;*/
+    /* color: #d0d0d0; very light grey */
+    color: #ff9000; /* orange */
+    /** color: #3030ff; blue **/
+    /* color: #4E55FF;  waveform blue */
+    background-color: transparent;
+    text-decoration: none; /*underline;*/
+    outline: none;
 }
 
 img
