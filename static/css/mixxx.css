@@ -90,6 +90,65 @@ img.center
 }
 
 /* styles for rest of page */
+
+/* links to social media */
+#driveby_social
+{
+    z-index: 5;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    text-align: right;
+}
+#driveby_social li
+{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* general styles for sharing buttons */
+.social_icon
+{
+    color: #fff;
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    font-size: 0.7em;
+    line-height: 20px;
+    padding: 0 6px;
+    border-radius: 3px;
+    overflow: hidden;
+    }
+.social_icon svg
+{
+    height: 16px;
+    margin: 2px 2px 0 0;
+    float: left;
+}
+.social_icon:hover, .social_icon:focus
+{
+    color: #fff;
+}
+
+/* twitter */
+.twitter.social_icon
+{
+    background-color: #1da1f2;
+}
+.twitter.social_icon:hover, .twitter.social_icon:focus
+{
+    background-color: #0c7abf;
+}
+/* facebook */
+.facebook.social_icon
+{
+    background-color: #4267b2;
+}
+.facebook.social_icon:hover, .facebook.social_icon:focus
+{
+    background-color: #365899;
+}
+
 #navbar
 {
     font-size: 1.4em;
@@ -266,20 +325,6 @@ p#navbar_tinylinks
     border: 1px solid #cccccc;
     transition: border-color 0.5s linear; /*1px solid #aaaaaa;*/
     -webkit-transition: border-color 0.5s linear; /*1px solid #aaaaaa;*/
-}
-
-#driveby_social
-{
-    z-index: 5;
-    position: absolute;
-    right: 10px;
-    top: 50px;
-    text-align: right;
-}
-#driveby_social li
-{
-    list-style: none;
-    margin-bottom: 10px;
 }
 
 #footer_social
