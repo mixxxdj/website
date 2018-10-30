@@ -14,20 +14,20 @@ unstable_osxintel_analytics_conversion: /downloads/2.1.0-rc1-osxintel
 unstable_ubuntu32_analytics_conversion: /downloads/2.1.0-rc1-ubuntu32
 unstable_ubuntu64_analytics_conversion: /downloads/2.1.0-rc1-ubuntu64
 unstable_ubuntu_ppa_analytics_conversion: /downloads/2.1.0-rc1-ubuntu-ppa
-stable_version: Mixxx 2.1.4
-stable_win32: https://downloads.mixxx.org/mixxx-2.1.4/mixxx-2.1.4-win32.exe
-stable_win64: https://downloads.mixxx.org/mixxx-2.1.4/mixxx-2.1.4-win64.exe
-stable_osxintel: https://downloads.mixxx.org/mixxx-2.1.4/mixxx-2.1.4-osxintel.dmg
-stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.1.4/mixxx-2.1.4-artful-i386.deb
-stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.1.4/mixxx-2.1.4-artful-amd64.deb
-stable_linuxsrc: https://github.com/mixxxdj/mixxx/archive/release-2.1.4.tar.gz
-stable_win32_analytics_conversion: /downloads/2.1.4-win32
-stable_win64_analytics_conversion: /downloads/2.1.4-win64
-stable_osxintel_analytics_conversion: /downloads/2.1.4-osxintel
-stable_ubuntu32_analytics_conversion: /downloads/2.1.4-ubuntu-artful32
-stable_ubuntu64_analytics_conversion: /downloads/2.1.4-ubuntu-artful64
+stable_version: Mixxx 2.1.5
+stable_win32: https://downloads.mixxx.org/mixxx-2.1.5/mixxx-2.1.5-win32.exe
+stable_win64: https://downloads.mixxx.org/mixxx-2.1.5/mixxx-2.1.5-win64.exe
+stable_osxintel: https://downloads.mixxx.org/mixxx-2.1.5/mixxx-2.1.5-osxintel.dmg
+stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.1.5/mixxx-2.1.5-bionic-i386.deb
+stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.1.5/mixxx-2.1.5-bionic-amd64.deb
+stable_linuxsrc: https://github.com/mixxxdj/mixxx/archive/release-2.1.5.tar.gz
+stable_win32_analytics_conversion: /downloads/2.1.5-win32
+stable_win64_analytics_conversion: /downloads/2.1.5-win64
+stable_osxintel_analytics_conversion: /downloads/2.1.5-osxintel
+stable_ubuntu32_analytics_conversion: /downloads/2.1.5-ubuntu-bionic32
+stable_ubuntu64_analytics_conversion: /downloads/2.1.5-ubuntu-bionic64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
-stable_linuxsrc_analytics_conversion: /downloads/2.1.4-linuxsrc
+stable_linuxsrc_analytics_conversion: /downloads/2.1.5-linuxsrc
 previous_version: Mixxx 2.0.0
 previous_win32: https://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win32.exe
 previous_win64: https://downloads.mixxx.org/mixxx-2.0.0/mixxx-2.0.0-win64.exe
@@ -235,11 +235,11 @@ $(document).ready(function() {
     </p>
     <p><a href="{{ stable_ubuntu32 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_version }} for 32-bit Ubuntu Artful{% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_version }} for 32-bit Ubuntu Bionic{% endblocktrans %}</a></p>
 
     <p><a href="{{ stable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Artful{% endblocktrans %}</a></p>
+        {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Bionic{% endblocktrans %}</a></p>
 
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
