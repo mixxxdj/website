@@ -1,11 +1,11 @@
 show_unstable: yes
 show_previous: yes
-unstable_version: Mixxx 2.2.0 Beta
-unstable_win32: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-x86-latest.exe
-unstable_win64: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-x64-latest.exe
-unstable_osxintel: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-macintel64-latest.dmg
-unstable_ubuntu32: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-bionic-i386-latest.deb
-unstable_ubuntu64: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-beta-2.2-release-bionic-amd64-latest.deb
+unstable_version: Mixxx 2.2.0 Release Candidate
+unstable_win32: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-rc-2.2-release-x86-latest.exe
+unstable_win64: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-rc-2.2-release-x64-latest.exe
+unstable_osxintel: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-rc-2.2-release-macintel64-latest.dmg
+unstable_ubuntu32: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-rc-2.2-release-bionic-i386-latest.deb
+unstable_ubuntu64: http://downloads.mixxx.org/builds/2.2/release/mixxx-2.2.0-rc-2.2-release-bionic-amd64-latest.deb
 unstable_linuxsrc: FIXME
 unstable_linuxsrc_analytics_conversion: /downloads/2.1.0-rc1-linuxsrc
 unstable_win32_analytics_conversion: /downloads/2.1.0-rc1-win32
@@ -79,12 +79,12 @@ $(document).ready(function() {
 
 <div class="content">
   {% ifequal show_unstable "yes" %}
-  <a name="beta"></a>
+  <a name="unstable"></a>
   <h1>{% blocktrans %}Download Now ({{ unstable_version }}){% endblocktrans %}</h1>
   <div style="padding: 20px;">
     <p><h2>For live use, we recommend <a href="#stable">{{ stable_version }} Stable</a> below.</h2></p>
     <p>
-      {% blocktrans with mixxx_22_beta_forum_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=12152" %}The Mixxx team has been working hard on Mixxx 2.2. Check out the <a href="{{ mixxx_22_beta_forum_link }}">release announcement</a> for a list of the new features.{% endblocktrans %}
+      {% blocktrans with mixxx_22_rc_forum_link="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=12152" %}The Mixxx team has been working hard on Mixxx 2.2. Check out the <a href="{{ mixxx_22_rc_forum_link }}">release announcement</a> for a list of the new features.{% endblocktrans %}
     </p>
 
     <p>
