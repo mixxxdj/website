@@ -75,6 +75,7 @@ $(document).ready(function() {
 {% trans "macOS" as mac_osx %}
 {% trans "Linux" as linux %}
 {% trans "Ubuntu" as ubuntu %}
+{% trans "Fedora" as fedora %}
 {% trans "Mixxx PPA" as mixxx_ppa %}
 
 <div class="content">
@@ -125,9 +126,10 @@ $(document).ready(function() {
     <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx 2.2 is released.{% endblocktrans %}</p>
 
   </div>
+
   <div style="clear: both;"></div>
 
-  <div style="padding: 20px;">
+  <div class="halfbox_left darkborder ubuntubox">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
 
     <p>{% trans "Open a terminal, and enter:" %}</p>
@@ -152,7 +154,41 @@ $(document).ready(function() {
     <p><a href="{{ unstable_ubuntu64 }}"
           onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
         {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu Bionic{% endblocktrans %}</a></p>
+  </div>
 
+  <div class="halfbox_right darkborder fedorabox">
+    <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon">{{ fedora }}</h2>
+
+    <p>{% blocktrans %}
+      An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
+      for installation is available in the
+      <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
+      {% endblocktrans %}</p>
+
+    <p>{% blocktrans %}
+      Please refer to their <a href="https://rpmfusion.org/Configuration">instructions</a>
+      on how to enable the repositories on your system. Mixxx only requires enabling the
+      free repository; the nonfree repository is not necessary for Mixxx.
+      {% endblocktrans %}
+    </p>
+
+    <p>{% blocktrans %}
+      RPM Fusion builds are maintained by the Mixxx development team.
+      We support the next, the current, and selected previous
+      Fedora release(s) if possible.
+      {% endblocktrans %}
+    </p>
+
+    <p>{% blocktrans %}
+      Only the most recent version of Mixxx is provided and continuously updated
+      during the maintenance period.
+      {% endblocktrans %}
+    </p>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div style="padding: 20px;">
     <h2>{% trans "Source Code" %}</h2>
 
     <p>
@@ -217,7 +253,7 @@ $(document).ready(function() {
 
   <div style="clear: both;"></div>
 
-  <div style="padding: 20px;">
+  <div class="halfbox_left darkborder ubuntubox">
     <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon">{{ ubuntu }}</h2>
     {% trans "Ubuntu 14.04 (Trusty)" as stable_ubuntu_min_supported_version %}
     {% trans "Ubuntu 18.04 (Bionic)" as stable_ubuntu_max_supported_version %}
@@ -244,7 +280,41 @@ $(document).ready(function() {
     <div style="width: 66%; margin: 0 auto;">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is preferable.{% endblocktrans %}</small>
     </div>
+  </div>
 
+  <div class="halfbox_right darkborder fedorabox">
+    <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon">{{ fedora }}</h2>
+
+    <p>{% blocktrans %}
+      An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
+      for installation is available in the
+      <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
+      {% endblocktrans %}</p>
+
+    <p>{% blocktrans %}
+      Please refer to their <a href="https://rpmfusion.org/Configuration">instructions</a>
+      on how to enable the repositories on your system. Mixxx only requires enabling the
+      free repository; the nonfree repository is not necessary for Mixxx.
+      {% endblocktrans %}
+    </p>
+
+    <p>{% blocktrans %}
+      RPM Fusion builds are maintained by the Mixxx development team.
+      We support the next, the current, and selected previous
+      Fedora release(s) if possible.
+      {% endblocktrans %}
+    </p>
+
+    <p>{% blocktrans %}
+      Only the most recent version of Mixxx is provided and continuously updated
+      during the maintenance period.
+      {% endblocktrans %}
+    </p>
+  </div>
+
+  <div style="clear: both;"></div>
+
+  <div style="padding: 20px;">
     <h2>{% trans "Linux / Source Code" %}</h2>
     <p>
       <a href="{{ stable_linuxsrc }}"
