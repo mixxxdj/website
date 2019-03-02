@@ -52,26 +52,35 @@
   </div>
   
   <div style="clear: both;"></div>
-  <h2>{% trans "Sampler Decks" %}</h2>
-  <p>
+
+  <div class="fullwidth">
+    <h2>{% trans "Sampler Decks" %}</h2>
+    <p>
     {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}{# TODO: Say more. #}
-  </p>
+    </p>
 
-  <img class="center responsive" src="{% static '/static/images/feature_sampler2.png' %}">
-    
-  <h2>{% trans "Effects Chains" %}</h2>
-  <p>
-    {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
-  </p>
+    <img class="center responsive" src="{% static '/static/images/feature_sampler2.png' %}">
+  </div>
 
-  <img class="center responsive" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
+  <div class="fullwidth">
+    <h2>{% trans "Effects Chains" %}</h2>
+    <p>
+      {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
+    </p>
+    <img class="center responsive" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
+  </div>
+
   <div style="clear: both;"></div>
   
   <h1>{% trans "Customizable DJ Hardware Support" %}</h1>
-  {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
+  <div class="fullwidth">
+    <p>
+      {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
+    </p>
+  </div>
 
   <div class="halfbox_left">
-    <div style="height: 200px;">
+    <div style="max-height: 200px;">
       <img class="center responsive" width="340px" src="{% static '/static/images/feature_midi-2.0.png' %}" style="padding-top: 20px;">
     </div>
 
@@ -98,9 +107,11 @@
   <div style="clear: both;"></div>
 
   <h1>{% trans "Sophisticated Music Library" %}</h1>
-  <p>
+  <div class="fullwidth">
+    <p>
     {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
-  </p>
+    </p>
+  </div>
 
   <div style="clear: both;"></div>
 
@@ -143,14 +154,14 @@
   <div style="clear: both;"></div>
 
   <div class="gapfiller">
-    <h1 style="margin-left: 30px;">{% trans "Choose Your Skin" %}</h1>
+    <h1 class="center" style="margin-left: 30px;">{% trans "Choose Your Skin" %}</h1>
     <div id="skin_screenshots" class="center">
       <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_deere.png' %}">
       <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_latenight.png' %}">
       <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_shade.png' %}">
       <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_tango.png' %}">
-      <p>{% trans "Mixxx includes four different skins, each with a different look and a configurable layout" %}</p>
     </div>
+    <p class="fullwidth">{% trans "Mixxx includes four different skins, each with a different look and a configurable layout" %}</p>
   </div>
 
   <!-- YouTube video
@@ -162,20 +173,22 @@
   </div> -->
 
   <h1>{% trans "Record and Broadcast" %}</h1>
-  <p>
-    {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
-  </p>
+  <div class="fullwidth">
+    <p>
+      {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
+    </p>
+  </div>
   
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
     <h2><img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature_icon">Recording</h2>
-    <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
+    <p class="feature_indent">{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
     </p>
   </div>
   <div class="halfbox_right">
     <h2><img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature_icon">{% trans "Live Broadcasting" %}</h2>
-    <p>
+    <p class="feature_indent">
       {% trans "Stream your mixes live over the Internet to your audience and friends through a Shoutcast or Icecast server." %}
     </p>
   </div>
@@ -184,22 +197,24 @@
 
   <div class="halfbox_left">
     <h2><img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature_icon">{% trans "ReplayGain Normalization" %}</h2>
-    <p>
+    <p class="feature_indent">
       {% trans "Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
     </p>
   </div>
   <div class="halfbox_right">
     <h2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Microphone &amp; Auxiliary Inputs" %}</h2>
-    <p>
+    <p class="feature_indent">
       {% trans "Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs let you include different sound sources without needing an external hardware mixer. Latency compensation keeps your recorded and broadcasted mixes in time when using direct monitoring." %}
     </p>
   </div>
 
   <div style="clear: both;"></div>
   <h1>{% trans "Native Language Support" %}</h1>
-  <p>
-    {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %} Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a href="{{ com_transifex_mixxxdj_link }}">Translation overview</a> page.{% endblocktrans %}
-  </p>
+  <div class="fullwidth">
+    <p>
+      {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %} Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a href="{{ com_transifex_mixxxdj_link }}">Translation overview</a> page.{% endblocktrans %}
+    </p>
+  </div>
     
   <div class="gapfiller">
     <p style="text-align: center;">{% trans "Download Mixxx and start DJing now for FREE:" %}</p>
