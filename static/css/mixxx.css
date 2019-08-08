@@ -236,6 +236,10 @@ p#navbar_tinylinks
     padding-right: 20px;
     float: left;
 }
+
+.credits {
+    text-align: center;
+}
 .feature_indent
 {
     margin-left: 60px;
