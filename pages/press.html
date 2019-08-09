@@ -6,64 +6,66 @@
 
 {% block body %}
 <div class="content">
-  <H1>{% trans "Press" %}</H1>
-  <H2>{% trans "About Mixxx" %}</H2>
+  <h1>{% trans "Press" %}</h1>
+  <div class="fullwidth">
+    <h2>{% trans "About Mixxx" %}</h2>
 
-  <p>
-    {% blocktrans %}Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces for DJing by Tue Haste Andersen.  After releasing the project as open source, dozens of contributors began modifying and improving Mixxx.{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans %}Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces for DJing by Tue Haste Andersen.  After releasing the project as open source, dozens of contributors began modifying and improving Mixxx.{% endblocktrans %}
+    </p>
 
-  <p>
-    {% blocktrans %}In 2006, a new development team lead by Adam Davison and Albert Santoni began reorganizing the project to ensure smooth growth of both the codebase and the number of contributors. A renewed focus on usability and stability has helped Mixxx grow to become the most popular free DJ software in the world, receiving <b>over 1,000,000 downloads annually</b>. Our committed team has worked hard to create great DJ software, and this growth is a sign of our success.{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans %}In 2006, a new development team lead by Adam Davison and Albert Santoni began reorganizing the project to ensure smooth growth of both the codebase and the number of contributors. A renewed focus on usability and stability has helped Mixxx grow to become the most popular free DJ software in the world, receiving <b>over 1,000,000 downloads annually</b>. Our committed team has worked hard to create great DJ software, and this growth is a sign of our success.{% endblocktrans %}
+    </p>
 
-  <p>
-    {% blocktrans %}In 2011, RJ Ryan took over as Lead Developer to successfully continue the team's endeavor to make Mixxx a world-class DJ software.{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans %}In 2011, RJ Ryan took over as Lead Developer to successfully continue the team's endeavor to make Mixxx a world-class DJ software.{% endblocktrans %}
+    </p>
 
-  <p>
-    {% blocktrans %}As our user community grows, so does our development team - As of Mixxx 2.0, <b>over 100 developers and artists</b> have helped create Mixxx!{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans %}As our user community grows, so does our development team - As of Mixxx 2.0, <b>over 100 developers and artists</b> have helped create Mixxx!{% endblocktrans %}
+    </p>
 
-  <p>
-    {% blocktrans with gsoc_link="http://code.google.com/soc/" %}Mixxx also participated in <a href="{{ gsoc_link }}">Google Summer of Code</a> in 2007, 2008, and 2010-2014. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software.{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans with gsoc_link="http://code.google.com/soc/" %}Mixxx also participated in <a href="{{ gsoc_link }}">Google Summer of Code</a> in 2007, 2008, and 2010-2014. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software.{% endblocktrans %}
+    </p>
 
-  <h2>{% trans "Why?" %}</h2>
+    <h2>{% trans "Why?" %}</h2>
 
-  <p>
-    {% blocktrans %}Mixxx started as an open source project because of demand for DJing software on Linux, and discontent with proprietary DJ software on Windows and Mac OS X. Today, Mixxx development is driven by the simple idea that together we can create a better way to DJ, and that has brought Mixxx to the cutting edge. Mixxx is the only free cross-platform vinyl control software and has the most advanced controller support via our innovative Javascript-based MIDI and HID scripting engine. We are continuing to pursue new and exciting features that give DJs more tools to create better live mixes.{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans %}Mixxx started as an open source project because of demand for DJing software on Linux, and discontent with proprietary DJ software on Windows and Mac OS X. Today, Mixxx development is driven by the simple idea that together we can create a better way to DJ, and that has brought Mixxx to the cutting edge. Mixxx is the only free cross-platform vinyl control software and has the most advanced controller support via our innovative Javascript-based MIDI and HID scripting engine. We are continuing to pursue new and exciting features that give DJs more tools to create better live mixes.{% endblocktrans %}
+    </p>
 
-  <p>
-    {% blocktrans %}Besides scratching our own itches, many people work on Mixxx as a way to learn about audio programming, or even just because it's fun and they enjoy programming. The creative aspect of Mixxx attracts developers with a broad range of skills and talents, and that makes for a fun development team that helps Mixxx continue to grow.{% endblocktrans %}
-  </p>
+    <p>
+      {% blocktrans %}Besides scratching our own itches, many people work on Mixxx as a way to learn about audio programming, or even just because it's fun and they enjoy programming. The creative aspect of Mixxx attracts developers with a broad range of skills and talents, and that makes for a fun development team that helps Mixxx continue to grow.{% endblocktrans %}
+    </p>
 
-  <h2>{% trans "Interviews" %}</h2>
-  <p>
-    {% blocktrans with project_manager_mail_link="mailto:press@mixxx.org" %}Please contact us at <a href="{{ project_manager_mail_link }}">press@mixxx.org</a> for information or interviews. We won't bite, we promise.{% endblocktrans %}
-  </p>
+    <h2>{% trans "Interviews" %}</h2>
+    <p>
+      {% blocktrans with project_manager_mail_link="mailto:press@mixxx.org" %}Please contact us at <a href="{{ project_manager_mail_link }}">press@mixxx.org</a> for information or interviews. We won't bite, we promise.{% endblocktrans %}
+    </p>
 
-  <h2>{% trans "Artwork" %}</h2>
-  <br/>
-  <img class="center" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
-  <br/>
+    <h2>{% trans "Artwork" %}</h2>
+    <br/>
+    <img class="center" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
+    <br/>
 
-  <p style="text-indent: 0px;">
-    {% trans "Mixxx Color Logo, no padding:" %}<br/>
-    <a href="{% static '/static/images/press_art/logocolour_nopadding.svg' %}">{% trans "SVG" %}</a><br/>
-    <a href="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">{% trans "PNG Small" %}</a> (240 x 60 px)<br/>
-    <a href="{% static '/static/images/press_art/logocolour_nopadding_medium.png' %}">{% trans "PNG Medium" %}</a> (480 x 119 px)<br/>
-    <a href="{% static '/static/images/press_art/logocolour_nopadding_large.png' %}">{% trans "PNG Large" %}</a> (1115 x 278 px)<br/>
-    <a href="{% static '/static/images/press_art/logocolour_nopadding_large.tiff' %}">{% trans "TIFF Large" %}</a> (1115 x 278 px)
-  </p>
-  <p style="text-indent: 0px;">{% trans "Reference Screenshots:" %}<br/>
-    <a href="{% static '/static/images/press_art/mixxx_200_latenight_skin.png' %}">Mixxx 2.0 default (Late Night Skin)</a><br/>
-    <a href="{% static '/static/images/press_art/mixxx_200_deere_skin.png' %}">Mixxx 2.0 (Deere Skin)</a><br/>
-    <a href="{% static '/static/images/press_art/mixxx_200_shade_skin.png' %}">Mixxx 2.0 (Shade Skin)</a><br/>
-  </p>
+    <p style="text-indent: 0px;">
+      {% trans "Mixxx Color Logo, no padding:" %}<br/>
+      <a href="{% static '/static/images/press_art/logocolour_nopadding.svg' %}">{% trans "SVG" %}</a><br/>
+      <a href="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">{% trans "PNG Small" %}</a> (240 x 60 px)<br/>
+      <a href="{% static '/static/images/press_art/logocolour_nopadding_medium.png' %}">{% trans "PNG Medium" %}</a> (480 x 119 px)<br/>
+      <a href="{% static '/static/images/press_art/logocolour_nopadding_large.png' %}">{% trans "PNG Large" %}</a> (1115 x 278 px)<br/>
+      <a href="{% static '/static/images/press_art/logocolour_nopadding_large.tiff' %}">{% trans "TIFF Large" %}</a> (1115 x 278 px)
+    </p>
+    <p style="text-indent: 0px;">{% trans "Reference Screenshots:" %}<br/>
+      <a href="{% static '/static/images/press_art/mixxx_200_latenight_skin.png' %}">Mixxx 2.0 default (Late Night Skin)</a><br/>
+      <a href="{% static '/static/images/press_art/mixxx_200_deere_skin.png' %}">Mixxx 2.0 (Deere Skin)</a><br/>
+      <a href="{% static '/static/images/press_art/mixxx_200_shade_skin.png' %}">Mixxx 2.0 (Shade Skin)</a><br/>
+    </p>
 
-  <h2>{% trans "Press Mirror" %}</h2>
+    <h2>{% trans "Press Mirror" %}</h2>
+  </div>
 
   <div class="halfbox_left">
 

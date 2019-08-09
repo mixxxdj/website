@@ -60,6 +60,10 @@ a:hover, #hamburger_menu a:hover
   color: #ffB000; /* lighter orange */
 }
 
+p.header, h1 {
+  margin: 40px 60px 20px 20px;
+}
+
 p a
 {
   color: #ff9000; /* orange */
@@ -68,6 +72,10 @@ p a
 h2 a
 {
   color: #ff9000; /* orange */
+}
+
+.fullwidth {
+  padding: 0px 20px 20px 20px;
 }
 
 .center
@@ -170,7 +178,7 @@ p#navbar_tinylinks
     color: #eeeeee;
     border: 1px #222222 solid;
     border-radius: 5px;
-    text-align:center;
+    text-align: left;
 }
 
 .gapfiller p
@@ -194,7 +202,7 @@ p#navbar_tinylinks
 
 .content
 {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 #full_specs li
@@ -225,8 +233,12 @@ p#navbar_tinylinks
 {
     height: 40px;
     vertical-align: middle;
-    padding: 5px;
-    padding-right: 15px;
+    padding-right: 20px;
+    float: left;
+}
+
+.credits {
+    text-align: center;
 }
 .feature_indent
 {
