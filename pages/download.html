@@ -221,8 +221,9 @@ $(document).ready(function() {
   <h1>{% blocktrans %}Download Now ({{ stable_version }} Stable){% endblocktrans %}</h1>
   <div class="fullwidth">
     <p>{% blocktrans %}Check out the <a href="{{ stable_release_announcement }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
-    <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.){% endblocktrans %}</p>
-    <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free and donations are appreciated!" %}</p>
+    <p>{% blocktrans with previous_link="#previous" %}Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.{% endblocktrans %}</p>
+    <p>{% trans "Mixxx is available for Windows, macOS, and Linux." %}<br/>
+    {% trans "We happily provide Mixxx for free and donations are appreciated!" %}</p>
     {% include "donate_paypal.html" %}
   </div>
   <div style="clear: both;"></div>
