@@ -113,7 +113,7 @@ img.center
     border-radius: 1em;
 }
 
-#driveby_social.social_links .social_icon svg
+#driveby_social.social_links .social_icon img
 {
     margin:0;
     height: 1.6em;
@@ -154,7 +154,7 @@ img.center
     overflow: hidden;
 }
 
-.social_icon svg
+.social_icon img
 {
     height: 1.3em;
     margin: 0.15em 0.15em 0 0;
