@@ -96,19 +96,27 @@ img.center
 {
     z-index: 5;
     position: absolute;
-    right: 10px;
+    right: 8px;
     top: 70px;
     text-align: right;
 }
 
-#driveby_social li
+#driveby_social.social_links li
 {
-    margin-bottom: 5px;
+    font-size: 0.8em;
 }
 
-#driveby_social .zulip
+#driveby_social.social_links .social_icon
 {
-    display: none;
+    margin: 0;
+    padding: 0.3em;
+    border-radius: 1em;
+}
+
+#driveby_social.social_links .social_icon svg
+{
+    margin:0;
+    height: 1.6em;
 }
 
 #footer_social h2
@@ -138,9 +146,9 @@ img.center
     color: #fff;
     display: inline-block;
     width: auto;
-    height: 20px;
-    font-size: 0.8em;
-    line-height: 20px;
+    height: 1.6em;
+    font-size: 1em;
+    line-height: 1.6em;
     padding: 0 6px;
     border-radius: 3px;
     overflow: hidden;
@@ -148,8 +156,8 @@ img.center
 
 .social_icon svg
 {
-    height: 16px;
-    margin: 2px 2px 0 0;
+    height: 1.3em;
+    margin: 0.15em 0.15em 0 0;
     float: left;
 }
 
@@ -538,6 +546,10 @@ switch to hamburger menu
     {
         width: auto;
         margin-right: 20px;
+    }
+
+    #splash h1 {
+        font-size:1.7em;
     }
 }
 
