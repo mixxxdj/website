@@ -73,6 +73,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 
 <script type="text/javascript">
   var classToBox;
+  var OSName = utils.getOSName();
 
   if (OSName.indexOf('Mac') !== -1) {
     classToBox = 'macbox';
@@ -81,15 +82,10 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     classToBox = 'winbox';
   }
 
-  function addClassToEls(klass, els) {
-    for (var i = 0, n = els.length; i < n; i++) {
-      els[i].className = els[i].className + ' ' + klass;
-    }
-  }
-
   if (classToBox) {
     window.setTimeout(
-      addClassToEls.bind(window, 'slow_border', document.getElementsByClassName(classToBox)), 1000
+      utils.addClassToEls.bind(window, 'slow_border', document.getElementsByClassName(classToBox)),
+      1000
     )
   }
 </script>
