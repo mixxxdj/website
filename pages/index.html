@@ -5,20 +5,7 @@
 {% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
 
 {% block after_navbar %}
-<div id="driveby_social">
-  <ul>
-    <li>
-      <a href="https://twitter.com/share" class="twitter-share-button"
-         data-url="http://www.mixxx.org"
-         data-text="{% blocktrans %}Check out Mixxx - Free DJ mixing software app for Windows, macOS, and Linux{% endblocktrans %}"
-         data-via="mixxxdj"
-         data-count="vertical">Tweet</a>
-    </li>
-    <li>
-      <fb:like href="http://www.mixxx.org" send="false" layout="box_count" width="60" show_faces="false" style="position: relative; top: -4px;"></fb:like>
-    </li>
-  </ul>
-</div>
+{% include "social_sidebar.html" %}
 
 <div id="splash">
   <h1>{% trans "DJ Your Way" %}</h1>

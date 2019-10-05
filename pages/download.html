@@ -70,17 +70,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     t.parentNode.insertBefore(s, t);
   })();
 </script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    if (OSName.search("OS X") >= 0) {
-        var highlightTimerId = window.setTimeout(function() { $('.macbox').addClass('slow_border');}, 1000);
-    }
-    else if (OSName.search("Windows") >= 0) {
-        var highlightTimerId = window.setTimeout(function() { $('.winbox').addClass('slow_border');}, 1000);
-    }
-});
-</script>
+<script type="text/javascript" src="{% static '/static/js/download.js' %}"></script>
 {% endblock %}
 
 {% block body %}

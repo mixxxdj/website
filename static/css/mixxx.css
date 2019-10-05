@@ -90,6 +90,115 @@ img.center
 }
 
 /* styles for rest of page */
+
+/* links to social media */
+#driveby_social
+{
+    z-index: 5;
+    position: absolute;
+    right: 8px;
+    top: 70px;
+    text-align: right;
+}
+
+#driveby_social.social_links li
+{
+    font-size: 0.8em;
+}
+
+#driveby_social.social_links .social_icon
+{
+    margin: 0;
+    padding: 0.3em;
+    border-radius: 1em;
+}
+
+#driveby_social.social_links .social_icon img
+{
+    margin:0;
+    height: 1.6em;
+}
+
+#footer_social h2
+{
+    margin-bottom:10px;
+}
+
+#footer_social li
+{
+    display: inline;
+}
+
+/* general styles for sharing buttons */
+.social_links
+{
+    margin: 0;
+    padding: 0;
+}
+
+.social_links li
+{
+    list-style: none;
+}
+
+.social_icon
+{
+    color: #fff;
+    display: inline-block;
+    width: auto;
+    height: 1.6em;
+    font-size: 1em;
+    line-height: 1.6em;
+    padding: 0 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.social_icon img
+{
+    height: 1.3em;
+    margin: 0.15em 0.15em 0 0;
+    float: left;
+}
+
+.social_icon span
+{
+    clear: both;
+}
+
+.social_icon:hover, .social_icon:focus
+{
+    color: #fff;
+}
+
+/* twitter */
+.twitter.social_icon
+{
+    background-color: #1da1f2;
+}
+.twitter.social_icon:hover, .twitter.social_icon:focus
+{
+    background-color: #0c7abf;
+}
+/* facebook */
+.facebook.social_icon
+{
+    background-color: #4267b2;
+}
+.facebook.social_icon:hover, .facebook.social_icon:focus
+{
+    background-color: #365899;
+}
+/* zulip */
+.zulip.social_icon
+{
+    background-color: #4e9e9e;
+}
+.zulip.social_icon:hover, .zulip.social_icon:focus
+{
+    background-color: #5496a8;
+}
+
 #navbar
 {
     font-size: 1.4em;
@@ -268,25 +377,6 @@ p#navbar_tinylinks
     -webkit-transition: border-color 0.5s linear; /*1px solid #aaaaaa;*/
 }
 
-#driveby_social
-{
-    z-index: 5;
-    position: absolute;
-    right: 10px;
-    top: 50px;
-    text-align: right;
-}
-#driveby_social li
-{
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-#footer_social
-{
-    vertical-align: top;
-}
-
 #footer_sitemap
 {
     margin: 0 auto;
@@ -456,6 +546,10 @@ switch to hamburger menu
     {
         width: auto;
         margin-right: 20px;
+    }
+
+    #splash h1 {
+        font-size:1.7em;
     }
 }
 
