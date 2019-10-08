@@ -200,15 +200,20 @@ img.center
 
 #navbar
 {
-    font-size: 1.4em;
+    font-size: 1.8em;
     height: 55px;
-    text-align: center;
+    text-align: right;
     position: relative;
 }
 
 #navbar a
 {
     color: #d0d0d0;
+}
+
+#navbar a:hover
+{
+    color: #39b54a;
 }
 
 #nav_logo
@@ -228,12 +233,12 @@ img.center
 
 #navbar_links a
 {
-    padding-right: 1.2em;
+    margin-right: 1.2em;
 }
 
 #navbar_links a:last-child
 {
-    padding-right: 0;
+    margin-right: 0;
 }
 
 #splash

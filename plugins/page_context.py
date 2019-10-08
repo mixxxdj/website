@@ -11,7 +11,8 @@ def preBuildPage(page, context, data):
     menu = [
         ("/download", "Download", "Navigation bar link to Mixxx download page."),
         ("/features", "Features", "Navigation bar link to Mixxx features page."),
-        ("/support", "Support & Community", "Navigation bar link to Mixxx support page."),
+        ("/support", "Support", "Navigation bar link to Mixxx support page."),
+        ("/get-involved", "Contribute", "Navigation bar link to Mixxx contributions page."),
     ]
 
     extra = {
