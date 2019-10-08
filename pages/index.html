@@ -4,20 +4,22 @@
 
 {% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
 
-{% block after_navbar %}
+{% block outside_wrapper %}
 {% include "social_sidebar.html" %}
-
-<div id="splash">
-  <h1>{% trans "DJ Your Way" %}</h1>
-  <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}">
-</div>
 {% endblock %}
 
 {% block body %}
-<div class="gapfiller" style="margin-bottom: 0px;">
-  <p>Free and open source DJ software for Windows, macOS, and Linux</p>
+<div id="splash">
+  <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}">
+</div>
+
+<div id="undersplash" class="gapfiller" style="margin-bottom: 0px;">
+  <div class="tagline">
+    <h1>{% trans "DJ Your Way" %}</h1>
+    <br>
+    <p>Free and open source DJ software for Windows, macOS, and Linux</p>
+  </div>
   {% include "download_button.html" %}
-  <div style="clear: both;"></div>
 </div> <!-- gapfiller -->
 
 <div class="content">

@@ -97,7 +97,6 @@ img.center
     z-index: 5;
     position: absolute;
     right: 8px;
-    top: 70px;
     text-align: right;
 }
 
@@ -222,42 +221,19 @@ img.center
     width: 190px;
 }
 
-#navbar_biglinks
+#navbar_links
 {
     line-height: 55px;
-    display: inline-block;
 }
 
-#navbar_biglinks a
+#navbar_links a
 {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 1.2em;
 }
 
-#navbar_smalllinks
+#navbar_links a:last-child
 {
-    float: right;
-    vertical-align: text-bottom;
-    font-size: 0.9em;
-    text-align: right;
-    height: 44px;
-}
-
-#navbar_smalllinks a
-{
-    padding-left: 12px;
-}
-
-#navbar_smalllinks p
-{
-    padding: 0px;
-    padding-bottom: 5px;
-    margin: 0px;
-}
-
-p#navbar_tinylinks
-{
-    font-size: 0.7em;
+    padding-right: 0;
 }
 
 #splash
@@ -265,9 +241,7 @@ p#navbar_tinylinks
     position: relative;
     text-align: center;
     z-index: 0;
-    margin: 0 auto;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    margin: 1em auto;
     background-color: #000000;
     text-align: center;
 }
@@ -275,8 +249,42 @@ p#navbar_tinylinks
 #splash img
 {
     height: auto;
-    width: 676px;
+    width: 960px;
 }
+
+#undersplash
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: 0; */
+}
+
+#undersplash .tagline
+{
+}
+
+.tagline h1
+{
+    display:inline-block;
+    font-size: 1.5em;
+    padding:0;
+    margin:0;
+}
+
+#undersplash p
+{
+    padding:0;
+    margin:0;
+}
+
+#undersplash .download_button
+{
+    /* float: none; */
+}
+
 
 .gapfiller
 {
@@ -412,53 +420,6 @@ p#navbar_tinylinks
 }
 
 /* media query styles */
-/* squish menu items together for tablet style screens */
-@media only screen and (max-width: 1100px)
-{
-    #navbar_biglinks 
-    {
-        display: inline-block;
-        line-height: inherit;
-    }
-
-    #navbar_biglinks a
-    {
-        padding-left: 0;
-        padding-right: 25px;
-    }
-
-    #navbar_biglinks a:last-child
-    {
-        padding-right: 0;
-    }
-
-    #navbar_smalllinks {
-        display: inline-block;
-        float: none;
-    }
-
-    #navbar_smalllinks p
-    {
-        display: inline;
-    }
-
-    #navbar_smalllinks a
-    {
-        padding-left: 0;
-        padding-right: 12px;
-    }
-
-    #navbar_smalllinks p > a:last-child
-    {
-        padding-right: 0;
-    }
-
-    p#navbar_tinylinks
-    {
-        margin-left: 0.8em;
-    }
-}
-
 /*
 less than the full width of the page
 content in columns must be allowed to flow
@@ -493,6 +454,14 @@ content in columns must be allowed to flow
     {
         font-size: 1.2em;
     }
+    #navbar_links a
+    {
+        padding-right: 0.5em;
+    }
+    #driveby_social
+    {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 650px)
@@ -502,7 +471,7 @@ content in columns must be allowed to flow
         font-size: 1em;
     }
 
-    #navbar_biglinks
+    #navbar_links
     {
         margin-top: 0.2em;
     }
@@ -512,14 +481,8 @@ content in columns must be allowed to flow
 {
     #navbar
     {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
-
-    #navbar_biglinks
-    {
-        margin-top: 0.4em;
-    }
-
     pre
     {
         white-space: pre-line;
@@ -532,7 +495,7 @@ switch to hamburger menu
 */
 @media only screen and (max-width: 530px)
 {
-    #navbar_biglinks, #navbar_smalllinks
+    #navbar_links
     {
         display: none;
     }
@@ -548,8 +511,18 @@ switch to hamburger menu
         margin-right: 20px;
     }
 
-    #splash h1 {
+    #splash h1
+    {
         font-size:1.7em;
+    }
+
+    #undersplash
+    {
+        flex-direction: column;
+    }
+    #undersplash .tagline
+    {
+        margin-bottom: 0.5em;
     }
 }
 

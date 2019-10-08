@@ -32,14 +32,12 @@
   </head>
 
   <body>
-    {% block navbar %}
-    {% include "navbar.html" %}
-    {% endblock %}
-
-    {% block after_navbar %}
-    {% endblock %}
+    {% block outside_wrapper %}{% endblock %}
 
     <div id="wrapper">
+      {% block navbar %}
+      {% include "navbar.html" %}
+      {% endblock %}
       {% block body %}
       {% endblock %}
 

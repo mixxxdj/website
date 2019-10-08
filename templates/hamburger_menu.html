@@ -22,9 +22,9 @@
 
     <ul id="hamburger_menu">
       <a href="/"><li>{% trans "Home" %}</li></a>
-    {% for href, size, title, cont in NAV_MENU %}
+      {% for href, title, cont in NAV_MENU %}
       <a href="{{ href }}"><li>{% filter nbsp %}{% trans title context cont %}{% endfilter %}</li></a>
-    {% endfor %}
+      {% endfor %}
     </ul>
   </div>
 </div>

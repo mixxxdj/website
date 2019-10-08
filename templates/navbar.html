@@ -4,30 +4,11 @@
   <div id="nav_logo">
     <a href="/"><img src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx"></a>
   </div>
-  <div id="navbar_biglinks">
-  {% for href, size, title, cont in NAV_MENU %}
+  <div id="navbar_links">
+  {% for href, title, cont in NAV_MENU %}
     {# using non-breaking spaces here! #}
-    {% if size == 'big' %}
     <a class="menu_item" href="{{ href }}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
-    {% endif %}
   {% endfor %}
-  </div>
-  <div id="navbar_smalllinks">
-    <p>
-    {% for href, size, title, cont in NAV_MENU %}
-      {% if size == 'medium' %}
-      <a class="menu_item" href="{{ href }}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
-      {% endif %}
-    {% endfor %}
-
-    </p>
-    <p id="navbar_tinylinks">
-    {% for href, size, title, cont in NAV_MENU %}
-      {% if size == 'small' %}
-      <a class="menu_item" href="{{ href }}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
-      {% endif %}
-    {% endfor %}
-    </p>
   </div>
   {% include "hamburger_menu.html" %}
   <div style="clear: both;"></div>
