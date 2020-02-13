@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% blocktrans %}{{title}}{% endblocktrans %}{% endblock %}
+
+{% block body %}
+<div class="content">
+  <h1>{{ title }}</h1>
+  <div class="fullwidth">
+    <p style="font-size: small;">
+      Posted on <time pubdate="pubdate">{{ date|date:"SHORT_DATE_FORMAT" }}</time>
+      by <span class="author">{{ author }}</span>
+    </p>
+  {% block post %}{% endblock %}
+  </div>
+  <div style="clear: both;"></div>
+  {% if prevPost or nextPost %}
+  <div class="fullwidth">
+    <p style="text-align: left;">
+      {% if prevPost %}
+      <a href="/{{ prevPost.path }}">&laquo; {{ prevPost.title }}</a>
+      {% endif %}
+      {% if nextPost %}
+      <span style="float: right;">
+        <a href="/{{ nextPost.path }}">{{ nextPost.title }} &raquo;</a>
+      </span>
+      {% endif %}
+    </p>
+    <div style="clear: both;"></div>
+  </div>
+  {% endif %}
+
+
+
+</article>
+{% endblock %}

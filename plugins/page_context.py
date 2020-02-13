@@ -15,7 +15,7 @@ def preBuildPage(page, context, data):
         ("/manual/latest", "medium", "Manual", "Navigation bar link to Mixxx Manual."),
         ("/forums", "medium", "Forums", "Navigation bar link to Mixxx Forums."),
         ("/wiki", "medium", "Wiki", "Navigation bar link to Mixxx Wiki."),
-        ("http://mixxxblog.blogspot.com", "medium", "Blog", "Navigation bar link to Mixxx blog."),
+        ("/news", "medium", "News", "Navigation bar link to Mixxx News page."),
         ("/press", "small", "Press", "Navigation bar link to Mixxx Press page"),
         ("/get-involved", "small", "Get Involved", "Navigation bar link to Mixxx Get Involved page." ),
         ("/contact", "small", "Contact", "Navigation bar link to Mixxx contact page.")
