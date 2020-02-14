@@ -1,4 +1,5 @@
 import os
+import posixpath
 import datetime
 import logging
 
@@ -34,44 +35,44 @@ def preBuild(site):
 
     # Build all the posts
     for page in site.pages():
-        if page.path.startswith(POSTS_PATH):
+        if not page.path.startswith(POSTS_PATH):
+            continue
 
-            # Skip non html posts for obious reasons
-            pagepath, pageext = os.path.splitext(page.path)
-            if pageext != ".html":
-                continue
+        # Skip non html posts for obious reasons
+        if os.path.splitext(page.path)[1] != ".html":
+            continue
 
-            # Find a specific defined variable in the page context,
-            # and throw a warning if we're missing it.
-            def find(name):
-                value = page.context().get(name, DEFAULTS.get(name, ""))
-                if not value:
-                    logging.warning(
-                        "Missing info '%s' for post %s" % (name, page.path)
-                    )
-                return value
-
-            # Build a context for each post
-            postContext = {}
-            postContext["title"] = find("title")
-            postContext["author"] = find("author")
-            postContext["date"] = find("date")
-            postContext["path"] = pagepath
-            postContext["post"] = getNode(get_template(page.path), name="post")
-
-            # Parse the date into a date object
-            try:
-                postContext["date"] = datetime.datetime.strptime(
-                    postContext["date"], "%Y-%m-%d"
-                )
-            except Exception as e:
+        # Find a specific defined variable in the page context,
+        # and throw a warning if we're missing it.
+        def find(name):
+            value = page.context().get(name, DEFAULTS.get(name, ""))
+            if not value:
                 logging.warning(
-                    "Date format not correct for page %s, "
-                    "should be yyyy-mm-dd\n%s" % (page.path, e)
+                    "Missing info '%s' for post %s" % (name, page.path)
                 )
-                continue
+            return value
 
-            POSTS.append(postContext)
+        # Build a context for each post
+        postContext = {}
+        postContext["title"] = find("title")
+        postContext["author"] = find("author")
+        postContext["date"] = find("date")
+        postContext["path"] = posixpath.join("/", page.path)
+        postContext["post"] = getNode(get_template(page.path), name="post")
+
+        # Parse the date into a date object
+        try:
+            postContext["date"] = datetime.datetime.strptime(
+                postContext["date"], "%Y-%m-%d"
+            )
+        except Exception as e:
+            logging.warning(
+                "Date format not correct for page %s, "
+                "should be yyyy-mm-dd\n%s" % (page.path, e)
+            )
+            continue
+
+        POSTS.append(postContext)
 
     # Sort the posts by date
     POSTS = list(sorted(POSTS, key=lambda x: x["date"], reverse=True))

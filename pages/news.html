@@ -11,7 +11,7 @@
   <ul>
     {% for post in posts %}
     <li>
-      <strong><a href="/{{ post.path }}">{{ post.title }}</a></strong>
+      <strong><a href="{% url post.path %}">{{ post.title }}</a></strong>
       ({{ post.date|date:"SHORT_DATE_FORMAT" }})
     </li>
     {% endfor %}

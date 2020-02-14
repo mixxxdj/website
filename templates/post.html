@@ -19,11 +19,11 @@
   <div class="fullwidth">
     <p style="text-align: left;">
       {% if prevPost %}
-      <a href="/{{ prevPost.path }}">&laquo; {{ prevPost.title }}</a>
+      <a href="{% url prevPost.path %}">&laquo; {{ prevPost.title }}</a>
       {% endif %}
       {% if nextPost %}
       <span style="float: right;">
-        <a href="/{{ nextPost.path }}">{{ nextPost.title }} &raquo;</a>
+        <a href="{% url nextPost.path %}">{{ nextPost.title }} &raquo;</a>
       </span>
       {% endif %}
     </p>
