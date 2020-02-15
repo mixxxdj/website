@@ -1,14 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
-  {% for page in CACTUS.pages %}
-  {% if page.path != 'error.html' and page.path != 'maintenance.html' and page.path|slice:":5" != 'news/' %}
+  <!-- Normal pages -->
+{% for page in CACTUS.pages %}{% if page.path != 'error.html' and page.path != 'maintenance.html' and page.path|slice:":5" != 'news/' %}
   <url>
     <loc>{{ page.absolute_final_url }}</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  {% endif %}
-  {% endfor %}
+  </url>{% endif %}{% endfor %}
+
+  <!-- News posts -->
+{% for page in CACTUS.pages %}{% if page.path|slice:":5" == 'news/' %}
+  <url>
+    <loc>{{ page.absolute_final_url }}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>{% endif %}{% endfor %}
+
+  <!-- External Links -->
+
   <url>
     <loc>http://www.mixxx.org/wiki/</loc>
     <lastmod>2012-03-11</lastmod>
