@@ -8,13 +8,29 @@
 <div class="content">
   <h1>{% trans "News and Announcements" %}</h1>
 
-  <ul>
-    {% for post in posts %}
-    <li>
-      <strong><a href="{% url post.path %}">{{ post.title }}</a></strong>
-      ({{ post.date|date:"SHORT_DATE_FORMAT" }})
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="fullwidth">
+    {# Show most recent news post #}
+    {% with post=posts|first %}
+    <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
+    <p style="font-size: small;">
+      Posted on <time pubdate="pubdate">{{ post.date|date:"SHORT_DATE_FORMAT" }}</time>
+      by <span class="author">{{ post.author }}</span>
+    </p>
+
+    {{ post.post }}
+    {% endwith %}
+    <div style="clear: both;"></div>
+
+    {# List other news posts #}
+    <h2>{% trans "Older News" %}</h2>
+    <ul>
+      {% for post in posts|slice:"1:" %}
+      <li>
+        <strong><a href="/{{ post.path }}">{{ post.title }}</a></strong>
+        ({{ post.date|date:"SHORT_DATE_FORMAT" }})
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
 {% endblock %}
