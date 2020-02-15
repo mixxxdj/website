@@ -92,7 +92,7 @@ def preBuildPage(site, page, context, data):
     context["posts"] = POSTS
 
     for post in POSTS:
-        if post["path"] == os.path.splitext(page.path)[0]:
+        if post["path"] == posixpath.join("/", page.path):
             context.update(post)
             break
 
