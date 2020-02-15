@@ -76,6 +76,8 @@ def preBuild(site):
 
     # Sort the posts by date
     POSTS = list(sorted(POSTS, key=lambda x: x["date"], reverse=True))
+
+    # Add reference to previous/nexts post
     for i, post in enumerate(POSTS):
         if i == 0:
             continue
