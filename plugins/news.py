@@ -15,7 +15,7 @@ DEFAULTS = {
 }
 
 
-def getNode(template, context=Context(), name="subject"):
+def getNode(template, context, name="subject"):
     """
     Get django block contents from a template.
     http://stackoverflow.com/questions/2687173/
@@ -32,6 +32,8 @@ def getNode(template, context=Context(), name="subject"):
 def preBuild(site):
 
     global POSTS
+
+    context = Context(site.context())
 
     # Build all the posts
     for page in site.pages():
@@ -58,7 +60,9 @@ def preBuild(site):
         postContext["author"] = find("author")
         postContext["date"] = find("date")
         postContext["path"] = posixpath.join("/", page.path)
-        postContext["post"] = getNode(get_template(page.path), name="post")
+        context.update({"__CACTUS_CURRENT_PAGE__": page})
+        postContext["post"] = getNode(
+            get_template(page.path), context, name="post")
 
         # Parse the date into a date object
         try:
