@@ -1,0 +1,122 @@
+title: Beyond Mixxx 1.8
+author: Unknown
+date: 2010-12-10 03:18:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Mixxx 1.8 was a big step ahead, bringing new features like hot cues, looping, and a brand new library, but as we speak,&nbsp;<b>many other new features</b>
+&nbsp;are being developed behind the scenes. These new features are still in the lab, so to speak, but some of them are maturing rapidly and will likely make it into a Mixxx release. Some of them are even stable enough for the brave to start testing. Although, I wouldn't use any of them in a live performance yet...&nbsp;<i>or would I</i>
+?</div>
+<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br />
+</div>
+<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Some of these features include:</div>
+<ul><a href="{% static '/static/images/news/Chemical_Flasks.png' %}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img alt="" border="0" height="200" id="BLOGGER_PHOTO_ID_5506702927110900130" src="{% static '/static/images/news/Chemical_Flasks.png' %}" style="display: block; margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 0px; text-align: center;" width="146" />
+</a>
+<li><b>Samplers</b>
+</li>
+<li><b>Support for More than Two Decks</b>
+:</li>
+<li><b>External Mixer Mode</b>
+</li>
+<li><b>Beat Detection</b>
+</li>
+<li><b>Vinyl Control Rewrite</b>
+</li>
+</ul>
+<br />
+Here's a brief overview of some of these new features:<br />
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br />
+</div>
+<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>External Mixer Mode (1.9)</b>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b><br />
+</b>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>Bill Good</b>
+&nbsp;recently developed this feature through the <a href="http://code.google.com/soc/">Google Summer of Code</a>
+ program.&nbsp;With External Mixer Mode, Mixxx will be able to output the audio from each deck through a separate audio channel. This is a heavily requested feature, and is especially handy for vinyl control users. Our internal audio routing code was significantly overhauled during this project, and as a result, we'll be able to add microphone input to Mixxx&nbsp;in the future&nbsp;with relative ease.</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br />
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Bill has also been helping improve support for FLAC files in Mixxx.</div>
+</div>
+<div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b><br class="Apple-interchange-newline" />
+Support for Multiple Decks (1.10)</b>
+</div>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b><br />
+</b>
+</div>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Since the first release of Mixxx, we've been stuck with only two channels for mixing. Fortunately, we've been rescued by <b>RJ Ryan</b>
+, who has put in some long hours refactoring anything and everything he can get his hands on so that we can support more channels. Thanks to his efforts, our development version of Mixxx can support any number of decks internally. We're still working on modifying our user interface to support more decks, but it looks like we may rely on 4-deck variants of our skins in the short term.</div>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div>
+</div>
+<br />
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>Sampler (1.10)</b>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b><br />
+</b>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Built upon our support for multiple decks, a prototype sampler was developed by&nbsp;<b>Ryan Baker&nbsp;</b>
+through Google Summer of Code this year.&nbsp;These small miniature decks allow you to play audio samples. For example, you will be able to add sirens, air horns and vocal samples into your mixes. This feature still requires more work on the user interface and some under-the-hood polish, but there's been great progress made so far.</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br />
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>Beat Detection (?)</b>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b><br />
+</b>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">This feature will use the open source audio library <a href="http://www.aubio.org/">aubio</a>
+&nbsp;to detect beats. This will allow us to do many things (in theory), including:</div>
+</div>
+<div><ul><li>Beat Smashing effects, a la Aphex Twin.</li>
+<li>Quantized Hotcues: your hotcues could sync up to the beat.</li>
+<li>Quantized Loops: automatically create precise loops with X beats.</li>
+<li>More precise Auto-Sync.</li>
+</ul>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">The main difference between BPM detection, which is what we have now, and <i>beat detection</i>
+ is that each individual beat will be detected and marked and not just guessed from the BPM. Coupled with a good grid editor and other groovy features this could make Mixxx a truly killer program for mixing and mashing songs, especially those with variable tempos.</div>
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br />
+<div style="text-align: center;">~</div>
+<br />
+</div>
+</div>
+<div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">As you can see, future versions of Mixxx have the potential to be pretty exciting! You can help support development of Mixxx by donating to our <a href="http://www.pledgie.com/campaigns/13624">build server fund</a>
+ or by <a href="http://mixxx.org/forums/viewtopic.php?f=1&amp;t=1773">getting involved</a>
+ directly. Thanks for your support!</div>
+</div>
+</div>
+<div><br />
+</div>
+</div>
+</div>
+<div style="text-align: center;"><a href="http://www.pledgie.com/campaigns/13624"><img alt="Click here to lend your support to: Mixxx 1.9 Build Server Fundraiser and make a donation at www.pledgie.com !" border="0" src="http://www.pledgie.com/campaigns/13624.png?skin_name=chrome" />
+</a>
+<br />
+<br />
+<div style="text-align: left;"><i>This article was written by Mixxx developer Philip "<a href="http://www.soundcloud.com/madjester">Madjester</a>
+" Whelan.</i>
+</div>
+</div>
+
+
+{% endblock %}
