@@ -62,7 +62,8 @@ def preBuild(site):
         postContext["path"] = posixpath.join("/", page.path)
         context.update({"__CACTUS_CURRENT_PAGE__": page})
         postContext["post"] = getNode(
-            get_template(page.path), context, name="post")
+            get_template(page.path), context, name="post"
+        )
 
         # Parse the date into a date object
         try:
