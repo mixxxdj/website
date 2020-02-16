@@ -63,12 +63,12 @@ def preBuild(site):
         # Parse the date into a date object
         try:
             postContext["date"] = datetime.datetime.strptime(
-                postContext["date"], "%Y-%m-%d"
+                postContext["date"], "%Y-%m-%d %H:%M:%S"
             )
         except Exception as e:
             logging.warning(
                 "Date format not correct for page %s, "
-                "should be yyyy-mm-dd\n%s" % (page.path, e)
+                "should be 'YYYY-MM-DD HH:MM:SS'\n%s" % (page.path, e)
             )
             continue
 
