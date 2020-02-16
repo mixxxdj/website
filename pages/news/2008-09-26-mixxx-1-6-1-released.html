@@ -1,0 +1,32 @@
+title: Mixxx 1.6.1 Released!
+author: Unknown
+date: 2008-09-26 23:27:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+Hot off the heels of our last release comes <a href="http://www.mixxx.org/download.php">Mixxx 1.6.1</a>
+, bringing a handful of new features and bug fixes. <br />
+<br />
+<div style="text-align: center;"><a href="http://2.bp.blogspot.com/_hUprAdIclgE/SNWM9K2iQRI/AAAAAAAAAPU/FZyjf7tNWVs/s1600-h/Picture+2.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="http://2.bp.blogspot.com/_hUprAdIclgE/SNWM9K2iQRI/AAAAAAAAAPU/FZyjf7tNWVs/s400/Picture+2.png" id="BLOGGER_PHOTO_ID_5248255923283181842" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
+</a>
+<a href="http://www.mixxx.org/download/" style="font-weight: bold;">Download Here</a>
+</div>
+<br />
+<br />
+Some of the more important changes are:<br />
+<ul><li>The <span style="font-weight: bold;">waveform view now zooms</span>
+ instead of speeding up when the pitch is adjusted. This allows the beat ticks to align when songs are beatmatched, and was a feature request we heard many times after the 1.6.0 release.</li>
+<li><span style="font-weight: bold;">FLAC support for Windows users!</span>
+ (Another much requested feature, and you can thank Michael Pujos for his hard work on this.)</li>
+<li>Fixed a problem where the waveform view went unresponsive (thanks to Mark Glines for the patch)</li>
+<li>Properly read artist and title names from FLAC files (another one from Mark)</li>
+<li>Fixed drag-and-drop on Windows with the "Simple" display mode.</li>
+<li>Fixed a Hercules RMX problem with its MIDI mapping.</li>
+<li>Fix for songs with short artist names.</li>
+</ul>
+We've also had some mild success with M4A/AAC support, but it's still going to be a while before that feature makes it into a release unfortunately. We're also still working on our OS X 10.4 (Intel) package still, but we do have an unsupported <a href="http://downloads.mixxx.org/mixxx-1.6.1/mixxx-1.6.1-macppc.dmg">OS X 10.5 package for PPC available for download here</a>
+.
+
+{% endblock %}

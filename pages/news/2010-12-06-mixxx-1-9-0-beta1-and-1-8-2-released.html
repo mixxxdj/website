@@ -1,0 +1,173 @@
+title: Mixxx 1.9.0 Beta1 and 1.8.2 Released!
+author: Unknown
+date: 2010-12-06 00:32:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+Hot off the heels of 1.8.1, the Mixxx development team is pleased to announce the release of <b>Mixxx 1.9.0 Beta1</b>
+!<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_hUprAdIclgE/TPniOgGWFWI/AAAAAAAAA6M/_6SUXHBkM4M/s1600/Picture+12.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_hUprAdIclgE/TPniOgGWFWI/AAAAAAAAA6M/_6SUXHBkM4M/s400/Picture+12.png" height="245" width="400" />
+</a>
+</div>
+<div class="separator" style="clear: both; text-align: center;"><br />
+</div>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.mixxx.org/download/"><b>Download Mixxx 1.9.0 Beta1 and 1.8.2 </b>
+</a>
+</div>
+<br />
+This public beta is intended to give (brave) Mixxx users a chance to try out some new features and help us find bugs. We do not recommend using beta software for live performance because there will be bugs. You can help improve Mixxx by <a href="https://bugs.launchpad.net/mixxx/+filebug">reporting any bugs you find</a>
+.<br />
+<div><br />
+</div>
+<div><b>Important: </b>
+Mixxx 1.9.0 beta1 will upgrade your library to a new format. This will make it incompatible with Mixxx 1.8.1. <b>In order to try out Mixxx 1.9.0 beta1 you should upgrade to Mixxx 1.8.2, which we are also announcing today.</b>
+ You can switch back and forth between Mixxx 1.9.0 and Mixxx 1.8.2 with no trouble.<br />
+<br />
+Among the new features in 1.9.0 Beta1 are:<br />
+<ul><li><b>Shoutcast / Icecast support</b>
+</li>
+<ul><li>Mixxx can now broadcast over the internet (heavily requested feature)</li>
+</ul>
+<li><b>External Mixer Support</b>
+</li>
+<ul><li>The new Sound Hardware preferences pane allows you to route each playback deck separately, which allows you to use Mixxx with an external mixer.</li>
+</ul>
+<li><b>ReplayGain normalization</b>
+</li>
+<ul><li>A user from our forum worked closely with our developers to fully implement volume normalization, including performing the ReplayGain analysis for tracks which are not tagged.</li>
+</ul>
+<li><b>Waveform Gain</b>
+</li>
+<ul><li>The scrolling waveforms now scale according to the channel gain for better visual feedback.</li>
+</ul>
+<li><b>Key lock buttons</b>
+</li>
+<ul><li>Formerly known as "pitch-independent time stretch", there are now easily accessible key-lock buttons for each for deck.</li>
+</ul>
+<li><b>Revamped default skin</b>
+</li>
+<ul><li>Since the original source material for the Outline Netbook skin was lost eons ago, our artist completely redid it from scratch and tweaked it for better visibility. The new skin has also added EQ kill switches.</li>
+</ul>
+<li><b>HSS1394 support</b>
+ (Windows, OS X)</li>
+<ul><li>Mixxx now supports firewire HSS1394 MIDI devices such as the Stanton SCS 1 series.</li>
+</ul>
+<li><b>Improved FLAC support</b>
+</li>
+<ul><li>We're now using libFLAC directly for smoother FLAC decoding.</li>
+</ul>
+<li><b>Revamped metadata parsing</b>
+</li>
+<ul><li>Integration of <a href="http://developer.kde.org/~wheeler/taglib.html">TagLib</a>
+ allows Mixxx to parse more metadata from songs, and do it more consistently.</li>
+</ul>
+<li><b>Metadata writing</b>
+</li>
+<ul><li>Mixxx can now write changes in song metadata back to disk. This feature is off by default, and can be enabled in the Library preferences pane.</li>
+</ul>
+<li><b>Millisecond time display</b>
+</li>
+<ul><li>The time counters in Mixxx now have an extra millisecond display.</li>
+</ul>
+<li><b>Library improvements:</b>
+</li>
+<ul><li><b>Played column - </b>
+The library now indicates whether a song has been played in the current session already, and also counts the total number of times the song has been played.</li>
+<li><b>Ratings column - 5</b>
+ stars, no stars, or <a href="http://www.mail-archive.com/mixxx-devel@lists.sourceforge.net/msg03273.html">anywhere in between</a>
+.</li>
+<li><b>Better search </b>
+- Search now searches in more columns, and by-term instead of by-phrase.</li>
+<li><b>Revamped iTunes integration</b>
+ - A rewrite yielded a significant speedup of iTunes parsing.</li>
+<li><b>Faster library scanning - </b>
+The library scanner should perform much better on large libraries.</li>
+<li><b>Inline Editing - </b>
+double click any item in the track table to edit its contents.</li>
+<li><b>Record in MP3/Ogg -</b>
+ Now your recordings can be saved in either MP3 or Ogg/Vorbis format.</li>
+</ul>
+<li><b>New MIDI mappings:</b>
+</li>
+<ul><li>Vestax Typhoon</li>
+<li>Hercules DJ Console Mk4</li>
+<li>Numark MIXTRACK</li>
+<li>Pioneer CDJ-350</li>
+</ul>
+<li><b>Updated MIDI mappings:</b>
+</li>
+<ul><li>Hercules DJ Control MP3</li>
+<li>Hercules DJ Control e2</li>
+<li>Hercules DJ Control Steel</li>
+<li>Vestax VCI-100</li>
+<li>Reloop Digital Jockey 2</li>
+</ul>
+<li><b>Tons of bug fixes and performance improvements!</b>
+</li>
+</ul>
+<div><b><br />
+</b>
+</div>
+<div>Mixxx 1.8.2 has a wide variety of bug fixes, performance improvements, and the same MIDI mapping updates that 1.9.0 beta1 has.</div>
+<div><br />
+</div>
+<div>The Mixxx team would like to give a shout out to these up-and-coming contributors who had a huge hand in helping make 1.9.0 awesome (in alphabetical order):</div>
+<div><ul><li>Irwin Céspedes</li>
+<li>Vittorio Colao</li>
+<li>Joseph Colosimo</li>
+<li>Bill Good</li>
+<li>Anders Gunnarson</li>
+<li>Tobias Rafreider</li>
+<li>Owen Williams</li>
+</ul>
+<div><br />
+</div>
+</div>
+<div><div><span class="Apple-style-span"><b>Fundraiser</b>
+</span>
+ </div>
+<div><b></b>
+We're making great progress on our 1.9.0 Build Server fund, but we still need your help! This project will finance a <b>dedicated build server</b>
+ that we will use to create nightly builds and automate our release process. This means the development team will have way more time to focus on making Mixxx better instead of dealing with packaging. Money raised will go to cover the cost of the server, and any leftover money will cover other ongoing expenses like web hosting, and otherwise help <a href="http://pledgie.com/campaigns/13624">keep Mixxx rocking</a>
+!</div>
+<div><br />
+<div><div class="separator" style="clear: both; text-align: center;"><a href="http://www.pledgie.com/campaigns/13624" style="margin-left: 1em; margin-right: 1em;"><img alt="Click here to lend your support to: Mixxx 1.9 Build Server Fundraiser and make a donation at www.pledgie.com !" border="0" src="http://www.pledgie.com/campaigns/13624.png?skin_name=chrome" />
+</a>
+</div>
+<div class="separator" style="clear: both; text-align: center;"><br />
+</div>
+</div>
+</div>
+</div>
+<div></div>
+<div><b>New Ubuntu PPAs</b>
+<br />
+We've moved our official Mixxx repository for Ubuntu to a <a href="https://launchpad.net/~mixxx/+archive/mixxx/">new PPA</a>
+ to increase security. The old repository is still online for now, but Ubuntu users will have to follow the instructions on our <a href="http://www.mixxx.org/download.php">downloads page</a>
+ (click the Ubuntu download link) to get the new versions of Mixxx we've just released. There's also a separate <a href="https://launchpad.net/~mixxx/+archive/mixxxbetas/">Mixxx betas PPA</a>
+, for brave souls.<br />
+<br />
+<b></b>
+<br />
+<b>Bugs</b>
+</div>
+<div>We depend on feedback from our users to guide Mixxx's development, so please file any bugs you find in this beta release on the <a href="https://bugs.launchpad.net/mixxx">Mixxx bug tracker</a>
+. If you don't file a bug for the beta, don't be surprised when it isn't fixed in the final version!</div>
+<div><b><span class="Apple-style-span" style="font-weight: normal;"><br />
+</span>
+</b>
+</div>
+<b>Join Mixxx!</b>
+<br />
+<div>We're always looking for new contributors who are interested in working on Mixxx. If you're a programmer or artist and want to work with a creative, enthusiastic team, hop on our IRC channel (#mixxx on Freenode) or sign up for our <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">developers' mailing list</a>
+.</div>
+<br />
+<br />
+</div>
+<a class="FlattrButton" href="http://www.mixxx.org/" style="display: none;"></a>
+
+
+{% endblock %}

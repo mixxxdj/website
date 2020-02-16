@@ -1,0 +1,73 @@
+title: Mixxx 1.6.0 Beta2 Released!
+author: Unknown
+date: 2008-02-09 20:51:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+<img alt="" border="0" src="http://1.bp.blogspot.com/_hUprAdIclgE/R6frn8a81QI/AAAAAAAAAHA/C2V6YQJZzgw/s400/mixxx_beta2.png" id="BLOGGER_PHOTO_ID_5163354569270154498" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
+<br />
+We're proud to announce that the <span style="font-weight: bold;">second beta</span>
+ of Mixxx 1.6.0 <a href="http://mixxx.sourceforge.net/download/" style="font-weight: bold;">has been released</a>
+<span style="font-weight: bold;">!</span>
+<br />
+<br />
+Among the <span style="font-weight: bold;">changes</span>
+ since 1.6.0 beta1:<br />
+<ul><li>Fixed crashes due to vinyl emulation mode</li>
+<li>Improved compatibility with JACK (some users were experiencing choppiness)</li>
+<li>Players should now only pull from the play queue if in NEXT mode</li>
+<li>Search functionality:</li>
+<ul><li>Search box now selects all text when clicked (easier to make a new search now)</li>
+<li>When the search box is cleared, the library view will scroll back to it's previous position.</li>
+<li>Search now properly filters directories out</li>
+</ul>
+<li>Library stuff:</li>
+<ul><li>Double-clicking on a song now sends the song to the first stopped player.</li>
+<li>Right-click menu cleaned up, much nicer now</li>
+</ul>
+<ul><li>Library directory rescans on startup when it's been modified (*doesn't work when subdirectories are modified yet)</li>
+</ul>
+<ul><li>Library view now shows directories first</li>
+<li>Columns in the library view are proportioned intelligently now</li>
+<li>Renamed the "Playlist" menu to "Library"</li>
+<li>Added "Rescan Library" menu item.</li>
+<li>Can select multiple songs (hold shift) and send them to the play queue or a playlist</li>
+</ul>
+<li>Playlist support:</li>
+<ul><li>Can create, import, delete, and rename playlists</li>
+<li>Added "Playlists" to library drop-down box</li>
+<ul><li>Can right-click to send a playlist to the play queue.</li>
+</ul>
+</ul>
+<li>Fixed some bugs in the track properties dialog, and set default values</li>
+<li>Fixed a soundcard channel selection bug when the second device had more channels than the first.</li>
+<li>Added BPM Schemes (need to make some presets still)</li>
+<li>Minor speed optimization</li>
+<li><a href="http://mixxx.sourceforge.net/download.php">OS X/Leopard package for Intel users!</a>
+</li>
+<li>A few build system (dependency checking) fixes</li>
+<li>MIDI LED control on Linux</li>
+<li>A few MIDI tweaks here and there</li>
+<li>Right-clicking on a knob/slider no longer moves with your mouse (it just centers the value)</li>
+<li>Using your mouse's scroll wheel now changes the values of sliders and knobs (this is cool for laptop users with the little scroll bar at the side of their trackpads)</li>
+<li>DirectSound is now the default API on Windows</li>
+<li>Cleaned up the vinyl control preferences</li>
+</ul>
+We've also been working tirelessly on some <span style="font-weight: bold;">other big features</span>
+ that haven't made it into a release yet:<br />
+<ul><li><a href="http://mixxxblog.blogspot.com/2008/02/feature-preview-shoutcast-broadcasting.html">Shoutcast support</a>
+ (and indirectly, recording support)</li>
+<li><a href="http://mixxxblog.blogspot.com/2008/01/mixxxscript-sneaky-feature-preview.html">MixxxScript</a>
+</li>
+</ul>
+We're having some trouble sorting out this <span style="font-weight: bold;">JACK/Ubuntu bug</span>
+. A huge number of people can't get JACK to appear in our Sound API selection box on Ubuntu, and this is due to Ubuntu's PortAudio package not being able to find the JACK package when it's being built (I think). I've been unable to fix this, but someone from Ubuntu Studio told me that they'd have this fixed for Hardy. However, if someone wants to take a crack at fixing it (because I think there's still a good chance it'll be broken in Hardy if someone doesn't fix it very soon), the details of the problem are <a href="https://bugs.launchpad.net/mixxx/+bug/183011">available here</a>
+.<br />
+<br />
+Once again, you can pick up Mixxx 1.6.0 beta 2 on our <a href="http://www.mixxx.org/download/">downloads page</a>
+, and be sure to report any bugs you find in our <a href="https://bugs.launchpad.net/mixxx/">bug tracker</a>
+. Your feedback from beta 1 helped us identify the big issues people were having, and helped us make this release even better - thank you!
+
+{% endblock %}

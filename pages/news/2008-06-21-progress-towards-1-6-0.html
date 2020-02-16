@@ -1,0 +1,28 @@
+title: Progress towards 1.6.0
+author: Unknown
+date: 2008-06-21 18:49:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+These last few weeks of development have been pretty exciting. We've been tackling the bugs we've marked as "release critical", which means we're getting closer to the 1.6.0 final release.<br />
+<br />
+There's been improvements to the library as well as many other bug fixes made, and our <a href="http://mixxxblog.blogspot.com/2008/04/google-summer-of-code-2008-projects.html">Google Summer of Code</a>
+ students have all started writing code for <a href="http://www.mixxx.org/wiki/doku.php#google_summer_of_code_2008">their projects</a>
+. The sooner we get 1.6.0 released, the better our chances will be of getting a second stable release out this summer, which might include some of the features being worked on by our students right now.<br />
+<br />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://bugs.launchpad.net/mixxx/1.6/+bugs"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://3.bp.blogspot.com/_hUprAdIclgE/SF1QRNNfNSI/AAAAAAAAAMc/mS4jb1HuRrU/s400/bugchart.png" alt="" id="BLOGGER_PHOTO_ID_5214412200099132706" border="0" />
+</a>
+<br />
+In the meantime, we need your help to track down <a href="https://bugs.launchpad.net/mixxx/1.6/+bugs">these last few bugs</a>
+. In particular, we need help with the following bugs:<br />
+<ul><li><a href="https://bugs.launchpad.net/mixxx/1.6/+bug/235807">WinXP reports error on initial library scan</a>
+ - If you had an MP3 that was causing Mixxx's library scanner to crash, please test the new Mixxx version posted in one of the comments on this bug report and let us know if you still have the problem.<br />
+</li>
+<li><a href="https://bugs.launchpad.net/mixxx/1.6/+bug/223464">Program fails to open</a>
+ (WinXP) - If Mixxx just wasn't opening for you, please try the new SVN release posted in this link as well.</li>
+</ul>
+If you can, please help us by trying to reproduce these bugs. Depending on how this last round of bug fixing goes, we'll either release Beta 4 or a release candidate, and then hopefully the 1.6.0 final shortly thereafter. We're also going to be working on an overhaul of the Mixxx site, which should spice it up quite a bit. Stay tuned!
+
+{% endblock %}
