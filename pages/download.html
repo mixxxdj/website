@@ -211,8 +211,9 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
   <h1>{% blocktrans %}Download Now ({{ stable_version }} Stable){% endblocktrans %}</h1>
   <div class="fullwidth">
     <p>{% blocktrans %}Check out the <a href="{{ stable_release_announcement }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
-    <p>{% blocktrans with previous_link="#previous" %}(Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.){% endblocktrans %}</p>
-    <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free and donations are appreciated!" %}</p>
+    <p>{% blocktrans with previous_link="#previous" %}Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.{% endblocktrans %}</p>
+    <p>{% trans "Mixxx is available for Windows, macOS, and Linux." %}<br/>
+    {% trans "We happily provide Mixxx for free and donations are appreciated!" %}</p>
     {% include "donate_paypal.html" %}
   </div>
   <div style="clear: both;"></div>
@@ -276,9 +277,9 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
           onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
         {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Bionic{% endblocktrans %}</a></p>
 
-    <div style="width: 66%; margin: 0 auto;">
+    <p class="feature_indent">
       <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.{% endblocktrans %}</small>
-    </div>
+    </p>
   </div>
 
   <div class="halfbox_right darkborder fedorabox">
@@ -307,7 +308,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 
   <div style="clear: both;"></div>
 
-  <div style="padding: 20px;">
+  <div class="feature_indent" style="padding: 0px 0px 20px 20px;">
     <h2>{% trans "Linux / Source Code" %}</h2>
     <p>
       <a href="{{ stable_linuxsrc }}"
@@ -349,9 +350,10 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
          onClick="javascript:trackDownload('{{ previous_win64_analytics_conversion }}');">
         {% blocktrans %}Download {{ previous_version }} for 64-bit Windows {{ previous_win_min_version }} or later {% endblocktrans %}</a>
     </p>
-
     <br>
-    <p><small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small></p>
+    <p class="feature_indent">
+      <small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small>
+    </p>
   </div>
 
   <div class="halfbox_right darkborder macbox">
@@ -375,6 +377,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 
   <div style="clear: both;"></div>
 
+  <div class="feature_indent" style="padding: 0px 0px 20px 20px;">
     <h2>{% trans "Linux / Source Code" %}</h2>
     <p>
       <a href="{{ previous_linuxsrc }}"
