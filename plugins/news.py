@@ -10,8 +10,30 @@ from django.template.loader_tags import BlockNode, ExtendsNode
 ORDER = 999
 POSTS_PATH = "news/"
 POSTS = []
-DEFAULTS = {
-    "author": "Mixxx Team",
+AUTHOR_METADATA = {
+    '': {
+        "name": "Mixxx Team",
+        "url": "https://github.com/orgs/mixxxdj/people",
+    },
+    'Be.': {
+        'github': 'Be-ing',
+        'email': 'be@mixxx.org',
+    },
+    'Albert': {
+        'github': 'asantoni',
+    },
+    'Holzhaus': {
+        'name': 'Jan Holthuis',
+        'github': 'Holzhaus',
+        'email': 'jholthuis@mixxx.org',
+    },
+    'RJ Ryan': {
+        'github': 'rryan',
+        'email': 'rryan@mixxx.org',
+    },
+    'Pegasus': {
+        'github': 'Pegasus-RPG',
+    },
 }
 
 
@@ -46,9 +68,9 @@ def preBuild(site):
 
         # Find a specific defined variable in the page context,
         # and throw a warning if we're missing it.
-        def find(name):
-            value = page.context().get(name, DEFAULTS.get(name, ""))
-            if not value:
+        def find(name, warn=True):
+            value = page.context().get(name, "")
+            if warn and not value:
                 logging.warning(
                     "Missing info '%s' for post %s" % (name, page.path)
                 )
@@ -58,6 +80,21 @@ def preBuild(site):
         postContext = {}
         postContext["title"] = find("title")
         postContext["author"] = find("author")
+        postContext["author_url"] = find("author_url", warn=False)
+        postContext["author_github"] = find("author_github", warn=False)
+        postContext["author_email"] = find("author_email", warn=False)
+        author_metadata = AUTHOR_METADATA.get(postContext["author"])
+        if author_metadata:
+            if "name" in author_metadata:
+                postContext["author"] = author_metadata["name"]
+            if not postContext["author_url"]:
+                postContext["author_url"] = author_metadata.get("url", "")
+            if not postContext["author_github"]:
+                postContext["author_github"] = author_metadata.get(
+                    "github", "")
+            if not postContext["author_email"]:
+                postContext["author_email"] = author_metadata.get("email", "")
+
         postContext["date"] = find("date")
         postContext["path"] = posixpath.join("/", page.path)
         context.update({"__CACTUS_CURRENT_PAGE__": page})
