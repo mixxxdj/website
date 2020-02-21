@@ -66,6 +66,38 @@
     <div style="clear: both;"></div>
   </div>
 
+  {% if posts|length >= 2 %}
+  <h1>{% trans "Latest News" %}</h1>
+  <p class="header">
+    {% blocktrans %}To see a list of all news and announcements, head over to <a href="/news">our news page</a> or subscribe to the <a href="/feed.xml">Atom feed</a>.{% endblocktrans %}
+  </p>
+
+  <div class="halfbox_left">
+    {% with post=posts|first %}
+    <h2>{{ post.title }}</h2>
+    <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
+    <p>
+      <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
+      (<time pubdate="pubdate">{{ post.date|date:"SHORT_DATE_FORMAT" }}</time>)
+    </p>
+    {% endwith %}
+  </div>
+
+  <div class="halfbox_right">
+    {% with post=posts|slice:"1:"|first %}
+    <h2>{{ post.title }}</h2>
+    <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
+    <p>
+      <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
+      (<time pubdate="pubdate">{{ post.date|date:"SHORT_DATE_FORMAT" }}</time>)
+    </p>
+    {% endwith %}
+  </div>
+
+  <div style="clear: both;"></div>
+  {% endif %}
+
+
   <h1>{% trans "Friendly Community" %}</h1>
   <p class="header">
     {% blocktrans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endblocktrans %}
