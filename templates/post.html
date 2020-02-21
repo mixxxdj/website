@@ -11,7 +11,19 @@
     {# Post content #}
     <p style="font-size: small;">
       Posted on <time pubdate="pubdate">{{ date|date:"SHORT_DATE_FORMAT" }}</time>
-      by <span class="author">{{ author }}</span>
+      {% if author %}
+      by
+      <span class="author">
+      {% if author_url %}
+        <a href="{{ author_url }}">{{ author }}</a>
+      {% else %}
+        {{ author }}
+      {% endif %}
+      {% if author_github %}
+        (<a href="https://github.com/{{ author_github }}">@{{ author_github }}</a>)
+      {% endif %}
+      </span>
+      {% endif %}
     </p>
     {% block post %}{% endblock %}
     <div style="clear: both;"></div>

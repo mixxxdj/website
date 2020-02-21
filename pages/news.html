@@ -14,7 +14,19 @@
     <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
     <p style="font-size: small;">
       Posted on <time pubdate="pubdate">{{ post.date|date:"SHORT_DATE_FORMAT" }}</time>
-      by <span class="author">{{ post.author }}</span>
+      {% if post.author %}
+      by
+      <span class="author">
+      {% if post.author_url %}
+        <a href="{{ post.author_url }}">{{ post.author }}</a>
+      {% else %}
+        {{ post.author }}
+      {% endif %}
+      {% if post.author_github %}
+        (<a href="https://github.com/{{ post.author_github }}">@{{ post.author_github }}</a>)
+      {% endif %}
+      </span>
+      {% endif %}
     </p>
 
     {{ post.post }}
