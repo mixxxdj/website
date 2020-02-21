@@ -14,6 +14,14 @@
     <title>{{ post.title }}</title>
     <author>
         <name>{{ post.author }}</name>
+        {% if post.author_email %}
+        <email>{{ post.author_email }}</email>
+        {% endif %}
+        {% if post.author_url %}
+        <uri>{{ post.author_url }}</uri>
+        {% elif post.author_github %}
+        <uri>https://github.com/{{ post.author_github }}</uri>
+        {% endif %}
     </author>
     <link href="{% url post.path %}"/>
     <updated>{{ post.date|date:"c" }}</updated>
