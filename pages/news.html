@@ -39,7 +39,7 @@
       {% for post in posts|slice:"1:" %}
       <li>
         <strong><a href="{% url post.path %}">{{ post.title }}</a></strong>
-        ({{ post.date|date:"SHORT_DATE_FORMAT" }})
+        ({{ post.date|date:"Y-m-d" }})
       </li>
       {% endfor %}
     </ul>
