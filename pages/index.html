@@ -78,7 +78,7 @@
     <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
     <p>
       <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
-      (<time pubdate="pubdate">{{ post.date|date:"SHORT_DATE_FORMAT" }}</time>)
+      (<time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>)
     </p>
     {% endwith %}
   </div>
@@ -89,7 +89,7 @@
     <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
     <p>
       <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
-      (<time pubdate="pubdate">{{ post.date|date:"SHORT_DATE_FORMAT" }}</time>)
+      (<time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>)
     </p>
     {% endwith %}
   </div>
