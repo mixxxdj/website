@@ -25,6 +25,7 @@ This has several advantages:
   We managed to reduce the line count from approximately 8000 lines of Python code down to a 2300 line `CMakeLists.txt` file plus modules - all in all we reduces the line count by almost 3000 lines.
 - If you prefer a graphical "build" button over compiling Mixxx on the command line, this is now possible:
   IDEs such as [KDevelop](https://www.kdevelop.org/features), [Visual Studio](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=vs-2019) or [CLion](https://www.jetbrains.com/en-us/clion/features/cmake-support.html) have support for CMake built-in.
+  There is even a [standalone GUI](https://cmake.org/runningcmake/) that you can try.
 - Improved caching:
   Unnecessary recompilation is annoying and a waste of time.
   To avoid this, we had a custom caching solution in SCons, which cached the compilation units based on the git branch you're working on.
@@ -32,7 +33,9 @@ This has several advantages:
   With CMake, we added support for [ccache](https://ccache.dev/) (and [clcache](https://github.com/frerich/clcache) on Windows), which makes development significantly faster.
 - Arguably, CMake is vastly more popular than SCons, so we hope that more people be able to build and contribute to Mixxx.
 
-Most of our core developers already switched over to CMake as their daily driver when working on Mixxx, but since it hasn't been as widely tested as we'd like, we label the CMake support as "experimental" for the 2.3 and stick with SCons for the release builds.
+Note that there are still some issues with building Mixxx on OSX, so if you own a Mac we'd appreciate if you help us out.
+Apart from that, it's already working quite well.
+Most of our core developers already switched over to CMake as their daily driver when working on Mixxx, but since it hasn't been as widely tested as we'd like, we label the support as "experimental" for the 2.3 and stick with SCons for the release builds.
 We plan to drop SCons and fully migrate over to CMake in 2.4.
 
 If you want to try out building Mixxx with CMake yourself, check the instructions in [our wiki](https://mixxx.org/wiki/doku.php/compiling_on_linux#cmake).
