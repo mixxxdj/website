@@ -1,0 +1,46 @@
+title: New in 2.3: Importing tracks and cues from Serato
+author: Holzhaus
+date: 2020-XX-XX 20:00:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown %}
+
+As all of you probably know, Mixxx is the best DJ software in the market.
+However, we've recently been made aware that a minor competitor has emerged and tries to steal that title from us - [Serato DJ Pro](https://serato.com/dj/pro).
+Since Serato is neither open-source nor as customizable, we're not too concerned.
+From the user's perpective, switching to the most popular open-source DJ software in world seems like the obvious choice.
+
+Unfortunately, migrating from Serato to Mixxx is a lot of work - apart from familiarizing yourself with a new tool, all the countless hours you spent to organize and prepare the tracks in your old library are lost, and your need to start from scratch.
+At least until now - if you're a Serato user and cast and eye on Mixxx, we've got a nice surprise for you.
+
+In addition to Rekordbox device libraries {# TODO: Add link to rekordbox blogpost #}, we added support for reading Serato's database files in Mixxx 2.3, too.
+This means that the tracks from your [Serato library](https://support.serato.com/hc/en-us/articles/203015464-Sorting-and-browsing-your-library) will show up in in the library table and can be directly loaded onto decks without the need to add the music directory to in the preferences.
+[Crates created in Serato](https://support.serato.com/hc/en-us/articles/227561407-Crates) are also supported, so your collection is still neatly organized.
+
+If you have USB drives with a [portable Serato library](https://support.serato.com/hc/en-us/articles/202304844-Using-a-USB-external-hard-drive-for-your-portable-library) on it, we've got you covered as well:
+Libraries and crates on external USB drives will work on all supported platforms - even on Linux!
+
+{# TODO: Insert screenshot of Serato library feature once the skins are finalized. #}
+
+Sorting tracks in your library is importing, but preparing [cue points](https://support.serato.com/hc/en-us/articles/226518228-Cue-Points) in tracks is probably the most time-consuming task.
+Serato saves them in special file tags along with the other track metadata like title, artist and so on.
+
+It took a lot of work, but we finally manage to reverse-engineer the binary format that is used by Serato to a degree that allows us to parse this information and use it in Mixxx.
+This means you can import the positions, labels and colors of your hotcues into Mixxx automatically when you load the track for the first time.
+
+{# TODO: Insert side-by-side screenshot of hotcues in Mixxx and Serato once the skins are finalized. #}
+
+If your already added a track to your Mixxx library before support for reading Serato's hotcues was added, you can trigger a reimport of the metadata via the track context menu.
+Note that this will clear your existing cuepoints in Mixxx if the track has any Serato hotcues.
+
+{# TODO: Add screenshot of reimport metadata context menu entry. #}
+
+
+{# TODO: Document BPM lock, track color and add caveats. #}
+
+{% endfilter %}
+{% endblock %}
