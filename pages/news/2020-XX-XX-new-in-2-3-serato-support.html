@@ -11,11 +11,13 @@ date: 2020-XX-XX 20:00:00
 
 As all of you probably know, Mixxx is the best DJ software in the market.
 However, we've recently been made aware that a minor competitor has emerged and tries to steal that title from us - [Serato DJ Pro](https://serato.com/dj/pro).
-Since Serato is neither open-source nor as customizable, we're not too concerned.
+The hardware support is nice, but since Serato is neither open-source nor as customizable, we're not too concerned.
 From the user's perpective, switching to the most popular open-source DJ software in world seems like the obvious choice.
 
 Unfortunately, migrating from Serato to Mixxx is a lot of work - apart from familiarizing yourself with a new tool, all the countless hours you spent to organize and prepare the tracks in your old library are lost, and your need to start from scratch.
 At least until now - if you're a Serato user and cast and eye on Mixxx, we've got a nice surprise for you.
+
+## Using your Serato libray in Mixxx
 
 In addition to Rekordbox device libraries {# TODO: Add link to rekordbox blogpost #}, we added support for reading Serato's database files in Mixxx 2.3, too.
 This means that the tracks from your [Serato library](https://support.serato.com/hc/en-us/articles/203015464-Sorting-and-browsing-your-library) will show up in in the library table and can be directly loaded onto decks without the need to add the music directory to in the preferences.
@@ -28,19 +30,49 @@ Libraries and crates on external USB drives will work on all supported platforms
 
 Sorting tracks in your library is importing, but preparing [cue points](https://support.serato.com/hc/en-us/articles/226518228-Cue-Points) in tracks is probably the most time-consuming task.
 Serato saves them in special file tags along with the other track metadata like title, artist and so on.
+It took a months of work, but we finally manage to [reverse-engineer the binary formats](https://github.com/Holzhaus/serato-tags) that are used by Serato to a degree that allows us to parse this information and use it in Mixxx.
 
-It took a lot of work, but we finally manage to reverse-engineer the binary format that is used by Serato to a degree that allows us to parse this information and use it in Mixxx.
+## Importing your Hotcues
+
 This means you can import the positions, labels and colors of your hotcues into Mixxx automatically when you load the track for the first time.
 
 {# TODO: Insert side-by-side screenshot of hotcues in Mixxx and Serato once the skins are finalized. #}
 
-If your already added a track to your Mixxx library before support for reading Serato's hotcues was added, you can trigger a reimport of the metadata via the track context menu.
+If you already added a track to your Mixxx library before support for reading Serato's hotcues was added, you can trigger a reimport of the metadata via the track context menu.
 Note that this will clear your existing cuepoints in Mixxx if the track has any Serato hotcues.
 
 {# TODO: Add screenshot of reimport metadata context menu entry. #}
 
+Unfortunately, a myriad of encoders and decoders for lossy formats such as MP3 and M4A/AAC exist, which leads to a situation where all decodes detect slightly different track start and end times for files from different sources.
+Hence, your cues might end up shifted by a few milliseconds.
 
-{# TODO: Document BPM lock, track color and add caveats. #}
+We've done our best to mitigate the problem, but if you experience issues we'd appreciate if you get in touch with us on Zulip and work with us to make the offset correction more accurate.
+Additionally, we've added a way to shift all cues for a track at once. This makes it possible to fix the cue positions if Mixxx fails to determine the correct offsets.
+
+## Support for other Serato metadata
+
+Mixxx 2.3 will also import saved loops from Serato, but proper support for saving and restoring loops is scheduled for 2.4.
+For the time being, we just import these loops into the Mixxx database and allows using their start position as regular hotcues.
+That way, you can start using your loops once 2.4 is out without the need to reimport your metadata (which would undo your cue modifications in Mixxx).
+
+Other Serato metadata that we parse include the track color and the BPM lock status.
+Serato also stores other information like the overview waveform image and the beatgrid in the file tags, but we don't import that information in Mixxx 2.3.
+[Serato Flip](https://serato.com/dj/pro/expansions/flip) hotcue macros are not imported either, because Mixxx does not support that kind of functionality yet.
+This is going to change with this year's GSoC project by Janek Fischer, so hopefully we'll be able to be able to import them in the future.
+
+## Writing Serato's Tags?
+
+Currently, it's not possible to write cues from Mixxx into Serato metadata tags.
+
+At Mixxx, we believe vendor lock-in is a bad thing and that users should be free to use the DJ software they like best.
+While these changes allow your to migrate from Serato to Mixxx with less friction we don't want to lock user into Mixxx either.
+
+This means were looking to adding support for Serato metadata export in upcoming Mixxx releases.
+Even for Mixxx-only users this would make it easy to transfers cue points between multiple computers.
+
+Since it's a complex undocumented binary-only format, we didn't want to rush adding support for writing these tags.
+Bugs in the code or misperceptions about the format might lead to be possible to encounter problems could lead to data loss and potentially even crash Serato.
+Hence, we don't support tag export in Mixxx 2.3 - but stay tuned!
 
 {% endfilter %}
 {% endblock %}
