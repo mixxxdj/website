@@ -1,0 +1,59 @@
+title: New in 2.3: Color your Hotcues
+author: Holzhaus
+date: 2020-XX-XX 20:00:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown %}
+
+Hotcues are a neat thing and one of the major benefits of digital DJing.
+On analogue vinyl decks, you had had to put stickers to mark the different sections of a song and physically pick up, move and drop the needle to move to it.
+With the move to digital DJ setups, a new way to navigate tracks emerged: Hotcues now allow you to "bookmark" different spots in a track and quickly move to these positions in the blink of an eye, even while track is playing on the PA.
+
+Mixxx has supported them for more than 10 years now:
+Initial support for numbered hotcues has been added in 2009.
+
+However, it can be challenging to remember the correct number in the heat of the moment.
+Accidently pressing the wrong hotcue pad is not something can mess up your set when the track is audible.
+
+In 2015, support for hotcue labels was added to mitigate this problem.
+These can be arbitrary text that is shown on the waveforms.
+
+## Color your Hotcues
+
+With Mixxx 2.3, the next major improvement is coming:
+Hotcues can now have individual colors to make them visually distinguishable.
+
+{# TODO: Add screenshot of hotcue buttons and color picker once the skins are finalized. #}
+
+{# TODO: Mention some potential patterns for coloring hotcues #}
+
+## Pick the colors YOU like
+
+By default, you can pick a color from the Mixxx Hotcue Color palette.
+That palette contains 9 distinct colors that are easy to distinguish.
+
+Personal preferences differ though, and it's probably impossible to suit everyones taste.
+This is why - unlike most other DJ software - you are not restricted to the single predefined color palette we picked.
+
+If you previously used Serato DJ Pro, Rekordbox, Traktor or VirtualDJ and like their color palettes better ours, we've got you covered.
+You can also use one of their palettes instead.
+
+{# TODO: Add screenshot of hotcue color palette combobox. #}
+
+But it doesn't stop there:
+We also added a color palette editor that can be used to rearrange and customize these palettes and even design *your own palette* using any RGB colors you like.
+
+{# TODO: Add screenshot of palette editor. #}
+
+{# TODO: Mention coloring hotcues by index automatically #}
+
+## Adding support on controllers
+
+{# TODO: Explain ColorMapper approach and add an example video/GIF of it in action. #}
+
+{% endfilter %}
+{% endblock %}
