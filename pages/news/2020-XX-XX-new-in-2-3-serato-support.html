@@ -15,7 +15,7 @@ The hardware support is nice, but since Serato is neither open-source nor as cus
 From the user's perpective, switching to the most popular open-source DJ software in world seems like the obvious choice.
 
 Unfortunately, migrating from Serato to Mixxx is a lot of work - apart from familiarizing yourself with a new tool, all the countless hours you spent to organize and prepare the tracks in your old library are lost, and your need to start from scratch.
-At least until now - if you're a Serato user and cast and eye on Mixxx, we've got a nice surprise for you.
+At least until now - if you're a Serato user and cast an eye on Mixxx, we've got a nice surprise for you.
 
 ## Using your Serato libray in Mixxx
 
@@ -58,20 +58,20 @@ That way, you can start using your loops once 2.4 is out without the need to rei
 Other Serato metadata that we parse include the track color and the BPM lock status.
 Serato also stores other information like the overview waveform image and the beatgrid in the file tags, but we don't import that information in Mixxx 2.3.
 [Serato Flip](https://serato.com/dj/pro/expansions/flip) hotcue macros are not imported either, because Mixxx does not support that kind of functionality yet.
-This is going to change with this year's GSoC project by Janek Fischer, so hopefully we'll be able to be able to import them in the future.
+This is going to change with this year's GSoC project by Janek Fischer, so hopefully we'll be able to import them in the future.
 
 ## Writing Serato's Tags?
 
 Currently, it's not possible to write cues from Mixxx into Serato metadata tags.
 
 At Mixxx, we believe vendor lock-in is a bad thing and that users should be free to use the DJ software they like best.
-While these changes allow your to migrate from Serato to Mixxx with less friction we don't want to lock user into Mixxx either.
+While these changes allow you to migrate from Serato to Mixxx with less friction we don't want to lock user into Mixxx either.
 
-This means were looking to adding support for Serato metadata export in upcoming Mixxx releases.
-Even for Mixxx-only users this would make it easy to transfers cue points between multiple computers.
+This means we're looking into adding support for Serato metadata export in upcoming Mixxx releases.
+Even for Mixxx-only users this would make it easy to transfer cue points between multiple computers.
 
 Since it's a complex undocumented binary-only format, we didn't want to rush adding support for writing these tags.
-Bugs in the code or misperceptions about the format might lead to be possible to encounter problems could lead to data loss and potentially even crash Serato.
+Bugs in the code or misperceptions about the format might lead to data loss and potentially even crash Serato.
 Hence, we don't support tag export in Mixxx 2.3 - but stay tuned!
 
 {% endfilter %}
