@@ -62,7 +62,7 @@ Say you want to set a cue point before the main vocal part, and you want it colo
 You can configure Mixxx to always assign "blue" to the hotcues number 5, and then just set hotcue number 5 at the desired position - done.
 
 If you do this, that also means that a hotcue of the same type (e.g. "before main vocals") does not only have the same color but is also assigned to the same hotcue pad.
-Hence, the possibility of getting confused during a gig is reduced even more than when just using colors.
+Hence, the possibility of getting confused during a gig is reduced even more than when just using colors as visual aid.
 
 {# TODO: Add GIF that shows color palette editor with indices and setting new hotcues with colors. #}
 
@@ -109,7 +109,7 @@ For example, red could be color 1, blue is color 2, yellow is color 3, green is 
 
 We added a `ColorMapper` class that you can use to establish a mapping between these IDs and and can be used to get the appropriate MIDI value for a given color.
 
-For the more technically inclined, here's some source code example how to use it in a JavaScript controller mapping:
+For the more technically inclined, here's a source code example how to use it in a JavaScript controller mapping:
 
 ```javascript
 var colors = new ColorMapper({
@@ -143,7 +143,7 @@ var value = colors.getNearestValue(0x0000AA)
 
 Seems complicated?
 It doesn't have to be.
-If your mapping already uses our JavaScript Components library, you don't actually need to call `ColorMapper::getNearestValue()` yourself though.
+If your mapping already uses our JavaScript Components library, you don't actually need to call `ColorMapper::getNearestValue()` yourself.
 Just create a `ColorMapper` object and pass it to the `HotcueButton` and your colored hotcue pads should start working!
 
 We also added control objects to to make it possible assign a different color to an existing hotcue from your controller.
