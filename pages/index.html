@@ -9,7 +9,29 @@
 
 <div id="splash">
   <h1>{% trans "DJ Your Way" %}</h1>
-  <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}">
+
+  <div id="gallery" class="center">
+    <img id="gallery_image1" class="gallery_image" src="{% static '/static/images/feature_skins_deere.png' %}" />
+    <img id="gallery_image2" class="gallery_image" src="{% static '/static/images/feature_skins_latenight.png' %}" />
+    <img id="gallery_image3" class="gallery_image" src="{% static '/static/images/feature_skins_shade.png' %}" />
+    <img id="gallery_image4" class="gallery_image" src="{% static '/static/images/feature_skins_tango.png' %}" />
+  </div>
+
+  <div id="gallery_thumbnails">
+    <a href="#gallery_image1">
+      <img class="gallery_thumbnail" src="{% static '/static/images/feature_skins_deere.png' %}" />
+    </a>
+    <a href="#gallery_image2">
+      <img class="gallery_thumbnail" src="{% static '/static/images/feature_skins_latenight.png' %}" />
+    </a>
+    <a href="#gallery_image3">
+      <img class="gallery_thumbnail" src="{% static '/static/images/feature_skins_shade.png' %}" />
+    </a>
+    <a href="#gallery_image4">
+      <img class="gallery_thumbnail" src="{% static '/static/images/feature_skins_tango.png' %}" />
+    </a>
+  </div>
+
 </div>
 {% endblock %}
 

@@ -269,13 +269,36 @@ p#navbar_tinylinks
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: #000000;
-    text-align: center;
 }
 
-#splash img
+#gallery
 {
-    height: auto;
-    width: 676px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    width: 445px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.gallery_image
+{
+    display: flex;
+    max-width: 100%;
+}
+
+#gallery_thumbnails
+{
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.gallery_thumbnail
+{
+    width: 200px;
 }
 
 .gapfiller
