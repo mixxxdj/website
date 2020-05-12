@@ -1,0 +1,102 @@
+title: Mixxx 1.8 Preview
+author: Albert
+date: 2009-12-23 21:56:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+After many months of planning and development, we're finally approaching a beta release of Mixxx 1.8. Since our last release, several major new features have matured and are almost ready for public testing.<br />
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+Our main focus for 1.8 has been improving the library, which is a direct result of continued feedback from our users. We're also excited to have been able to address several other major feature requests, and we think 1.8 is a big step in the right direction.<br />
+<div><br />
+</div>
+<div><b><span class="Apple-style-span"  style="font-size:large;">Library</span>
+</b>
+<br />
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;"><br />
+</span>
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+The brand new database-powered library is not only faster, but much more flexible as well. The new library features include:<br />
+<div><ul><img border="0" src="{% static '/static/images/news/crate2.png' %}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" />
+<li>Keep your library organized by sorting your tracks into <span style="font-weight: bold;">crates</span>
+.</li>
+<li>Need to take a break for a few minutes? Throw some tracks into the <span style="font-weight: bold;">Auto DJ</span>
+ playlist and let Mixxx cover you. </li>
+<li>The new <b>Analyze </b>
+view lets you peek at your recently added tracks and perform batch BPM detection.</li>
+<li>A brand new <b>intelligent library scanning</b>
+ algorithm is both quick and accurate at importing new tracks when you launch Mixxx. The library scanner is even smart enough to notice when you've moved tracks around inside your library and preserves any extra metadata you've added in Mixxx like comments and BPMs.</li>
+</ul>
+<div style="text-align: center;"><a href="{% static '/static/images/news/Picture-2.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5412606959893890962" src="{% static '/static/images/news/Picture-2.png' %}" style="cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
+</a>
+<span style="font-style: italic;">Crates in the new library<br />
+</span>
+<br />
+</div>
+<br />
+<b><span class="Apple-style-span"  style="font-size:large;">Looping and Ramping Pitch Bend<br />
+</span>
+</b>
+<span class="Apple-style-span" style="white-space: pre;"><br />
+</span>
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+A major rework of our audio engine also brings <span style="font-weight: bold;">looping</span>
+ to the next release of Mixxx. Running out of time to find that perfect next track for your mix? Lay down a loop and buy yourself more time. Unlike the competition, Mixxx has no limitations on the length of your loop, so you can be as creative as you want to be.<br />
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+Additional work on our mixing engine has lead to a new feature we call <b>ramping pitch bend</b>
+. Ramping pitch bend helps you add extra smoothness to your mixes by making temporary pitch bends accelerate rather than jump suddenly.<br />
+<br />
+<b><span class="Apple-style-span"  style="font-size:large;">MIDI Enhancements</span>
+</b>
+<span class="Apple-style-span"  style="font-size:large;"><br />
+</span>
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;"><br />
+</span>
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+A brand new MIDI backend completes the rewrite of Mixxx's MIDI code, the first part of which was included in 1.7 and enabled <a href="{% url '/news/2009-06-19-mixxx-with-stanton-scs3d-and-scs1m.html' %}">innovative</a>
+ new features like our <a href="http://www.mixxx.org/wiki/doku.php/midi_scripting">MIDI scripting engine</a>
+. The hot new addition for 1.8 is integrated <b>multiple MIDI device support</b>
+.<br />
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+What do we mean by integrated? Check it out:<br />
+<br />
+</div>
+<div><br />
+<center><object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/ccOvlwXW5Fw&amp;hl=en_US&amp;fs=1&amp;"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/ccOvlwXW5Fw&amp;hl=en_US&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+</object>
+</center>
+<br />
+<br />
+<br />
+</div>
+<div><b><span class="Apple-style-span"  style="font-size:large;">AAC and iTunes Support</span>
+</b>
+<span class="Apple-style-span"  style="font-size:large;"><br />
+</span>
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;"><br />
+</span>
+</div>
+<div><span class="Apple-style-span" style="white-space: pre;">    </span>
+Mixxx 1.8 can playback DRM-free AAC/M4A files on Windows, Mac OS X, and Linux. On Windows and OS X, Mixxx can also now see your iTunes library and let you play tracks from it without importing them.<br />
+<br />
+    In addition to a 1.8 beta, we're also preparing a 1.7.2 bug fix release. This release will fix MIDI on OS X and improve stability for certain hardware configurations.</div>
+<div>    2009 has been an exciting year for Mixxx, and 2010 is shaping up to be even better. As the year closes, we'd like to thank all of our generous contributors and supporters. We hope you're looking forward to next year as much as we are!<br />
+</div>
+<div><br />
+</div>
+<div><br />
+</div>
+</div>
+</div>
+
+
+{% endblock %}

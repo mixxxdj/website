@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  {% load i18n %}
+  <title>{% trans "Mixxx News" %}</title>
+  <updated>{% now "c" %}</updated>
+  <author>
+    <name>Mixxx Team</name>
+    <email>press@mixx.org</email>
+    <uri>{% url "/" %}</uri>
+  </author>
+
+  {% for post in posts %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <author>
+        <name>{{ post.author }}</name>
+        {% if post.author_email %}
+        <email>{{ post.author_email }}</email>
+        {% endif %}
+        {% if post.author_url %}
+        <uri>{{ post.author_url }}</uri>
+        {% elif post.author_github %}
+        <uri>https://github.com/{{ post.author_github }}</uri>
+        {% endif %}
+    </author>
+    <link href="{% url post.path %}"/>
+    <updated>{{ post.date|date:"c" }}</updated>
+    <summary><![CDATA[{{ post.post|truncatewords_html:30}}]]></summary>
+    <content><![CDATA[{{ post.post }}]]></content>
+  </entry>
+  {% endfor %}
+</feed>

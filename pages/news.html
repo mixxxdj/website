@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "News" %}{% endblock %}
+
+{% block body %}
+<div class="content">
+  <h1>{% trans "News and Announcements" %}</h1>
+
+  <div class="fullwidth">
+    {# Show most recent news post #}
+    {% with post=posts|first %}
+    <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
+    <p style="font-size: small;">
+      Posted on <time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>
+      {% if post.author %}
+      by
+      <span class="author">
+      {% if post.author_url %}
+        <a href="{{ post.author_url }}">{{ post.author }}</a>
+      {% else %}
+        {{ post.author }}
+      {% endif %}
+      {% if post.author_github %}
+        (<a href="https://github.com/{{ post.author_github }}">@{{ post.author_github }}</a>)
+      {% endif %}
+      </span>
+      {% endif %}
+    </p>
+
+    {{ post.post }}
+    {% endwith %}
+    <div style="clear: both;"></div>
+
+    {# List other news posts #}
+    <h2>{% trans "Older News" %}</h2>
+    <ul>
+      {% for post in posts|slice:"1:" %}
+      <li>
+        <strong><a href="{% url post.path %}">{{ post.title }}</a></strong>
+        ({{ post.date|date:"Y-m-d" }})
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock %}
