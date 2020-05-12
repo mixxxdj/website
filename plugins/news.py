@@ -34,6 +34,10 @@ AUTHOR_METADATA = {
     'Pegasus': {
         'github': 'Pegasus-RPG',
     },
+    'ehendrikd': {
+        'name': 'Evan',
+        'github': 'ehendrikd',
+    },
 }
 
 
