@@ -4,12 +4,10 @@
   <div id="nav_logo">
     <a href="/"><img src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx"></a>
   </div>
-  <div id="navbar_links">
   {% for href, title, cont in NAV_MENU %}
-    {# using non-breaking spaces here! #}
-    <a class="menu_item" href="{{ href }}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
+  {# using non-breaking spaces here! #}
+  <a class="menu_item" href="{{ href }}">{% filter nbsp %}{% trans title context cont %}{% endfilter %}</a>
   {% endfor %}
-  </div>
+  {% include "social_sidebar.html" %}
   {% include "hamburger_menu.html" %}
-  <div style="clear: both;"></div>
 </div>

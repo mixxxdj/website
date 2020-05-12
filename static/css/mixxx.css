@@ -105,27 +105,25 @@ img.center
 /* styles for rest of page */
 
 /* links to social media */
-#driveby_social
+#header_social
 {
-    z-index: 5;
-    position: absolute;
-    right: 8px;
-    text-align: right;
+    
 }
 
-#driveby_social.social_links li
+#header_social.social_links li
 {
-    font-size: 0.8em;
+    display: inline;
+    font-size: 0.6em;
 }
 
-#driveby_social.social_links .social_icon
+#header_social.social_links .social_icon
 {
     margin: 0;
     padding: 0.3em;
     border-radius: 1em;
 }
 
-#driveby_social.social_links .social_icon img
+#header_social.social_links .social_icon img
 {
     margin:0;
     height: 1.6em;
@@ -215,8 +213,11 @@ img.center
 {
     font-size: 1.8em;
     height: 55px;
-    text-align: right;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #navbar a
@@ -237,21 +238,6 @@ img.center
 #nav_logo img
 {
     width: 190px;
-}
-
-#navbar_links
-{
-    line-height: 55px;
-}
-
-#navbar_links a
-{
-    margin-right: 1.2em;
-}
-
-#navbar_links a:last-child
-{
-    margin-right: 0;
 }
 
 #splash
@@ -463,6 +449,11 @@ content in columns must be allowed to flow
     {
         float: inherit;
     }
+
+    #header_social
+    {
+        display: none;
+    }
 }
 
 /* make menu font-size smaller as screen gets smaller */
@@ -472,13 +463,9 @@ content in columns must be allowed to flow
     {
         font-size: 1.2em;
     }
-    #navbar_links a
+    #navbar a.menu_item
     {
         padding-right: 0.5em;
-    }
-    #driveby_social
-    {
-        display: none;
     }
 }
 
@@ -487,11 +474,6 @@ content in columns must be allowed to flow
     #navbar
     {
         font-size: 1em;
-    }
-
-    #navbar_links
-    {
-        margin-top: 0.2em;
     }
 }
 
@@ -513,7 +495,7 @@ switch to hamburger menu
 */
 @media only screen and (max-width: 530px)
 {
-    #navbar_links
+    #navbar a.menu_item
     {
         display: none;
     }
