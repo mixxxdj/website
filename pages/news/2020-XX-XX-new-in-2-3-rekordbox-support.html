@@ -1,0 +1,49 @@
+title: New in 2.3: Importing tracks and cues from Rekordbox removable devices
+author: ehendrikd
+date: 2020-XX-XX 20:00:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown %}
+
+Do you rock your gigs armed only with your cans and a Rekordbox prepared USB flash drive? Ever been tempted to play your carefully curated tracks on something other than a CDJ or Rekordbox, and is free and open-source? We have news for you!
+
+Mixxx 2.3 now supports reading the following from Rekordbox prepared removable devices on all Mixxx’s supported platforms:
+
+<ul>
+<li>Folders</li>
+<li>Playlists</li>
+<li>Beatgrids</li>
+<li>Hotcues</li>
+<li>Memory cues</li>
+<li>Loops</li>
+</ul>
+
+This includes importing the key and BPM analyzed by Rekordbox, and comments and colors for tracks, cues and loops. <b>We have to be clear however:</b> this feature <i><u>only</u></i> reads Rekordbox prepared removable devices, such as USB flash drives or external hard drives. It <i><u>will not</u></i> read your locally stored Rekordbox collection if you also have Rekordbox installed.
+
+## Using the Rekordbox removable device library feature
+
+Assuming you already have a Rekordbox prepared removable device, simply plug it in while Mixxx is running. Click on Rekordbox in the library, and all found compatible removable devices will be visible (attach as many as you like!). Then click on the desired removable device, and all your folders and playlist that you have so tirelessly prepared will be revealed for you to play from.
+
+{# TODO: Insert screenshot of Rekordbox library feature once the skins are finalized. #}
+
+Some notes to keep in mind on how Rekordbox hotcues memory cues and loops are imported: Mixxx currently has one main cue point, one loop, and 36 hotcues. As such, all Rekordbox hotcues are mapped to Mixxx hotcues as expected, the first chronological Rekordbox memory cue is mapped to the Mixxx main cue, and the first chronological Rekordbox loop mapped to the Mixxx loop. All subsequent Rekordbox memory cues and loops are appended as Mixxx hotcues following the previously mapped actual hotcues. A little confusing? Perhaps, but hopefully all will make sense as you give it a whirl. Also note that whilst the subsequent imported Rekordbox loops appear in Mixxx 2.3 as hotcues, their loop details are preserved, ready for the multiple loop feature proposed for Mixxx 2.4!
+
+{# TODO: Insert side-by-side screenshot of hotcues in Mixxx and Rekordbox once the skins are finalized. #}
+
+Also note that as with the Serato library feature{# TODO: Add link to serato blogpost #}, we have tried our best to mitigate against certain edge cases of audio files encoded in lossy formats, where different decoders can interpret conflicting timing information, leading to inaccurate time dependent features (eg. beatgrids and cue points). We hope these are all correct, but may in rare cases be milliseconds out, and if you find any of these, please let us know on [Zullip](https://mixxx.zulipchat.com). 
+
+## Can I prepare a Rekordbox removable device from Mixxx to use in a CDJ?
+
+Sadly no, however this would be super cool! If you are so inclined to look at how to implement this and contribute back to Mixxx, it would be most welcome. A great to place to start would be looking into [Kaitai Struct serialization](https://doc.kaitai.io/faq.html#writing).
+
+## Shoutouts
+
+As is often the case in open-source, the development of this new functionality was not possible without input from others. The new Mixxx Rekordbox removable device library feature builds upon the hard work already completed by [Deep Symmetry](https://github.com/Deep-Symmetry) and [Pedro Estrela](https://github.com/pestrela). Kudos and keep up the great work!
+
+{% endfilter %}
+{% endblock %}
+
