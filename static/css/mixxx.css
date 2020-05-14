@@ -269,13 +269,34 @@ p#navbar_tinylinks
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: #000000;
-    text-align: center;
 }
 
-#splash img
-{
+#splash_gallery {
+    position: relative;
+    width: 445px;
+    height: 250px;
+    text-align: left;
+    margin: auto;
+}
+
+#splash_img {
+    position: absolute;
+}
+
+.gallery_navigation_button {
+    position: absolute;
+    width: 15px;
     height: auto;
-    width: 676px;
+    top: 50%;
+    transform: translateY(-50%); /* Effectively sets the origin of the element to its center */
+}
+
+#previous_image_button {
+    left: 5px;
+}
+
+#next_image_button {
+    right: 5px;
 }
 
 .gapfiller

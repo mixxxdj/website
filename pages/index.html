@@ -4,12 +4,41 @@
 
 {% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
 
+{% block extra_script %}
+<script type="text/javascript" src="{% static '/static/js/gallery.js' %}"></script>
+<script type="text/javascript">
+  const images = [
+    "{% static '/static/images/feature_skins_deere.png' %}",
+    "{% static '/static/images/feature_skins_latenight.png' %}",
+    "{% static '/static/images/feature_skins_shade.png' %}",
+    "{% static '/static/images/feature_skins_tango.png' %}"
+  ];
+
+  // Unhide the navigation buttons. Those are hidden by default if JS is disabled and no navigation is possible.
+  // The buttons itself don't have a click listener, they just guide the user to click on the image.
+  const previousImageButton = document.getElementById("previous_image_button");
+  const nextImageButton = document.getElementById("next_image_button");
+  previousImageButton.style.display = "initial";
+  nextImageButton.style.display = "initial";
+
+  const splashGallery = document.getElementById("splash_gallery");
+  const splashImg = document.getElementById("splash_img");
+  setupGallery(splashGallery, splashImg, images);
+</script>
+{% endblock %}
+
 {% block after_navbar %}
 {% include "social_sidebar.html" %}
 
 <div id="splash">
-  <h1>{% trans "DJ Your Way" %}</h1>
-  <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}">
+  <h1 class="center">{% trans "DJ Your Way" %}</h1>
+
+  <div id="splash_gallery">
+    <!-- Setup the gallery in a way that still makes sense even if JS is disabled: Set default image and hide navigation buttons (displayed by JS again) -->
+    <img id="splash_img" src="{% static '/static/images/feature_skins_deere.png' %}">
+    <img id="previous_image_button" class="gallery_navigation_button" style="display: none;" src="{% static '/static/images/arrow_left.svg' %}" />
+    <img id="next_image_button" class="gallery_navigation_button" style="display: none;" src="{% static '/static/images/arrow_right.svg' %}" />
+  </div>
 </div>
 {% endblock %}
 
