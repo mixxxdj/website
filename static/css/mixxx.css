@@ -277,16 +277,19 @@ p#navbar_tinylinks
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 445px;
-    height: 250px;
+    width: 670px;
     margin: auto;
+}
+
+#splash_img 
+{
+    width: 100%;
 }
 
 .gallery_navigation_button
 {
     position: absolute;
     width: 15px;
-    height: auto;
 }
 
 #previous_image_button
