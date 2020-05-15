@@ -9,6 +9,7 @@ def preBuildPage(page, context, data):
     # Any changes you make to context will be passed to the template renderer for this page.
 
     menu = [
+        ("/news", "News", "Navigation bar link to Mixxx news page."),
         ("/download", "Download", "Navigation bar link to Mixxx download page."),
         ("/features", "Features", "Navigation bar link to Mixxx features page."),
         ("/support", "Support", "Navigation bar link to Mixxx support page."),

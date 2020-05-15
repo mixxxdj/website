@@ -105,15 +105,9 @@ img.center
 /* styles for rest of page */
 
 /* links to social media */
-#header_social
-{
-    height: 38px
-}
-
 #header_social.social_links li
 {
-    display: inline;
-    font-size: 0.6em;
+    font-size: 0.42em;
 }
 
 #header_social.social_links .social_icon
@@ -230,9 +224,9 @@ img.center
     color: #39b54a;
 }
 
-#nav_logo
+#nav_logo a
 {
-    float: left;
+    display: inline-block;
 }
 
 #nav_logo img
@@ -450,9 +444,24 @@ content in columns must be allowed to flow
         float: inherit;
     }
 
+    #navbar
+    {
+        font-size: 1.4em;
+    }
+
+    #nav_logo img
+    {
+        width: 150px;
+    }
+
     #header_social
     {
         display: none;
+    }
+
+    #splash
+    {
+        margin: 0.5em auto;
     }
 }
 
@@ -475,13 +484,21 @@ content in columns must be allowed to flow
     {
         font-size: 1em;
     }
+    #splash
+    {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 600px)
 {
-    #navbar
+    /* #navbar
     {
         font-size: 0.9em;
+    } */
+    #nav_logo img
+    {
+        width: 120px;
     }
     pre
     {
