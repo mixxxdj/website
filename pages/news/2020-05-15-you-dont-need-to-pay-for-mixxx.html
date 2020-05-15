@@ -1,0 +1,77 @@
+title: You don't need to pay for Mixxx!
+author: Holzhaus
+date: 2020-05-15 13:00:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown %}
+
+It recently came to our attention that some sellers distribute boxed versions of Mixxx on Ebay and Amazon.
+While it's not illegal to do this per se, we are not affiliated with these sellers and neither earn money from this nor endorse this in any way.
+Instead, you can download the latest version of Mixxx from the [download page on our website]({% url "/download.html" %}) for free.
+
+If you want to support Mixxx financially, consider donating - we'll appreciate it!
+You can use the *Donate* button on the download page.
+
+
+### Mixxx was, is and always will be free
+
+In contrast our commercial competitors like Serato or VirtualDJ that may offer "free" featured-reduced versions of their Software, the Mixxx developers do not impose any artificial restrictions on their software.
+There is no "Pro Edition" or Premium version of Mixxx, even if it says so in the description of the online shop.
+
+The Mixxx developers don't sell Mixxx, and if you "buy" Mixxx somewhere online you'll likely just get the free Mixxx version that the seller downloaded from our website and burned onto a CD.
+Even worse, some of these paid Mixxx versions might even contain ads or malware according to Amazon reviews.
+Just use the free download from our Website to get the ad-free, malware-free, most recent version of Mixxx.
+
+
+### Mixxx is free as in freedom, not just free as in "free beer"
+
+You don't need to pay money to use Mixxx, but there's more:
+It's source code is accessible to everyone and if you know how to code, you can modify it and customize Mixxx to a degree that is simply not possible with any closed-source software.
+Even if you did get your hands on the source code of Serato DJ Pro/Lite, Rekordbox, Traktor or VirtualDJ (which is not available their users), it would be illegal for you to modify the program or redistribute it.
+
+Mixxx, on the other hand, is [free software](https://www.gnu.org/philosophy/free-sw.html) and grants you the four essential freedoms:
+
+1. The freedom to run the program as you wish, for any purpose.
+2. The freedom to study how the program works, and change it so it does your computing as you wish. Access to the source code is a precondition for this.
+3. The freedom to redistribute copies so you can help others.
+4. The freedom to distribute copies of your modified versions to others. By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+
+These freedoms are part of the license that Mixxx is subject to - the [GNU General Public License (GPL)](https://github.com/mixxxdj/mixxx/blob/master/LICENSE).
+If you want to know more about Mixxx' license, [check out the FAQ](https://www.gnu.org/licenses/old-licenses/gpl-2.0-faq).
+
+
+### Getting involved
+
+The Mixxx project is entirely community-driven and supported by volunteers from all over the globe.
+None of our developers are paid - all of us are passionate about the project and and work on Mixxx in their spare-time.
+
+We dedicate our time to working Mixxx, because we believe in open-source and care about delivering a decent product to our users - including ourselves!
+In fact, all our currently active developers started out as regular Mixxx users - just like you.
+
+You want to contribute to Mixxx, too?
+[You can!]({% url "/get-involved.html" %})
+
+If you find a bug, want to improve a part of Mixxx or have an idea for a cool new feature - let us know or [start hacking on the code yourself](https://www.mixxx.org/wiki/doku.php/developer_guide)!
+You could also check out [bugfixes or new features that are still in-development](https://github.com/mixxxdj/mixxx/pulls) and test them on your computer.
+Got a new controller that's not supported by Mixxx yet?
+[Create a new mapping](https://www.mixxx.org/wiki/doku.php/contributing_mappings) and have it included in the next Mixxx version.
+
+Not a coder?
+There's still plenty of options to get involved!
+
+You want to use Mixxx in a language other than English, but the translations are incomplete or don't exist yet?
+Help [translating Mixxx](https://www.mixxx.org/wiki/doku.php/internationalization) - no programming knowledge necessary.
+
+If you're good with graphics design, consider [creating new skins](https://www.mixxx.org/wiki/doku.php/creating_skins) to make Mixxx look even better and publish it on our forums for others to use.
+
+Join the Mixxx community, help other users and discuss with us on [Zulip Chat](https://mixxx.zulipchat.com/) or [our forums](https://mixxx.org/forums/).
+Write an article about how you use Mixxx for your blog or post a video on YouTube - any exposure on the web and in print helps our project grow, and is much appreciated!
+
+Help us keeping Mixxx the best free and open-source DJ software on Windows, Linux and macOS!
+
+{% endfilter %}
+{% endblock %}
