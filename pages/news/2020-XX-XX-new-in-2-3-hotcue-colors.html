@@ -112,46 +112,20 @@ Controllers that only allow choosing from a predefined color set were probably d
 You can think of these predefined colors as a list, and usually you can set the pad color of these controllers by sending the color's index in that list as MIDI value.
 For example, red could be color 1, blue is color 2, yellow is color 3, green is color 4 and so on.
 
-We added a `ColorMapper` class that you can use to establish a mapping between these IDs and and can be used to get the appropriate MIDI value for a given color.
-
-For the more technically inclined, here's a source code example how to use it in a JavaScript controller mapping:
-
-```javascript
-var colors = new ColorMapper({
-  0xFF0000: 1,  // Red
-  0x0000FF: 2,  // Blue
-  0xFFFF00: 3,  // Yellow
-  0x00FF00: 4,  // Green
-  // ...
-});
-
-// Get the MIDI value for the color "blue"
-var value = colors.getNearestValue(0x0000FF)
-
-// value now equals 2
-```
-
-You can send the resulting value to your controller to set the pad to the desired color.
+We added a `ColorMapper` class that you can use to establish a mapping between these IDs and can be used to get the appropriate MIDI value for a given color.
 
 But what happens if you set a hotcue to a color that isn't supported by the controller?
 Obviously, it's not possible to show the exact same color on your controller if the hardware simply doesn't support it - but don't worry, we've got you covered.
 
-In this case, `ColorMapper::getNearestValue()` returns the value of the color that is *most similar* to the color you put in.
+In this case, `ColorMapper` returns the ID of the color that is *most similar* to the color you put in.
 As an example, the hotcue color in Mixxx could be a darker shade of blue - ColorMapper will simply return the color for the regular blue color in this case, because it's the best match.
-
-```javascript
-// Get the MIDI value for the color "dark blue"
-var value = colors.getNearestValue(0x0000AA)
-
-// value now equals 2 (the same value as for regular "blue")
-```
 
 Seems complicated?
 It doesn't have to be.
-If your mapping already uses our JavaScript Components library, you don't actually need to call `ColorMapper::getNearestValue()` yourself.
-Just create a `ColorMapper` object and pass it to the `HotcueButton` and your colored hotcue pads should start working!
+If your mapping already uses our JavaScript Components library, you can just create a `ColorMapper` object, and it to the `HotcueButton` and your colored hotcue pads should start working!
 
-We also added control objects to to make it possible assign a different color to an existing hotcue from your controller.
+We also added control objects to to make it possible assign a different color to an existing hotcue from your controller - for example, the mapping for the Roland DJ-505 uses the PARAMETER -/+ buttons next to the hotcue pads to cycle through the color palette for most recently activated hotcue.
+
 Refer to our wiki if you want to integrate it into your controller mapping and check out the video below:
 
 {# TODO: Add example video/GIF of the ColorMapper and changing colors in action. #}
