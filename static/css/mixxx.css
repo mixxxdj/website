@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+:root
+{
+    --splash_img_original_width: 445px;
+    --splash_img_original_height: 250px;
+}
+
 /* styles for html, body and wrapper */
 html, body
 {
@@ -277,13 +283,39 @@ p#navbar_tinylinks
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 670px;
     margin: auto;
 }
 
-#splash_img 
+.splash_img_dimensions
 {
-    width: 100%;
+    width: calc(var(--splash_img_original_width) * 1.5);
+}
+
+.splash_img
+{
+    left: 50%; /* Centers the absolute element */
+    transform: translateX(-50%); /* Effectively sets the origin to the the center of the X-axis */
+}
+
+.splash_img_non_js
+{
+    position: relative;
+}
+
+.splash_img_with_js 
+{
+    position: absolute;
+    transition: opacity 1s;
+}
+
+.splash_img_hidden
+{
+    opacity: 0;
+}
+
+.splash_img_hidden_non_js
+{
+    display: none;
 }
 
 .gallery_navigation_button
