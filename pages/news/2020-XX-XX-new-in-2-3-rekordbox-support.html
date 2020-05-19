@@ -32,7 +32,7 @@ Some notes to keep in mind on how Rekordbox hotcues memory cues and loops are im
 
 {# TODO: Insert side-by-side screenshot of hotcues in Mixxx and Rekordbox once the skins are finalized. #}
 
-Also note that as with the Serato library feature{# TODO: Add link to serato blogpost #}, we have tried our best to mitigate against certain edge cases of audio files encoded in lossy formats (MP3 and AAC/MP4), where different decoders can interpret conflicting timing information, leading to inaccurate time dependent features (eg. beatgrids and cue points). We hope these are all correct, but may in rare cases be milliseconds off, and if you find any of these, please let us know on [Zulip](https://mixxx.zulipchat.com).
+Also note that as with the Serato library feature{# TODO: Add link to serato blogpost #}, we have tried our best to mitigate against certain edge cases of audio files encoded in lossy formats (MP3 and AAC/MP4), where different software's decoders can interpret conflicting timing information, leading to shifted cue points and beatgrids. We hope these are all correct, but some cases may be milliseconds off, and if you find any of these, please let us know on [Zulip](https://mixxx.zulipchat.com).
 
 We probably didn't get every case perfect, so we have added some buttons by the beatgrid editing buttons to shift all cue points in a track by 1 ms (left click) or 0.1 ms (right click) so you can correct the timing yourself. This only shifts cue points, not the beatgrid (because the same problem happens with Serato and Mixxx does not yet import the beatgrid from Serato). If you want to shift the beatgrid too, you can shift the cue points, then go to a cue point and press the beatgrid shift button.
 
