@@ -7,143 +7,144 @@
 {% block body %}
 <div class="docs-section container">
   <h1>{% trans "Press" %}</h1>
-  <div class="fullwidth">
-    <h2>{% trans "About Mixxx" %}</h2>
-
-    <p>
-      {% blocktrans %}Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces for DJing by Tue Haste Andersen.  After releasing the project as open source, dozens of contributors began modifying and improving Mixxx.{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans %}In 2006, a new development team lead by Adam Davison and Albert Santoni began reorganizing the project to ensure smooth growth of both the codebase and the number of contributors. A renewed focus on usability and stability has helped Mixxx grow to become the most popular free DJ software in the world, receiving <b>over 1,000,000 downloads annually</b>. Our committed team has worked hard to create great DJ software, and this growth is a sign of our success.{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans %}In 2011, RJ Ryan took over as Lead Developer to successfully continue the team's endeavor to make Mixxx a world-class DJ software.{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans %}As our user community grows, so does our development team - As of Mixxx 2.0, <b>over 100 developers and artists</b> have helped create Mixxx!{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans with gsoc_link="http://code.google.com/soc/" %}Mixxx also participated in <a href="{{ gsoc_link }}">Google Summer of Code</a> in 2007, 2008, and 2010-2014. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software.{% endblocktrans %}
-    </p>
-
-    <h2>{% trans "Why?" %}</h2>
-
-    <p>
-      {% blocktrans %}Mixxx started as an open source project because of demand for DJing software on Linux, and discontent with proprietary DJ software on Windows and Mac OS X. Today, Mixxx development is driven by the simple idea that together we can create a better way to DJ, and that has brought Mixxx to the cutting edge. Mixxx is the only free cross-platform vinyl control software and has the most advanced controller support via our innovative Javascript-based MIDI and HID scripting engine. We are continuing to pursue new and exciting features that give DJs more tools to create better live mixes.{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans %}Besides scratching our own itches, many people work on Mixxx as a way to learn about audio programming, or even just because it's fun and they enjoy programming. The creative aspect of Mixxx attracts developers with a broad range of skills and talents, and that makes for a fun development team that helps Mixxx continue to grow.{% endblocktrans %}
-    </p>
-
     <h2>{% trans "Interviews" %}</h2>
     <p>
       {% blocktrans with project_manager_mail_link="mailto:press@mixxx.org" %}Please contact us at <a href="{{ project_manager_mail_link }}">press@mixxx.org</a> for information or interviews. We won't bite, we promise.{% endblocktrans %}
     </p>
 
     <h2>{% trans "Artwork" %}</h2>
-    <br/>
+    <h6 class="docs-header">{% trans "Mixxx Logo" %}</h6>
     <img class="center" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
-    <br/>
+    <div class="grid-container halves">
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding.svg' %}">SVG</a>
+      </div>
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_large.tiff' %}">TIFF (1115 x 278 px)</a>
+      </div>
+    </div>
+    <div class="grid-container thirds">
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">PNG (240 x 60 px)</a>
+      </div>
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_medium.png' %}">PNG (480 x 119 px)</a>
+      </div>
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_large.png' %}">PNG (1115 x 278 px)</a>
+      </div>
+    </div>
+    <h6 class="docs-header">{% trans "Reference Screenshots:" %}</h6>
+    <div class="grid-container thirds">
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_latenight_skin.png' %}">Mixxx 2.0 default (Late Night Skin)</a>
+      </div>
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_deere_skin.png' %}">Mixxx 2.0 (Deere Skin)</a>
+      </div>
+      <div>
+        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_shade_skin.png' %}">Mixxx 2.0 (Shade Skin)</a>
+      </div>
+    </div>
 
-    <p style="text-indent: 0px;">
-      {% trans "Mixxx Color Logo, no padding:" %}<br/>
-      <a href="{% static '/static/images/press_art/logocolour_nopadding.svg' %}">{% trans "SVG" %}</a><br/>
-      <a href="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">{% trans "PNG Small" %}</a> (240 x 60 px)<br/>
-      <a href="{% static '/static/images/press_art/logocolour_nopadding_medium.png' %}">{% trans "PNG Medium" %}</a> (480 x 119 px)<br/>
-      <a href="{% static '/static/images/press_art/logocolour_nopadding_large.png' %}">{% trans "PNG Large" %}</a> (1115 x 278 px)<br/>
-      <a href="{% static '/static/images/press_art/logocolour_nopadding_large.tiff' %}">{% trans "TIFF Large" %}</a> (1115 x 278 px)
-    </p>
-    <p style="text-indent: 0px;">{% trans "Reference Screenshots:" %}<br/>
-      <a href="{% static '/static/images/press_art/mixxx_200_latenight_skin.png' %}">Mixxx 2.0 default (Late Night Skin)</a><br/>
-      <a href="{% static '/static/images/press_art/mixxx_200_deere_skin.png' %}">Mixxx 2.0 (Deere Skin)</a><br/>
-      <a href="{% static '/static/images/press_art/mixxx_200_shade_skin.png' %}">Mixxx 2.0 (Shade Skin)</a><br/>
-    </p>
+  <h2>{% trans "Press Mirror" %}</h2>
+  <div class="grid-container halves">
 
-    <h2>{% trans "Press Mirror" %}</h2>
-  </div>
-
-  <div class="halfbox_left">
-
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2019-05-04:" %}<br/>
-      <a href="https://markettalknews.com/global-dj-software-market-strong-development-by-major-eminent-key-players-technology-and-forecasts-to-2024/">(EN) Market Talk News: Global DJ Software Market Strong Development By Major Eminent Key Players, Technology and Forecasts to 2024</a>
+      <a href="https://markettalknews.com/global-dj-software-market-strong-development-by-major-eminent-key-players-technology-and-forecasts-to-2024/">
+        <h6 class="docs-header">(EN) Market Talk News: Global DJ Software Market Strong Development By Major Eminent Key Players, Technology and Forecasts to 2024</h6>
+      </a>
       <p class="pressquote"> "The Outlook Of Global DJ Software Market: Serato, Pioneer, Atomix, VirtualDJ, Native Instruments, Mixvibes, Algoriddim, PCDJ, Ableton, Stanton, Mixxx" </p>
-    </p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2019-04-29:" %}<br/>
-      <a href="https://amarketresearchgazette.com/global-music-software-market-2019-types-emerging-technology-rising-trends-demands-top-manufacturers-growth-forecast-outlook-to-2023/">(EN) Market Research Gazette: Global Music Software Market 2019</a>
+      <a href="https://amarketresearchgazette.com/global-music-software-market-2019-types-emerging-technology-rising-trends-demands-top-manufacturers-growth-forecast-outlook-to-2023/">
+        <h6 class="docs-header">(EN) Market Research Gazette: Global Music Software Market 2019</h6>
+      </a>
       <p class="pressquote"> "The Top Key Players covered in this market Report are Serato, Pioneer, Atomix VirtualDJ, Native Instruments, Mixvibes, Algoriddim, PCDJ, Ableton, Stanton, Mixxx." </p>
-    </p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2019-04-09:" %}<br/>
-      <a href="https://techiespad.com/mixx-dj-review/">(EN) Techies Pad: Mixx Dj Software Review – Powerful software For All DJs</a>
+      <a href="https://techiespad.com/mixx-dj-review/">
+        <h6 class="docs-header">(EN) Techies Pad: Mixx Dj Software Review – Powerful software For All DJs</h6>
+      </a>
       <p class="pressquote"> "Also, whenever you hit a paywall or limitation in other software, you can turn to Mixxx as it doesn’t limit you in any way." </p>
-    </p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-10-31:" %}<br/>
-      <a href="https://www.computerbild.de/download/Mixxx-64-Bit-6302273.html">(DE) COMPUTER BILD: Mixxx </a>
-      <p class="pressquote"> "Redaktions-Tipp" </p>
-    </p>
+      <a href="https://www.computerbild.de/download/Mixxx-64-Bit-6302273.html">
+        <h6 class="docs-header">(DE) COMPUTER BILD: Mixxx</h6>
+      </a>
+      <p class="pressquote">"Redaktions-Tipp"</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-09-25:" %}<br/>
-      <a href="https://www.wirerealm.com/guides/best-dj-software">(EN) THE WIRE REALM: The Best DJ Software in the Market</a>
-      <p class="pressquote"> "This one is for you if you’re looking for the best free DJ software." </p>
-    </p>
+      <a href="https://www.wirerealm.com/guides/best-dj-software">
+        <h6 class="docs-header">(EN) THE WIRE REALM: The Best DJ Software in the Market</h6>
+      </a>
+      <p class="pressquote">"This one is for you if you’re looking for the best free DJ software."</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-09-19:" %}<br/>
-      <a href="https://djtechtools.com/2018/09/19/mixxx-2-2-beta-gui-scaling-lv2-fx-plugins-faster-development-cycles/">(EN) DJ TECHTOOLS: Mixxx 2.2 Beta: GUI Scaling, LV2 FX Plugins, Faster Development Cycles</a>
-      <p class="pressquote"> "If you love the idea of the project, there are a bunch of ways to get involved as a developer, DJ (tester), translator, or even graphic artist." </p>
-    </p>
+      <a href="https://djtechtools.com/2018/09/19/mixxx-2-2-beta-gui-scaling-lv2-fx-plugins-faster-development-cycles/">
+        <h6 class="docs-header">(EN) DJ TECHTOOLS: Mixxx 2.2 Beta: GUI Scaling, LV2 FX Plugins, Faster Development Cycles</h6>
+      </a>
+      <p class="pressquote">"If you love the idea of the project, there are a bunch of ways to get involved as a developer, DJ (tester), translator, or even graphic artist."</p>
+    </div>
 
-  </div>
-
-  <div class="halfbox_right">
-
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-06-15:" %}<br/>
-      <a href="https://www.chip.de/downloads/Mixxx-64-Bit_40728952.html">(DE) CHIP Online: Mixxx</a>
-      <p class="pressquote"> "Es macht Spaß mit dem Open-Source-Tool Mixxx zu experimentieren. Als Hobby-DJ kommen Sie mit dem Programm voll auf Ihre Kosten." </p>
-    </p>
+      <a href="https://www.chip.de/downloads/Mixxx-64-Bit_40728952.html">
+        <h6 class="docs-header">(DE) CHIP Online: Mixxx</h6>
+      </a>
+      <p class="pressquote">"Es macht Spaß mit dem Open-Source-Tool Mixxx zu experimentieren. Als Hobby-DJ kommen Sie mit dem Programm voll auf Ihre Kosten."</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-05-22:" %}<br/>
-      <a href="https://www.comparakeet.com/best-dj-mixer-apps/mixxx-review/">(EN) Comparakeet: Mixxx Review 2018</a>
-      <p class="pressquote"> "Of course, the best thing about this one is that it is free to use by anyone, so if you have little to no budget when hunting for a DJ mixing software, but have the passion for creating great music, then Mixxx is a very good choice." </p>
-    </p>
+      <a href="https://www.comparakeet.com/best-dj-mixer-apps/mixxx-review/">
+        <h6 class="docs-header">(EN) Comparakeet: Mixxx Review 2018</h6>
+      </a>
+      <p class="pressquote">"Of course, the best thing about this one is that it is free to use by anyone, so if you have little to no budget when hunting for a DJ mixing software, but have the passion for creating great music, then Mixxx is a very good choice."</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-04-17:" %}<br/>
-      <a href="https://www.ghacks.net/2018/04/17/a-look-at-mixxx-in-gnu-linux/">(EN) ghacks.net: A look at Mixxx in GNU/Linux</a>
-      <p class="pressquote"> "Mixxx is a great free alternative to popular programs like Traktor, or Virtual DJ, and is completely compatible with GNU/Linux systems, so if the need ever arises, it’s definitely worth checking out." </p>
-    </p>
+      <a href="https://www.ghacks.net/2018/04/17/a-look-at-mixxx-in-gnu-linux/">
+        <h6 class="docs-header">(EN) ghacks.net: A look at Mixxx in GNU/Linux</h6>
+      </a>
+      <p class="pressquote">"Mixxx is a great free alternative to popular programs like Traktor, or Virtual DJ, and is completely compatible with GNU/Linux systems, so if the need ever arises, it’s definitely worth checking out."</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-01-17:" %}<br/>
-      <a href="https://www.bonedo.de/artikel/einzelansicht/mixxx-21-das-dj-software-open-source-projekt-legt-nach.html">(DE) bonedo: Mixxx 2.1 - das DJ-Software Open Source Projekt legt nach</a>
-      <p class="pressquote"> "MIXXX ist eine vollständige DJ-Software, für die man keinen Cent berappen muss (aber ruhig etwas spenden sollte) ..." </p>
-    </p>
+      <a href="https://www.bonedo.de/artikel/einzelansicht/mixxx-21-das-dj-software-open-source-projekt-legt-nach.html">
+        <h6 class="docs-header">(DE) bonedo: Mixxx 2.1 - das DJ-Software Open Source Projekt legt nach</h6>
+      </a>
+      <p class="pressquote">"MIXXX ist eine vollständige DJ-Software, für die man keinen Cent berappen muss (aber ruhig etwas spenden sollte) ..."</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-01-15:" %}<br/>
-      <a href="https://djworx.com/open-source-mixxx-gets-v2-1-beta-for-windows-macos-and-linux/">(EN) DJWorx: Open source Mixxx gets v2.1 beta for Windows, macOS, and Linux</a>
-      <p class="pressquote"> "But in a world of large commercial outfits already extracting money from DJs, we need the little guys doing their own thing. I’m glad that they stuck to their guns, and steadily beaver away at making Mixxx better with every release." </p>
-    </p>
+      <a href="https://djworx.com/open-source-mixxx-gets-v2-1-beta-for-windows-macos-and-linux/">
+        <h6 class="docs-header">(EN) DJWorx: Open source Mixxx gets v2.1 beta for Windows, macOS, and Linux</h6>
+      </a>
+      <p class="pressquote">"But in a world of large commercial outfits already extracting money from DJs, we need the little guys doing their own thing. I’m glad that they stuck to their guns, and steadily beaver away at making Mixxx better with every release."</p>
+    </div>
 
-    <p style="text-indent: 0px;">
+    <div>
       {% trans "2018-10-25:" %}<br/>
-      <a href="https://www.dj-lab.de/ueberblick-die-vier-besten-kostenlosen-dj-programme-2018/">(DE) DJ LAB: Die vier besten kostenlosen DJ-Softwares 2019</a>
-      <p class="pressquote"> "Mixxx 2.1, Virtual DJ 8 Home Free, Mixvibes Cross Free und DigiJay" </p>
-
+      <a href="https://www.dj-lab.de/ueberblick-die-vier-besten-kostenlosen-dj-programme-2018/">
+        <h6 class="docs-header">(DE) DJ LAB: Die vier besten kostenlosen DJ-Softwares 2019</h6>
+      </a>
+      <p class="pressquote">"Mixxx 2.1, Virtual DJ 8 Home Free, Mixvibes Cross Free und DigiJay"</p>
+    </div>
   </div>
 </div>
 {% endblock %}
