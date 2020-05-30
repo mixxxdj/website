@@ -326,6 +326,22 @@ input.navbar-hamburger-button {
 }
 
 /* Toggle Effect */
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon .navicon {
+  background: transparent;
+}
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon:not(.steps) .navicon:before,
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
 input:checked ~ .navbar-hamburger-content {
     border: 1px solid var(--border-color-softer);
     max-height: 100%;
