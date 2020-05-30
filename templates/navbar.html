@@ -3,12 +3,14 @@
 <div class="navbar-spacer"></div>
 <nav id="navbar" class="navbar">
   <div class="container">
-    <ul class="navbar-list">
-      <li class="navbar-item">
-        <a class="navbar-link" href="/">
-          <img class="navbar-logo" src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx">
-        </a>
-      </li>
+    <span class="navbar-item">
+      <a class="navbar-link" href="/">
+        <img class="navbar-logo" src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx">
+      </a>
+    </span>
+    <input class="navbar-hamburger-button" type="checkbox" id="navbar-hamburger-button" />
+    <label class="navbar-hamburger-icon" for="navbar-hamburger-button"><span class="navicon"></span></label>
+    <ul class="navbar-list navbar-hamburger-content">
       {% for item in NAV_MENU %}
         <li class="navbar-item">
           <a class="navbar-link" href="{{ item.url }}">
