@@ -72,27 +72,15 @@
   </p>
 
   <div class="grid-container halves">
+    {% for post in posts|slice:":2" %}
     <div>
-      {% with post=posts|first %}
+      <time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>
       <h5>{{ post.title }}</h5>
-      <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
-      <p>
-        <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
-        (<time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>)
+      <p> {{ post.post|truncatewords_html:30 }}</p>
+      <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
       </p>
-      {% endwith %}
     </div>
-
-    <div>
-      {% with post=posts|slice:"1:"|first %}
-      <h5>{{ post.title }}</h5>
-      <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
-      <p>
-        <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
-        (<time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>)
-      </p>
-      {% endwith %}
-    </div>
+    {% endfor %}
   </div>
 </div>
 {% endif %}
