@@ -55,7 +55,8 @@ html.transition-theme *:after {
 }
 .docs-section {
     border-top: 1px solid var(--border-color-softer);
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin-bottom: 0;
 }
 ul {

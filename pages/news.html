@@ -5,10 +5,10 @@
 {% block title %}{% trans "News" %}{% endblock %}
 
 {% block body %}
-<div class="content">
+<div class="container">
   <h1>{% trans "News and Announcements" %}</h1>
 
-  <div class="fullwidth">
+  <div class="docs-section">
     {# Show most recent news post #}
     {% with post=posts|first %}
     <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
@@ -31,8 +31,9 @@
 
     {{ post.post }}
     {% endwith %}
-    <div style="clear: both;"></div>
+  </div>
 
+  <div class="docs-section">
     {# List other news posts #}
     <h2>{% trans "Older News" %}</h2>
     <ul>

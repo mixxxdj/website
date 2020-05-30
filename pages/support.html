@@ -5,7 +5,7 @@
 {% block title %}{% trans "Support" %}{% endblock %}
 
 {% block body %}
-<div class="content">
+<div class="container">
   <div style="float: right; width: 100px; padding-top: 30px;">
     <center>{% include "donate_paypal.html" %}</center>
   </div>
@@ -26,9 +26,9 @@
       {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="/wiki/doku.php/beginner_dj_links" wiki_troubleshooting="/wiki/doku.php/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
     </p>
   </div>
- 
+
   <div style="clear: both;"></div>
-  
+
   <div class="halfbox_left">
     <h2>{% trans "Community Forums" %}</h2>
     <p>
@@ -41,7 +41,7 @@
     <p>
       {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}<a href="{{ zulip_web_link }}">Mixxx's Zulip chat instance</a> is a fun place to hang out with the developers and meet some fellow DJs. Here, the Mixxx team discusses upcoming changes and programming related stuff. It can be used for support too. Join the discussion <a href="{{ zulip_web_link }} ">on the web</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com. {% endblocktrans %}
     </p>
-  </div> 
+  </div>
 
   <div style="clear: both;"></div>
 

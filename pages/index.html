@@ -5,16 +5,18 @@
 {% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
 
 {% block header %}
-<div class="header">
-  <img class="center" src="{% static '/static/images/splash-2.1.png' %}" style="max-width: 500px">
-  <h1>{% trans "DJ Your Way" %}</h1>
-  <p>Free and open source DJ software for Windows, macOS, and Linux</p>
-  <a href="{% url '/download.html' %}" class="button button-primary">Free Download</a>
+<div class="container">
+  <div class="header">
+    <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
+    <h1>{% trans "DJ Your Way" %}</h1>
+    <p>Free and open source DJ software for Windows, macOS, and Linux</p>
+    <a href="{% url '/download.html' %}" class="button button-primary">Free Download</a>
+  </div>
 </div>
 {% endblock %}
 
 {% block body %}
-<div class="docs-section">
+<div class="docs-section container">
   <h2 id="features">{% trans "Powerful Features For All DJs" %}</h2>
 
   <p>{% blocktrans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files.<br/>Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}</p>
@@ -63,7 +65,7 @@
 </div>
 
 {% if posts|length >= 2 %}
-<div class="docs-section">
+<div class="docs-section container">
   <h2 id="news">{% trans "Latest News" %}</h2>
   <p class="header">
     {% blocktrans %}To see a list of all news and announcements, head over to <a href="/news">our news page</a> or subscribe to the <a href="/feed.xml">Atom feed</a>.{% endblocktrans %}
@@ -96,7 +98,7 @@
 {% endif %}
 
 
-<div class="docs-section">
+<div class="docs-section container">
   <h2 id="community">{% trans "Friendly Community" %}</h2>
   <p>
     {% blocktrans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endblocktrans %}
@@ -107,9 +109,9 @@
   </p>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <div id="achievements" class="grid-container quarters">
-    <div style="width: 180px;">
+    <div>
       <img class="responsive" src="{% static '/static/images/rating_macappstore.png' %}" alt="#1" style="padding-top: 0px;">
       <br>
       {% trans "#1 Top Free Mac App Worldwide" %}<br>
@@ -134,5 +136,5 @@
       <small>{% trans "February 2011" %}</small>
     </div>
   </div>
-</div> <!-- content -->
+</div>
 {% endblock %}

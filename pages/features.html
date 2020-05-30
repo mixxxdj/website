@@ -5,7 +5,7 @@
 {% block title %}{% trans "Features" %}{% endblock %}
 
 {% block body %}
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Everything You Need, However You DJ" %}</h2>
 
   <div class="grid-container halves">
@@ -61,7 +61,7 @@
   </div>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <div>
     <h2>{% trans "Sampler Decks" %}</h2>
     <p>
@@ -72,7 +72,8 @@
   </div>
 </div>
 
-<div class="docs-section">
+
+<div class="docs-section container">
   <div>
     <h2>{% trans "Effects Chains" %}</h2>
     <p>
@@ -82,7 +83,7 @@
   </div>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Customizable DJ Hardware Support" %}</h2>
   <p>
     {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
@@ -120,8 +121,7 @@
   </div>
 </div>
 
-
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Sophisticated Music Library" %}</h2>
   <p>
   {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
@@ -166,7 +166,7 @@
   </div>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Choose Your Skin" %}</h2>
   <p>{% trans "Mixxx includes four different skins, each with a different look and a configurable layout." %}</p>
   <div class="grid-container halves">
@@ -185,7 +185,7 @@
   </div>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Record and Broadcast" %}</h2>
   <p>
     {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
@@ -224,14 +224,14 @@
   </div>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Native Language Support" %}</h2>
   <p>
     {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %} Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a href="{{ com_transifex_mixxxdj_link }}">Translation overview</a> page.{% endblocktrans %}
   </p>
 </div>
 
-<div class="docs-section">
+<div class="docs-section container">
   <h2>{% trans "Free &amp; Open Source" %}</h2>
   <p>
     {% blocktrans %}Mixxx is free open-source software and entirely community driven. The development is shouldered by passionate DJs and programmers that dedicate their free time on working Mixxx. Mixxx is and always will be free - download Mixxx and start DJing now!{% endblocktrans %}
