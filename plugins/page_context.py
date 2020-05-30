@@ -1,5 +1,9 @@
 #coding:utf-8
 
+import collections
+
+MenuItem = collections.namedtuple("MenuItem", "url title context children")
+
 def preBuildPage(page, context, data):
     """
     Updates the context of the page to include: the page itself as {{ CURRENT_PAGE }}
@@ -8,18 +12,21 @@ def preBuildPage(page, context, data):
     # This will run for each page that Cactus renders.
     # Any changes you make to context will be passed to the template renderer for this page.
 
-    menu = [
-        ("/download", "big", "Download", "Navigation bar link to Mixxx download page."),
-        ("/features", "big", "Features", "Navigation bar link to Mixxx features page."),
-        ("/support", "big", "Support & Community", "Navigation bar link to Mixxx support page."),
-        ("/manual/latest", "medium", "Manual", "Navigation bar link to Mixxx Manual."),
-        ("/forums", "medium", "Forums", "Navigation bar link to Mixxx Forums."),
-        ("/wiki", "medium", "Wiki", "Navigation bar link to Mixxx Wiki."),
-        ("/news", "medium", "News", "Navigation bar link to Mixxx News page."),
-        ("/press", "small", "Press", "Navigation bar link to Mixxx Press page"),
-        ("/get-involved", "small", "Get Involved", "Navigation bar link to Mixxx Get Involved page." ),
-        ("/contact", "small", "Contact", "Navigation bar link to Mixxx contact page.")
-    ]
+    menu = (
+        MenuItem("/news", "News", "Navigation bar link to Mixxx News page.", ()),
+        MenuItem("/about", "About", "Navigation bar link to Mixxx about page.", (
+            MenuItem("/features", "Features", "Navigation bar link to Mixxx features page.", ()),
+            MenuItem("/press", "Press", "Navigation bar link to Mixxx Press page", ()),
+            MenuItem("/contact", "Contact", "Navigation bar link to Mixxx contact page.", ()),
+            MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Get Involved page.", ()),
+        )),
+        MenuItem("/support", "Support & Community", "Navigation bar link to Mixxx support page.", (
+            MenuItem("/manual/latest", "Manual", "Navigation bar link to Mixxx Manual.", ()),
+            MenuItem("/forums", "Forums", "Navigation bar link to Mixxx Forums.", ()),
+            MenuItem("/wiki", "Wiki", "Navigation bar link to Mixxx Wiki.", ()),
+        )),
+        MenuItem("/download", "Download", "Navigation bar link to Mixxx download page.", ()),
+    )
 
     extra = {
         "CURRENT_PAGE": page,

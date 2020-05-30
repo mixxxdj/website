@@ -1,6 +1,6 @@
 {% load i18n %}
 <!DOCTYPE html>
-<html xmlns:fb="http://ogp.me/ns/fb#">
+<html xmlns:fb="http://ogp.me/ns/fb#" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -24,8 +24,11 @@
     <link rel="shortcut icon" href="{% static '/static/images/favicon.ico' %}">
     <link href="{% url "/feed.xml" %}" type="application/atom+xml" rel="alternate" title="Mixxx Atom Feed" />
     <link href="https://plus.google.com/102441931224839455484" rel="publisher">
-    <link rel="stylesheet" href="{% static '/static/css/mixxx.css' %}">
-    <link href='//fonts.googleapis.com/css?family=Muli&v1' rel='stylesheet' type='text/css'>
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static '/static/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static '/static/css/barebones.css' %}">
+    <link rel="stylesheet" href="{% static '/static/css/custom.css' %}">
 
     {% block extra_head %}
     {% endblock %}
@@ -34,14 +37,14 @@
   <body>
     <div id="fb-root"></div>
 
-    {% block navbar %}
-    {% include "navbar.html" %}
-    {% endblock %}
+    <div class="container">
+      {% block header %}
+      {% endblock %}
 
-    {% block after_navbar %}
-    {% endblock %}
+      {% block navbar %}
+      {% include "navbar.html" %}
+      {% endblock %}
 
-    <div id="wrapper">
       {% block body %}
       {% endblock %}
 
