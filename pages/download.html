@@ -81,11 +81,11 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 {% trans "Fedora" as fedora %}
 {% trans "Mixxx PPA" as mixxx_ppa %}
 
+{% ifequal show_unstable "yes" %}
 <div class="docs-section container">
-  {% ifequal show_unstable "yes" %}
   <a name="unstable"></a>
   <h1>{% blocktrans %}Download Now ({{ unstable_version }}){% endblocktrans %}</h1>
-  <div style="padding: 20px;">
+  <div>
     <p><h2>For live use, we recommend <a href="#stable">{{ stable_version }} Stable</a> below.</h2></p>
     <p>
       {% blocktrans %}The Mixxx team has been working hard on the next version of Mixxx. Check out the <a href="{{ unstable_release_announcement }}">release announcement</a> for a list of the new features.{% endblocktrans %}
@@ -99,114 +99,108 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     {% include "donate_paypal.html" %}
   </div>
 
-  <div style="clear: both;"></div>
-  <div class="halfbox_left darkborder winbox">
-    <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon" style="margin-top: -7px;">{{ windows }}</h2>
+  <div class="grid-container halves">
+    <div>
+      <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h2>
+      <p>{% blocktrans %}Download {{ unstable_version }} for 32-bit Windows {{ unstable_win_min_version }} or later {% endblocktrans %}.</p>
 
-    <p>
-      <a href="{{ unstable_win32 }}"
-         onClick="javascript:trackDownload('{{ unstable_win32_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_version }} for 32-bit Windows {{ unstable_win_min_version }} or later {% endblocktrans %}</a>
-    </p>
+      <div class="grid-container halves">
+        <div>
+          <a class="button button-primary" href="{{ unstable_win32 }}" onclick="javascript:trackDownload('{{ unstable_win32_analytics_conversion }}');">Download (32 Bit)</a>
+        </div>
+        <div>
+          <a class="button button-primary" href="{{ unstable_win64 }}" onclick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">Download (64 Bit)</a>
+        </div>
+      </p>
 
-    <p>
-      <a href="{{ unstable_win64 }}"
-         onClick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_version }} for 64-bit Windows {{ unstable_win_min_version }} or later{% endblocktrans %}</a>
-    </p>
+      <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.</p>
+    </div>
 
-    <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.</p>
+    <div>
+      <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h2>
+      <p>
+        {% blocktrans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel).{% endblocktrans %}
+      </p>
+
+      <a class="button button-primary" href="{{ unstable_osxintel }}" onclick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">Download</a>
+
+      <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.{% endblocktrans %}</p>
+    </div>
+
+    <div>
+      <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h2>
+
+      <p>{% trans "Open a terminal, and enter:" %}</p>
+      <pre><code>sudo add-apt-repository ppa:mixxx/mixxxbetas
+sudo apt update
+sudo apt install mixxx</code></pre>
+
+      <p>
+        {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxxbetas' onclick=\"javascript:trackDownload('/downloads/2.3.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+        {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
+        {% endwith %}
+      </p>
+
+      <p>{% blocktrans %}New packages will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with <code>apt</code>. Otherwise, you can download individual packages for Ubuntu {{ unstable_ubuntu_min_version }} or later and install them manually. Don't forget to check back periodically for updates until Mixxx {{ next_stable_version }} is released:{% endblocktrans %}</p>
+
+      <div class="grid-container halves">
+        <div>
+          <a class="button button-primary" href="{{ unstable_ubuntu32 }}" onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">Download (32-bit)</a>
+        </div>
+        <div>
+          <a class="button button-primary" href="{{ unstable_ubuntu64 }}" onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">Download (64-bit)</a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h2>
+
+      <p>{% blocktrans %}
+        An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
+        for installation is available in the
+        <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
+        {% endblocktrans %}</p>
+
+      <p>{% blocktrans %}
+        Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a>
+        on how to enable the repositories on your system. Mixxx only requires enabling the
+        free repository; the nonfree repository is not necessary for Mixxx.
+        {% endblocktrans %}
+      </p>
+
+      <p>{% blocktrans %}
+        RPM Fusion builds are maintained by the Mixxx development team.
+        We support the next, the current, and selected previous
+        Fedora release(s) if possible.
+        {% endblocktrans %}
+      </p>
+
+      <p>{% blocktrans %}
+        The beta package will be continuously updated until Mixxx {{ next_stable_version }}
+        is released.
+        {% endblocktrans %}
+      </p>
+    </div>
   </div>
 
-  <div class="halfbox_right darkborder macbox">
-    <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{{ mac_osx }}</h2>
-
-    <p>
-      <a href="{{ unstable_osxintel }}"
-         onClick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel){% endblocktrans %}</a>
-    </p>
-
-    <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.{% endblocktrans %}</p>
-
-  </div>
-
-  <div style="clear: both;"></div>
-
-  <div class="halfbox_left darkborder ubuntubox">
-    <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon" style="margin-top: -4px;">{{ ubuntu }}</h2>
-
-    <p>{% trans "Open a terminal, and enter:" %}</p>
-    <pre>
-      sudo add-apt-repository ppa:mixxx/mixxxbetas
-      sudo apt update
-      sudo apt install mixxx
-    </pre>
-
-    <p>
-      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxxbetas' onclick=\"javascript:trackDownload('/downloads/2.3.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
-      {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
-      {% endwith %}
-    </p>
-
-    <p>{% blocktrans %}New packages will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with apt. Otherwise, you can download individual packages to install and check back periodically for updates until Mixxx {{ next_stable_version }} is released:{% endblocktrans %}</p>
-
-    <p><a href="{{ unstable_ubuntu32 }}"
-          onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_version }} for 32-bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endblocktrans %}</a></p>
-
-    <p><a href="{{ unstable_ubuntu64 }}"
-          onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ unstable_version }} for 64-bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endblocktrans %}</a></p>
-  </div>
-
-  <div class="halfbox_right darkborder fedorabox">
-    <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon" style="margin-top: -7px;">{{ fedora }}</h2>
-
-    <p>{% blocktrans %}
-      An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
-      for installation is available in the
-      <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
-      {% endblocktrans %}</p>
-
-    <p>{% blocktrans %}
-      Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a>
-      on how to enable the repositories on your system. Mixxx only requires enabling the
-      free repository; the nonfree repository is not necessary for Mixxx.
-      {% endblocktrans %}
-    </p>
-
-    <p>{% blocktrans %}
-      RPM Fusion builds are maintained by the Mixxx development team.
-      We support the next, the current, and selected previous
-      Fedora release(s) if possible.
-      {% endblocktrans %}
-    </p>
-
-    <p>{% blocktrans %}
-      The beta package will be continuously updated until Mixxx {{ next_stable_version }}
-      is released.
-      {% endblocktrans %}
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-
-  <div style="padding: 20px;">
+  <div>
     <h2>{% trans "Source Code" %}</h2>
 
     <p>
       {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.2/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
       {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's {{ unstable_git_branch }} branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
-      <pre>        git clone -b {{ unstable_git_branch }} https://github.com/mixxxdj/mixxx.git</pre>
+      <pre><code>git clone -b {{ unstable_git_branch }} https://github.com/mixxxdj/mixxx.git</code></pre>
     </p>
 
     <p>
       {% blocktrans with compiling_windows_wiki_link="<a href=\"/wiki/doku.php/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"/wiki/doku.php/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"/wiki/doku.php/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
     </p>
   </div>
-  {% endifequal %}
+</div>
+{% endifequal %}
 
+<div class="docs-section container">
   <a name="stable"></a>
   <h1>{% blocktrans %}Download Now ({{ stable_version }} Stable){% endblocktrans %}</h1>
   <div class="fullwidth">
@@ -219,103 +213,94 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
        {% trans "We happily provide Mixxx for free and donations are appreciated but not required." %}</p>
     {% include "donate_paypal.html" %}
   </div>
-  <div style="clear: both;"></div>
-  <div class="halfbox_left darkborder winbox">
 
-    <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon" style="margin-top: -7px;">{{ windows }}</h2>
+  <div class="grid-container halves">
+    <div>
+      <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h2>
+      <p>{% blocktrans %}Download {{ stable_version }} for Windows {{ stable_win_min_version }} or later.{% endblocktrans %}</p>
 
-    <p class="feature_indent">
-      <a href="{{ stable_win32 }}"
-         onClick="javascript:trackDownload('{{ stable_win32_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_version }} for 32-bit Windows {{ stable_win_min_version }} or later{% endblocktrans %}</a>
-    </p>
-
-    <p class="feature_indent">
-      <a href="{{ stable_win64 }}"
-         onClick="javascript:trackDownload('{{ stable_win64_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_version }} for 64-bit Windows {{ stable_win_min_version }} or later{% endblocktrans %}</a>
-    </p>
-  </div>
-
-  <div class="halfbox_right darkborder macbox">
-    <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{{ mac_osx }}</h2>
-    <p class="feature_indent">
-      <a href="{{ stable_osxintel }}"
-         onClick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel){% endblocktrans %}</a>
-    </p>
-
-    <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
-    <!--
-    <div style="text-align: center;">
-      <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;"></a>
+      <div class="grid-container halves">
+        <div>
+          <a class="button button-primary" href="{{ stable_win32 }}" onclick="javascript:trackDownload('{{ stable_win32_analytics_conversion }}');">Download (32 Bit)</a>
+        </div>
+        <div>
+          <a class="button button-primary" href="{{ stable_win64 }}" onclick="javascript:trackDownload('{{ stable_win64_analytics_conversion }}');">Download (64 Bit)</a>
+        </div>
+      </div>
     </div>
-    <p><small>Please note due to licensing restrictions, vinyl control is not
-    available in Mixxx from the Mac App Store.</small></p>
-    -->
+
+    <div>
+      <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h2>
+      <p>{% blocktrans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel).{% endblocktrans %}</p>
+      <a class="button button-primary" href="{{ stable_osxintel }}" onclick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">Download</a>
+
+      <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
+      <!--
+      <div style="text-align: center;">
+        <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
+          <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;"></a>
+      </div>
+      <p><small>Please note due to licensing restrictions, vinyl control is not
+      available in Mixxx from the Mac App Store.</small></p>
+      -->
+    </div>
+
+    <div>
+      <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h2>
+      <p class="feature_indent">{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
+      <p class="feature_indent">{% trans "Open a terminal, and enter:" %}</p>
+      <pre><code>sudo add-apt-repository ppa:mixxx/mixxx
+sudo apt update
+sudo apt install mixxx</code></pre>
+      <p class="feature_indent">
+        {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.3-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+        {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
+        {% endwith %}
+      </p>
+      <div class="grid-container halves">
+        <div>
+          <a class="button button-primary" href="{{ stable_ubuntu32 }}" onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">Download (32 Bit)</a>
+        </div>
+        <div>
+          <a class="button button-primary" href="{{ stable_ubuntu64 }}" onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">Download (64 Bit)</a>
+        </div>
+      </div>
+
+      <p>
+        <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.{% endblocktrans %}</small>
+      </p>
+    </div>
+
+    <div>
+      <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h2>
+
+      <p>{% blocktrans %}
+        An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
+        for installation is available in the
+        <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
+        {% endblocktrans %}</p>
+
+      <p>{% blocktrans %}
+        Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a>
+        on how to enable the repositories on your system. Mixxx only requires enabling the
+        free repository; the nonfree repository is not necessary for Mixxx.
+        {% endblocktrans %}
+      </p>
+
+      <p>{% blocktrans %}
+        RPM Fusion builds are maintained by the Mixxx development team.
+        We support the next, the current, and selected previous
+        Fedora release(s) if possible.
+        {% endblocktrans %}
+      </p>
+    </div>
   </div>
 
-  <div style="clear: both;"></div>
-
-  <div class="halfbox_left darkborder ubuntubox">
-    <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon" style="margin-top: -4px;">{{ ubuntu }}</h2>
-    <p class="feature_indent">{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later:{% endblocktrans %}</p>
-    <p class="feature_indent">{% trans "Open a terminal, and enter:" %}</p>
-    <pre class="feature_indent">
-      sudo add-apt-repository ppa:mixxx/mixxx
-      sudo apt update
-      sudo apt install mixxx
-    </pre>
-    <p class="feature_indent">
-      {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.3-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
-      {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
-      {% endwith %}
-    </p>
-    <p class="feature_indent"><a href="{{ stable_ubuntu32 }}"
-          onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_version }} for 32-bit Ubuntu Bionic{% endblocktrans %}</a></p>
-
-    <p class="feature_indent"><a href="{{ stable_ubuntu64 }}"
-          onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">
-        {% blocktrans %}{{ stable_version }} for 64-bit Ubuntu Bionic{% endblocktrans %}</a></p>
-
-    <p class="feature_indent">
-      <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.{% endblocktrans %}</small>
-    </p>
-  </div>
-
-  <div class="halfbox_right darkborder fedorabox">
-    <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon" style="margin-top: -7px;">{{ fedora }}</h2>
-
-    <p class="feature_indent">{% blocktrans %}
-      An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
-      for installation is available in the
-      <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
-      {% endblocktrans %}</p>
-
-    <p class="feature_indent">{% blocktrans %}
-      Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a>
-      on how to enable the repositories on your system. Mixxx only requires enabling the
-      free repository; the nonfree repository is not necessary for Mixxx.
-      {% endblocktrans %}
-    </p>
-
-    <p class="feature_indent">{% blocktrans %}
-      RPM Fusion builds are maintained by the Mixxx development team.
-      We support the next, the current, and selected previous
-      Fedora release(s) if possible.
-      {% endblocktrans %}
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-
-  <div class="feature_indent" style="padding: 0px 0px 20px 20px;">
+  <div>
     <h2>{% trans "Linux / Source Code" %}</h2>
     <p>
-      <a href="{{ stable_linuxsrc }}"
-         onClick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
+      <a class="button button-secondary" href="{{ stable_linuxsrc }}"
+         onclick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
         {% blocktrans %}Download {{ stable_version }} Source Code{% endblocktrans %}
       </a>
     </p>
@@ -323,73 +308,68 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     <p>
       {% trans "The Mixxx source code is made available under the GPL v2 or later. Please check the LICENSE file in our source tree for complete licensing information." %}
       {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The latest code from Mixxx's {{ stable_git_branch }} branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
-      <pre>        git clone -b {{ stable_git_branch }} https://github.com/mixxxdj/mixxx.git</pre>
+      <pre><code>git clone -b {{ stable_git_branch }} https://github.com/mixxxdj/mixxx.git</code></pre>
     </p>
 
     <p>
       {% blocktrans with compiling_windows_wiki_link="<a href=\"/wiki/doku.php/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"/wiki/doku.php/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"/wiki/doku.php/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
     </p>
   </div>
+</div>
 
+<div class="docs-section container">
   {% ifequal show_previous "yes" %}
   <a name="previous"></a>
   <h1>{% blocktrans %}Download Now ({{ previous_version }} Previous Stable Version){% endblocktrans %}</h1>
   <p class="fullwidth">
     {% trans "Mixxx is available for Windows, macOS, and Linux:" %}
   </p>
-  <div style="clear: both;"></div>
-  <div class="halfbox_left darkborder winbox">
+  <div class="grid-container halves">
+    <div>
+      <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h2>
+      <p>{% blocktrans %}Download {{ previous_version }} for Windows {{ previous_win_min_version }} or later.{% endblocktrans %}</p>
 
-    <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon" style="margin-top: -7px;">{{ windows }}</h2>
+      <div class="grid-container halves">
+        <div>
+          <a class="button button-primary" href="{{ previous_win32 }}" onclick="javascript:trackDownload('{{ previous_win32_analytics_conversion }}');">Download (32 Bit)</a>
+        </div>
+        <div>
+          <a class="button button-primary" href="{{ previous_win64 }}" onclick="javascript:trackDownload('{{ previous_win64_analytics_conversion }}');">Download (64 Bit)</a>
+        </div>
+      </div>
 
-    <p class="feature_indent">
-      <a href="{{ previous_win32 }}"
-         onClick="javascript:trackDownload('{{ previous_win32_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_version }} for 32-bit Windows {{ previous_win_min_version }} or later {% endblocktrans %}</a>
-    </p>
-
-    <p class="feature_indent">
-      <a href="{{ previous_win64 }}"
-         onClick="javascript:trackDownload('{{ previous_win64_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_version }} for 64-bit Windows {{ previous_win_min_version }} or later {% endblocktrans %}</a>
-    </p>
-    <br>
-    <p class="feature_indent">
-      <small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small>
-    </p>
-  </div>
-
-  <div class="halfbox_right darkborder macbox">
-    <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon" style="margin-top: -7px;">{{ mac_osx }}</h2>
-    <p class="feature_indent">
-      <a href="{{ previous_osxintel }}"
-         onClick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</a>
-    </p>
-
-    <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
-    <!--
-    <div style="text-align: center;">
-      <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;"></a>
+      <p>
+        <small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small>
+      </p>
     </div>
-    <p><small>Please note due to licensing restrictions, vinyl control is not
-    available in Mixxx from the Mac App Store.</small></p>
-    -->
+
+    <div>
+      <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h2>
+      <p class="feature_indent">{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
+      <a class="button button-primary" href="{{ previous_osxintel }}" onclick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">Download</a>
+
+      <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
+      <!--
+      <a class="button button-primary" href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
+        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;">
+      </a>
+      <p><small>Please note due to licensing restrictions, vinyl control is not
+      available in Mixxx from the Mac App Store.</small></p>
+      -->
+    </div>
   </div>
 
-  <div style="clear: both;"></div>
-
-  <div class="feature_indent" style="padding: 0px 0px 20px 20px;">
+  <div>
     <h2>{% trans "Linux / Source Code" %}</h2>
     <p>
-      <a href="{{ previous_linuxsrc }}"
-         onClick="javascript:trackDownload('{{ previous_linuxsrc_analytics_conversion }}');">
+      <a class="button button-secondary" href="{{ previous_linuxsrc }}"
+         onclick="javascript:trackDownload('{{ previous_linuxsrc_analytics_conversion }}');">
         {% blocktrans %}Download {{ previous_version }} Source Code{% endblocktrans %}
       </a>
     </p>
-
-  {% endifequal %}
+  </div>
+</div>
+{% endifequal %}
 
 </div>
 {% endblock %}
