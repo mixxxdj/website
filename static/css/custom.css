@@ -360,3 +360,7 @@ input:checked ~ .navbar-hamburger-content {
         overflow: visible;
     }
 }
+
+h1 a, h2 a, h3 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+}
