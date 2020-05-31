@@ -7,47 +7,61 @@
 {% block body %}
 <div class="docs-section container">
   <h1>{% trans "Press" %}</h1>
-    <h2>{% trans "Interviews" %}</h2>
-    <p>
-      {% blocktrans with project_manager_mail_link="mailto:press@mixxx.org" %}Please contact us at <a href="{{ project_manager_mail_link }}">press@mixxx.org</a> for information or interviews. We won't bite, we promise.{% endblocktrans %}
-    </p>
+  <p>
+    {% blocktrans with project_manager_mail_link="mailto:press@mixxx.org" %}If you want to report on Mixxx and like to get information or interviews, please contact us at <a href="{{ project_manager_mail_link }}">press@mixxx.org</a>. We won't bite, we promise.{% endblocktrans %}
+  </p>
+</div>
 
-    <h2>{% trans "Artwork" %}</h2>
-    <h6 class="docs-header">{% trans "Mixxx Logo" %}</h6>
-    <img class="center" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
-    <div class="grid-container halves">
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding.svg' %}">SVG</a>
-      </div>
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_large.tiff' %}">TIFF (1115 x 278 px)</a>
-      </div>
-    </div>
-    <div class="grid-container thirds">
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">PNG (240 x 60 px)</a>
-      </div>
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_medium.png' %}">PNG (480 x 119 px)</a>
-      </div>
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_large.png' %}">PNG (1115 x 278 px)</a>
-      </div>
-    </div>
-    <h6 class="docs-header">{% trans "Reference Screenshots:" %}</h6>
-    <div class="grid-container thirds">
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_latenight_skin.png' %}">Mixxx 2.0 default (Late Night Skin)</a>
-      </div>
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_deere_skin.png' %}">Mixxx 2.0 (Deere Skin)</a>
-      </div>
-      <div>
-        <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_shade_skin.png' %}">Mixxx 2.0 (Shade Skin)</a>
-      </div>
-    </div>
+<div id="logo" class="docs-section container">
+  <h2><a class="headline-link" href="logo">{% trans "Logo" %}</a></h2>
+  <img class="u-pull-right" style="max-height: 2em" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
+  <p>The Mixxx Logo was designed by Paul Bloch back in 2007. It was originally introduced as part of the <a href="{% url '/news/2008-02-15-minor-website-revamp.html' %}">website redesign for the Mixxx 1.6.0</a> release.</p>
+  <div class="u-cf"></div>
 
-  <h2>{% trans "Press Mirror" %}</h2>
+  <div class="grid-container halves">
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding.svg' %}">SVG</a>
+    </div>
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_large.tiff' %}">TIFF (1115 x 278 px)</a>
+    </div>
+  </div>
+  <div class="grid-container thirds">
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">PNG (240 x 60 px)</a>
+    </div>
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_medium.png' %}">PNG (480 x 119 px)</a>
+    </div>
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/logocolour_nopadding_large.png' %}">PNG (1115 x 278 px)</a>
+    </div>
+  </div>
+</div>
+
+<div id="screenshots" class="docs-section container">
+  {% with mixxx_version="2.0" %}
+  <h2><a class="headline-link" href="#screenshots">{% trans "Reference Screenshots" %}</a></h6>
+  <p>
+    {% blocktrans %}Here you can find some screenshots of the default skins included in Mixxx {{mixxx_version}}.{% endblocktrans %}
+  </p>
+
+  <div class="grid-container thirds">
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_latenight_skin.png' %}">Mixxx {{mixxx_version}} default (Late Night Skin)</a>
+    </div>
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_deere_skin.png' %}">Mixxx {{mixxx_version}} (Deere Skin)</a>
+    </div>
+    <div>
+      <a class="button button-secondary u-full-width" href="{% static '/static/images/press_art/mixxx_200_shade_skin.png' %}">Mixxx {{mixxx_version}} (Shade Skin)</a>
+    </div>
+  </div>
+  {% endwith %}
+</div>
+
+<div id="pressmirror" class="docs-section container">
+  <h2><a class="headline-link" href="#pressmirror">{% trans "Press Mirror" %}</a></h2>
   <div class="grid-container halves">
 
     <div>
