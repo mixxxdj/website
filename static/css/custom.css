@@ -62,39 +62,14 @@ html.transition-theme *:after {
 ul {
     margin-left: 2rem;
 }
-.docs-example .row, .docs-example.row, .docs-example form {
-    margin-bottom: 0;
-}
-.docs-example h1, .docs-example h2, .docs-example h3,
-.docs-example h4, .docs-example h5, .docs-example h6 {
-    margin-bottom: 1rem;
-}
 .heading-font-size {
     font-size: 1.2rem;
     color: #999;
     letter-spacing: normal;
 }
-.example {
-    position: relative;
-    margin-top: 4rem;
-}
-.example-header {
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: .5rem;
-}
-
 @media (min-width: 600px) {
-    .example-grid .column,
-    .example-grid .columns {
-        margin-bottom: 1.5rem;
-    }
     .docs-section {
         padding: 6rem 0;
-    }
-    .example-send-yourself-copy {
-        float: right;
-        margin-top: 12px;
     }
 }
 
@@ -132,17 +107,6 @@ i.fas, i.fab {
     .value-img {
         margin-bottom: 1rem;
     }
-}
-
-/* ---- Grid ---- */
-/* selects all grid-items (direct children of a grid container) */
-.grid-container-example > * {
-    background: var(--background-color-softer);
-    border-radius: 0.4rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    line-height: 2.4em;
-    height: 2.4em;
 }
 
 /* ---- Nav ---- */
