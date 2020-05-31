@@ -27,7 +27,7 @@
     <div>
       <img src="{% static '/static/images/ic_preferences_keydetect.png' %}" class="feature_icon">
       <h5 class="docs-header">{% trans "BPM, Key Detection & Sync" %}</h5>
-      <p class="feature_indent">
+      <p>
         {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endblocktrans %}
       </p>
     </div>
@@ -35,7 +35,7 @@
     <div>
       <img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">
       <h5 class="docs-header">{% trans "DJ Controller Support" %}</h5>
-      <p class="feature_indent">
+      <p>
         {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
       </p>
     </div>
@@ -43,7 +43,7 @@
     <div>
       <img src="{% static '/static/images/ic_preferences_waveform.png' %}" class="feature_icon">
       <h5 class="docs-header">{% trans "Effects" %}</h5>
-      <p class="feature_indent">
+      <p>
         {% blocktrans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endblocktrans %}
       </p>
     </div>
@@ -51,14 +51,14 @@
     <div>
       <img src="{% static '/static/images/ic_preferences_vinyl.png' %}" class="feature_icon">
       <h5 class="docs-header">{% trans "Vinyl Record Control" %}</h5>
-      <p class="feature_indent">
+      <p>
         {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
         <a href="/features">{% trans "Read more" %}</a>
       </p>
     </div>
   </div>
 
-  <div style="text-align: center">
+  <div class="grid-container">
     <p>
       {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for free now!{% endblocktrans %}
     </p>

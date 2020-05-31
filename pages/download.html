@@ -259,12 +259,12 @@ sudo apt install mixxx</code></pre>
 
     <div>
       <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h3>
-      <p class="feature_indent">{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
-      <p class="feature_indent">{% trans "Open a terminal, and enter:" %}</p>
+      <p>{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
+      <p>{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxx
 sudo apt update
 sudo apt install mixxx</code></pre>
-      <p class="feature_indent">
+      <p>
         {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.3-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
         {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
         {% endwith %}
@@ -354,7 +354,7 @@ sudo apt install mixxx</code></pre>
 
     <div>
       <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
-      <p class="feature_indent">{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
+      <p>{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
       <a class="button button-primary" href="{{ previous_osxintel }}" onclick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">Download</a>
 
       <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
