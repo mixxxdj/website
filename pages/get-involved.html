@@ -12,7 +12,7 @@
 <div id="developers" class="docs-section">
   <div class="grid-container halves">
     <div>
-      <h5>{% trans "Software Developers" %}</h5>
+      <h5><a class="headline-link" href="#developers">{% trans "Software Developers" %}</a></h5>
       <p>
         {% blocktrans with qt_link="http://www.qt.io" %}Mixxx is written in C++ and uses the <a href="{{ qt_link }}">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endblocktrans %}
       </p>
@@ -48,11 +48,10 @@
   </div>
 </div>
 
-<div id="developers" class="docs-section">
+<div id="djs" class="docs-section">
   <div class="grid-container halves">
     <div>
-      <a name="djs"></a>
-      <h5>{% trans "DJs" %}</h5>
+      <h5><a class="headline-link" href="#djs">{% trans "DJs" %}</a></h5>
       {% trans "There are many ways to help out as a DJ:" %}
       <ul>
         <li>
@@ -76,8 +75,7 @@
       </ul>
     </div>
     <div>
-      <a name="translators"></a>
-      <h5>{% trans "Translators" %}</h5>
+      <h5><a class="headline-link" href="#djs">{% trans "Translators" %}</a></h5>
       <p>
         {% blocktrans %}We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endblocktrans %}
       </p>
@@ -85,8 +83,7 @@
         {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" i18n_forum_link="/forums/viewforum.php?f=10" %}You can help translate by visiting our <a href="{{ com_transifex_mixxxdj_link }}">translations page</a>. To get help when translating, visit the <a href="{{ i18n_forum_link }}">Mixxx Localization forum</a>.{% endblocktrans %}
       </p>
 
-      <a name="artists"></a>
-      <h5>{% trans "Graphic Artists" %}</h5>
+      <h5><a class="headline-link" href="#djs">{% trans "Graphic Artists" %}</a></h5>
       <p>
         {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link }}">our forum</a>.{% endblocktrans %}
       </p>
