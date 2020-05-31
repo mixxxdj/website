@@ -81,27 +81,45 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 {% trans "Fedora" as fedora %}
 {% trans "Mixxx PPA" as mixxx_ppa %}
 
+<div id="download" class="docs-section container">
+  <h1><a class="headline-link" href="#download">Download Mixxx</a></h1>
+  <p>{% trans "Mixxx is available for Windows, macOS, and Linux." %}</p>
+  <p>
+    {% blocktrans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version.{% endblocktrans %}
+    {% ifequal show_unstable "yes" %}
+    {% blocktrans %}If you want to test the latest features of the upcoming {{ next_stable_version }} release, check out <a href="#unstable">{{ unstable_version }}</a>.{% endblocktrans %}
+    {% endifequal %}
+    {% ifequal show_previous "yes" %}
+    {% blocktrans %}More conservative users that want to stick with the old stable version can still download <a href="#previous">{{ previous_version }}</a>.{% endblocktrans %}
+    {% endifequal %}
+  </p>
+
+  <p>
+    {% blocktrans %}You don't need to pay for Mixxx because you can get it here for free. There is no official paid or &quot;pro&quot; version of Mixxx. The version available here is the full version.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans %}We happily provide Mixxx for free and donations are appreciated but not required.{% endblocktrans %}
+  </p>
+  <p>{% include "donate_paypal.html" %}</p>
+</div>
+
 {% ifequal show_unstable "yes" %}
-<div class="docs-section container">
-  <a name="unstable"></a>
-  <h1>{% blocktrans %}Download Now ({{ unstable_version }}){% endblocktrans %}</h1>
+<div id="unstable" class="docs-section container">
+  <h2><a class="headline-link" href="#unstable">{% blocktrans %}{{ unstable_version }} (Unstable Version){% endblocktrans %}</a></h2>
+
   <div>
-    <p><h2>For live use, we recommend <a href="#stable">{{ stable_version }} Stable</a> below.</h2></p>
+    <p>{% blocktrans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version below.{% endblocktrans %}</p>
     <p>
       {% blocktrans %}The Mixxx team has been working hard on the next version of Mixxx. Check out the <a href="{{ unstable_release_announcement }}">release announcement</a> for a list of the new features.{% endblocktrans %}
     </p>
-
     <p>
       <b>{% trans "Important:" %}</b> {% blocktrans with stable_link="#stable" %}While {{ unstable_version }} has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endblocktrans %}</a>
     </p>
-
-    <p>{% trans "Mixxx is available for Windows, macOS, and Linux. We happily provide Mixxx for free and donations are appreciated!" %}</p>
-    {% include "donate_paypal.html" %}
   </div>
 
   <div class="grid-container halves">
     <div>
-      <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h2>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ unstable_version }} for 32-bit Windows {{ unstable_win_min_version }} or later {% endblocktrans %}.</p>
 
       <div class="grid-container halves">
@@ -117,7 +135,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h2>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
       <p>
         {% blocktrans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel).{% endblocktrans %}
       </p>
@@ -128,7 +146,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h2>
+      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h3>
 
       <p>{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxxbetas
@@ -154,7 +172,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h2>
+      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h3>
 
       <p>{% blocktrans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
@@ -185,7 +203,7 @@ sudo apt install mixxx</code></pre>
   </div>
 
   <div>
-    <h2>{% trans "Source Code" %}</h2>
+    <h3>{% trans "Source Code" %}</h3>
 
     <p>
       {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.2/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
@@ -200,23 +218,17 @@ sudo apt install mixxx</code></pre>
 </div>
 {% endifequal %}
 
-<div class="docs-section container">
-  <a name="stable"></a>
-  <h1>{% blocktrans %}Download Now ({{ stable_version }} Stable){% endblocktrans %}</h1>
+<div id="stable" class="docs-section container">
+  <h2><a class="headline-link" href="#stable">{% blocktrans %}{{ stable_version }} (Stable Version){% endblocktrans %}</a></h2>
+
   <div class="fullwidth">
     <p>{% blocktrans %}Check out the <a href="{{ stable_release_announcement }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
     <p>{% blocktrans with previous_link="#previous" %}Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.{% endblocktrans %}</p>
-    <p>{% trans "Mixxx is available for Windows, macOS, and Linux." %}</p>
-    <p>{% trans "You don't need to pay for Mixxx because you can get it here for free." %}
-       {% trans "There is no official paid or &quot;pro&quot; version of Mixxx." %}
-       {% trans "The version available here is the full version." %}
-       {% trans "We happily provide Mixxx for free and donations are appreciated but not required." %}</p>
-    {% include "donate_paypal.html" %}
   </div>
 
   <div class="grid-container halves">
     <div>
-      <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h2>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for Windows {{ stable_win_min_version }} or later.{% endblocktrans %}</p>
 
       <div class="grid-container halves">
@@ -230,7 +242,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h2>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel).{% endblocktrans %}</p>
       <a class="button button-primary" href="{{ stable_osxintel }}" onclick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">Download</a>
 
@@ -246,7 +258,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h2>
+      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h3>
       <p class="feature_indent">{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
       <p class="feature_indent">{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxx
@@ -272,7 +284,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h2>
+      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h3>
 
       <p>{% blocktrans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
@@ -297,7 +309,7 @@ sudo apt install mixxx</code></pre>
   </div>
 
   <div>
-    <h2>{% trans "Linux / Source Code" %}</h2>
+    <h3>{% trans "Linux / Source Code" %}</h3>
     <p>
       <a class="button button-secondary" href="{{ stable_linuxsrc }}"
          onclick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
@@ -317,16 +329,13 @@ sudo apt install mixxx</code></pre>
   </div>
 </div>
 
-<div class="docs-section container">
+<div id="previous" class="docs-section container">
   {% ifequal show_previous "yes" %}
-  <a name="previous"></a>
-  <h1>{% blocktrans %}Download Now ({{ previous_version }} Previous Stable Version){% endblocktrans %}</h1>
-  <p class="fullwidth">
-    {% trans "Mixxx is available for Windows, macOS, and Linux:" %}
-  </p>
+  <h2><a class="headline-link" href="#previous">{% blocktrans %}{{ previous_version }} (Previous Stable Version){% endblocktrans %}</a></h2>
+
   <div class="grid-container halves">
     <div>
-      <h2><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h2>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ previous_version }} for Windows {{ previous_win_min_version }} or later.{% endblocktrans %}</p>
 
       <div class="grid-container halves">
@@ -344,7 +353,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h2><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h2>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
       <p class="feature_indent">{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
       <a class="button button-primary" href="{{ previous_osxintel }}" onclick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">Download</a>
 
@@ -360,7 +369,7 @@ sudo apt install mixxx</code></pre>
   </div>
 
   <div>
-    <h2>{% trans "Linux / Source Code" %}</h2>
+    <h3>{% trans "Linux / Source Code" %}</h3>
     <p>
       <a class="button button-secondary" href="{{ previous_linuxsrc }}"
          onclick="javascript:trackDownload('{{ previous_linuxsrc_analytics_conversion }}');">
