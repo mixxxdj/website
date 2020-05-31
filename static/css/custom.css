@@ -369,8 +369,8 @@ h6 a.headline-link {
 
 .splash {
     margin: 0;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
     background-size: cover;
     background-position: bottom;
 }
@@ -392,10 +392,14 @@ h6 a.headline-link {
 .splash-logo {
     max-width: 60%;
     display: block;
-    margin-top: -2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(0 0 10px black);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
