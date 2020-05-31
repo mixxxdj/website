@@ -10,16 +10,21 @@
     </span>
     <input class="navbar-hamburger-button" type="checkbox" id="navbar-hamburger-button" />
     <label class="navbar-hamburger-icon" for="navbar-hamburger-button"><span class="navicon"></span></label>
+    <span class="navbar-item navbar-download-button">
+      <span class="navbar-link">
+        <a class="button button-primary" href="{% url '/download.html' %}">{% trans 'Download' %}</a>
+      </span>
+    </span>
     <ul class="navbar-list navbar-hamburger-content">
       {% for item in NAV_MENU %}
-        <li class="navbar-item">
+        <li class="navbar-item{% if item.css %} {{ item.css }}{% endif %}">
           <a class="navbar-link" href="{{ item.url }}">
             {% filter nbsp %}{% trans item.title context item.context %}{% endfilter %}
           </a>
           {% if item.children %}
           <ul class="navbar-list navbar-dropdown">
             {% for child in item.children %}
-            <li class="navbar-item">
+            <li class="navbar-item{% if child.css %} {{ child.css }}{% endif %}">
               <a class="navbar-link" href="{{ child.url }}">
                 {% filter nbsp %}{% trans child.title context child.context %}{% endfilter %}
               </a>

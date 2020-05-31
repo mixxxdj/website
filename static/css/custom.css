@@ -141,7 +141,7 @@ i.fas, i.fab {
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: .2rem;
-    margin-right: 35px;
+    margin-right: 24px;
     text-decoration: none;
     line-height: 5rem;
     color: var(--text-color-normal);
@@ -228,6 +228,16 @@ img.responsive {
     }
 }
 
+.navbar-download-button {
+    display: none;
+    float: right;
+}
+
+.navbar-download-button .navbar-link {
+    margin-right: 0;
+}
+
+
 /* hamburger menu */
 
 /* menu icon */
@@ -236,7 +246,7 @@ img.responsive {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 20px 0;
+    padding: 24px 0;
     position: relative;
     user-select: none;
 }
@@ -313,6 +323,14 @@ input:checked ~ .navbar-hamburger-content {
         background-color: inherit;
         max-height: 100%;
         overflow: visible;
+    }
+
+    .navbar-hamburger-only {
+        display: none;
+    }
+
+    .navbar-download-button {
+        display: inline-block;
     }
 }
 
