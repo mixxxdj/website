@@ -119,7 +119,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h3>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ unstable_version }} for 32-bit Windows {{ unstable_win_min_version }} or later {% endblocktrans %}.</p>
 
       <div class="grid-container halves">
@@ -135,7 +135,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon"> {{ mac_osx }}</h3>
       <p>
         {% blocktrans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel).{% endblocktrans %}
       </p>
@@ -146,7 +146,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h3>
+      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon"> {{ ubuntu }}</h3>
 
       <p>{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxxbetas
@@ -172,7 +172,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h3>
+      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon"> {{ fedora }}</h3>
 
       <p>{% blocktrans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
@@ -228,7 +228,7 @@ sudo apt install mixxx</code></pre>
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h3>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for Windows {{ stable_win_min_version }} or later.{% endblocktrans %}</p>
 
       <div class="grid-container halves">
@@ -242,7 +242,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon"> {{ mac_osx }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel).{% endblocktrans %}</p>
       <a class="button button-primary" href="{{ stable_osxintel }}" onclick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">Download</a>
 
@@ -258,7 +258,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature_icon"> {{ ubuntu }}</h3>
+      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon"> {{ ubuntu }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
       <p>{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxx
@@ -284,7 +284,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature_icon"> {{ fedora }}</h3>
+      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon"> {{ fedora }}</h3>
 
       <p>{% blocktrans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
@@ -335,7 +335,7 @@ sudo apt install mixxx</code></pre>
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature_icon"> {{ windows }}</h3>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ previous_version }} for Windows {{ previous_win_min_version }} or later.{% endblocktrans %}</p>
 
       <div class="grid-container halves">
@@ -353,7 +353,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature_icon"> {{ mac_osx }}</h3>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon"> {{ mac_osx }}</h3>
       <p>{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
       <a class="button button-primary" href="{{ previous_osxintel }}" onclick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">Download</a>
 
