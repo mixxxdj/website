@@ -7,7 +7,8 @@
 {% block header %}
 <div class="header splash" style="background-image: url('{% static '/static/images/splash-bg.jpg' %}')">
   <div class="container">
-    <img class="splash-logo" src="{% static '/static/images/mixxx-icon-logo-symbolic.svg' %}">
+    <img class="responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
+    <img class="splash-logo" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
     <div class="splash-text">
       <h2>{% trans "DJ Your Way" %}</h2>
       <p>Free and open source DJ software for Windows, macOS, and Linux</p>
@@ -17,10 +18,6 @@
 {% endblock %}
 
 {% block body %}
-<div id="features" class="docs-section container">
-  <img class="responsive center" src="{% static '/static/images/splash-2.1.png' %}">
-</div>
-
 <div id="features" class="docs-section container">
   <h2><a class="headline-link" href="#features">{% trans "Powerful Features For All DJs" %}</a></h2>
 
