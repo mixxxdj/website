@@ -7,12 +7,12 @@
 {% block header %}
 <div class="header splash" style="background-image: url('{% static '/static/images/splash-bg.jpg' %}')">
   <div class="container">
-    <img class="center responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
+    <img class="responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
+    <img class="splash-logo" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
     <div class="splash-text">
-      <h1>{% trans "DJ Your Way" %}</h1>
+      <h2>{% trans "DJ Your Way" %}</h2>
       <p>Free and open source DJ software for Windows, macOS, and Linux</p>
     </div>
-    <a href="{% url '/download.html' %}" class="button button-primary splash-box">Free Download</a>
   </div>
 </div>
 {% endblock %}

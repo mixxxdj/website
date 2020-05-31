@@ -338,7 +338,8 @@ h6 a.headline-link {
 
 .splash {
     margin: 0;
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     background-size: cover;
     background-position: bottom;
 }
@@ -346,6 +347,24 @@ h6 a.headline-link {
     color: white;
     text-shadow: 0 0 20px black, 1px 0 20px black, -1px 0 20px black, 0 1px 20px black, 0 -1px 20px black;
 }
+.splash-text h1,
+.splash-text h2,
+.splash-text h3,
+.splash-text h4,
+.splash-text h5,
+.splash-text h6 {
+    margin: 0;
+}
 .splash-box {
     box-shadow: 0 0 20px black;
+}
+.splash-logo {
+    max-width: 60%;
+    display: block;
+    margin-top: -2em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0 0 10px black);
 }
