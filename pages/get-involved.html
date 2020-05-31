@@ -5,14 +5,14 @@
 {% block title %}{% trans "Get Involved" %}{% endblock %}
 
 {% block body %}
-<div class="container">
-<h2 style="display:inline-block">{% trans "Get Involved" %}</h2>
+<div class="docs-section container">
+<h1>{% trans "Get Involved" %}</h1>
 <p><a href="#djs">{% trans "Not a coder? Scroll down!" %}</a></p>
 
 <div id="developers" class="docs-section">
   <div class="grid-container halves">
     <div>
-      <h6 class="docs-header">{% trans "Software Developers" %}</h6>
+      <h5>{% trans "Software Developers" %}</h5>
       <p>
         {% blocktrans with qt_link="http://www.qt.io" %}Mixxx is written in C++ and uses the <a href="{{ qt_link }}">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endblocktrans %}
       </p>
@@ -52,7 +52,7 @@
   <div class="grid-container halves">
     <div>
       <a name="djs"></a>
-      <h2>{% trans "DJs" %}</h2>
+      <h5>{% trans "DJs" %}</h5>
       {% trans "There are many ways to help out as a DJ:" %}
       <ul>
         <li>
@@ -77,7 +77,7 @@
     </div>
     <div>
       <a name="translators"></a>
-      <h2>{% trans "Translators" %}</h2>
+      <h5>{% trans "Translators" %}</h5>
       <p>
         {% blocktrans %}We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endblocktrans %}
       </p>
@@ -85,7 +85,8 @@
         {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" i18n_forum_link="/forums/viewforum.php?f=10" %}You can help translate by visiting our <a href="{{ com_transifex_mixxxdj_link }}">translations page</a>. To get help when translating, visit the <a href="{{ i18n_forum_link }}">Mixxx Localization forum</a>.{% endblocktrans %}
       </p>
 
-      <h2>{% trans "Graphic Artists" %}</h2>
+      <a name="artists"></a>
+      <h5>{% trans "Graphic Artists" %}</h5>
       <p>
         {% blocktrans with creating_skins_wiki_link="/wiki/doku.php/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link }}">our forum</a>.{% endblocktrans %}
       </p>
