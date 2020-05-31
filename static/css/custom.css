@@ -60,7 +60,8 @@ ul {
 }
 @media (min-width: 600px) {
     .docs-section {
-        padding: 6rem 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 }
 
@@ -209,6 +210,7 @@ img.responsive {
         margin-top: 0;
         margin-left: -1em;
         padding-left: 1em;
+        padding-right: 1em;
         left: 0;
         display: none;
         background-color: var(--background-color);
