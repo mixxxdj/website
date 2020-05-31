@@ -226,8 +226,8 @@ img.responsive {
     }
 }
 
-.navbar-download-button {
-    display: none;
+.navbar-download-button .button {
+    width: 100%;
 }
 
 .navbar-download-button .navbar-link {
@@ -340,12 +340,8 @@ img.responsive {
         padding: 0;
     }
 
-    .navbar-hamburger-only {
-        display: none;
-    }
-
-    .navbar-download-button {
-        display: inline-block;
+    .navbar-download-button .button {
+        width: auto;
     }
 }
 

@@ -30,7 +30,6 @@ def preBuildPage(page, context, data):
             MenuItem("/forums", "Forums", "Navigation bar link to Mixxx Forums."),
             MenuItem("/wiki", "Wiki", "Navigation bar link to Mixxx Wiki."),
         )),
-        MenuItem("/download", "Download", "Navigation bar link to Mixxx download page.", css="navbar-hamburger-only"),
     )
 
     extra = {
