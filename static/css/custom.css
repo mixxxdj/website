@@ -22,15 +22,6 @@ html[data-theme="dark"] {
     --button-primary-color: white;
 }
 
-/* when prefers-color-scheme supported, these can be in single media query with above */
-html[data-theme="dark"] img.value-img {
-    filter: invert(0.8);
-}
-html[data-theme="dark"] img {
-    opacity: .90;
-    transition: opacity .5s ease-in-out;
-}
-
 /* add a transition to ease into new themes */
 /* looks best in Mozilla, text transitions late in Safari/Chrome */
 html.transition-theme,
@@ -327,4 +318,18 @@ input:checked ~ .navbar-hamburger-content {
 
 h1 a, h2 a, h3 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none;
+}
+
+.splash {
+    margin: 0;
+    padding: 1rem;
+    background-size: cover;
+    background-position: bottom;
+}
+.splash-text {
+    color: white;
+    text-shadow: 0 0 20px black, 1px 0 20px black, -1px 0 20px black, 0 1px 20px black, 0 -1px 20px black;
+}
+.splash-box {
+    box-shadow: 0 0 20px black;
 }

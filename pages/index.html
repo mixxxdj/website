@@ -5,12 +5,14 @@
 {% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
 
 {% block header %}
-<div class="container">
-  <div class="header">
-    <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
-    <h1>{% trans "DJ Your Way" %}</h1>
-    <p>Free and open source DJ software for Windows, macOS, and Linux</p>
-    <a href="{% url '/download.html' %}" class="button button-primary">Free Download</a>
+<div class="header splash" style="background-image: url('{% static '/static/images/splash-bg.jpg' %}')">
+  <div class="container">
+    <img class="center responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
+    <div class="splash-text">
+      <h1>{% trans "DJ Your Way" %}</h1>
+      <p>Free and open source DJ software for Windows, macOS, and Linux</p>
+    </div>
+    <a href="{% url '/download.html' %}" class="button button-primary splash-box">Free Download</a>
   </div>
 </div>
 {% endblock %}
