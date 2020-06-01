@@ -130,27 +130,21 @@
       <div>
         <img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "Organization" %}</h5>
-        <p>
-          <h6 class="docs-header">{% trans "Crates and Playlists" %}</h6>
-          {% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}
-        </p>
-        <p>
-          <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
-          {% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}
-        </p>
+
+        <h6 class="docs-header">{% trans "Crates and Playlists" %}</h6>
+        <p>{% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}</p>
+
+        <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
+        <p>{% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}</p>
       </div>
       <div>
-        <img class="responsive" width="362px" src="{% static '/static/images/feature_library-2.0.png' %}">
-        <p>
-          <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
-          {% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}
-        </p>
-        <p>
-          <h6 class="docs-header">{% trans "MusicBrainz Tag Lookup" %}</h6>
-          {% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}
-        </p>
-      </div>
+        <img class="responsive" src="{% static '/static/images/feature_library-2.0.png' %}">
+        <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
+        <p>{% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}</p>
 
+        <h6 class="docs-header">{% trans "MusicBrainz Tag Lookup" %}</h6>
+        <p>{% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}</p>
+      </div>
       <div>
         <img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "BPM &amp; Key Detection" %}</h5>
@@ -158,7 +152,7 @@
       </div>
       <div>
         <img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature-icon">
-        <h5 class="docs-header">{% trans "Auto DJ" %}</h2>
+        <h5 class="docs-header">{% trans "Auto DJ" %}</h5>
         <p>
           {% trans "Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches your back until you return." %}
         </p>
@@ -172,16 +166,16 @@
   <p>{% trans "Mixxx includes four different skins, each with a different look and a configurable layout." %}</p>
   <div class="grid-container halves">
     <div>
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_deere.png' %}">
+      <img class="responsive" src="{% static '/static/images/feature_skins_deere.png' %}">
     </div>
     <div>
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_latenight.png' %}">
+      <img class="responsive" src="{% static '/static/images/feature_skins_latenight.png' %}">
     </div>
     <div>
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_shade.png' %}">
+      <img class="responsive" src="{% static '/static/images/feature_skins_shade.png' %}">
     </div>
     <div>
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_tango.png' %}">
+      <img class="responsive" src="{% static '/static/images/feature_skins_tango.png' %}">
     </div>
   </div>
 </div>

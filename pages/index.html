@@ -7,8 +7,8 @@
 {% block header %}
 <div class="header splash cover-bg" style="background-image: url('{% static '/static/images/cover/splash-bg.jpg' %}'); background-position: center;">
   <div class="container">
-    <img class="responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px">
-    <img class="splash-logo" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}">
+    <img class="responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px" alt="Mixxx Screenshot">
+    <img class="splash-logo" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}" alt="Mixxx Logo">
     <div class="splash-text">
       <h2>{% trans "DJ Your Way" %}</h2>
       <p>Free and open source DJ software for Windows, macOS, and Linux</p>
@@ -25,7 +25,7 @@
 
   <div class="grid-container halves">
     <div>
-      <img src="{% static '/static/images/ic_preferences_keydetect.png' %}" class="feature-icon">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_keydetect.png' %}" alt="{% trans "BPM, Key Detection & Sync" %}">
       <h5 class="docs-header">{% trans "BPM, Key Detection & Sync" %}</h5>
       <p>
         {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endblocktrans %}
@@ -33,7 +33,7 @@
     </div>
 
     <div>
-      <img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature-icon">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_controllers.png' %}" alt="{% trans "DJ Controller Support" %}">
       <h5 class="docs-header">{% trans "DJ Controller Support" %}</h5>
       <p>
         {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
@@ -41,7 +41,7 @@
     </div>
 
     <div>
-      <img src="{% static '/static/images/ic_preferences_waveform.png' %}" class="feature-icon">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_waveform.png' %}" alt="{% trans "Effects" %}">
       <h5 class="docs-header">{% trans "Effects" %}</h5>
       <p>
         {% blocktrans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endblocktrans %}
@@ -49,7 +49,7 @@
     </div>
 
     <div>
-      <img src="{% static '/static/images/ic_preferences_vinyl.png' %}" class="feature-icon">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_vinyl.png' %}" alt="{% trans "Vinyl Record Control" %}">
       <h5 class="docs-header">{% trans "Vinyl Record Control" %}</h5>
       <p>
         {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
@@ -89,9 +89,9 @@
   <div class="grid-container halves">
     {% for post in posts|slice:":2" %}
     <div>
-      <time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>
+      <time>{{ post.date|date:"Y-m-d" }}</time>
       <h5>{{ post.title }}</h5>
-      <p> {{ post.post|truncatewords_html:30 }}</p>
+      {{ post.post|truncatewords_html:30 }}
       <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
       </p>
     </div>
