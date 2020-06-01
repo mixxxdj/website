@@ -76,15 +76,16 @@
 
         <h5 class="docs-header">{% trans "MIDI and HID Controller Support" %}</h5>
         <p>
-          {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}
-          <h6 class="docs-header">Included Presets</h6> for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Full list of supported devices</a>
-          {% endblocktrans %}
+          {% blocktrans %}
+          <h6 class="docs-header">Included Presets</h6> for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more.{% endblocktrans %}
         </p>
+        <a class="button button-secondary" href="/wiki/doku.php/hardware_compatibility">{% trans "Supported Devices" %}</a>
 
         <p>
           <h6 class="docs-header">{% trans "Programmable Mapping Engine" %}</h6>
-          {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
+          {% blocktrans %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour.{% endblocktrans %}
         </p>
+        <a class="button button-secondary" href="/wiki/doku.php/midi_scripting">{% trans "Read more" %}</a>
       </div>
 
       <div>
@@ -94,8 +95,9 @@
 
         <h5 class="docs-header">{% trans "Free Timecode Vinyl Control" %}</h5>
         <p>
-          {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, macOS, and Linux. <a href="{{ vinyl_control_manual_link }}">Read more</a> {% endblocktrans %}
+          {% blocktrans %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, macOS, and Linux.{% endblocktrans %}
         </p>
+        <a class="button button-secondary" href="/manual/latest/chapters/vinyl_control.html">{% trans "Read more" %}</a>
       </div>
     </div>
   </div>
@@ -237,8 +239,5 @@
   <p>
     {% blocktrans %}Mixxx is free open-source software and entirely community driven. The development is shouldered by passionate DJs and programmers that dedicate their free time on working Mixxx. Mixxx is and always will be free - download Mixxx and start DJing now!{% endblocktrans %}
   </p>
-  <div>
-  <a class="button button-primary" href="{% url '/download.html'}">Download</a>
-  </div>
 </div>
 {% endblock %}
