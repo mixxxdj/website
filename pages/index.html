@@ -53,15 +53,29 @@
       <h5 class="docs-header">{% trans "Vinyl Record Control" %}</h5>
       <p>
         {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
-        <a href="/features">{% trans "Read more" %}</a>
       </p>
     </div>
   </div>
+</div>
 
-  <div class="grid-container">
-    <p>
-      {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for free now!{% endblocktrans %}
-    </p>
+<div id="opensource" class="docs-section container">
+  <h2><a class="headline-link" href="#opensource">{% trans "Free &amp; Open Source" %}</a></h2>
+  <p>
+    {% blocktrans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx - the development is shouldered by passionate DJs and programmers that dedicate their free time on working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endblocktrans %}
+  </p>
+  <div class="grid-container quarters">
+    <div>
+      <a class="button button-primary" href="{% url "/download.html" %}">{% trans "Download" %}</a>
+    </div>
+    <div>
+      <a class="button button-secondary" href="{% url "/features.html" %}">{% trans "More Features" %}</a>
+    </div>
+    <div>
+      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans "Source Code" %}</a>
+    </div>
+    <div>
+      {% include "donate_paypal.html" %}
+    </div>
   </div>
 </div>
 
