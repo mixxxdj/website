@@ -371,8 +371,6 @@ h6 a.headline-link {
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    background-size: cover;
-    background-position: bottom;
 }
 .splash-text {
     color: white;
@@ -398,4 +396,9 @@ h6 a.headline-link {
     margin-right: auto;
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(0 0 10px black);
+}
+
+.cover-bg {
+    background-size: cover;
+    background-position: center;
 }

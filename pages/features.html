@@ -61,6 +61,46 @@
   </div>
 </div>
 
+<div id="hardware" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/hardware-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#hardware">{% trans "Customizable DJ Hardware Support" %}</a></h2>
+    <p>
+      {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
+    </p>
+
+    <div class="grid-container halves">
+      <div>
+        <div style="max-height: 200px;">
+          <img class="responsive" src="{% static '/static/images/feature_midi-2.0.png' %}">
+        </div>
+
+        <h5 class="docs-header">{% trans "MIDI and HID Controller Support" %}</h5>
+        <p>
+          {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}
+          <h6 class="docs-header">Included Presets</h6> for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Full list of supported devices</a>
+          {% endblocktrans %}
+        </p>
+
+        <p>
+          <h6 class="docs-header">{% trans "Programmable Mapping Engine" %}</h6>
+          {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
+        </p>
+      </div>
+
+      <div>
+        <div style="max-height: 200px;">
+          <img class="responsive" src="{% static '/static/images/feature_vinylcontrol.png' %}">
+        </div>
+
+        <h5 class="docs-header">{% trans "Free Timecode Vinyl Control" %}</h5>
+        <p>
+          {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, macOS, and Linux. <a href="{{ vinyl_control_manual_link }}">Read more</a> {% endblocktrans %}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="samplers" class="docs-section container">
   <h2><a class="headline-link" href="#samplers">{% trans "Sampler Decks" %}</a></h2>
   <p>
@@ -70,7 +110,6 @@
   <img class="responsive" src="{% static '/static/images/feature_sampler2.png' %}">
 </div>
 
-
 <div id="effects" class="docs-section container">
   <h2><a class="headline-link" href="#effects">{% trans "Effects Chains" %}</a></h2>
   <p>
@@ -79,85 +118,49 @@
   <img class="responsive" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
 </div>
 
-<div id="hardware" class="docs-section container">
-  <h2><a class="headline-link" href="#hardware">{% trans "Customizable DJ Hardware Support" %}</a></h2>
-  <p>
-    {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
-  </p>
+<div id="library" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/library-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#library">{% trans "Sophisticated Music Library" %}</a></h2>
+    <p>
+    {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
 
-  <div class="grid-container halves">
-    <div>
-      <div style="max-height: 200px;">
-        <img class="responsive" src="{% static '/static/images/feature_midi-2.0.png' %}">
+    <div class="grid-container halves">
+      <div>
+        <img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature-icon">
+        <h5 class="docs-header">{% trans "Organization" %}</h5>
+        <p>
+          <h6 class="docs-header">{% trans "Crates and Playlists" %}</h6>
+          {% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}
+        </p>
+        <p>
+          <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
+          {% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}
+        </p>
+      </div>
+      <div>
+        <img class="responsive" width="362px" src="{% static '/static/images/feature_library-2.0.png' %}">
+        <p>
+          <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
+          {% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}
+        </p>
+        <p>
+          <h6 class="docs-header">{% trans "MusicBrainz Tag Lookup" %}</h6>
+          {% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}
+        </p>
       </div>
 
-      <h5 class="docs-header">{% trans "MIDI and HID Controller Support" %}</h5>
-      <p>
-        {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}
-        <h6 class="docs-header">Included Presets</h6> for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Full list of supported devices</a>
-        {% endblocktrans %}
-      </p>
-
-      <p>
-        <h6 class="docs-header">{% trans "Programmable Mapping Engine" %}</h6>
-        {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
-      </p>
-    </div>
-
-    <div>
-      <div style="max-height: 200px;">
-        <img class="responsive" src="{% static '/static/images/feature_vinylcontrol.png' %}">
+      <div>
+        <img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature-icon">
+        <h5 class="docs-header">{% trans "BPM &amp; Key Detection" %}</h5>
+        <p>{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
       </div>
-
-      <h5 class="docs-header">{% trans "Free Timecode Vinyl Control" %}</h5>
-      <p>
-        {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, macOS, and Linux. <a href="{{ vinyl_control_manual_link }}">Read more</a> {% endblocktrans %}
-      </p>
-    </div>
-  </div>
-</div>
-
-<div id="library" class="docs-section container">
-  <h2><a class="headline-link" href="#library">{% trans "Sophisticated Music Library" %}</a></h2>
-  <p>
-  {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
-
-  <div class="grid-container halves">
-    <div>
-      <img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature-icon">
-      <h5 class="docs-header">{% trans "Organization" %}</h5>
-      <p>
-        <h6 class="docs-header">{% trans "Crates and Playlists" %}</h6>
-        {% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}
-      </p>
-      <p>
-        <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
-        {% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}
-      </p>
-    </div>
-    <div>
-      <img class="responsive" width="362px" src="{% static '/static/images/feature_library-2.0.png' %}">
-      <p>
-        <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
-        {% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}
-      </p>
-      <p>
-        <h6 class="docs-header">{% trans "MusicBrainz Tag Lookup" %}</h6>
-        {% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}
-      </p>
-    </div>
-
-    <div>
-      <img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature-icon">
-      <h5 class="docs-header">{% trans "BPM &amp; Key Detection" %}</h5>
-      <p>{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
-    </div>
-    <div>
-      <img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature-icon">
-      <h5 class="docs-header">{% trans "Auto DJ" %}</h2>
-      <p>
-        {% trans "Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches your back until you return." %}
-      </p>
+      <div>
+        <img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature-icon">
+        <h5 class="docs-header">{% trans "Auto DJ" %}</h2>
+        <p>
+          {% trans "Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches your back until you return." %}
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -181,41 +184,43 @@
   </div>
 </div>
 
-<div id="broadcast" class="docs-section container">
-  <h2><a class="headline-link" href="#broadcast">{% trans "Record and Broadcast" %}</a></h2>
-  <p>
-    {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
-  </p>
-  <div class="grid-container halves">
-    <div>
-      <img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature-icon">
-      <h5 class="docs-header">Recording</h5>
-      <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
-      </p>
-    </div>
+<div id="broadcast" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/broadcast-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#broadcast">{% trans "Record and Broadcast" %}</a></h2>
+    <p>
+      {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
+    </p>
+    <div class="grid-container halves">
+      <div>
+        <img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature-icon">
+        <h5 class="docs-header">Recording</h5>
+        <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
+        </p>
+      </div>
 
-    <div>
-      <img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature-icon">
-      <h5 class="docs-header">{% trans "Live Broadcasting" %}</h5>
-      <p>
-        {% trans "Stream your mixes live over the Internet to your audience and friends through a Shoutcast or Icecast server." %}
-      </p>
-    </div>
+      <div>
+        <img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature-icon">
+        <h5 class="docs-header">{% trans "Live Broadcasting" %}</h5>
+        <p>
+          {% trans "Stream your mixes live over the Internet to your audience and friends through a Shoutcast or Icecast server." %}
+        </p>
+      </div>
 
-    <div>
-      <img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature-icon">
-      <h5 class="docs-header">{% trans "ReplayGain Normalization" %}</h5>
-      <p>
-        {% trans "Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
-      </p>
-    </div>
+      <div>
+        <img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature-icon">
+        <h5 class="docs-header">{% trans "ReplayGain Normalization" %}</h5>
+        <p>
+          {% trans "Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
+        </p>
+      </div>
 
-    <div>
-      <img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature-icon">
-      <h5 class="docs-header">{% trans "Microphone &amp; Auxiliary Inputs" %}</h5>
-      <p>
-        {% trans "Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs let you include different sound sources without needing an external hardware mixer. Latency compensation keeps your recorded and broadcasted mixes in time when using direct monitoring." %}
-      </p>
+      <div>
+        <img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature-icon">
+        <h5 class="docs-header">{% trans "Microphone &amp; Auxiliary Inputs" %}</h5>
+        <p>
+          {% trans "Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs let you include different sound sources without needing an external hardware mixer. Latency compensation keeps your recorded and broadcasted mixes in time when using direct monitoring." %}
+        </p>
+      </div>
     </div>
   </div>
 </div>
