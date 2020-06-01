@@ -13,7 +13,7 @@
     {% with post=posts|first %}
     <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
     <p style="font-size: small;">
-      Posted on <time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>
+      Posted on <time>{{ post.date|date:"Y-m-d" }}</time>
       {% if post.author %}
       by
       <span class="author">
