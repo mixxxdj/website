@@ -186,6 +186,10 @@ img.responsive {
     max-width: 100%;
 }
 
+.grid-container img.responsive {
+    margin-bottom: 3rem;
+}
+
 /* Footer */
 .footer {
     font-size: 1.5rem;
