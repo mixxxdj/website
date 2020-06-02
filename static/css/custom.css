@@ -437,3 +437,15 @@ h6 a.headline-link {
 .video-container .video-button {
     display: none;
 }
+
+.download-button-container {
+    text-align: center;
+}
+
+.download-button-container .download-button {
+    display: block
+}
+
+.download-button-container .download-button-description {
+    font-size: small;
+}
