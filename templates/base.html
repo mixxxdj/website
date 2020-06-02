@@ -37,6 +37,11 @@
 
     <script src="{% static '/static/js/video.js' %}"></script>
 
+    <!-- Preload fonts to avoid flash of unstyled text (FOUT) -->
+    <link rel="preload" href="{% static 'fonts/raleway-v14-latin-ext_latin-300.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/raleway-v14-latin-ext_latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'fonts/raleway-v14-latin-ext_latin-600.woff2' %}" as="font" type="font/woff2" crossorigin>
+
     {% block extra_head %}
     {% endblock %}
   </head>
