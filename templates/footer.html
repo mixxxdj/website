@@ -14,8 +14,6 @@
         <h2 class="docs-header">Community</h2>
         <ul>
           <li><a href="/forums">Forums</a></li>
-          <li><a href="/wiki">Wiki</a></li>
-          <li><a href="{% url '/news.html' %}">News</a> (<a href="{% url '/feed.xml' %}">Feed</a>)</li>
           <li>
             <a class="twitter social_icon" href="https://twitter.com/mixxxdj" target="_blank">
               <img src="{% static '/static/images/social_icons/twitter.svg' %}" alt="Twitter">
@@ -34,13 +32,21 @@
               <span>Zulip</span>
             </a>
           </li>
+          <li>
+            <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
+              <img src="{% static '/static/images/social_icons/github.svg' %}" alt="GitHub">
+              <span>GitHub</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div>
         <h2 class="docs-header">About</h2>
         <ul>
+          <li><a href="{% url '/news.html' %}">News</a> (<a href="{% url '/feed.xml' %}">Feed</a>)</li>
           <li><a href="{% url '/press.html' %}">Press</a></li>
           <li><a href="{% url '/contact.html' %}">Contact</a></li>
+          <li><a href="/wiki">Wiki</a></li>
         </ul>
       </div>
     </div>
