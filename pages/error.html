@@ -6,13 +6,20 @@
 
 <div class="docs-section container">
   <h1>{% trans "We're sorry!" %}</h1>
-  <p>{% blocktrans %}The page <b id="url"></b> couldn't be found.{% endblocktrans %}</p>
+  <p>{% blocktrans %}The page <strong id="url"></strong> couldn't be found.{% endblocktrans %}</p>
 </div>
 
 {% endblock %}
 
 {% block extra_script %}
-<script type="text/javascript" charset="utf-8">
-  document.getElementById('url').textContent = window.location.pathname;
+<script>
+;(function() {
+  document.addEventListener("DOMContentLoaded", function() {
+      let element = document.querySelector("#url");
+      if (element) {
+        element.textContent = window.location.pathname;
+      }
+  });
+}());
 </script>
 {% endblock %}
