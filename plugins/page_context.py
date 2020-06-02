@@ -21,6 +21,7 @@ def preBuildPage(page, context, data):
         MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
         MenuItem("/about", "About", "Navigation bar link to Mixxx about page.", children=(
             MenuItem("/features", "Features", "Navigation bar link to Mixxx features page."),
+            MenuItem("/screenshots", "Screenshots", "Navigation bar link to Mixxx Screenshots page."),
             MenuItem("/press", "Press", "Navigation bar link to Mixxx Press page"),
             MenuItem("/contact", "Contact", "Navigation bar link to Mixxx contact page."),
             MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Get Involved page."),
