@@ -166,11 +166,22 @@ i.fas, i.fab {
     }
 }
 
-/* Images */
-img.feature-icon {
-    height:4rem;
+/* Feature Indents */
+.feature-icon {
+    height: 3rem;
 }
 
+.feature-indent {
+    margin-left: 4rem;
+}
+
+.feature-indent .feature-icon {
+    float: left;
+    margin-left: -4rem;
+    margin-top: 0.5rem;
+}
+
+/* Images */
 img.responsive {
     max-width: 100%;
 }
@@ -345,6 +356,15 @@ img.responsive {
     .navbar-download-button .button {
         width: auto;
     }
+}
+
+h6 {
+    margin-bottom: 1rem;
+}
+
+.grid-container p + h5,
+.grid-container p + h6 {
+    margin-top: 3rem;
 }
 
 h1 a,

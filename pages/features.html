@@ -127,7 +127,7 @@
     {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
 
     <div class="grid-container halves u-align-left">
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "Organization" %}</h5>
 
@@ -137,7 +137,7 @@
         <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
         <p>{% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}</p>
       </div>
-      <div>
+      <div class="feature-indent">
         <img class="responsive" src="{% static '/static/images/feature_library-2.0.png' %}">
         <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
         <p>{% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}</p>
@@ -145,12 +145,12 @@
         <h6 class="docs-header">{% trans "MusicBrainz Tag Lookup" %}</h6>
         <p>{% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}</p>
       </div>
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "BPM &amp; Key Detection" %}</h5>
         <p>{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
       </div>
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "Auto DJ" %}</h5>
         <p>
@@ -187,14 +187,14 @@
       {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
     </p>
     <div class="grid-container halves u-align-left">
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature-icon">
         <h5 class="docs-header">Recording</h5>
         <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
         </p>
       </div>
 
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "Live Broadcasting" %}</h5>
         <p>
@@ -202,7 +202,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "ReplayGain Normalization" %}</h5>
         <p>
@@ -210,7 +210,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="feature-indent">
         <img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature-icon">
         <h5 class="docs-header">{% trans "Microphone &amp; Auxiliary Inputs" %}</h5>
         <p>
