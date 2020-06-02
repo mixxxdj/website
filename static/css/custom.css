@@ -438,14 +438,10 @@ h6 a.headline-link {
     display: none;
 }
 
-.download-button-container {
-    text-align: center;
-}
-
-.download-button-container .download-button {
+.button-container .button {
     display: block
 }
 
-.download-button-container .download-button-description {
+.download-button-description {
     font-size: small;
 }

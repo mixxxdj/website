@@ -85,8 +85,8 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     {% endifequal %}
   </p>
 
-  <p class="download-button-container">
-    <a href="#stable" class="button button-primary download-button">{% blocktrans %}Download {{ stable_version }}{% endblocktrans %}</a>
+  <p class="grid-container full">
+    <a href="#stable" class="button button-primary download-button" title="{% trans 'Download stable version of Mixxx' %}">{% blocktrans %}Download {{ stable_version }}{% endblocktrans %}</a>
     <span class="download-button-description">{% blocktrans %}Select your Operating System below.{% endblocktrans %}</span>
   </p>
 
@@ -96,7 +96,13 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
   <p>
     {% blocktrans %}We happily provide Mixxx for free and donations are appreciated but not required.{% endblocktrans %}
   </p>
-  <p>{% include "donate_paypal.html" %}</p>
+  <div class="grid-container halves button-container">
+    <div>
+      {% include "donate_paypal.html" %}
+    </div>
+    <div>
+      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank" title="{% trans 'View Source Code on GitHub' %}">{% trans 'Source Code' %}</a>
+    </div>
 </div>
 
 {% ifequal show_unstable "yes" %}
