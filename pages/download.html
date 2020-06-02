@@ -110,7 +110,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon"> {{ windows }}</h3>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ unstable_version }} for 32-bit Windows {{ unstable_win_min_version }} or later {% endblocktrans %}.</p>
 
       <div class="grid-container halves">
@@ -126,7 +126,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon"> {{ mac_osx }}</h3>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
       <p>
         {% blocktrans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel).{% endblocktrans %}
       </p>
@@ -137,7 +137,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon"> {{ ubuntu }}</h3>
+      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon" alt="Ubuntu"> {{ ubuntu }}</h3>
 
       <p>{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxxbetas
@@ -163,7 +163,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon"> {{ fedora }}</h3>
+      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon" alt="Fedora"> {{ fedora }}</h3>
 
       <p>{% blocktrans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
@@ -219,7 +219,7 @@ sudo apt install mixxx</code></pre>
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon"> {{ windows }}</h3>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for Windows {{ stable_win_min_version }} or later.{% endblocktrans %}</p>
 
       <div class="grid-container halves">
@@ -233,7 +233,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon"> {{ mac_osx }}</h3>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel).{% endblocktrans %}</p>
       <a class="button button-primary" href="{{ stable_osxintel }}" onclick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">Download</a>
 
@@ -241,7 +241,7 @@ sudo apt install mixxx</code></pre>
       <!--
       <div style="text-align: center;">
         <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-          <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;"></a>
+          <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;" alt="Mac App Store"></a>
       </div>
       <p><small>Please note due to licensing restrictions, vinyl control is not
       available in Mixxx from the Mac App Store.</small></p>
@@ -249,7 +249,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon"> {{ ubuntu }}</h3>
+      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon" alt="Ubuntu"> {{ ubuntu }}</h3>
       <p>{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
       <p>{% trans "Open a terminal, and enter:" %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxx
@@ -275,7 +275,7 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon"> {{ fedora }}</h3>
+      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon" alt="Fedora"> {{ fedora }}</h3>
 
       <p>{% blocktrans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
@@ -326,7 +326,7 @@ sudo apt install mixxx</code></pre>
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon"> {{ windows }}</h3>
+      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ previous_version }} for Windows {{ previous_win_min_version }} or later.{% endblocktrans %}</p>
 
       <div class="grid-container halves">
@@ -344,14 +344,14 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon"> {{ mac_osx }}</h3>
+      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
       <p>{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
       <a class="button button-primary" href="{{ previous_osxintel }}" onclick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">Download</a>
 
       <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
       <!--
       <a class="button button-primary" href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;">
+        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;" alt="Mac App Store">
       </a>
       <p><small>Please note due to licensing restrictions, vinyl control is not
       available in Mixxx from the Mac App Store.</small></p>
@@ -370,6 +370,4 @@ sudo apt install mixxx</code></pre>
   </div>
 </div>
 {% endifequal %}
-
-</div>
 {% endblock %}

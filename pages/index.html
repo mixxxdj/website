@@ -93,7 +93,6 @@
       <h5>{{ post.title }}</h5>
       {{ post.post|truncatewords_html:30 }}
       <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
-      </p>
     </div>
     {% endfor %}
   </div>
