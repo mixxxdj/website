@@ -372,10 +372,18 @@ h6 a.headline-link {
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
+
+.splash img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(0 0 10px black);
+}
+
+
 .splash-text {
     color: white;
     text-shadow: 0 0 20px black, 1px 0 20px black, -1px 0 20px black, 0 1px 20px black, 0 -1px 20px black;
 }
+
 .splash-text h1,
 .splash-text h2,
 .splash-text h3,
@@ -384,18 +392,28 @@ h6 a.headline-link {
 .splash-text h6 {
     margin: 0;
 }
-.splash-box {
-    box-shadow: 0 0 20px black;
-}
+
 .splash-logo {
     max-width: 60%;
     display: block;
-    margin-top: -2em;
-    margin-bottom: 0.5em;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     margin-left: auto;
     margin-right: auto;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(0 0 10px black);
+}
+
+.splash-social {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    justify-content: space-between;
+}
+
+.splash-social img {
+    height: 1.5em;
 }
 
 .cover-bg {

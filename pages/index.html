@@ -7,11 +7,32 @@
 {% block header %}
 <div class="header splash cover-bg" style="background-image: url('{% static '/static/images/cover/splash-bg.jpg' %}'); background-position: center;">
   <div class="container">
-    <img class="responsive splash-box" src="{% static '/static/images/splash-2.1.png' %}" style="width: 500px" alt="Mixxx Screenshot">
     <img class="splash-logo" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}" alt="Mixxx Logo">
     <div class="splash-text">
       <h2>{% trans "DJ Your Way" %}</h2>
       <p>Free and open source DJ software for Windows, macOS, and Linux</p>
+      <ul class="splash-social">
+        <li>
+          <a class="twitter social_icon" href="https://twitter.com/mixxxdj" target="_blank">
+            <img src="{% static '/static/images/social_icons/twitter.svg' %}" alt="Twitter" title="Follow Mixxx on Twitter">
+          </a>
+        </li>
+        <li>
+          <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
+            <img src="{% static '/static/images/social_icons/facebook.svg' %}" alt="Facebook" title="Follow Mixxx on Facebook">
+          </a>
+        </li>
+        <li>
+          <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
+            <img src="{% static '/static/images/social_icons/zulip.svg' %}" alt="Zulip" title="Chat on Zulip">
+          </a>
+        </li>
+        <li>
+          <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
+            <img src="{% static '/static/images/social_icons/github.svg' %}" alt="GitHub" title="Get the source on GitHub">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
