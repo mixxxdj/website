@@ -19,7 +19,7 @@ def preBuildPage(page, context, data):
 
     menu = (
         MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
-        MenuItem("/about", "About", "Navigation bar link to Mixxx about page.", children=(
+        MenuItem("/discover", "Discover", "Navigation bar link to Mixxx discover page.", children=(
             MenuItem("/features", "Features", "Navigation bar link to Mixxx features page."),
             MenuItem("/screenshots", "Screenshots", "Navigation bar link to Mixxx Screenshots page."),
             MenuItem("/press", "Press", "Navigation bar link to Mixxx Press page"),
