@@ -2,7 +2,7 @@
 /* using data-theme attributes to allow switching via javascript */
 html[data-theme="dark"] {
     /* dark theme: light background, dark text, blue accent */
-    --theme-hue: 0; /* orange */
+    --theme-hue: 0; /* black */
     --accent-hue: 20; /* orange */
 
     --text-color-richer: hsl(var(--theme-hue), 0%, 95%);
