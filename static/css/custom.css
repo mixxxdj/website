@@ -373,6 +373,10 @@ h6 {
     margin-bottom: 1rem;
 }
 
+p {
+    letter-spacing: 0.05rem;
+}
+
 .grid-container p + h5,
 .grid-container p + h6 {
     margin-top: 3rem;
