@@ -23,9 +23,9 @@
         if (window.navigator.userAgent.indexOf("Windows") !== -1) {
             return "windows" + detectBitness();
         }
-        if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
-            return "ubuntu" + detectBitness();
-        }
+        //if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
+        //    return "ubuntu" + detectBitness();
+        //}
         if (window.navigator.userAgent.indexOf("Mac") !== -1) {
             return "osxintel";
         }
