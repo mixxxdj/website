@@ -182,6 +182,13 @@ i.fas, i.fab {
 }
 
 /* Images */
+.news img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100%;
+}
+
 img.responsive {
     max-width: 100%;
 }

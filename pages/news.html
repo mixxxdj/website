@@ -8,7 +8,7 @@
 <div class="docs-section container">
   <h1>{% trans "News and Announcements" %}</h1>
 
-  <div class="docs-section">
+  <div class="docs-section news">
     {# Show most recent news post #}
     {% with post=posts|first %}
     <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
