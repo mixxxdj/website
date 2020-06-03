@@ -5,221 +5,227 @@
 {% block title %}{% trans "Features" %}{% endblock %}
 
 {% block body %}
-<div class="content">
-  <h1>{% trans "Everything You Need, However You DJ" %}</h1>
+<div class="docs-section container">
+  <h2>{% trans "Everything You Need, However You DJ" %}</h2>
 
-  <div style="clear: both;"></div>
-  <div class="halfbox_left">
-    <h2>{% trans "Four Decks" %}</h2>
-    <p>
-      {% trans "Drop a song onto a deck in Mixxx to start playing right away. Keep your eye on beats and cue points with a scratchable, scrolling waveform together with a whole-song overview waveform for quick seeking." %}
-    </p>
+  <div class="grid-container halves u-align-left">
+    <div>
+      <h6 class="docs-header">{% trans "Four Decks" %}</h6>
+      <p>
+        {% trans "Drop a song onto a deck in Mixxx to start playing right away. Keep your eye on beats and cue points with a scratchable, scrolling waveform together with a whole-song overview waveform for quick seeking." %}
+      </p>
 
-    <p><b>{% trans "Pitch and Key Control" %}</b><br>
-      {% trans "Change the tempo of songs without changing their pitch with keylock, or change the pitch without breaking sync so your songs play in harmony. Temporarily nudge the tempo faster or slower for manual beatmatching, with smooth changes in pitch just like vinyl." %}
-    </p>
+      <h6 class="docs-header">{% trans "Pitch and Key Control" %}</h6>
+      <p>
+        {% trans "Change the tempo of songs without changing their pitch with keylock, or change the pitch without breaking sync so your songs play in harmony. Temporarily nudge the tempo faster or slower for manual beatmatching, with smooth changes in pitch just like vinyl." %}
+      </p>
 
-    <p><b>{% trans "Beat Looping" %}</b><br>
-      {% trans "Need to extend your mix while you bring in the next track? Instantly loop a 4, 8, or 16 beat segment with ease." %}
-    </p>
+      <h6 class="docs-header">{% trans "Beat Looping" %}</h6>
+      <p>
+        {% trans "Need to extend your mix while you bring in the next track? Instantly loop a 4, 8, or 16 beat segment with ease." %}
+      </p>
 
-    <p><b>{% trans "Master Sync" %}</b><br>
-      {% trans "Engage master sync on your decks and they'll stay locked in time even if you change speed.  Construct remixes on the fly with multiple tracks and loops without losing control." %}
-    </p>
+      <h6 class="docs-header">{% trans "Master Sync" %}</h6>
+      <p>
+        {% trans "Engage master sync on your decks and they'll stay locked in time even if you change speed.  Construct remixes on the fly with multiple tracks and loops without losing control." %}
+      </p>
 
-    <p><b>{% trans "Hotcues" %}</b><br>
-      {% trans "Set hotcues to mark places in tracks. Remix and mash up tracks with accurate, rapid-fire hotcue triggering." %}
-    </p>
+      <h6 class="docs-header">{% trans "Hotcues" %}</h6>
+      <p>
+        {% trans "Set hotcues to mark places in tracks. Remix and mash up tracks with accurate, rapid-fire hotcue triggering." %}
+      </p>
+    </div>
+    <div>
+      <img class="responsive drop-shadow" src="{% static '/static/images/feature_deck.png' %}">
+      <h6 class="docs-header">{% trans "Beat Rolls and Censor" %}</h6>
+      <p>
+        {% trans "Play with rhythm by triggering short loops and reverse-playback effects. The track stays in time so you don't miss a beat." %}
+        {# TODO: Write a better way of explaining slip mode. #}
+      </p>
+
+      <h6 class="docs-header">{% trans "Quantization" %}</h6>
+      <p>
+        {% trans "Mark and activate cue points and loops exactly on beat every time." %}
+      </p>
+
+      <h6 class="docs-header">{% trans "Broad Format Support" %}</h6>
+      <p>
+        {% trans "Compatible with music files in lossless FLAC, WAV, and AIFF formats as well as lossy MP3, M4A/AAC, Ogg Vorbis, and Opus formats." %}
+      </p>
+
+      <h6 class="docs-header">{% trans "EQ and Crossfader Control" %}</h6>
+      <p>
+        {% trans "Choose between multiple equalizers and isolators with adjustable shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades." %}
+      </p>
+    </div>
   </div>
-  <div class="halfbox_right">
-    <img class="responsive" width="362px" src="{% static '/static/images/feature_deck.png' %}">
-    <p><b>{% trans "Beat Rolls and Censor" %}</b><br>
-      {% trans "Play with rhythm by triggering short loops and reverse-playback effects. The track stays in time so you don't miss a beat." %}
-      {# TODO: Write a better way of explaining slip mode. #}
-    </p>
+</div>
 
-    <p><b>{% trans "Quantization" %}</b><br>
-      {% trans "Mark and activate cue points and loops exactly on beat every time." %}
-    </p>
-
-    <p><b>{% trans "Broad Format Support" %}</b><br>
-      {% trans "Compatible with music files in lossless FLAC, WAV, and AIFF formats as well as lossy MP3, M4A/AAC, Ogg Vorbis, and Opus formats." %}
-    </p>
-
-    <p><b>{% trans "EQ and Crossfader Control" %}</b><br>
-      {% trans "Choose between multiple equalizers and isolators with adjustable shelves. Crossfader curve control lets you deliver quick cuts or long, smooth crossfades." %}
-    </p>
-  </div>
-  
-  <div style="clear: both;"></div>
-
-  <div class="fullwidth">
-    <h2>{% trans "Sampler Decks" %}</h2>
-    <p>
-    {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}{# TODO: Say more. #}
-    </p>
-
-    <img class="center responsive" src="{% static '/static/images/feature_sampler2.png' %}">
-  </div>
-
-  <div class="fullwidth">
-    <h2>{% trans "Effects Chains" %}</h2>
-    <p>
-      {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
-    </p>
-    <img class="center responsive" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
-  </div>
-
-  <div style="clear: both;"></div>
-  
-  <h1>{% trans "Customizable DJ Hardware Support" %}</h1>
-  <div class="fullwidth">
+<div id="hardware" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/hardware-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#hardware">{% trans "Customizable DJ Hardware Support" %}</a></h2>
     <p>
       {% trans "Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor lock-ins. Use whatever gear you want to build your unique setup." %}{# TODO: Alignment somehow is messed up here. #}
     </p>
-  </div>
 
-  <div class="halfbox_left">
-    <div style="max-height: 200px;">
-      <img class="center responsive" width="340px" src="{% static '/static/images/feature_midi-2.0.png' %}" style="padding-top: 20px;">
+    <div class="grid-container halves u-align-left">
+      <div>
+        <div style="max-height: 200px;">
+          <img class="responsive drop-shadow" src="{% static '/static/images/feature_midi-2.0.png' %}">
+        </div>
+
+        <h5 class="docs-header">{% trans "MIDI and HID Controller Support" %}</h5>
+        <h6 class="docs-header">Included Presets</h6>
+        <p>
+          {% blocktrans %}for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more.{% endblocktrans %}
+        </p>
+        <a class="button button-secondary" href="/wiki/doku.php/hardware_compatibility">{% trans "Supported Devices" %}</a>
+
+        <h6 class="docs-header">{% trans "Programmable Mapping Engine" %}</h6>
+        <p>
+          {% blocktrans %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour.{% endblocktrans %}
+        </p>
+        <a class="button button-secondary" href="/wiki/doku.php/midi_scripting">{% trans "Read more" %}</a>
+      </div>
+
+      <div>
+        <div style="max-height: 200px;">
+          <img class="responsive drop-shadow" src="{% static '/static/images/feature_vinylcontrol.png' %}">
+        </div>
+
+        <h5 class="docs-header">{% trans "Free Timecode Vinyl Control" %}</h5>
+        <p>
+          {% blocktrans %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, macOS, and Linux.{% endblocktrans %}
+        </p>
+        <a class="button button-secondary" href="/manual/latest/chapters/vinyl_control.html">{% trans "Read more" %}</a>
+      </div>
     </div>
-
-    <h2>{% trans "MIDI and HID Controller Support" %}</h2>
-    <p>
-      {% blocktrans with hardware_compatibility_wiki_link="/wiki/doku.php/hardware_compatibility" %}<b>Included Presets</b><br> for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more. <a href="{{ hardware_compatibility_wiki_link }}">Full list of supported devices</a>{% endblocktrans %}
-    </p>
-
-    <p><b>{% trans "Programmable Mapping Engine" %}</b><br>
-      {% blocktrans with midi_scripting_wiki_link="/wiki/doku.php/midi_scripting" %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour. <a href="{{ midi_scripting_wiki_link }}">Read more</a>{% endblocktrans %}
-    </p>
   </div>
-  <div class="halfbox_right">
-    <div style="height: 200px;">
-      <img class="center responsive" src="{% static '/static/images/feature_vinylcontrol.png' %}">
-    </div>
+</div>
 
-    <h2>{% trans "Free Timecode Vinyl Control" %}</h2>
-    <p>
-      {% blocktrans with vinyl_control_manual_link="/manual/latest/chapters/vinyl_control.html" %}Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the only free timecode vinyl control software for Windows, macOS, and Linux. <a href="{{ vinyl_control_manual_link }}">Read more</a> {% endblocktrans %}
-    </p>
-  </div>
+<div id="samplers" class="docs-section container">
+  <h2><a class="headline-link" href="#samplers">{% trans "Sampler Decks" %}</a></h2>
+  <p>
+  {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}{# TODO: Say more. #}
+  </p>
 
-  <div style="clear: both;"></div>
+  <img class="responsive drop-shadow" src="{% static '/static/images/feature_sampler2.png' %}">
+</div>
 
-  <h1>{% trans "Sophisticated Music Library" %}</h1>
-  <div class="fullwidth">
+<div id="effects" class="docs-section container">
+  <h2><a class="headline-link" href="#effects">{% trans "Effects Chains" %}</a></h2>
+  <p>
+    {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
+  </p>
+  <img class="responsive drop-shadow" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
+</div>
+
+<div id="library" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/library-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#library">{% trans "Sophisticated Music Library" %}</a></h2>
     <p>
     {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
-    </p>
-  </div>
 
-  <div style="clear: both;"></div>
+    <div class="grid-container halves u-align-left">
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">{% trans "Organization" %}</h5>
 
-  <div class="halfbox_left">
-    <h2><img src="{% static '/static/images/ic_library_itunes.png' %}" class="feature_icon">{% trans "Organization" %}</h2>
-    <p class="feature_indent">
-      <b>{% trans "Crates and Playlists" %}</b><br>
-      {% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}
-    </p>
-    <p class="feature_indent">
-      <b>{% trans "Search &amp; Sort" %}</b><br>
-      {% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}
-    </p>
-    <p class="feature_indent">
-      <b>{% trans "iTunes and Traktor Library Integration" %}</b><br>
-      {% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}
-    </p>
-    <p class="feature_indent">
-      <b>{% trans "MusicBrainz Tag Lookup" %}</b><br>
-      {% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}
-    </p>
-  </div>
-  <div class="halfbox_right">
-    <img class="responsive" width="362px" src="{% static '/static/images/feature_library-2.0.png' %}" style="padding-top: 30px;">
-  </div>
+        <h6 class="docs-header">{% trans "Crates and Playlists" %}</h6>
+        <p>{% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}</p>
 
-  <div style="clear: both;"></div>
+        <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
+        <p>{% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}</p>
+      </div>
+      <div class="feature-indent">
+        <img class="responsive drop-shadow" src="{% static '/static/images/feature_library-2.0.png' %}">
+        <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
+        <p>{% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}</p>
 
-  <div class="halfbox_left">
-    <h2><img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature_icon">{% trans "BPM &amp; Key Detection" %}</h2>
-    <p class="feature_indent">{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
-  </div>
-  <div class="halfbox_right">
-    <h2><img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature_icon">{% trans "Auto DJ" %}</h2>
-    <p class="feature_indent">
-      {% trans "Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches your back until you return." %}
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-
-  <div class="gapfiller">
-    <h1 class="center" style="margin-left: 30px;">{% trans "Choose Your Skin" %}</h1>
-    <div id="skin_screenshots" class="center">
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_deere.png' %}">
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_latenight.png' %}">
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_shade.png' %}">
-      <img class="responsive" width="445px" src="{% static '/static/images/feature_skins_tango.png' %}">
+        <h6 class="docs-header">{% trans "MusicBrainz Tag Lookup" %}</h6>
+        <p>{% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}</p>
+      </div>
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">{% trans "BPM &amp; Key Detection" %}</h5>
+        <p>{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
+      </div>
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">{% trans "Auto DJ" %}</h5>
+        <p>
+          {% trans "Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches your back until you return." %}
+        </p>
+      </div>
     </div>
-    <p class="fullwidth">{% trans "Mixxx includes four different skins, each with a different look and a configurable layout" %}</p>
   </div>
+</div>
 
-  <!-- YouTube video
-  TODO: New video for 2.1
-  <div style="padding-bottom: 30px;">
-    <center>
-      <iframe width="640" height="360" src="http://www.youtube.com/embed/axlW5Q_8y6c?start=499&hd=1&modestbranding=0&rel=0&controls=1" frameborder="0" allowfullscreen></iframe>
-    </center>
-  </div> -->
+<div id="skins" class="docs-section container">
+  <h2><a class="headline-link" href="#skins">{% trans "Choose Your Skin" %}</a></h2>
+  <p>{% trans "Mixxx includes four different skins, each with a different look and a configurable layout." %}</p>
+  <div class="grid-container halves u-align-left">
+    <div>
+      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_deere.png' %}">
+    </div>
+    <div>
+      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_latenight.png' %}">
+    </div>
+    <div>
+      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_shade.png' %}">
+    </div>
+    <div>
+      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_tango.png' %}">
+    </div>
+  </div>
+</div>
 
-  <h1>{% trans "Record and Broadcast" %}</h1>
-  <div class="fullwidth">
+<div id="broadcast" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/broadcast-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#broadcast">{% trans "Record and Broadcast" %}</a></h2>
     <p>
       {% trans "Mixxx includes a number of recording and broadcasting features to help you share your mixes and spread your name." %}
     </p>
-  </div>
-  
-  <div style="clear: both;"></div>
+    <div class="grid-container halves u-align-left">
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">Recording</h5>
+        <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
+        </p>
+      </div>
 
-  <div class="halfbox_left">
-    <h2><img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature_icon">Recording</h2>
-    <p class="feature_indent">{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
-    </p>
-  </div>
-  <div class="halfbox_right">
-    <h2><img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature_icon">{% trans "Live Broadcasting" %}</h2>
-    <p class="feature_indent">
-      {% trans "Stream your mixes live over the Internet to your audience and friends through a Shoutcast or Icecast server." %}
-    </p>
-  </div>
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_preferences_broadcast.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">{% trans "Live Broadcasting" %}</h5>
+        <p>
+          {% trans "Stream your mixes live over the Internet to your audience and friends through a Shoutcast or Icecast server." %}
+        </p>
+      </div>
 
-  <div style="clear: both;"></div>
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">{% trans "ReplayGain Normalization" %}</h5>
+        <p>
+          {% trans "Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
+        </p>
+      </div>
 
-  <div class="halfbox_left">
-    <h2><img src="{% static '/static/images/ic_preferences_replaygain.png' %}" class="feature_icon">{% trans "ReplayGain Normalization" %}</h2>
-    <p class="feature_indent">
-      {% trans "Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them." %}
-    </p>
-  </div>
-  <div class="halfbox_right">
-    <h2><img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature_icon">{% trans "Microphone &amp; Auxiliary Inputs" %}</h2>
-    <p class="feature_indent">
-      {% trans "Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs let you include different sound sources without needing an external hardware mixer. Latency compensation keeps your recorded and broadcasted mixes in time when using direct monitoring." %}
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-  <h1>{% trans "Native Language Support" %}</h1>
-  <div class="fullwidth">
-    <p>
-      {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %} Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a href="{{ com_transifex_mixxxdj_link }}">Translation overview</a> page.{% endblocktrans %}
-    </p>
-  </div>
-    
-  <div class="gapfiller">
-    <p style="text-align: center;">{% trans "Download Mixxx and start DJing now for FREE:" %}</p>
-    {% include "download_button.html" %}
-    <div style="clear: both;"></div>
+      <div class="feature-indent">
+        <img src="{% static '/static/images/ic_preferences_soundhardware.png' %}" class="feature-icon drop-shadow">
+        <h5 class="docs-header">{% trans "Microphone &amp; Auxiliary Inputs" %}</h5>
+        <p>
+          {% trans "Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs let you include different sound sources without needing an external hardware mixer. Latency compensation keeps your recorded and broadcasted mixes in time when using direct monitoring." %}
+        </p>
+      </div>
+    </div>
   </div>
 </div>
+
+<div id="language" class="docs-section container">
+  <h2><a class="headline-link" href="#language">{% trans "Native Language Support" %}</a></h2>
+  <p>
+    {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" %} Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a href="{{ com_transifex_mixxxdj_link }}">Translation overview</a> page.{% endblocktrans %}
+  </p>
+</div>
+
 {% endblock %}

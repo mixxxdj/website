@@ -1,31 +1,60 @@
-<div id="footer_social">
-  <h2>Connect with us!</h2>
-  {% include "social_links.html" %}
-</div> <!-- footer_social -->
+<div id="footer" class="footer docs-section">
+  <div class="box-center">
+    <div class="grid-container thirds">
+      <div>
+        <h2 class="docs-header">Pages</h2>
+        <ul>
+          <li><a href="{% url '/index.html' %}">Overview</a></li>
+          <li><a href="{% url '/features.html' %}">Features</a></li>
+          <li><a href="{% url '/support.html' %}">Support</a></li>
+          <li><a href="{% url '/get-involved.html' %}">Get Involved</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="docs-header">Community</h2>
+        <ul>
+          <li><a href="/forums">Forums</a></li>
+          <li>
+            <a class="twitter social_icon" href="https://twitter.com/mixxxdj" target="_blank">
+              <img src="{% static '/static/images/social_icons/twitter.svg' %}" alt="Twitter">
+              <span>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
+              <img src="{% static '/static/images/social_icons/facebook.svg' %}" alt="Facebook">
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
+              <img src="{% static '/static/images/social_icons/zulip.svg' %}" alt="Zulip">
+              <span>Zulip</span>
+            </a>
+          </li>
+          <li>
+            <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
+              <img src="{% static '/static/images/social_icons/github.svg' %}" alt="GitHub">
+              <span>GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="docs-header">About</h2>
+        <ul>
+          <li><a href="{% url '/news.html' %}">News</a> (<a href="{% url '/feed.xml' %}">Feed</a>)</li>
+          <li><a href="{% url '/press.html' %}">Press</a></li>
+          <li><a href="{% url '/contact.html' %}">Contact</a></li>
+          <li><a href="/wiki">Wiki</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<div id="footer_sitemap">
-  <div class="footer_sitemap_column">
-    <h2>Pages</h2>
-    <a href="{% url '/index.html' %}">Overview</a><br>
-    <a href="{% url '/features.html' %}">Features</a><br>
-    <a href="{% url '/support.html' %}">Support</a><br>
-    <a href="{% url '/get-involved.html' %}">Get Involved</a><br>
+  <div style="text-align:center">
+    &copy; 2001-2020 Mixxx Development Team<br>
+    Logo by Paul Bloch
   </div>
-  <div class="footer_sitemap_column">
-    <h2>Community</h2>
-    <a href="/forums">Forums</a><br>
-    <a href="/wiki">Wiki</a><br>
-    <a href="{% url '/news.html' %}">News</a> (<a href="{% url '/feed.xml' %}">Feed</a>)<br>
-  </div>
-  <div class="footer_sitemap_column">
-    <h2>About</h2>
-    <a href="{% url '/press.html' %}">Press</a><br>
-    <a href="{% url '/contact.html' %}">Contact</a><br>
-  </div>
-  <div style="clear; both;"></div>
 </div>
 
-<div id="footer_legal">
-  &copy; 2001-2019 Mixxx Development Team<br>
-  Logo by Paul Bloch
-</div>

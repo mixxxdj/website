@@ -5,46 +5,41 @@
 {% block title %}{% blocktrans %}{{title}}{% endblocktrans %}{% endblock %}
 
 {% block body %}
-<div class="content">
+<div class="docs-section container news">
   <h1>{{ title }}</h1>
-  <div class="fullwidth">
-    {# Post content #}
-    <p style="font-size: small;">
-      Posted on <time pubdate="pubdate">{{ date|date:"Y-m-d" }}</time>
-      {% if author %}
-      by
-      <span class="author">
-      {% if author_url %}
-        <a href="{{ author_url }}">{{ author }}</a>
-      {% else %}
-        {{ author }}
-      {% endif %}
-      {% if author_github %}
-        (<a href="https://github.com/{{ author_github }}">@{{ author_github }}</a>)
-      {% endif %}
-      </span>
-      {% endif %}
-    </p>
-    {% block post %}{% endblock %}
-    <div style="clear: both;"></div>
-
-    {# Links to previous/next post #}
-    {% if prevPost or nextPost %}
-    <p style="text-align: left;">
-      {% if nextPost %}
-      <a href="{% url nextPost.path %}">&laquo; {{ nextPost.title }}</a>
-      {% endif %}
-      {% if prevPost %}
-      <span style="float: right;">
-        <a href="{% url prevPost.path %}">{{ prevPost.title }} &raquo;</a>
-      </span>
-      {% endif %}
-    </p>
-    <div style="clear: both;"></div>
+  {# Post content #}
+  <p style="font-size: small;">
+    Posted on <time>{{ date|date:"Y-m-d" }}</time>
+    {% if author %}
+    by
+    <span class="author">
+    {% if author_url %}
+      <a href="{{ author_url }}">{{ author }}</a>
+    {% else %}
+      {{ author }}
     {% endif %}
-  </div>
+    {% if author_github %}
+      (<a href="https://github.com/{{ author_github }}">@{{ author_github }}</a>)
+    {% endif %}
+    </span>
+    {% endif %}
+  </p>
+  {% block post %}{% endblock %}
+  <div style="clear: both;"></div>
 
-
-
-</article>
+  {# Links to previous/next post #}
+  {% if prevPost or nextPost %}
+  <p style="text-align: left;">
+    {% if nextPost %}
+    <a href="{% url nextPost.path %}">&laquo; {{ nextPost.title }}</a>
+    {% endif %}
+    {% if prevPost %}
+    <span style="float: right;">
+      <a href="{% url prevPost.path %}">{{ prevPost.title }} &raquo;</a>
+    </span>
+    {% endif %}
+  </p>
+  <div style="clear: both;"></div>
+  {% endif %}
+</div>
 {% endblock %}

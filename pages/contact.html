@@ -5,247 +5,287 @@
 {% block title %}{% trans "Contact" %}{% endblock %}
 
 {% block body %}
-<div class="content">
-  <h1>{% trans "Get in Touch" %}</h1>
+<div id="get-in-touch" class="docs-section container">
+  <h1><a class="headline-link" href="#get-in-touch">{% trans "Get in Touch" %}</a></h1>
+  <p>
+    {% blocktrans with forums_link="/forums" zulip_web_link="https://mixxx.zulipchat.com/" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our <a href="{{ zulip_web_link }}">Zulip chat</a> as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, Zulip is the best way to reach us.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans with project_manager_link="mailto:hardware@mixxx.org" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans with project_manager_link="mailto:press@mixxx.org" %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endblocktrans %}
+  </p>
+</div>
 
-  <div style="clear: both;"></div>
-  <div class="halfbox_left">
-    <p>
-      {% blocktrans with forums_link="/forums" zulip_web_link="https://mixxx.zulipchat.com/" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our <a href="{{ zulip_web_link }}">Zulip chat</a> as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, Zulip is the best way to reach us.{% endblocktrans %}
-    </p>
+<div id="developers" class="docs-section container">
+  <h2><a class="headline-link" href="#developers">{% trans "Mixxx Development Team" %}</a></h2>
+  <p>
+    {% blocktrans with tue_anderson_link="https://web.archive.org/web/http://haste.dk/tue/"%}In 2001, Mixxx was started by Ken and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by RJ Ryan (Lead Developer), Owen Williams (User Experience Lead), Sean Pappalardo (Controller Manager), and S. Brandt (Lead Artist).{% endblocktrans %}
+  </p>
+  <div class="grid-container thirds">
+    <div><a href="http://www.rustyryan.net">RJ Ryan</a></div>
+    <div><a href="http://ywwg.com">Owen Williams</a></div>
+    <div><a href="http://www.seanpappalardo.com">Sean Pappalardo</a></div>
+    <div>Daniel Sch&uuml;rmann</div>
+    <div>S. Brandt</div>
+    <div>Nicu Badescu</div>
+    <div>Uwe Klotz</div>
+    <div>Be</div>
+    <div>S&eacute;bastien Blaisot</div>
+    <div>ronso0</div>
+    <div>Jan Holthuis</div>
   </div>
+</div>
 
-  <div class="halfbox_right">
-    <p>
-      {% blocktrans with project_manager_link="mailto:hardware@mixxx.org" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
-    </p>
-
-    <p>
-      {% blocktrans with project_manager_link="mailto:press@mixxx.org" %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endblocktrans %}
-    </p>
+<div id="contributors" class="docs-section container">
+  <h6><a class="headline-link docs-header" href="#contributors">{% trans "With contributions from:" %}</a></h6>
+  <div class="grid-container quarters">
+    <div>Stefan N&uuml;rnberger</div>
+    <div>Tuukka Pasanen</div>
+    <div>Nino MP</div>
+    <div>Nico Schl&ouml;mer</div>
+    <div>Ferran Pujol Camins</div>
+    <div>Markus Kl&ouml;sges</div>
+    <div>Pavel Potocek</div>
+    <div>Joan Marc&egrave; i Igual</div>
+    <div>Timothy Rae</div>
+    <div>Leigh Scott</div>
+    <div>William Lemus</div>
+    <div>Josep Maria Antol&iacute;n Segura</div>
+    <div>Nimit Bhardwaj</div>
+    <div>Pavel Sokolov</div>
+    <div>Devananda van der Veen</div>
+    <div>Tatsuyuki Ishi</div>
+    <div>Kilian Feess</div>
+    <div>Conner Phillips</div>
+    <div>Daniel Poelzleithner</div>
+    <div>St&eacute;phane Lepin</div>
+    <div>Artyom Lyan</div>
+    <div>Johan Lasperas</div>
+    <div>Olaf Hering</div>
+    <div>Stefan Weber</div>
+    <div>Eduardo Acero</div>
+    <div>Kshitij Gupta</div>
+    <div>Thomas Jarosch</div>
+    <div>Matthew Nicholson</div>
+    <div>Jamie Gifford</div>
+    <div>luzpaz</div>
+    <div>Sebastian Reu&szlig;e</div>
+    <div>Pawe&#322; Goli&#324;ski</div>
+    <div>beenisss</div>
+    <div>Bernd Binder</div>
+    <div>Nikolaus Einhauser</div>
+    <div>Philip Gottschling</div>
+    <div>Cristiano Lacerda</div>
   </div>
-  <div style="clear: both;"></div>
+</div>
 
-  <div>
-    <h2 style="text-align: center;">{% trans "Credits" %}</h2>
-    <p class="fullwidth">
-      {% blocktrans with tue_anderson_link="https://web.archive.org/web/http://haste.dk/tue/"%}In 2001, Mixxx was started by Ken and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by RJ Ryan (Lead Developer), Owen Williams (User Experience Lead), Sean Pappalardo (Controller Manager), and S. Brandt (Lead Artist).{% endblocktrans %}
-    </p>
-
-    <p class="credits"><b>{% trans "Mixxx 2.0.0 Development Team" %}</b></p>
-
-    <p class="credits">
-      <a href="http://www.rustyryan.net">RJ Ryan</a><br/>
-      <a href="http://ywwg.com">Owen Williams</a><br/>
-      <a href="http://www.seanpappalardo.com">Sean Pappalardo</a><br/>
-      Daniel Sch&uuml;rmann<br/>
-      S. Brandt<br/>
-      Ilkka Tuohela<br/>
-      Max Linke<br/>
-      Marcos Cardinot<br/>
-      Nicu Badescu<br/>
-    </p>
-
-    <p class="credits"><b>{% trans "With contributions from:" %}</b></p>
-    <p class="credits">
-      Alex Barker<br/>
-      Matthew Mikolay<br/>
-      Thanasis Liappis<br/>
-      Daniel Lindenfelser<br/>
-      Andrey Smelov<br/>
-      Alban Bedel<br/>
-      Stefan N&uuml;rnberger<br/>
-      Steven Boswell<br/>
-      Jo&atilde;o Reys Santos<br/>
-      Carl Pillot<br/>
-      Vedant Agarwala<br/>
-      Nazar Gerasymchuk<br/>
-      Federico Briata<br/>
-      Leo Combes<br/>
-      Florian Kiekh&auml;fer<br/>
-      Michael Sawyer<br/>
-      Tuukka Pasanen<br/>
-      Uwe Klotz<br/>
-      Quentin Faidide<br/>
-      Peter G. Marczis<br/>
-      Khyrul Bashar<br/>
-      Johannes Obermayr<br/>
-      Kevin Lee<br/>
-      Evan Radkoff<br/>
-      Lee Matos<br/>
-      Jean Claveau<br/>
-      Nino MP<br/>
-      Ryan Kramer<br/>
-      Zak Reynolds<br/>
-      Dennis Rohner<br/>
-      Juha Pitk&auml;nen<br/>
-      Kevin Wern<br/>
-      Varun Jewalikar<br/>
-      Dennis Wallace<br/>
-      Keith Salisbury<br/>
-      Irina Grosu<br/>
-      Callum Styan<br/>
-      Rahul Behl<br/>
-      Markus Baertschi<br/>
-      Nico Schl&ouml;mer<br/>
-      Don Dennis<br/>
-      Alexandru Jercaianu<br/>
-      Nils Goroll<br/>
-      Marco Angerer<br/>
-      Ferran Pujol Camins<br/>
-      Markus Kl&ouml;sges<br/>
-      S&eacute;bastien Blaisot<br/>
-      Vladim&iacute;r Dudr<br/>
-      Thorsten Munsch<br/>
-      Emile Vrijdags<br/>
-      Be<br/>
-      St&eacute;phane Guillou<br/>
-      Russ Mannex<br/>
-      Lorenz Drescher<br/>
-      David Guglielmi<br/>
-      Chlo&eacute; Avrillon<br/>
-    </p>
-
-    <p class="credits"><b>{% trans "And special thanks to:" %}</b></p>
-    <p class="credits">
-      Mark Hills<br/>
-      <a href="http://www.oscillicious.com">Oscillicious</a><br/>
-      <a href="http://www.vestax.com">Vestax</a><br/>
-      <a href="http://www.stantondj.com">Stanton</a><br/>
-      <a href="http://www.hercules.com">Hercules</a><br/>
-      <a href="http://www.eks.fi">EKS</a><br/>
-      <a href="http://www.echoaudio.com">Echo Digital Audio</a><br/>
-      JP Disco<br/>
-      <a href="http://code.google.com/soc">Google Summer of Code</a><br/>
-      Adam Bellinson<br/>
-      Alexandre Bancel<br/>
-      Melanie Thielker<br/>
-      Julien Rosener<br/>
-      Pau Arum&iacute;<br/>
-      David Garcia<br/>
-      Seb Ruiz<br/>
-      Joseph Mattiello<br/>
-    </p>
-
-    <p class="credits"><b>{% trans "Past Developers" %}</b></p>
-    <p class="credits">
-      <a href="https://web.archive.org/web/http://haste.dk/tue/">Tue Haste Andersen</a><br/>
-      Ken Haste Andersen<br/>
-      Cedric Gestes<br/>
-      John Sully<br/>
-      Torben Hohn<br/>
-      Peter Chang<br/>
-      Micah Lee<br/>
-      Ben Wheeler<br/>
-      Wesley Stessens<br/>
-      Nathan Prado<br/>
-      Zach Elko<br/>
-      Tom Care<br/>
-      Pawel Bartkiewicz<br/>
-      Nick Guenther<br/>
-      <a href="http://themodelnation.com/contact/">Adam Davison</a><br/>
-      <a href="https://web.archive.org/web/2009/http://stacktrace.org/">Garth Dahlstrom</a><br/>
-      <a href="http://www.santoni.ca/albert">Albert Santoni</a><br/>
-      Phillip Whelan<br/>
-      Tobias Rafreider<br/>
-      Bill Good<br/>
-      Vittorio Colao<br/>
-      Thomas Vincent<br/>
-    </p>
-
-    <p class="credits"><b>{% trans "Past Contributors" %}</b></p>
-    <p class="credits">
-      Ludek Hor&#225;cek<br/>
-      Svein Magne Bang<br/>
-      Kristoffer Jensen<br/>
-      Ingo Kossyk<br/>
-      Mads Holm<br/>
-      Lukas Zapletal<br/>
-      Jeremie Zimmermann<br/>
-      Gianluca Romanin<br/>
-      Tim Jackson<br/>
-      Stefan Langhammer<br/>
-      Frank Willascheck<br/>
-      Jeff Nelson<br/>
-      Kevin Schaper<br/>
-      Alex Markley<br/>
-      Oriol Puigb&oacute;<br/>
-      Ulrich Heske<br/>
-      James Hagerman<br/>
-      quil0m80<br/>
-      Martin Sakm&#225;r<br/>
-      Ilian Persson<br/>
-      Dave Jarvis<br/>
-      Thomas Baag<br/>
-      Karlis Kalnins<br/>
-      Amias Channer<br/>
-      Sacha Berger<br/>
-      James Evans<br/>
-      Martin Sakmar<br/>
-      Navaho Gunleg<br/>
-      Gavin Pryke<br/>
-      Michael Pujos<br/>
-      Claudio Bantaloukas<br/>
-      Pavol Rusnak<br/>
-      Bruno Buccolo<br/>
-      Ryan Baker<br/>
-      Andre Roth<br/>
-      Robin Sheat<br/>
-      Mark Glines<br/>
-      Mathieu Rene<br/>
-      Miko Kiiski<br/>
-      Brian Jackson<br/>
-      Andreas Pflug<br/>
-      Bas van Schaik<br/>
-      J&aacute;n Jockusch<br/>
-      Oliver St&ouml;neberg<br/>
-      Jan Jockusch<br/>
-      C. Stewart<br/>
-      Bill Egert<br/>
-      Zach Shutters<br/>
-      Owen Bullock<br/>
-      Graeme Mathieson<br/>
-      Sebastian Actist<br/>
-      Jussi Sainio<br/>
-      David Gnedt<br/>
-      Antonio Passamani<br/>
-      Guy Martin<br/>
-      Anders Gunnarsson<br/>
-      Mikko Jania<br/>
-      Juan Pedro Bol&iacute;var Puente<br/>
-      Linus Amvall<br/>
-      Irwin C&eacute;spedes B<br/>
-      Micz Flor<br/>
-      Daniel James<br/>
-      Mika Haulo<br/>
-      Tom Mast<br/>
-      Miko Kiiski<br/>
-      Vin&iacute;cius Dias dos Santos<br/>
-      Joe Colosimo<br/>
-      Shashank Kumar<br/>
-      Till Hofmann<br/>
-      Peter V&aacute;gner<br/>
-      Jens Nachtigall<br/>
-      Scott Ullrich<br/>
-      Jonas &Aring;dahl<br/>
-      Jonathan Costers<br/>
-      Maxime Bochon<br/>
-      Akash Shetye<br/>
-      Pascal Bleser<br/>
-      Florian Mahlknecht<br/>
-      Ben Clark<br/>
-      Tom Gascoigne<br/>
-      Neale Pickett<br/>
-      Aaron Mavrinac<br/>
-      Markus H&auml;rer<br/>
-      Scott Stewart<br/>
-      Nimatek<br/>
-    </p>
+<div id="special-thanks" class="docs-section container">
+  <h6><a class="headline-link docs-header" href="#special-thanks">{% trans "And special thanks to:" %}</a></h6>
+  <div class="grid-container quarters">
+    <div>Mark Hills</div>
+    <div><a href="http://www.oscillicious.com">Oscillicious</a></div>
+    <div><a href="http://www.vestax.com">Vestax</a></div>
+    <div><a href="http://www.stantondj.com">Stanton</a></div>
+    <div><a href="http://www.hercules.com">Hercules</a></div>
+    <div><a href="http://www.eks.fi">EKS</a></div>
+    <div><a href="http://www.echoaudio.com">Echo Digital Audio</a></div>
+    <div>JP Disco</div>
+    <div><a href="http://code.google.com/soc">Google Summer of Code</a></div>
+    <div>Adam Bellinson</div>
+    <div>Alexandre Bancel</div>
+    <div>Melanie Thielker</div>
+    <div>Julien Rosener</div>
+    <div>Pau Arum&iacute;</div>
+    <div>David Garcia</div>
+    <div>Seb Ruiz</div>
+    <div>Joseph Mattiello</div>
   </div>
+</div>
 
-  <p class="fullwidth">
+<div id="past-developers" class="docs-section container">
+  <h6><a class="headline-link docs-header" href="#past-developers">{% trans "Past Developers" %}</a></h6>
+  <div class="grid-container quarters">
+    <div><a href="https://web.archive.org/web/http://haste.dk/tue/">Tue Haste Andersen</a></div>
+    <div>Ken Haste Andersen</div>
+    <div>Cedric Gestes</div>
+    <div>John Sully</div>
+    <div>Torben Hohn</div>
+    <div>Peter Chang</div>
+    <div>Micah Lee</div>
+    <div>Ben Wheeler</div>
+    <div>Wesley Stessens</div>
+    <div>Nathan Prado</div>
+    <div>Zach Elko</div>
+    <div>Tom Care</div>
+    <div>Pawel Bartkiewicz</div>
+    <div>Nick Guenther</div>
+    <div><a href="http://themodelnation.com/contact/">Adam Davison</a></div>
+    <div><a href="https://web.archive.org/web/2009/http://stacktrace.org/">Garth Dahlstrom</a></div>
+    <div><a href="http://www.santoni.ca/albert">Albert Santoni</a></div>
+    <div>Phillip Whelan</div>
+    <div>Tobias Rafreider</div>
+    <div>Bill Good</div>
+    <div>Vittorio Colao</div>
+    <div>Thomas Vincent</div>
+    <div>Ilkka Tuohela</div>
+    <div>Max Linke</div>
+    <div>Marcos Cardinot</div>
+  </div>
+</div>
+
+<div id="past-contributors" class="docs-section container">
+  <h6><a class="headline-link docs-header" href="#past-contributors">{% trans "Past Contributors" %}</a></h6>
+  <div class="grid-container quarters">
+    <div>Ludek Hor&#225;cek</div>
+    <div>Svein Magne Bang</div>
+    <div>Kristoffer Jensen</div>
+    <div>Ingo Kossyk</div>
+    <div>Mads Holm</div>
+    <div>Lukas Zapletal</div>
+    <div>Jeremie Zimmermann</div>
+    <div>Gianluca Romanin</div>
+    <div>Tim Jackson</div>
+    <div>Stefan Langhammer</div>
+    <div>Frank Willascheck</div>
+    <div>Jeff Nelson</div>
+    <div>Kevin Schaper</div>
+    <div>Alex Markley</div>
+    <div>Oriol Puigb&oacute;</div>
+    <div>Ulrich Heske</div>
+    <div>James Hagerman</div>
+    <div>quil0m80</div>
+    <div>Martin Sakm&#225;r</div>
+    <div>Ilian Persson</div>
+    <div>Dave Jarvis</div>
+    <div>Thomas Baag</div>
+    <div>Karlis Kalnins</div>
+    <div>Amias Channer</div>
+    <div>Sacha Berger</div>
+    <div>James Evans</div>
+    <div>Martin Sakmar</div>
+    <div>Navaho Gunleg</div>
+    <div>Gavin Pryke</div>
+    <div>Michael Pujos</div>
+    <div>Claudio Bantaloukas</div>
+    <div>Pavol Rusnak</div>
+    <div>Bruno Buccolo</div>
+    <div>Ryan Baker</div>
+    <div>Andre Roth</div>
+    <div>Robin Sheat</div>
+    <div>Mark Glines</div>
+    <div>Mathieu Rene</div>
+    <div>Miko Kiiski</div>
+    <div>Brian Jackson</div>
+    <div>Andreas Pflug</div>
+    <div>Bas van Schaik</div>
+    <div>J&aacute;n Jockusch</div>
+    <div>Oliver St&ouml;neberg</div>
+    <div>Jan Jockusch</div>
+    <div>C. Stewart</div>
+    <div>Bill Egert</div>
+    <div>Zach Shutters</div>
+    <div>Owen Bullock</div>
+    <div>Graeme Mathieson</div>
+    <div>Sebastian Actist</div>
+    <div>Jussi Sainio</div>
+    <div>David Gnedt</div>
+    <div>Antonio Passamani</div>
+    <div>Guy Martin</div>
+    <div>Anders Gunnarsson</div>
+    <div>Mikko Jania</div>
+    <div>Juan Pedro Bol&iacute;var Puente</div>
+    <div>Linus Amvall</div>
+    <div>Irwin C&eacute;spedes B</div>
+    <div>Micz Flor</div>
+    <div>Daniel James</div>
+    <div>Mika Haulo</div>
+    <div>Tom Mast</div>
+    <div>Miko Kiiski</div>
+    <div>Vin&iacute;cius Dias dos Santos</div>
+    <div>Joe Colosimo</div>
+    <div>Shashank Kumar</div>
+    <div>Till Hofmann</div>
+    <div>Peter V&aacute;gner</div>
+    <div>Jens Nachtigall</div>
+    <div>Scott Ullrich</div>
+    <div>Jonas &Aring;dahl</div>
+    <div>Jonathan Costers</div>
+    <div>Maxime Bochon</div>
+    <div>Akash Shetye</div>
+    <div>Pascal Bleser</div>
+    <div>Florian Mahlknecht</div>
+    <div>Ben Clark</div>
+    <div>Tom Gascoigne</div>
+    <div>Aaron Mavrinac</div>
+    <div>Markus H&auml;rer</div>
+    <div>Scott Stewart</div>
+    <div>Nimatek</div>
+    <div>Matthew Mikolay</div>
+    <div>Thanasis Liappis</div>
+    <div>Daniel Lindenfelser</div>
+    <div>Andrey Smelov</div>
+    <div>Alban Bedel</div>
+    <div>Steven Boswell</div>
+    <div>Jo&atilde;o Reys Santos</div>
+    <div>Carl Pillot</div>
+    <div>Vedant Agarwala</div>
+    <div>Nazar Gerasymchuk</div>
+    <div>Federico Briata</div>
+    <div>Leo Combes</div>
+    <div>Florian Kiekh&auml;fer</div>
+    <div>Michael Sawyer</div>
+    <div>Quentin Faidide</div>
+    <div>Peter G. Marczis</div>
+    <div>Khyrul Bashar</div>
+    <div>Johannes Obermayr</div>
+    <div>Kevin Lee</div>
+    <div>Evan Radkoff</div>
+    <div>Lee Matos</div>
+    <div>Ryan Kramer</div>
+    <div>Zak Reynolds</div>
+    <div>Dennis Rohner</div>
+    <div>Juha Pitk&auml;nen</div>
+    <div>Varun Jewalikar</div>
+    <div>Dennis Wallace</div>
+    <div>Keith Salisbury</div>
+    <div>Irina Grosu</div>
+    <div>Callum Styan</div>
+    <div>Rahul Behl</div>
+    <div>Markus Baertschi</div>
+    <div>Don Dennis</div>
+    <div>Alexandru Jercaianu</div>
+    <div>Nils Goroll</div>
+    <div>Marco Angerer</div>
+    <div>Thorsten Munsch</div>
+    <div>Emile Vrijdags</div>
+    <div>St&eacute;phane Guillou</div>
+    <div>Russ Mannex</div>
+    <div>Brendan Austin</div>
+    <div>Lorenz Drescher</div>
+    <div>David Guglielmi</div>
+    <div>James Atwill</div>
+    <div>Alex Barker</div>
+    <div>Jean Claveau</div>
+    <div>Kevin Wern</div>
+    <div>Vladim&iacute;r Dudr</div>
+    <div>Neale Pickett</div>
+    <div>Chlo&eacute; Avrillon</div>
+    <div>Hendrik Reglin</div>
+    <div>Serge Ukolov</div>
+    <div>Patric Schmitz</div>
+    <div>Roland Schwarz</div>
+    <div>Jan Ypma</div>
+    <div>Andreas M&uuml;ller</div>
+    <div>Sam Cross</div>
+    <div>Joey Pabalinas</div>
+  </div>
+</div>
+
+<div class="docs-section container">
+  <p>
     {% blocktrans with qt_link="http://qt.io" portaudio_link="http://www.portaudio.com" portmidi_link="http://portmedia.sourceforge.net/portmidi/" %}Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, especially as a cross-platform application. Big thanks to <a href="{{ qt_link }}">Qt</a>, <a href="{{portaudio_link }}">PortAudio</a>, and <a href="{{ portmidi_link }}">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.{% endblocktrans %}
   </p>
-
 </div>
 {% endblock %}

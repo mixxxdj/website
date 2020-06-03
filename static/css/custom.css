@@ -1,0 +1,504 @@
+/* ---- Themes ---- */
+/* using data-theme attributes to allow switching via javascript */
+html[data-theme="dark"] {
+    /* dark theme: light background, dark text, blue accent */
+    --theme-hue: 0; /* black */
+    --accent-hue: 20; /* orange */
+
+    --text-color-richer: hsl(var(--theme-hue), 0%, 95%);
+    --text-color-normal: hsl(var(--theme-hue), 0%, 80%); /* text color; button:hover:focus color */
+    --text-color-softer: hsl(var(--theme-hue), 0%, 67%); /* button color; button:hover border */
+
+    --accent-color: hsl(var(--accent-hue), 76%, 49%); /* link; button-primary bg+border; textarea,select:focus border */
+    --accent-color-hover: hsl(var(--accent-hue), 86%, 57%); /* link hover; button-primary:hover:focus bg+border */
+
+    --border-color: hsl(var(--theme-hue), 0%, 27%); /* button border */
+    --border-color-softer: hsl(var(--theme-hue), 0%, 20%); /* textarea,select,code,td,hr border */
+
+    --background-color: hsl(var(--theme-hue), 0%, 8%); /* body background; textarea,select background */
+    --background-color-semitransparent: hsla(var(--theme-hue), 0%, 8%, 0.5); /* secondary button background on cover images */
+    --background-color-softer: hsl(var(--theme-hue), 0%, 14%);
+    --code-background: hsl(var(--theme-hue), 0%, 5%); /* code background*/
+
+    --button-primary-color: white;
+}
+
+/* add a transition to ease into new themes */
+/* looks best in Mozilla, text transitions late in Safari/Chrome */
+html.transition-theme,
+html.transition-theme *,
+html.transition-theme *:before,
+html.transition-theme *:after {
+    transition: all 650ms !important;
+    transition-delay: 0 !important;
+}
+
+
+/* ---- General ---- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.docs-header {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+.docs-section {
+    border-top: 1px solid var(--border-color-softer);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+}
+ul {
+    margin-left: 2rem;
+}
+.heading-font-size {
+    font-size: 1.2rem;
+    color: #999;
+    letter-spacing: normal;
+}
+@media (min-width: 600px) {
+    .docs-section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+
+/* ---- Header ---- */
+.header {
+    margin-top: 1rem;
+    text-align: center;
+}
+.value-prop {
+    margin-top: 1rem;
+}
+.value-props {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+i.fas, i.fab {
+    font-size: 5rem;
+    display: block;
+    margin: 0 auto 2rem;
+}
+/* grids to 3 columns above mobile sizes */
+@media (min-width: 600px) {
+    .header {
+    margin-top: 2rem;
+    }
+    .value-header {
+        grid-column: 1 / span 3;
+        margin-top: 2rem;
+    }
+    .value-props {
+        margin-top: 9rem;
+        margin-bottom: 7rem;
+    }
+    .value-img {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ---- Nav ---- */
+.navbar {
+    position: sticky;
+    top: 0;
+}
+.navbar .navbar-main {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar + .docs-section {
+    border-top-width: 0;
+}
+.navbar,
+.navbar-spacer {
+    width: 100%;
+    height: 5rem;
+    background: var(--background-color);
+    z-index: 99;
+    border-top: 1px solid var(--border-color-softer);
+    border-bottom: 1px solid var(--border-color-softer);
+}
+.navbar-spacer {
+    display: none;
+}
+/*.navbar > .container {
+    width: 100%;
+}*/
+.navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+}
+.navbar-item {
+    position: relative;
+    margin-bottom: 0;
+}
+.navbar-item img {
+    height: 2rem;
+    vertical-align: middle;
+}
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    line-height: 5rem;
+    color: var(--text-color-normal);
+}
+.navbar-link.active {
+    color: var(--accent-color);
+}
+
+
+/* ---- Buttons ---- */
+@media (min-width: 600px) {
+    #buttons .grid-container.quarters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    #buttons .grid-container.quarters {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Feature Indents */
+.feature-icon {
+    height: 3rem;
+}
+
+.feature-indent {
+    margin-left: 4rem;
+}
+
+.feature-indent .feature-icon {
+    float: left;
+    margin-left: -4rem;
+    margin-top: 0.5rem;
+}
+
+/* Images */
+.news img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100%;
+}
+
+img.responsive {
+    max-width: 100%;
+}
+
+.grid-container img.responsive {
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+.footer {
+    font-size: 1.5rem;
+}
+.footer ul {
+    list-style: none;
+    margin: 0;
+}
+.footer li a {
+    text-decoration: none;
+}
+.footer li img {
+    height: 1em;
+}
+.footer h2 {
+    font-size: 1.8rem;
+}
+
+/* Menu */
+@media only screen and (min-width: 600px) {
+    .navbar-item {
+        display: block;
+        transition-duration: 0.5s;
+    }
+    .navbar-item:hover {
+        cursor: pointer;
+    }
+    .navbar-dropdown {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+        position: absolute;
+        margin-top: 0;
+        margin-left: -1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        left: 0;
+        display: none;
+        background-color: var(--background-color);
+        border: 1px solid var(--border-color-softer);
+    }
+    .navbar-item:hover > .navbar-dropdown,
+    .navbar-item .navbar-dropdown:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    .navbar-item .navbar-dropdown .navbar-item {
+        clear: both;
+        width: 100%;
+    }
+}
+
+.navbar-download-button .button {
+    width: 100%;
+}
+
+.navbar-download-button .navbar-link {
+    margin-right: 0;
+}
+
+
+/* hamburger menu */
+
+/* menu icon */
+
+.navbar-hamburger-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 24px 0;
+    position: relative;
+    user-select: none;
+}
+
+.navbar-hamburger-icon .navicon {
+    background: var(--text-color-normal);
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.navbar-hamburger-icon .navicon:before,
+.navbar-hamburger-icon .navicon:after {
+    background: var(--text-color-normal);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navbar-hamburger-icon .navicon:before {
+    top: 5px;
+}
+
+.navbar-hamburger-icon .navicon:after {
+    top: -5px;
+}
+
+.navbar-logo {
+    flex: 1;
+}
+
+.navbar-hamburger-content {
+    background-color: var(--background-color);
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: calc(100% - 4rem);
+    display: block;
+    border: 0;
+    padding: 0;
+}
+
+.navbar .navbar-hamburger-button {
+    display: none;
+}
+
+/* Toggle Effect */
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon .navicon {
+  background: transparent;
+}
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon:not(.steps) .navicon:before,
+.navbar-hamburger-button:checked ~ .navbar-hamburger-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.navbar-hamburger-button:checked ~ .navbar-hamburger-content {
+    border: 1px solid var(--border-color-softer);
+    padding: 2rem;
+    max-height: unset;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-hamburger-icon {
+        display: none;
+    }
+
+    .navbar-hamburger-content {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: flex;
+        justify-content: space-between;
+        flex: 4;
+        border: none;
+        background-color: inherit;
+        max-height: 100%;
+        overflow: visible;
+        width: 100%;
+        border: 0;
+        padding: 0;
+    }
+
+    .navbar-download-button .button {
+        width: auto;
+    }
+}
+
+h6 {
+    margin-bottom: 1rem;
+}
+
+p {
+    letter-spacing: 0.05rem;
+}
+
+.grid-container p + h5,
+.grid-container p + h6 {
+    margin-top: 3rem;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    text-decoration: none;
+}
+
+h1 a.headline-link,
+h2 a.headline-link,
+h3 a.headline-link,
+h3 a.headline-link,
+h4 a.headline-link,
+h5 a.headline-link,
+h6 a.headline-link {
+    color: inherit;
+}
+
+.splash {
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(0 0 10px black);
+    filter: drop-shadow(0 0 10px black);
+}
+
+.splash-text {
+    color: white;
+    text-shadow: 0 0 20px black, 1px 0 20px black, -1px 0 20px black, 0 1px 20px black, 0 -1px 20px black;
+}
+
+.splash-text h1,
+.splash-text h2,
+.splash-text h3,
+.splash-text h4,
+.splash-text h5,
+.splash-text h6 {
+    margin: 0;
+}
+
+.splash-logo {
+    max-width: 60%;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splash-social {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    justify-content: space-between;
+}
+
+.splash-social img {
+    height: 1.5em;
+}
+
+.cover-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+.cover-bg .button-secondary {
+    background-color: var(--background-color-semitransparent);
+}
+
+.video-container {
+    border: 1px solid var(--border-color-softer);
+    background-color: black;
+    height: 0;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.video-container .video-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video-container .video-button {
+    display: none;
+}
+
+.button-container .button {
+    display: block
+}
+
+.download-button-description {
+    font-size: small;
+}
