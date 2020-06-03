@@ -7,23 +7,15 @@
 {% block body %}
 <div id="get-in-touch" class="docs-section container">
   <h1><a class="headline-link" href="#get-in-touch">{% trans "Get in Touch" %}</a></h1>
-
-  <div class="grid-container halves">
-    <div>
-      <p>
-        {% blocktrans with forums_link="/forums" zulip_web_link="https://mixxx.zulipchat.com/" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our <a href="{{ zulip_web_link }}">Zulip chat</a> as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, Zulip is the best way to reach us.{% endblocktrans %}
-      </p>
-    </div>
-    <div>
-      <p>
-        {% blocktrans with project_manager_link="mailto:hardware@mixxx.org" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
-      </p>
-
-      <p>
-        {% blocktrans with project_manager_link="mailto:press@mixxx.org" %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endblocktrans %}
-      </p>
-    </div>
-  </div>
+  <p>
+    {% blocktrans with forums_link="/forums" zulip_web_link="https://mixxx.zulipchat.com/" support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Support for users of Mixxx is available through our <a href="{{ forums_link }}">community forums</a> and our <a href="{{ zulip_web_link }}">Zulip chat</a> as described on our <a href="{{ support_page_link }}">Support page</a>. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, Zulip is the best way to reach us.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans with project_manager_link="mailto:hardware@mixxx.org" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
+  </p>
+  <p>
+    {% blocktrans with project_manager_link="mailto:press@mixxx.org" %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endblocktrans %}
+  </p>
 </div>
 
 <div id="developers" class="docs-section container">
