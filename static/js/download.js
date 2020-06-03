@@ -54,6 +54,9 @@
         }
 
         button.href = link.href;
+        if (link.onclick) {
+            button.setAttribute("onclick", link.onclick.toString());
+        }
         description.innerHTML = link.dataset.os;
     });
 }());
