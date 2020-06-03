@@ -16,6 +16,7 @@ html[data-theme="dark"] {
     --border-color-softer: hsl(var(--theme-hue), 0%, 20%); /* textarea,select,code,td,hr border */
 
     --background-color: hsl(var(--theme-hue), 0%, 8%); /* body background; textarea,select background */
+    --background-color-semitransparent: hsla(var(--theme-hue), 0%, 8%, 0.5); /* secondary button background on cover images */
     --background-color-softer: hsl(var(--theme-hue), 0%, 14%);
     --code-background: hsl(var(--theme-hue), 0%, 5%); /* code background*/
 
@@ -453,6 +454,10 @@ h6 a.headline-link {
 .cover-bg {
     background-size: cover;
     background-position: center;
+}
+
+.cover-bg .button-secondary {
+    background-color: var(--background-color-semitransparent);
 }
 
 .video-container {
