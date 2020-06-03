@@ -24,12 +24,12 @@ def preBuildPage(page, context, data):
             MenuItem("/screenshots", "Screenshots", "Navigation bar link to Mixxx Screenshots page."),
             MenuItem("/press", "Press", "Navigation bar link to Mixxx Press page"),
             MenuItem("/contact", "Contact", "Navigation bar link to Mixxx contact page."),
-            MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Get Involved page."),
         )),
         MenuItem("/support", "Support & Community", "Navigation bar link to Mixxx support page.", children=(
             MenuItem("/manual/latest", "Manual", "Navigation bar link to Mixxx Manual."),
             MenuItem("/forums", "Forums", "Navigation bar link to Mixxx Forums."),
             MenuItem("/wiki", "Wiki", "Navigation bar link to Mixxx Wiki."),
+            MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Get Involved page."),
         )),
     )
 
