@@ -124,14 +124,9 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
       <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
       <p>{% blocktrans %}Download {{ unstable_version }} for Windows {{ unstable_win_min_version }} or later{% endblocktrans %}.</p>
 
-      <div class="grid-container halves">
-        <div>
-          <a class="button button-primary download-win32" href="{{ unstable_win32 }}" data-os="{% blocktrans %} 32-Bit Windows {{ unstable_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_win32_analytics_conversion }}');">Download (32 Bit)</a>
-        </div>
-        <div>
+      <div>
           <a class="button button-primary download-win64" href="{{ unstable_win64 }}" data-os="{% blocktrans %}64-Bit Windows {{ unstable_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">Download (64 Bit)</a>
-        </div>
-      </p>
+      </div>
 
       <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.</p>
     </div>
@@ -163,13 +158,8 @@ sudo apt install mixxx</code></pre>
 
       <p>{% blocktrans %}New packages will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with <code>apt</code>. Otherwise, you can download individual packages for Ubuntu {{ unstable_ubuntu_min_version }} or later and install them manually. Don't forget to check back periodically for updates until Mixxx {{ next_stable_version }} is released:{% endblocktrans %}</p>
 
-      <div class="grid-container halves">
-        <div>
-          <a class="button button-primary download-ubuntu32" href="{{ unstable_ubuntu32 }}" data-os="{% blocktrans %}32-Bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_ubuntu32_analytics_conversion }}');">Download (32-bit)</a>
-        </div>
-        <div>
-          <a class="button button-primary download-ubuntu64" href="{{ unstable_ubuntu64 }}" data-os="{% blocktrans %}64-Bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">Download (64-bit)</a>
-        </div>
+      <div>
+        <a class="button button-primary download-ubuntu64" href="{{ unstable_ubuntu64 }}" data-os="{% blocktrans %}64-Bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">Download (64-bit)</a>
       </div>
     </div>
 
