@@ -1,0 +1,26 @@
+title: Mixxx GSoc Coding Begins
+author: Cristiano
+date: 2020-06-08 01:00:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown:"extra" %}
+
+This year Mixxx is again taking part on Google Summer of Code, and have 3 students working full-time during 3 months to make Mixxx even more awesome.
+After one month of community bond period, last week they started coding. Cristiano and Harshit, that are working towards the same end feature, a new beatgrid format capable of handling not only beats, but also downbeats, phrases and sections as well varying tempos and time signatures have already opened a Pull Request each on our main repository. [#2844](https://github.com/mixxxdj/mixxx/pull/2844), [#2847](https://github.com/mixxxdj/mixxx/pull/)
+
+Cristiano which is focosing his work on the auto detection of such features is making weekly vlogs on youtube to share his progress with the community. The first one is available here:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rVJ7pBWHp8E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Janek, which is working on a feature similar to serato flip, had the great idea and prepered a community call, where the new members and (old members alike) had the opportunity to get to know each other better and put some faces behind their usernames. 
+
+We are looking forward for a new call to discuss our GSoC projects with our students, mentors and the rest of the community.
+Stay tuned on [Zulip](https://mixxx.zulipchat.com/)
+
+
+{% endfilter %}
+{% endblock %}
