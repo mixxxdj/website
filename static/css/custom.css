@@ -477,7 +477,11 @@ h6 a.headline-link {
     position: absolute;
     top: 0;
     left: 0;
-    text-align: center
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .video-container iframe {
