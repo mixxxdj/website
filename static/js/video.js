@@ -7,7 +7,9 @@
             let button = element.querySelector(".video-button");
             button.addEventListener("click", function() {
                 let iframe = document.createElement("iframe");
-                iframe.src = "https://www.youtube-nocookie.com/embed/" + video_id + "?rel=0&controls=0&showinfo=0&autoplay=1&mute=1";
+                iframe.src = "https://www.youtube-nocookie.com/embed/" + video_id + "?rel=0&showinfo=0&autoplay=1";
+                iframe.allowFullscreen = true;
+                iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
                 dialog.style.display = "none";
                 element.appendChild(iframe);
             });
