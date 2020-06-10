@@ -506,3 +506,7 @@ h6 a.headline-link {
 .download-button-description {
     font-size: small;
 }
+
+.button-secondary-highlight {
+    border-color: var(--accent-color);
+}
