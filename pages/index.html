@@ -91,13 +91,13 @@
       <a class="button button-primary" href="{% url "/download.html" %}">{% trans "Download" %}</a>
     </div>
     <div>
+      {% include "donate_paypal.html" %}
+    </div>
+    <div>
       <a class="button button-secondary" href="{% url "/features.html" %}">{% trans "More Features" %}</a>
     </div>
     <div>
       <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans "Source Code" %}</a>
-    </div>
-    <div>
-      {% include "donate_paypal.html" %}
     </div>
   </div>
 </div>
