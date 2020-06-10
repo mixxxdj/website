@@ -21,6 +21,7 @@ html[data-theme="dark"] {
     --code-background: hsl(var(--theme-hue), 0%, 5%); /* code background*/
 
     --button-primary-color: white;
+    --background-highlight: rgba(255, 255, 255, 0.05);
 }
 
 /* add a transition to ease into new themes */
@@ -50,6 +51,13 @@ html.transition-theme *:after {
     padding-top: 4rem;
     padding-bottom: 4rem;
     margin-bottom: 0;
+}
+.docs-section.highlighted {
+    border-color: var(--accent-color);
+    background: var(--background-highlight);
+}
+.docs-section.highlighted + .docs-section {
+    border-color: var(--accent-color);
 }
 ul {
     margin-left: 2rem;
@@ -505,4 +513,8 @@ h6 a.headline-link {
 
 .download-button-description {
     font-size: small;
+}
+
+.secondary-highlighted {
+    border-color: var(--accent-color);
 }
