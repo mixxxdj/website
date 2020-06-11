@@ -34,6 +34,10 @@ AUTHOR_METADATA = {
     'Pegasus': {
         'github': 'Pegasus-RPG',
     },
+    'ywwg': {
+        'name': 'Owen Wilson',
+        'github': 'ywwg',
+    },
 }
 
 
