@@ -12,8 +12,9 @@ POSTS_PATH = "news/"
 POSTS = []
 AUTHOR_METADATA = {
     '': {
-        "name": "Mixxx Team",
-        "url": "https://github.com/orgs/mixxxdj/people",
+        'name': 'Mixxx Team',
+        'url': 'https://github.com/orgs/mixxxdj/people',
+        'email': 'core-team@mixxx.org',
     },
     'Be.': {
         'github': 'Be-ing',
@@ -33,6 +34,11 @@ AUTHOR_METADATA = {
     },
     'Pegasus': {
         'github': 'Pegasus-RPG',
+    },
+    'Core Team, Edited': {
+        'name': 'The Mixxx Core Team, edited by April M. Crehan',
+        'url': 'https://github.com/orgs/mixxxdj/people',
+        'email': 'core-team@mixxx.org',
     },
 }
 
