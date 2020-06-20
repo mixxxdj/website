@@ -16,6 +16,11 @@ AUTHOR_METADATA = {
         'url': 'https://github.com/orgs/mixxxdj/people',
         'email': 'core-team@mixxx.org',
     },
+    'Mixxx': {
+        'name': 'Mixxx Team',
+        'url': 'https://github.com/orgs/mixxxdj/people',
+        'email': 'core-team@mixxx.org',
+    },
     'Be.': {
         'github': 'Be-ing',
         'email': 'be@mixxx.org',
@@ -35,10 +40,10 @@ AUTHOR_METADATA = {
     'Pegasus': {
         'github': 'Pegasus-RPG',
     },
-    'Core Team, Edited': {
-        'name': 'The Mixxx Core Team, edited by April M. Crehan',
-        'url': 'https://github.com/orgs/mixxxdj/people',
-        'email': 'core-team@mixxx.org',
+    'April': {
+        'name': 'April M. Crehan',
+        'github': 'ThisGrrrlFriday'
+        'email': 'amcrehan@gmail.com',
     },
 }
 
