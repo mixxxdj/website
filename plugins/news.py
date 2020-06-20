@@ -42,7 +42,7 @@ AUTHOR_METADATA = {
     },
     'April': {
         'name': 'April M. Crehan',
-        'github': 'ThisGrrrlFriday'
+        'github': 'ThisGrrrlFriday',
         'email': 'amcrehan@gmail.com',
     },
 }
