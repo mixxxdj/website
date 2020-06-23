@@ -482,6 +482,12 @@ h6 a.headline-link {
     padding: 1rem;
     display: flex;
     align-items: center;
+    font-size: small;
+}
+@media (min-width: 600px) {
+    .video-container .video-dialog {
+        font-size: inherit;
+    }
 }
 
 .video-container iframe {
