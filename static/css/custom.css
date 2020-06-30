@@ -416,15 +416,15 @@ h6 a.headline-link {
 
 .splash-text {
     color: white;
-    text-shadow: 0 0 20px black, 1px 0 20px black, -1px 0 20px black, 0 1px 20px black, 0 -1px 20px black;
+    text-shadow: 0 0 5px black, 0 0 10px black;
 }
 
-.splash-text h1,
-.splash-text h2,
-.splash-text h3,
-.splash-text h4,
-.splash-text h5,
-.splash-text h6 {
+.splash .splash-text h1,
+.splash .splash-text h2,
+.splash .splash-text h3,
+.splash .splash-text h4,
+.splash .splash-text h5,
+.splash .splash-text h6 {
     margin: 0;
 }
 
@@ -505,4 +505,8 @@ h6 a.headline-link {
 
 .download-button-description {
     font-size: small;
+}
+
+.button-secondary-highlight {
+    border-color: var(--accent-color);
 }

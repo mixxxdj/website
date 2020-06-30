@@ -79,14 +79,19 @@
   </div>
 </div>
 
-<div id="opensource" class="docs-section container">
-  <h2><a class="headline-link" href="#opensource">{% trans "Free &amp; Open Source" %}</a></h2>
-  <p>
-    {% blocktrans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx - the development is shouldered by passionate DJs and programmers that dedicate their free time on working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endblocktrans %}
-  </p>
-  <div class="grid-container quarters">
+<div id="opensource" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/code-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#opensource">{% trans "Free &amp; Open Source" %}</a></h2>
+    <p>
+      {% blocktrans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx &mdash; the development is shouldered by passionate DJs and programmers that dedicate their free time to working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endblocktrans %}
+    </p>
+  </div>
+  <div class="container grid-container quarters drop-shadow">
     <div>
       <a class="button button-primary" href="{% url "/download.html" %}">{% trans "Download" %}</a>
+    </div>
+    <div>
+      {% include "donate_paypal.html" %}
     </div>
     <div>
       <a class="button button-secondary" href="{% url "/features.html" %}">{% trans "More Features" %}</a>
@@ -94,16 +99,13 @@
     <div>
       <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans "Source Code" %}</a>
     </div>
-    <div>
-      {% include "donate_paypal.html" %}
-    </div>
   </div>
 </div>
 
 {% if posts|length >= 2 %}
 <div id="news" class="docs-section container">
   <h2><a class="headline-link" href="#news">{% trans "Latest News" %}</a></h2>
-  <p class="header">
+  <p>
     {% blocktrans %}To see a list of all news and announcements, head over to <a href="/news">our news page</a> or subscribe to the <a href="/feed.xml">Atom feed</a>.{% endblocktrans %}
   </p>
 
@@ -128,7 +130,7 @@
   </p>
 
   <p>
-    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="/wiki/doku.php/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
+    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="https://github.com/mixxxdj/mixxx/wiki/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
   </p>
 </div>
 

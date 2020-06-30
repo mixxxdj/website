@@ -14,6 +14,7 @@ AUTHOR_METADATA = {
     'Mixxx': {
         "name": "Mixxx Team",
         "url": "https://github.com/orgs/mixxxdj/people",
+        'email': 'core-team@mixxx.org',
     },
     'Be.': {
         'github': 'Be-ing',
@@ -33,6 +34,11 @@ AUTHOR_METADATA = {
     },
     'Pegasus': {
         'github': 'Pegasus-RPG',
+    },
+    'April': {
+        'name': 'April M. Crehan',
+        'github': 'ThisGrrrlFriday',
+        'email': 'amcrehan@gmail.com',
     },
 }
 AUTHOR_METADATA[""] = AUTHOR_METADATA["Mixxx"]

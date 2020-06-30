@@ -8,7 +8,7 @@
 <div class="docs-section container">
   <h1>{% trans "Support &amp; Community" %}</h1>
 
-  <div class="grid-container halves">
+  <div class="grid-container halves u-align-left">
     <div>
       <h5>{% trans "User Manual" %}</h5>
       <p>
@@ -19,7 +19,7 @@
     <div>
       <h5>{% trans "Wiki" %}</h5>
       <p>
-        {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="/wiki/doku.php/beginner_dj_links" wiki_troubleshooting="/wiki/doku.php/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
+        {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="https://github.com/mixxxdj/mixxx/wiki/beginner_dj_links" wiki_troubleshooting="https://github.com/mixxxdj/mixxx/wiki/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
       </p>
     </div>
 
