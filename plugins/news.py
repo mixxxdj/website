@@ -12,8 +12,14 @@ POSTS_PATH = "news/"
 POSTS = []
 AUTHOR_METADATA = {
     '': {
-        "name": "Mixxx Team",
-        "url": "https://github.com/orgs/mixxxdj/people",
+        'name': 'Mixxx Team',
+        'url': 'https://github.com/orgs/mixxxdj/people',
+        'email': 'core-team@mixxx.org',
+    },
+    'Mixxx': {
+        'name': 'Mixxx Team',
+        'url': 'https://github.com/orgs/mixxxdj/people',
+        'email': 'core-team@mixxx.org',
     },
     'Be.': {
         'github': 'Be-ing',
@@ -37,6 +43,11 @@ AUTHOR_METADATA = {
     'ywwg': {
         'name': 'Owen Wilson',
         'github': 'ywwg',
+    },
+    'April': {
+        'name': 'April M. Crehan',
+        'github': 'ThisGrrrlFriday',
+        'email': 'amcrehan@gmail.com',
     },
 }
 

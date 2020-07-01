@@ -20,25 +20,25 @@ unstable_ubuntu32_analytics_conversion: /downloads/2.3.0-beta-ubuntu32
 unstable_ubuntu64_analytics_conversion: /downloads/2.3.0-beta-ubuntu64
 unstable_ubuntu_ppa_analytics_conversion: /downloads/2.3.0-beta-ubuntu-ppa
 
-stable_version: Mixxx 2.2.3
-stable_release_announcement: https://mixxx.org/forums/viewtopic.php?f=1&t=12368
+stable_version: Mixxx 2.2.4
+stable_release_announcement: /news/2020-06-11-Mixxx-2-2-4-released/
 stable_win_min_version: 7
 stable_macos_min_version: 10.11
 stable_ubuntu_min_version: 16.04 (Xenial)
 stable_git_branch: 2.2
-stable_win32: https://downloads.mixxx.org/mixxx-2.2.3/mixxx-2.2.3-win32.exe
-stable_win64: https://downloads.mixxx.org/mixxx-2.2.3/mixxx-2.2.3-win64.exe
-stable_osxintel: https://downloads.mixxx.org/mixxx-2.2.3/mixxx-2.2.3-osxintel.dmg
-stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.2.3/mixxx-2.2.3-bionic-i386.deb
-stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.2.3/mixxx-2.2.3-bionic-amd64.deb
-stable_linuxsrc: https://github.com/mixxxdj/mixxx/archive/release-2.2.3.tar.gz
-stable_win32_analytics_conversion: /downloads/2.2.3-win32
-stable_win64_analytics_conversion: /downloads/2.2.3-win64
-stable_osxintel_analytics_conversion: /downloads/2.2.3-osxintel
-stable_ubuntu32_analytics_conversion: /downloads/2.2.3-ubuntu-bionic32
-stable_ubuntu64_analytics_conversion: /downloads/2.2.3-ubuntu-bionic64
+stable_win32: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
+stable_win64: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
+stable_osxintel: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
+stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-i386.deb
+stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-amd64.deb
+stable_linuxsrc: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
+stable_win32_analytics_conversion: /downloads/2.2.4-win32
+stable_win64_analytics_conversion: /downloads/2.2.4-win64
+stable_osxintel_analytics_conversion: /downloads/2.2.4-osxintel
+stable_ubuntu32_analytics_conversion: /downloads/2.2.4-ubuntu-bionic32
+stable_ubuntu64_analytics_conversion: /downloads/2.2.4-ubuntu-bionic64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
-stable_linuxsrc_analytics_conversion: /downloads/2.2.3-linuxsrc
+stable_linuxsrc_analytics_conversion: /downloads/2.2.4-linuxsrc
 
 previous_version: Mixxx 2.1.8
 previous_win32: https://downloads.mixxx.org/mixxx-2.1.8/mixxx-2.1.8-win32.exe
@@ -89,7 +89,9 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     <a href="#stable" class="button button-primary download-button" title="{% trans 'Download stable version of Mixxx' %}">{% blocktrans %}Download {{ stable_version }}{% endblocktrans %}</a>
     <span class="download-button-description">{% blocktrans %}Select your Operating System below.{% endblocktrans %}</span>
   </p>
+</div>
 
+<div id="donate" class="docs-section container">
   <p>
     {% blocktrans %}You don't need to pay for Mixxx because you can get it here for free. There is no official paid or &quot;pro&quot; version of Mixxx. The version available here is the full version.{% endblocktrans %}
   </p>
@@ -103,6 +105,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     <div>
       <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank" title="{% trans 'View Source Code on GitHub' %}">{% trans 'Source Code' %}</a>
     </div>
+  </div>
 </div>
 
 {% ifequal show_unstable "yes" %}
@@ -204,7 +207,7 @@ sudo apt install mixxx</code></pre>
     </p>
 
     <p>
-      {% blocktrans with compiling_windows_wiki_link="<a href=\"/wiki/doku.php/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"/wiki/doku.php/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"/wiki/doku.php/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
+      {% blocktrans with compiling_windows_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
     </p>
   </div>
 </div>
@@ -257,7 +260,7 @@ sudo apt install mixxx</code></pre>
 sudo apt update
 sudo apt install mixxx</code></pre>
       <p>
-        {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.3-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
+        {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.4-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
         {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
         {% endwith %}
       </p>
@@ -315,7 +318,7 @@ sudo apt install mixxx</code></pre>
     </p>
 
     <p>
-      {% blocktrans with compiling_windows_wiki_link="<a href=\"/wiki/doku.php/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"/wiki/doku.php/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"/wiki/doku.php/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
+      {% blocktrans with compiling_windows_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/compiling_on_windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/compiling_on_os_x\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/compiling_on_linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
     </p>
   </div>
 </div>
