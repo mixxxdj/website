@@ -1,12 +1,12 @@
-{% extends "base.html" %}
+title: What's New in Mixxx 1.11
+author: Albert
+date: 2013-02-18 00:14:33
+
+{% extends "post.html" %}
 
 {% load i18n %}
-
-{% block title %}{% trans "What's New in Mixxx 1.11" %}{% endblock %}
-
-{% block body %}
-<div class="content">
-
+{% block post %}
+<div>
   <div style="float: right; width: 370px; border: 1px solid #222; border-radius: 5px; margin-top: 0px; padding: 16px; margin-left: 70px; margin-right: 20px;">
     <h2 style="margin-top: 0px;">{% trans "New to Mixxx?" %}</h2>
     {% blocktrans %}Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix music live at your next party or club gig. <a href="/download">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux.{% endblocktrans %}

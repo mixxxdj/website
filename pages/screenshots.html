@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Screenshots" %}{% endblock %}
+
+{% block body %}
+<div id="screenshots" class="docs-section container">
+  {% with mixxx_version="2.0" %}
+  <h1>{% trans "Screenshots" %}</h1>
+  <p>
+    {% blocktrans %}Here you can find some screenshots of the default skins included in Mixxx {{mixxx_version}}.{% endblocktrans %}
+  </p>
+
+  <div class="grid-container halves">
+    <figure>
+      <a href="{% static '/static/images/feature_skins_deere.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_deere.png' %}">
+      </a>
+      <figcaption>Deere Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/static/images/feature_skins_latenight.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_latenight.png' %}">
+      </a>
+      <figcaption>LateNight Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/static/images/feature_skins_shade.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_shade.png' %}">
+      </a>
+      <figcaption>Shade Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/static/images/feature_skins_tango.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_tango.png' %}">
+      </a>
+      <figcaption>Tango Skin</figcaption>
+    </figure>
+  </div>
+  {% endwith %}
+</div>
+{% endblock %}
