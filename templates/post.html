@@ -10,18 +10,18 @@
   {# Post content #}
   <p style="font-size: small;">
     Posted on <time>{{ date|date:"Y-m-d" }}</time>
-    {% if author %}
+    {% if authors %}
     by
+    {% for author in authors|slice:":-2" %}
+    <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>,
+    {% endfor %}
+    {% for author in authors|slice:"-2:-1" %}
+    <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span> and
+    {% endfor %}
+    {% for author in authors|slice:"-1:" %}
     <span class="author">
-    {% if author_url %}
-      <a href="{{ author_url }}">{{ author }}</a>
-    {% else %}
-      {{ author }}
-    {% endif %}
-    {% if author_github %}
-      (<a href="https://github.com/{{ author_github }}">@{{ author_github }}</a>)
-    {% endif %}
-    </span>
+    {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>
+    {% endfor %}
     {% endif %}
   </p>
   {% block post %}{% endblock %}
