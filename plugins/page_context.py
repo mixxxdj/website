@@ -27,8 +27,8 @@ def preBuildPage(page, context, data):
         )),
         MenuItem("/support", "Support", "Navigation bar link to Mixxx support page.", children=(
             MenuItem("/manual/latest", "Manual", "Navigation bar link to Mixxx Manual."),
-            MenuItem("https://mixxx.discourse.group/", "Forums", "Navigation bar link to Mixxx Forums."),
             MenuItem("https://github.com/mixxxdj/mixxx/wiki", "Wiki", "Navigation bar link to Mixxx Wiki."),
+            MenuItem("https://mixxx.discourse.group/", "Forums", "Navigation bar link to Mixxx Forums."),
         )),
         MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Community page.", children=(
             MenuItem("https://mixxx.zulipchat.com/", "Chat", "Navigation bar link to Mixxx Zulip chat."),
