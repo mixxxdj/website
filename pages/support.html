@@ -31,13 +31,6 @@
     </div>
 
     <div>
-      <h5>{% trans "Mailing List" %}</h5>
-      <p>
-        {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" sourceforge_archive_link="https://sourceforge.net/p/mixxx/mailman/mixxx-devel/" the_mail_archive_link="https://www.mail-archive.com/mixxx-devel@lists.sourceforge.net/" %}The <a href="{{ mailing_list_link}} ">mixxx-devel</a> mailing list (<a href="{{ sourceforge_archive_link }}">SourceForge</a> and <a href="{{ the_mail_archive_link }}">The Mail Archive</a> archives) is now a low-traffic, mostly announcement channel. Subscribe if you would like to be informed about new releases and other topics.{% endblocktrans %}
-      </p>
-    </div>
-
-    <div>
       <h5>{% trans "Bug Tracker" %}</h5>
       <p>
         {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
