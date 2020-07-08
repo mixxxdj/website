@@ -31,7 +31,7 @@ def preBuildPage(page, context, data):
             MenuItem("https://github.com/mixxxdj/mixxx/wiki/Hardware%20compatibility", "Compatible Hardware", "Navigation bar link to Mixxx supported hardware wiki page."),
             MenuItem("https://mixxx.discourse.group/", "Forums", "Navigation bar link to Mixxx Forums."),
         )),
-        MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Community page.", children=(
+        MenuItem("/get-involved", "Community", "Navigation bar link to Mixxx Community page.", children=(
             MenuItem("https://mixxx.zulipchat.com/", "Chat", "Navigation bar link to Mixxx Zulip chat."),
             MenuItem("https://github.com/mixxxdj/mixxx", "Code", "Navigation bar link to Mixxx code repository."),
             MenuItem("https://bugs.launchpad.net/mixxx/", "Bugs & Feature Ideas", "Navigation bar link to Mixxx bug tracker."),
