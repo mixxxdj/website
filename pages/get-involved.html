@@ -24,13 +24,13 @@
       <h6 class="docs-header">{% trans "Start Developing Now" %}</h6>
       <ul>
         <li>
+            {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" %}Introduce yourself to the community on our <a href="{{ zulip_web_link }}">Zulip chat</a>.{% endblocktrans %}
+        </li>
+        <li>
             {% blocktrans with com_github_link="https://github.com" using_git_wiki_link="https://github.com/mixxxdj/mixxx/wiki/using_git" %}Get a <a href="{{ com_github_link }}">Github</a> account and <a href="{{ using_git_wiki_link }} ">fork your own branch</a>!{% endblocktrans %}
         </li>
         <li>
             {% blocktrans with easy_bug_list_link="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy" mixxx_credits_link="/contact/" %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_credits_link }}">Mixxx credits</a>!{% endblocktrans %}
-        </li>
-        <li>
-            {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" %}When you're stuck, get help from our existing developers on <a href="{{ zulip_web_link }}">Zulip chat</a>{% endblocktrans %}
         </li>
         <li>
             {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" %}Join our mailing list: <a href="{{ mailing_list_link }}">mixxx-devel</a>{% endblocktrans %}
