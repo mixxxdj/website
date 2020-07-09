@@ -118,6 +118,8 @@ def preBuild(site):
             postContext["authors"].append(author)
 
         postContext["date"] = find("date")
+        postContext["comments"] = (
+            find("comments", warn=False).lower() not in ("false", "no", "off"))
         postContext["path"] = posixpath.join("/", page.path)
         context.update({"__CACTUS_CURRENT_PAGE__": page})
         postContext["post"] = getNode(

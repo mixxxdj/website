@@ -44,11 +44,12 @@
     </p>
     <div style="clear: both;"></div>
   </div>
-
   {% endif %}
+
   {# Discourse Comments #}
   <div class="news-comments">
     <h4>{% trans "Comments" %}</h4>
+    {% if comments %}
     <div id='discourse-comments'></div>
     <script type="text/javascript">
       DiscourseEmbed = {
@@ -62,6 +63,9 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
       })();
     </script>
+    {% else %}
+    <p>The comment section has been closed.</p>
+    {% endif %}
   </div>
 </div>
 {% endblock %}
