@@ -5,56 +5,63 @@
 {% block title %}{% blocktrans %}{{title}}{% endblocktrans %}{% endblock %}
 
 {% block body %}
-<div class="docs-section container news">
-  <h1>{{ title }}</h1>
-  {# Post content #}
-  <p class="news-meta">
-    Posted on <time>{{ date|date:"Y-m-d" }}</time>
-    {% if authors %}
-    by
-    {% for author in authors|slice:":-2" %}
-    <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>,
-    {% endfor %}
-    {% for author in authors|slice:"-2:-1" %}
-    <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span> and
-    {% endfor %}
-    {% for author in authors|slice:"-1:" %}
-    <span class="author">
-    {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>
-    {% endfor %}
-    {% endif %}
-  </p>
-  {% block post %}{% endblock %}
-  <div style="clear: both;"></div>
-
-  {# Discourse Comments #}
-  <div id='discourse-comments'></div>
-  <script type="text/javascript">
-    DiscourseEmbed = {
-      discourseUrl: 'https://mixxx.discourse.group/',
-      discourseEmbedUrl: location.origin + '{% url path %}'
-    };
-
-    (function() {
-      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-      d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-    })();
-  </script>
+<div class="docs-section container">
+  <div class="news">
+    <h1>{{ title }}</h1>
+    {# Post content #}
+    <p class="news-meta">
+      Posted on <time>{{ date|date:"Y-m-d" }}</time>
+      {% if authors %}
+      by
+      {% for author in authors|slice:":-2" %}
+      <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>,
+      {% endfor %}
+      {% for author in authors|slice:"-2:-1" %}
+      <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span> and
+      {% endfor %}
+      {% for author in authors|slice:"-1:" %}
+      <span class="author">
+      {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>
+      {% endfor %}
+      {% endif %}
+    </p>
+    {% block post %}{% endblock %}
+    <div style="clear: both;"></div>
+  </div>
 
   {# Links to previous/next post #}
-  {% if prevPost or nextPost %}
-  <p style="text-align: left;">
-    {% if nextPost %}
-    <a href="{% url nextPost.path %}">&laquo; {{ nextPost.title }}</a>
-    {% endif %}
-    {% if prevPost %}
-    <span style="float: right;">
-      <a href="{% url prevPost.path %}">{{ prevPost.title }} &raquo;</a>
-    </span>
-    {% endif %}
-  </p>
-  <div style="clear: both;"></div>
+  <div class="news-related">
+    {% if prevPost or nextPost %}
+    <p style="text-align: left;">
+      {% if nextPost %}
+      <a href="{% url nextPost.path %}">&laquo; {{ nextPost.title }}</a>
+      {% endif %}
+      {% if prevPost %}
+      <span style="float: right;">
+        <a href="{% url prevPost.path %}">{{ prevPost.title }} &raquo;</a>
+      </span>
+      {% endif %}
+    </p>
+    <div style="clear: both;"></div>
+  </div>
+
   {% endif %}
+  {# Discourse Comments #}
+  <div class="news-comments">
+    <h4>{% trans "Comments" %}</h4>
+    <div id='discourse-comments'></div>
+    <script type="text/javascript">
+      DiscourseEmbed = {
+        discourseUrl: 'https://mixxx.discourse.group/',
+        discourseEmbedUrl: location.origin + '{% url path %}'
+      };
+
+      (function() {
+        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+      })();
+    </script>
+  </div>
 </div>
 {% endblock %}

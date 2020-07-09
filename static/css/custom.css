@@ -520,3 +520,9 @@ h6 a.headline-link {
 .news-meta {
     font-size: small;
 }
+
+.news-comments {
+    margin-top:2rem;
+    border-top: 1px solid var(--border-color-softer);
+    padding-top:2rem;
+}
