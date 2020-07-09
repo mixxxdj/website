@@ -516,3 +516,7 @@ h6 a.headline-link {
 .button-secondary-highlight {
     border-color: var(--accent-color);
 }
+
+.news-meta {
+    font-size: small;
+}
