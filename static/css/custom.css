@@ -526,3 +526,7 @@ h6 a.headline-link {
     border-top: 1px solid var(--border-color-softer);
     padding-top:2rem;
 }
+
+article.news + article.news {
+    margin-top: 4rem;
+}
