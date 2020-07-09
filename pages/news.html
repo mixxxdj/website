@@ -8,36 +8,40 @@
 <div class="docs-section container">
   <h1>{% trans "News and Announcements" %}</h1>
 
-  <div class="docs-section news">
+  <div class="docs-section">
     {# Show most recent news post #}
-    {% with post=posts|first %}
-    <h2><a href="{% url post.path %}">{{ post.title }}</a></h2>
-    <p style="font-size: small;">
-      Posted on <time>{{ post.date|date:"Y-m-d" }}</time>
-      {% if post.authors %}
-      by
-      {% for author in post.authors|slice:":-2" %}
-      <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>,
-      {% endfor %}
-      {% for author in post.authors|slice:"-2:-1" %}
-      <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span> and
-      {% endfor %}
-      {% for author in post.authors|slice:"-1:" %}
-      <span class="author">
-      {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>
-      {% endfor %}
-      {% endif %}
-    </p>
+    {% for post in posts|slice:":4" %}
+    <article class="news">
+      <h4><a href="{% url post.path %}">{{ post.title }}</a></h4>
+      <p style="news-meta">
+        Posted on <time>{{ post.date|date:"Y-m-d" }}</time>
+        {% if post.authors %}
+        by
+        {% for author in post.authors|slice:":-2" %}
+        <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>,
+        {% endfor %}
+        {% for author in post.authors|slice:"-2:-1" %}
+        <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span> and
+        {% endfor %}
+        {% for author in post.authors|slice:"-1:" %}
+        <span class="author">
+        {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>
+        {% endfor %}
+        {% endif %}
+      </p>
 
-    {{ post.post }}
-    {% endwith %}
+      <p>{{ post.post|striptags|truncatewords:50 }}</p>
+
+      <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
+    </article>
+    {% endfor %}
   </div>
 
   <div class="docs-section">
     {# List other news posts #}
     <h2>{% trans "Older News" %}</h2>
     <ul>
-      {% for post in posts|slice:"1:" %}
+      {% for post in posts|slice:"4:" %}
       <li>
         <strong><a href="{% url post.path %}">{{ post.title }}</a></strong>
         ({{ post.date|date:"Y-m-d" }})
