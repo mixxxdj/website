@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block title %}{% trans "Press" %}{% endblock %}
+
+{% block body %}
+<div class="docs-section container">
+  <h1>{% trans "About Mixxx" %}</h1>
+  <p>
+    {% blocktrans %}Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces for DJing by Tue Haste Andersen.  After releasing the project as open source, dozens of contributors began modifying and improving Mixxx.{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans %}In 2006, a new development team lead by Adam Davison and Albert Santoni began reorganizing the project to ensure smooth growth of both the codebase and the number of contributors. A renewed focus on usability and stability has helped Mixxx grow to become the most popular free DJ software in the world, receiving <b>over 1,000,000 downloads annually</b>. Our committed team has worked hard to create great DJ software, and this growth is a sign of our success.{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans %}In 2011, RJ Ryan took over as Lead Developer to successfully continue the team's endeavor to make Mixxx a world-class DJ software.{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans %}As our user community grows, so does our development team - As of Mixxx 2.0, <b>over 100 developers and artists</b> have helped create Mixxx!{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans with gsoc_link="http://code.google.com/soc/" %}Mixxx also participated in <a href="{{ gsoc_link }}">Google Summer of Code</a> in 2007, 2008, and 2010-2014. Google Summer of Code is a program that provides college students with a stipend over the summer to work on open source projects. Mentors from Mixxx introduced students to open source software development and helped them gain experience working with multi-threaded, real-time multimedia software.{% endblocktrans %}
+  </p>
+</div>
+
+<div id="why" class="docs-section container">
+  <h2><a class="headline-link" href="#why">{% trans "Why?" %}</a></h2>
+
+  <p>
+    {% blocktrans %}Mixxx started as an open source project because of demand for DJing software on Linux, and discontent with proprietary DJ software on Windows and Mac OS X. Today, Mixxx development is driven by the simple idea that together we can create a better way to DJ, and that has brought Mixxx to the cutting edge. Mixxx is the only free cross-platform vinyl control software and has the most advanced controller support via our innovative Javascript-based MIDI and HID scripting engine. We are continuing to pursue new and exciting features that give DJs more tools to create better live mixes.{% endblocktrans %}
+  </p>
+
+  <p>
+    {% blocktrans %}Besides scratching our own itches, many people work on Mixxx as a way to learn about audio programming, or even just because it's fun and they enjoy programming. The creative aspect of Mixxx attracts developers with a broad range of skills and talents, and that makes for a fun development team that helps Mixxx continue to grow.{% endblocktrans %}
+  </p>
+</div>
+{% endblock %}

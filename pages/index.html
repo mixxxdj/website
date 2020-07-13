@@ -4,111 +4,139 @@
 
 {% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
 
-{% block after_navbar %}
-{% include "social_sidebar.html" %}
-
-<div id="splash">
-  <h1>{% trans "DJ Your Way" %}</h1>
-  <img class="center responsive" src="{% static '/static/images/splash-2.1.png' %}">
+{% block header %}
+<div class="header splash cover-bg" style="background-image: url('{% static '/static/images/cover/splash-bg.jpg' %}'); background-position: center;">
+  <div class="container">
+    <img class="splash-logo drop-shadow" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}" alt="Mixxx Logo">
+    <div class="splash-text">
+      <h2>{% trans "DJ Your Way" %}</h2>
+      <p>Free and open source DJ software for Windows, macOS, and Linux</p>
+      <ul class="splash-social">
+        <li>
+          <a class="twitter social_icon" href="https://twitter.com/mixxxdj" target="_blank">
+            <img class="drop-shadow" src="{% static '/static/images/social_icons/twitter.svg' %}" alt="Twitter" title="Follow Mixxx on Twitter">
+          </a>
+        </li>
+        <li>
+          <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
+            <img class="drop-shadow" src="{% static '/static/images/social_icons/facebook.svg' %}" alt="Facebook" title="Follow Mixxx on Facebook">
+          </a>
+        </li>
+        <li>
+          <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
+            <img class="drop-shadow" src="{% static '/static/images/social_icons/zulip.svg' %}" alt="Zulip" title="Chat on Zulip">
+          </a>
+        </li>
+        <li>
+          <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
+            <img class="drop-shadow" src="{% static '/static/images/social_icons/github.svg' %}" alt="GitHub" title="Get the source on GitHub">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
 {% block body %}
-<div class="gapfiller" style="margin-bottom: 0px;">
-  <p>Free and open source DJ software for Windows, macOS, and Linux</p>
-  {% include "download_button.html" %}
-  <div style="clear: both;"></div>
-</div> <!-- gapfiller -->
+<div id="features" class="docs-section container">
+  <h2><a class="headline-link" href="#features">{% trans "Powerful Features For All DJs" %}</a></h2>
 
-<div class="content">
-  <h1>{% trans "Powerful Features For All DJs" %}</h1>
+  <p>{% blocktrans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files.<br/>Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}</p>
 
-  <p class="header">{% blocktrans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files.<br/>Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}</p>
+  <div class="grid-container halves u-align-left">
+    <div class="feature-indent">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_keydetect.png' %}" alt="{% trans "BPM, Key Detection & Sync" %}">
+      <h5 class="docs-header">{% trans "BPM, Key Detection & Sync" %}</h5>
+      <p>
+        {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endblocktrans %}
+      </p>
+    </div>
 
-  <div class="halfbox_left">
-    <h2><img src="{% static '/static/images/ic_preferences_keydetect.png' %}" class="feature_icon">{% trans "BPM, Key Detection & Sync" %}</h2>
-    <p class="feature_indent">
-      {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endblocktrans %}
-    </p>
+    <div class="feature-indent">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_controllers.png' %}" alt="{% trans "DJ Controller Support" %}">
+      <h5 class="docs-header">{% trans "DJ Controller Support" %}</h5>
+      <p>
+        {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
+      </p>
+    </div>
+
+    <div class="feature-indent">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_waveform.png' %}" alt="{% trans "Effects" %}">
+      <h5 class="docs-header">{% trans "Effects" %}</h5>
+      <p>
+        {% blocktrans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endblocktrans %}
+      </p>
+    </div>
+
+    <div class="feature-indent">
+      <img class="feature-icon" src="{% static '/static/images/ic_preferences_vinyl.png' %}" alt="{% trans "Vinyl Record Control" %}">
+      <h5 class="docs-header">{% trans "Vinyl Record Control" %}</h5>
+      <p>
+        {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
+      </p>
+    </div>
   </div>
+</div>
 
-  <div class="halfbox_right">
-    <h2><img src="{% static '/static/images/ic_preferences_controllers.png' %}" class="feature_icon">{% trans "DJ Controller Support" %}</h2>
-    <p class="feature_indent">
-      {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-
-  <div class="halfbox_left">
-    <h2><img src="{% static '/static/images/ic_preferences_waveform.png' %}" class="feature_icon">{% trans "Effects" %}</h2>
-    <p class="feature_indent">
-      {% blocktrans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endblocktrans %}
-    </p>
-  </div>
-
-  <div class="halfbox_right">
-    <h2><img src="{% static '/static/images/ic_preferences_vinyl.png' %}" class="feature_icon">{% trans "Vinyl Record Control" %}</h2>
-    <p class="feature_indent">
-      {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
-      <a href="/features">{% trans "Read more" %}</a>
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-
-  <div class="gapfiller">
+<div id="opensource" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/code-bg.jpg' %});">
+  <div class="container splash-text">
+    <h2><a class="headline-link" href="#opensource">{% trans "Free &amp; Open Source" %}</a></h2>
     <p>
-      {% blocktrans with features_link="/features" %}See <a href="{{ features_link }}">dozens more features</a> or start downloading Mixxx for free now:{% endblocktrans %}
+      {% blocktrans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx &mdash; the development is shouldered by passionate DJs and programmers that dedicate their free time to working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endblocktrans %}
     </p>
-    {% include "download_button.html" %}
-    <div style="clear: both;"></div>
   </div>
+  <div class="container grid-container quarters drop-shadow">
+    <div>
+      <a class="button button-primary" href="{% url "/download.html" %}">{% trans "Download" %}</a>
+    </div>
+    <div>
+      {% include "donate_paypal.html" %}
+    </div>
+    <div>
+      <a class="button button-secondary" href="{% url "/features.html" %}">{% trans "More Features" %}</a>
+    </div>
+    <div>
+      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans "Source Code" %}</a>
+    </div>
+  </div>
+</div>
 
-  {% if posts|length >= 2 %}
-  <h1>{% trans "Latest News" %}</h1>
-  <p class="header">
+{% if posts|length >= 2 %}
+<div id="news" class="docs-section container">
+  <h2><a class="headline-link" href="#news">{% trans "Latest News" %}</a></h2>
+  <p>
     {% blocktrans %}To see a list of all news and announcements, head over to <a href="/news">our news page</a> or subscribe to the <a href="/feed.xml">Atom feed</a>.{% endblocktrans %}
   </p>
 
-  <div class="halfbox_left">
-    {% with post=posts|first %}
-    <h2>{{ post.title }}</h2>
-    <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
-    <p>
-      <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
-      (<time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>)
-    </p>
-    {% endwith %}
+  <div class="grid-container halves u-align-left">
+    {% for post in posts|slice:":2" %}
+    <div>
+      <time>{{ post.date|date:"Y-m-d" }}</time>
+      <h5>{{ post.title }}</h5>
+      {{ post.post|truncatewords_html:30 }}
+      <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
+    </div>
+    {% endfor %}
   </div>
-
-  <div class="halfbox_right">
-    {% with post=posts|slice:"1:"|first %}
-    <h2>{{ post.title }}</h2>
-    <p class="feature_indent">{{ post.post|truncatewords_html:30 }}</p>
-    <p>
-      <a href="{% url post.path %}">{% trans 'Read More' %} &raquo;</a>
-      (<time pubdate="pubdate">{{ post.date|date:"Y-m-d" }}</time>)
-    </p>
-    {% endwith %}
-  </div>
-
-  <div style="clear: both;"></div>
-  {% endif %}
+</div>
+{% endif %}
 
 
-  <h1>{% trans "Friendly Community" %}</h1>
-  <p class="header">
+<div id="community" class="docs-section container">
+  <h2><a class="headline-link" href="community">{% trans "Friendly Community" %}</a></h2>
+  <p>
     {% blocktrans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endblocktrans %}
   </p>
 
-  <p class="header">
-    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="/wiki/doku.php/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
+  <p>
+    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="https://github.com/mixxxdj/mixxx/wiki/start#controller_mapping_documentation" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
   </p>
+</div>
 
-  <div id="achievements">
-    <div class="achievement" style="width: 180px;">
+<div id="achievements" class="docs-section container">
+  <div class="grid-container quarters">
+    <div>
       <img class="responsive" src="{% static '/static/images/rating_macappstore.png' %}" alt="#1" style="padding-top: 0px;">
       <br>
       {% trans "#1 Top Free Mac App Worldwide" %}<br>
@@ -116,25 +144,22 @@
       <small>{% trans "February 2011" %}</small>
     </div>
 
-    <div class="achievement" style="margin-top: 10px;">
+    <div style="margin-top: 10px;">
       <img class="responsive" src="{% static '/static/images/rating_cnet.png' %}" alt="CNet">
     </div>
 
-    <div class="achievement" style="margin-top: 30px;">
+    <div style="margin-top: 30px;">
       <img class="responsive" src="{% static '/static/images/rating_cm.png' %}" alt="Computer Music"><br>
       {% trans "Free Pick of the Month" %}<br>
       <small>{% trans "September 2007" %}</small>
     </div>
 
-    <div class="achievement" style="margin-top: 50px">
+    <div style="margin-top: 50px">
       <img class="responsive" src="{% static '/static/images/rating_synthtopia.png' %}" alt="Synthtopia">
       <br>
       {% trans '"The coolest open source<br>application ever?"' %}<br>
       <small>{% trans "February 2011" %}</small>
     </div>
-
-    <div style="clear: both;"></div>
   </div>
-
-</div> <!-- content -->
+</div>
 {% endblock %}

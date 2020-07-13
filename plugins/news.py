@@ -11,9 +11,10 @@ ORDER = 999
 POSTS_PATH = "news/"
 POSTS = []
 AUTHOR_METADATA = {
-    '': {
+    'Mixxx': {
         "name": "Mixxx Team",
         "url": "https://github.com/orgs/mixxxdj/people",
+        'email': 'core-team@mixxx.org',
     },
     'Be.': {
         'github': 'Be-ing',
@@ -34,11 +35,21 @@ AUTHOR_METADATA = {
     'Pegasus': {
         'github': 'Pegasus-RPG',
     },
+    'ywwg': {
+        'name': 'Owen Wilson',
+        'github': 'ywwg',
+    },
+    'April': {
+        'name': 'April M. Crehan',
+        'github': 'ThisGrrrlFriday',
+        'email': 'amcrehan@gmail.com',
+    },
     'ehendrikd': {
         'name': 'Evan',
         'github': 'ehendrikd',
     },
 }
+AUTHOR_METADATA[""] = AUTHOR_METADATA["Mixxx"]
 
 
 def getNode(template, context, name="subject"):
@@ -72,8 +83,8 @@ def preBuild(site):
 
         # Find a specific defined variable in the page context,
         # and throw a warning if we're missing it.
-        def find(name, warn=True):
-            value = page.context().get(name, "")
+        def find(name, warn=True, fallback=""):
+            value = page.context().get(name, fallback)
             if warn and not value:
                 logging.warning(
                     "Missing info '%s' for post %s" % (name, page.path)
@@ -83,23 +94,36 @@ def preBuild(site):
         # Build a context for each post
         postContext = {}
         postContext["title"] = find("title")
-        postContext["author"] = find("author")
-        postContext["author_url"] = find("author_url", warn=False)
-        postContext["author_github"] = find("author_github", warn=False)
-        postContext["author_email"] = find("author_email", warn=False)
-        author_metadata = AUTHOR_METADATA.get(postContext["author"])
-        if author_metadata:
-            if "name" in author_metadata:
-                postContext["author"] = author_metadata["name"]
-            if not postContext["author_url"]:
-                postContext["author_url"] = author_metadata.get("url", "")
-            if not postContext["author_github"]:
-                postContext["author_github"] = author_metadata.get(
-                    "github", "")
-            if not postContext["author_email"]:
-                postContext["author_email"] = author_metadata.get("email", "")
+
+        author = find("author", warn=False)
+        if "," in author:
+            authors = [{"name": name.strip()} for name in author.split(",")]
+        else:
+            authors = [{
+                "name": find("author"),
+                "url": find("author_url", warn=False),
+                "github": find("author_github", warn=False),
+                "email": find("author_email", warn=False),
+            }]
+
+        postContext["authors"] = []
+        for author in authors:
+            author_metadata = AUTHOR_METADATA.get(author["name"])
+            if author_metadata:
+                if "name" in author_metadata:
+                    author["name"] = author_metadata["name"]
+                if not author.get("url"):
+                    author["url"] = author_metadata.get("url", "")
+                if not author.get("github"):
+                    author["github"] = author_metadata.get("github", "")
+                if not author.get("email"):
+                    author["email"] = author_metadata.get("email", "")
+
+            postContext["authors"].append(author)
 
         postContext["date"] = find("date")
+        postContext["comments"] = (
+            find("comments", warn=False).lower() not in ("false", "no", "off"))
         postContext["path"] = posixpath.join("/", page.path)
         context.update({"__CACTUS_CURRENT_PAGE__": page})
         postContext["post"] = getNode(

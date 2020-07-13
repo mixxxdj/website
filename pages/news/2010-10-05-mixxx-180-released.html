@@ -1,6 +1,7 @@
 title: Mixxx 1.8.0 Released!
 author: Albert
 date: 2010-10-05 07:24:00
+comments: no
 
 {% extends "post.html" %}
 
@@ -11,7 +12,7 @@ date: 2010-10-05 07:24:00
 !</div>
 <div style="text-align: center;"><br />
 </div>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://staging.mixxx.org/images/press_art/mixxx_defaultskin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://staging.mixxx.org/images/press_art/mixxx_defaultskin.png" height="185" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/images/press_art/mixxx_defaultskin.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/images/press_art/mixxx_defaultskin.png' %}" height="185" width="320" />
 </a>
 </div>
 <div class="separator" style="clear: both; text-align: center;"><i><br />
@@ -23,7 +24,7 @@ date: 2010-10-05 07:24:00
 . Developed by a diverse community of DJs, Mixxx is a complete replacement for a conventional "turntables and mixer" DJ setup, and is available for <b>Windows, Mac OS X, and Linux</b>
 .<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;"><a href="http://staging.mixxx.org/images/press_art/mixxx_deereskin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://staging.mixxx.org/images/press_art/mixxx_deereskin.png" height="177" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/images/press_art/mixxx_deereskin.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/images/press_art/mixxx_deereskin.png' %}" height="177" width="320" />
 </a>
 </div>
 <div class="separator" style="clear: both; text-align: center;"><i>"Deere" skin, new in Mixxx 1.8.0 </i>
@@ -68,7 +69,7 @@ Since Mixxx 1.7.2 was released, the following changes have been made:<br />
 </li>
 <ul><li>New PortMidi-based MIDI device backend, supports using <a href="http://www.youtube.com/watch?v=ccOvlwXW5Fw">multiple devices</a>
  at once</li>
-<li>Timers in the <a href="http://mixxx.org/wiki/doku.php/midi_scripting">MIDI scripting engine</a>
+<li>Timers in the <a href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting">MIDI scripting engine</a>
 </li>
 <li><b>New MIDI mappings:</b>
 </li>
@@ -80,8 +81,8 @@ Since Mixxx 1.7.2 was released, the following changes have been made:<br />
 <li><b>Updated MIDI mappings:</b>
 </li>
 <ul><li>Hercules DJ Control MP3, RMX, MK2</li>
-<li><a href="http://www.mixxx.org/wiki/doku.php/stanton_scs.3d_mixxx_user_guide">Stanton SCS.3d</a>
-, <a href="http://www.mixxx.org/wiki/doku.php/stanton_scs.3m_mixxx_user_guide">SCS.3m</a>
+<li><a href="https://github.com/mixxxdj/mixxx/wiki/stanton_scs.3d_mixxx_user_guide">Stanton SCS.3d</a>
+, <a href="https://github.com/mixxxdj/mixxx/wiki/stanton_scs.3m_mixxx_user_guide">SCS.3m</a>
 </li>
 <li>M-Audio Xponent</li>
 <li>Behringer BCD3000</li>
@@ -113,7 +114,7 @@ Since Mixxx 1.7.2 was released, the following changes have been made:<br />
 <div><b>Audio Playback Plugins</b>
 </div>
 <div>We've also added an <b>audio playback plugin architecture</b>
- to Mixxx, which allows Mixxx to playback extra formats with third-party plugins. Since audio formats like M4A/AAC are encumbered by software patents which restrict distribution and usage in certain jurisdictions, Mixxx cannot natively support them. However, the good news is that a licensed third-party can now develop and distribute an M4A plugin for Mixxx. We'll be posting some of our own audio plugins to the <a href="http://www.mixxx.org/wiki/doku.php/add-ons">Mixxx Add-ons</a>
+ to Mixxx, which allows Mixxx to playback extra formats with third-party plugins. Since audio formats like M4A/AAC are encumbered by software patents which restrict distribution and usage in certain jurisdictions, Mixxx cannot natively support them. However, the good news is that a licensed third-party can now develop and distribute an M4A plugin for Mixxx. We'll be posting some of our own audio plugins to the <a href="https://github.com/mixxxdj/mixxx/wiki/add-ons">Mixxx Add-ons</a>
  wiki page in the coming weeks, so be sure to check back again soon. </div>
 <div><br />
 </div>
@@ -126,7 +127,7 @@ We realized in the course of packaging 1.8.0 (by hand) that since we're planning
  that will allow us to create nightly builds and automate our releases. Money raised will go to cover the cost of the server, and any leftover money will cover other ongoing expenses like web hosting, and otherwise help <a href="http://pledgie.com/campaigns/13624">keep Mixxx rocking</a>
 !<br />
 <br />
-<div><div class="separator" style="clear: both; text-align: center;"><a href="http://www.pledgie.com/campaigns/13624" style="margin-left: 1em; margin-right: 1em;"><img alt="Click here to lend your support to: Mixxx 1.9 Build Server Fundraiser and make a donation at www.pledgie.com !" border="0" src="http://www.pledgie.com/campaigns/13624.png?skin_name=chrome" />
+<div><div class="separator" style="clear: both; text-align: center;"><a href="http://www.pledgie.com/campaigns/13624" style="margin-left: 1em; margin-right: 1em;"><img alt="Click here to lend your support to: Mixxx 1.9 Build Server Fundraiser and make a donation at www.pledgie.com !" border="0" src="https://www.pledgie.com/campaigns/13624.png?skin_name=chrome" />
 </a>
 </div>
 </div>

@@ -5,61 +5,37 @@
 {% block title %}{% trans "Support" %}{% endblock %}
 
 {% block body %}
-<div class="content">
-  <div style="float: right; width: 100px; padding-top: 30px;">
-    <center>{% include "donate_paypal.html" %}</center>
+<div class="docs-section container">
+  <h1>{% trans "Support &amp; Community" %}</h1>
+
+  <div class="grid-container halves u-align-left">
+    <div>
+      <h5>{% trans "User Manual" %}</h5>
+      <p>
+        {% blocktrans with manual_latest_link="/manual/latest" manual_beginner_link="/manual/latest/chapters/djing_with_mixxx.html" %}The <a href="{{ manual_latest_link }}">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about configuration and hardware, and much more. It also contains useful information for beginners under <a href="{{ manual_beginner_link }}">DJing with Mixxx</a>.{% endblocktrans %}
+      </p>
+    </div>
+
+    <div>
+      <h5>{% trans "Wiki" %}</h5>
+      <p>
+        {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="https://github.com/mixxxdj/mixxx/wiki/beginner_dj_links" wiki_troubleshooting="https://github.com/mixxxdj/mixxx/wiki/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
+      </p>
+    </div>
+
+    <div>
+      <h5>{% trans "Community Forums" %}</h5>
+      <p>
+        {% blocktrans with forums_link="https://mixxx.discourse.group/" %}If you need help setting up or using Mixxx, ask in the <a href="{{ forums_link }}">Mixxx Community Forums</a>. This is also the place to find or share unofficial controller mappings, keyboard mappings, and skins.{% endblocktrans %}
+      </p>
+    </div>
+
+    <div>
+      <h5>{% trans "Bug Tracker" %}</h5>
+      <p>
+        {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
+      </p>
+    </div>
   </div>
-
-  <H1>{% trans "Community Support" %}</H1>
-  <div style="clear: both;"></div>
-
-  <div class="halfbox_left">
-    <h2>{% trans "User Manual" %}</h2>
-    <p>
-      {% blocktrans with manual_latest_link="/manual/latest" manual_beginner_link="/manual/latest/chapters/djing_with_mixxx.html" %}The <a href="{{ manual_latest_link }}">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about configuration and hardware, and much more. It also contains useful information for beginners under <a href="{{ manual_beginner_link }}">DJing with Mixxx</a>.{% endblocktrans %}
-    </p>
-  </div>
-
-  <div class="halfbox_right">
-    <h2>{% trans "Wiki" %}</h2>
-    <p>
-      {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="/wiki/doku.php/beginner_dj_links" wiki_troubleshooting="/wiki/doku.php/troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
-    </p>
-  </div>
- 
-  <div style="clear: both;"></div>
-  
-  <div class="halfbox_left">
-    <h2>{% trans "Community Forums" %}</h2>
-    <p>
-      {% blocktrans with forums_link="/forums" %}Have a Mixxx-related question? Something other DJs can help you with? Ask in the <a href="{{ forums_link }}">Mixxx Community Forums</a>. This is also the place to find or share additional controller mappings, keyboard mappings, skin and script tweaks. You may also post your mixes and promote your upcoming gigs there. {% endblocktrans %}
-    </p>
-  </div>
-
-  <div class="halfbox_right">
-    <h2>{% trans "Zulip Chat" %}</h2>
-    <p>
-      {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" zulip_app_link="https://zulipchat.com/apps/" %}<a href="{{ zulip_web_link }}">Mixxx's Zulip chat instance</a> is a fun place to hang out with the developers and meet some fellow DJs. Here, the Mixxx team discusses upcoming changes and programming related stuff. It can be used for support too. Join the discussion <a href="{{ zulip_web_link }} ">on the web</a> or download the <a href="{{ zulip_app_link }}">Zulip app</a> and configure it to use the server mixxx.zulipchat.com. {% endblocktrans %}
-    </p>
-  </div> 
-
-  <div style="clear: both;"></div>
-
-  <div class="halfbox_left">
-    <h2>{% trans "Mailing List" %}</h2>
-    <p>
-      {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" sourceforge_archive_link="https://sourceforge.net/p/mixxx/mailman/mixxx-devel/" the_mail_archive_link="https://www.mail-archive.com/mixxx-devel@lists.sourceforge.net/" %}The <a href="{{ mailing_list_link}} ">mixxx-devel</a> mailing list (<a href="{{ sourceforge_archive_link }}">SourceForge</a> and <a href="{{ the_mail_archive_link }}">The Mail Archive</a> archives) is now a low-traffic, mostly announcement channel. Subscribe if you would like to be informed about new releases and other topics.{% endblocktrans %}
-    </p>
-  </div>
-
-  <div class="halfbox_right">
-    <h2>{% trans "Bug Tracker" %}</h2>
-    <p>
-      {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
-    </p>
-  </div>
-
-  <div style="clear: both;"></div>
-
 </div>
 {% endblock %}

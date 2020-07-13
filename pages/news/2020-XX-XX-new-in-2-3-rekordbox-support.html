@@ -1,6 +1,6 @@
 title: New in 2.3: Importing tracks and cues from Rekordbox removable devices
 author: ehendrikd
-date: 2020-05-15 20:00:00
+date: 2020-07-13 20:00:00
 
 {% extends "post.html" %}
 
@@ -26,17 +26,17 @@ This includes importing the key and BPM analyzed by Rekordbox, and comments and 
 
 After you have exported music to a USB drive in Rekordbox, simply plug it in while Mixxx is running. Click on Rekordbox in the library, and all found compatible removable devices will be visible (attach as many as you like!). Then click on the desired removable device, and all your folders and playlist that you have so tirelessly prepared will be revealed for you to play from.
 
-{# TODO: Insert screenshot of Rekordbox library feature once the skins are finalized. #}
+<div style="text-align: center;"><img src="{% static '/static/images/news/mixxx-rekordbox-usb.png' %}" /></div>
 
 Some notes to keep in mind on how Rekordbox hotcues memory cues and loops are imported: Mixxx currently has one main cue point, one loop, and 38 hotcues. As such, all Rekordbox hotcues are mapped to Mixxx hotcues as expected, the first chronological Rekordbox memory cue is mapped to the Mixxx main cue, and the first chronological Rekordbox loop mapped to the Mixxx loop. All loops (including the first loop), and all subsequent Rekordbox memory cues are appended as Mixxx hotcues following the previously imported Rekordbox hotcues. A little confusing? Perhaps, but hopefully it will all make sense when you give it a whirl. Rest assured the hotcue and memory cue colors you assigned in Rekordbox are also imported, assisting in distinguishing between them. Also note that whilst the additional imported Rekordbox loops only appear in Mixxx 2.3 as hotcues, their loop details are preserved, ready for the multiple loop feature proposed for Mixxx 2.4!
 
-{# TODO: Insert side-by-side screenshot of hotcues in Mixxx and Rekordbox once the skins are finalized. #}
+<div style="text-align: center;"><img src="{% static '/static/images/news/rekordbox-6-usb.png' %}" /><img src="{% static '/static/images/news/mixxx-rekordbox-usb.png' %}" /></div>
 
 Also note that as with the Serato library feature{# TODO: Add link to serato blogpost #}, we have tried our best to mitigate against certain edge cases of audio files encoded in lossy formats (MP3 and AAC/MP4), where different software's decoders can interpret conflicting timing information, leading to shifted cue points and beatgrids. We hope these are all correct, but some cases may be milliseconds off, and if you find any of these, please let us know on [Zulip](https://mixxx.zulipchat.com).
 
 We probably didn't get every case perfect, so we have added some buttons by the beatgrid editing buttons to shift all cue points in a track by 10 ms (left click) or 1 ms (right click) so you can correct the timing yourself. This only shifts cue points, not the beatgrid (because the same problem happens with Serato and Mixxx does not yet import the beatgrid from Serato). If you want to shift the beatgrid too, you can shift the cue points, then go to a cue point and press the beatgrid shift button.
 
-{# TODO: insert screenshot when #2737 is merged. #}
+<div style="text-align: center;"><img src="{% static '/static/images/news/mixxx-rekordbox-usb.png' %}" /></div>
 
 ## Can I prepare a Rekordbox removable device from Mixxx to use in a CDJ?
 

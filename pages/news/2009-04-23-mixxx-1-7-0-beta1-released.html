@@ -1,6 +1,7 @@
 title: Mixxx 1.7.0 Beta1 Released!
 author: Albert
 date: 2009-04-23 09:00:00
+comments: no
 
 {% extends "post.html" %}
 
@@ -28,7 +29,7 @@ Some of the new changes in Mixxx 1.7.0 Beta1 that we'd like to highlight are:<br
 </li>
 </ul>
 </li>
-<li><span style="font-weight: bold;">QtScript/JavaScript-based <a href="http://www.mixxx.org/wiki/doku.php/midi_scripting">MIDI Scripting Environment</a>
+<li><span style="font-weight: bold;">QtScript/JavaScript-based <a href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting">MIDI Scripting Environment</a>
 </span>
  - Code up complex behaviour for your MIDI controller without recompiling Mixxx!</li>
 <li>MIDI output now fully supported on Windows, OS X, and Linux.</li>
@@ -59,7 +60,7 @@ Some of the new changes in Mixxx 1.7.0 Beta1 that we'd like to highlight are:<br
     Aside from these more visible changes, there was significant work done on less visible parts of Mixxx. This includes many improvements to the organization and cleanliness of our source code, as well as a lot of work on features that didn't make it into the final 1.7.0. release. Improving the overall codebase is important for us because it makes it easier for new developers to contribute, and it was these new contributors who helped catalyze the overhaul of our MIDI system.<br />
 <br />
 Back around December, we started toying around with the idea of something we called <span style="font-style: italic;">MIDI scripting</span>
-. The idea of MIDI scripting is that having a small scripting engine sitting on top of our regular MIDI mappings would allow our users to <a href="http://www.mixxx.org/wiki/doku.php/midi_scripting">code complex behaviour</a>
+. The idea of MIDI scripting is that having a small scripting engine sitting on top of our regular MIDI mappings would allow our users to <a href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting">code complex behaviour</a>
  for their MIDI controllers using a JavaScript-like language. Soon after this idea hatched, we realized MIDI scripting would make it much easier for us to support <a href="{% url '/news/2009-02-09-midi-scripting-and-the-stanton-scs-3d-videos.html' %}">new controllers</a>
  in the future, and this attracted the attention of a handful of our developers.<br />
 <br />
@@ -74,9 +75,9 @@ Lastly, if you encounter problems with the beta, please report them in our <a hr
 <br />
 <span style="font-weight: bold;">Errata</span>
 <br />
-<ul><li>The overhaul of our MIDI code included many changes to our MIDI mapping file format. Some of our old mappings were converted automatically by a script, but many required additional modifications by hand, which introduces the possibility of us having made errors. Due to the limited availability of hardware and free time within our development team, the MIDI mappings for some controllers have not been tested. If you have a controller that we provide a mapping for, please test it and report your results in our <a href="http://www.mixxx.org/wiki/doku.php/supported_controller_test_grid">controller testing matrix</a>
+<ul><li>The overhaul of our MIDI code included many changes to our MIDI mapping file format. Some of our old mappings were converted automatically by a script, but many required additional modifications by hand, which introduces the possibility of us having made errors. Due to the limited availability of hardware and free time within our development team, the MIDI mappings for some controllers have not been tested. If you have a controller that we provide a mapping for, please test it and report your results in our <a href="https://github.com/mixxxdj/mixxx/wiki/supported_controller_test_grid">controller testing matrix</a>
 . </li>
-<li>MIDI Pitch messages are no longer processed internally and must be mapped to a script function. Fortunately <a href="http://mixxx.org/wiki/doku.php/midi_scripting#available_common_functions" class="wikilink1" title="midi_scripting">script.pitch</a>
+<li>MIDI Pitch messages are no longer processed internally and must be mapped to a script function. Fortunately <a href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting#available_common_functions" class="wikilink1" title="midi_scripting">script.pitch</a>
  can be used very easily from your script.</li>
 <li>M-Audio Xponent support has likely been broken. Support for it needs to be rewritten using scripting, but none of our developers have this device. (This is a great task for a user who wants to contribute to Mixxx! Come ask someone on IRC in #mixxx on Freenode about it.)<br />
 </li>

@@ -1,0 +1,16 @@
+# Redirects for the Mixxx website
+# See https://docs.netlify.com/routing/redirects/ for details.
+
+# Redirect www.mixxx.org subdomain to plain mixxx.org
+http://www.mixxx.org/*  https://mixxx.org/:splat                301!
+https://www.mixxx.org/* https://mixxx.org/:splat                301!
+
+# Redirect manual
+# TODO: Replace this with manual.mixxx.org when the domain name has been mapped
+/manual/*               https://mixxx-manual.netlify.app/:splat 301!
+
+# Redirect links to old forum posts
+/forums/*               https://mixxx.discourse.group/:splat    301!
+
+# Error page
+/*                      /error/                                 404
