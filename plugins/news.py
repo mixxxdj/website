@@ -44,6 +44,10 @@ AUTHOR_METADATA = {
         'github': 'ThisGrrrlFriday',
         'email': 'amcrehan@gmail.com',
     },
+    'ehendrikd': {
+        'name': 'Evan',
+        'github': 'ehendrikd',
+    },
 }
 AUTHOR_METADATA[""] = AUTHOR_METADATA["Mixxx"]
 
