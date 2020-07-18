@@ -148,6 +148,7 @@ i.fas, i.fab {
     background-image: url('../images/dropdown.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     width: 10px;
     height: 10px;
 }
