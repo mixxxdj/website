@@ -137,6 +137,20 @@ i.fas, i.fab {
     position: relative;
     margin-bottom: 0;
 }
+.navbar-main > .navbar-list > .navbar-item > a {
+    display: flex;
+    align-items: center;
+}
+.navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
+    content: "";
+    margin-left: 5px;
+    display: block;
+    background-image: url('../images/dropdown.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+}
 .navbar-item img {
     height: 2rem;
     vertical-align: middle;
