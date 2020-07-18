@@ -142,7 +142,7 @@ i.fas, i.fab {
     align-items: center;
 }
 .navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
-    content: "";
+    display: none;
     margin-left: 5px;
     display: block;
     background-image: url('../images/dropdown.svg');
@@ -262,6 +262,10 @@ img.responsive {
     .navbar-item .navbar-dropdown .navbar-item {
         clear: both;
         width: 100%;
+    }
+    .navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
+        display: flex;
+        content: "";
     }
 }
 
