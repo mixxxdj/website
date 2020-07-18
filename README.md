@@ -11,6 +11,11 @@ dependencies.
 
     $ pip install -r requirements.txt
 
+If using conda (Anaconda/Miniconda) we recommend setting an environment with python 2.7:
+
+    $ conda create --name mixxx_website python=2.7
+    $ conda activate mixxx_website
+
 Then build the site from its templates:
 
     $ cactus build
