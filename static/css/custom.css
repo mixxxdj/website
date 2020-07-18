@@ -137,6 +137,21 @@ i.fas, i.fab {
     position: relative;
     margin-bottom: 0;
 }
+.navbar-main > .navbar-list > .navbar-item > a {
+    display: flex;
+    align-items: center;
+}
+.navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
+    display: none;
+    margin-left: 5px;
+    display: block;
+    background-image: url('../images/dropdown.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 10px;
+    height: 10px;
+}
 .navbar-item img {
     height: 2rem;
     vertical-align: middle;
@@ -248,6 +263,10 @@ img.responsive {
     .navbar-item .navbar-dropdown .navbar-item {
         clear: both;
         width: 100%;
+    }
+    .navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
+        display: flex;
+        content: "";
     }
 }
 
