@@ -26,7 +26,7 @@ This means that the tracks from your [Serato library](https://support.serato.com
 If you have USB drives with a [portable Serato library](https://support.serato.com/hc/en-us/articles/202304844-Using-a-USB-external-hard-drive-for-your-portable-library) on it, we've got you covered as well:
 Libraries and crates on external USB drives will work on all supported platforms - even on Linux!
 
-{# TODO: Insert screenshot of Serato library feature once the skins are finalized. #}
+![Serato library feature]({% static "/images/news/serato-import-library.png" %})
 
 ## Import your Beatgrid and Hotcues
 
@@ -37,12 +37,12 @@ It took months of work, but we finally managed to [reverse-engineer the binary f
 This means you can import the positions, labels and colors of your hotcues into Mixxx automatically when you load the track for the first time.
 Mixx will also import the Beatgrid from Serato, which works for both Beatgrid that were automatically detected by Serato's track analyzer and those that you edited manually.
 
-{# TODO: Insert side-by-side screenshot of hotcues/beatgrids in Mixxx and Serato once the skins are finalized. #}
+![Beatgrid and Hotcues imported from Serato]({% static "/images/news/serato-import-sbs.png" %})
 
 If you already added a track to your Mixxx library before support for reading Serato's hotcues was added, you can trigger a reimport of the metadata via the track context menu.
 Note that this will clear your existing cuepoints in Mixxx if the track has any Serato hotcues.
 
-{# TODO: Add screenshot of reimport metadata context menu entry. #}
+![Reimport metadata via context menu]({% static "/images/news/serato-import-contextmenu.png" %})
 
 Unfortunately, a myriad of encoders and decoders for lossy formats such as MP3 and M4A/AAC exist, which leads to a situation where all decodes detect slightly different track start and end times for files from different sources.
 Hence, your cues might end up shifted by a few milliseconds.
