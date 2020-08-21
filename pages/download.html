@@ -40,20 +40,6 @@ stable_ubuntu64_analytics_conversion: /downloads/2.2.4-ubuntu-bionic64
 stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 stable_linuxsrc_analytics_conversion: /downloads/2.2.4-linuxsrc
 
-previous_version: Mixxx 2.1.8
-previous_win32: https://downloads.mixxx.org/mixxx-2.1.8/mixxx-2.1.8-win32.exe
-previous_win64: https://downloads.mixxx.org/mixxx-2.1.8/mixxx-2.1.8-win64.exe
-previous_win_min_version: XP
-previous_osxintel: https://downloads.mixxx.org/mixxx-2.1.8/mixxx-2.1.8-osxintel.dmg
-previous_macos_min_version: 10.8
-previous_ubuntu32: https://downloads.mixxx.org/mixxx-2.1.8/mixxx-2.1.8-bionic-i386.deb
-previous_ubuntu64: https://downloads.mixxx.org/mixxx-2.1.8/mixxx-2.1.8-bionic-amd64.deb
-previous_linuxsrc: https://github.com/mixxxdj/mixxx/archive/release-2.1.8.tar.gz
-previous_win32_analytics_conversion: /downloads/2.1.8-win32
-previous_win64_analytics_conversion: /downloads/2.1.8-win64
-previous_osxintel_analytics_conversion: /downloads/2.1.8-osxintel
-previous_linuxsrc_analytics_conversion: /downloads/2.1.8-linuxsrc
-previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
 {% extends "base.html" %}
 
 {% load i18n %}
@@ -81,7 +67,7 @@ previous_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
     {% blocktrans %}If you want to test the latest features of the upcoming {{ next_stable_version }} release, check out <a href="#unstable">{{ unstable_version }}</a>.{% endblocktrans %}
     {% endifequal %}
     {% ifequal show_previous "yes" %}
-    {% blocktrans %}More conservative users that want to stick with the old stable version can still download <a href="#previous">{{ previous_version }}</a>.{% endblocktrans %}
+    {% blocktrans %}More conservative users can still download one of the <a href="#previous">older and unsupported versions of Mixxx</a> below.{% endblocktrans %}
     {% endifequal %}
   </p>
 
@@ -324,52 +310,9 @@ sudo apt install mixxx</code></pre>
 </div>
 
 <div id="previous" class="docs-section container">
-  {% ifequal show_previous "yes" %}
-  <h2><a class="headline-link" href="#previous">{% blocktrans %}{{ previous_version }} (Previous Stable Version){% endblocktrans %}</a></h2>
-
-  <div class="grid-container halves">
-    <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
-      <p>{% blocktrans %}Download {{ previous_version }} for Windows {{ previous_win_min_version }} or later.{% endblocktrans %}</p>
-
-      <div class="grid-container halves">
-        <div>
-          <a class="button button-primary download-win32" href="{{ previous_win32 }}" data-os="{% blocktrans %}64-Bit Windows {{ previous_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ previous_win32_analytics_conversion }}');">Download (32 Bit)</a>
-        </div>
-        <div>
-          <a class="button button-primary download-win64" href="{{ previous_win64 }}" data-os="{% blocktrans %}64-Bit Windows {{ previous_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ previous_win64_analytics_conversion }}');">Download (64 Bit)</a>
-        </div>
-      </div>
-
-      <p>
-        <small>{% blocktrans with platform_update_link="https://support.microsoft.com/en-us/kb/2117917" %}AAC playback requires Windows 7 or greater or Windows Vista with a <a href="{{ platform_update_link }}">platform update</a>.{% endblocktrans %}</small>
-      </p>
-    </div>
-
-    <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
-      <p>{% blocktrans %}Download {{ previous_version }} for macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}</p>
-      <a class="button button-primary download-osxintel" href="{{ previous_osxintel }}" data-os="{% blocktrans %}macOS {{ previous_macos_min_version }} or later (Intel){% endblocktrans %}" onclick="javascript:trackDownload('{{ previous_osxintel_analytics_conversion }}');">Download</a>
-
-      <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
-      <!--
-      <a class="button button-primary" href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-        <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;" alt="Mac App Store">
-      </a>
-      <p><small>Please note due to licensing restrictions, vinyl control is not
-      available in Mixxx from the Mac App Store.</small></p>
-      -->
-    </div>
-  </div>
-
-  <div>
-    <h3>{% trans "Linux / Source Code" %}</h3>
-    <p>
-      <a class="button button-secondary download-source" data-os="{% trans "Linux / Source Code" %}" href="{{ previous_linuxsrc }}" onclick="javascript:trackDownload('{{ previous_linuxsrc_analytics_conversion }}');">
-        {% blocktrans %}Download {{ previous_version }} Source Code{% endblocktrans %}
-      </a>
-    </p>
-  </div>
+  <h2><a class="headline-link" href="#previous">{% blocktrans %}Previous Mixxx Versions{% endblocktrans %}</a></h2>
+  <p>
+    Although we heartily recommend using latest stable version of Mixxx, you can still find previous versions of Mixxx <a href="http://downloads.mixxx.org/">on our download server</a>.
+  </p>
 </div>
-{% endifequal %}
 {% endblock %}
