@@ -99,7 +99,7 @@ It allows bulk replacing hotcue colors for hotcues in your library and can be us
 
 {# TODO: Add screenshot or GIF of hotcue replace dialog. #}
 
-## Adding support for colored hotcues on controllers
+## Support for colored hotcues on controllers
 
 You're a controller mapping creator and wondered how to make use of hotcue colors on your controller?
 Then don't worry - we designed this feature with controller support in mind.
@@ -129,6 +129,8 @@ Obviously, it's not possible to show the exact same color on your controller if 
 In this case, `ColorMapper` returns the ID of the color that is *most similar* to the color you put in.
 As an example, the hotcue color in Mixxx could be a darker shade of blue - ColorMapper will simply return the color for the regular blue color in this case, because it's the best match.
 
+![Hotcue colors on a controller]({% static "/images/news/hotcue-colors-controller.png" %})
+
 Seems complicated?
 It doesn't have to be.
 If your mapping already uses our JavaScript Components library, you can just create a `ColorMapper` object, and it to the `HotcueButton` and your colored hotcue pads should start working!
@@ -136,8 +138,6 @@ If your mapping already uses our JavaScript Components library, you can just cre
 We also added [controls](https://mixxx.org/wiki/doku.php/mixxxcontrols) to to make it possible assign a different color to an existing hotcue from your controller - for example, the mapping for the Roland DJ-505 uses the PARAMETER -/+ buttons next to the hotcue pads to cycle through the color palette for most recently activated hotcue.
 
 Refer to our wiki if you want to integrate it into your controller mapping and check out the video below:
-
-{# TODO: Add example video/GIF of the ColorMapper and changing colors in action. #}
 
 {% endfilter %}
 {% endblock %}
