@@ -10,6 +10,13 @@ https://www.mixxx.org/* https://mixxx.org/:splat                301!
 /manual/*               https://mixxx-manual.netlify.app/:splat 301!
 
 # Redirect links to old forum posts
+# Unforunately, passing through the whole query is not supported by Netlify
+# yet, so we need to work around it like explained here:
+# https://community.netlify.com/t/preserve-query-parameters-on-redirect/2226/49
+/forums/* f=:f t=:t p=:p https://mixxx.discourse.group/:splat?f=:f&t=:t&p=:p 301!
+/forums/* t=:t p=:p     https://mixxx.discourse.group/:splat?t=:t&p=:p 301!
+/forums/* f=:f t=:t     https://mixxx.discourse.group/:splat?f=:f&t=:t 301!
+/forums/* p=:p          https://mixxx.discourse.group/:splat?p=:p 301!
 /forums/*               https://mixxx.discourse.group/:splat    301!
 
 # Error page
