@@ -70,18 +70,6 @@ the server, run the following command:
 
   `fab production snapshot gcloud_upload`
 
-# Wiki Upgrade
-
-If you are logged in as an admin, available upgrades will be listed at the top
-of every page. To upgrade:
-
-* Backup the site (see "Backups" above).
-* Go to
-  [Wiki Upgrade](https://mixxx.org/wiki/doku.php/start?do=admin&page=upgrade)
-  from the admin page.
-* Go through the easy step-by-step process. All permissions should be setup so
-  that an admin can do this without SSH access.
-
 # Forum Upgrade
 
 **WARNING: We are currently on the 3.1.x release. Do not upgrade to 3.2.x or above with
