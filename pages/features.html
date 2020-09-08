@@ -36,7 +36,7 @@
       </p>
     </div>
     <div>
-      <img class="responsive drop-shadow" src="{% static '/static/images/feature_deck.png' %}">
+      <img class="responsive drop-shadow" src="{% static '/images/2.3/feature-deck.png' %}">
       <h6 class="docs-header">{% trans "Beat Rolls and Censor" %}</h6>
       <p>
         {% trans "Play with rhythm by triggering short loops and reverse-playback effects. The track stays in time so you don't miss a beat." %}
@@ -71,7 +71,7 @@
     <div class="grid-container halves u-align-left">
       <div>
         <div style="max-height: 200px;">
-          <img class="responsive drop-shadow" src="{% static '/static/images/feature_midi-2.0.png' %}">
+          <img class="responsive drop-shadow" src="{% static '/images/2.0/feature-midi.png' %}">
         </div>
 
         <h5 class="docs-header">{% trans "MIDI and HID Controller Support" %}</h5>
@@ -79,18 +79,18 @@
         <p>
           {% blocktrans %}for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series, and many more.{% endblocktrans %}
         </p>
-        <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx/wiki/hardware_compatibility">{% trans "Supported Devices" %}</a>
+        <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx/wiki/Hardware-Compatibility">{% trans "Supported Devices" %}</a>
 
         <h6 class="docs-header">{% trans "Programmable Mapping Engine" %}</h6>
         <p>
           {% blocktrans %}For creative tinkerers, controller mappings can be customized with the full flexibility of the JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which execute complex behaviour.{% endblocktrans %}
         </p>
-        <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting">{% trans "Read more" %}</a>
+        <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx/wiki/Midi-Scripting">{% trans "Read more" %}</a>
       </div>
 
       <div>
         <div style="max-height: 200px;">
-          <img class="responsive drop-shadow" src="{% static '/static/images/feature_vinylcontrol.png' %}">
+          <img class="responsive drop-shadow" src="{% static '/images/1.11/feature-vinylcontrol.png' %}">
         </div>
 
         <h5 class="docs-header">{% trans "Free Timecode Vinyl Control" %}</h5>
@@ -106,10 +106,10 @@
 <div id="samplers" class="docs-section container">
   <h2><a class="headline-link" href="#samplers">{% trans "Sampler Decks" %}</a></h2>
   <p>
-  {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}{# TODO: Say more. #}
+    {% trans "Load up to 64 sampler decks full of sounds to layer over your mix." %}{# TODO: Say more. #}
   </p>
 
-  <img class="responsive drop-shadow" src="{% static '/static/images/feature_sampler2.png' %}">
+  <img class="responsive drop-shadow" src="{% static '/images/2.3/feature-sampler2.png' %}">
 </div>
 
 <div id="effects" class="docs-section container">
@@ -117,14 +117,16 @@
   <p>
     {% trans "Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by tweaking each parameter individually. Customize your workflow by assigning different parameters to adjust with the effect's metaknob. Focus different effects from a controller for flexible control of effect chains, whether your controller has a full effects section or a single knob." %}
   </p>
-  <img class="responsive drop-shadow" src="{% static '/static/images/feature_effect_unit_expanded.png' %}">
+  <img class="responsive drop-shadow" src="{% static '/images/2.3/feature-effect-unit-expanded.png' %}">
 </div>
 
-<div id="library" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/library-bg.jpg' %});">
+<div id="library" class="docs-section cover-bg"
+  style="background-image: url({% static '/static/images/cover/library-bg.jpg' %});">
   <div class="container splash-text">
     <h2><a class="headline-link" href="#library">{% trans "Sophisticated Music Library" %}</a></h2>
     <p>
-    {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
+      {% trans "Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the perfect next track to play. Powered by a high-performance database, searching your collection is intuitive and fast." %}
+    </p>
 
     <div class="grid-container halves u-align-left">
       <div class="feature-indent">
@@ -132,13 +134,17 @@
         <h5 class="docs-header">{% trans "Organization" %}</h5>
 
         <h6 class="docs-header">{% trans "Crates and Playlists" %}</h6>
-        <p>{% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}</p>
+        <p>
+          {% trans "Sort your music the way you want. Use playlists to plan your set and use crates to build your own categorization system." %}
+        </p>
 
         <h6 class="docs-header">{% trans "Search &amp; Sort" %}</h6>
-        <p>{% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}</p>
+        <p>
+          {% trans "Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort the library table hierarchically with multiple tags at a time." %}
+        </p>
       </div>
       <div class="feature-indent">
-        <img class="responsive drop-shadow" src="{% static '/static/images/feature_library-2.0.png' %}">
+        <img class="responsive drop-shadow" src="{% static '/images/2.0/feature-library.png' %}">
         <h6 class="docs-header">{% trans "iTunes and Traktor Library Integration" %}</h6>
         <p>{% trans "Drop fresh tracks from your iTunes or Traktor library right into your mix." %}</p>
 
@@ -148,7 +154,9 @@
       <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_prepare.png' %}" class="feature-icon drop-shadow">
         <h5 class="docs-header">{% trans "BPM &amp; Key Detection" %}</h5>
-        <p>{% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}</p>
+        <p>
+          {% trans "BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will blend in seamlessly." %}
+        </p>
       </div>
       <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_autodj.png' %}" class="feature-icon drop-shadow">
@@ -166,16 +174,16 @@
   <p>{% trans "Mixxx includes four different skins, each with a different look and a configurable layout." %}</p>
   <div class="grid-container halves u-align-left">
     <div>
-      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_deere.png' %}">
+      <img class="responsive drop-shadow" src="{% static '/images/1.11/feature-skins-deere.png' %}">
     </div>
     <div>
-      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_latenight.png' %}">
+      <img class="responsive drop-shadow" src="{% static '/images/1.11/feature-skins-latenight.png' %}">
     </div>
     <div>
-      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_shade.png' %}">
+      <img class="responsive drop-shadow" src="{% static '/images/1.11/feature-skins-shade.png' %}">
     </div>
     <div>
-      <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_tango.png' %}">
+      <img class="responsive drop-shadow" src="{% static '/images/1.11/feature-skins-tango.png' %}">
     </div>
   </div>
 </div>
@@ -190,7 +198,8 @@
       <div class="feature-indent">
         <img src="{% static '/static/images/ic_library_recordings.png' %}" class="feature-icon drop-shadow">
         <h5 class="docs-header">Recording</h5>
-        <p>{% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
+        <p>
+          {% trans "Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 recording enabled by the separate LAME library. Recordings are automatically archived in the library for fast access." %}
         </p>
       </div>
 

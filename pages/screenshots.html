@@ -6,38 +6,99 @@
 
 {% block body %}
 <div id="screenshots" class="docs-section container">
-  {% with mixxx_version="2.0" %}
   <h1>{% trans "Screenshots" %}</h1>
   <p>
-    {% blocktrans %}Here you can find some screenshots of the default skins included in Mixxx {{mixxx_version}}.{% endblocktrans %}
+    {% blocktrans %}Here you can find some screenshots of Mixxx' user interface.{% endblocktrans %}
   </p>
+</div>
 
+<div id="screenshots" class="docs-section container">
+  <h2>{% trans "Mixxx 2.3" %}</h2>
   <div class="grid-container halves">
     <figure>
-      <a href="{% static '/static/images/feature_skins_deere.png' %}" target="_blank">
-        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_deere.png' %}">
+      <a href="{% static '/images/2.3/screenshots/latenight-palemoon-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/latenight-palemoon-640x480.png' %}" alt="LateNight PaleMoon Skin (Default)">
+      </a>
+      <figcaption>LateNight PaleMoon Skin (Default)</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.3/screenshots/latenight-classic-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/latenight-classic-640x480.png' %}" alt="LateNight Classic Skin">
+      </a>
+      <figcaption>LateNight Classic Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.3/screenshots/deere-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/deere-640x480.png' %}" alt="Deere Skin">
       </a>
       <figcaption>Deere Skin</figcaption>
     </figure>
     <figure>
-      <a href="{% static '/static/images/feature_skins_latenight.png' %}" target="_blank">
-        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_latenight.png' %}">
+      <a href="{% static '/images/2.3/screenshots/shade-classic-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/shade-classic-640x480.png' %}" alt="Shade Clasic Skin">
       </a>
-      <figcaption>LateNight Skin</figcaption>
+      <figcaption>Shade Classic Skin</figcaption>
     </figure>
     <figure>
-      <a href="{% static '/static/images/feature_skins_shade.png' %}" target="_blank">
-        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_shade.png' %}">
+      <a href="{% static '/images/2.3/screenshots/shade-dark-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/shade-dark-640x480.png' %}" alt="Shade Dark Skin">
       </a>
-      <figcaption>Shade Skin</figcaption>
+      <figcaption>Shade Dark Skin</figcaption>
     </figure>
     <figure>
-      <a href="{% static '/static/images/feature_skins_tango.png' %}" target="_blank">
-        <img class="responsive drop-shadow" src="{% static '/static/images/feature_skins_tango.png' %}">
+      <a href="{% static '/images/2.3/screenshots/shade-summersunset-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/shade-summersunset-640x480.png' %}" alt="Shade Summer Sunset Skin">
+      </a>
+      <figcaption>Shade Summer Sunset Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.3/screenshots/tango-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.3/screenshots/tango-640x480.png' %}" alt="Tango Skin">
       </a>
       <figcaption>Tango Skin</figcaption>
     </figure>
   </div>
-  {% endwith %}
+</div>
+
+<div id="screenshots" class="docs-section container">
+  <h2>{% trans "Mixxx 2.2" %}</h2>
+  <div class="grid-container halves">
+    <figure>
+      <a href="{% static '/images/2.2/screenshots/deere-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.2/screenshots/deere-640x480.png' %}" alt="Deere Skin (Default)">
+      </a>
+      <figcaption>Deere Skin (Default)</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.2/screenshots/latenight-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.2/screenshots/latenight-640x480.png' %}" alt="LateNight Skin">
+      </a>
+      <figcaption>LateNight Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.2/screenshots/shade-classic-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.2/screenshots/shade-classic-640x480.png' %}" alt="Shade Clasic Skin">
+      </a>
+      <figcaption>Shade Classic Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.2/screenshots/shade-dark-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.2/screenshots/shade-dark-640x480.png' %}" alt="Shade Dark Skin">
+      </a>
+      <figcaption>Shade Dark Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.2/screenshots/shade-summersunset-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.2/screenshots/shade-summersunset-640x480.png' %}" alt="Shade Summer Sunset Skin">
+      </a>
+      <figcaption>Shade Summer Sunset Skin</figcaption>
+    </figure>
+    <figure>
+      <a href="{% static '/images/2.2/screenshots/tango-3840x2160.png' %}" target="_blank">
+        <img class="responsive drop-shadow" src="{% static '/images/2.2/screenshots/tango-640x480.png' %}" alt="Tango Skin">
+      </a>
+      <figcaption>Tango Skin</figcaption>
+    </figure>
+  </div>
 </div>
 {% endblock %}

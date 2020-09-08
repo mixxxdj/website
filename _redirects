@@ -1,2 +1,33 @@
-/manual/* https://holzhaus-mixxx-manual.netlify.app/:splat 302
-/*        /error/                                          404
+# Redirects for the Mixxx website
+# See https://docs.netlify.com/routing/redirects/ for details.
+
+# Redirect www.mixxx.org subdomain to plain mixxx.org
+http://www.mixxx.org/*  https://mixxx.org/:splat                301!
+https://www.mixxx.org/* https://mixxx.org/:splat                301!
+
+# Redirect manual
+/manual/*               https://manual.mixxx.org/:splat 301!
+
+# Redirect links to old forum posts
+# Unforunately, passing through the whole query is not supported by Netlify
+# yet, so we need to work around it like explained here:
+# https://community.netlify.com/t/preserve-query-parameters-on-redirect/2226/49
+/forums/* f=:f t=:t p=:p https://mixxx.discourse.group/:splat?f=:f&t=:t&p=:p 301!
+/forums/* t=:t p=:p     https://mixxx.discourse.group/:splat?t=:t&p=:p 301!
+/forums/* f=:f t=:t     https://mixxx.discourse.group/:splat?f=:f&t=:t 301!
+/forums/* p=:p          https://mixxx.discourse.group/:splat?p=:p 301!
+/forums/*               https://mixxx.discourse.group/:splat    301!
+
+# Redirect links to old wiki pages
+/wiki/doku.php/compiling_on_linux https://github.com/mixxxdj/mixxx/wiki/compiling%20on%20linux 301!
+/wiki/doku.php/midi_scripting     https://github.com/mixxxdj/mixxx/wiki/midi%20scripting       301!
+/wiki/doku.php/mixxx_macros       https://github.com/mixxxdj/mixxx/wiki/mixxx%20macros         301!
+/wiki/doku.php/bugfix_workflow    https://github.com/mixxxdj/mixxx/wiki/bugfix%20workflow      301!
+/wiki/doku.php/start              https://github.com/mixxxdj/mixxx/wiki                        301!
+/wiki/doku.php/*                  https://github.com/mixxxdj/mixxx/wiki/:splat                 301!
+/wiki/doku.php                    https://github.com/mixxxdj/mixxx/wiki                        301!
+/wiki/*                           https://github.com/mixxxdj/mixxx/wiki                        301!
+/wiki                             https://github.com/mixxxdj/mixxx/wiki                        301!
+
+# Error page
+/*                      /error/                                 404

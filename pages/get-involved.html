@@ -24,16 +24,13 @@
       <h6 class="docs-header">{% trans "Start Developing Now" %}</h6>
       <ul>
         <li>
+            {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself" %}Introduce yourself to the community on our <a href="{{ zulip_web_link }}">Zulip chat</a>.{% endblocktrans %}
+        </li>
+        <li>
             {% blocktrans with com_github_link="https://github.com" using_git_wiki_link="https://github.com/mixxxdj/mixxx/wiki/using_git" %}Get a <a href="{{ com_github_link }}">Github</a> account and <a href="{{ using_git_wiki_link }} ">fork your own branch</a>!{% endblocktrans %}
         </li>
         <li>
             {% blocktrans with easy_bug_list_link="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy" mixxx_credits_link="/contact/" %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_credits_link }}">Mixxx credits</a>!{% endblocktrans %}
-        </li>
-        <li>
-            {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/" %}When you're stuck, get help from our existing developers on <a href="{{ zulip_web_link }}">Zulip chat</a>{% endblocktrans %}
-        </li>
-        <li>
-            {% blocktrans with mailing_list_link="https://lists.sourceforge.net/lists/listinfo/mixxx-devel" %}Join our mailing list: <a href="{{ mailing_list_link }}">mixxx-devel</a>{% endblocktrans %}
         </li>
         <li>
             {% blocktrans %}You don't even have to know C++. There are developers who got into Mixxx development while learning C++ along the way.{% endblocktrans %}
@@ -55,7 +52,7 @@
       {% trans "There are many ways to help out as a DJ:" %}
       <ul>
         <li>
-          {% blocktrans with controller_wiki_link="https://github.com/mixxxdj/mixxx/wiki/start#controller_mapping_documentation" %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endblocktrans %}
+          {% blocktrans with controller_wiki_link="https://github.com/mixxxdj/mixxx/wiki#controller-mapping-documentation" %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endblocktrans %}
         </li>
         <li>
           {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/+filebug" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
@@ -64,7 +61,7 @@
           {% blocktrans with mixxx_wiki_link="/wiki/" %}Help keep our <a href="{{ mixxx_wiki_link }}">Wiki</a> up-to-date.{% endblocktrans %}
         </li>
         <li>
-          {% blocktrans with forum_link="/forums/" zulip_web_link="https://mixxx.zulipchat.com/" %}Support other DJs with their technical questions on <a href="{{ forum_link }}">the forums</a> and <a href="{{ zulip_web_link }}">Zulip</a>.{% endblocktrans %}
+          {% blocktrans with forum_link="https://mixxx.discourse.group/" %}Support other DJs with their technical questions on <a href="{{ forum_link }}">the forums</a>.{% endblocktrans %}
         </li>
         <li>
           <b>{% trans "Promote Mixxx:" %} </b>{% blocktrans %}Write an article about how you use Mixxx for your blog, or mention us when new releases come out. Any exposure on the web and in print helps our project grow, and is much appreciated!{% endblocktrans %}

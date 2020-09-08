@@ -5,14 +5,14 @@
   <div class="container navbar-main">
     <span class="navbar-item navbar-logo">
       <a class="navbar-link" href="/">
-        <img src="{% static '/static/images/navbar_logo-2.0.png' %}" alt="Mixxx">
+        <img src="{% static '/static/images/navbar-logo.png' %}" alt="Mixxx">
       </a>
     </span>
     <input class="navbar-hamburger-button" type="checkbox" id="navbar-hamburger-button" />
     <label class="navbar-hamburger-icon" for="navbar-hamburger-button"><span class="navicon"></span></label>
     <ul class="navbar-list navbar-hamburger-content">
       {% for item in NAV_MENU %}
-      <li class="navbar-item{% if item.css %} {{ item.css }}{% endif %}">
+      <li class="navbar-item{% if item.css %} {{ item.css }}{% endif %} {% if item.children %}has-dropdown{% endif %}">
         <a class="navbar-link" href="{{ item.url }}">
           {% filter nbsp %}{% trans item.title context item.context %}{% endfilter %}
         </a>
