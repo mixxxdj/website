@@ -11,42 +11,42 @@ ORDER = 999
 POSTS_PATH = "news/"
 POSTS = []
 AUTHOR_METADATA = {
-    'Mixxx': {
+    "Mixxx": {
         "name": "Mixxx Team",
         "url": "https://github.com/orgs/mixxxdj/people",
-        'email': 'core-team@mixxx.org',
+        "email": "core-team@mixxx.org",
     },
-    'Be.': {
-        'github': 'Be-ing',
-        'email': 'be@mixxx.org',
+    "Be.": {
+        "github": "Be-ing",
+        "email": "be@mixxx.org",
     },
-    'Albert': {
-        'github': 'asantoni',
+    "Albert": {
+        "github": "asantoni",
     },
-    'Holzhaus': {
-        'name': 'Jan Holthuis',
-        'github': 'Holzhaus',
-        'email': 'jholthuis@mixxx.org',
+    "Holzhaus": {
+        "name": "Jan Holthuis",
+        "github": "Holzhaus",
+        "email": "jholthuis@mixxx.org",
     },
-    'RJ Ryan': {
-        'github': 'rryan',
-        'email': 'rryan@mixxx.org',
+    "RJ Ryan": {
+        "github": "rryan",
+        "email": "rryan@mixxx.org",
     },
-    'Pegasus': {
-        'github': 'Pegasus-RPG',
+    "Pegasus": {
+        "github": "Pegasus-RPG",
     },
-    'ywwg': {
-        'name': 'Owen Williams',
-        'github': 'ywwg',
+    "ywwg": {
+        "name": "Owen Williams",
+        "github": "ywwg",
     },
-    'April': {
-        'name': 'April M. Crehan',
-        'github': 'ThisGrrrlFriday',
-        'email': 'amcrehan@gmail.com',
+    "April": {
+        "name": "April M. Crehan",
+        "github": "ThisGrrrlFriday",
+        "email": "amcrehan@gmail.com",
     },
-    'ehendrikd': {
-        'name': 'Evan',
-        'github': 'ehendrikd',
+    "ehendrikd": {
+        "name": "Evan",
+        "github": "ehendrikd",
     },
 }
 AUTHOR_METADATA[""] = AUTHOR_METADATA["Mixxx"]
@@ -99,12 +99,14 @@ def preBuild(site):
         if "," in author:
             authors = [{"name": name.strip()} for name in author.split(",")]
         else:
-            authors = [{
-                "name": find("author"),
-                "url": find("author_url", warn=False),
-                "github": find("author_github", warn=False),
-                "email": find("author_email", warn=False),
-            }]
+            authors = [
+                {
+                    "name": find("author"),
+                    "url": find("author_url", warn=False),
+                    "github": find("author_github", warn=False),
+                    "email": find("author_email", warn=False),
+                }
+            ]
 
         postContext["authors"] = []
         for author in authors:
@@ -122,8 +124,11 @@ def preBuild(site):
             postContext["authors"].append(author)
 
         postContext["date"] = find("date")
-        postContext["comments"] = (
-            find("comments", warn=False).lower() not in ("false", "no", "off"))
+        postContext["comments"] = find("comments", warn=False).lower() not in (
+            "false",
+            "no",
+            "off",
+        )
         postContext["path"] = posixpath.join("/", page.path)
         context.update({"__CACTUS_CURRENT_PAGE__": page})
         postContext["post"] = getNode(
