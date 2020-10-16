@@ -77,7 +77,7 @@ def preBuild(site):
         if not page.path.startswith(POSTS_PATH):
             continue
 
-        # Skip non html posts for obious reasons
+        # Skip non-html posts for obvious reasons
         if os.path.splitext(page.path)[1] != ".html":
             continue
 
