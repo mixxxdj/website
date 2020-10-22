@@ -149,7 +149,8 @@ def preBuild(site):
                 postContext["date"] = datetime.datetime.now()
                 logging.warning(
                     "Date format not correct for page %s, "
-                    "should be 'YYYY-MM-DD HH:MM:SS' or 'YYYY-MM-DD'\n%s" % (page.path, e)
+                    "should be 'YYYY-MM-DD HH:MM:SS' or 'YYYY-MM-DD'\n%s"
+                    % (page.path, e)
                 )
 
         POSTS.append(postContext)
