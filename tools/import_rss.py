@@ -8,7 +8,9 @@ import re
 import sys
 
 
-DEFAULT_RSS_URL = "https://mixxxblog.blogspot.com/feeds/posts/default??max-results=1000"
+DEFAULT_RSS_URL = (
+    "https://mixxxblog.blogspot.com/feeds/posts/default" "?max-results=1000"
+)
 
 
 def parse_feed(rss_url):
@@ -17,13 +19,13 @@ def parse_feed(rss_url):
     for item in items:
         date = datetime.datetime(*item["published_parsed"][:6])
         date_short = date.strftime("%Y-%m-%d")
-        date_long = date.isoformat(sep=' ')
+        date_long = date.isoformat(sep=" ")
         title = item["title"]
         author = item["author_detail"]["name"]
         filename = "{}-{}.html".format(date_short, slugify.slugify(title))
         value = item["content"][0]["value"]
-        value = re.sub(r"(\</[^>]*>)", "\g<1>\n", value)
-        value = re.sub(r"(\<[^>]*/>)", "\g<1>\n", value)
+        value = re.sub(r"(\</[^>]*>)", r"\g<1>\n", value)
+        value = re.sub(r"(\<[^>]*/>)", r"\g<1>\n", value)
         if re.match(r"<h\d>.*</h\d>.*", value.splitlines()[0]):
             value = "".join(value.splitlines()[1:])
         if re.match(r"<br(\s+[^>]*)>", value.splitlines()[0].strip()):
@@ -43,7 +45,10 @@ def parse_feed(rss_url):
                     "\n"
                     "{{% endblock %}}\n"
                 ).format(
-                    title=title, date=date_long, author=author, content=value,
+                    title=title,
+                    date=date_long,
+                    author=author,
+                    content=value,
                 )
             )
     return 0
