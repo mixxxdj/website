@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+
 class MenuItem:
     def __init__(self, url, title, context, css="", children=()):
         self.url = url
@@ -19,24 +20,66 @@ def preBuildPage(page, context, data):
 
     menu = (
         MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
-        MenuItem("/discover", "Discover", "Navigation bar link to Mixxx discover page.", children=(
-            MenuItem("/features", "Features", "Navigation bar link to Mixxx features page."),
-            MenuItem("/screenshots", "Screenshots", "Navigation bar link to Mixxx Screenshots page."),
-            MenuItem("/press", "Press", "Navigation bar link to Mixxx Press page"),
-            MenuItem("/contact", "Contact & Team", "Navigation bar link to Mixxx contact page."),
-        )),
-        MenuItem("/support", "Support & Community", "Navigation bar link to Mixxx support page.", children=(
-            MenuItem("/manual/latest", "Manual", "Navigation bar link to Mixxx Manual."),
-            MenuItem("https://mixxx.discourse.group/", "Forums", "Navigation bar link to Mixxx Forums."),
-            MenuItem("https://github.com/mixxxdj/mixxx/wiki", "Wiki", "Navigation bar link to Mixxx Wiki."),
-            MenuItem("/get-involved", "Get Involved", "Navigation bar link to Mixxx Get Involved page."),
-        )),
+        MenuItem(
+            "/discover",
+            "Discover",
+            "Navigation bar link to Mixxx discover page.",
+            children=(
+                MenuItem(
+                    "/features",
+                    "Features",
+                    "Navigation bar link to Mixxx features page.",
+                ),
+                MenuItem(
+                    "/screenshots",
+                    "Screenshots",
+                    "Navigation bar link to Mixxx Screenshots page.",
+                ),
+                MenuItem(
+                    "/press",
+                    "Press",
+                    "Navigation bar link to Mixxx Press page",
+                ),
+                MenuItem(
+                    "/contact",
+                    "Contact & Team",
+                    "Navigation bar link to Mixxx contact page.",
+                ),
+            ),
+        ),
+        MenuItem(
+            "/support",
+            "Support & Community",
+            "Navigation bar link to Mixxx support page.",
+            children=(
+                MenuItem(
+                    "/manual/latest",
+                    "Manual",
+                    "Navigation bar link to Mixxx Manual.",
+                ),
+                MenuItem(
+                    "https://mixxx.discourse.group/",
+                    "Forums",
+                    "Navigation bar link to Mixxx Forums.",
+                ),
+                MenuItem(
+                    "https://github.com/mixxxdj/mixxx/wiki",
+                    "Wiki",
+                    "Navigation bar link to Mixxx Wiki.",
+                ),
+                MenuItem(
+                    "/get-involved",
+                    "Get Involved",
+                    "Navigation bar link to Mixxx Get Involved page.",
+                ),
+            ),
+        ),
     )
 
     extra = {
         "CURRENT_PAGE": page,
         # Add your own dynamic context elements here!
-        "NAV_MENU": menu
+        "NAV_MENU": menu,
     }
 
     context.update(extra)
