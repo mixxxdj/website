@@ -29,11 +29,11 @@
 /* ENV Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Media breakpoint variables for use in media queries
-* 	Note: this section is currently commented out pending release of 
+* 	Note: this section is currently commented out pending release of
 * 	final CSS env() spec
-*  Breakpoints based on 
+*  Breakpoints based on
 *	 https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
-* 
+*
 */
 
 
@@ -55,24 +55,24 @@ html {
 
   --border-color: hsl(var(--theme-hue), 0%, 73%);					/* #bbbbbb		button border */
 	--border-color-softer: hsl(var(--theme-hue), 0%, 82%);	/* #d1d1d1		textarea,select,code,td,hr border	 */
-	
+
 	--background-color: white;														/* transparent body background; textarea,select background */
 	--background-color-softer: hsl(var(--theme-hue), 0%, 95%);
   --code-background: hsl(var(--theme-hue), 0%, 95%);			/* #f1f1f1 		code background*/
 
 	--button-primary-color: white;
-  
-	
+
+
 	/* Note: Skeleton was based off a 10px font sizing for REM  */
 	/* 62.5% of typical 16px browser default = 10px */
 	--base-font-size: 62.5%;
-	
+
 	/* Grid Defaults - default to match orig skeleton settings */
 	--grid-max-width: 960px;
 }
 
 /*  Dark Theme
-	Note: prefers-color-scheme selector support is still limited, but 
+	Note: prefers-color-scheme selector support is still limited, but
 	included for future and an example of defining a different base 'theme'
 */
 @media (prefers-color-scheme: dark) {
@@ -90,14 +90,14 @@ html {
 
 		--border-color: hsl(var(--theme-hue), 0%, 27%);					/* button border */
 		--border-color-softer: hsl(var(--theme-hue), 0%, 20%);	/* textarea,select,code,td,hr border	 */
-	
+
 		--background-color: hsl(var(--theme-hue), 0%, 12%);			/* body background; textarea,select background */
 		--background-color-softer: hsl(var(--theme-hue), 0%, 18%);
 		--code-background: hsl(var(--theme-hue), 0%, 5%);				/* code background*/
 
 		--button-primary-color: white;
   }
-	
+
 	img.value-img {
 		filter: invert(0.8);
 	}
@@ -129,7 +129,7 @@ html {
 	display: grid;
 	grid-gap: 20px;
 	gap: 20px;
-	
+
 	/* by default use min 200px wide columns auto-fit into width */
 	grid-template-columns: minmax(200px, 1fr);
 }
@@ -140,7 +140,7 @@ html {
 		grid-template-columns: repeat(3, 1fr);
 		padding: 10px 0;
 	}
-	
+
 	/* basic grids */
 	.grid-container.fifths {
 		grid-template-columns: repeat(5, 1fr);
@@ -157,7 +157,7 @@ html {
 	.grid-container.full {
 		grid-template-columns: 1fr;
 	}
-	
+
 }
 
 
@@ -177,7 +177,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--text-color-normal); 
+  color: var(--text-color-normal);
   background-color: var(--background-color);;
 }
 
@@ -372,7 +372,7 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; 
+  white-space: pre;
   overflow: auto; }
 
 
@@ -470,4 +470,3 @@ there.
 
 /* Larger than tablet */
 @media (min-width: 1200px) {}
-
