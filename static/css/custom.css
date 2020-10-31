@@ -549,3 +549,9 @@ h6 a.headline-link {
 article.news + article.news {
     margin-top: 4rem;
 }
+
+.archievement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
