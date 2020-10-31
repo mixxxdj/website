@@ -555,3 +555,7 @@ article.news + article.news {
     justify-content: center;
     flex-direction: column;
 }
+
+.footer .copyright {
+    text-align: center;
+}
