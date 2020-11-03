@@ -25,13 +25,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://www.mixxx.org/manual/latest/</loc>
+    <loc>https://manual.mixxx.org/latest/</loc>
     <lastmod>2012-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://www.mixxx.org/forums/</loc>
+    <loc>https://mixxx.discourse.group</loc>
     <lastmod>2012-03-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
