@@ -42,24 +42,6 @@ All strings wrapped with ```{% trans 'Hello World' %}``` are flagged for
 translation. Whenever adding new English strings to the website, please wrap
 them in a ```{% trans 'Hello World' %}``` block.
 
-## Publishing
-
-**Note: Requires SSH access to mixxx.org.**
-
-First, publish to http://staging.mixxx.org:
-
-```
-$ fab staging rebuild publish
-```
-
-Visit the staging site to verify everything looks ok. Then, publish to the production site:
-
-```
-$ fab production rebuild publish
-```
-
-Visit https://mixxx.org to verify everything looks ok.
-
 [mixxx.org]: http://mixxx.org/
 [cactus]: https://www.staticgen.com/cactus
 [cactus_docs]: http://cactusformac.com/docs/
