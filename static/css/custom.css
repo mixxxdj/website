@@ -162,13 +162,25 @@ i.fas, i.fab {
     font-weight: 600;
     letter-spacing: .2rem;
     text-decoration: none;
-    line-height: 5rem;
+    line-height: 4rem;
     color: var(--text-color-normal);
 }
 .navbar-link.active {
     color: var(--accent-color);
 }
 
+.navbar-main .navbar-item .navbar-list.navbar-dropdown {
+    margin: 0 0 0 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-link {
+        line-height: 5rem;
+    }
+    .navbar-main .navbar-item .navbar-list.navbar-dropdown {
+        margin: 0;
+    }
+}
 
 /* ---- Buttons ---- */
 @media (min-width: 600px) {
