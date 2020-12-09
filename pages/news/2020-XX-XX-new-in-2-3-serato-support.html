@@ -63,7 +63,7 @@ This is going to change with [this year's GSoC project by Janek Fischer]({% url 
 
 ## Can Mixxx write Serato's Tags?
 
-Currently, it's not possible to write cues from Mixxx into Serato metadata tags.
+If you're running our development snapshots, you may have noticed that it's not possible to write cues from Mixxx into Serato metadata tags yet.
 
 At Mixxx, we believe vendor lock-in is a bad thing and that users should be free to use the DJ software they like best.
 While these changes allow you to migrate from Serato to Mixxx with less friction we don't want to lock user into Mixxx either.
@@ -71,10 +71,10 @@ While these changes allow you to migrate from Serato to Mixxx with less friction
 This means we're looking into adding support for Serato metadata export in upcoming Mixxx releases.
 Even for Mixxx-only users this would make it easy to transfer cue points between multiple computers.
 
-We already have [some](https://github.com/mixxxdj/mixxx/pull/3097) [code](https://github.com/mixxxdj/mixxx/pull/3101) in the pipeline, but since it's a complex undocumented binary-only format we didn't want to rush adding support for writing these tags.
+We [already](https://github.com/mixxxdj/mixxx/pull/3097) [have](https://github.com/mixxxdj/mixxx/pull/3101) [some](https://github.com/mixxxdj/mixxx/pull/3409) [code](https://github.com/mixxxdj/mixxx/pull/3421) in the pipeline, but since it's a complex undocumented binary-only format we didn't want to rush adding support for writing these tags.
 Bugs in the code or misconceptions about the format might lead to data loss and potentially even crash Serato, so extensive testing is necessary.
 
-Hence, we won't support Serato tag export in Mixxx 2.3 - but stay tuned!
+Hence, it's still uncertain if support for Serato tag export will already land in Mixxx 2.3 - but stay tuned!
 
 {% endfilter %}
 {% endblock %}
