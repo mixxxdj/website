@@ -1,0 +1,28 @@
+name: website
+
+on:
+  push:
+    branches:
+      - website
+
+jobs:
+  update-news-date:
+    name: Update post news date
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Update dates of news posts
+      run: tools/update_news_date.py -b website pages/news/
+    - uses: EndBug/add-and-commit@v5
+      with:
+        add: 'pages/news'
+        message: 'pages/news: Update blog post date after merge'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
