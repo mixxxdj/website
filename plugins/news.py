@@ -146,6 +146,15 @@ def preBuild(site):
                     postContext["date"], "%Y-%m-%d"
                 )
             except Exception as e:
+                # If this is a Netlify deploy preview, include this post even
+                # though the date is not properly formatted. If it's a branch
+                # deploy, skip it. GitHub actions will replace placeholder
+                # dates automatically trigger a new deploy.
+                # This prevents posts from showing up with the wrong URL/date
+                # before GitHub action is finished.
+                if os.getenv("CONTEXT") != "deploy-preview":
+                    continue
+
                 postContext["date"] = datetime.datetime.now()
                 logging.warning(
                     "Date format not correct for page %s, "
