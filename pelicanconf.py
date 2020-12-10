@@ -17,7 +17,10 @@ ARTICLE_PATHS = [
 
 STATIC_PATHS = [
     "images",
+    "_redirects",
 ]
+
+THEME = "theme"
 
 ARTICLE_URL = "news/{date:%Y-%m-%d}-{slug}.html"
 ARTICLE_SAVE_AS = "news/{date:%Y-%m-%d}-{slug}.html"
