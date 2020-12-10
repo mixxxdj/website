@@ -39,7 +39,7 @@ This release is&nbsp;a recommended upgrade for all users of Mixxx 1.8.0, and&nbs
 <li>Reduce crackling during playback for some Windows users</li>
 </ul>
 <br />
-<div>If you're upgrading from Mixxx 1.7.2, be sure the check out the <a href="{% url '/news/2010-10-05-mixxx-180-released.html' %}">large list of improvements made in Mixxx 1.8.0</a>
+<div>If you're upgrading from Mixxx 1.7.2, be sure the check out the <a href="{filename}/news/2010-10-05-mixxx-180-released.md">large list of improvements made in Mixxx 1.8.0</a>
 .<br />
 <br />
 We're happy to report that we've made great progress with our <b>build server fundraiser</b>

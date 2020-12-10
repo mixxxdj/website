@@ -11,7 +11,7 @@ comments: no
 </div>
 <div style="text-align: center;"><br />
 </div>
-<div style="text-align: left;">In less than 48 hours since we <a href="{% url '/news/2011-02-20-mixxx-19-now-available-in-mac-app-store.html' %}">went live</a>
+<div style="text-align: left;">In less than 48 hours since we <a href="{filename}/news/2011-02-20-mixxx-19-now-available-in-mac-app-store.md">went live</a>
 , <b>Mixxx has become the #1 Top Free App</b>
  in the USA, Germany, and Italy. We're also one of the top 3 Apps in Brazil, Canada, France, Japan, and the UK.&nbsp;</div>
 <div style="text-align: left;"><br />
@@ -19,7 +19,7 @@ comments: no
 <div style="text-align: left;">We're completely overwhelmed by the response - I don't think anyone saw this coming. We wanted to be in the Mac App Store to reach more users, and now we're reaching far more than we ever expected!</div>
 <div style="text-align: left;"><br />
 </div>
-<div style="text-align: left;">I'd like to thank our entire community of DJs, artists, and developers for their dedication and cooperation that have brought Mixxx this far. Without the devotion of <a href="{% url '/contact.html' %}">many individuals</a>
+<div style="text-align: left;">I'd like to thank our entire community of DJs, artists, and developers for their dedication and cooperation that have brought Mixxx this far. Without the devotion of <a href="{filename}/contact.md">many individuals</a>
 , Mixxx would not be the software it is today.<br />
 <br />
 <b>Feed a Hungry Mixxx Developer</b>

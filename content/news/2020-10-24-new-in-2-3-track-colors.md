@@ -31,7 +31,7 @@ Highlight tracks that you still need to prepare hotcues for or that need beatgri
 You can also mark tracks that have bad sound quality and you're planning to replace later.
 
 Of course we also included controller support:
-Like we did for [hotcue colors]({% url "/news/2020-08-25-new-in-2-3-hotcue-colors.html" %}), we added [controls](https://github.com/mixxxdj/mixxx/wiki/mixxxcontrols) to access and modify the track color in controller mappings.
+Like we did for [hotcue colors]({filename}/news/2020-08-25-new-in-2-3-hotcue-colors.md), we added [controls](https://github.com/mixxxdj/mixxx/wiki/mixxxcontrols) to access and modify the track color in controller mappings.
 This means that if you're a mapping creator, you can now add support for displaying and modifying track colors from the your controller!
 
 Stay tuned for more cool features in Mixxx 2.3 that we'll publish prior to the final release!

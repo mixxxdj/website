@@ -17,7 +17,7 @@ The Google Summer of Code program allows students to receive a $4500 USD stipend
 . For more information about how GSoC works, please see the <a href="http://code.google.com/opensource/gsoc/2008/faqs.html">program FAQ</a>
 . <br />
 <br />
-<a href="{% url '/news/2007-08-10-google-summer-of-code-2007-and-mixxx.html' %}">Last summer</a>
+<a href="{filename}/news/2007-08-10-google-summer-of-code-2007-and-mixxx.md">Last summer</a>
 , Mixxx had three students working on various projects. Micah Lee improved our BPM detection algorithm by replacing it with a better one and refactoring a lot of code. Pawel Bartkiewicz worked on adding LADSPA support to Mixxx, and Nathan Prado spearheaded our library improvements. While not quite every detail was finished, all three projects were a success on the whole and Mixxx is much better thanks for these students' participation through Google Summer of Code.<br />
 <br />
 This year, we've got <a href="https://github.com/mixxxdj/mixxx/wiki/gsoc_2008_ideas">a new list of ideas</a>

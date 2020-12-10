@@ -54,9 +54,9 @@ Among the <span style="font-weight: bold;">changes</span>
 </ul>
 We've also been working tirelessly on some <span style="font-weight: bold;">other big features</span>
  that haven't made it into a release yet:<br />
-<ul><li><a href="{% url '/news/2008-02-01-feature-preview-shoutcast-broadcasting.html' %}">Shoutcast support</a>
+<ul><li><a href="{filename}/news/2008-02-01-feature-preview-shoutcast-broadcasting.md">Shoutcast support</a>
  (and indirectly, recording support)</li>
-<li><a href="{% url '/news/2008-01-05-mixxxscript-sneaky-feature-preview.html' %}">MixxxScript</a>
+<li><a href="{filename}/news/2008-01-05-mixxxscript-sneaky-feature-preview.md">MixxxScript</a>
 </li>
 </ul>
 We're having some trouble sorting out this <span style="font-weight: bold;">JACK/Ubuntu bug</span>

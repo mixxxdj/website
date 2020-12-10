@@ -5,7 +5,7 @@ comments: no
 
 {% load markup %}
 {% filter markdown:"extra" %}
-We are proud to announce the release of Mixxx 2.3 beta, [download it!]({% url '/download.html' %}#unstable) This release brings hotcue colors & labels, Serato metadata import, Rekordbox metadata import, intro & outro cues, a revamped LateNight skin, multithreaded analysis, deck cloning, and more.
+We are proud to announce the release of Mixxx 2.3 beta, [download it!]({filename}/download.md#unstable) This release brings hotcue colors & labels, Serato metadata import, Rekordbox metadata import, intro & outro cues, a revamped LateNight skin, multithreaded analysis, deck cloning, and more.
 
 ![Screenshot of a Mixxx deck with the intro and outro cues and hotcue editing menu]({static}/images/news/screenshot-2.3-beta-deck.png){: style="max-height: 275px" }
 

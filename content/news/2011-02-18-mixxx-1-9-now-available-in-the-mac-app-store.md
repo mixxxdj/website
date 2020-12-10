@@ -18,6 +18,6 @@ comments: no
  to Mixxx.</div>
 <div style="text-align: left;"><br />
 </div>
-<div style="text-align: left;">A full release announcement including a list of <a href="{% url '/news/2010-12-06-mixxx-190-beta1-and-182-released.html' %}">changes</a>
- included in 1.9 will be posted in the next few days, as we're still finalizing Windows and Linux packages. We're also putting <a href="{% url '/news/2010-12-24-build-server-fundraiser-a-success-thank-you.html' %}">our build server</a>
+<div style="text-align: left;">A full release announcement including a list of <a href="{filename}/news/2010-12-06-mixxx-190-beta1-and-182-released.md">changes</a>
+ included in 1.9 will be posted in the next few days, as we're still finalizing Windows and Linux packages. We're also putting <a href="{filename}/news/2010-12-24-build-server-fundraiser-a-success-thank-you.md">our build server</a>
  to good use these days, and will have an update on that project soon. Stay tuned!&nbsp;</div>

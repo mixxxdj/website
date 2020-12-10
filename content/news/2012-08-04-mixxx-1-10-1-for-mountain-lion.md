@@ -13,7 +13,7 @@ Because of this, we recommend keeping Gatekeeper enabled, and we've produced an 
 </a>
 </div>
 <br />
-In the near future, we'll be working to change our release process so all packages are signed, meaning there won't be a specific version for Mountain Lion. Thanks to <a href="{% url '/news/2010-12-24-build-server-fundraiser-a-success-thank-you.html' %}">our build server</a>
+In the near future, we'll be working to change our release process so all packages are signed, meaning there won't be a specific version for Mountain Lion. Thanks to <a href="{filename}/news/2010-12-24-build-server-fundraiser-a-success-thank-you.md">our build server</a>
 , we're now able to create Mixxx releases automatically, but it still requires a fair amount of work to keep it working because Mixxx changes so fast. It's also a bit of a headache to distribute our packages to all of our mirrors, so we'll try to improve that as well.<br />
 <br />
 In the meantime, enjoy, and <a href="https://bugs.launchpad.net/mixxx/+filebug">please file bugs</a>

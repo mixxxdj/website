@@ -41,7 +41,7 @@ As it turns out, many of the library problems that have been discovered since 1.
 </center>
 <br />
 <br />
-Back in October at the <a href="{% url '/news/2008-11-12-mixxx-gsoc-mentor-summit.html' %}">GSoC Mentor Summit</a>
+Back in October at the <a href="{filename}/news/2008-11-12-mixxx-gsoc-mentor-summit.md">GSoC Mentor Summit</a>
 , I started hacking our library to use an integrated <a href="http://www.sqlite.org/">SQLite</a>
  database to store track metadata, instead of storing them in a flat <a href="http://en.wikipedia.org/wiki/XML">XML</a>
  file on disk. I quickly discovered that there were <span style="font-weight: bold;">two separate problems</span>

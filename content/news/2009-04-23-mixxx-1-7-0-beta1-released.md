@@ -29,7 +29,7 @@ Some of the new changes in Mixxx 1.7.0 Beta1 that we'd like to highlight are:<br
 </span>
  - Code up complex behaviour for your MIDI controller without recompiling Mixxx!</li>
 <li>MIDI output now fully supported on Windows, OS X, and Linux.</li>
-<li><span style="font-weight: bold;">Added full support for the <a href="{% url '/news/2009-02-09-midi-scripting-and-the-stanton-scs-3d-videos.html' %}">Stanton SCS.3d</a>
+<li><span style="font-weight: bold;">Added full support for the <a href="{filename}/news/2009-02-09-midi-scripting-and-the-stanton-scs-3d-videos.md">Stanton SCS.3d</a>
  on all platforms. </span>
 <br />
 </li>
@@ -57,7 +57,7 @@ Some of the new changes in Mixxx 1.7.0 Beta1 that we'd like to highlight are:<br
 <br />
 Back around December, we started toying around with the idea of something we called <span style="font-style: italic;">MIDI scripting</span>
 . The idea of MIDI scripting is that having a small scripting engine sitting on top of our regular MIDI mappings would allow our users to <a href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting">code complex behaviour</a>
- for their MIDI controllers using a JavaScript-like language. Soon after this idea hatched, we realized MIDI scripting would make it much easier for us to support <a href="{% url '/news/2009-02-09-midi-scripting-and-the-stanton-scs-3d-videos.html' %}">new controllers</a>
+ for their MIDI controllers using a JavaScript-like language. Soon after this idea hatched, we realized MIDI scripting would make it much easier for us to support <a href="{filename}/news/2009-02-09-midi-scripting-and-the-stanton-scs-3d-videos.md">new controllers</a>
  in the future, and this attracted the attention of a handful of our developers.<br />
 <br />
 Because we felt that both the long-term and short-term impact of implementing MIDI scripting would be very beneficial, several of our developers decided to shift their time away from other subprojects that they were working on (like effects, the new library, and looping) in order to complete the MIDI overhaul and scripting engine. When this work was nearing completion, we collectively felt that MIDI scripting support along with the slew of other improvements we made were significant enough to call this release 1.7.0. We're very excited about the <a href="http://www.youtube.com/watch?v=qfkJnTqIeAw">possibilities that scripting opens up</a>

@@ -6,7 +6,7 @@ comments: no
 {% load markup %}
 {% filter markdown:"extra" %}
 
-This year Mixxx is again [taking part in Google Summer of Code]({% url "/news/2020-05-05-mixxx-gsoc-projects-2020.html" %}), and 3 students are working full-time for 3 months to make Mixxx even more awesome.
+This year Mixxx is again [taking part in Google Summer of Code]({filename}/news/2020-05-05-mixxx-gsoc-projects-2020.md), and 3 students are working full-time for 3 months to make Mixxx even more awesome.
 
 After one month of community bonding period, they started coding last week. Cristiano and Harshit, who are both working towards the same final feature—a new beatgrid format capable of handling not only beats, but also downbeats, phrases and sections as well varying tempos and time signatures—have already sent some initial patches to Mixxx' Git repository ([#2844](https://github.com/mixxxdj/mixxx/pull/2844), [#2847](https://github.com/mixxxdj/mixxx/pull/2847)).
 

@@ -57,7 +57,7 @@ Additional work on our mixing engine has lead to a new feature we call <b>rampin
 </span>
 </div>
 <div><span class="Apple-style-span" style="white-space: pre;">    </span>
-A brand new MIDI backend completes the rewrite of Mixxx's MIDI code, the first part of which was included in 1.7 and enabled <a href="{% url '/news/2009-06-19-mixxx-with-stanton-scs3d-and-scs1m.html' %}">innovative</a>
+A brand new MIDI backend completes the rewrite of Mixxx's MIDI code, the first part of which was included in 1.7 and enabled <a href="{filename}/news/2009-06-19-mixxx-with-stanton-scs3d-and-scs1m.md">innovative</a>
  new features like our <a href="https://github.com/mixxxdj/mixxx/wiki/midi_scripting">MIDI scripting engine</a>
 . The hot new addition for 1.8 is integrated <b>multiple MIDI device support</b>
 .<br />

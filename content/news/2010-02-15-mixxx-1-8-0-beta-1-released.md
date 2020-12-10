@@ -13,7 +13,7 @@ The Mixxx team is proud to announce the first beta of <b>Mixxx 1.8.0</b>
 !</div>
 <div style="text-align: left;"><br />
 </div>
-<div style="text-align: left;">This beta release is intended to give DJs an opportunity to play with our <a href="{% url '/news/2009-12-23-mixxx-18-preview.html' %}">new features</a>
+<div style="text-align: left;">This beta release is intended to give DJs an opportunity to play with our <a href="{filename}/news/2009-12-23-mixxx-18-preview.md">new features</a>
  and help us <a href="https://bugs.launchpad.net/mixxx/+filebug">find bugs</a>
 .</div>
 <div><br />

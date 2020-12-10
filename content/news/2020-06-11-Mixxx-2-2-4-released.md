@@ -4,10 +4,10 @@ date: 2020-06-25 12:00:00
 comments: no
 
 Mixxx 2.2.4 has been released.
-[Download it here]({% url '/download.html' %}#stable).
+[Download it here]({filename}/download.md#stable).
 
 This release fixes some bugs and adds some controller mappings, but doesn't introduce any new features.
-If you want to check out the new features of the upcoming 2.3 release, you can also [download and test the 2.3 beta instead]({% url '/news/2020-06-07-mixxx-2-3-beta-released.html' %}).
+If you want to check out the new features of the upcoming 2.3 release, you can also [download and test the 2.3 beta instead]({filename}/news/2020-06-07-mixxx-2-3-beta-released.md).
 
 #### Changelog
 

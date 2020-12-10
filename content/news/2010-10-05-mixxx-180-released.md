@@ -118,7 +118,7 @@ Since Mixxx 1.7.2 was released, the following changes have been made:<br />
 </span>
  </div>
 <div><b></b>
-We realized in the course of packaging 1.8.0 (by hand) that since we're planning on <a href="{% url '/news/2010-06-27-turning-mixxx-blog-into-blog.html' %}">speeding up our release cycles</a>
+We realized in the course of packaging 1.8.0 (by hand) that since we're planning on <a href="{filename}/news/2010-06-27-turning-mixxx-blog-into-blog.md">speeding up our release cycles</a>
 , now might time to purchase a <b>dedicated build server</b>
  that will allow us to create nightly builds and automate our releases. Money raised will go to cover the cost of the server, and any leftover money will cover other ongoing expenses like web hosting, and otherwise help <a href="http://pledgie.com/campaigns/13624">keep Mixxx rocking</a>
 !<br />
