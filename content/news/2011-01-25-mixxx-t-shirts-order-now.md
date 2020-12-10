@@ -9,13 +9,13 @@ A couple people suggested using both designs, and that's what we're going to do!
 <br />
 <div style="font-weight: bold; text-align: center;">Front side:</div>
 <div style="text-align: center;"><br />
-<a href="{% static '/static/images/news/orderfront.jpeg' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5566403751852444978" src="{% static '/static/images/news/orderfront.jpeg' %}" style="cursor: hand; cursor: pointer; display: block; height: 320px; margin: 0px auto 10px; text-align: center; width: 320px;" />
+<a href="{static}/images/news/orderfront.jpeg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5566403751852444978" src="{static}/images/news/orderfront.jpeg" style="cursor: hand; cursor: pointer; display: block; height: 320px; margin: 0px auto 10px; text-align: center; width: 320px;" />
 </a>
 <br />
 <span style="font-weight: bold;">Back side:</span>
 </div>
 <br />
-<a href="{% static '/static/images/news/orderback.jpeg' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5566403977967163186" src="{% static '/static/images/news/orderback.jpeg' %}" style="cursor: hand; cursor: pointer; display: block; height: 320px; margin: 0px auto 10px; text-align: center; width: 320px;" />
+<a href="{static}/images/news/orderback.jpeg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5566403977967163186" src="{static}/images/news/orderback.jpeg" style="cursor: hand; cursor: pointer; display: block; height: 320px; margin: 0px auto 10px; text-align: center; width: 320px;" />
 </a>
 <br />
 <span style="font-weight: bold;"><br />

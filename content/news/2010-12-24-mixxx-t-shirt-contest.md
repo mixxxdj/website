@@ -16,12 +16,12 @@ Voting is open until <b>January 10th</b>
 Without further ado, the entries. (Click on each for a larger version.)<br />
 <br />
 <div style="text-align: center;">Entry #1 (Default):<br />
-<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/entry1.jpeg' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img src="{% static '/static/images/news/entry1.jpeg' %}" height="320" width="320" border="0" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/entry1.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img src="{static}/images/news/entry1.jpeg" height="320" width="320" border="0" />
 </a>
 </div>
 <br />
-<a href="{% static '/static/images/news/entry2.jpeg' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"></a>
-Entry #2 (Design by Joe Colosimo):<a href="{% static '/static/images/news/entry3.jpeg' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" id="BLOGGER_PHOTO_ID_5554321483303424690" src="{% static '/static/images/news/entry3.jpeg' %}" style="margin: 0px auto 10px; cursor: pointer; display: block; height: 320px; text-align: center; width: 320px;" border="0" />
+<a href="{static}/images/news/entry2.jpeg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"></a>
+Entry #2 (Design by Joe Colosimo):<a href="{static}/images/news/entry3.jpeg" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" id="BLOGGER_PHOTO_ID_5554321483303424690" src="{static}/images/news/entry3.jpeg" style="margin: 0px auto 10px; cursor: pointer; display: block; height: 320px; text-align: center; width: 320px;" border="0" />
 </a>
 <br />
 <br />

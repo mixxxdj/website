@@ -12,12 +12,12 @@ It's now possible to assign an individual color to each track.
 The track color is shown in a dedicated "Color" column in the library view. You can sort tracks by color by clicking on the respective header section like with any other column.
 To make it easier quickly grasp a track's color Mixxx also uses it to paint the background of the whole table row when the column is hidden.
 
-![Track colors in the Mixxx library]({% static "/images/news/track-colors.png" %})
+![Track colors in the Mixxx library]({static}/images/news/track-colors.png)
 
 Once you load a track into a deck, the track color is indicated on the deck itself.
 You can also change the color using the new track menu by right-clicking on the deck:
 
-![Track colors on decks]({% static "/images/news/track-colors-on-deck.png" %})
+![Track colors on decks]({static}/images/news/track-colors-on-deck.png)
 
 How you use track colors is [up to you](https://djtechtools.com/2017/12/18/color-code-tracks-dj-collection/):
 You could assign the similar colors to tracks with the same key, BPM or generally mix well together.

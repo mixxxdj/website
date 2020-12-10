@@ -5,7 +5,7 @@ comments: no
 
 <div><br />
 </div>
-<a href="{% static '/static/images/news/Picture-7.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/Picture-7.png' %}" id="BLOGGER_PHOTO_ID_5422999176657239506" style="cursor: hand; cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
+<a href="{static}/images/news/Picture-7.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/Picture-7.png" id="BLOGGER_PHOTO_ID_5422999176657239506" style="cursor: hand; cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
 </a>
 <br />
 <div style="text-align: center;">The Mixxx team is proud to announce the release of <b>Mixxx 1.7.2</b>

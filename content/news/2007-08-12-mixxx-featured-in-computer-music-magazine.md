@@ -3,7 +3,7 @@ author: Albert
 date: 2007-08-12 18:39:00
 comments: no
 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/CMUS24.cover.zoom.jpg' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/CMUS24.cover.zoom.jpg' %}" alt="" id="BLOGGER_PHOTO_ID_5097885698234960866" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/CMUS24.cover.zoom.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{static}/images/news/CMUS24.cover.zoom.jpg" alt="" id="BLOGGER_PHOTO_ID_5097885698234960866" border="0" />
 </a>
 We're famous! Mixxx is featured on the CD bundled with the latest special issue of <a href="http://www.computermusic.co.uk">Computer Music</a>
  magazine. The <a href="http://www.computermusic.co.uk/page/computermusic?entry=computer_music_special_laptop_dj">Laptop DJ special issue</a>

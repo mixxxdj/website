@@ -6,7 +6,7 @@ comments: no
 Hot off the heels of our last release comes <a href="http://www.mixxx.org/download.php">Mixxx 1.6.1</a>
 , bringing a handful of new features and bug fixes. <br />
 <br />
-<div style="text-align: center;"><a href="{% static '/static/images/news/Picture-2.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/Picture-2.png' %}" id="BLOGGER_PHOTO_ID_5248255923283181842" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
+<div style="text-align: center;"><a href="{static}/images/news/Picture-2.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/Picture-2.png" id="BLOGGER_PHOTO_ID_5248255923283181842" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
 </a>
 <a href="http://www.mixxx.org/download/" style="font-weight: bold;">Download Here</a>
 </div>

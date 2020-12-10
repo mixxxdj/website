@@ -6,7 +6,7 @@ comments: no
 <div>The Mixxx team is pleased to announce the second beta of <b>Mixxx 1.8.0</b>
 ! This release brings a large number of bug fixes, performance improvements, and even some small new features.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/Screenshot-Mixxx-1.8.0-beta2.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/static/images/news/Screenshot-Mixxx-1.8.0-beta2.png' %}" height="190" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/Screenshot-Mixxx-1.8.0-beta2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{static}/images/news/Screenshot-Mixxx-1.8.0-beta2.png" height="190" width="320" />
 </a>
 </div>
 </div>

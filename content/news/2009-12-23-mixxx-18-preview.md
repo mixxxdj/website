@@ -17,7 +17,7 @@ Our main focus for 1.8 has been improving the library, which is a direct result 
 </div>
 <div><span class="Apple-style-span" style="white-space: pre;">    </span>
 The brand new database-powered library is not only faster, but much more flexible as well. The new library features include:<br />
-<div><ul><img border="0" src="{% static '/static/images/news/crate2.png' %}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" />
+<div><ul><img border="0" src="{static}/images/news/crate2.png" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" />
 <li>Keep your library organized by sorting your tracks into <span style="font-weight: bold;">crates</span>
 .</li>
 <li>Need to take a break for a few minutes? Throw some tracks into the <span style="font-weight: bold;">Auto DJ</span>
@@ -27,7 +27,7 @@ view lets you peek at your recently added tracks and perform batch BPM detection
 <li>A brand new <b>intelligent library scanning</b>
  algorithm is both quick and accurate at importing new tracks when you launch Mixxx. The library scanner is even smart enough to notice when you've moved tracks around inside your library and preserves any extra metadata you've added in Mixxx like comments and BPMs.</li>
 </ul>
-<div style="text-align: center;"><a href="{% static '/static/images/news/Picture-2.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5412606959893890962" src="{% static '/static/images/news/Picture-2.png' %}" style="cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
+<div style="text-align: center;"><a href="{static}/images/news/Picture-2.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5412606959893890962" src="{static}/images/news/Picture-2.png" style="cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
 </a>
 <span style="font-style: italic;">Crates in the new library<br />
 </span>

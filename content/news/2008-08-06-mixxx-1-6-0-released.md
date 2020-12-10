@@ -8,7 +8,7 @@ comments: no
 <br />
 </div>
 <br />
-<a href="http://www.mixxx.org/" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/mixxx160site.png' %}" id="BLOGGER_PHOTO_ID_5231183677172499362" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
+<a href="http://www.mixxx.org/" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/mixxx160site.png" id="BLOGGER_PHOTO_ID_5231183677172499362" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
 </a>
 <br />
 Mixxx 1.6.0 represents over a year's worth of hard work from our growing development team. The development of 1.6.0 was been driven by continuous feedback from our users, the bulk of which began in May 2007 with our popular user survey. Since then, we've taken the features that people wanted the most and focused every effort on developing them. Needless to say, 1.6.0 is light-years ahead of 1.5.0, and our community's continued appreciation for Mixxx has served as a strong motivator for us throughout its development.<br />

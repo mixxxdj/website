@@ -3,7 +3,7 @@ author: Albert
 date: 2011-02-20 05:43:00
 comments: no
 
-<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/mixxx-1st-macappstore-Screen-shot-2011-02-19-at-11.29.58-AM.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="235" src="{% static '/static/images/news/mixxx-1st-macappstore-Screen-shot-2011-02-19-at-11.29.58-AM.png' %}" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/mixxx-1st-macappstore-Screen-shot-2011-02-19-at-11.29.58-AM.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="235" src="{static}/images/news/mixxx-1st-macappstore-Screen-shot-2011-02-19-at-11.29.58-AM.png" width="320" />
 </a>
 </div>
 <br />

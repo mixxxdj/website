@@ -3,7 +3,7 @@ author: Albert
 date: 2007-12-23 14:03:00
 comments: no
 
-<center><img alt="" border="0" src="{% static '/static/images/news/mixxx-pie.png' %}" id="BLOGGER_PHOTO_ID_5142001271828261202" />
+<center><img alt="" border="0" src="{static}/images/news/mixxx-pie.png" id="BLOGGER_PHOTO_ID_5142001271828261202" />
 <br />
 The Mixxx development team suggests 1.6.0 is most delicious if you <a href="http://mixxx.sourceforge.net/download.php">get it while it's hot.</a>
 <br />
@@ -30,7 +30,7 @@ We'd also like to mention that we're <a href="http://sourceforge.net/donate/inde
  to help support Mixxx's development. If you enjoy the software, use it professionally, or would just like to help us out, we'd appreciate a <a href="http://sourceforge.net/donate/index.php?group_id=47577">donation</a>
  of any size.<br />
 <br />
-<a href="{% static '/static/images/news/mixxx-160beta1-release.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/mixxx-160beta1-release.png' %}" id="BLOGGER_PHOTO_ID_5147246312234371474" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
+<a href="{static}/images/news/mixxx-160beta1-release.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/mixxx-160beta1-release.png" id="BLOGGER_PHOTO_ID_5147246312234371474" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
 </a>
 <br />
 Finally, we'd like to say thanks to all the people that make this possible, the Mixxx developer team, all our users, PortAudio and all our other friends and colleagues.</div>

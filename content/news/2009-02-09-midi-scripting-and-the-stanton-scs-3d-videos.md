@@ -3,7 +3,7 @@ author: Albert
 date: 2009-02-09 16:25:00
 comments: no
 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/scs3d.jpg' %}"><img style="margin: 0px auto 10px; padding-top: 20px; display: block; text-align: center; cursor: pointer; width: 320px; height: 259px;" src="{% static '/static/images/news/scs3d.jpg' %}" alt="" id="BLOGGER_PHOTO_ID_5300948513885229362" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/scs3d.jpg"><img style="margin: 0px auto 10px; padding-top: 20px; display: block; text-align: center; cursor: pointer; width: 320px; height: 259px;" src="{static}/images/news/scs3d.jpg" alt="" id="BLOGGER_PHOTO_ID_5300948513885229362" border="0" />
 </a>
 <br />
 <br />

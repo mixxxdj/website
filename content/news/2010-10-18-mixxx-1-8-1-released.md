@@ -9,7 +9,7 @@ comments: no
 <br />
 </div>
 <br />
-<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/images/1.8/screenshots/default-1000x580.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/images/1.8/screenshots/default-1000x580.png' %}" height="185" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/1.8/screenshots/default-1000x580.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{static}/images/1.8/screenshots/default-1000x580.png" height="185" width="320" />
 </a>
 </div>
 <br />

@@ -11,9 +11,9 @@ The conference was a great opportunity to meet people from other projects trying
 Anyway, it was interesting to see Google's offices, where apparently some people work such long hours that they provide a laundry service. We couldn't resist the obligatory photos with a Google sign:<br />
 <br />
 <br />
-<div style="text-align: center;"><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/06102007732.jpg' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/06102007732.jpg' %}" alt="" id="BLOGGER_PHOTO_ID_5123818337400863586" border="0" />
+<div style="text-align: center;"><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/06102007732.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{static}/images/news/06102007732.jpg" alt="" id="BLOGGER_PHOTO_ID_5123818337400863586" border="0" />
 </a>
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/06102007731.jpg' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/06102007731.jpg' %}" alt="" id="BLOGGER_PHOTO_ID_5123819445502425970" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/06102007731.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{static}/images/news/06102007731.jpg" alt="" id="BLOGGER_PHOTO_ID_5123819445502425970" border="0" />
 </a>
 Adam Davison (top) and Albert Santoni (bottom)<br />
 </div>

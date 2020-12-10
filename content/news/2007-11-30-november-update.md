@@ -5,7 +5,7 @@ comments: no
 
 The last month has been completely insane. We've been busy fixing bugs and not-quite-finished features like there's no tomorrow. Our Subversion repository has seen more than 70 commits (those are generally changes to Mixxx's code) in the last month, and we've still got a few things to finish before the beta.<br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/Screenshot-2.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/Screenshot-2.png' %}" alt="" id="BLOGGER_PHOTO_ID_5138655970529655378" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/Screenshot-2.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{static}/images/news/Screenshot-2.png" alt="" id="BLOGGER_PHOTO_ID_5138655970529655378" border="0" />
 </a>
 Some cool stuff that's been done in the last month though is:<br />
 <ul><li><span style="font-weight: bold;">Multithreaded library scanning</span>

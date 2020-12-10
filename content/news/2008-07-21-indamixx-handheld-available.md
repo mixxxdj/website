@@ -3,7 +3,7 @@ author: Albert
 date: 2008-07-21 23:56:00
 comments: no
 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/screens.mixx.CMYK.gif' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/screens.mixx.CMYK.gif' %}" alt="" id="BLOGGER_PHOTO_ID_5225656766006331410" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/screens.mixx.CMYK.gif"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{static}/images/news/screens.mixx.CMYK.gif" alt="" id="BLOGGER_PHOTO_ID_5225656766006331410" border="0" />
 </a>
 <br />
 Trinity Audio Group's <a href="http://www.indamixx.com/">Indamixx</a>

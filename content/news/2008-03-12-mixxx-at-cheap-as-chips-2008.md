@@ -8,15 +8,15 @@ comments: no
  music festival in Christchurch, New Zealand. <a href="http://www.myspace.com/kid90nz">DJ Kid 90</a>
  dropped "a set of lush kiwi tunes to 10,000ish people", and was looking quite slick with his MacBook.<br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/DSC00359.JPG' %}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{% static '/static/images/news/DSC00359.JPG' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5176646139176508690" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/DSC00359.JPG"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{static}/images/news/DSC00359.JPG" border="0" alt=""id="BLOGGER_PHOTO_ID_5176646139176508690" />
 </a>
 <br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/DSC00367.JPG' %}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{% static '/static/images/news/DSC00367.JPG' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5176645477751545074" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/DSC00367.JPG"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{static}/images/news/DSC00367.JPG" border="0" alt=""id="BLOGGER_PHOTO_ID_5176645477751545074" />
 </a>
 <br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/DSC00358.JPG' %}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{% static '/static/images/news/DSC00358.JPG' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5176645636665335042" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/DSC00358.JPG"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{static}/images/news/DSC00358.JPG" border="0" alt=""id="BLOGGER_PHOTO_ID_5176645636665335042" />
 </a>
 <br />
 <br />

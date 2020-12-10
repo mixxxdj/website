@@ -3,7 +3,7 @@ author: Albert
 date: 2010-12-07 18:07:00
 comments: no
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://www.digitaldjtips.com/2010/12/mixxx-1-9-interview/" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="223" src="{% static '/static/images/news/Screenshot2.png' %}" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.digitaldjtips.com/2010/12/mixxx-1-9-interview/" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="223" src="{static}/images/news/Screenshot2.png" width="320" />
 </a>
 </div>
 <br />

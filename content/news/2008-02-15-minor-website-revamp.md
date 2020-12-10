@@ -4,7 +4,7 @@ date: 2008-02-15 15:30:00
 comments: no
 
 <br><br />
-<center><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/logo-mixxx.png' %}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{% static '/static/images/news/logo-mixxx.png' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5167231204156825330" />
+<center><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/logo-mixxx.png"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{static}/images/news/logo-mixxx.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5167231204156825330" />
 </a>
 </center>
 <br />

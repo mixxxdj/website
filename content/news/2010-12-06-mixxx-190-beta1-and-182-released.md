@@ -6,7 +6,7 @@ comments: no
 Hot off the heels of 1.8.1, the Mixxx development team is pleased to announce the release of <b>Mixxx 1.9.0 Beta1</b>
 !<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/Picture-12.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/static/images/news/Picture-12.png' %}" height="245" width="400" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/Picture-12.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{static}/images/news/Picture-12.png" height="245" width="400" />
 </a>
 </div>
 <div class="separator" style="clear: both; text-align: center;"><br />

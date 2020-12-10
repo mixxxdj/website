@@ -3,7 +3,7 @@ author: Pegasus
 date: 2010-11-17 08:14:00
 comments: no
 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/tshirtsmall.jpeg' %}"><img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer; width: 246px; height: 246px;" src="{% static '/static/images/news/tshirtsmall.jpeg' %}" alt="" id="BLOGGER_PHOTO_ID_5540432098774020706" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/tshirtsmall.jpeg"><img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer; width: 246px; height: 246px;" src="{static}/images/news/tshirtsmall.jpeg" alt="" id="BLOGGER_PHOTO_ID_5540432098774020706" border="0" />
 </a>
 Hello everyone!<br />
 <br />

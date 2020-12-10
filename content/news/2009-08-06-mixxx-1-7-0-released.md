@@ -7,7 +7,7 @@ comments: no
 !<br />
 <br />
 <br />
-<a href="http://www.mixxx.org/" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/mixxx-website.png' %}" id="BLOGGER_PHOTO_ID_5366529771095874450" style="cursor: pointer; display: block; height: 222px; margin: 0px auto 10px; text-align: center; width: 400px;" />
+<a href="http://www.mixxx.org/" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/mixxx-website.png" id="BLOGGER_PHOTO_ID_5366529771095874450" style="cursor: pointer; display: block; height: 222px; margin: 0px auto 10px; text-align: center; width: 400px;" />
 </a>
 </div>
 <br />

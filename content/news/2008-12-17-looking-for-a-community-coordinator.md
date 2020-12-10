@@ -9,7 +9,7 @@ Would you like volunteer with the project, but don't know how to code? <br />
 If so, we might have found the role for you - We are officially looking for a <span style="font-weight: bold;">Mixxx Community Coordinator</span>
 .<br />
 <br />
-<img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 298px;" src="{% static '/static/images/news/coordinator.png' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5280983003717111410" />
+<img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px; height: 298px;" src="{static}/images/news/coordinator.png" border="0" alt=""id="BLOGGER_PHOTO_ID_5280983003717111410" />
 <br />
 <br />
 As the Mixxx community grows, we're finding that we're spending more and more time on administrative tasks and less time writing code. We've got cool ideas for stuff to do with our community, but we don't have time to do them <span style="font-style:italic;">and</span>

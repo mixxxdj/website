@@ -3,7 +3,7 @@ author: Albert
 date: 2011-02-18 07:06:00
 comments: no
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&amp;ls=1"><img border="0" height="235" src="{% static '/static/images/news/mixxx-appstore.png' %}" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&amp;ls=1"><img border="0" height="235" src="{static}/images/news/mixxx-appstore.png" width="320" />
 </a>
 </div>
 <div style="text-align: center;"><br />

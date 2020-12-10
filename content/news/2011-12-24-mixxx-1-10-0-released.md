@@ -7,10 +7,10 @@ comments: no
 <b>!</b>
 </div>
 <div class="separator" style="clear: both; text-align: center;"></div>
-<div style="text-align: center;"><div class="separator" style="clear: both;"><a href="{% static '/static/images/news/Mixxx-1.10.0-LateNightBlues-Cropped.png' %}" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br />
+<div style="text-align: center;"><div class="separator" style="clear: both;"><a href="{static}/images/news/Mixxx-1.10.0-LateNightBlues-Cropped.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br />
 </a>
 </div>
-<div class="separator" style="clear: both;"><a href="{% static '/static/images/news/Mixxx-1.10.0-Deere-Cropped.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/static/images/news/Mixxx-1.10.0-Deere-Cropped.png' %}" height="183" width="320" />
+<div class="separator" style="clear: both;"><a href="{static}/images/news/Mixxx-1.10.0-Deere-Cropped.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{static}/images/news/Mixxx-1.10.0-Deere-Cropped.png" height="183" width="320" />
 </a>
 </div>
 <a href="http://www.mixxx.org/download/#beta" target="_blank">Download Mixxx 1.10.0 Now</a>
@@ -185,7 +185,7 @@ comments: no
 <div style="text-align: left;"><b><br />
 </b>
 </div>
-<div style="text-align: left;"><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td><a href="{% static '/static/images/news/Mixxx-1.10.0-LateNightBlues-Cropped.png' %}" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="{% static '/static/images/news/Mixxx-1.10.0-LateNightBlues-Cropped.png' %}" height="235" width="320" />
+<div style="text-align: left;"><div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td><a href="{static}/images/news/Mixxx-1.10.0-LateNightBlues-Cropped.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="{static}/images/news/Mixxx-1.10.0-LateNightBlues-Cropped.png" height="235" width="320" />
 </a>
 </td>
 </tr>

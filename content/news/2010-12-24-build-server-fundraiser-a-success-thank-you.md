@@ -3,7 +3,7 @@ author: Albert
 date: 2010-12-24 20:37:00
 comments: no
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://pledgie.com/campaigns/13624" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="171" src="{% static '/static/images/news/pledgie.png' %}" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://pledgie.com/campaigns/13624" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="171" src="{static}/images/news/pledgie.png" width="320" />
 </a>
 </div>
 <br />

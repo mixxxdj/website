@@ -3,7 +3,7 @@ author: RJ Ryan
 date: 2012-04-23 19:00:00
 comments: no
 
-<div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/gsoc-2012-logo-color.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="{% static '/static/images/news/gsoc-2012-logo-color.png' %}" width="400" />
+<div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/gsoc-2012-logo-color.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="{static}/images/news/gsoc-2012-logo-color.png" width="400" />
 </a>
 </div>
 <br />

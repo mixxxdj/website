@@ -7,7 +7,7 @@ comments: no
 {% filter markdown:"extra" %}
 We are proud to announce the release of Mixxx 2.3 beta, [download it!]({% url '/download.html' %}#unstable) This release brings hotcue colors & labels, Serato metadata import, Rekordbox metadata import, intro & outro cues, a revamped LateNight skin, multithreaded analysis, deck cloning, and more.
 
-![Screenshot of a Mixxx deck with the intro and outro cues and hotcue editing menu]({% static '/static/images/news/screenshot-2.3-beta-deck.png' %}){: style="max-height: 275px" }
+![Screenshot of a Mixxx deck with the intro and outro cues and hotcue editing menu]({static}/images/news/screenshot-2.3-beta-deck.png){: style="max-height: 275px" }
 
 Please test it, [report bugs](https://bugs.launchpad.net/mixxx/+filebug), help [translate](https://mixxx.org/wiki/doku.php/internationalization), and [contribute controller mappings](https://mixxx.org/wiki/doku.php/contributing_mappings). If you want help make Mixxx even more awesome, introduce yourself on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) and read the [developer documentation](https://mixxx.org/wiki/doku.php#developer_documentation).
 

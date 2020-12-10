@@ -9,11 +9,11 @@ comments: no
 </div>
 <br />
 <div style="font-weight: bold; text-align: center;">Fronts:<br />
-<table><tbody><tr><td><a href="{% static '/static/images/news/tshirt-front.png' %}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694512233352339458" src="{% static '/static/images/news/tshirt-front.png' %}" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
+<table><tbody><tr><td><a href="{static}/images/news/tshirt-front.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694512233352339458" src="{static}/images/news/tshirt-front.png" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
 </a>
 </td>
 <td><br />
-<a href="{% static '/static/images/news/ladies-tshirt-front.png' %}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694546841761127426" src="{% static '/static/images/news/ladies-tshirt-front.png' %}" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
+<a href="{static}/images/news/ladies-tshirt-front.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694546841761127426" src="{static}/images/news/ladies-tshirt-front.png" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
 </a>
 </td>
 </tr>
@@ -21,11 +21,11 @@ comments: no
 </table>
 Backs:<br />
 <table><tbody><tr><td><br />
-<a href="{% static '/static/images/news/tshirt-back.png' %}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694546836977599810" src="{% static '/static/images/news/tshirt-back.png' %}" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
+<a href="{static}/images/news/tshirt-back.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694546836977599810" src="{static}/images/news/tshirt-back.png" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
 </a>
 </td>
 <td><br />
-<a href="{% static '/static/images/news/ladies-tshirt-back.png' %}"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694546846041312130" src="{% static '/static/images/news/ladies-tshirt-back.png' %}" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
+<a href="{static}/images/news/ladies-tshirt-back.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5694546846041312130" src="{static}/images/news/ladies-tshirt-back.png" style="cursor: hand; cursor: pointer; display: block; height: 250px; margin: 0px auto 10px; text-align: center; width: 250px;" />
 </a>
 </td>
 </tr>

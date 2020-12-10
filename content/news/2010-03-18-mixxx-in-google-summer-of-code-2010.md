@@ -5,7 +5,7 @@ comments: no
 
 <div class="separator" style="clear: both; text-align: center;"><br />
 </div>
-<div class="separator" style="clear: both; text-align: center;"><a href="http://socghop.appspot.com/"><img border="0" height="284" src="{% static '/static/images/news/GSoC-Logo.png' %}" width="320" />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://socghop.appspot.com/"><img border="0" height="284" src="{static}/images/news/GSoC-Logo.png" width="320" />
 </a>
 </div>
 <b><br />

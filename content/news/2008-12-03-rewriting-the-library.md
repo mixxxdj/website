@@ -8,14 +8,14 @@ comments: no
 <br />
 In the (long) development cycle between Mixxx 1.5.0 and 1.6.0, several changes were made to the library. Some of the more visible changes were the addition of our search box and "Browse" mode, which allows you to play songs off your hard drive without importing them into the library. There was also significant work done on playlist handling and management.<br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/mixxx-150beta-linux.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 320px;" src="{% static '/static/images/news/mixxx-150beta-linux.png' %}" alt="" id="BLOGGER_PHOTO_ID_5275366722578779602" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/mixxx-150beta-linux.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 320px;" src="{static}/images/news/mixxx-150beta-linux.png" alt="" id="BLOGGER_PHOTO_ID_5275366722578779602" border="0" />
 </a>
 <br />
 <center><span style="font-style: italic;">Mixxx 1.5.0, with our old-school library</span>
 </center>
 <br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/Picture-1.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;" src="{% static '/static/images/news/Picture-1.png' %}" alt="" id="BLOGGER_PHOTO_ID_5275367396220777410" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/Picture-1.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;" src="{static}/images/news/Picture-1.png" alt="" id="BLOGGER_PHOTO_ID_5275367396220777410" border="0" />
 </a>
 <br />
 <center><span style="font-style: italic;">Mixxx 1.6.1, with the new library</span>
@@ -34,7 +34,7 @@ As it turns out, many of the library problems that have been discovered since 1.
 , etc!). Rewriting the library code will prevent many of these bugs from reappearing, and should also prevent us from being in a quagmire like this again in the future. Of course, this all depends on us having learned from our mistakes, and I hope that we have. :)<br />
 <br />
 <br />
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/Picture-2.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;" src="{% static '/static/images/news/Picture-2.png' %}" alt="" id="BLOGGER_PHOTO_ID_5275368386039352834" border="0" />
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{static}/images/news/Picture-2.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 319px;" src="{static}/images/news/Picture-2.png" alt="" id="BLOGGER_PHOTO_ID_5275368386039352834" border="0" />
 </a>
 <br />
 <center><span style="font-style: italic;">Mixxx with the even newer library! (work-in-progress)</span>

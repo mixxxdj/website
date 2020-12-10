@@ -10,7 +10,7 @@ Near the end of each release cycle, we try to round up as many developers as we 
 Mixxx developers spanning thee continents and five timezones together for a Skype meeting to discuss the future of the 1.8 series and beyond. </div>
 <div><br />
 </div>
-<div><a href="{% static '/static/images/news/IMAG0035.jpg' %}" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="214" src="{% static '/static/images/news/IMAG0035.jpg' %}" width="320" />
+<div><a href="{static}/images/news/IMAG0035.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="214" src="{static}/images/news/IMAG0035.jpg" width="320" />
 </a>
 If you want to check out the full details of our meeting, we've shared <a href="http://docs.google.com/a/mixxx.org/present/view?id=dd557nj5_58cxns8zd5">some slides</a>
  that directed the meeting along with our <a href="https://github.com/mixxxdj/mixxx/wiki/6_27_2010_developer_meeting_minutes">meeting minutes</a>

@@ -27,7 +27,7 @@ One idea is to use the tempo as a hint, in the same way we can reasonably assume
 A track that nicely illustrates this property is [*All Blues* by Miles Davis](https://youtu.be/-488UORrfJ0). It has a 6/4 meter and is around 156bpm. Our best meter hierarchy is <3,6,12> and it's strongest pulse is of 3 beats length. But a 3 beats bar would be around 1.15 seconds while the 6 beats bar is 2.3 seconds.
 
 Finally we have a different kind of problem, that time signatures can be misleading and not always corvetely nicely in the meter hierarchy.  A 6/8 time signature for example, indicates that the measure has 6 eight beats, but it's a common practice for musicians to fit 2 dotted quarter notes, instead of 6 eights on those time signatures. For example, [Pat Menethy's *Minuano (Six eight)*](https://youtu.be/__N8fMTZa-s) is played like that. Our meter code estimates it's meter hierarchy as <2,4,8> which is wrong if we consider the time signature alone but 2 beats measure actually are correct if we consider the actual feel and meter of the song. Look how nice the 2 bar measure actually captures the six eight note onsets in this case:
-![6/8 track with 2 beats per measure]({% static '/static/images/news/PatMenethyMinuano.png' %})
+![6/8 track with 2 beats per measure]({static}/images/news/PatMenethyMinuano.png)
 
 On informal preliminary tests the meter detection code has an accuracy of around 80% which sounds nice on paper, but if we consider that probably 95% of tracks our users spins are 4/4 it still is more misleading than helpful.
 

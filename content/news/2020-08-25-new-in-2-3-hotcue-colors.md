@@ -30,7 +30,7 @@ If you have long, descriptive labels on hotcues that are close together, Mixxx w
 You can still see the full label by hovering your mouse over an elided label.
 Mixxx will hide any other labels this would be drawn over so the text is legible.
 
-![Hotcue labels on overview waveforms]({% static "/images/news/hotcue-colors-labels.png" %})
+![Hotcue labels on overview waveforms]({static}/images/news/hotcue-colors-labels.png)
 
 ## Color your Hotcues
 
@@ -39,7 +39,7 @@ Hotcues can now have individual colors to make them visually distinguishable.
 
 How you color code your hotcues is up to you - one example would be to set red cues 16 beats before the drop or chorus, yellow 8 beats before it and color the start of vocals blue.
 
-![Hotcue buttons and color picker]({% static "/images/news/hotcue-colors-picker.png" %})
+![Hotcue buttons and color picker]({static}/images/news/hotcue-colors-picker.png)
 
 ## Pick the colors YOU like
 
@@ -52,12 +52,12 @@ This is why - unlike most other DJ software - you are not restricted to the sing
 If you previously used Serato DJ Pro, Rekordbox, Traktor or VirtualDJ and like their color palettes better ours, we've got you covered.
 You can also use one of their palettes instead.
 
-![Hotcue color palette selection]({% static "/images/news/hotcue-colors-palette-combobox.png" %})
+![Hotcue color palette selection]({static}/images/news/hotcue-colors-palette-combobox.png)
 
 But it doesn't stop there:
 We also added a powerful color palette editor that can be used to rearrange and customize these palettes and even design *your own palette* using any RGB colors you like.
 
-![Hotcue color palette editor]({% static "/images/news/hotcue-colors-palette-editor.png" %})
+![Hotcue color palette editor]({static}/images/news/hotcue-colors-palette-editor.png)
 
 ## Automatic Coloring
 
@@ -92,7 +92,7 @@ It allows bulk replacing hotcue colors for hotcues in your library and can be us
   - negate them ("Set the color of all hotcues that are red but don't have number 5 to blue")  or
   - just replace all hotcue colors in your library unconditionally ("Set the color of all hotcues to blue").
 
-![Hotcue color replace dialog]({% static "/images/news/hotcue-colors-replace.png" %})
+![Hotcue color replace dialog]({static}/images/news/hotcue-colors-replace.png)
 
 ## Support for colored hotcues on controllers
 
@@ -125,7 +125,7 @@ Obviously, it's not possible to show the exact same color on your controller if 
 In this case, `ColorMapper` returns the ID of the color that is *most similar* to the color you put in.
 As an example, the hotcue color in Mixxx could be a darker shade of blue - ColorMapper will simply return the color for the regular blue color in this case, because it's the best match.
 
-![Hotcue colors on a controller]({% static "/images/news/hotcue-colors-controller.gif" %}){: style="width: 100%" }
+![Hotcue colors on a controller]({static}/images/news/hotcue-colors-controller.gif){: style="width: 100%" }
 
 Seems complicated?
 It doesn't have to be.

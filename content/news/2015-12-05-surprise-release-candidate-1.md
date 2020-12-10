@@ -33,7 +33,7 @@ Please help us out!<br />
 </div>
 <div style="-webkit-text-stroke-width: 0px; color: black; font-family: Times; font-size: medium; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; margin: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><br />
 </div>
-<div style="text-align: center;"><div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/Mixxx-1.12-beta.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="Mixxx 1.12 Beta - LateNight Skin" border="0" height="200" src="{% static '/static/images/news/Mixxx-1.12-beta.png' %}" title="Mixxx 1.12 Beta - LateNight Skin" width="320" />
+<div style="text-align: center;"><div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/Mixxx-1.12-beta.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img alt="Mixxx 1.12 Beta - LateNight Skin" border="0" height="200" src="{static}/images/news/Mixxx-1.12-beta.png" title="Mixxx 1.12 Beta - LateNight Skin" width="320" />
 </a>
 </div>
 <div class="separator" style="clear: both; text-align: center;"></div>

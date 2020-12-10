@@ -3,7 +3,7 @@ author: Albert
 date: 2012-03-16 20:03:00
 comments: no
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="{% static '/static/images/news/gsoc-2012-logo-color.png' %}" width="400" />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="{static}/images/news/gsoc-2012-logo-color.png" width="400" />
 </a>
 </div>
 <span style="font-weight: bold;"><br />
