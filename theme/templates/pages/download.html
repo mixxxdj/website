@@ -42,196 +42,188 @@ stable_linuxsrc_analytics_conversion: /downloads/2.2.4-linuxsrc
 
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "Download the Best Free DJ Mixing Software App" %}{% endblock %}
+{% block title %}{% trans %}Download the Best Free DJ Mixing Software App{% endtrans %}{% endblock %}
 
 {% block extra_head %}
-<script src="{% static '/static/js/download.js' %}"></script>
+<script src="{{ SITEURL }}/theme/js/download.js"></script>
 {% endblock %}
 
 {% block body %}
-{% trans "Windows" as windows %}
-{% trans "macOS" as mac_osx %}
-{% trans "Linux" as linux %}
-{% trans "Ubuntu" as ubuntu %}
-{% trans "Fedora" as fedora %}
-{% trans "Mixxx PPA" as mixxx_ppa %}
 
 <div id="download" class="docs-section container">
   <h1><a class="headline-link" href="#download">Download Mixxx</a></h1>
-  <p>{% trans "Mixxx is available for Windows, macOS, and Linux." %}</p>
+  <p>{% trans %}Mixxx is available for Windows, macOS, and Linux.{% endtrans %}</p>
   <p>
-    {% blocktrans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version.{% endblocktrans %}
-    {% ifequal show_unstable "yes" %}
-    {% blocktrans %}If you want to test the latest features of the upcoming {{ next_stable_version }} release, check out <a href="#unstable">{{ unstable_version }}</a>.{% endblocktrans %}
-    {% endifequal %}
-    {% ifequal show_previous "yes" %}
-    {% blocktrans %}More conservative users can still download one of the <a href="#previous">older and unsupported versions of Mixxx</a> below.{% endblocktrans %}
-    {% endifequal %}
+    {% trans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version.{% endtrans %}
+    {% if show_unstable == "yes" %}
+    {% trans %}If you want to test the latest features of the upcoming {{ next_stable_version }} release, check out <a href="#unstable">{{ unstable_version }}</a>.{% endtrans %}
+    {% endif %}
+    {% if show_previous == "yes" %}
+    {% trans %}More conservative users can still download one of the <a href="#previous">older and unsupported versions of Mixxx</a> below.{% endtrans %}
+    {% endif %}
   </p>
 
   <p class="grid-container full">
-    <a href="#stable" class="button button-primary download-button" title="{% trans 'Download stable version of Mixxx' %}">{% blocktrans %}Download {{ stable_version }}{% endblocktrans %}</a>
-    <span class="download-button-description">{% blocktrans %}Select your Operating System below.{% endblocktrans %}</span>
+    <a href="#stable" class="button button-primary download-button" title="{% trans %}Download stable version of Mixxx{% endtrans %}">{% trans %}Download {{ stable_version }}{% endtrans %}</a>
+    <span class="download-button-description">{% trans %}Select your Operating System below.{% endtrans %}</span>
   </p>
 </div>
 
 <div id="donate" class="docs-section container">
   <p>
-    {% blocktrans %}You don't need to pay for Mixxx because you can get it here for free. There is no official paid or &quot;pro&quot; version of Mixxx. The version available here is the full version.{% endblocktrans %}
+    {% trans %}You don't need to pay for Mixxx because you can get it here for free. There is no official paid or &quot;pro&quot; version of Mixxx. The version available here is the full version.{% endtrans %}
   </p>
   <p>
-    {% blocktrans %}We happily provide Mixxx for free and donations are appreciated but not required.{% endblocktrans %}
+    {% trans %}We happily provide Mixxx for free and donations are appreciated but not required.{% endtrans %}
   </p>
   <div class="grid-container halves button-container">
     <div>
       {% include "donate_paypal.html" %}
     </div>
     <div>
-      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank" title="{% trans 'View Source Code on GitHub' %}">{% trans 'Source Code' %}</a>
+      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank" title="{% trans %}View Source Code on GitHub{% endtrans %}">{% trans %}Source Code{% endtrans %}</a>
     </div>
   </div>
 </div>
 
-{% ifequal show_unstable "yes" %}
+{% if show_unstable == "yes" %}
 <div id="unstable" class="docs-section container">
-  <h2><a class="headline-link" href="#unstable">{% blocktrans %}{{ unstable_version }} (Unstable Version){% endblocktrans %}</a></h2>
+  <h2><a class="headline-link" href="#unstable">{% trans %}{{ unstable_version }} (Unstable Version){% endtrans %}</a></h2>
 
   <div>
-    <p>{% blocktrans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version below.{% endblocktrans %}</p>
+    <p>{% trans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version below.{% endtrans %}</p>
     <p>
-      {% blocktrans %}The Mixxx team has been working hard on the next version of Mixxx. Check out the <a href="{{ unstable_release_announcement }}">release announcement</a> for a list of the new features.{% endblocktrans %}
+      {% trans %}The Mixxx team has been working hard on the next version of Mixxx. Check out the <a href="{{ unstable_release_announcement }}">release announcement</a> for a list of the new features.{% endtrans %}
     </p>
     <p>
-      <b>{% trans "Important:" %}</b> {% blocktrans with stable_link="#stable" %}While {{ unstable_version }} has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endblocktrans %}</a>
+      <b>{% trans %}Important:{% endtrans %}</b> {% with stable_link="#stable" %}{% trans %}While {{ unstable_version }} has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endtrans %}{% endwith %}</a>
     </p>
   </div>
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
-      <p>{% blocktrans %}Download {{ unstable_version }} for Windows {{ unstable_win_min_version }} or later{% endblocktrans %}.</p>
+      <h3><img src="{{ SITEURL }}/theme/images/download_windows.png" class="feature-icon" alt="Windows"> {{ windows }}</h3>
+      <p>{% trans %}Download {{ unstable_version }} for Windows {{ unstable_win_min_version }} or later{% endtrans %}.</p>
 
       <div>
-          <a class="button button-primary download-win64" href="{{ unstable_win64 }}" data-os="{% blocktrans %}64-Bit Windows {{ unstable_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">Download (64 Bit)</a>
+          <a class="button button-primary download-win64" href="{{ unstable_win64 }}" data-os="{% trans %}64-Bit Windows {{ unstable_win_min_version }} or later{% endtrans %}" onclick="javascript:trackDownload('{{ unstable_win64_analytics_conversion }}');">Download (64 Bit)</a>
       </div>
 
       <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.</p>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
+      <h3><img src="{{ SITEURL }}/theme/images/download_mac.png" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
       <p>
-        {% blocktrans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel).{% endblocktrans %}
+        {% trans %}Download {{ unstable_version }} for macOS {{ unstable_macos_min_version }} or later (Intel).{% endtrans %}
       </p>
 
-      <a class="button button-primary download-osxintel" href="{{ unstable_osxintel }}" data-os="{% blocktrans %}macOS {{ unstable_macos_min_version }} or later (Intel){% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">Download</a>
+      <a class="button button-primary download-osxintel" href="{{ unstable_osxintel }}" data-os="{% trans %}macOS {{ unstable_macos_min_version }} or later (Intel){% endtrans %}" onclick="javascript:trackDownload('{{ unstable_osxintel_analytics_conversion }}');">Download</a>
 
-      <p>{% blocktrans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.{% endblocktrans %}</p>
+      <p>{% trans %}New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ next_stable_version }} is released.{% endtrans %}</p>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon" alt="Ubuntu"> {{ ubuntu }}</h3>
+      <h3><img src="{{ SITEURL }}/theme/images/download_ubuntu.png" class="feature-icon" alt="Ubuntu"> {{ ubuntu }}</h3>
 
-      <p>{% trans "Open a terminal, and enter:" %}</p>
+      <p>{% trans %}Open a terminal, and enter:{% endtrans %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxxbetas
 sudo apt update
 sudo apt install mixxx</code></pre>
 
       <p>
-        {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxxbetas' onclick=\"javascript:trackDownload('/downloads/2.3.0-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
-        {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
+        {% with ppa_link="<a href='https://launchpad.net/~mixxx/+archive/mixxxbetas' onclick=\"javascript:trackDownload('/downloads/2.3.0-ubuntu-ppa');\">PPA</a>" %}
+        {% trans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endtrans %}
         {% endwith %}
       </p>
 
-      <p>{% blocktrans %}New packages will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with <code>apt</code>. Otherwise, you can download individual packages for Ubuntu {{ unstable_ubuntu_min_version }} or later and install them manually. Don't forget to check back periodically for updates until Mixxx {{ next_stable_version }} is released:{% endblocktrans %}</p>
+      <p>{% trans %}New packages will be made available every time the code is changed. If you are using the PPA, these will be installed automatically with <code>apt</code>. Otherwise, you can download individual packages for Ubuntu {{ unstable_ubuntu_min_version }} or later and install them manually. Don't forget to check back periodically for updates until Mixxx {{ next_stable_version }} is released:{% endtrans %}</p>
 
       <div>
-        <a class="button button-primary download-ubuntu64" href="{{ unstable_ubuntu64 }}" data-os="{% blocktrans %}64-Bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">Download (64-bit)</a>
+        <a class="button button-primary download-ubuntu64" href="{{ unstable_ubuntu64 }}" data-os="{% trans %}64-Bit Ubuntu {{ unstable_ubuntu_min_version }} or later{% endtrans %}" onclick="javascript:trackDownload('{{ unstable_ubuntu64_analytics_conversion }}');">Download (64-bit)</a>
       </div>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon" alt="Fedora"> {{ fedora }}</h3>
+      <h3><img src="{{ SITEURL }}/theme/images/download_fedora.png" class="feature-icon" alt="Fedora"> {{ fedora }}</h3>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
         for installation is available in the
         <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
-        {% endblocktrans %}</p>
+        {% endtrans %}</p>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a>
         on how to enable the repositories on your system. Mixxx only requires enabling the
         free repository; the nonfree repository is not necessary for Mixxx.
-        {% endblocktrans %}
+        {% endtrans %}
       </p>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         RPM Fusion builds are maintained by the Mixxx development team.
         We support the next, the current, and selected previous
         Fedora release(s) if possible.
-        {% endblocktrans %}
+        {% endtrans %}
       </p>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         The beta package will be continuously updated until Mixxx {{ next_stable_version }}
         is released.
-        {% endblocktrans %}
+        {% endtrans %}
       </p>
     </div>
   </div>
 
   <div>
-    <h3>{% trans "Source Code" %}</h3>
+    <h3>{% trans %}Source Code{% endtrans %}</h3>
 
     <p>
-      {% blocktrans with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.2/LICENSE" %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information. {% endblocktrans %}
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}Download the latest code from Mixxx's {{ unstable_git_branch }} branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endblocktrans %}
+      {% with mixxx_license_file="https://github.com/mixxxdj/mixxx/blob/2.2/LICENSE" %}{% trans %}The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the <a href="{{ mixxx_license_file }}">LICENSE file</a> in our source tree for complete licensing information.{% endtrans %}{% endwith %}
+      {% with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}{% trans %}Download the latest code from Mixxx's {{ unstable_git_branch }} branch on <a href="{{ mixxx_github_link }}">GitHub</a> by opening a terminal and running:{% endtrans %}{% endwith %}
       <pre><code>git clone -b {{ unstable_git_branch }} https://github.com/mixxxdj/mixxx.git</code></pre>
     </p>
 
     <p>
-      {% blocktrans with compiling_windows_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
+      {% with compiling_windows_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows\">Windows</a>", compiling_macos_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X\">macOS</a>", compiling_linux_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux\">Linux</a>" %}{% trans %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_macos_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endtrans %}{% endwith %}
     </p>
   </div>
 </div>
-{% endifequal %}
+{% endif %}
 
 <div id="stable" class="docs-section container">
-  <h2><a class="headline-link" href="#stable">{% blocktrans %}{{ stable_version }} (Stable Version){% endblocktrans %}</a></h2>
+  <h2><a class="headline-link" href="#stable">{% trans %}{{ stable_version }} (Stable Version){% endtrans %}</a></h2>
 
   <div class="fullwidth">
-    <p>{% blocktrans %}Check out the <a href="{{ stable_release_announcement }}">release announcement</a> for a list of new features.{% endblocktrans %}</p>
-    <p>{% blocktrans with previous_link="#previous" %}Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.{% endblocktrans %}</p>
+    <p>{% trans %}Check out the <a href="{{ stable_release_announcement }}">release announcement</a> for a list of new features.{% endtrans %}</p>
+    <p>{% with previous_link="#previous" %}{% trans %}Although {{ stable_version }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get our previous stable version, <a href="{{ previous_link }}">{{ previous_version }}</a>.{% endtrans %}{% endwith %}</p>
   </div>
 
   <div class="grid-container halves">
     <div>
-      <h3><img src="{% static '/static/images/download_windows.png' %}" class="feature-icon" alt="Windows"> {{ windows }}</h3>
-      <p>{% blocktrans %}Download {{ stable_version }} for Windows {{ stable_win_min_version }} or later.{% endblocktrans %}</p>
+      <h3><img src="{{ SITEURL }}/theme/images/download_windows.png" class="feature-icon" alt="Windows"> {{ windows }}</h3>
+      <p>{% trans %}Download {{ stable_version }} for Windows {{ stable_win_min_version }} or later.{% endtrans %}</p>
 
       <div class="grid-container halves">
         <div>
-          <a class="button button-primary download-win32" href="{{ stable_win32 }}" data-os="{% blocktrans %}32-Bit Windows {{ stable_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ stable_win32_analytics_conversion }}');">Download (32 Bit)</a>
+          <a class="button button-primary download-win32" href="{{ stable_win32 }}" data-os="{% trans %}32-Bit Windows {{ stable_win_min_version }} or later{% endtrans %}" onclick="javascript:trackDownload('{{ stable_win32_analytics_conversion }}');">Download (32 Bit)</a>
         </div>
         <div>
-          <a class="button button-primary download-win64" href="{{ stable_win64 }}" data-os="{% blocktrans %}64-Bit Windows {{ stable_win_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ stable_win64_analytics_conversion }}');">Download (64 Bit)</a>
+          <a class="button button-primary download-win64" href="{{ stable_win64 }}" data-os="{% trans %}64-Bit Windows {{ stable_win_min_version }} or later{% endtrans %}" onclick="javascript:trackDownload('{{ stable_win64_analytics_conversion }}');">Download (64 Bit)</a>
         </div>
       </div>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_mac.png' %}" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
-      <p>{% blocktrans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel).{% endblocktrans %}</p>
-      <a class="button button-primary download-osxintel" href="{{ stable_osxintel }}" data-os="{% blocktrans %}macOS {{ stable_macos_min_version }} or later (Intel){% endblocktrans %}" onclick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">Download</a>
+      <h3><img src="{{ SITEURL }}/theme/images/download_mac.png" class="feature-icon" alt="macOS"> {{ mac_osx }}</h3>
+      <p>{% trans %}Download {{ stable_version }} for macOS {{ stable_macos_min_version }} or later (Intel).{% endtrans %}</p>
+      <a class="button button-primary download-osxintel" href="{{ stable_osxintel }}" data-os="{% trans %}macOS {{ stable_macos_min_version }} or later (Intel){% endtrans %}" onclick="javascript:trackDownload('{{ stable_osxintel_analytics_conversion }}');">Download</a>
 
       <!-- NOTE(rryan): Temporarily hidden while we get back on the Mac App Store -->
       <!--
       <div style="text-align: center;">
         <a href="http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1">
-          <img src="{% static '/static/images/available-on-mac-app-store-frontpage.png' %}" style="padding-bottom: 5px;" alt="Mac App Store"></a>
+          <img src="{{ SITEURL }}/theme/images/available-on-mac-app-store-frontpage.png" style="padding-bottom: 5px;" alt="Mac App Store"></a>
       </div>
       <p><small>Please note due to licensing restrictions, vinyl control is not
       available in Mixxx from the Mac App Store.</small></p>
@@ -239,91 +231,91 @@ sudo apt install mixxx</code></pre>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_ubuntu.png' %}" class="feature-icon" alt="Ubuntu"> {{ ubuntu }}</h3>
-      <p>{% blocktrans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endblocktrans %}</p>
-      <p>{% trans "Open a terminal, and enter:" %}</p>
+      <h3><img src="{{ SITEURL }}/theme/images/download_ubuntu.png" class="feature-icon" alt="Ubuntu"> {{ ubuntu }}</h3>
+      <p>{% trans %}Download {{ stable_version }} for {{ stable_ubuntu_min_version }} or later.{% endtrans %}</p>
+      <p>{% trans %}Open a terminal, and enter:{% endtrans %}</p>
       <pre><code>sudo add-apt-repository ppa:mixxx/mixxx
 sudo apt update
 sudo apt install mixxx</code></pre>
       <p>
-        {% with "<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.4-ubuntu-ppa');\">"|add:mixxx_ppa|add:"</a>" as ppa_link %}
-        {% blocktrans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endblocktrans %}
+        {% with ppa_link="<a href='https://launchpad.net/~mixxx/+archive/mixxx' onclick=\"javascript:trackDownload('/downloads/2.2.4-ubuntu-ppa');\">PPA</a>" %}
+        {% trans %}This will install the latest version of Mixxx from the {{ ppa_link }} on Launchpad.{% endtrans %}
         {% endwith %}
       </p>
       <div class="grid-container halves">
         <div>
-          <a class="button button-primary download-ubuntu32" href="{{ stable_ubuntu32 }}" data-os="{% blocktrans %}32-Bit Ubuntu {{ stable_ubuntu_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">Download (32 Bit)</a>
+          <a class="button button-primary download-ubuntu32" href="{{ stable_ubuntu32 }}" data-os="{% trans %}32-Bit Ubuntu {{ stable_ubuntu_min_version }} or later{% endtrans %}" onclick="javascript:trackDownload('{{ stable_ubuntu32_analytics_conversion }}');">Download (32 Bit)</a>
         </div>
         <div>
-          <a class="button button-primary download-ubuntu64" href="{{ stable_ubuntu64 }}" data-os="{% blocktrans %}64-Bit Ubuntu {{ stable_ubuntu_min_version }} or later{% endblocktrans %}" onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">Download (64 Bit)</a>
+          <a class="button button-primary download-ubuntu64" href="{{ stable_ubuntu64 }}" data-os="{% trans %}64-Bit Ubuntu {{ stable_ubuntu_min_version }} or later{% endtrans %}" onclick="javascript:trackDownload('{{ stable_ubuntu64_analytics_conversion }}');">Download (64 Bit)</a>
         </div>
       </div>
 
       <p>
-        <small><b>{% trans "Ubuntu Repositories" %}:</b><br/>{% blocktrans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.{% endblocktrans %}</small>
+        <small><b>{% trans %}Ubuntu Repositories{% endtrans %}:</b><br/>{% trans %}Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.{% endtrans %}</small>
       </p>
     </div>
 
     <div>
-      <h3><img src="{% static '/static/images/download_fedora.png' %}" class="feature-icon" alt="Fedora"> {{ fedora }}</h3>
+      <h3><img src="{{ SITEURL }}/theme/images/download_fedora.png" class="feature-icon" alt="Fedora"> {{ fedora }}</h3>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a>
         for installation is available in the
         <a href="https://rpmfusion.org">RPM Fusion</a> repositories.
-        {% endblocktrans %}</p>
+        {% endtrans %}</p>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a>
         on how to enable the repositories on your system. Mixxx only requires enabling the
         free repository; the nonfree repository is not necessary for Mixxx.
-        {% endblocktrans %}
+        {% endtrans %}
       </p>
 
-      <p>{% blocktrans %}
+      <p>{% trans %}
         RPM Fusion builds are maintained by the Mixxx development team.
         We support the next, the current, and selected previous
         Fedora release(s) if possible.
-        {% endblocktrans %}
+        {% endtrans %}
       </p>
     </div>
   </div>
 
   <div>
-    <h3>{% trans "Linux / Source Code" %}</h3>
+    <h3>{% trans %}Linux / Source Code{% endtrans %}</h3>
     <p>
-      <a class="button button-secondary download-source" href="{{ stable_linuxsrc }}" data-os="{% trans "Linux / Source Code" %}" onclick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
-        {% blocktrans %}Download {{ stable_version }} Source Code{% endblocktrans %}
+      <a class="button button-secondary download-source" href="{{ stable_linuxsrc }}" data-os="{% trans %}Linux / Source Code{% endtrans %}" onclick="javascript:trackDownload('{{ stable_linuxsrc_analytics_conversion }}');">
+        {% trans %}Download {{ stable_version }} Source Code{% endtrans %}
       </a>
     </p>
 
     <p>
-      {% trans "The Mixxx source code is made available under the GPL v2 or later. Please check the LICENSE file in our source tree for complete licensing information." %}
-      {% blocktrans with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}The latest code from Mixxx's {{ stable_git_branch }} branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endblocktrans %}
+      {% trans %}The Mixxx source code is made available under the GPL v2 or later. Please check the LICENSE file in our source tree for complete licensing information.{% endtrans %}
+      {% with mixxx_github_link="https://github.com/mixxxdj/mixxx" %}{% trans %}The latest code from Mixxx's {{ stable_git_branch }} branch is hosted on <a href="{{ mixxx_github_link }}">GitHub</a>:{% endtrans %}{% endwith %}
       <pre><code>git clone -b {{ stable_git_branch }} https://github.com/mixxxdj/mixxx.git</code></pre>
     </p>
 
     <p>
-      {% blocktrans with compiling_windows_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows\">"|add:windows|add:"</a>" compiling_osx_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X\">"|add:mac_osx|add:"</a>" compiling_linux_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux\">"|add:linux|add:"</a>" %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_osx_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endblocktrans %}
+      {% with compiling_windows_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows\">Windows</a>", compiling_macos_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X\">macOS</a>", compiling_linux_wiki_link="<a href=\"https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux\">Linux</a>" %}{% trans %}Compilation instructions are available for {{ compiling_windows_wiki_link }}, {{ compiling_macos_wiki_link }}, and {{ compiling_linux_wiki_link }}.{% endtrans %}{% endwith %}
     </p>
   </div>
 </div>
 
 <div id="snapshots" class="docs-section container">
-  <h2><a class="headline-link" href="#snapshots">{% blocktrans %}Development Snapshots{% endblocktrans %}</a></h2>
+  <h2><a class="headline-link" href="#snapshots">{% trans %}Development Snapshots{% endtrans %}</a></h2>
   <p>
-    {% blocktrans with source_link="https://github.com/mixxxdj/mixxx" windows_snapshot_link="https://downloads.mixxx.org/builds/appveyor/cmake_build/?C=M;O=D" macos_snapshot_link="https://downloads.mixxx.org/builds/travis/main/?C=M;O=D" ubuntu_snapshot_link="https://downloads.mixxx.org/builds/travis/main/?C=M;O=D" %}Want to test and experiment with the latest changes?
+    {% with source_link="https://github.com/mixxxdj/mixxx", windows_snapshot_link="https://downloads.mixxx.org/builds/appveyor/cmake_build/?C=M;O=D", macos_snapshot_link="https://downloads.mixxx.org/builds/travis/main/?C=M;O=D", ubuntu_snapshot_link="https://downloads.mixxx.org/builds/travis/main/?C=M;O=D" %}{% trans %}Want to test and experiment with the latest changes?
     The best way to keep up with Mixxx development is to grab the <a href="{{ source_link }}">source code</a> and compile Mixxx yourself.
-    Additionally, we provide pre-built development snapshots for <a href="{{ windows_snapshot_link }}">Windows</a>,  <a href="{{ macos_snapshot_link }}">macOS</a> and <a href="{{ ubuntu_snapshot_link }}">Ubuntu</a>.{% endblocktrans %}
+    Additionally, we provide pre-built development snapshots for <a href="{{ windows_snapshot_link }}">Windows</a>,  <a href="{{ macos_snapshot_link }}">macOS</a> and <a href="{{ ubuntu_snapshot_link }}">Ubuntu</a>.{% endtrans %}{% endwith %}
   </p>
   <p>
-    {% blocktrans %}Every change is peer reviewed, however, it is more likely that new bugs will be found on the main branch than stable or beta releases.
-    For most users, we recommend using the mature <a href="#stable">stable</a> version.{% endblocktrans %}
+    {% trans %}Every change is peer reviewed, however, it is more likely that new bugs will be found on the main branch than stable or beta releases.
+    For most users, we recommend using the mature <a href="#stable">stable</a> version.{% endtrans %}
   </p>
 </div>
 
 <div id="previous" class="docs-section container">
-  <h2><a class="headline-link" href="#previous">{% blocktrans %}Previous Mixxx Versions{% endblocktrans %}</a></h2>
+  <h2><a class="headline-link" href="#previous">{% trans %}Previous Mixxx Versions{% endtrans %}</a></h2>
   <p>
     Although we heartily recommend using latest stable version of Mixxx, you can still find previous versions of Mixxx <a href="http://downloads.mixxx.org/">on our download server</a>.
   </p>

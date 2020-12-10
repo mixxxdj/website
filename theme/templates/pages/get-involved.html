@@ -1,88 +1,86 @@
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "Get Involved" %}{% endblock %}
+{% block title %}{% trans %}Get Involved{% endtrans %}{% endblock %}
 
 {% block body %}
 <div class="docs-section container">
-<h1>{% trans "Get Involved" %}</h1>
-<p><a href="#djs">{% trans "Not a coder? Scroll down!" %}</a></p>
+<h1>{% trans %}Get Involved{% endtrans %}</h1>
+<p><a href="#djs">{% trans %}Not a coder? Scroll down!{% endtrans %}</a></p>
 
 <div id="developers" class="docs-section">
   <div class="grid-container halves u-align-left">
     <div>
-      <h5><a class="headline-link" href="#developers">{% trans "Software Developers" %}</a></h5>
+      <h5><a class="headline-link" href="#developers">{% trans %}Software Developers{% endtrans %}</a></h5>
       <p>
-        {% blocktrans with qt_link="http://www.qt.io" %}Mixxx is written in C++ and uses the <a href="{{ qt_link }}">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endblocktrans %}
+        {% with qt_link="http://www.qt.io" %}{% trans %}Mixxx is written in C++ and uses the <a href="{{ qt_link }}">Qt</a> platform library for most data structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on Mixxx</b>.{% endtrans %}{% endwith %}
       </p>
       <p>
-        {% blocktrans %}Besides creating cool DJ software and working with a fun team, contributing to Mixxx also looks great on your resume or CV. It's also an ideal way to learn about real-time audio programming, Qt, or even just hone your C++ skills.{% endblocktrans %}
+        {% trans %}Besides creating cool DJ software and working with a fun team, contributing to Mixxx also looks great on your resume or CV. It's also an ideal way to learn about real-time audio programming, Qt, or even just hone your C++ skills.{% endtrans %}
       </p>
     </div>
     <div>
-      <h6 class="docs-header">{% trans "Start Developing Now" %}</h6>
+      <h6 class="docs-header">{% trans %}Start Developing Now{% endtrans %}</h6>
       <ul>
         <li>
-            {% blocktrans with zulip_web_link="https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself" %}Introduce yourself to the community on our <a href="{{ zulip_web_link }}">Zulip chat</a>.{% endblocktrans %}
+          {% with zulip_web_link="https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself" %}{% trans %}Introduce yourself to the community on our <a href="{{ zulip_web_link }}">Zulip chat</a>.{% endtrans %}{% endwith %}
         </li>
         <li>
-            {% blocktrans with com_github_link="https://github.com" using_git_wiki_link="https://github.com/mixxxdj/mixxx/wiki/using_git" %}Get a <a href="{{ com_github_link }}">Github</a> account and <a href="{{ using_git_wiki_link }} ">fork your own branch</a>!{% endblocktrans %}
+          {% with com_github_link="https://github.com", using_git_wiki_link="https://github.com/mixxxdj/mixxx/wiki/using_git" %}{% trans %}Get a <a href="{{ com_github_link }}">Github</a> account and <a href="{{ using_git_wiki_link }} ">fork your own branch</a>!{% endtrans %}{% endwith %}
         </li>
         <li>
-            {% blocktrans with easy_bug_list_link="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy" mixxx_credits_link="/contact/" %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_credits_link }}">Mixxx credits</a>!{% endblocktrans %}
+          {% with easy_bug_list_link="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy", mixxx_credits_link="/contact/" %}{% trans %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_credits_link }}">Mixxx credits</a>!{% endtrans %}{% endwith %}
         </li>
         <li>
-            {% blocktrans %}You don't even have to know C++. There are developers who got into Mixxx development while learning C++ along the way.{% endblocktrans %}
+            {% trans %}You don't even have to know C++. There are developers who got into Mixxx development while learning C++ along the way.{% endtrans %}
         </li>
       </ul>
     </div>
   </div>
 
   <div>
-    <h6 class="docs-header">{% trans "Development Cycle in a Nutshell" %}</h6>
-    <img class="responsive" src="{% static '/static/images/developmentcycle.png' %}" alt="{% trans "Mixxx Development Cycle" %}">
+    <h6 class="docs-header">{% trans %}Development Cycle in a Nutshell{% endtrans %}</h6>
+    <img class="responsive" src="{{ SITEURL }}/theme/images/developmentcycle.png" alt="{% trans %}Mixxx Development Cycle{% endtrans %}">
   </div>
 </div>
 
 <div id="djs" class="docs-section">
   <div class="grid-container halves u-align-left">
     <div>
-      <h5><a class="headline-link" href="#djs">{% trans "DJs" %}</a></h5>
-      {% trans "There are many ways to help out as a DJ:" %}
+      <h5><a class="headline-link" href="#djs">{% trans %}DJs{% endtrans %}</a></h5>
+      {% trans %}There are many ways to help out as a DJ:{% endtrans %}
       <ul>
         <li>
-          {% blocktrans with controller_wiki_link="https://github.com/mixxxdj/mixxx/wiki#controller-mapping-documentation" %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endblocktrans %}
+          {% with controller_wiki_link="https://github.com/mixxxdj/mixxx/wiki#controller-mapping-documentation" %}{% trans %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endtrans %}{% endwith %}
         </li>
         <li>
-          {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/+filebug" %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endblocktrans %}
+          {% with bug_tracker_link="https://bugs.launchpad.net/mixxx/+filebug" %}{% trans %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endtrans %}{% endwith %}
         </li>
         <li>
-          {% blocktrans with mixxx_wiki_link="/wiki/" %}Help keep our <a href="{{ mixxx_wiki_link }}">Wiki</a> up-to-date.{% endblocktrans %}
+          {% with mixxx_wiki_link="/wiki/" %}{% trans %}Help keep our <a href="{{ mixxx_wiki_link }}">Wiki</a> up-to-date.{% endtrans %}{% endwith %}
         </li>
         <li>
-          {% blocktrans with forum_link="https://mixxx.discourse.group/" %}Support other DJs with their technical questions on <a href="{{ forum_link }}">the forums</a>.{% endblocktrans %}
+          {% with forum_link="https://mixxx.discourse.group/" %}{% trans %}Support other DJs with their technical questions on <a href="{{ forum_link }}">the forums</a>.{% endtrans %}{% endwith %}
         </li>
         <li>
-          <b>{% trans "Promote Mixxx:" %} </b>{% blocktrans %}Write an article about how you use Mixxx for your blog, or mention us when new releases come out. Any exposure on the web and in print helps our project grow, and is much appreciated!{% endblocktrans %}
+          <b>{% trans %}Promote Mixxx:{% endtrans %} </b>{% trans %}Write an article about how you use Mixxx for your blog, or mention us when new releases come out. Any exposure on the web and in print helps our project grow, and is much appreciated!{% endtrans %}
         </li>
         <li>
-          {% blocktrans with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}<a href="{{ photos_forum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endblocktrans %}
+          {% with photos_forum_link="/forums/viewtopic.php?f=5&t=1025" %}{% trans %}<a href="{{ photos_forum_link }}">Post some photos</a> of you using Mixxx at a gig!{% endtrans %}{% endwith %}
         </li>
       </ul>
     </div>
     <div>
-      <h5><a class="headline-link" href="#djs">{% trans "Translators" %}</a></h5>
+      <h5><a class="headline-link" href="#djs">{% trans %}Translators{% endtrans %}</a></h5>
       <p>
-        {% blocktrans %}We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endblocktrans %}
+        {% trans %}We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, so we need your help to spread Mixxx with translations into more languages, as well as to update and ensure the accuracy of existing translations.{% endtrans %}
       </p>
       <p>
-        {% blocktrans with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software" i18n_forum_link="/forums/viewforum.php?f=10" %}You can help translate by visiting our <a href="{{ com_transifex_mixxxdj_link }}">translations page</a>. To get help when translating, visit the <a href="{{ i18n_forum_link }}">Mixxx Localization forum</a>.{% endblocktrans %}
+        {% with com_transifex_mixxxdj_link="https://www.transifex.com/organization/mixxx-dj-software", i18n_forum_link="/forums/viewforum.php?f=10" %}{% trans %}You can help translate by visiting our <a href="{{ com_transifex_mixxxdj_link }}">translations page</a>. To get help when translating, visit the <a href="{{ i18n_forum_link }}">Mixxx Localization forum</a>.{% endtrans %}{% endwith %}
       </p>
 
-      <h5><a class="headline-link" href="#djs">{% trans "Graphic Artists" %}</a></h5>
+      <h5><a class="headline-link" href="#djs">{% trans %}Graphic Artists{% endtrans %}</a></h5>
       <p>
-        {% blocktrans with creating_skins_wiki_link="https://github.com/mixxxdj/mixxx/wiki/creating_skins" skins_forum_link="/forums/viewforum.php?f=8" %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link }}">our forum</a>.{% endblocktrans %}
+        {% with creating_skins_wiki_link="https://github.com/mixxxdj/mixxx/wiki/creating_skins", skins_forum_link="/forums/viewforum.php?f=8" %}{% trans %}<a href="{{ creating_skins_wiki_link }}">Make skins</a> and share them on <a href="{{ skins_forum_link }}">our forum</a>.{% endtrans %}{% endwith %}
       </p>
     </div>
   </div>

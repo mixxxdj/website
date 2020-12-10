@@ -4,10 +4,10 @@
       <div>
         <h2 class="docs-header">Pages</h2>
         <ul>
-          <li><a href="{% url '/index.html' %}">Overview</a></li>
-          <li><a href="{% url '/features.html' %}">Features</a></li>
-          <li><a href="{% url '/support.html' %}">Support</a></li>
-          <li><a href="{% url '/get-involved.html' %}">Get Involved</a></li>
+          <li><a href="/index.html">Overview</a></li>
+          <li><a href="/features.html">Features</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/get-involved.html">Get Involved</a></li>
         </ul>
       </div>
       <div>
@@ -16,25 +16,25 @@
           <li><a href="https://mixxx.discourse.group/">Forums</a></li>
           <li>
             <a class="twitter social_icon" href="https://twitter.com/mixxxdj" target="_blank">
-              <img src="{% static '/static/images/social_icons/twitter.svg' %}" alt="Twitter">
+              <img src="{{ SITEURL }}/theme/images/social_icons/twitter.svg" alt="Twitter">
               <span>Twitter</span>
             </a>
           </li>
           <li>
             <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
-              <img src="{% static '/static/images/social_icons/facebook.svg' %}" alt="Facebook">
+              <img src="{{ SITEURL }}/theme/images/social_icons/facebook.svg" alt="Facebook">
               <span>Facebook</span>
             </a>
           </li>
           <li>
             <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
-              <img src="{% static '/static/images/social_icons/zulip.svg' %}" alt="Zulip">
+              <img src="{{ SITEURL }}/theme/images/social_icons/zulip.svg" alt="Zulip">
               <span>Zulip</span>
             </a>
           </li>
           <li>
             <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
-              <img src="{% static '/static/images/social_icons/github.svg' %}" alt="GitHub">
+              <img src="{{ SITEURL }}/theme/images/social_icons/github.svg" alt="GitHub">
               <span>GitHub</span>
             </a>
           </li>
@@ -43,9 +43,9 @@
       <div>
         <h2 class="docs-header">About</h2>
         <ul>
-          <li><a href="{% url '/news.html' %}">News</a> (<a href="{% url '/feed.xml' %}">Feed</a>)</li>
-          <li><a href="{% url '/press.html' %}">Press</a></li>
-          <li><a href="{% url '/contact.html' %}">Contact</a></li>
+          <li><a href="/news.html">News</a> (<a href="{{ FEED_ATOM }}">Feed</a>)</li>
+          <li><a href="/press.html">Press</a></li>
+          <li><a href="/contact.html">Contact</a></li>
           <li><a href="https://github.com/mixxxdj/mixxx/wiki">Wiki</a></li>
         </ul>
       </div>

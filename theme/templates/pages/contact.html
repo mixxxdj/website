@@ -1,27 +1,25 @@
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "Contact" %}{% endblock %}
+{% block title %}{% trans %}Contact {% endtrans %}{% endblock %}
 
 {% block body %}
 <div id="get-in-touch" class="docs-section container">
-  <h1><a class="headline-link" href="#get-in-touch">{% trans "Get in Touch" %}</a></h1>
+  <h1><a class="headline-link" href="#get-in-touch">{% trans %}Get in Touch{% endtrans %}</a></h1>
   <p>
-    {% blocktrans with support_page_link="/support" bug_tracker_link="https://bugs.launchpad.net/mixxx/" zulip_web_link="https://mixxx.zulipchat.com/" %}Please refer to the <a href="{{ support_page_link }}">Support page</a> if you need help setting up or using Mixxx. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, <a href="{{ zulip_web_link }}">Zulip</a> is the best way to reach us.{% endblocktrans %}
+  {% with support_page_link="/support", bug_tracker_link="https://bugs.launchpad.net/mixxx/", zulip_web_link="https://mixxx.zulipchat.com/" %}{% trans %}Please refer to the <a href="{{ support_page_link }}">Support page</a> if you need help setting up or using Mixxx. If you think you've found a bug, please file a bug report in our <a href="{{ bug_tracker_link }}">bug tracker</a>. If you would like to get in touch with Mixxx developers, <a href="{{ zulip_web_link }}">Zulip</a> is the best way to reach us.{% endtrans %}{% endwith %}
   </p>
   <p>
-    {% blocktrans with project_manager_link="mailto:hardware@mixxx.org" %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endblocktrans %}
+  {% with project_manager_link="mailto:hardware@mixxx.org" %}{% trans %}If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please contact us at, <a href="{{ project_manager_link }}">hardware@mixxx.org</a>. We accept donations and loans of DJ equipment which we use to improve both specific and general hardware support in Mixxx.{% endtrans %}{% endwith %}
   </p>
   <p>
-    {% blocktrans with project_manager_link="mailto:press@mixxx.org" %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endblocktrans %}
+  {% with project_manager_link="mailto:press@mixxx.org" %}{% trans %}For other inquiries, please contact <a href="{{ project_manager_link }}">press@mixxx.org</a>.{% endtrans %}{% endwith %}
   </p>
 </div>
 
 <div id="developers" class="docs-section container">
-  <h2><a class="headline-link" href="#developers">{% trans "Mixxx Development Team" %}</a></h2>
+  <h2><a class="headline-link" href="#developers">{% trans %}Mixxx Development Team{% endtrans %}</a></h2>
   <p>
-    {% blocktrans with tue_anderson_link="https://web.archive.org/web/http://haste.dk/tue/"%}In 2001, Mixxx was started by Ken and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by RJ Ryan (Lead Developer), Owen Williams (User Experience Lead), Sean Pappalardo (Controller Manager), and S. Brandt (Lead Artist).{% endblocktrans %}
+  {% with tue_anderson_link="https://web.archive.org/web/http://haste.dk/tue/"%}{% trans %}In 2001, Mixxx was started by Ken and <a href="{{ tue_anderson_link }}">Tue</a> Haste Andersen. Today, development is done by an open source development team from around the world, led by RJ Ryan (Lead Developer), Owen Williams (User Experience Lead), Sean Pappalardo (Controller Manager), and S. Brandt (Lead Artist).{% endtrans %}{% endwith %}
   </p>
   <div class="grid-container thirds">
     <div><a href="http://www.rustyryan.net">RJ Ryan</a></div>
@@ -39,7 +37,7 @@
 </div>
 
 <div id="contributors" class="docs-section container">
-  <h6><a class="headline-link docs-header" href="#contributors">{% trans "With contributions from:" %}</a></h6>
+  <h6><a class="headline-link docs-header" href="#contributors">{% trans %}With contributions from:{% endtrans %}</a></h6>
   <div class="grid-container quarters">
     <div>Stefan N&uuml;rnberger</div>
     <div>Tuukka Pasanen</div>
@@ -82,7 +80,7 @@
 </div>
 
 <div id="special-thanks" class="docs-section container">
-  <h6><a class="headline-link docs-header" href="#special-thanks">{% trans "And special thanks to:" %}</a></h6>
+  <h6><a class="headline-link docs-header" href="#special-thanks">{% trans %}And special thanks to:{% endtrans %}</a></h6>
   <div class="grid-container quarters">
     <div>Mark Hills</div>
     <div><a href="http://www.oscillicious.com">Oscillicious</a></div>
@@ -105,7 +103,7 @@
 </div>
 
 <div id="past-developers" class="docs-section container">
-  <h6><a class="headline-link docs-header" href="#past-developers">{% trans "Past Developers" %}</a></h6>
+  <h6><a class="headline-link docs-header" href="#past-developers">{% trans %}Past Developers{% endtrans %}</a></h6>
   <div class="grid-container quarters">
     <div><a href="https://web.archive.org/web/http://haste.dk/tue/">Tue Haste Andersen</a></div>
     <div>Ken Haste Andersen</div>
@@ -136,7 +134,7 @@
 </div>
 
 <div id="past-contributors" class="docs-section container">
-  <h6><a class="headline-link docs-header" href="#past-contributors">{% trans "Past Contributors" %}</a></h6>
+  <h6><a class="headline-link docs-header" href="#past-contributors">{% trans %}Past Contributors{% endtrans %}</a></h6>
   <div class="grid-container quarters">
     <div>Ludek Hor&#225;cek</div>
     <div>Svein Magne Bang</div>
@@ -285,7 +283,7 @@
 
 <div class="docs-section container">
   <p>
-    {% blocktrans with qt_link="http://qt.io" portaudio_link="http://www.portaudio.com" portmidi_link="http://portmedia.sourceforge.net/portmidi/" %}Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, especially as a cross-platform application. Big thanks to <a href="{{ qt_link }}">Qt</a>, <a href="{{portaudio_link }}">PortAudio</a>, and <a href="{{ portmidi_link }}">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.{% endblocktrans %}
+  {% with qt_link="http://qt.io", portaudio_link="http://www.portaudio.com", portmidi_link="http://portmedia.sourceforge.net/portmidi/" %}{% trans %}Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, especially as a cross-platform application. Big thanks to <a href="{{ qt_link }}">Qt</a>, <a href="{{portaudio_link }}">PortAudio</a>, and <a href="{{ portmidi_link }}">PortMidi</a> for being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped in designing Mixxx.{% endtrans %}{% endwith %}
   </p>
 </div>
 {% endblock %}

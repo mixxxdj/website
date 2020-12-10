@@ -1,35 +1,33 @@
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "Free DJ Mixing Software App" %}{% endblock %}
+{% block title %}{% trans %}Free DJ Mixing Software App{% endtrans %}{% endblock %}
 
 {% block header %}
-<div class="header splash cover-bg" style="background-image: url('{% static '/static/images/cover/splash-bg.jpg' %}'); background-position: center;">
+<div class="header splash cover-bg" style="background-image: url('{{ SITEURL }}/theme/images/cover/splash-bg.jpg'); background-position: center;">
   <div class="container">
-    <img class="splash-logo drop-shadow" src="{% static '/static/images/press_art/logocolour_nopadding_small.png' %}" alt="Mixxx Logo">
+    <img class="splash-logo drop-shadow" src="{{ SITEURL }}/theme/images/press_art/logocolour_nopadding_small.png" alt="Mixxx Logo">
     <div class="splash-text">
-      <h2>{% trans "DJ Your Way" %}</h2>
+      <h2>{% trans %}DJ Your Way{% endtrans %}</h2>
       <p>Free and open source DJ software for Windows, macOS, and Linux</p>
       <ul class="splash-social">
         <li>
           <a class="twitter social_icon" href="https://twitter.com/mixxxdj" target="_blank">
-            <img class="drop-shadow" src="{% static '/static/images/social_icons/twitter.svg' %}" alt="Twitter" title="Follow Mixxx on Twitter">
+            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/twitter.svg" alt="Twitter" title="Follow Mixxx on Twitter">
           </a>
         </li>
         <li>
           <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
-            <img class="drop-shadow" src="{% static '/static/images/social_icons/facebook.svg' %}" alt="Facebook" title="Follow Mixxx on Facebook">
+            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/facebook.svg" alt="Facebook" title="Follow Mixxx on Facebook">
           </a>
         </li>
         <li>
           <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
-            <img class="drop-shadow" src="{% static '/static/images/social_icons/zulip.svg' %}" alt="Zulip" title="Chat on Zulip">
+            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/zulip.svg" alt="Zulip" title="Chat on Zulip">
           </a>
         </li>
         <li>
           <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
-            <img class="drop-shadow" src="{% static '/static/images/social_icons/github.svg' %}" alt="GitHub" title="Get the source on GitHub">
+            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/github.svg" alt="GitHub" title="Get the source on GitHub">
           </a>
         </li>
       </ul>
@@ -40,82 +38,82 @@
 
 {% block body %}
 <div id="features" class="docs-section container">
-  <h2><a class="headline-link" href="#features">{% trans "Powerful Features For All DJs" %}</a></h2>
+  <h2><a class="headline-link" href="#features">{% trans %}Powerful Features For All DJs{% endtrans %}</a></h2>
 
-  <p>{% blocktrans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files.<br />Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endblocktrans %}</p>
+  <p>{% trans %}Mixxx integrates the tools DJs need to perform creative live mixes with digital music files.<br />Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.{% endtrans %}</p>
 
   <div class="grid-container halves u-align-left">
     <div class="feature-indent">
-      <img class="feature-icon" src="{% static '/static/images/ic_preferences_keydetect.png' %}" alt="{% trans "BPM, Key Detection & Sync" %}">
-      <h5 class="docs-header">{% trans "BPM, Key Detection & Sync" %}</h5>
+      <img class="feature-icon" src="{{ SITEURL }}/theme/images/ic_preferences_keydetect.png" alt="{% trans %}BPM, Key Detection & Sync{% endtrans %}">
+      <h5 class="docs-header">{% trans %}BPM, Key Detection & Sync{% endtrans %}</h5>
       <p>
-        {% blocktrans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endblocktrans %}
+        {% trans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endtrans %}
       </p>
     </div>
 
     <div class="feature-indent">
-      <img class="feature-icon" src="{% static '/static/images/ic_preferences_controllers.png' %}" alt="{% trans "DJ Controller Support" %}">
-      <h5 class="docs-header">{% trans "DJ Controller Support" %}</h5>
+      <img class="feature-icon" src="{{ SITEURL }}/theme/images/ic_preferences_controllers.png" alt="{% trans %}DJ Controller Support{% endtrans %}">
+      <h5 class="docs-header">{% trans %}DJ Controller Support{% endtrans %}</h5>
       <p>
-        {% blocktrans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endblocktrans %}
+        {% trans %}Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use the programmable mapping system to customize your workflow and add support for any MIDI or HID device.{% endtrans %}
       </p>
     </div>
 
     <div class="feature-indent">
-      <img class="feature-icon" src="{% static '/static/images/ic_preferences_waveform.png' %}" alt="{% trans "Effects" %}">
-      <h5 class="docs-header">{% trans "Effects" %}</h5>
+      <img class="feature-icon" src="{{ SITEURL }}/theme/images/ic_preferences_waveform.png" alt="{% trans %}Effects{% endtrans %}">
+      <h5 class="docs-header">{% trans %}Effects{% endtrans %}</h5>
       <p>
-        {% blocktrans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endblocktrans %}
+        {% trans %}Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects together and twisting all their knobs.{% endtrans %}
       </p>
     </div>
 
     <div class="feature-indent">
-      <img class="feature-icon" src="{% static '/static/images/ic_preferences_vinyl.png' %}" alt="{% trans "Vinyl Record Control" %}">
-      <h5 class="docs-header">{% trans "Vinyl Record Control" %}</h5>
+      <img class="feature-icon" src="{{ SITEURL }}/theme/images/ic_preferences_vinyl.png" alt="{% trans %}Vinyl Record Control{% endtrans %}">
+      <h5 class="docs-header">{% trans %}Vinyl Record Control{% endtrans %}</h5>
       <p>
-        {% blocktrans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endblocktrans %}
+        {% trans %}Use turntables with timecode vinyl records to control playback and scratch your digital music files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl passthrough mode.{% endtrans %}
       </p>
     </div>
   </div>
 </div>
 
-<div id="opensource" class="docs-section cover-bg" style="background-image: url({% static '/static/images/cover/code-bg.jpg' %});">
+<div id="opensource" class="docs-section cover-bg" style="background-image: url({{ SITEURL }}/theme/images/cover/code-bg.jpg);">
   <div class="container splash-text">
-    <h2><a class="headline-link" href="#opensource">{% trans "Free &amp; Open Source" %}</a></h2>
+    <h2><a class="headline-link" href="#opensource">{% trans %}Free &amp; Open Source{% endtrans %}</a></h2>
     <p>
-      {% blocktrans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx &mdash; the development is shouldered by passionate DJs and programmers that dedicate their free time to working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endblocktrans %}
+      {% trans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx &mdash; the development is shouldered by passionate DJs and programmers that dedicate their free time to working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endtrans %}
     </p>
   </div>
   <div class="container grid-container quarters drop-shadow">
     <div>
-      <a class="button button-primary" href="{% url "/download.html" %}">{% trans "Download" %}</a>
+      <a class="button button-primary" href="/download.html">{% trans %}Download{% endtrans %}</a>
     </div>
     <div>
       {% include "donate_paypal.html" %}
     </div>
     <div>
-      <a class="button button-secondary" href="{% url "/features.html" %}">{% trans "More Features" %}</a>
+      <a class="button button-secondary" href="/features.html"">{% trans %}More Features{% endtrans %}</a>
     </div>
     <div>
-      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans "Source Code" %}</a>
+      <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans %}Source Code{% endtrans %}</a>
     </div>
   </div>
 </div>
 
-{% if posts|length >= 2 %}
+{% if articles|length >= 2 %}
 <div id="news" class="docs-section container">
-  <h2><a class="headline-link" href="#news">{% trans "Latest News" %}</a></h2>
+  <h2><a class="headline-link" href="#news">{% trans %}Latest News{% endtrans %}</a></h2>
   <p>
-    {% blocktrans %}To see a list of all news and announcements, head over to <a href="/news">our news page</a> or subscribe to the <a href="/feed.xml">Atom feed</a>.{% endblocktrans %}
+    {% trans %}To see a list of all news and announcements, head over to <a href="/news">our news page</a> or subscribe to the <a href="/feed.xml">Atom feed</a>.{% endtrans %}
   </p>
 
   <div class="grid-container halves u-align-left">
-    {% for post in posts|slice:":2" %}
+    {% for article in articles[:2] %}
     <div>
-      <time>{{ post.date|date:"Y-m-d" }}</time>
-      <h5>{{ post.title }}</h5>
-      {{ post.post|truncatewords_html:30 }}
-      <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
+      <time>{{ article.locale_date }}</time>
+      <h5>{{ article.title }}</h5>
+      {{ article.summary }}
+      <a class="button button-secondary" href="{{ SITETURL }}/{{ article.url }}">{% trans %}Read More{% endtrans %}</a>
     </div>
     {% endfor %}
   </div>
@@ -124,41 +122,41 @@
 
 
 <div id="community" class="docs-section container">
-  <h2><a class="headline-link" href="community">{% trans "Friendly Community" %}</a></h2>
+  <h2><a class="headline-link" href="community">{% trans %}Friendly Community{% endtrans %}</a></h2>
   <p>
-    {% blocktrans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endblocktrans %}
+    {% trans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endtrans %}
   </p>
 
   <p>
-    {% blocktrans with launchpad_bugs="https://bugs.launchpad.net/mixxx/" mapping_link="https://github.com/mixxxdj/mixxx/wiki/Contributing-Mappings" create_a_branch_link="/get-involved#developers" help_with_translations_link="/get-involved#translators" starter_tasks_link="/get-involved"  %} You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endblocktrans %}
+  {% with launchpad_bugs="https://bugs.launchpad.net/mixxx/", mapping_link="https://github.com/mixxxdj/mixxx/wiki/Contributing-Mappings", create_a_branch_link="/get-involved#developers", help_with_translations_link="/get-involved#translators", starter_tasks_link="/get-involved" %}{% trans %}You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endtrans %}{% endwith %}
   </p>
 </div>
 
 <div id="archievements" class="docs-section container">
   <div class="grid-container quarters">
     <div class="archievement">
-      <img class="responsive" src="{% static '/static/images/rating_macappstore.png' %}" alt="Mac App Store">
+      <img class="responsive" src="{{ SITEURL }}/theme/images/rating_macappstore.png" alt="Mac App Store">
       <br>
-      {% trans "#1 Top Free Mac App Worldwide" %}<br>
+      {% trans %}#1 Top Free Mac App Worldwide{% endtrans %}<br>
       Mac App Store<br>
-      <small>{% trans "February 2011" %}</small>
+      <small>{% trans %}February 2011{% endtrans %}</small>
     </div>
 
     <div class="archievement">
-      <img class="responsive" src="{% static '/static/images/rating_cnet.png' %}" alt="CNet">
+      <img class="responsive" src="{{ SITEURL }}/theme/images/rating_cnet.png" alt="CNet">
     </div>
 
     <div class="archievement">
-      <img class="responsive" src="{% static '/static/images/rating_cm.png' %}" alt="Computer Music"><br>
-      {% trans "Free Pick of the Month" %}<br>
-      <small>{% trans "September 2007" %}</small>
+      <img class="responsive" src="{{ SITEURL }}/theme/images/rating_cm.png" alt="Computer Music"><br>
+      {% trans %}Free Pick of the Month{% endtrans %}<br>
+      <small>{% trans %}September 2007{% endtrans %}</small>
     </div>
 
     <div class="archievement">
-      <img class="responsive" src="{% static '/static/images/rating_synthtopia.png' %}" alt="Synthtopia">
+      <img class="responsive" src="{{ SITEURL }}/theme/images/rating_synthtopia.png" alt="Synthtopia">
       <br>
-      {% trans '"The coolest open source<br>application ever?"' %}<br>
-      <small>{% trans "February 2011" %}</small>
+      {% trans %}"The coolest open source<br>application ever?"{% endtrans %}<br>
+      <small>{% trans %}February 2011{% endtrans %}</small>
     </div>
   </div>
 </div>

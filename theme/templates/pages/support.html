@@ -1,39 +1,37 @@
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "Support" %}{% endblock %}
+{% block title %}{% trans %}Support{% endtrans %}{% endblock %}
 
 {% block body %}
 <div class="docs-section container">
-  <h1>{% trans "Support &amp; Community" %}</h1>
+  <h1>{% trans %}Support &amp; Community{% endtrans %}</h1>
 
   <div class="grid-container halves u-align-left">
     <div>
-      <h5>{% trans "User Manual" %}</h5>
+      <h5>{% trans %}User Manual{% endtrans %}</h5>
       <p>
-        {% blocktrans with manual_latest_link="/manual/latest" manual_beginner_link="/manual/latest/chapters/djing_with_mixxx.html" %}The <a href="{{ manual_latest_link }}">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about configuration and hardware, and much more. It also contains useful information for beginners under <a href="{{ manual_beginner_link }}">DJing with Mixxx</a>.{% endblocktrans %}
+      {% with manual_latest_link="/manual/latest", manual_beginner_link="/manual/latest/chapters/djing_with_mixxx.html" %}{% trans %}The <a href="{{ manual_latest_link }}">Mixxx Manual</a> provides an overview of Mixxx's user interface, information about configuration and hardware, and much more. It also contains useful information for beginners under <a href="{{ manual_beginner_link }}">DJing with Mixxx</a>.{% endtrans %}{% endwith %}
       </p>
     </div>
 
     <div>
-      <h5>{% trans "Wiki" %}</h5>
+      <h5>{% trans %}Wiki{% endtrans %}</h5>
       <p>
-        {% blocktrans with mixxx_wiki_link="/wiki/" beginner_dj_links="https://github.com/mixxxdj/mixxx/wiki/Beginner-Dj-Links" wiki_troubleshooting="https://github.com/mixxxdj/mixxx/wiki/Troubleshooting" %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide. {% endblocktrans %}
+      {% with mixxx_wiki_link="/wiki/", beginner_dj_links="https://github.com/mixxxdj/mixxx/wiki/Beginner-Dj-Links", wiki_troubleshooting="https://github.com/mixxxdj/mixxx/wiki/Troubleshooting" %}{% trans %}The <a href="{{ mixxx_wiki_link }}">Mixxx Wiki</a> has a wealth of useful documentation for users and developers. New to it all and not sure how to get started? Checkout the <a href="{{ beginner_dj_links }}">Beginner DJ Links</a>. Running into technical issues? See the <a href="{{ wiki_troubleshooting }}">Troubleshooting</a> guide.{% endtrans %}{% endwith %}
       </p>
     </div>
 
     <div>
-      <h5>{% trans "Community Forums" %}</h5>
+      <h5>{% trans %}Community Forums{% endtrans %}</h5>
       <p>
-        {% blocktrans with forums_link="https://mixxx.discourse.group/" %}If you need help setting up or using Mixxx, ask in the <a href="{{ forums_link }}">Mixxx Community Forums</a>. This is also the place to find or share unofficial controller mappings, keyboard mappings, and skins.{% endblocktrans %}
+      {% with forums_link="https://mixxx.discourse.group/" %}{% trans %}If you need help setting up or using Mixxx, ask in the <a href="{{ forums_link }}">Mixxx Community Forums</a>. This is also the place to find or share unofficial controller mappings, keyboard mappings, and skins.{% endtrans %}{% endwith %}
       </p>
     </div>
 
     <div>
-      <h5>{% trans "Bug Tracker" %}</h5>
+      <h5>{% trans %}Bug Tracker{% endtrans %}</h5>
       <p>
-        {% blocktrans with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endblocktrans %}
+      {% with bug_tracker_link="https://bugs.launchpad.net/mixxx/" %}{% trans %}Please report any bugs you find to our <a href=" {{ bug_tracker_link }}">Bug Tracker</a>. The bug tracker gives us a centralized place to pool our information on bugs, and prevents us from getting disorganized and forgetting about them.{% endtrans %}{% endwith %}
       </p>
     </div>
   </div>

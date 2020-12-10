@@ -1,53 +1,41 @@
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "News" %}{% endblock %}
+{% block title %}{% trans %}News{% endtrans %}{% endblock %}
 
 {% block body %}
 <div class="docs-section container">
-  <h1>{% trans "News and Announcements" %}</h1>
+  <h1>{% trans %}News and Announcements{% endtrans %}</h1>
 
   <div class="docs-section">
-    {# Show most recent news post #}
-    {% for post in posts|slice:":4" %}
+    {% for article in articles_page.object_list %}
     <article class="news">
-      <h4><a href="{% url post.path %}">{{ post.title }}</a></h4>
+      <h4><a href="{{ SITE_URL }}/{{ article.url }}">{{ article.title }}</a></h4>
       <p style="news-meta">
-        Posted on <time>{{ post.date|date:"Y-m-d" }}</time>
-        {% if post.authors %}
+        Posted on <time>{{ article.locale_date }}</time>
+        {% if article.authors %}
         by
-        {% for author in post.authors|slice:":-2" %}
-        <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>,
+        {% for author in article.authors[:-2] %}
+        <span class="author">{% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}</span>,
         {% endfor %}
-        {% for author in post.authors|slice:"-2:-1" %}
-        <span class="author">{% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span> and
+        {% for author in article.authors[-2:-1] %}
+        <span class="author">{% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author }}{% endif %}</span> and
         {% endfor %}
-        {% for author in post.authors|slice:"-1:" %}
+        {% for author in article.authors[-1:] %}
         <span class="author">
-        {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if author.github %} (<a href="https://github.com/{{ author.github }}">@{{ author.github }}</a>){% endif %}</span>
+        {% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author }}{% endif %}</span>
         {% endfor %}
         {% endif %}
       </p>
 
-      <p>{{ post.post|striptags|truncatewords:50 }}</p>
+      <p>{{ article.summary }}</p>
 
-      <a class="button button-secondary" href="{% url post.path %}">{% trans 'Read More' %}</a>
+      <a class="button button-secondary" href="{{ SITE_URL }}/{{ article.url }}">{% trans %}Read More{% endtrans %}</a>
     </article>
     {% endfor %}
   </div>
 
-  <div class="docs-section">
-    {# List other news posts #}
-    <h2>{% trans "Older News" %}</h2>
-    <ul>
-      {% for post in posts|slice:"4:" %}
-      <li>
-        <strong><a href="{% url post.path %}">{{ post.title }}</a></strong>
-        ({{ post.date|date:"Y-m-d" }})
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+  {% if articles_page.has_other_pages() %}
+    {% include "pagination.html" %}
+  {% endif %}
 </div>
 {% endblock %}

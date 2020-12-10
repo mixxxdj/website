@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% load i18n %}
-
-{% block title %}{% trans "Temporary Maintenance" %}{% endblock %}
+{% block title %}{% trans %}Temporary Maintenance{% endtrans %}{% endblock %}
 
 {# Disable the navbar and footer. #}
 {% block navbar %}{% endblock %}
@@ -11,10 +9,10 @@
 {% block body %}
 <div id="wrapper" style="margin-top: 50px; padding-top: 50px; margin-bottom: 50px; padding-bottom: 50px;">
   <center>
-    <img src="{% static '/static/images/navbar-logo.png' %}">
-    <H2>{% trans "Sorry, down for maintenance..." %}</H2>
-    <H2><small>{% trans "We'll be back in a jiffy!" %}</small></H2>
-    <p>{% trans "In the meantime, check out some other open source projects we love:" %}</p>
+    <img src="{{ SITEURL }}/theme/images/navbar-logo.png">
+    <h2>{% trans %}Sorry, down for maintenance...{% endtrans %}</h2>
+    <h2><small>{% trans %}We'll be back in a jiffy!{% endtrans %}</small></h2>
+    <p>{% trans %}In the meantime, check out some other open source projects we love:{% endtrans %}</p>
     <p>
       <a href="http://www.videolan.org">VLC Movie Player</a> |
       <a href="http://www.audacityteam.org">Audacity Audio Editor</a> |
