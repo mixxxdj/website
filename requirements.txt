@@ -1,5 +1,2 @@
-cactus
-fabric<2.0
+pelican
 markdown
-pycrypto
-ecdsa
