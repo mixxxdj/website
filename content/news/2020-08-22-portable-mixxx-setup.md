@@ -2,9 +2,6 @@ title: Guest Article: DJ on the fly with Mixxx and Raspberry Pi
 author: dennis
 date: 2020-08-22 12:00:00
 
-{% load markup %}
-{% filter markdown:"extra" %}
-
 *One of the things that make Mixxx special is that it works on more platforms that just Windows or macOS.*
 *Thanks to Mixxx being open-source, it's possible to create "unusual" setups that the developers didn't expect - for example by running it on a low-cost Raspberry Pi single board computer combined with a touchscreen.*
 *It's always great to see what cool stuff our users do with Mixxx, so when we discovered a video of it on Reddit, we asked Dennis to write a blog post about his project.*

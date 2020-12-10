@@ -2,9 +2,6 @@ title: New In 2.3: Intro & Outro Cues, Silence Detection, and AutoDJ Improvement
 author: Be.
 date: 2020-07-09 01:00:00
 
-{% load markup %}
-{% filter markdown:"extra" %}
-
 Do you use hotcues to mark the points you use to mix in and out of tracks? Have you wished AutoDJ knew to mix in and out at those points?
 In Mixxx 2.3, we have introduced new intro & outro cues for these purposes. You can try them now with [Mixxx 2.3 beta](/download#unstable).
 These are not ordinary cue points. Unlike hotcues, and unlike intro and outro cues in other DJ software, they do not mark only one point. The intro & outro are sections and each section is defined by two points.

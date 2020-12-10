@@ -2,9 +2,6 @@ title: Mixxx Accepted to Outreachy. Please Donate!
 author: ywwg
 date: 2020-10-01 09:00:00
 
-{% load markup %}
-{% filter markdown:"extra" %}
-
 <table style="width:100%; border: 0"><tbody><tr><td>
 <div align="center">US Dollar donations</div><a href="https://opencollective.com/mixxx/contribute" target="_blank">
   <img src="https://opencollective.com/mixxx/contribute/button@2x.png?color=blue" width=300 />

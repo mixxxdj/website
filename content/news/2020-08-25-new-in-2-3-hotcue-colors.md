@@ -2,9 +2,6 @@ title: New in 2.3: Color your Hotcues
 author: Holzhaus
 date: 2020-08-25 12:00:00
 
-{% load markup %}
-{% filter markdown:"extra" %}
-
 Hotcues are a neat thing and one of the major benefits of digital DJing.
 On analogue vinyl decks, you had had to put stickers to mark the different sections of a song and physically pick up, move and drop the needle to move to it.
 With the move to digital DJ setups, a new way to navigate tracks emerged: Hotcues now allow you to "bookmark" different spots in a track and quickly move to these positions in the blink of an eye, even while track is playing on the PA.

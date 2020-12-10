@@ -3,21 +3,15 @@ author: ywwg
 date: 2015-12-19 18:50:22
 comments: no
 
-{% extends "post.html" %}
-
-{% load i18n %}
-
-{% block post %}
 <div class="content">
 
   <div style="float: right; width: 370px; border: 1px solid #222; border-radius: 5px; margin-top: 0px; padding: 16px; margin-left: 70px; margin-right: 20px;">
-    <h2 style="margin-top: 0px;">{% trans "New to Mixxx?" %}</h2>
-    {% blocktrans %}Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix music live at your next party or club gig. <a href="/download">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux.{% endblocktrans %}
+    <h2 style="margin-top: 0px;">New to Mixxx?</h2>
+    Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix music live at your next party or club gig. <a href="/download">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux.
   </div>
 
-  <h1>{% trans "What's New in Mixxx 2.0?" %}</h1>
   <p>
-    {% trans "Three years in the making, we've added so many new features to Mixxx that we had to call it 2.0. As always, Mixxx 2.0 is available as a <b>free upgrade</b> for all existing Mixxx users." %}
+    Three years in the making, we've added so many new features to Mixxx that we had to call it 2.0. As always, Mixxx 2.0 is available as a <b>free upgrade</b> for all existing Mixxx users.
   </p>
   <div style="clear: both;"></div>
 
@@ -25,9 +19,9 @@ comments: no
 
   <!-- Resizable Skins -->
   <div class="halfbox_left">
-    <h2>{% trans "Dynamic, Resizable Skins" %}</h2>
+    <h2>Dynamic, Resizable Skins</h2>
     <p>
-      {% trans "Each of our three professionally-designed skins can stretch to fill whatever size screen you have.  Turn parts of the interface on and off to reveal the features you use most." %}
+      Each of our three professionally-designed skins can stretch to fill whatever size screen you have.  Turn parts of the interface on and off to reveal the features you use most.
     </p>
   </div>
 
@@ -41,32 +35,32 @@ comments: no
     <img class="responsive" width="255px" src="{static}/images/2.0/feature-mastersync.png">
   </div>
   <div class="halfbox_right">
-    <h2>{% trans "4 Decks with Master Sync" %}</h2>
+    <h2>4 Decks with Master Sync</h2>
     <p>
-      {% trans "Supporting the latest DJing techniques, Mixxx supports up to four decks playing back simultaneously.  Combine tracks with loops and samples to create sophisticated on-the-fly remixes." %}
+      Supporting the latest DJing techniques, Mixxx supports up to four decks playing back simultaneously.  Combine tracks with loops and samples to create sophisticated on-the-fly remixes.
     </p>
     <p>
-      {% trans "Holding your mix together is the new Master Sync engine, a powerful feature that holds all of your tracks perfectly aligned even if you change the speed of the mix." %}
+      Holding your mix together is the new Master Sync engine, a powerful feature that holds all of your tracks perfectly aligned even if you change the speed of the mix.
     </p>
   </div>
   <div style="clear: both;"></div>
 
   <!-- Effects -->
   <div class="halfbox_left">
-    <h2>{% trans "Built-in Effects" %}</h2>
+    <h2>Built-in Effects</h2>
     <p>
-      {% trans "Mixxx's new effect processing system allows you to apply up to 4 chains of effects to any mixer channel." %}
-      {% trans "Mixxx 2.0 comes with 5 high-quality effects and 4 equalizer effects with many more to come!" %}
+      Mixxx's new effect processing system allows you to apply up to 4 chains of effects to any mixer channel.
+      Mixxx 2.0 comes with 5 high-quality effects and 4 equalizer effects with many more to come!
       <ul>
-        <li>{% trans "Flanger" %}</li>
-        <li>{% trans "Moog 4-pole Ladder Filter" %}</li>
-        <li>{% trans "Echo" %}</li>
-        <li>{% trans "Reverb" %}</li>
-        <li>{% trans "BitCrusher" %}</li>
-        <li>{% trans "Bessel 4th Order EQ" %}</li>
-        <li>{% trans "Bessel 8th Order EQ" %}</li>
-        <li>{% trans "Linkwitz-Riley 8th Order EQ" %}</li>
-        <li>{% trans "Biquad 8 band graphic EQ" %}</li>
+        <li>Flanger</li>
+        <li>Moog 4-pole Ladder Filter</li>
+        <li>Echo</li>
+        <li>Reverb</li>
+        <li>BitCrusher</li>
+        <li>Bessel 4th Order EQ</li>
+        <li>Bessel 8th Order EQ</li>
+        <li>Linkwitz-Riley 8th Order EQ</li>
+        <li>Biquad 8 band graphic EQ</li>
       </ul>
     </p>
   </div>
@@ -82,18 +76,18 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <h2>{% trans "Harmonic Mixing with Musical Key Detection" %}</h2>
+    <h2>Harmonic Mixing with Musical Key Detection</h2>
     <p>
-      {% trans "Mixxx now detects the musical key of your tracks and allows you to fine tune them to be in key with the rest of your mix. With support for Traditional, Open Key, Lancelot, and custom key notations, you'll feel right at home no matter what system you're used to." %}
+      Mixxx now detects the musical key of your tracks and allows you to fine tune them to be in key with the rest of your mix. With support for Traditional, Open Key, Lancelot, and custom key notations, you'll feel right at home no matter what system you're used to.
     </p>
   </div>
   <div style="clear: both;"></div>
 
   <!-- RGB Waveforms -->
   <div class="halfbox_left">
-    <h2>{% trans "RGB Waveforms" %}</h2>
+    <h2>RGB Waveforms</h2>
     <p>
-      {% trans "See the sound of your music.  With RGB waveforms, bright red means killer bass, blue glints where you find crisp hihats, and soft greens show you when the lyrics come in.  A quick glance at the waveform overview and you'll know if a track is banging or just right for sunrise." %}
+      See the sound of your music.  With RGB waveforms, bright red means killer bass, blue glints where you find crisp hihats, and soft greens show you when the lyrics come in.  A quick glance at the waveform overview and you'll know if a track is banging or just right for sunrise.
     </p>
   </div>
 
@@ -109,18 +103,18 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <h2>{% trans "Four Microphones, Four AUX Inputs, Microphone Ducking" %}</h2>
+    <h2>Four Microphones, Four AUX Inputs, Microphone Ducking</h2>
     <p>
-      {% trans "Radio DJs, MCs, and users with external gear will appreciate the flexibility of 12 total external audio inputs.  And with auto-ducking, listeners will always be able to hear you over the music." %}
+      Radio DJs, MCs, and users with external gear will appreciate the flexibility of 12 total external audio inputs.  And with auto-ducking, listeners will always be able to hear you over the music.
     </p>
   </div>
   <div style="clear: both;"></div>
 
   <!-- Vinyl Passthrough -->
   <div class="halfbox_left">
-    <h2>{% trans "Vinyl Passthrough" %}</h2>
+    <h2>Vinyl Passthrough</h2>
     <p>
-      {% trans "Calling all vinyl addicts &mdash; you can now switch off between vinyl timecode records and vinyl audio records with the new vinyl passthrough feature." %}
+      Calling all vinyl addicts &mdash; you can now switch off between vinyl timecode records and vinyl audio records with the new vinyl passthrough feature.
     </p>
   </div>
   <div class="halfbox_right" style="margin-top: 30px;">
@@ -130,42 +124,42 @@ comments: no
 
   <!-- Quit readin' and download already! -->
   <div class="gapfiller">
-    <p style="text-align: center;">{% trans "Like what you see? Download Mixxx for FREE and Start DJing:" %}</p>
+    <p style="text-align: center;">Like what you see? Download Mixxx for FREE and Start DJing:</p>
     {% include "download_button.html" %}
   </div>
   <div style="clear: both;"></div>
 
   <!-- Cover Art -->
   <div class="halfbox_left">
-    <h2>{% trans "Cover Art Support" %}</h2>
+    <h2>Cover Art Support</h2>
     <p>
-      {% trans "Mixxx reads cover art from your tracks and displays it in the library, on your decks, and on the spinning vinyl widgets." %}
+      Mixxx reads cover art from your tracks and displays it in the library, on your decks, and on the spinning vinyl widgets.
     </p>
     <img class="responsive" width="350px" src="{static}/images/2.0/feature-coverart.png">
   </div>
 
   <!-- Engine Improvements -->
   <div class="halfbox_right">
-    <h2>{% trans "Core Mixing Engine Improvements" %}</h2>
+    <h2>Core Mixing Engine Improvements</h2>
     <ul>
-      <li>{% trans "Improved, high-fidelity equalizers." %}</li>
-      <li>{% trans "Improved time-stretching algorithm for better sounding key-lock." %}</li>
-      <li>{% trans "Multi-soundcard Synchronization Improvements" %}</li>
-      <li>{% trans "Mono / Stereo Output" %}</li>
-      <li>{% trans "Mono Mixing" %}</li>
-      <li>{% trans "Split Cueuing" %}</li>
-      <li>{% trans "Master/Headphone Delay" %}</li>
-      <li>{% trans "Latency Usage Meter" %}</li>
-      <li>{% trans "Improved Broadcasting Stability" %}</li>
-      <li>{% trans "Improved Microphone Routing" %}</li>
+      <li>Improved, high-fidelity equalizers.</li>
+      <li>Improved time-stretching algorithm for better sounding key-lock.</li>
+      <li>Multi-soundcard Synchronization Improvements</li>
+      <li>Mono / Stereo Output</li>
+      <li>Mono Mixing</li>
+      <li>Split Cueuing</li>
+      <li>Master/Headphone Delay</li>
+      <li>Latency Usage Meter</li>
+      <li>Improved Broadcasting Stability</li>
+      <li>Improved Microphone Routing</li>
     </ul>
   </div>
   <div style="clear: both;"></div>
 
   <!-- Library -->
-  <h1>{% trans "Upgraded Library" %}</h1>
+  <h1>Upgraded Library</h1>
 
-  {% trans "The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive." %}
+  The Mixxx music library was designed from the ground up for DJs. Powered by a high-performance database, accessing and organizing your music is easy and intuitive.
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
@@ -173,46 +167,46 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <b>{% trans "Auto DJ Crates" %}</b>
+    <b>Auto DJ Crates</b>
     <p>
-      {% trans "Need an extended bathroom-break? Automatically expand your Auto DJ queue with Auto DJ crates." %}
+      Need an extended bathroom-break? Automatically expand your Auto DJ queue with Auto DJ crates.
     </p>
 
-    <b>{% trans "Multi-Core Library Scanner" %}</b>
+    <b>Multi-Core Library Scanner</b>
     <p>
-      {% trans "Got a huge library? Mixxx will fly through it with its new multi-core scanning support." %}
+      Got a huge library? Mixxx will fly through it with its new multi-core scanning support.
     </p>
 
-    <b>{% trans "Cover Art Support" %}</b>
+    <b>Cover Art Support</b>
     <p>
-      {% trans "Evoke the feel of thumbing through your record crate. Mixxx now shows slivers of cover art in the library table." %}
+      Evoke the feel of thumbing through your record crate. Mixxx now shows slivers of cover art in the library table.
     </p>
 
-    <b>{% trans "Improved Auto DJ Stability" %}</b>
+    <b>Improved Auto DJ Stability</b>
     <p>
-      {% trans "We've worked closely with heavy users of Auto DJ to identify problems, clean up code, and add internal tests to make Auto DJ more reliable than ever." %}
+      We've worked closely with heavy users of Auto DJ to identify problems, clean up code, and add internal tests to make Auto DJ more reliable than ever.
     </p>
 
-    <b>{% trans "MusicBrainz Tag Lookup" %}</b>
+    <b>MusicBrainz Tag Lookup</b>
     <p>
-      {% trans "Fingerprint your tracks and fetch missing tags from MusicBrainz." %}
+      Fingerprint your tracks and fetch missing tags from MusicBrainz.
     </p>
   </div>
   <div style="clear: both;"></div>
 
   <!-- Controller Support -->
-  <h1>{% trans "Improved, Expanded Support for DJ Controllers" %}</h1>
+  <h1>Improved, Expanded Support for DJ Controllers</h1>
   <p>
-    {% trans "Thanks to generous DJs and our vibrant forum community, Mixxx 2.0 brings support for an exciting new range of DJ controllers." %}
+    Thanks to generous DJs and our vibrant forum community, Mixxx 2.0 brings support for an exciting new range of DJ controllers.
   </p>
 
-  <h2>{% trans "Newly Supported DJ Controllers" %}</h2>
+  <h2>Newly Supported DJ Controllers</h2>
   <div style="float: right">
     <img class="responsive" width="500px" src="{static}/images/2.0/feature-newcontrollers.jpg" alt="Newly Supported Controllers in Mixxx 2.0">
   </div>
 
   <p>
-    <b>{% trans "New Mixxx Certified Controllers" %}</b>
+    <b>New Mixxx Certified Controllers</b>
   </p>
   <ul>
     <li>Traktor Kontrol S4 MK2</li>
@@ -220,7 +214,7 @@ comments: no
   </ul>
 
   <p>
-    <b>{% trans "New Mixxx Community Supported Controllers" %}</b>
+    <b>New Mixxx Community Supported Controllers</b>
   </p>
   <div style="float: left; width: 30%; padding-right: 50px;">
     <ul>
@@ -245,12 +239,12 @@ comments: no
 
   <div style="clear: both;"></div>
   <div style="margin-top: 40px; margin-bottom: 40px;">
-    {% blocktrans %}<b>Want to know if your DJ controller is supported in Mixxx?</b> Please check the <a href="/features/#full_specs">full technical specifications</a>.{% endblocktrans %}
+    <b>Want to know if your DJ controller is supported in Mixxx?</b> Please check the <a href="/features/#full_specs">full technical specifications</a>.
   </div>
   <div style="clear: both;"></div>
 
   <div class="gapfiller">
-    <p style="text-align: center;">{% trans "Ready to Upgrade? Download Mixxx for FREE and Start DJing:" %}</p>
+    <p style="text-align: center;">Ready to Upgrade? Download Mixxx for FREE and Start DJing:</p>
     {% include "download_button.html" %}
     <div style="clear: both;"></div>
   </div>

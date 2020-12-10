@@ -2,9 +2,6 @@ title: #BlackLivesMatter: Taking a Stand with Terminology and Recruitment
 author: Mixxx, April
 date: 2020-06-29 15:00:00
 
-{% load markup %}
-{% filter markdown:"extra" %}
-
 Alongside the protesters in the US and around the world, the Mixxx team unequivocally condemns police brutality.
 The systemic racism that burdens people of color every day is the responsibility of white people around the world to address.
 Mixxx' core development team feels it necessary not to remain silent on this issue, for ["silence in the face of injustice is complicity with the oppressor."](https://www.theguardian.com/news/2000/sep/14/guardianobituaries)
