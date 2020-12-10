@@ -3,10 +3,6 @@ author: Albert
 date: 2008-07-17 17:17:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 The Mixxx development team is proud to announce the <span style="font-weight: bold;">fourth beta</span>
  of <span style="font-weight: bold;">Mixxx 1.6.0</span>
 , the premiere open source DJ software. (<a href="http://www.mixxx.org/download/">Download!</a>
@@ -44,5 +40,3 @@ As with our previous betas, please <a href="https://bugs.launchpad.net/mixxx/">r
 <br />
 We plan to have the 1.6.0 final out within the next few weeks, as mentioned earlier. In the meantime, stay tuned and <a href="http://www.mixxx.org/download/">download Mixxx 1.6.0 Beta 4</a>
  to tide you over!
-
-{% endblock %}

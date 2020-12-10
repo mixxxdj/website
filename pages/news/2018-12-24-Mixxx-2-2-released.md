@@ -3,13 +3,6 @@ author: Be.
 date: 2018-12-24 18:07:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx 2.2.0 has been released, [download it!](https://mixxx.org/download/) Since we are now releasing Mixxx more often, the changes are not as big as between Mixxx 2.0 and Mixxx 2.1. Here is a quick overview of the changes since Mixxx 2.1:
 
 #### General
@@ -53,6 +46,3 @@ We have added a new button to the effects units that adds a new mode for mixing 
 Mixxx 2.2 introduces initial support for LV2 sound effects plugins. Many GNU/Linux distributions package LV2 effects plugins that can be installed separately from Mixxx. Because many LV2 plugins are not useful for DJing, you must explicitly enable plugins in the Effects section of the preferences before you can load them in the Mixxx main window. Currently there is no way to show the GUI for LV2 plugins in Mixxx. While LV2 effects are technically cross-platform, in practice there are very few LV2 plugins that are distributed for macOS and Windows. Mixxx 2.2 has LV2 support enabled for GNU/Linux and macOS, but not for Windows.
 
 Want to help make Mixxx more awesome? We could always use more people, whether you can write code or not. If you are interested in getting involved, join us on our [Zulip chat](https://mixxx.zulipchat.com/) and introduce yourself.
-
-{% endfilter %}
-{% endblock %}

@@ -3,10 +3,6 @@ author: Albert
 date: 2009-08-06 18:52:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;">The Mixxx team is proud to announce the final release of <span style="font-weight: bold;">Mixxx 1.7.0</span>
 !<br />
 <br />
@@ -69,5 +65,3 @@ Lastly, we're always looking for new contributors, and we hope our recent move t
  and <a href="http://www.bazaar-vcs.org/">Bazaar</a>
  for source code management will add more transparency to our development and encourage more people to get involved. If you're a programmer and want to work with a creative, enthusiastic team, hop on our IRC channel (#mixxx on Freenode) or sign up for our <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">developers' mailing list</a>
 .
-
-{% endblock %}

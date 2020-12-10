@@ -2,13 +2,6 @@ title: New in 2.3: Colorize your Tracks!
 author: Holzhaus
 date: 2020-10-24 12:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 As a DJ your most important job is to find and cue the track you're going to play next to make the crowd go wild.
 In Mixxx 2.2 you already had plenty of options to organize and add information to the tracks in your library to make this task easier.
 You can add them to playlists, put them into crates and access them as files in different directories via the "Computer" sidebar entry.
@@ -42,6 +35,3 @@ Like we did for [hotcue colors]({% url "/news/2020-08-25-new-in-2-3-hotcue-color
 This means that if you're a mapping creator, you can now add support for displaying and modifying track colors from the your controller!
 
 Stay tuned for more cool features in Mixxx 2.3 that we'll publish prior to the final release!
-
-{% endfilter %}
-{% endblock %}

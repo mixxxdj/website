@@ -3,10 +3,6 @@ author: Albert
 date: 2007-12-23 14:03:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <center><img alt="" border="0" src="{% static '/static/images/news/mixxx-pie.png' %}" id="BLOGGER_PHOTO_ID_5142001271828261202" />
 <br />
 The Mixxx development team suggests 1.6.0 is most delicious if you <a href="http://mixxx.sourceforge.net/download.php">get it while it's hot.</a>
@@ -39,6 +35,3 @@ We'd also like to mention that we're <a href="http://sourceforge.net/donate/inde
 <br />
 Finally, we'd like to say thanks to all the people that make this possible, the Mixxx developer team, all our users, PortAudio and all our other friends and colleagues.</div>
 </center>
-
-
-{% endblock %}

@@ -3,10 +3,6 @@ author: Albert
 date: 2008-04-28 18:35:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <center><object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/nAqI4HAcQi4&hl=en"></param>
 <param name="wmode" value="transparent"></param>
 <embed src="https://www.youtube.com/v/nAqI4HAcQi4&hl=en" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed>
@@ -20,5 +16,3 @@ This latest video of <a href="http://www.mixxx.org">Mixxx</a>
 The turntable is plugged directly into my laptop using the turntable's line-out and my laptop's onboard soundcard.<br />
 <br />
 I recently did some work on our "vinyl emulation" code that mimics the way the pitch changes when you're using a turntable. I managed to improve the sound quality enough that scratching with Mixxx + vinyl control sounds convincingly similar to scratching with real vinyl. These improvements will be included with our next beta release.
-
-{% endblock %}

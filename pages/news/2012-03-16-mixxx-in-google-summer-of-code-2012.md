@@ -3,10 +3,6 @@ author: Albert
 date: 2012-03-16 20:03:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div class="separator" style="clear: both; text-align: center;"><a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2012" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="{% static '/static/images/news/gsoc-2012-logo-color.png' %}" width="400" />
 </a>
 </div>
@@ -37,6 +33,3 @@ Interested? <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/mixx
 &nbsp;and come hack on the best free MP3 DJ mixing software for the Summer!<br />
 <div><br />
 </div>
-
-
-{% endblock %}

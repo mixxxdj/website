@@ -3,10 +3,6 @@ author: Cristiano
 date: 2020-06-08 01:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 {% load markup %}
 {% filter markdown:"extra" %}
 
@@ -22,7 +18,3 @@ Janek, who is working on [a feature similar to Serato Flip](https://www.mixxx.or
 
 We are looking forward to a new call in which we discuss our GSoC projects with our students, mentors and the rest of the community.
 If you're interested, hit us up on [Zulip](https://mixxx.zulipchat.com/).
-
-
-{% endfilter %}
-{% endblock %}

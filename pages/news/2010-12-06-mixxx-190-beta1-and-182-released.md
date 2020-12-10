@@ -3,10 +3,6 @@ author: Albert
 date: 2010-12-06 00:32:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Hot off the heels of 1.8.1, the Mixxx development team is pleased to announce the release of <b>Mixxx 1.9.0 Beta1</b>
 !<br />
 <br />
@@ -169,6 +165,3 @@ We've moved our official Mixxx repository for Ubuntu to a <a href="https://launc
 <br />
 </div>
 <a class="FlattrButton" href="http://www.mixxx.org/" style="display: none;"></a>
-
-
-{% endblock %}

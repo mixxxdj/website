@@ -3,10 +3,6 @@ author: Albert
 date: 2010-12-10 03:18:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">Mixxx 1.8 was a big step ahead, bringing new features like hot cues, looping, and a brand new library, but as we speak,&nbsp;<b>many other new features</b>
 &nbsp;are being developed behind the scenes. These new features are still in the lab, so to speak, but some of them are maturing rapidly and will likely make it into a Mixxx release. Some of them are even stable enough for the brave to start testing. Although, I wouldn't use any of them in a live performance yet...&nbsp;<i>or would I</i>
 ?</div>
@@ -118,6 +114,3 @@ through Google Summer of Code this year.&nbsp;These small miniature decks allow 
 " Whelan.</i>
 </div>
 </div>
-
-
-{% endblock %}

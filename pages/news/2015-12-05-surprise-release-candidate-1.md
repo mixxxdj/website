@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2015-12-05 19:04:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Hi Mixxx-heads,<br />
 <br />
 Are you ready for a surprise?<br />
@@ -90,6 +86,3 @@ We want to hear from you! Please&nbsp;<a href="https://docs.google.com/forms/d/1
 .</div>
 </div>
 </div>
-
-
-{% endblock %}

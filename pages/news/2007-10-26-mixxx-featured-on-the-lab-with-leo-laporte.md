@@ -3,10 +3,6 @@ author: Albert
 date: 2007-10-26 14:06:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 An anonymous tipster has pointed out that <span style="font-weight: bold;">Mixxx</span>
  was featured as the "free file of the day" in <a href="http://www.labwithleo.com/notes/93">episode 93</a>
  of Leo Laporte's <a href="http://www.labwithleo.com/">The Lab with Leo</a>
@@ -18,5 +14,3 @@ An anonymous tipster has pointed out that <span style="font-weight: bold;">Mixxx
 <br />
 For more information about the show, visit <a href="http://www.labwithleo.com/">www.labwithleo.com</a>
 .
-
-{% endblock %}

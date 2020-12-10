@@ -3,10 +3,6 @@ author: Albert
 date: 2008-02-26 15:31:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 There's been some cool new Mixxx videos posted on YouTube this month. First up is Trinity's <a href="http://www.indamixx.com">Indamixx</a>
  handheld again, this time demonstrating a beatmix on the device:<br />
 <br />
@@ -30,5 +26,3 @@ Next up is a video from one of our developers, <a href="http://www.jockusch.de">
 <br />
 <br />
 Looks like it's working pretty well!
-
-{% endblock %}

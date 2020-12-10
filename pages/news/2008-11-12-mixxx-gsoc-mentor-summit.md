@@ -3,10 +3,6 @@ author: Adam Davison
 date: 2008-11-12 19:08:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Three of the Mixxx development team recently attended the Google Summer of Code Mentor Summit. For those of you who don't know, <a href="http://code.google.com/soc/2008">GSoC</a>
  is a programme where Google funds students to spend their Summers working on open source software.<br />
 <br />
@@ -36,6 +32,3 @@ We'd also like to thank everyone at Google who worked on Summer of Code for maki
 <center><a href="http://picasaweb.google.com/lh/photo/GH1HBYyRkjHMja6PNyN0MQ?authkey=VvWzGzBsCWQ"><img src="https://lh3.ggpht.com/_hUprAdIclgE/SRnKBDrpSMI/AAAAAAAAAU0/Gqmmikdi4Nc/s400/img_0947.jpg" />
 </a>
 </center>
-
-
-{% endblock %}

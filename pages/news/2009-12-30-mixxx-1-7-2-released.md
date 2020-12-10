@@ -3,10 +3,6 @@ author: Albert
 date: 2009-12-30 21:06:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div><br />
 </div>
 <a href="{% static '/static/images/news/Picture-7.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/Picture-7.png' %}" id="BLOGGER_PHOTO_ID_5422999176657239506" style="cursor: hand; cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
@@ -37,6 +33,3 @@ comments: no
 <div></div>
 </div>
 </div>
-
-
-{% endblock %}

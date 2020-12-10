@@ -3,10 +3,6 @@ author: Albert
 date: 2009-05-07 14:43:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;"><span class="Apple-style-span"  style="color:#551A8B;"><span class="Apple-style-span" style="text-decoration: underline;"><br />
 </span>
 </span>
@@ -35,5 +31,3 @@ To take advantage of this, you need three things:<br />
 </li>
 </ol>
 Install and run as usual, and enjoy! Please let us know if you have any problems or questions.
-
-{% endblock %}

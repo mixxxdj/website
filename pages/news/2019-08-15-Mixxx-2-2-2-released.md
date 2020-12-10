@@ -3,13 +3,6 @@ author: tapir
 date: 2019-08-15 07:06:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx 2.2.2 has been released and is available on the [download](https://www.mixxx.org/download/) page.
 
 This release includes many stability and usability fixes. Please note that we had to disable writing of file tags for .ogg files with the current TagLib version 1.11.1 that would otherwise corrupt your precious files. Upgrading from version 2.2.1 is strongly recommended.
@@ -33,6 +26,3 @@ This release includes many stability and usability fixes. Please note that we ha
 - Tango64: Re-enable 64 samplers. #2223
 - Numark DJ2Go re-enable note-off for deck A cue button. #2087
 - Replace Flanger with QuickEffect in keyboard mapping. #2233
-
-{% endfilter %}
-{% endblock %}

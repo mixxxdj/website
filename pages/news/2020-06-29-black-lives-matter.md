@@ -2,10 +2,6 @@ title: #BlackLivesMatter: Taking a Stand with Terminology and Recruitment
 author: Mixxx, April
 date: 2020-06-29 15:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
 {% load markup %}
 {% filter markdown:"extra" %}
 
@@ -61,6 +57,3 @@ We are currently working out the details of our fundraiser and we hope to have i
 We're aware that replacing some terms and participating in Outreachy might seem insignificant in light of the discrimination and violence that people of color and Black people in particular face every day.
 As a project that depends on donations and volunteer work, we invite all our collaborators and users to discuss further community action on [Zulip](https://mixxx.zulipchat.com) as we continue to stand against racism and discrimination.
 Keep protesting!
-
-{% endfilter %}
-{% endblock %}

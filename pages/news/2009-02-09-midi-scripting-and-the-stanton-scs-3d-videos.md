@@ -3,10 +3,6 @@ author: Albert
 date: 2009-02-09 16:25:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/scs3d.jpg' %}"><img style="margin: 0px auto 10px; padding-top: 20px; display: block; text-align: center; cursor: pointer; width: 320px; height: 259px;" src="{% static '/static/images/news/scs3d.jpg' %}" alt="" id="BLOGGER_PHOTO_ID_5300948513885229362" border="0" />
 </a>
 <br />
@@ -68,6 +64,3 @@ Lastly, we'd like to thank <a href="http://www.stantondj.com/">Stanton</a>
 <center><object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/FgARVcLsfl0&amp;hl=en&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="https://www.youtube.com/v/FgARVcLsfl0&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" height="344" width="425"></embed>
 </object>
 </center>
-
-
-{% endblock %}

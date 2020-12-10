@@ -3,10 +3,6 @@ author: Albert
 date: 2007-08-10 00:10:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 For those who aren't familiar with <a href="http://mixxx.sf.net/">Mixxx</a>
 , it's a program that allows DJs to do live beatmixing  of music.  Instead of lugging a pair of turntables and a record crate around, many modern DJs (both amateur and professional) prefer to use a laptop with an external hardware controller instead. Mixxx allows you to control the playback and speed of music, just as one would do with real turntables.<br />
 <br />
@@ -32,6 +28,3 @@ Not only have our students brought us much improved BPM detection, LADSPA effect
 The students' lasting contribution to the revitalization of Mixxx is only matched by that of Google themselves. With their support through Summer of Code 2007, we've been able to better equip DJs around the globe with professional quality open source software. Lastly, by introducing our students to team-based open source development, our mentors have been able to give our students real-world experience and a new set of skills. All of these contributions have been made possible thanks to Google's Summer of Code 2007, and for that we are tremendously grateful.<br />
 <br />
 <span style="font-weight: bold;">Open source software for DJs: Buy your music, not your software.</span>
-
-
-{% endblock %}

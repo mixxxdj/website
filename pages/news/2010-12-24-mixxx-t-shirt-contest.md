@@ -3,10 +3,6 @@ author: Pegasus
 date: 2010-12-24 18:29:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 OK everyone.<br />
 <br />
 The submissions for the T-shirt contest are below. Unfortunately, it seems most of you are much more interested in buying a shirt rather than designing one, so we have only two entries, only one of which is an original design. That said, it's great design, and so we'd like to congratulate <b>Joe Colosimo</b>
@@ -65,6 +61,3 @@ Entry #2 (Design by Joe Colosimo):<a href="{% static '/static/images/news/entry3
 <br />
 <div style="text-align: left;">Thanks for your attention!</div>
 </div>
-
-
-{% endblock %}

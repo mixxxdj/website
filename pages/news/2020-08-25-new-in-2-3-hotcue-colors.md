@@ -2,10 +2,6 @@ title: New in 2.3: Color your Hotcues
 author: Holzhaus
 date: 2020-08-25 12:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
 {% load markup %}
 {% filter markdown:"extra" %}
 
@@ -138,6 +134,3 @@ If your mapping already uses our JavaScript Components library, you can just cre
 We also added [controls](https://mixxx.org/wiki/doku.php/mixxxcontrols) to to make it possible assign a different color to an existing hotcue from your controller - for example, the mapping for the Roland DJ-505 uses the PARAMETER -/+ buttons next to the hotcue pads to cycle through the color palette for most recently activated hotcue.
 
 Refer to our wiki if you want to integrate it into your controller mapping and check out the video below:
-
-{% endfilter %}
-{% endblock %}

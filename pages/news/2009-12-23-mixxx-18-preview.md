@@ -3,10 +3,6 @@ author: Albert
 date: 2009-12-23 21:56:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 After many months of planning and development, we're finally approaching a beta release of Mixxx 1.8. Since our last release, several major new features have matured and are almost ready for public testing.<br />
 <div><span class="Apple-style-span" style="white-space: pre;">    </span>
 Our main focus for 1.8 has been improving the library, which is a direct result of continued feedback from our users. We're also excited to have been able to address several other major feature requests, and we think 1.8 is a big step in the right direction.<br />
@@ -98,6 +94,3 @@ Mixxx 1.8 can playback DRM-free AAC/M4A files on Windows, Mac OS X, and Linux. O
 </div>
 </div>
 </div>
-
-
-{% endblock %}

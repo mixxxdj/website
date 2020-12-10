@@ -3,10 +3,6 @@ author: GED
 date: 2009-02-19 02:03:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 On Feb 16th, Hercules released GPL <a href="http://ts.hercules.com/eng/index.php?pg=view_files&amp;gid=2&amp;fid=28&amp;pid=215&amp;cid=1#section1" target="_blank">Linux MIDI drivers</a>
  for their DJ Console / DJ Control series of MIDI input controllers ( <a href="http://www.hercules.com/us/DJ-Music/bdd/p/12/dj-console-mk2-virtualdj-djc-ed/" class="postlink">Mk2</a>
 , <a href="http://www.hercules.com/us/DJ-Music/bdd/p/62/dj-console-rmx/" class="postlink">RMX</a>
@@ -40,5 +36,3 @@ Hercules users are encouraged to download these updates and visit the Mixxx Herc
 <br />
 <br />
 Hercules DJ Console Mk1 users will have to wait until usbquirks is modified in the Linux kernel to remove the quirk for Mk1.
-
-{% endblock %}

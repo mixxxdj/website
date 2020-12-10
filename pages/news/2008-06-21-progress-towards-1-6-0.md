@@ -3,10 +3,6 @@ author: Albert
 date: 2008-06-21 18:49:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 These last few weeks of development have been pretty exciting. We've been tackling the bugs we've marked as "release critical", which means we're getting closer to the 1.6.0 final release.<br />
 <br />
 There's been improvements to the library as well as many other bug fixes made, and our <a href="{% url '/news/2008-04-21-google-summer-of-code-2008-projects.html' %}">Google Summer of Code</a>
@@ -25,5 +21,3 @@ In the meantime, we need your help to track down <a href="https://bugs.launchpad
  (WinXP) - If Mixxx just wasn't opening for you, please try the new SVN release posted in this link as well.</li>
 </ul>
 If you can, please help us by trying to reproduce these bugs. Depending on how this last round of bug fixing goes, we'll either release Beta 4 or a release candidate, and then hopefully the 1.6.0 final shortly thereafter. We're also going to be working on an overhaul of the Mixxx site, which should spice it up quite a bit. Stay tuned!
-
-{% endblock %}

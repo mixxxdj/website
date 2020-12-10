@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2012-04-23 19:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/gsoc-2012-logo-color.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="202" src="{% static '/static/images/news/gsoc-2012-logo-color.png' %}" width="400" />
 </a>
 </div>
@@ -62,6 +58,3 @@ Meanwhile, the Mixxx team is working full-speed ahead on Mixxx 1.11, which we ho
 </div>
 <div></div>
 </div>
-
-
-{% endblock %}

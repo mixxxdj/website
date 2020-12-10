@@ -3,10 +3,6 @@ author: Albert
 date: 2009-08-06 18:11:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <br><div style="text-align: left;"><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="https://spreadsheets.google.com/a/mixxx.org/viewform?hl=en&amp;formkey=dE1WUzViMmRGOW40NHh1Wkd1dWRtc0E6MA.."><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 251px;" src="{% static '/static/images/news/Picture-7.png' %}" alt="" id="BLOGGER_PHOTO_ID_5366922258426763474" border="0" />
 </a>
 <br />
@@ -20,6 +16,3 @@ So if you have a few minutes, please fill out <span style="text-decoration: unde
 <div style="text-align: left;">We read every response and appreciate your feedback. Filling out the survey is a fast and easy way to make a contribution to Mixxx, and your responses will make a big impact on future releases. Thanks!<br />
 </div>
 </div>
-
-
-{% endblock %}

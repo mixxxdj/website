@@ -2,13 +2,6 @@ title: New in 2.3: Importing tracks and cues from Rekordbox removable devices
 author: ehendrikd
 date: 2020-07-20 12:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Do you rock your gigs armed only with your cans and a Rekordbox prepared USB flash drive? Ever been tempted to play your carefully curated tracks on something other than a CDJ or Rekordbox, on something that is free and open-source? We have news for you!
 
 Mixxx 2.3 will support reading the following from Rekordbox prepared removable devices on all of Mixxx's supported platforms:
@@ -53,6 +46,3 @@ On a related note, we have [started reverse engineering the HID protocol for the
 ![Pioneer CDJ 2000 NXS2 proof of concept]({% static '/static/images/news/IMG_4627.JPG' %})
 
 We have [documented what we have learned about the protocol so far](https://mixb.me/CDJHidProtocol/hid-analysis/startup.html) but there is still more to reverse engineer. After that, it will be more work to write a Mixxx HID controller mapping. If you have a CDJ 2000 NXS 2 or other CDJ model and want to get involved in this reverse engineering effort, [introduce yourself on our Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) and let us know how you can help.
-
-{% endfilter %}
-{% endblock %}

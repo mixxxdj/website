@@ -3,10 +3,6 @@ author: Albert
 date: 2009-04-23 09:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;"><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/Picture-2.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 400px; height: 241px;" src="{% static '/static/images/news/Picture-2.png' %}" alt="" id="BLOGGER_PHOTO_ID_5327645996858682802" border="0" />
 </a>
 <br />
@@ -98,6 +94,3 @@ Lastly, if you encounter problems with the beta, please report them in our <a hr
 </li>
 </ul>
 </ul>
-
-
-{% endblock %}

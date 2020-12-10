@@ -3,10 +3,6 @@ author: Albert
 date: 2008-12-03 01:03:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <span style="font-style: italic;">This developer commentary explains the trials and tribulations of Mixxx's library code, and what the Mixxx developers are doing to improve it.</span>
 <br />
 <br />
@@ -72,5 +68,3 @@ Some of the (big) things that need to be added still are playlist support, brows
 <br />
 Anyways, the main focus is to reimplement all the library functionality that was there before, but while I'm hacking the library, <span style="font-weight: bold;">I want to hear what cool new features you (Mixxx users) want</span>
 . If you want to share a neat idea, please leave a comment!
-
-{% endblock %}

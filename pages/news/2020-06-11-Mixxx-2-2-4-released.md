@@ -3,13 +3,6 @@ author: Holzhaus
 date: 2020-06-25 12:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx 2.2.4 has been released.
 [Download it here]({% url '/download.html' %}#stable).
 
@@ -38,6 +31,3 @@ If you want to check out the new features of the upcoming 2.3 release, you can a
 * Add controller mapping for Stanton DJC.4 #2607
 * Fix broadcasting via broadcast/recording input lp:1876222 #2743
 * Only apply ducking gain in manual ducking mode when talkover is enabed lp:1394968 lp:1737113 lp:1662536 #2759
-
-{% endfilter %}
-{% endblock %}

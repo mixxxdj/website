@@ -3,10 +3,6 @@ author: Albert
 date: 2008-07-21 23:56:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/screens.mixx.CMYK.gif' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/screens.mixx.CMYK.gif' %}" alt="" id="BLOGGER_PHOTO_ID_5225656766006331410" border="0" />
 </a>
 <br />
@@ -18,5 +14,3 @@ Trinity Audio Group's <a href="http://www.indamixx.com/">Indamixx</a>
 The device comes preloaded with Mixxx for touchscreen mixing goodness. For more information, check out the <a href="http://www.prweb.com/releases/2008/07/prweb1120234.htm">press release</a>
  or their <a href="http://www.indamixx.com/">official site</a>
 .
-
-{% endblock %}

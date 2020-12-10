@@ -3,10 +3,6 @@ author: Adam Davison
 date: 2007-10-19 19:31:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Two weeks ago, Albert Santoni (gamegod) and myself (Adam Davison) were at a conference at Google wrapping up the <a href="http://code.google.com/soc/2007/">Google Summer of Code</a>
  programme. For those who don't know, the goal of the scheme is to pay students to work full-time on open source software like Mixxx. This year was our first taking part and our students worked on lots of things which you'll be seeing more of as we start the 1.6.0 release cycle.<br />
 <br />
@@ -21,6 +17,3 @@ Anyway, it was interesting to see Google's offices, where apparently some people
 </a>
 Adam Davison (top) and Albert Santoni (bottom)<br />
 </div>
-
-
-{% endblock %}

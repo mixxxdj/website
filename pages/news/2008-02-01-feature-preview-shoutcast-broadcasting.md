@@ -3,10 +3,6 @@ author: Albert
 date: 2008-02-01 15:40:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 One of our newer contributors, <a href="http://wesley.debianbox.be/"><span style="font-weight: bold;">Wesley Stessens</span>
 </a>
 , has been hard at work on Shoutcast/Icecast broadcasting support for <a href="http://mixxx.sf.net/">Mixxx</a>
@@ -27,5 +23,3 @@ People who want to use Mixxx for live broadcasting will appreciate not having to
 , broadcasting live from the UK.<br />
 <br />
 Depending on how much work we can get done this weekend, Shoutcast support may or may not make it into 1.6.0 Beta2. However, Shoutcasting should make it into the final 1.6.0 release. (There's at least one more surprise coming for Beta2 though...)
-
-{% endblock %}

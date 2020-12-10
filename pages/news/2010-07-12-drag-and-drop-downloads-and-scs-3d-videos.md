@@ -3,10 +3,6 @@ author: Albert
 date: 2010-07-12 05:12:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <b>Busy week!</b>
 <br />
 <br />
@@ -46,6 +42,3 @@ Our MIDI guru, Sean Pappalardo, has put a new video this week showcasing the SCS
 <embed src="https://www.youtube.com/v/2onMLSpYON8&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
 </object>
 </div>
-
-
-{% endblock %}

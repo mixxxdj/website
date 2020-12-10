@@ -3,10 +3,6 @@ author: Albert
 date: 2008-09-24 17:36:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.mixman.com/products/images/dm2/dm2.gif"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;width: 400px;" src="https://www.mixman.com/products/images/dm2/dm2.gif" border="0" alt="" />
 </a>
 <br />
@@ -28,5 +24,3 @@ Sites / DL's / Source :<br />
 <br />
 The driver is also open source now, which the code available <a href="http://code.google.com/p/dm2usbmididriver/">here</a>
 .
-
-{% endblock %}

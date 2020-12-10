@@ -3,10 +3,6 @@ author: Albert
 date: 2010-03-18 20:43:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div class="separator" style="clear: both; text-align: center;"><br />
 </div>
 <div class="separator" style="clear: both; text-align: center;"><a href="http://socghop.appspot.com/"><img border="0" height="284" src="{% static '/static/images/news/GSoC-Logo.png' %}" width="320" />
@@ -44,6 +40,3 @@ Mixxx previously participated in Google Summer of Code in 2007 and 2008, and saw
 </div>
 <div><br />
 </div>
-
-
-{% endblock %}

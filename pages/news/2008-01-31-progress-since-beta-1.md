@@ -3,10 +3,6 @@ author: Albert
 date: 2008-01-31 22:12:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/Screenshot-Mixxx-1.6.0beta2.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/Screenshot-Mixxx-1.6.0beta2.png' %}" alt="" id="BLOGGER_PHOTO_ID_5161770031280608434" border="0" />
 </a>
 <br />
@@ -28,6 +24,3 @@ Recently, <span style="font-weight: bold;">Micah Lee</span>
 Lastly, we expect the 1.6.0 beta2 release sometime in the next two weeks. There's still a few extra features we're going to try to slip in to the next release, so stay tuned!<br />
 </div>
 </div>
-
-
-{% endblock %}

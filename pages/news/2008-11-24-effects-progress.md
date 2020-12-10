@@ -3,10 +3,6 @@ author: Albert
 date: 2008-11-24 07:05:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Since the 1.6.1 release, we've been hard at work integrating several new features that have been in the works for a while.<br />
 <br />
 In our last user survey, many people told us that Mixxx needed some effects besides the flanger. In response to your feedback, we had Pawel Bartkiewicz work on LADSPA integration through Google Summer of Code in 2007. <span style="font-weight: bold;">LADSPA</span>
@@ -31,5 +27,3 @@ For Windows and OS X users hoping for <span style="font-weight: bold;">VST suppo
 . The VST enabler should allow us to load VST plugins, but to my knowledge, nobody's tested it yet. The reason we can't build native VST support directly into Mixxx is because of Steinberg's restrictive license on their VST software development kit.<br />
 <br />
 That's all for now! We're going to keep hacking away at LADSPA and the rest of the new features we're working on, and hopefully we'll have something out the door before the end of the year.
-
-{% endblock %}

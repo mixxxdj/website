@@ -2,14 +2,6 @@ title: New in 2.3: Deck Cloning
 author: Matthew Nicholson
 date: 2020-11-15 13:36:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
-
 Deck cloning (also called "instant doubles" in some other DJ software) is a highly anticipated feature added in Mixxx 2.3. In short, it does what it says on the tin. When activated, the currently loaded song, playback state, pitch adjustment, and any playing loop will be cloned from one deck to another. This opens up a number of creative mixing possibilities, some of which we will explore below.
 
 ![Swapping decks using the deck clone feature]({% static "/images/news/deckclone.gif" %})
@@ -51,6 +43,3 @@ In this technique, the same track is played on two decks, but on the second deck
 While playing a track, sometimes it can be useful to preview an upcoming section of the song. This can be done using the deck clone feature by cloning the playing track to the another deck, seeking ahead, and listening via the cue output in your headphones.
 
 The examples here are just scratching the surface. There are many creative possibilities that the deck clone feature enables. This feature is included in Mixxx 2.3. [Download the beta]({% url "download.html" %}) and play around with it today.
-
-{% endfilter %}
-{% endblock %}

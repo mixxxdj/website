@@ -2,13 +2,6 @@ title: GSoC 2020: Adding Experimental Meter Detection
 author: Cristiano Lacerda
 date: 2020-08-20 12:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 One of the parts where Mixxx is lacking is how it handles time signatures and downbeats.
 Currently, Mixxx only has individual beats but has no support for detecting or displaying additional information about the rhythm.
 
@@ -42,6 +35,3 @@ Another huge limitation is that it uses a winner-takes-it-all strategy and is un
 Although the meter is actually estimated at around 0.26 seconds windows, the output is to noise to be followed blindly and some smart algorithm still need to be developed with we want to follow changes.
 
 There are still issues to address and the code is still very experimental with a lot of rough edges, but can be tested at [2877](https://github.com/mixxxdj/mixxx/pull/2877).
-
-{% endfilter %}
-{% endblock %}

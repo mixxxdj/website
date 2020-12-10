@@ -3,10 +3,6 @@ author: Albert
 date: 2008-12-17 23:46:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <span style="font-weight:bold;">Are you a creative Mixxx enthusiast?</span>
 <br />
 Would you like volunteer with the project, but don't know how to code? <br />
@@ -30,5 +26,3 @@ As Mixxx continues to grow, more opportunities for more volunteers to help out w
 , and it can help demonstrate the diversity and flexibility of your background. 2009 will be a great year for Mixxx, and we're looking forward to hearing from interested volunteers!<br />
 <br />
 * More on the chocolatier front will come as we fill this position.
-
-{% endblock %}

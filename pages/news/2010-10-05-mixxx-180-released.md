@@ -3,10 +3,6 @@ author: Albert
 date: 2010-10-05 07:24:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;">The Mixxx team is proud to announce the final release of <b><a href="http://www.mixxx.org/">Mixxx 1.8.0</a>
 </b>
 !</div>
@@ -146,6 +142,3 @@ We realized in the course of packaging 1.8.0 (by hand) that since we're planning
  <br />
 <div>We're always looking for new contributors who are interested in working on Mixxx. If you're a programmer or artist and want to work with a creative, enthusiastic team, hop on our IRC channel (#mixxx on Freenode) or sign up for our <a href="https://lists.sourceforge.net/lists/listinfo/mixxx-devel">developers' mailing list</a>
 .</div>
-
-
-{% endblock %}

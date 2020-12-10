@@ -3,10 +3,6 @@ author: Pegasus
 date: 2012-01-06 13:31:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div>If you've been wanting a Mixxx T-shirt, now is a good time to order since there are a few in stock (9 medium, 4 large, 1 extra-large) so you'll receive these sizes quite quickly if you act fast! Even if we don't have your size in stock (or we run out,) we'll place another order with the supplier on February 1 so be sure to order by then.</div>
 <br />
 <div>We are also happy to announce that <b>we can now offer ladies' white T-shirts at the same prices!</b>
@@ -95,6 +91,3 @@ Phone number (optional)</td>
 We'll place the order with the supplier on February 1, so get your order in now! Allow 6-8 weeks after that for your shirt(s) to arrive in your mailbox (though we expect delivery sooner than that, unless you live near the South Pole or something.)</div>
 <div><br />
 Thank you for your attention and enthusiasm!</div>
-
-
-{% endblock %}

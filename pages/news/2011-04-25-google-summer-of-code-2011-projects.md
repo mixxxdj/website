@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2011-04-25 18:13:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 The Summer of Code is upon us! Google has just <a href="http://socghop.appspot.com/gsoc/org/home/google/gsoc2011/mixxx">announced</a>
  which students Mixxx has accepted into the <span style="font-weight: bold; ">Google Summer of Code 2011</span>
  program. Students were competing for one of three slots awarded to Mixxx by Google. This year we received a high volume of applications from many skilled students which made the decision-making process very difficult.<div><br />
@@ -43,6 +39,3 @@ The Summer of Code is upon us! Google has just <a href="http://socghop.appspot.c
 <div><br />
 </div>
 </div>
-
-
-{% endblock %}

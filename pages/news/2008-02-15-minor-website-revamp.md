@@ -3,10 +3,6 @@ author: Albert
 date: 2008-02-15 15:30:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <br><br />
 <center><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/logo-mixxx.png' %}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{% static '/static/images/news/logo-mixxx.png' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5167231204156825330" />
 </a>
@@ -28,5 +24,3 @@ Lastly, we're going to be using our Launchpad page's <a href="https://bugs.launc
  from now on. It's much easier to use, and isn't cluttered with 10 megabytes worth of flash ads like the old one. :)<br />
 <br />
 Enjoy!
-
-{% endblock %}

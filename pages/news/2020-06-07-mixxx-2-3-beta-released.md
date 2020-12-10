@@ -3,10 +3,6 @@ author: Be.
 date: 2020-06-07 01:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 {% load markup %}
 {% filter markdown:"extra" %}
 We are proud to announce the release of Mixxx 2.3 beta, [download it!]({% url '/download.html' %}#unstable) This release brings hotcue colors & labels, Serato metadata import, Rekordbox metadata import, intro & outro cues, a revamped LateNight skin, multithreaded analysis, deck cloning, and more.
@@ -84,6 +80,3 @@ A brief overview of the changes is below. In the coming weeks, we will be publis
 * Add CMake build system with Ccache support for faster compilation time [#2280](https://github.com/mixxxdj/mixxx/pull/2280)
     * Note: The old SCons build system is still supported for 2.3. We will be removing it for Mixxx 2.4.
 * Make Mixxx compile even though `QT_NO_OPENGL` or `QT_OPENGL_ES_2` is defined (fixes build on Raspberry Pi) [lp:1863440](https://bugs.launchpad.net/mixxx/+bug/1863440) [#2504](https://github.com/mixxxdj/mixxx/pull/2504)
-
-{% endfilter %}
-{% endblock %}

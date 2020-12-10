@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2011-12-24 22:39:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: left;">Happy holidays from the Mixxx development team. After a smooth beta period, we are happy to present&nbsp;<b>Mixxx 1.10.0</b>
 <b>!</b>
 </div>
@@ -232,6 +228,3 @@ We want to hear from you! Please&nbsp;<a href="https://spreadsheets.google.com/a
 .</div>
 </div>
 </div>
-
-
-{% endblock %}

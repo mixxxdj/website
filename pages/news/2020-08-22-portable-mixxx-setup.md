@@ -2,10 +2,6 @@ title: Guest Article: DJ on the fly with Mixxx and Raspberry Pi
 author: dennis
 date: 2020-08-22 12:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
 {% load markup %}
 {% filter markdown:"extra" %}
 
@@ -80,6 +76,3 @@ So rather than sharing an end result I hope this post will encourage you to star
 
 * Check out the complete how-to guide on this [git repo](https://github.com/dennisdebel/pi_dj). You will also find the skin and controller mapping there.
 * A separate post for the skin I modified can be found [here](https://mixxx.discourse.group/t/skin-for-small-screens-wip/19607/5).
-
-{% endfilter %}
-{% endblock %}

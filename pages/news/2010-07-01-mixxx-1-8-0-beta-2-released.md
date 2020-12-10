@@ -3,10 +3,6 @@ author: Albert
 date: 2010-07-01 05:40:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div>The Mixxx team is pleased to announce the second beta of <b>Mixxx 1.8.0</b>
 ! This release brings a large number of bug fixes, performance improvements, and even some small new features.<br />
 <br />
@@ -86,6 +82,3 @@ Although we don't have any official audio playback plugins available yet, we'd l
 <br />
 Over the next month or so, we'll be wrapping up development of 1.8.0. We've still got many bugs to fix (and could use your help), but we think this latest beta release is a big improvement over the previous one. Give it a shot, and please <a href="https://bugs.launchpad.net/mixxx/+filebug">report any bugs you find</a>
 ! Enjoy, and stay tuned for more news as we finally approach Mixxx 1.8.0.</div>
-
-
-{% endblock %}

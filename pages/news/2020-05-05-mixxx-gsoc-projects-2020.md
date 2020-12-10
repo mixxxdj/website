@@ -3,13 +3,6 @@ author: Holzhaus
 date: 2020-05-05 01:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx is participating in this year's [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/), an opportunity for students to work on Mixxx full-time as a 3-month summer project and receive a stipend from Google.
 
 For this year's Google Summer of Code, Mixx has been [granted 3 slots](https://summerofcode.withgoogle.com/organizations/6577142898360320/) that will be filled by students from 3 different continents:
@@ -32,6 +25,3 @@ Before, mentors have had a lot of private one-on-one communication with students
 This year we'll be encouraging students to discuss their work more publicly so the whole community is involved throughout their projects.
 
 Thus, if you're interested in these projects check our [Zulip chat](https://mixxx.zulipchat.com/) for discussions and progress reports.
-
-{% endfilter %}
-{% endblock %}

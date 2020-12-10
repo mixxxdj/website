@@ -3,10 +3,6 @@ author: Albert
 date: 2008-03-09 15:22:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <center><a href="{% static '/static/images/news/Picture-3.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/Picture-3.png' %}" id="BLOGGER_PHOTO_ID_5175771250043346146" style="cursor: hand; cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
 </a>
 </center>
@@ -16,5 +12,3 @@ Mixxx 1.6.0 Beta2 for OS X Tiger (Intel) has <a href="http://www.mixxx.org/downl
 <br />
 If you're still running Tiger, you can pick up Mixxx 1.6.0 Beta2 on our <a href="http://www.mixxx.org/download/">downloads page</a>
 .
-
-{% endblock %}

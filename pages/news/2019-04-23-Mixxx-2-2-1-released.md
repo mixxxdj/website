@@ -3,13 +3,6 @@ author: Be.
 date: 2019-04-23 21:18:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx 2.2.1 has been released and is available on the [download page](https://mixxx.org/download/). This update includes fixes that were in 2.1.7 and 2.1.8. There were a few performance improvements which have an especially big impact on macOS. Mac users who were staying with 2.1.x versions because 2.2.0 was too slow are advised to upgrade to 2.2.1. Other fixes include:
 
 - LED output for the Traktor Kontrol S4 Mk2 on Windows has been fixed.
@@ -19,6 +12,3 @@ Mixxx 2.2.1 has been released and is available on the [download page](https://mi
 - Numark Mixtrack (Pro) 3 mapping: fix bug where TAP + FX level to move the beatgrid changed the effect unit mix knob.
 
 Note that we are currently having an issue updating the Ubuntu PPA. Ubuntu users can install the .deb file from the [download page](https://mixxx.org/download/) or wait until we get the new update in the PPA (or [build from source code](https://mixxx.org/wiki/doku.php/compiling_on_linux)).
-
-{% endfilter %}
-{% endblock %}

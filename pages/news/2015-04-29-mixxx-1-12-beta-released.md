@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2015-04-29 03:12:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Hi Mixxxers -- did you miss us? The Mixxx team has been quietly toiling for <b>over 2 years</b>
 &nbsp;to bring you Mixxx 1.12. This will be our <b>biggest release ever</b>
 &nbsp;and we need your help to make sure that it's our <b>best ever</b>
@@ -103,6 +99,3 @@ We want to hear from you! Please&nbsp;<a href="https://docs.google.com/forms/d/1
 </div>
 </div>
 </div>
-
-
-{% endblock %}

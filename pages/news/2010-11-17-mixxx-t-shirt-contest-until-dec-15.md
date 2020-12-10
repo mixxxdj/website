@@ -3,10 +3,6 @@ author: Pegasus
 date: 2010-11-17 08:14:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/tshirtsmall.jpeg' %}"><img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer; width: 246px; height: 246px;" src="{% static '/static/images/news/tshirtsmall.jpeg' %}" alt="" id="BLOGGER_PHOTO_ID_5540432098774020706" border="0" />
 </a>
 Hello everyone!<br />
@@ -46,6 +42,3 @@ Thanks for your attention and good luck!<br />
 <br />
 <span style="font-size:85%;">(Also see the <a href="https://mixxx.org/forums/viewtopic.php?f=1&amp;t=1745">forum post on this topic</a>
  for the most up-to-date information.)</span>
-
-
-{% endblock %}

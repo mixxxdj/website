@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2011-11-06 20:41:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div dir="ltr" style="text-align: left;" trbidi="on">After a long hiatus, we're back! The Mixxx development team is pleased to announce the release of <b>Mixxx 1.10.0 Beta</b>
 &nbsp;and <b>Mixxx 1.9.2!</b>
 <br />
@@ -226,6 +222,3 @@ We are not responsible if Mixxx 1.10.0 Beta eats your baby, sets your house on f
 </div>
 </div>
 </div>
-
-
-{% endblock %}

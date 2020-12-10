@@ -3,10 +3,6 @@ author: Albert
 date: 2008-05-27 18:52:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <center><a href="{% static '/static/images/news/logo-mixxx.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/logo-mixxx.png' %}" id="BLOGGER_PHOTO_ID_5167231204156825330" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
 </a>
 </center>
@@ -61,5 +57,3 @@ We've also bundled some <span style="font-weight: bold;">free tracks</span>
 <br />
 For our next release, we're going to shift focus towards polishing the remaining rough edges and fixing the remaining critical bugs we find. Whether our next release will be a fourth beta or the 1.6.0 final release remains to be decided, as it depends mainly on how many critical bugs we find and how much time we have to fix them. If you want to <span style="font-weight: bold;">help us</span>
  fix bugs, please join us on IRC (#mixxx on Freenode) and we'd be glad to help you get started hacking Mixxx.
-
-{% endblock %}

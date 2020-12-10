@@ -2,10 +2,6 @@ title: New In 2.3: Intro & Outro Cues, Silence Detection, and AutoDJ Improvement
 author: Be.
 date: 2020-07-09 01:00:00
 
-{% extends "post.html" %}
-
-{% block post %}
-
 {% load markup %}
 {% filter markdown:"extra" %}
 
@@ -101,6 +97,3 @@ Do you have more ideas for features that would allow you to DJ in new ways?
 Do you want to turn your ideas into reality?
 With Mixxx, [you have the freedom](https://www.gnu.org/philosophy/free-sw.html) to do this without begging a company to do it for you.
 If you want to help make Mixxx even more awesome, [get involved](/get-involved)!
-
-{% endfilter %}
-{% endblock %}

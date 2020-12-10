@@ -3,10 +3,6 @@ author: Albert
 date: 2008-01-15 04:21:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/hercules-dj-control-mp3.jpg' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/hercules-dj-control-mp3.jpg' %}" alt="" id="BLOGGER_PHOTO_ID_5155554238592342050" border="0" />
 </a>
 <br />
@@ -29,5 +25,3 @@ It looks like there's light at the end of the tunnel for Hercules users. <a href
  I should add that the Hercules MK2 and the Hercules MP3 Control are both supported <span style="font-style: italic;">very well</span>
  on <span style="font-weight: bold;">Windows</span>
 .
-
-{% endblock %}

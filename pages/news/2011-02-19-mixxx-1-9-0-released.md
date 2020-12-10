@@ -3,10 +3,6 @@ author: Albert
 date: 2011-02-19 19:19:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">The Mixxx development team is pleased to announce the release of&nbsp;<b>Mixxx 1.9.0!</b>
 </div>
 <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br />
@@ -176,6 +172,3 @@ Double click any item in the track table to edit its contents.</li>
 Our 32-bit Mac OS X package has been upgraded to provide better compatibility with Mac OS X 10.5. The new package is available on our <a href="http://www.mixxx.org/download.php" style="font-weight: bold;">downloads page</a>
 .</div>
 </div>
-
-
-{% endblock %}

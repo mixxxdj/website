@@ -3,10 +3,6 @@ author: Albert
 date: 2010-06-27 23:22:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Near the end of each release cycle, we try to round up as many developers as we can and have a giant meeting to figure out what we're doing for our next release cycle. And by giant, I mean usually four or five people tops.<br />
 <div><br />
 </div>
@@ -43,6 +39,3 @@ If you want to check out the full details of our meeting, we've shared <a href="
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="400" height="100"><param name="movie" value="http://bandcamp.com/EmbeddedPlayer.swf/album=363614375/size=venti/bgcol=141414/linkcol=4285BB/"><param name="quality" value="high"><param name="allowScriptAccess" value="never"><param name="allowNetworking" value="always"><param name="wmode" value="transparent"><param name="bgcolor" value="#141414"><embed src="https://bandcamp.com/EmbeddedPlayer.swf/album=363614375/size=venti/bgcol=141414/linkcol=4285BB/" width="400" height="100" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" allowscriptaccess="never" allownetworking="always" wmode="transparent" bgcolor="#141414"></embed>
 <noembed></noembed>
 </object>
-
-
-{% endblock %}

@@ -3,10 +3,6 @@ author: Albert
 date: 2010-02-15 03:56:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div><div style="text-align: center;"><div class="separator" style="clear: both; text-align: center;"><br />
 </div>
 <div class="separator" style="clear: both; text-align: center;"><a href="{% static '/static/images/news/Picture-10.png' %}" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="{% static '/static/images/news/Picture-10.png' %}" height="193" width="320" />
@@ -85,6 +81,3 @@ Lastly, we wanted to release a beta version to not only let you help us find bug
 . If you know C++, we encourage you to dive into our source code and try to fix bugs that affect you. We're perpetually short-handed and we're always looking for more help. The more people that get involved, the more fun it is for us too. We understand that looking at a new codebase can be daunting, so if you'd like some extra direction, we'd be more than happy to help you - Come hang out in our IRC channel (#mixxx on Freenode), and we'll get you started!<br />
 <ul></ul>
 </div>
-
-
-{% endblock %}

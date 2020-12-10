@@ -3,10 +3,6 @@ author: RJ Ryan
 date: 2018-04-16 17:56:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 After more than two years of hard work, we are pleased to announce the release of <b>Mixxx 2.1.0</b>! Since Mixxx 2.0, we have overhauled the effects system, redesigned the skins, added and improved lots of controller mappings, rewrote the audio file decoders twice, and of course fixed a bunch of bugs.<br />
 <div style="orphans: auto; text-align: start; text-indent: 0px; widows: auto;">
   <div style="font-family: times; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px;">
@@ -247,5 +243,3 @@ After more than two years of hard work, we are pleased to announce the release o
     </div>
   </div>
 </div>
-
-{% endblock %}

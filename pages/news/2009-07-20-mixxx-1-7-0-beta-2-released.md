@@ -3,10 +3,6 @@ author: Albert
 date: 2009-07-20 18:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a href="{% static '/static/images/news/Screenshot-Mixxx-1.7.0-beta2-2.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/Screenshot-Mixxx-1.7.0-beta2-2.png' %}" id="BLOGGER_PHOTO_ID_5360332606147228482" style="cursor: pointer; display: block; height: 246px; margin: 30px auto 20px; text-align: center; width: 400px;" />
 </a>
 <br />
@@ -53,6 +49,3 @@ A flaw has been discovered in a library provided by Ubuntu 9.04 that can cause c
 <li><a href="http://packages.ubuntu.com/intrepid/amd64/libportaudio2/download">PortAudio for amd64</a>
 </li>
 </ul>
-
-
-{% endblock %}

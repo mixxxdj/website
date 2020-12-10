@@ -3,10 +3,6 @@ author: Albert
 date: 2012-08-04 11:52:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 With the recent release of Mac OS X 10.8 Mountain Lion, all Mac applications are required to be<i>&nbsp;signed</i>
 &nbsp;by a developer registered with Apple, otherwise it won't work out-of-the-box. This new feature in Mountain Lion is called&nbsp;<b>Gatekeeper</b>
 , and gives Apple a way to stop spyware and other nasty stuff from spreading.<br />
@@ -23,6 +19,3 @@ In the near future, we'll be working to change our release process so all packag
 In the meantime, enjoy, and <a href="https://bugs.launchpad.net/mixxx/+filebug">please file bugs</a>
  if you run into any problems on Mountain Lion!<br />
 <br />
-
-
-{% endblock %}

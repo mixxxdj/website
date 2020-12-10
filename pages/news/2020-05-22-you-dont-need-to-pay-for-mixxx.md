@@ -3,13 +3,6 @@ author: Holzhaus
 date: 2020-05-22 13:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Over the past few years there have been multiple instances of sellers that distribute paid boxed versions of Mixxx on eBay and Amazon.
 While it's not illegal to do this per se, we are not affiliated with these sellers and neither earn money from this nor endorse this in any way.
 Instead, you can download the latest version of Mixxx from the [download page on our website]({% url "/download.html" %}) for free.
@@ -64,6 +57,3 @@ Do you want to contribute to Mixxx, too?
 There are countless ways to get involved in the Mixxx community. You hack on Mixxx' code, create controller mappings, test new in-development features, improve Mixxx skins or design new ones, translate Mixxx into your language, write articles and make YouTube videos about Mixxx or help out newbies on [Zulip Chat](https://mixxx.zulipchat.com/) or [our forums](https://mixxx.org/forums/). Every little bit helps!
 
 Help us make Mixxx even more awesome than it already is!
-
-{% endfilter %}
-{% endblock %}

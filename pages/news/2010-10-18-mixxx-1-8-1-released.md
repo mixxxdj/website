@@ -3,10 +3,6 @@ author: Albert
 date: 2010-10-18 21:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;">The Mixxx team is pleased announce the release of <a href="http://www.mixxx.org/"><b>Mixxx 1.8.1</b>
 </a>
 !<br />
@@ -69,6 +65,3 @@ Big thanks to everyone who's contributed so far! If you haven't yet had the oppo
 <a href="http://flattr.com/thing/71756/Mixxx-1-8-0" target="_blank"><br />
 <img alt="Flattr this" border="0" src="https://api.flattr.com/button/button-compact-static-100x17.png" title="Flattr this" />
 </a>
-
-
-{% endblock %}

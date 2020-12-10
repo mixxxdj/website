@@ -3,10 +3,6 @@ author: Albert
 date: 2008-08-06 11:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;">The Mixxx team is proud to announce the final release of <span style="font-weight: bold;">Mixxx 1.6.0</span>
 !<br />
 <br />
@@ -159,5 +155,3 @@ o Added "Playlists" to library drop-down box<br />
 </ul>
 Once again, Mixxx 1.6.0 can be downloaded for free from our <a href="http://www.mixxx.org/download.php">downloads page</a>
 .
-
-{% endblock %}

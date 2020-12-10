@@ -3,10 +3,6 @@ author: Pegasus
 date: 2011-01-25 08:32:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 A big thanks to everyone who voted in our T-shirt contest!<br />
 <br />
 A couple people suggested using both designs, and that's what we're going to do! (It makes the shirt more expensive, but we think it's worth it.)<br />
@@ -46,5 +42,3 @@ It's $25 for the 100% preshrunk cotton T-Shirt ($28 if you need XXL) plus $5 shi
 We'll place the order with the supplier on February 11, so get your order in now! Allow 6-8 weeks after that for your shirt(s) to arrive in your mailbox (though we expect them to arrive sooner than that, unless you live near the South Pole or something.)<br />
 <br />
 Thank you for your attention and enthusiasm!
-
-{% endblock %}

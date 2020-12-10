@@ -2,8 +2,6 @@ title: Mixxx Accepted to Outreachy. Please Donate!
 author: ywwg
 date: 2020-10-01 09:00:00
 
-{% extends "post.html" %}
-{% block post %}
 {% load markup %}
 {% filter markdown:"extra" %}
 
@@ -79,6 +77,3 @@ This GoFundMe will only exist for the duration of this fundraiser, whereas OpenC
   <img src="/static/images/gofundme_donate.png" width=300 />
 </a>
 </td></tr></tbody></table>
-
-{% endfilter %}
-{% endblock %}

@@ -3,10 +3,6 @@ author: Albert
 date: 2009-10-19 21:13:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div style="text-align: center;"><br />
 <a href="{% static '/static/images/news/Picture-5.png' %}" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{% static '/static/images/news/Picture-5.png' %}" id="BLOGGER_PHOTO_ID_5394881058757702610" style="cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
 </a>
@@ -30,6 +26,3 @@ We're also still hard at work on our next major release, Mixxx 1.8.0. We've just
 in the upcoming 1.8.0 release<br />
 </span>
 </div>
-
-
-{% endblock %}

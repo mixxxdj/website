@@ -3,10 +3,6 @@ author: Albert
 date: 2007-11-30 15:24:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 The last month has been completely insane. We've been busy fixing bugs and not-quite-finished features like there's no tomorrow. Our Subversion repository has seen more than 70 commits (those are generally changes to Mixxx's code) in the last month, and we've still got a few things to finish before the beta.<br />
 <br />
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/Screenshot-2.png' %}"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="{% static '/static/images/news/Screenshot-2.png' %}" alt="" id="BLOGGER_PHOTO_ID_5138655970529655378" border="0" />
@@ -27,5 +23,3 @@ Lastly, I just want to say a word about vinyl control. Since I've been busy fixi
 <br />
 I've written a <a href="http://mixxx.sourceforge.net/wiki/index.php/Vinyl_Control">Vinyl Control</a>
  page on our wiki which should hopefully answer some questions people have about it.
-
-{% endblock %}

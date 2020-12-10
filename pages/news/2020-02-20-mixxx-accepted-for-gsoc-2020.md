@@ -3,13 +3,6 @@ author: Holzhaus
 date: 2020-02-20 20:00:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/organizations/6577142898360320/) for [Google Summer of Code 2020](https://summerofcode.withgoogle.com/), a global program that aims to bring more student developers into the world of open source development.
 
 This means that students have the opportunity to work on Mixxx full-time as a 3 month programming project and receive a stipend sponsored by Google. For more information, check out the [Google Summer of Code FAQ](https://developers.google.com/open-source/gsoc/faq#students).
@@ -20,6 +13,3 @@ We have prepared a list of [GSoC 2020 Project Ideas for Mixxx](https://mixxx.org
 Past GSoC projects include [Live metadata output](https://mixxx.org/wiki/doku.php/live_metadata_output) and [effects customization](https://mixxx.org/wiki/doku.php/effects_customization). A complete list can be [found at our wiki](https://mixxx.org/wiki/doku.php/gsoc).
 
 If you're interested in hacking on Mixxx this summer, become a part of the Mixxx community and [apply starting March 16th](https://summerofcode.withgoogle.com/organizations/6577142898360320/)!
-
-{% endfilter %}
-{% endblock %}

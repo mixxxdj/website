@@ -3,10 +3,6 @@ author: Albert
 date: 2010-04-26 11:30:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <div><br />
 </div>
 <a href="http://socghop.appspot.com/gsoc/org/home/google/gsoc2010/mixxx">The results are in</a>
@@ -32,5 +28,3 @@ Last but not least, <b>Ryan Baker</b>
  will develop a sampler allowing DJs to trigger sounds during their DJ sets. A sample bank can increase your flexibility when DJing by allowing you to layer drum loops additional buildups into your mix.<br />
 <br />
 These projects are going to make the Summer extra exciting for our development team, and we hope to give you something to look forward to in a future release! In the meantime, we're fixing bugs in 1.8 and we hope to have an even better Beta 2 release for everyone to play with once we finish up. With 1.8.0 around the corner and some great projects lined up for the Summer, it's an exciting time for Mixxx!
-
-{% endblock %}

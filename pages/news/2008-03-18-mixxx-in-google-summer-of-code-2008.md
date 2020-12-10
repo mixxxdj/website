@@ -3,10 +3,6 @@ author: Albert
 date: 2008-03-18 04:48:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="{% static '/static/images/news/gsoc.png' %}"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="{% static '/static/images/news/gsoc.png' %}" border="0" alt=""id="BLOGGER_PHOTO_ID_5178940154223746354" />
 </a>
 <br />
@@ -28,5 +24,3 @@ This year, we've got <a href="https://github.com/mixxxdj/mixxx/wiki/gsoc_2008_id
  up on our wiki, and we're looking forward to seeing what other projects potential students can come up with. This is going to be an interesting summer for Mixxx, as the pace of development usually picks up in the summer and our community is really starting to grow. So if you're a student who wants to get involved with <span style="font-weight:bold;">Mixxx</span>
 , <a href="http://code.google.com/soc/2008/">go ahead and apply</a>
 !
-
-{% endblock %}

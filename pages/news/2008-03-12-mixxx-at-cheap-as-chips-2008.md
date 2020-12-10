@@ -3,10 +3,6 @@ author: Albert
 date: 2008-03-12 00:19:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <span style="font-weight:bold;">Mixxx</span>
  was spotted last Sunday at the <a href="http://www.christchurchmusic.org.nz/content/festivals-4">Cheap as Chips</a>
  music festival in Christchurch, New Zealand. <a href="http://www.myspace.com/kid90nz">DJ Kid 90</a>
@@ -30,5 +26,3 @@ Kid 90 hosts an independent New Zealand electronica show on <a href="http://www.
 Check out more pictures on our <a href="https://github.com/mixxxdj/mixxx/wiki/cheapaschips20080309">wiki page</a>
  for the event and visit <a href="http://www.myspace.com/kid90nz">Kid 90's MySpace page</a>
 .
-
-{% endblock %}

@@ -3,10 +3,6 @@ author: Albert
 date: 2008-02-09 20:51:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 <img alt="" border="0" src="{% static '/static/images/news/mixxx-beta2.png' %}" id="BLOGGER_PHOTO_ID_5163354569270154498" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
 <br />
 We're proud to announce that the <span style="font-weight: bold;">second beta</span>
@@ -70,5 +66,3 @@ We're having some trouble sorting out this <span style="font-weight: bold;">JACK
 Once again, you can pick up Mixxx 1.6.0 beta 2 on our <a href="http://www.mixxx.org/download/">downloads page</a>
 , and be sure to report any bugs you find in our <a href="https://bugs.launchpad.net/mixxx/">bug tracker</a>
 . Your feedback from beta 1 helped us identify the big issues people were having, and helped us make this release even better - thank you!
-
-{% endblock %}

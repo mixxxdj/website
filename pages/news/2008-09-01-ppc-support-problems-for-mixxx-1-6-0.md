@@ -3,10 +3,6 @@ author: Adam Davison
 date: 2008-09-01 20:24:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 We've got some <span style="font-weight: bold;">bad news about the Mac PPC version of 1.6.0</span>
 . Due to a "communication error", I thought we had someone building a PPC release and it turns out that person was actually doing something completely different. Unfortunately, I also promised erroneously to some people on the forums that it would be ready very soon.<br />
 <br />
@@ -25,5 +21,3 @@ Adam<br />
 <br />
 <span style="font-weight: bold;">Update: </span>
 We've had several volunteers come forward, and we're working with them to get a PPC build working. How long this will take depends on how much time the volunteers have, so I don't a package very soon, but at least the gears are turning now. :) Thanks for your help!
-
-{% endblock %}

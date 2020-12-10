@@ -3,13 +3,6 @@ author: Be.
 date: 2019-12-09 16:25:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
-{% load markup %}
-{% filter markdown %}
-
 Mixxx 2.2.3 has been released. [Download it here.](http://downloads.mixxx.org/mixxx-2.2.3/)
 
 #### Changelog
@@ -30,6 +23,3 @@ Mixxx 2.2.3 has been released. [Download it here.](http://downloads.mixxx.org/mi
 - Enable modplug support on Linux by default lp:1840537 #2244 #2272
 - Fix keyboard shortcut for View > Skin Preferences lp:1851993 #2358 #2372
 - Reloop Terminal Mix: Fix mapping of sampler buttons 5-8 lp:1846966 #2330
-
-{% endfilter %}
-{% endblock %}

@@ -3,10 +3,6 @@ author: Albert
 date: 2008-09-26 23:27:00
 comments: no
 
-{% extends "post.html" %}
-
-{% block post %}
-
 Hot off the heels of our last release comes <a href="http://www.mixxx.org/download.php">Mixxx 1.6.1</a>
 , bringing a handful of new features and bug fixes. <br />
 <br />
@@ -29,5 +25,3 @@ Some of the more important changes are:<br />
 </ul>
 We've also had some mild success with M4A/AAC support, but it's still going to be a while before that feature makes it into a release unfortunately. We're also still working on our OS X 10.4 (Intel) package still, but we do have an unsupported <a href="http://downloads.mixxx.org/mixxx-1.6.1/mixxx-1.6.1-macppc.dmg">OS X 10.5 package for PPC available for download here</a>
 .
-
-{% endblock %}
