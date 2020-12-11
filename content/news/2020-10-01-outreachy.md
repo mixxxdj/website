@@ -1,6 +1,7 @@
 title: Mixxx Accepted to Outreachy. Please Donate!
 author: ywwg
 date: 2020-10-01 09:00:00
+summary: Mixxx is proud to announce that we have been officially accepted into the Outreachy program and are immediately raising funds to sponsor our first Intern for the December 2020 cycle!
 
 | US Dollar donations                                                                                                            | Euro donations
 | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
