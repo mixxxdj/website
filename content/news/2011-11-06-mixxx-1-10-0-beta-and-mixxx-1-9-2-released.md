@@ -189,7 +189,7 @@ We want to hear from you! Please&nbsp;<a href="https://spreadsheets.google.com/a
 ,&nbsp;<a href="https://bugs.launchpad.net/mixxx/+filebug">file a bug</a>
 ,&nbsp;<a href="mailto:feedback@mixxx.org">write us an email</a>
 , <a href="https://mixxx.org/forums/">post to the forums</a>
-, or <a href="{filename}/support.md">chat with us</a>
+, or <a href="{filename}/pages/support.md">chat with us</a>
 .<br />
 <br />
 <b>Standard Beta Disclaimer</b>

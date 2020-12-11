@@ -5,7 +5,7 @@ comments: no
 
 Over the past few years there have been multiple instances of sellers that distribute paid boxed versions of Mixxx on eBay and Amazon.
 While it's not illegal to do this per se, we are not affiliated with these sellers and neither earn money from this nor endorse this in any way.
-Instead, you can download the latest version of Mixxx from the [download page on our website]({filename}/download.md) for free.
+Instead, you can download the latest version of Mixxx from the [download page on our website]({filename}/pages/download.md) for free.
 
 If you want to support Mixxx financially, consider [donating](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QSFMYWN2B3JD2&source=url) - we'll appreciate it!
 
@@ -17,7 +17,7 @@ There is no "Pro Edition" or Premium version of Mixxx, even if it says so in the
 
 The Mixxx developers don't sell Mixxx, and if you "buy" Mixxx somewhere online you'll likely just get the free Mixxx version that the seller downloaded from our website and burned onto a CD.
 Even worse, some of these paid Mixxx versions might contain ads or malware according to Amazon reviews.
-Just use the free [download]({filename}/download.md) from our website to get the ad-free, malware-free, most recent version of Mixxx.
+Just use the free [download]({filename}/pages/download.md) from our website to get the ad-free, malware-free, most recent version of Mixxx.
 
 
 ### Mixxx is free as in freedom, not just free as in "free beer"
@@ -53,7 +53,7 @@ We dedicate our time to working Mixxx, because we believe in open-source and car
 In fact, all our currently active developers started out as regular Mixxx users — just like you.
 
 Do you want to contribute to Mixxx, too?
-[You can!]({filename}/get-involved.md)
+[You can!]({filename}/pages/get-involved.md)
 There are countless ways to get involved in the Mixxx community. You hack on Mixxx' code, create controller mappings, test new in-development features, improve Mixxx skins or design new ones, translate Mixxx into your language, write articles and make YouTube videos about Mixxx or help out newbies on [Zulip Chat](https://mixxx.zulipchat.com/) or [our forums](https://mixxx.org/forums/). Every little bit helps!
 
 Help us make Mixxx even more awesome than it already is!

@@ -19,7 +19,7 @@ comments: no
 <div style="text-align: left;">We're completely overwhelmed by the response - I don't think anyone saw this coming. We wanted to be in the Mac App Store to reach more users, and now we're reaching far more than we ever expected!</div>
 <div style="text-align: left;"><br />
 </div>
-<div style="text-align: left;">I'd like to thank our entire community of DJs, artists, and developers for their dedication and cooperation that have brought Mixxx this far. Without the devotion of <a href="{filename}/contact.md">many individuals</a>
+<div style="text-align: left;">I'd like to thank our entire community of DJs, artists, and developers for their dedication and cooperation that have brought Mixxx this far. Without the devotion of <a href="{filename}/pages/contact.md">many individuals</a>
 , Mixxx would not be the software it is today.<br />
 <br />
 <b>Feed a Hungry Mixxx Developer</b>

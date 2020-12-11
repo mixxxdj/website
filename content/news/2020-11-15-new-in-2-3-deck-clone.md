@@ -42,4 +42,4 @@ In this technique, the same track is played on two decks, but on the second deck
 
 While playing a track, sometimes it can be useful to preview an upcoming section of the song. This can be done using the deck clone feature by cloning the playing track to the another deck, seeking ahead, and listening via the cue output in your headphones.
 
-The examples here are just scratching the surface. There are many creative possibilities that the deck clone feature enables. This feature is included in Mixxx 2.3. [Download the beta]({filename}download.md) and play around with it today.
+The examples here are just scratching the surface. There are many creative possibilities that the deck clone feature enables. This feature is included in Mixxx 2.3. [Download the beta]({filename}/pages/download.md#unstable) and play around with it today.
