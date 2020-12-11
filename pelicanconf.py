@@ -22,6 +22,9 @@ STATIC_PATHS = [
 
 THEME = "theme"
 
+PAGE_URL = "{slug}/"
+PAGE_SAVE_AS = "{slug}/index.html"
+
 ARTICLE_URL = "news/{date:%Y-%m-%d}-{slug}.html"
 ARTICLE_SAVE_AS = "news/{date:%Y-%m-%d}-{slug}.html"
 PAGINATION_PATTERNS = (
@@ -31,16 +34,7 @@ PAGINATION_PATTERNS = (
 
 INDEX_SAVE_AS = "news/index.html"
 TEMPLATE_PAGES = {
-    "pages/index.html": "index.html",
-    "pages/contact.html": "contact.html",
-    "pages/download.html": "download.html",
-    "pages/features.html": "features.html",
-    "pages/screenshots.html": "screenshots.html",
-    "pages/discover.html": "discover.html",
-    "pages/get-involved.html": "get-involved.html",
     "pages/maintenance.html": "maintenance.html",
-    "pages/press.html": "press.html",
-    "pages/support.html": "support.html",
     "pages/error.html": "error.html",
 }
 
