@@ -25,8 +25,8 @@ THEME = "theme"
 PAGE_URL = "{slug}/"
 PAGE_SAVE_AS = "{slug}/index.html"
 
-ARTICLE_URL = "news/{date:%Y-%m-%d}-{slug}.html"
-ARTICLE_SAVE_AS = "news/{date:%Y-%m-%d}-{slug}.html"
+ARTICLE_URL = "news/{date:%Y-%m-%d}-{slug}"
+ARTICLE_SAVE_AS = "news/{date:%Y-%m-%d}-{slug}/index.html"
 PAGINATION_PATTERNS = (
     (1, "{url}", "{save_as}"),
     (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
