@@ -3,57 +3,47 @@ author: Albert
 date: 2008-05-27 18:52:00
 comments: no
 
-<center><a href="{static}/images/news/logo-mixxx.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/logo-mixxx.png" id="BLOGGER_PHOTO_ID_5167231204156825330" style="cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
-</a>
-</center>
-<br />
-<br />
-The Mixxx development team is proud to announce the release of <span style="font-weight: bold;">Mixxx 1.6.0 Beta 3</span>
- (<a href="http://www.mixxx.org/download/" style="font-weight: bold;">download</a>
-)!<br />
-<br />
-It's been 3 months since our last beta release, and in that time we've been busy fixing tons of bugs and sneaking in the occasional new feature. We put major effort into solving a few stability issues people encountered with our last beta, as well as fixing many other quirks. We'd like to thank all of our users who've been reporting bugs in our <a href="https://bugs.launchpad.net/mixxx/">bug tracker</a>
-, as your reports have saved us a great deal of time.<br />
-<br />
-Anyways, on with the juicy <span style="font-weight: bold;">changelog</span>
- since Beta 2:<br />
-<ul><li>Added BPM reading from MP3/OGG files which have it embedded in them (ID3), one of several enhancements by Martin Sakmar</li>
-<li>Various accuracy improvements to the BPM detection</li>
-<li>Added preliminary support for multiple inputs with vinyl control (consecutive channel pairs only - eg. 1/2 and 3/4)</li>
-<li>Support for the Hercules DJ Console RMX</li>
-<li>Hercules DJ Console MK2 bug fixes</li>
-<li>Support for the Hercules DJ Console Mac Edition</li>
-<li>Support for the Behringer BCD3000, including LEDs</li>
-<li>Support for the Akai MPD24</li>
-<li>Improvements to the vinyl emulation and pitch-independent time stretch sound quality</li>
-<li>LADSPA effects support is rapidly improving, but is not compiled in by default yet (scons ladspa=1)</li>
-<li>Finished adding recording support</li>
-<li>Performance improvements while using vinyl control</li>
-<li>Support for 96000 Hz samplerates with Serato vinyls</li>
-<li>Build flags are now cached automatically</li>
-<li>Improved flanger effect, thanks to <a href="http://www.jamendo.com/pl/album/21933">Enry</a>
-</li>
-<li><a href="https://github.com/mixxxdj/mixxx/wiki/configurable_cue_behaviour">Configurable cue behaviour</a>
-, which now defaults to CDJ-style cueing. (Thanks to Tom Care)</li>
-<li>Enabled realtime priority with ALSA, improves performance with Linux RT kernels.</li>
-<li style="font-weight: bold;">FLAC support<span style="font-weight: normal;"> for Linux and OS X users </span>
-<span style="font-weight: normal;">(much requested)</span>
-</li>
-<li>Tons and tons of bug fixes.</li>
-</ul>
-Mixxx 1.6.0 Beta 3 is available on our <a href="http://www.mixxx.org/download/" style="font-weight: bold;">downloads page</a>
-.<br />
-<br />
-The development of multiple-input soundcard support (with vinyl control) was made possible by <a href="http://www.echoaudio.com/" style="font-weight: bold;">Echo Digital Audio</a>
-. Echo makes <span style="font-style: italic;">very</span>
- nice professional soundcards, and their <a href="http://www.echoaudio.com/Products/FireWire/index.php" style="font-weight: bold;">AudioFire</a>
- line of cards are excellent FireWire solutions for DJs on-the-road and in the studio. I've been using one of their cards for development, and they work very well on Windows and OS X. Support for AudioFire cards on Linux is improving rapidly through the <a href="http://www.ffado.org/" style="font-weight: bold;">FFADO</a>
- project as well.<br />
-<br />
-We've also bundled some <span style="font-weight: bold;">free tracks</span>
- from <a href="http://www.ugress.com/" style="font-weight: bold;">Ugress</a>
- and <a href="http://www.myspace.com/carlocarosi" style="font-weight: bold;">Carlo Carosi</a>
- with this release. These tunes will give DJs something to mix right out-of-the-box, and we think you'll like them.<br />
-<br />
-For our next release, we're going to shift focus towards polishing the remaining rough edges and fixing the remaining critical bugs we find. Whether our next release will be a fourth beta or the 1.6.0 final release remains to be decided, as it depends mainly on how many critical bugs we find and how much time we have to fix them. If you want to <span style="font-weight: bold;">help us</span>
- fix bugs, please join us on IRC (#mixxx on Freenode) and we'd be glad to help you get started hacking Mixxx.
+[![Mixxx Logo]({static}/images/news/logo-mixxx.png)]({static}/images/news/logo-mixxx.png)
+
+The Mixxx development team is proud to announce the release of **Mixxx 1.6.0 Beta 3** ([download]({filename}/pages/download.md))!
+
+It's been 3 months since our last beta release, and in that time we've been busy fixing tons of bugs and sneaking in the occasional new feature.
+We put major effort into solving a few stability issues people encountered with our last beta, as well as fixing many other quirks.
+We'd like to thank all of our users who've been reporting bugs in our [bug tracker](https://bugs.launchpad.net/mixxx/), as your reports have saved us a great deal of time.
+
+Anyways, on with the juicy **changelog** since Beta 2:
+
+- Added BPM reading from MP3/OGG files which have it embedded in them (ID3), one of several enhancements by Martin Sakmar
+- Various accuracy improvements to the BPM detection
+- Added preliminary support for multiple inputs with vinyl control
+  (consecutive channel pairs only - eg. 1/2 and 3/4)
+- Support for the Hercules DJ Console RMX
+- Hercules DJ Console MK2 bug fixes
+- Support for the Hercules DJ Console Mac Edition
+- Support for the Behringer BCD3000, including LEDs
+- Support for the Akai MPD24
+- Improvements to the vinyl emulation and pitch-independent time stretch sound quality
+- LADSPA effects support is rapidly improving, but is not compiled in by default yet (`scons ladspa=1`)
+- Finished adding recording support
+- Performance improvements while using vinyl control
+- Support for 96000 Hz samplerates with Serato vinyls
+- Build flags are now cached automatically
+- Improved flanger effect, thanks to [Enry](http://www.jamendo.com/pl/album/21933)
+- [Configurable cue behaviour](https://github.com/mixxxdj/mixxx/wiki/configurable_cue_behaviour), which now defaults to CDJ-style cueing. (Thanks to Tom Care)
+- Enabled realtime priority with ALSA, improves performance with Linux RT kernels.
+- FLAC support for Linux and OS X users (much requested)
+- Tons and tons of bug fixes.
+
+Mixxx 1.6.0 Beta 3 is available on our [downloads page]({filename}/pages/download.md).
+
+The development of multiple-input soundcard support (with vinyl control) was made possible by [Echo Digital Audio](http://www.echoaudio.com/).
+Echo makes *very* nice professional soundcards, and their [AudioFire](http://www.echoaudio.com/Products/FireWire/index.php) line of cards are excellent FireWire solutions for DJs on-the-road and in the studio.
+I've been using one of their cards for development, and they work very well on Windows and OS X.
+Support for AudioFire cards on Linux is improving rapidly through the [FFADO](http://www.ffado.org/) project as well.
+
+We've also bundled some **free tracks** from [Ugress](http://www.ugress.com/) and [Carlo Carosi](http://www.myspace.com/carlocarosi) with this release.
+These tunes will give DJs something to mix right out-of-the-box, and we think you'll like them.
+
+For our next release, we're going to shift focus towards polishing the remaining rough edges and fixing the remaining critical bugs we find.
+Whether our next release will be a fourth beta or the 1.6.0 final release remains to be decided, as it depends mainly on how many critical bugs we find and how much time we have to fix them.
+If you want to **help us** fix bugs, please join us on IRC (#mixxx on Freenode) and we'd be glad to help you get started hacking Mixxx.

@@ -3,33 +3,20 @@ author: Albert
 date: 2009-12-30 21:06:00
 comments: no
 
-<div><br />
-</div>
-<a href="{static}/images/news/Picture-7.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/Picture-7.png" id="BLOGGER_PHOTO_ID_5422999176657239506" style="cursor: hand; cursor: pointer; display: block; height: 241px; margin: 0px auto 10px; text-align: center; width: 400px;" />
-</a>
-<br />
-<div style="text-align: center;">The Mixxx team is proud to announce the release of <b>Mixxx 1.7.2</b>
-!</div>
-<div style="text-align: left;"><br />
-</div>
-<div style="text-align: left;">This bugfix release addresses a number of issues that were discovered in 1.7.1, and is a recommended upgrade for all users.</div>
-<div><br />
-<div style="text-align: center;"><a href="http://www.mixxx.org/download/"><b>Download Now!</b>
-</a>
-</div>
-</div>
-<div><div><br />
-</div>
-<div>Some of the changes include:</div>
-<div><ul><li>Improved saving of ordered playlists</li>
-<li>Fixed MIDI support on OS X</li>
-<li>Optimize latency settings. This should improve compatibility with certain soundcards/APIs.</li>
-<li>Improved stability and error handling when loading certain songs.</li>
-</ul>
-<div><br />
-</div>
-<div>Mixxx 1.7.2 is available for Windows, Mac OS X, and Linux. <a href="http://www.mixxx.org/download.php">Download Mixxx and start DJing</a>
-!</div>
-<div></div>
-</div>
-</div>
+[![Screenshot of Mixxx 1.7.2]({static}/images/news/Picture-7.png)]({static}/images/news/Picture-7.png)
+
+The Mixxx team is proud to announce the release of **Mixxx 1.7.2** !
+
+This bugfix release addresses a number of issues that were discovered in 1.7.1, and is a recommended upgrade for all users.
+
+[**Download Now!**]({filename}/pages/download.md)
+
+Some of the changes include:
+
+-   Improved saving of ordered playlists
+-   Fixed MIDI support on OS X
+-   Optimize latency settings. This should improve compatibility with certain soundcards/APIs.
+-   Improved stability and error handling when loading certain songs.
+
+Mixxx 1.7.2 is available for Windows, Mac OS X, and Linux.
+[Download Mixxx and start DJing]({filename}/pages/download.md)!

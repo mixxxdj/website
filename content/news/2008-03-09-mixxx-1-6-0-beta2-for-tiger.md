@@ -3,12 +3,10 @@ author: Albert
 date: 2008-03-09 15:22:00
 comments: no
 
-<center><a href="{static}/images/news/Picture-3.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"><img alt="" border="0" src="{static}/images/news/Picture-3.png" id="BLOGGER_PHOTO_ID_5175771250043346146" style="cursor: hand; cursor: pointer; display: block; margin: 0px auto 10px; text-align: center;" />
-</a>
-</center>
-<br />
-Mixxx 1.6.0 Beta2 for OS X Tiger (Intel) has <a href="http://www.mixxx.org/download/">just been released</a>
-! After we released our Leopard package, most of the feedback we heard from Mac users was "make it work on Tiger". With this new package, Tiger users can now play around with our latest beta release too.<br />
-<br />
-If you're still running Tiger, you can pick up Mixxx 1.6.0 Beta2 on our <a href="http://www.mixxx.org/download/">downloads page</a>
-.
+[![Screenshot of Mixxx 1.6.0 on Mac OS X Tiger]({static}/images/news/Picture-3.png)]({static}/images/news/Picture-3.png)
+
+
+Mixxx 1.6.0 Beta2 for OS X Tiger (Intel) has [just been released]({filename}/pages/download.md)!
+After we released our Leopard package, most of the feedback we heard from Mac users was "make it work on Tiger". With this new package, Tiger users can now play around with our latest beta release too.
+
+If you're still running Tiger, you can pick up Mixxx 1.6.0 Beta2 on our [downloads page]({filename}/pages/download.md) .

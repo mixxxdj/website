@@ -3,39 +3,29 @@ author: RJ Ryan
 date: 2011-04-25 18:13:00
 comments: no
 
-The Summer of Code is upon us! Google has just <a href="http://socghop.appspot.com/gsoc/org/home/google/gsoc2011/mixxx">announced</a>
- which students Mixxx has accepted into the <span style="font-weight: bold; ">Google Summer of Code 2011</span>
- program. Students were competing for one of three slots awarded to Mixxx by Google. This year we received a high volume of applications from many skilled students which made the decision-making process very difficult.<div><br />
-<div><div>After over two weeks of deliberation, we're pleased to introduce our Google Summer of Code students for 2011:<br />
-<ul><li><b>Bill Good</b>
- from <b>Oklahoma State University</b>
- in the United States</li>
-<li><b>Bart Verstrynge</b>
- from <b>Katholieke Universiteit Leuven</b>
- in Belgium</li>
-<li><b>Qifan Xi</b>
- from the <b>University of Waterloo</b>
- in Canada</li>
-</ul>
-<div><div>Qifan Xi's project will involve building a <b>smarter search feature</b>
- into the library. For example, a context aware search could allow DJs to easily search for tracks that have similar BPMs to the song that's currently playing.</div>
-<div><br />
-</div>
-<div>Bart Verstrynge's project will be to build a <b>DJ session history</b>
- into the library, so that DJs can easily recall playlists of their past DJ sets. This would be useful for radio DJs who are required to document the music that they play and for DJs who wish to post their tracklists on the web.</div>
-<div><br />
-</div>
-<div>Bill Good will work to further decouple the Mixxx user interface from the <b>audio engine</b>
-. The goal will be to rework the boundary between these two parts of our codebase so that animations can be processed independently of audio, which lead to smoother animations and a more consistent user experience across different hardware.</div>
-</div>
-<div><br />
-</div>
-<div>We're very excited for Bill, Bart, and Qifan to work with us this summer. These projects each have the potential to add extra functionality and polish to Mixxx, and we're very grateful for Google's generosity in enabling this work. The 3 will be mentored by RJ Ryan, Tobias Rafreider, and Phil Whelan. Hopefully by the end of the summer we'll have some hot new features for you to play with!</div>
-<div><br />
-</div>
-<div>Meanwhile, the Mixxx team is working full-speed ahead on Mixxx 1.10, which we hope to release in May. At this point all the new features are complete and we're fixing bugs. Look for a beta release in the near future!</div>
-</div>
-</div>
-<div><br />
-</div>
-</div>
+The Summer of Code is upon us! Google has just [announced](http://socghop.appspot.com/gsoc/org/home/google/gsoc2011/mixxx) which students Mixxx has accepted into the **Google Summer of Code 2011** program.
+Students were competing for one of three slots awarded to Mixxx by Google. This year we received a high volume of applications from many skilled students which made the decision-making process very difficult.
+
+After over two weeks of deliberation, we're pleased to introduce our Google Summer of Code students for 2011:
+
+- **Bill Good** from **Oklahoma State University** in the United States
+- **Bart Verstrynge** from **Katholieke Universiteit Leuven** in Belgium
+- **Qifan Xi** from the **University of Waterloo** in Canada
+
+Qifan Xi's project will involve building a **smarter search feature** into the library.
+For example, a context aware search could allow DJs to easily search for tracks that have similar BPMs to the song that's currently playing.
+
+Bart Verstrynge's project will be to build a **DJ session history** into the library, so that DJs can easily recall playlists of their past DJ sets.
+This would be useful for radio DJs who are required to document the music that they play and for DJs who wish to post their tracklists on the web.
+
+Bill Good will work to further decouple the Mixxx user interface from the **audio engine**.
+The goal will be to rework the boundary between these two parts of our codebase so that animations can be processed independently of audio, which lead to smoother animations and a more consistent user experience across different hardware.
+
+We're very excited for Bill, Bart, and Qifan to work with us this summer.
+These projects each have the potential to add extra functionality and polish to Mixxx, and we're very grateful for Google's generosity in enabling this work.
+The 3 will be mentored by RJ Ryan, Tobias Rafreider, and Phil Whelan.
+Hopefully by the end of the summer we'll have some hot new features for you to play with!
+
+Meanwhile, the Mixxx team is working full-speed ahead on Mixxx 1.10, which we hope to release in May.
+At this point all the new features are complete and we're fixing bugs.
+Look for a beta release in the near future!
