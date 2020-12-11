@@ -2,16 +2,9 @@ title: Mixxx Accepted to Outreachy. Please Donate!
 author: ywwg
 date: 2020-10-01 09:00:00
 
-<table style="width:100%; border: 0"><tbody><tr><td>
-<div align="center">US Dollar donations</div><a href="https://opencollective.com/mixxx/contribute" target="_blank">
-  <img src="https://opencollective.com/mixxx/contribute/button@2x.png?color=blue" width=300 />
-</a>
-</td><td>
-<div align="center">Euro donations</div>
-<a href="https://www.gofundme.com/f/mixxx-dj-software-outreachy-internship/donate" target="_blank">
-  <img src="/static/images/gofundme_donate.png" width=300 />
-</a>
-</td></tr></tbody></table>
+| US Dollar donations                                                                                                            | Euro donations
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![Contribute on OpenCollective]({static}/images/news/opencollective_donate.png)](https://opencollective.com/mixxx/contribute) | [![Contribute on GoFundMe]({static}/images/news/gofundme_donate.png)](https://www.gofundme.com/f/mixxx-dj-software-outreachy-internship/donate)  |
 
 ### Realizing a More Diverse Community.
 
@@ -63,14 +56,6 @@ We are working with OpenCollective on reducing these overhead costs for future f
 GoFundMe's fees are optional, so it may be a better option for those who want to donate with Euros.
 This GoFundMe will only exist for the duration of this fundraiser, whereas OpenCollective will be a persistent platform for giving to Mixxx, and supports recurring donations.
 
-
-<table style="width:100%; border: 0"><tbody><tr><td>
-<div align="center">US Dollar donations</div><a href="https://opencollective.com/mixxx/contribute" target="_blank">
-  <img src="https://opencollective.com/mixxx/contribute/button@2x.png?color=blue" width=300 />
-</a>
-</td><td>
-<div align="center">Euro donations</div>
-<a href="https://www.gofundme.com/f/mixxx-dj-software-outreachy-internship/donate" target="_blank">
-  <img src="/static/images/gofundme_donate.png" width=300 />
-</a>
-</td></tr></tbody></table>
+| US Dollar donations                                                                                                            | Euro donations
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![Contribute on OpenCollective]({static}/images/news/opencollective_donate.png)](https://opencollective.com/mixxx/contribute) | [![Contribute on GoFundMe]({static}/images/news/gofundme_donate.png)](https://www.gofundme.com/f/mixxx-dj-software-outreachy-internship/donate)  |

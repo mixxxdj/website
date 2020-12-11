@@ -5,7 +5,7 @@ comments: no
 
 The Mixxx team is pleased announce the release of [**Mixxx 1.8.1**]({filename}/pages/index.md)!
 
-[![Screenshot of Mixxx 1.8]({static}/images/1.8/screenshots/default-1000x580.png)]({static}/images/1.8/screenshots/default-1000x580.png)
+[![Screenshot of Mixxx 1.8]({static}/images/news/1.8/screenshots/default-1000x580.png)]({static}/images/news/1.8/screenshots/default-1000x580.png)
 
 **Mixxx** is free, open source software for **performing live DJ mixes**.
 Developed by a diverse community of DJs, Mixxx is a complete replacement for a conventional "turntables and mixer" DJ setup, and is available for **Windows, Mac OS X, and Linux**.

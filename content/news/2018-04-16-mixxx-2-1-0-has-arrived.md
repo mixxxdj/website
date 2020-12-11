@@ -8,8 +8,8 @@ After more than two years of hard work, we are pleased to announce the release o
   <div style="font-family: times; font-variant-east-asian: normal; font-variant-numeric: normal; line-height: normal; margin: 0px;">
     <br />
     <div class="separator" style="clear: both; text-align: center;">
-      <a href="{static}/images/2.1/splash.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-        <img border="0" data-original-height="450" data-original-width="800" height="222" src="{static}/images/2.1/splash.png" width="400" />
+      <a href="{static}/images/news/2.1/splash.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+        <img border="0" data-original-height="450" data-original-width="800" height="222" src="{static}/images/news/2.1/splash.png" width="400" />
       </a>
     </div>
     <div class="separator" style="clear: both; text-align: center;">

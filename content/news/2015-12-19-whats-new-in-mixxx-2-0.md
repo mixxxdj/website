@@ -15,7 +15,7 @@ comments: no
   </p>
   <div style="clear: both;"></div>
 
-  <img class="center responsive" src="{static}/images/2.0/mixxx-tilt.jpg" width="879" style="margin-top: 50px; margin-bottom: 50px;">
+  <img class="center responsive" src="{static}/images/news/2.0/mixxx-tilt.jpg" width="879" style="margin-top: 50px; margin-bottom: 50px;">
 
   <!-- Resizable Skins -->
   <div class="halfbox_left">
@@ -26,13 +26,13 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <img class="responsive" width="400px" src="{static}/images/2.0/feature-resizeableskins.jpg" style="margin-left: 30px;">
+    <img class="responsive" width="400px" src="{static}/images/news/2.0/feature-resizeableskins.jpg" style="margin-left: 30px;">
   </div>
   <div style="clear: both;"></div>
 
   <!-- 4 Decks, Master Sync -->
   <div class="halfbox_left">
-    <img class="responsive" width="255px" src="{static}/images/2.0/feature-mastersync.png">
+    <img class="responsive" width="255px" src="{static}/images/news/2.0/feature-mastersync.png">
   </div>
   <div class="halfbox_right">
     <h2>4 Decks with Master Sync</h2>
@@ -66,13 +66,13 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <img class="responsive" width="400px" src="{static}/images/2.0/feature-effects.png">
+    <img class="responsive" width="400px" src="{static}/images/news/2.0/feature-effects.png">
   </div>
   <div style="clear: both;"></div>
 
   <!-- Harmonic Mixing / Key Detection -->
   <div class="halfbox_left">
-    <img class="responsive" width="300px" src="{static}/images/2.0/feature-keydetect.jpg" style="margin-left: 60px;">
+    <img class="responsive" width="300px" src="{static}/images/news/2.0/feature-keydetect.jpg" style="margin-left: 60px;">
   </div>
 
   <div class="halfbox_right">
@@ -92,14 +92,14 @@ comments: no
   </div>
 
   <div class="halfbox_right" style="margin-top: 30px;">
-    <img class="responsive" width="400px" src="{static}/images/2.0/feature-rgbwaveform.png">
+    <img class="responsive" width="400px" src="{static}/images/news/2.0/feature-rgbwaveform.png">
   </div>
 
   <div style="clear: both;"></div>
 
   <!-- 4 Mic / 4 Aux Inputs -->
   <div class="halfbox_left" style="margin-top: 30px;">
-    <img class="responsive" width="400px" src="{static}/images/2.0/feature-inputs.png">
+    <img class="responsive" width="400px" src="{static}/images/news/2.0/feature-inputs.png">
   </div>
 
   <div class="halfbox_right">
@@ -118,7 +118,7 @@ comments: no
     </p>
   </div>
   <div class="halfbox_right" style="margin-top: 30px;">
-    <img class="responsive" width="255px" src="{static}/images/2.0/feature-vinylpassthrough.png">
+    <img class="responsive" width="255px" src="{static}/images/news/2.0/feature-vinylpassthrough.png">
   </div>
   <div style="clear: both;"></div>
 
@@ -135,7 +135,7 @@ comments: no
     <p>
       Mixxx reads cover art from your tracks and displays it in the library, on your decks, and on the spinning vinyl widgets.
     </p>
-    <img class="responsive" width="350px" src="{static}/images/2.0/feature-coverart.png">
+    <img class="responsive" width="350px" src="{static}/images/news/2.0/feature-coverart.png">
   </div>
 
   <!-- Engine Improvements -->
@@ -163,7 +163,7 @@ comments: no
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <img class="responsive" width="360px" src="{static}/images/2.0/feature-library.jpg" style="margin-left: 60px;">
+    <img class="responsive" width="360px" src="{static}/images/news/2.0/feature-library.jpg" style="margin-left: 60px;">
   </div>
 
   <div class="halfbox_right">
@@ -202,7 +202,7 @@ comments: no
 
   <h2>Newly Supported DJ Controllers</h2>
   <div style="float: right">
-    <img class="responsive" width="500px" src="{static}/images/2.0/feature-newcontrollers.jpg" alt="Newly Supported Controllers in Mixxx 2.0">
+    <img class="responsive" width="500px" src="{static}/images/news/2.0/feature-newcontrollers.jpg" alt="Newly Supported Controllers in Mixxx 2.0">
   </div>
 
   <p>

@@ -15,7 +15,7 @@ comments: no
   </p>
   <div style="clear: both;"></div>
 
-  <img class="center responsive" width="880" style="margin-top: 50px; margin-bottom: 50px;" src="{static}/images/1.11/mixxx-tilt.png">
+  <img class="center responsive" width="880" style="margin-top: 50px; margin-bottom: 50px;" src="{static}/images/news/1.11/mixxx-tilt.png">
 
   <div class="halfbox_left">
     <h2>Vibrant Waveforms</h2>
@@ -28,13 +28,13 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <img class="responsive" src="{static}/images/1.11/feature-vibrantwaveform.png" style="margin-left: 30px;">
+    <img class="responsive" src="{static}/images/news/1.11/feature-vibrantwaveform.png" style="margin-left: 30px;">
   </div>
 
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <img class="responsive" src="{static}/images/1.11/feature-beatdetection.png">
+    <img class="responsive" src="{static}/images/news/1.11/feature-beatdetection.png">
   </div>
   <div class="halfbox_right">
     <h2>Next Generation Beat Detection</h2>
@@ -55,12 +55,12 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <img class="responsive" src="{static}/images/1.11/feature-sessionhistory.png">
+    <img class="responsive" src="{static}/images/news/1.11/feature-sessionhistory.png">
   </div>
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <img class="responsive" src="{static}/images/1.11/feature-previewdeck.png" style="margin-left: 60px;">
+    <img class="responsive" src="{static}/images/news/1.11/feature-previewdeck.png" style="margin-left: 60px;">
   </div>
 
   <div class="halfbox_right">
@@ -79,7 +79,7 @@ comments: no
   </div>
 
   <div class="halfbox_right" style="margin-top: 30px;">
-    <img class="responsive" src="{static}/images/1.11/feature-beatlooprolls.png">
+    <img class="responsive" src="{static}/images/news/1.11/feature-beatlooprolls.png">
   </div>
   <div style="clear: both;"></div>
 
@@ -94,7 +94,7 @@ comments: no
     <p>
       All sample decks now have sync buttons for automatic tempo and phase synchronization with the main decks.
     </p>
-    <img class="responsive" src="{static}/images/1.11/feature-samplerdeck.png">
+    <img class="responsive" src="{static}/images/news/1.11/feature-samplerdeck.png">
   </div>
 
   <div class="halfbox_right">
@@ -114,7 +114,7 @@ comments: no
     <h2>New Sample Grid Skin</h2>
   </div>
   <div style="text-align: center; margin-bottom: 100px;">
-    <img class="responsive" src="{static}/images/1.11/feature-samplegrid.png">
+    <img class="responsive" src="{static}/images/news/1.11/feature-samplegrid.png">
     <p>
       With 16 sample decks, this skin is perfect for radio DJs and advanced beat-jugglers alike.
     </p>
@@ -127,7 +127,7 @@ comments: no
   <div style="clear: both;"></div>
 
   <div class="halfbox_left">
-    <h2><img src="{static}/images/ic_library_itunes.png" class="feature_icon">Advanced Search</h2>
+    <h2><img src="{static}/images/news/ic_library_itunes.png" class="feature_icon">Advanced Search</h2>
     <p class="feature_indent"></p>
 
     The library search box is now capable of advanced queries to help you pinpoint that perfect track.
@@ -150,7 +150,7 @@ comments: no
   </div>
 
   <div class="halfbox_right">
-    <img class="responsive" src="{static}/images/1.11/feature-library.png" style="padding-top: 30px;">
+    <img class="responsive" src="{static}/images/news/1.11/feature-library.png" style="padding-top: 30px;">
     <b>Exportable Set Lists</b>
     <p>
       Set playlists can now be exported as text files, CUE files, and M3U playlists.
@@ -200,7 +200,7 @@ comments: no
 
   <h2>Newly Supported DJ MIDI Controllers</h2>
   <div style="float: right">
-    <img class="responsive" src="{static}/images/1.11/feature-newcontrollers.png" alt="Newly Supported Controllers in Mixxx 1.11">
+    <img class="responsive" src="{static}/images/news/1.11/feature-newcontrollers.png" alt="Newly Supported Controllers in Mixxx 1.11">
   </div>
 
   <p>
@@ -261,7 +261,7 @@ comments: no
     <b>Want to know if your DJ MIDI controller is supported in Mixxx?</b> Please check the <a href="/features/#full_specs">full technical specifications</a>.
   </div>
 
-  <img class="center responsive" src="{static}/images/1.11/feature-sampler2.png">
+  <img class="center responsive" src="{static}/images/news/1.11/feature-sampler2.png">
 
   <div style="clear: both;"></div>
 
