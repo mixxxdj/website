@@ -2,40 +2,38 @@
 
 {% block title %}{% trans %}News{% endtrans %}{% endblock %}
 
-{% block body %}
-<div class="docs-section container">
-  <h1>{% trans %}News and Announcements{% endtrans %}</h1>
+{% block content %}
+<h1>{% block content_title %}{% trans %}News and Announcements{% endtrans %}{% endblock %}</h1>
 
-  <div class="docs-section">
-    {% for article in articles_page.object_list %}
-    <article class="news">
-      <h4><a href="{{ SITE_URL }}/{{ article.url }}">{{ article.title }}</a></h4>
-      <p style="news-meta">
-        Posted on <time>{{ article.locale_date }}</time>
-        {% if article.authors %}
-        by
-        {% for author in article.authors[:-2] %}
-        <span class="author">{% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}</span>,
-        {% endfor %}
-        {% for author in article.authors[-2:-1] %}
-        <span class="author">{% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author }}{% endif %}</span> and
-        {% endfor %}
-        {% for author in article.authors[-1:] %}
-        <span class="author">
-        {% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author }}{% endif %}</span>
-        {% endfor %}
-        {% endif %}
-      </p>
+<div class="docs-section">
+  {% for article in articles_page.object_list %}
+  <article class="news">
+    <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
+    <p style="news-meta">
+      Posted on <time>{{ article.locale_date }}</time>
+      {% if article.authors %}
+      by
+      {% for author in article.authors[:-2] %}
+      <span class="author">{% if author.url %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}</span>,
+      {% endfor %}
+      {% for author in article.authors[-2:-1] %}
+      <span class="author">{% if author.url %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author }}{% endif %}</span> and
+      {% endfor %}
+      {% for author in article.authors[-1:] %}
+      <span class="author">
+      {% if author.url %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author }}{% endif %}</span>
+      {% endfor %}
+      {% endif %}
+    </p>
 
-      <p>{{ article.summary }}</p>
+    <p>{{ article.summary }}</p>
 
-      <a class="button button-secondary" href="{{ SITE_URL }}/{{ article.url }}">{% trans %}Read More{% endtrans %}</a>
-    </article>
-    {% endfor %}
-  </div>
-
-  {% if articles_page.has_other_pages() %}
-    {% include "pagination.html" %}
-  {% endif %}
+    <a class="button button-secondary" href="{{ SITEURL }}/{{ article.url }}">{% trans %}Read More{% endtrans %}</a>
+  </article>
+  {% endfor %}
 </div>
+
+{% if articles_page.has_other_pages() %}
+  {% include "pagination.html" %}
+{% endif %}
 {% endblock %}

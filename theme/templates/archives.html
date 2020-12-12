@@ -1,14 +1,73 @@
-{% extends "basearchives.html" %}
+{% extends "base.html" %}
 
 {% block title %}{{ SITENAME }} - News Archives{% endblock %}
 
-{% block content %}
-<h1>News Archives for {{ SITENAME }}</h1>
+{% block body %}
+<div class="container docs-section">
+  <h1>News Archives for {{ SITENAME }}</h1>
 
-<dl>
-{% for article in dates %}
-  <dt>{{ article.locale_date }}</dt>
-  <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+  <dl>
+  {% for article in dates %}
+    <dt>{{ article.locale_date }}</dt>
+    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+  {% endfor %}
+  </dl>
+</div>
+
+<div class="container docs-section">
+  {% if dates %}
+  <h2>News By Date</h2>
+  <div class="grid-container thirds">
+    {% set years = [] %}
+    {% set months = [] %}
+    {% for article in dates %}
+    {% set year = article.date.year %}
+    {% set month = article.date|strftime("%Y-%m") %}
+    {% if year not in years %}
+    {% if years %}
+    </dl>
+    {% endif %}
+    <dl>
+      <dt><a href="{{ SITEURL }}/news/archives/{{ year }}">{{ year }}</a></dt>
+    {% do years.append(year) %}
+    {% endif %}
+    {% if month not in months %}
+    <dd>
+      <a href="{{ SITEURL }}/news/archives/{{ year }}/{{ article.date|strftime("%m") }}">{{ article.date|strftime("%m") }}</a>
+    </dd>
+    {% do months.append(month) %}
+    {% endif %}
+    {% endfor %}
+    </dl>
+  </div>
+  {% endif %}
+
+  {% if authors and authors|length > 1 %}
+  <h2>News By Author</h2>
+  <div class="grid-container thirds">
+    {% for author, articles in authors %}
+    <div><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></div>
+    {% endfor %}
+    </p>
+  </div>
+  {% endif %}
+
+  {% if categories and category|length > 1 %}
+  <h2>News By Category</h2>
+  <div class="grid-container thirds">
+    {% for category, articles in categories %}
+    <div><a href="{{ SITEURL }}/{{ category.url }}">{{ category.name }}</a></div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if tags and tags|length > 1 %}
+  <h2>News By Tag</h2>
+  <div class="grid-container thirds">
+    {% for tag, articles in tags %}
+    <div><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></div>
+    {% endfor %}
+  </div>
+  {% endif %}
+<div>
 {% endblock %}
