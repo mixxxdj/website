@@ -1,6 +1,7 @@
 title: What's New in Mixxx 2.0
 authors: Owen Williams
 date: 2015-12-19 18:50:22
+summary: Three years in the making, we've added so many new features to Mixxx that we had to call it 2.0. As always, Mixxx 2.0 is available as a free upgrade for all existing Mixxx users.
 comments: no
 
 <div class="content">
