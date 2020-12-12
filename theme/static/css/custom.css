@@ -553,13 +553,58 @@ h6 a.headline-link {
 }
 
 .news-comments {
-    margin-top:2rem;
     border-top: 1px solid var(--border-color-softer);
     padding-top:2rem;
 }
 
 article.news + article.news {
     margin-top: 4rem;
+}
+
+
+@media (min-width: 600px) {
+    .docs-section.news-author {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+.author-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author-meta + .author-meta {
+    margin-top: 1em;
+}
+
+.author-meta > div {
+    display: flex;
+    align-items: center;
+}
+.author-meta .button {
+    margin: 0;
+}
+
+.author-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.author-desc {
+    font-size: small;
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 0.75em;
+}
+
+.author-social-link {
+    height: 0.9em;
 }
 
 .archievement {

@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% import "utils.html" as utils %}
+
+{% block title %}{{ SITENAME }} - Articles by {{ author }}{% endblock %}
+
+{% block content_title %}Articles by {{ author }}{% endblock %}
+
+{% block extra_content %}
+<div class="docs-section author-box">
+  {{ utils.author_box(author, more_button=False) }}
+</div>
+{% endblock %}

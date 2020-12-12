@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "utils.html" as utils %}
 
 {% block title %}{% trans %}{{title}}{% endtrans %}{% endblock %}
 
@@ -28,6 +29,14 @@
     </p>
     <div style="clear: both;"></div>
   </div>
+
+  {% if article.authors %}
+  <div class="docs-section author-box">
+    {% for author in article.authors %}
+      {{ utils.author_box(author) }}
+    {% endfor %}
+  </div>
+  {% endif %}
 
   {# Discourse Comments #}
   <div class="news-comments">

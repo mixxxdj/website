@@ -131,9 +131,81 @@ NAV_MENU = (
     ),
 )
 
+
+class AuthorMeta:
+    def __init__(self, description="", email="", github=""):
+        self.description = description
+        self.email = email
+        self.github = github
+
+
+AUTHOR_METADATA = {
+    "Mixxx Team": {
+        "github": "mixxxdj",
+        "url": "https://github.com/orgs/mixxxdj/people",
+        "email": "core-team@mixxx.org",
+        "description": "Mixxx DJ Software Development Team",
+    },
+    "Be.": {
+        "github": "Be-ing",
+        "email": "be@mixxx.org",
+        "description": "Mixxx Core Developer",
+    },
+    "Albert Santoni": {
+        "github": "asantoni",
+        "description": "Mixxx Core Developer",
+    },
+    "Jan Holthuis": {
+        "github": "Holzhaus",
+        "email": "jholthuis@mixxx.org",
+        "description": "Mixxx Core Developer",
+    },
+    "RJ Ryan": {
+        "github": "rryan",
+        "email": "rryan@mixxx.org",
+        "description": "Mixxx Core Developer",
+    },
+    "Pegasus": {
+        "github": "Pegasus-RPG",
+        "description": "Mixxx Core Developer",
+    },
+    "Owen Williams": {
+        "github": "ywwg",
+        "description": "Mixxx Core Developer",
+    },
+    "Uwe Klotz": {
+        "github": "uklotzde",
+        "description": "Mixxx Core Developer",
+    },
+    "April M. Crehan": {
+        "github": "ThisGrrrlFriday",
+        "email": "amcrehan@gmail.com",
+        "description": "Mixxx Supporter",
+    },
+    "Evan": {
+        "github": "ehendrikd",
+        "description": "Mixxx Contributor",
+    },
+    "Cristiano Lacerda": {
+        "github": "crisclacerda",
+        "description": "GSoC 2020 Student",
+    },
+}
+
+
+def get_author_meta(author):
+    author_dict = AUTHOR_METADATA.get(author.name, {})
+    return AuthorMeta(
+        description=author_dict.get("description"),
+        github=author_dict.get("github"),
+        email=author_dict.get("email"),
+    )
+
+
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
     "NAV_MENU": NAV_MENU,
+    "get_author_meta": get_author_meta,
 }
 JINJA_ENVIRONMENT = {
     "trim_blocks": True,

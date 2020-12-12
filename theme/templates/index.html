@@ -5,6 +5,8 @@
 {% block content %}
 <h1>{% block content_title %}{% trans %}News and Announcements{% endtrans %}{% endblock %}</h1>
 
+{% block extra_content %}{% endblock %}
+
 <div class="docs-section">
   {% for article in articles_page.object_list %}
   <article class="news">
