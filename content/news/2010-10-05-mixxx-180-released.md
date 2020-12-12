@@ -5,13 +5,13 @@ comments: no
 
 The Mixxx team is proud to announce the final release of **[Mixxx 1.8.0]({filename}/pages/index.md)**!
 
-[![Screenshot of Mixxx 1.8.0](%7Bstatic%7D/images/1.8/screenshots/default-1000x580.png)](%7Bstatic%7D/images/1.8/screenshots/default-1000x580.png)
+[![Screenshot of Mixxx 1.8.0]({static}/images/1.8/screenshots/default-1000x580.png)]({static}/images/1.8/screenshots/default-1000x580.png)
 
 **Mixxx** is *free*, open source software for **performing live DJ mixes**.
 Developed by a diverse community of DJs, Mixxx is a complete replacement for a conventional "turntables and mixer" DJ setup, and is available for **Windows, Mac OS X, and Linux**.
 
 
-[!["Deere" skin](%7Bstatic%7D/images/1.8/screenshots/deere-1264x700.png)](%7Bstatic%7D/images/1.8/screenshots/deere-1264x700.png)
+[!["Deere" skin]({static}/images/1.8/screenshots/deere-1264x700.png)]({static}/images/1.8/screenshots/deere-1264x700.png)
 
 *"Deere" skin, new in Mixxx 1.8.0*
 

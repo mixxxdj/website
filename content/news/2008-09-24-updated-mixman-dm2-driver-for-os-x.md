@@ -3,7 +3,7 @@ authors: Albert Santoni
 date: 2008-09-24 17:36:00
 comments: no
 
-[![Mixman DM2](https://www.mixman.com/products/images/dm2/dm2.gif)](http://www.mixman.com/products/images/dm2/dm2.gif) [Joe Mattiello](http://www.joemattiello.com) has updated his [MixMan DM2 driver for Mac OS X](http://www.joemattiello.com/dm2/).
+[Joe Mattiello](http://www.joemattiello.com) has updated his [MixMan DM2 driver for Mac OS X](http://www.joemattiello.com/dm2/).
 From his release announcement:
 
 
