@@ -8,7 +8,7 @@ comments: no
 <div>
   <div style="float: right; width: 370px; border: 1px solid #222; border-radius: 5px; margin-top: 0px; padding: 16px; margin-left: 70px; margin-right: 20px;">
     <h2 style="margin-top: 0px;">New to Mixxx?</h2>
-    Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix music live at your next party or club gig. <a href="/download">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux.
+    Mixxx is <b>free</b>, open source DJ software that gives you everything you need to DJ and mix music live at your next party or club gig. <a href="{filename}/pages/download.md">Download it today</a> and mix like a pro on Windows, Mac OS X, and Linux.
   </div>
 
   <h1>What's New in Mixxx 1.11?</h1>
@@ -87,7 +87,8 @@ comments: no
 
   <div class="gapfiller">
     <p style="text-align: center;">Like what you see? Download Mixxx for FREE and Start DJing:</p>
-    {% include "download_button.html" %}
+    <p style="text-align: center; font-size: x-large;"><a href="{filename}/pages/download.md">Download</a></p>
+</p>
   </div>
   <div style="clear: both;"></div>
 
@@ -268,8 +269,8 @@ comments: no
   <div style="clear: both;"></div>
 
   <div class="gapfiller">
-    <p class="center">Ready to Upgrade? Download Mixxx for FREE and Start DJing:</p>
-    {% include "download_button.html" %}
+    <p style="text-align: center;">Ready to Upgrade? Download Mixxx for FREE and Start DJing:</p>
+    <p style="text-align: center; font-size: x-large;"><a href="{filename}/pages/download.md">Download</a></p>
     <div style="clear: both;"></div>
   </div>
 </div>

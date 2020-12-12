@@ -127,7 +127,7 @@ comments: no
   <!-- Quit readin' and download already! -->
   <div class="gapfiller">
     <p style="text-align: center;">Like what you see? Download Mixxx for FREE and Start DJing:</p>
-    {% include "download_button.html" %}
+    <p style="text-align: center; font-size: x-large;"><a href="{filename}/pages/download.md">Download</a></p>
   </div>
   <div style="clear: both;"></div>
 
@@ -247,7 +247,7 @@ comments: no
 
   <div class="gapfiller">
     <p style="text-align: center;">Ready to Upgrade? Download Mixxx for FREE and Start DJing:</p>
-    {% include "download_button.html" %}
+    <p style="text-align: center; font-size: x-large;"><a href="{filename}/pages/download.md">Download</a></p>
     <div style="clear: both;"></div>
   </div>
 </div>
