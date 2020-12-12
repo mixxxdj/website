@@ -12,14 +12,14 @@
       {% if authors %}
       by
       {% for author in article.authors[:-2] %}
-      <span class="author">{% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span>,
+      <span class="author">{% if author.url %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span>,
       {% endfor %}
       {% for author in article.authors[-2:-1] %}
-      <span class="author">{% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span> and
+      <span class="author">{% if author.url %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span> and
       {% endfor %}
       {% for author in article.authors[-1:] %}
       <span class="author">
-      {% if author.url %}<a href="{{ SITE_URL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span>
+      {% if author.url %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</span>
       {% endfor %}
       {% endif %}
     </p>
