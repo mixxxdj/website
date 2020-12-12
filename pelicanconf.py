@@ -32,10 +32,15 @@ PAGINATION_PATTERNS = (
     (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
 )
 
+INDEX_URL = "news"
 INDEX_SAVE_AS = "news/index.html"
+ARCHIVES_URL = "news/archives"
 ARCHIVES_SAVE_AS = "news/archives/index.html"
-AUTHORS_SAVE_AS = "team/index.html"
+AUTHORS_URL = "news/authors"
+AUTHORS_SAVE_AS = "news/authors/index.html"
+CATEGORIES_URL = "news/category"
 CATEGORIES_SAVE_AS = "news/category/index.html"
+TAGS_URL = "news/tag"
 TAGS_SAVE_AS = "news/tag/index.html"
 
 YEAR_ARCHIVE_URL = "news/archives/{date:%Y}"
