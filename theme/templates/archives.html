@@ -1,0 +1,14 @@
+{% extends "basearchives.html" %}
+
+{% block title %}{{ SITENAME }} - News Archives{% endblock %}
+
+{% block content %}
+<h1>News Archives for {{ SITENAME }}</h1>
+
+<dl>
+{% for article in dates %}
+  <dt>{{ article.locale_date }}</dt>
+  <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+{% endfor %}
+</dl>
+{% endblock %}

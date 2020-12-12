@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container docs-section">
+  {% block content %}{% endblock %}
+</div>
+
+<div class="container docs-section">
+  <div class="grid-container halves u-align-left">
+    {% if dates %}
+    <div>
+      <strong>By Date</strong>
+      <p>
+      {% set years = [] %}
+      {% set months = [] %}
+      {% for article in dates %}
+      {% set year = article.date|strftime("%Y") %}
+      {% set month = article.date|strftime("%Y/%m") %}
+      {% if year not in years %}
+      {% if years %}
+      </dd>
+      {% endif %}
+      <dt><a href="{{ SITEURL }}/news/archives/{{ year }}">{{ year }}</a></dt>
+      <dd>
+      {% do years.append(year) %}
+      {% endif %}
+      {% if month not in months %}
+      <a href="{{ SITEURL }}/news/archives/{{ year }}/{{ article.date|strftime("%m") }}">{{ article.date|strftime("%m") }}</a>
+      {% do months.append(month) %}
+      {% endif %}
+      {% endfor %}
+      {% if years %}
+      </dd>
+      {% endif %}
+      </p>
+    </div>
+    {% endif %}
+
+    {% if authors %}
+    <div>
+      <strong>By Author</strong>
+      <p>
+      {% for author, articles in authors %}
+      <dt><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></dt>
+      {% endfor %}
+      </p>
+    </div>
+    {% endif %}
+
+    {% if categories %}
+    <div>
+      <strong>By Category</strong>
+      <p>
+      {% for category, articles in categories %}
+      <dt><a href="{{ SITEURL }}/{{ category.url }}">{{ category.name }}</a></dt>
+      {% endfor %}
+      </p>
+    </div>
+    {% endif %}
+
+    {% if tags %}
+    <div>
+      <strong>By Tags</strong>
+      <p>
+      {% for tag, articles in tags %}
+      <dt><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></dt>
+      {% endfor %}
+      </p>
+    </div>
+    {% endif %}
+  </div>
+<div>
+{% endblock %}

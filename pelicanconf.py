@@ -33,6 +33,26 @@ PAGINATION_PATTERNS = (
 )
 
 INDEX_SAVE_AS = "news/index.html"
+ARCHIVES_SAVE_AS = "news/archives/index.html"
+AUTHORS_SAVE_AS = "team/index.html"
+CATEGORIES_SAVE_AS = "news/category/index.html"
+TAGS_SAVE_AS = "news/tag/index.html"
+
+YEAR_ARCHIVE_URL = "news/archives/{date:%Y}"
+YEAR_ARCHIVE_SAVE_AS = "news/archives/{date:%Y}/index.html"
+
+MONTH_ARCHIVE_URL = "news/archives/{date:%Y}/{date:%m}"
+MONTH_ARCHIVE_SAVE_AS = "news/archives/{date:%Y}/{date:%m}/index.html"
+
+AUTHOR_URL = "team/{slug}"
+AUTHOR_SAVE_AS = "team/{slug}/index.html"
+
+CATEGORY_URL = "news/category/{slug}"
+CATEGORY_SAVE_AS = "news/category/{slug}/index.html"
+
+TAG_URL = "news/tag/{slug}"
+TAG_SAVE_AS = "news/tag/{slug}/index.html"
+
 TEMPLATE_PAGES = {
     "pages/maintenance.html": "maintenance.html",
     "pages/error.html": "error.html",
@@ -114,6 +134,7 @@ JINJA_ENVIRONMENT = {
     "trim_blocks": True,
     "lstrip_blocks": True,
     "extensions": [
+        "jinja2.ext.do",
         "jinja2.ext.i18n",
     ],
 }
