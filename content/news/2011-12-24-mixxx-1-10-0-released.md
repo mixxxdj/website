@@ -1,6 +1,7 @@
 title: Mixxx 1.10.0 Released!
 authors: RJ Ryan
 date: 2011-12-24 22:39:00
+tags: 1.10, 1.10.0, release announcement
 comments: no
 
 Happy holidays from the Mixxx development team.

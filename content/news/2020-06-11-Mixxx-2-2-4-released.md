@@ -1,6 +1,7 @@
 title: Mixxx 2.2.4 released
 authors: Jan Holthuis
 date: 2020-06-25 12:00:00
+tags: 2.2, 2.2.4, release announcement
 comments: no
 
 Mixxx 2.2.4 has been released.

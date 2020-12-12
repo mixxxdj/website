@@ -1,6 +1,7 @@
 title: Mixxx T-shirts - ORDER NOW!
 authors: Pegasus
 date: 2011-01-25 08:32:00
+tags: merchandise, tshirt
 comments: no
 
 A big thanks to everyone who voted in our T-shirt contest!

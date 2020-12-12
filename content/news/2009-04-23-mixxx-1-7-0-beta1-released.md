@@ -1,6 +1,7 @@
 title: Mixxx 1.7.0 Beta1 Released!
 authors: Albert Santoni
 date: 2009-04-23 09:00:00
+tags: 1.7, 1.7.0, beta, release announcement
 comments: no
 
 [![Screenshot of Mixxx 1.6.2]({static}/images/news/Picture-2.png)]({static}/images/news/Picture-2.png)

@@ -1,6 +1,7 @@
 title: Minor Website Revamp
 authors: Albert Santoni
 date: 2008-02-15 15:30:00
+tags: website
 comments: no
 
 [![Mixxx Logo]({static}/images/news/logo-mixxx.png)]({static}/images/news/logo-mixxx.png)

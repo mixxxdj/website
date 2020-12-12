@@ -1,6 +1,7 @@
 title: Progress towards 1.6.0
 authors: Albert Santoni
 date: 2008-06-21 18:49:00
+tags: 1.6, 1.6.0, development
 comments: no
 
 These last few weeks of development have been pretty exciting.

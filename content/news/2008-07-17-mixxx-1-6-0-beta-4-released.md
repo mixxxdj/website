@@ -1,6 +1,7 @@
 title: Mixxx 1.6.0 Beta 4 Released!
 authors: Albert Santoni
 date: 2008-07-17 17:17:00
+tags: 1.6, 1.6.0, beta, release announcement
 comments: no
 
 The Mixxx development team is proud to announce the **fourth beta** of **Mixxx 1.6.0**, the premiere open source DJ software. [Download!]({filename}/pages/download.md) )

@@ -1,6 +1,7 @@
 title: Mixxx 1.6.0 Beta2 for Tiger
 authors: Albert Santoni
 date: 2008-03-09 15:22:00
+tags: 1.6, 1.6.0, beta, macos, release announcement
 comments: no
 
 [![Screenshot of Mixxx 1.6.0 on Mac OS X Tiger]({static}/images/news/Picture-3.png)]({static}/images/news/Picture-3.png)

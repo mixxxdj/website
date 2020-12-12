@@ -1,6 +1,7 @@
 title: Mixxx accepted for GSoC 2020!
 authors: Jan Holthuis
 date: 2020-02-20 20:00:00
+tags: gsoc, gsoc-2020
 comments: no
 
 Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/organizations/6577142898360320/) for [Google Summer of Code 2020](https://summerofcode.withgoogle.com/), a global program that aims to bring more student developers into the world of open source development.

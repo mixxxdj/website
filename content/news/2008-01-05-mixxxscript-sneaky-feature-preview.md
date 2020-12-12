@@ -1,6 +1,7 @@
 title: MixxxScript - A Sneaky Feature Preview
 authors: Adam Davison
 date: 2008-01-05 16:42:00
+tags: development, hardware
 comments: no
 
 Although we're technically in the beta part of the release cycle, we've still been spending some time on features for future releases.

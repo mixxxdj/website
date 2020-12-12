@@ -1,6 +1,7 @@
 title: Mixxx 1.10.0 Beta and Mixxx 1.9.2 Released!
 authors: RJ Ryan
 date: 2011-11-06 20:41:00
+tags: 1.10, 1.10.0, 1.9, 1.9.2, release announcement, beta
 comments: no
 
 After a long hiatus, we're back! The Mixxx development team is pleased to announce the release of **Mixxx 1.10.0 Beta**  and **Mixxx 1.9.2!**

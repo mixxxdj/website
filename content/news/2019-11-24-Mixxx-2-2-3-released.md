@@ -1,6 +1,7 @@
 title: Mixxx 2.2.3 released
 authors: Be.
 date: 2019-12-09 16:25:00
+tags: 2.2, 2.2.3, release announcement
 comments: no
 
 Mixxx 2.2.3 has been released. [Download it here.](http://downloads.mixxx.org/mixxx-2.2.3/)

@@ -1,6 +1,7 @@
 title: Boston Mixxx Meetup -- Tonight at 9pm!
 authors: RJ Ryan
 date: 2011-05-04 18:40:00
+tags: community, event
 comments: no
 
 Calling all Boston-area Mixxxers -- tonight we're hosting an impromptu Mixxx user meetup care of the Redhat conference that's in town this week.

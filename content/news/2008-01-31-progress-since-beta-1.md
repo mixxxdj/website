@@ -1,6 +1,7 @@
 title: Progress since Beta 1
 authors: Albert Santoni
 date: 2008-01-31 22:12:00
+tags: 1.6, 1.6.0, beta, development
 comments: no
 
 [![Sceenshot of Mixxx 1.6.0beta2]({static}/images/news/Screenshot-Mixxx-1.6.0beta2.png)]({static}/images/news/Screenshot-Mixxx-1.6.0beta2.png)

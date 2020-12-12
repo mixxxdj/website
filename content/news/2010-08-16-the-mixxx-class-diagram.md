@@ -1,6 +1,7 @@
 title: The Mixxx Class Diagram
 authors: Albert Santoni
 date: 2010-08-16 04:59:00
+tags: 1.8, 1.8.0, development
 comments: no
 
 [![Mixxx class diagram]({static}/images/news/lolclassdiagram.png)]({static}/images/news/lolclassdiagram.png)

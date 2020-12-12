@@ -1,6 +1,7 @@
 title: Mixxx 2.2 released
 authors: Be.
 date: 2018-12-24 18:07:00
+tags: 2.2, 2.2.0, release announcement
 comments: no
 
 Mixxx 2.2.0 has been released, [download it!](https://mixxx.org/download/) Since we are now releasing Mixxx more often, the changes are not as big as between Mixxx 2.0 and Mixxx 2.1. Here is a quick overview of the changes since Mixxx 2.1:

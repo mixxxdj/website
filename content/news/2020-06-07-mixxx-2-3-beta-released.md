@@ -1,6 +1,7 @@
 title: Mixxx 2.3 beta released
 authors: Be.
 date: 2020-06-07 01:00:00
+tags: 2.3, release announcement
 comments: no
 
 We are proud to announce the release of Mixxx 2.3 beta, [download it!]({filename}/pages/download.md#unstable) This release brings hotcue colors & labels, Serato metadata import, Rekordbox metadata import, intro & outro cues, a revamped LateNight skin, multithreaded analysis, deck cloning, and more.

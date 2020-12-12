@@ -1,6 +1,7 @@
 title: Mixxx 1.6.1 Released!
 authors: Albert Santoni
 date: 2008-09-26 23:27:00
+tags: 1.6, 1.6.1, release announcement
 comments: no
 
 Hot off the heels of our last release comes [Mixxx 1.6.1]({filename}/pages/download.md), bringing a handful of new features and bug fixes.

@@ -1,6 +1,7 @@
 title: Mixxx in Google Summer of Code 2012!
 authors: Albert Santoni
 date: 2012-03-16 20:03:00
+tags: gsoc, gsoc-2012
 comments: no
 
 [![GSoc 2012 Logo]({static}/images/news/gsoc-2012-logo-color.png){width="400" height="202"}](http://www.google-melange.com/gsoc/homepage/google/gsoc2012)

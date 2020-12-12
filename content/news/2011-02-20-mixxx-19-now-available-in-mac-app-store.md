@@ -1,6 +1,7 @@
 title: Mixxx Debuts as #1 Free App in the Mac App Store
 authors: Albert Santoni
 date: 2011-02-20 05:43:00
+tags: macos, mixxx in the wild
 comments: no
 
 [![Mixxx #1 Free App in Mac App Store]({static}/images/news/mixxx-1st-macappstore-Screen-shot-2011-02-19-at-11.29.58-AM.png)]({static}/images/news/mixxx-1st-macappstore-Screen-shot-2011-02-19-at-11.29.58-AM.png)

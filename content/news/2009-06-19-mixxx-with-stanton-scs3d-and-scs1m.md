@@ -1,6 +1,7 @@
 title: Mixxx with the Stanton SCS.3d and SCS.1m
 authors: Albert Santoni
 date: 2009-06-19 16:37:00
+tags: hardware, video
 comments: no
 
 Sean Pappalardo's been busy again, this time working on support for the Stanton SCS.1m and improving our existing support for the SCS.3d. In this first video, Sean explains some of the neat features he's coded like fader-start, real-time feedback using the SCS.1m LED digit displays, and lots of other bells and whistles.<br />

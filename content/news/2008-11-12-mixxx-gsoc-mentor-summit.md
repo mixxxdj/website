@@ -1,6 +1,7 @@
 title: Mixxx @ GSoC Mentor Summit
 authors: Adam Davison
 date: 2008-11-12 19:08:00
+tags: gsoc, gsoc-2008
 summary: Three of the Mixxx development team recently attended the Google Summer of Code Mentor Summit. For those of you who don't know, GSoC is a programme where Google funds students to spend their Summers working on open source software.
 comments: no
 

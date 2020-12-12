@@ -2,6 +2,7 @@ title: What's New in Mixxx 1.11
 authors: Albert Santoni
 date: 2013-02-18 00:14:33
 summary: Take your DJing to the next level. Mixxx 1.11 adds dozens of powerful new features for the pro DJ. And as always, Mixxx 1.11 is available as a free upgrade for all existing Mixxx users.
+tags: 1.11, 1.11.0
 comments: no
 
 <div>

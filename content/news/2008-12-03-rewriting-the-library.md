@@ -1,6 +1,7 @@
 title: Rewriting the Library
 authors: Albert Santoni
 date: 2008-12-03 01:03:00
+tags: 1.6, development, library
 comments: no
 
 *This developer commentary explains the trials and tribulations of Mixxx's library code, and what the Mixxx developers are doing to improve it.*

@@ -1,6 +1,7 @@
 title: Google Summer of Code 2007 and Mixxx
 authors: Albert Santoni
 date: 2007-08-10 00:10:00
+tags: gsoc, gsoc-2007
 comments: no
 
 For those who aren't familiar with [Mixxx](http://mixxx.sf.net/), it's a program that allows DJs to do live beatmixing of music.

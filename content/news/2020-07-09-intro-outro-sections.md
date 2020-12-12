@@ -1,5 +1,6 @@
 title: New In 2.3: Intro & Outro Cues, Silence Detection, and AutoDJ Improvements
 authors: Be.
+tags: 2.3
 date: 2020-07-09 01:00:00
 
 Do you use hotcues to mark the points you use to mix in and out of tracks? Have you wished AutoDJ knew to mix in and out at those points?

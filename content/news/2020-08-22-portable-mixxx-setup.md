@@ -1,5 +1,6 @@
 title: Guest Article: DJ on the fly with Mixxx and Raspberry Pi
 authors: dennis
+tags: mixxx in the wild, raspberry pi
 date: 2020-08-22 12:00:00
 
 *One of the things that make Mixxx special is that it works on more platforms that just Windows or macOS.*

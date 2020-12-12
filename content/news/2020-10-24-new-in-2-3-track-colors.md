@@ -1,5 +1,6 @@
 title: New in 2.3: Colorize your Tracks!
 authors: Jan Holthuis
+tags: 2.3, library
 date: 2020-10-24 12:00:00
 
 As a DJ your most important job is to find and cue the track you're going to play next to make the crowd go wild.

@@ -1,6 +1,7 @@
 title: Google Summer of Code 2008 Projects
 authors: Albert Santoni
 date: 2008-04-21 14:00:00
+tags: gsoc, gsoc-2008
 comments: no
 
 Today, Google <a href="http://code.google.com/soc/2008/">announced</a>

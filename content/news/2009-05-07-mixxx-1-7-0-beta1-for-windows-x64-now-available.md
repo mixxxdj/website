@@ -1,6 +1,7 @@
 title: Mixxx 1.7.0 Beta1 for Windows x64 Now Available!
 authors: Albert Santoni
 date: 2009-05-07 14:43:00
+tags: 1.7, 1.7.0, beta, windows, release announcement
 comments: no
 
 The Mixxx team is pleased to announce the availability of a 64-Bit version of Mixxx 1.7.0 Beta1 for Windows.

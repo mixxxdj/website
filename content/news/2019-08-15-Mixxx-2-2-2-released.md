@@ -1,6 +1,7 @@
 title: Mixxx 2.2.2 released
 authors: Uwe Klotz
 date: 2019-08-15 07:06:00
+tags: 2.2, 2.2.2, release announcement
 comments: no
 
 Mixxx 2.2.2 has been released and is available on the [download](https://www.mixxx.org/download/) page.

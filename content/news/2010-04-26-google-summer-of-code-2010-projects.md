@@ -1,6 +1,7 @@
 title: Google Summer of Code 2010 Projects
 authors: Albert Santoni
 date: 2010-04-26 11:30:00
+tags: gsoc, gsoc-2010
 comments: no
 
 [The results are in](http://socghop.appspot.com/gsoc/org/home/google/gsoc2010/mixxx)!

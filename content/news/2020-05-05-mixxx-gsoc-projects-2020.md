@@ -1,6 +1,7 @@
 title: Announcing our Google Summer of Code Projects 2020
 authors: Jan Holthuis
 date: 2020-05-05 01:00:00
+tags: gsoc, gsoc-2020
 comments: no
 
 Mixxx is participating in this year's [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/), an opportunity for students to work on Mixxx full-time as a 3-month summer project and receive a stipend from Google.

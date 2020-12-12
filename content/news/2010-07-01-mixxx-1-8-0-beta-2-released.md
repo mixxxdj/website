@@ -1,6 +1,7 @@
 title: Mixxx 1.8.0 Beta 2 Released!
 authors: Albert Santoni
 date: 2010-07-01 05:40:00
+tags: 1.8, 1.8.0, beta, release announcement
 comments: no
 
 The Mixxx team is pleased to announce the second beta of **Mixxx 1.8.0**!

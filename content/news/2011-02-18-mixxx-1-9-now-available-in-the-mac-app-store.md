@@ -1,6 +1,7 @@
 title: Mixxx 1.9 Now Available in the Mac App Store
 authors: Albert Santoni
 date: 2011-02-18 07:06:00
+tags: 1.9, 1.9.0, macos
 comments: no
 
 [![Appstore]({static}/images/news/mixxx-appstore.png)](http://itunes.apple.com/us/app/mixxx/id413756578?mt=12&ls=1)

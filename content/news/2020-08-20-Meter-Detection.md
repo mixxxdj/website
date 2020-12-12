@@ -1,5 +1,6 @@
 title: GSoC 2020: Adding Experimental Meter Detection
 authors: Cristiano Lacerda
+tags: gsoc, gsoc-2020, analyzer
 date: 2020-08-20 12:00:00
 
 One of the parts where Mixxx is lacking is how it handles time signatures and downbeats.

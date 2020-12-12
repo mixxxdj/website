@@ -1,6 +1,7 @@
 title: Drag and Drop, Downloads, and SCS.3d Videos
 authors: Albert Santoni
 date: 2010-07-12 05:12:00
+tags: 1.8, 1.8.0, 1.7, 1.7.2, windows, hardware, video, mixxx in the wild
 comments: no
 
 **Busy week!**

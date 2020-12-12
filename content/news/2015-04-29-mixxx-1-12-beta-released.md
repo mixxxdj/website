@@ -1,6 +1,7 @@
 title: Mixxx 1.12 Beta Released!
 authors: RJ Ryan
 date: 2015-04-29 03:12:00
+tags: 1.12, beta, release announcement
 comments: no
 
 Hi Mixxxers -- did you miss us? The Mixxx team has been quietly toiling for <b>over 2 years</b>

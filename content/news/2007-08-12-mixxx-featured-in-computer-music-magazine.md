@@ -1,6 +1,7 @@
 title: Mixxx featured in Computer Music magazine
 authors: Albert Santoni
 date: 2007-08-12 18:39:00
+tags: media coverage
 comments: no
 
 [![Mixxx on the Cover of the "Computer Music" Magazine]({static}/images/news/CMUS24.cover.zoom.jpg)]({static}/images/news/CMUS24.cover.zoom.jpg)

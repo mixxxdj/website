@@ -1,6 +1,7 @@
 title: Mixxx T-shirt contest until Dec 15!
 authors: Pegasus
 date: 2010-11-17 08:14:00
+tags: merchandise, tshirt, contest
 comments: no
 
 [![Mixxx T-Shirts]({static}/images/news/tshirtsmall.jpeg)]({static}/images/news/tshirtsmall.jpeg)

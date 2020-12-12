@@ -1,6 +1,7 @@
 title: More Mixxx Videos
 authors: Albert Santoni
 date: 2008-02-26 15:31:00
+tags: mixxx in the wild, video
 comments: no
 
 There's been some cool new Mixxx videos posted on YouTube this month. First up is Trinity's <a href="http://www.indamixx.com">Indamixx</a>

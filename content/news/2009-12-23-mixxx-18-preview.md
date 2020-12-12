@@ -1,6 +1,7 @@
 title: Mixxx 1.8 Preview
 authors: Albert Santoni
 date: 2009-12-23 21:56:00
+tags: 1.8, 1.8.0, development
 comments: no
 
 After many months of planning and development, we're finally

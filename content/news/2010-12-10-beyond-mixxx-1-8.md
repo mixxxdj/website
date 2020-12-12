@@ -1,6 +1,7 @@
 title: Beyond Mixxx 1.8
 authors: Philip "Madjester" Whelan
 date: 2010-12-10 03:18:00
+tags: 1.8, 1.9, 1.10, development
 comments: no
 
 Mixxx 1.8 was a big step ahead, bringing new features like hot cues, looping, and a brand new library, but as we speak, **many other new features** are being developed behind the scenes.

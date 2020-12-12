@@ -1,6 +1,7 @@
 title: Indamixx Handheld Available
 authors: Albert Santoni
 date: 2008-07-21 23:56:00
+tags: hardware, mixxx in the wild
 comments: no
 
 [![Trinity Audio Indamixx]({static}/images/news/screens.mixx.CMYK.gif)]({static}/images/news/screens.mixx.CMYK.gif)

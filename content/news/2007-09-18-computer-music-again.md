@@ -1,6 +1,7 @@
 title: Computer Music... again!
 authors: Albert Santoni
 date: 2007-09-18 16:36:00
+tags: media coverage, interview
 comments: no
 
 The September issue of [Computer Music](http://computermusic.co.uk/) magazine features Mixxx again, this time in a half-page blurb which includes an interview with **Adam Davison** about some of the challenges we've faced and where Mixxx is headed.

@@ -1,6 +1,7 @@
 title: Google Summer of Code 2012 Projects!
 authors: RJ Ryan
 date: 2012-04-23 19:00:00
+tags: gsoc, gsoc-2012
 comments: no
 
 [![GSoC 2012]({static}/images/news/gsoc-2012-logo-color.png)]({static}/images/news/gsoc-2012-logo-color.png)

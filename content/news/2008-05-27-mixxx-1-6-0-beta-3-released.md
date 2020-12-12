@@ -1,6 +1,7 @@
 title: Mixxx 1.6.0 Beta 3 Released!
 authors: Albert Santoni
 date: 2008-05-27 18:52:00
+tags: 1.6, 1.6.0, beta, release announcement
 comments: no
 
 [![Mixxx Logo]({static}/images/news/logo-mixxx.png)]({static}/images/news/logo-mixxx.png)

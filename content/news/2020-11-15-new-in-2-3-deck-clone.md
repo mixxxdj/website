@@ -1,5 +1,6 @@
 title: New in 2.3: Deck Cloning
 authors: Matthew Nicholson
+tags: 2.3
 date: 2020-11-15 13:36:00
 
 Deck cloning (also called "instant doubles" in some other DJ software) is a highly anticipated feature added in Mixxx 2.3. In short, it does what it says on the tin. When activated, the currently loaded song, playback state, pitch adjustment, and any playing loop will be cloned from one deck to another. This opens up a number of creative mixing possibilities, some of which we will explore below.

@@ -1,6 +1,7 @@
 title: Effects Progress
 authors: Albert Santoni
 date: 2008-11-24 07:05:00
+tags: 1.6, development, effects
 comments: no
 
 Since the 1.6.1 release, we've been hard at work integrating several new features that have been in the works for a while.

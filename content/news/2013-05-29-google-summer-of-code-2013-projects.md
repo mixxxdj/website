@@ -1,6 +1,7 @@
 title: Google Summer of Code 2013 Projects!
 authors: RJ Ryan
 date: 2013-05-29 22:14:00
+tags: gsoc, gsoc-2013
 comments: no
 
 <div class="separator" style="clear: both; text-align: center;"><a href="{static}/images/news/image00.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="212" src="{static}/images/news/image00.jpg" width="400" />

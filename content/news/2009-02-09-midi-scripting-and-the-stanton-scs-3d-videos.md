@@ -1,6 +1,7 @@
 title: MIDI Scripting and the Stanton SCS.3d (Videos)
 authors: Albert Santoni
 date: 2009-02-09 16:25:00
+tags: hardware, videos, midi, development
 comments: no
 
 [![Stanton SCS.3d]({static}/images/news/scs3d.jpg)]({static}/images/news/scs3d.jpg)

@@ -1,6 +1,7 @@
 title: Hercules DJ Control MP3 in Linux
 authors: Albert Santoni
 date: 2008-01-15 04:21:00
+tags: hardware
 comments: no
 
 [![Hercules DJ Control MP3]({static}/images/news/hercules-dj-control-mp3.jpg)]({static}/images/news/hercules-dj-control-mp3.jpg)

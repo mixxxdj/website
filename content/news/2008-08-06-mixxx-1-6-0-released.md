@@ -1,6 +1,7 @@
 title: Mixxx 1.6.0 Released!
 authors: Albert Santoni
 date: 2008-08-06 11:00:00
+tags: 1.6, 1.6.0, release announcement
 comments: no
 
 The Mixxx team is proud to announce the final release of **Mixxx 1.6.0** !

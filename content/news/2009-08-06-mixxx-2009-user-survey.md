@@ -1,6 +1,7 @@
 title: Mixxx 2009 User Survey
 authors: Albert Santoni
 date: 2009-08-06 18:11:00
+tags: community, survey
 comments: no
 
 [![Screenshot of Mixxx 1.7.2]({static}/images/news/Picture-7.png)](https://spreadsheets.google.com/a/mixxx.org/viewform?hl=en&formkey=dE1WUzViMmRGOW40NHh1Wkd1dWRtc0E6MA..)

@@ -1,6 +1,7 @@
 title: November Update
 authors: Albert Santoni
 date: 2007-11-30 15:24:00
+tags: 1.6, development, library
 comments: no
 
 The last month has been completely insane.

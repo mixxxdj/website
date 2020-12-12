@@ -1,6 +1,7 @@
 title: Mixxx 1.6.0 Running on OS X
 authors: Albert Santoni
 date: 2007-10-24 02:23:00
+tags: 1.6, 1.6.0, macos
 comments: no
 
 I picked up a Macbook a few days ago after weeks of trying to find a decent laptop.

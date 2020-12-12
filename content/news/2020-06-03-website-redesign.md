@@ -1,6 +1,7 @@
 title: Website Redesign
 authors: Jan Holthuis
 date: 2020-06-03 01:00:00
+tags: website
 comments: no
 
 As you probably already noticed we facelifted our Website, gave it a more modern look and cleaned up the code.

@@ -1,6 +1,7 @@
 title: Mixxx 1.8.0 Released!
 authors: Albert Santoni
 date: 2010-10-05 07:24:00
+tags: 1.8, 1.8.0, release announcement
 comments: no
 
 The Mixxx team is proud to announce the final release of **[Mixxx 1.8.0]({filename}/pages/index.md)**!

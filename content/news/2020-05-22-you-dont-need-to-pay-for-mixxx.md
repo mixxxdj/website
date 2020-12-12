@@ -1,6 +1,7 @@
 title: You don't need to pay for Mixxx!
 authors: Jan Holthuis
 date: 2020-05-22 13:00:00
+tags: license, contribute
 comments: no
 
 Over the past few years there have been multiple instances of sellers that distribute paid boxed versions of Mixxx on eBay and Amazon.

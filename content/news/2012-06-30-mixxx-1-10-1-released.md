@@ -1,6 +1,7 @@
 title: Mixxx 1.10.1 Released!
 authors: RJ Ryan
 date: 2012-06-30 00:38:00
+tags: 1.10, 1.10.1, release announcement
 comments: no
 
 Today we are pleased to announce **Mixxx 1.10.1**, our latest stable release.

@@ -1,6 +1,7 @@
 title: Google Summer of Code 2007 Mentors Summit
 authors: Adam Davison
 date: 2007-10-19 19:31:00
+tags: gsoc, gsoc-2007
 comments: no
 
 Two weeks ago, Albert Santoni (gamegod) and myself (Adam Davison) were at a conference at Google wrapping up the [Google Summer of Code](http://code.google.com/soc/2007/) programme.

@@ -1,6 +1,7 @@
 title: Looking for a Community Coordinator
 authors: Albert Santoni
 date: 2008-12-17 23:46:00
+tags: community
 comments: no
 
 **Are you a creative Mixxx enthusiast?** Would you like volunteer with the project, but don't know how to code?  If so, we might have found the role for you - We are officially looking for a **Mixxx Community Coordinator** .

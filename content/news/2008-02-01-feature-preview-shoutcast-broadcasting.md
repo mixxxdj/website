@@ -1,6 +1,7 @@
 title: Feature Preview: Shoutcast Broadcasting
 authors: Albert Santoni
 date: 2008-02-01 15:40:00
+tags: development, broadcasting
 comments: no
 
 One of our newer contributors, **[Wesley Stessens**](http://wesley.debianbox.be/), has been hard at work on Shoutcast/Icecast broadcasting support for [Mixxx](http://mixxx.sf.net/).

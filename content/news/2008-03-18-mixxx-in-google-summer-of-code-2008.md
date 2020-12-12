@@ -1,6 +1,7 @@
 title: Mixxx in Google Summer of Code 2008!
 authors: Albert Santoni
 date: 2008-03-18 04:48:00
+tags: gsoc, gsoc-2008
 comments: no
 
 [![GSoC]({static}/images/news/gsoc.png)]({static}/images/news/gsoc.png)

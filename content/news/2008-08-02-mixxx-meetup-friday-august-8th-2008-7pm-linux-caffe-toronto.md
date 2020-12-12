@@ -1,6 +1,7 @@
 title: Mixxx Meetup – Friday, August 8th 2008 7pm @ Linux Caffe Toronto
 authors: GED
 date: 2008-08-02 14:00:00
+tags: community, event
 comments: no
 
 Mixxxers, all your hard work is about to pay off, we're about to release our first major update in more then a year and that means it's party time.<br />

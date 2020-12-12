@@ -1,6 +1,7 @@
 title: Mixxx at Cheap as Chips 2008
 authors: Albert Santoni
 date: 2008-03-12 00:19:00
+tags: mixxx in the wild
 comments: no
 
 **Mixxx** was spotted last Sunday at the [Cheap as Chips](http://www.christchurchmusic.org.nz/content/festivals-4) music festival in Christchurch, New Zealand. [DJ Kid 90](http://www.myspace.com/kid90nz) dropped "a set of lush kiwi tunes to 10,000ish people", and was looking quite slick with his MacBook.

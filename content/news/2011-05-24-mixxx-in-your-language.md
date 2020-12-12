@@ -1,6 +1,7 @@
 title: Mixxx in Your Language!
 authors: RJ Ryan
 date: 2011-05-24 15:29:00
+tags: 1.10, 1.10.0, translations
 comments: no
 
 Do you want Mixxx translated into your language?

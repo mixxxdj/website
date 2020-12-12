@@ -1,6 +1,7 @@
 title: Hercules releases GPL Linux MIDI drivers & Mixxx 1.6.1+Herc is released
 authors: GED
 date: 2009-02-19 02:03:00
+tags: 1.6, 1.6.1, hardware, development, release announcement
 comments: no
 
 On Feb 16th, Hercules released GPL [Linux MIDI drivers](http://ts.hercules.com/eng/index.php?pg=view_files&gid=2&fid=28&pid=215&cid=1#section1) for their DJ Console / DJ Control series of MIDI input controllers ([Mk2](http://www.hercules.com/us/DJ-Music/bdd/p/12/dj-console-mk2-virtualdj-djc-ed/), [RMX](http://www.hercules.com/us/DJ-Music/bdd/p/62/dj-console-rmx/), [MP3 Control](http://www.hercules.com/us/DJ-Music/bdd/p/14/dj-control-mp3/), [DJ Control Steel](http://www.hercules.com/us/DJ-Music/bdd/p/83/dj-control-steel/)).

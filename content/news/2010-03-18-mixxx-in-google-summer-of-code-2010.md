@@ -1,6 +1,7 @@
 title: Mixxx in Google Summer of Code 2010!
 authors: Albert Santoni
 date: 2010-03-18 20:43:00
+tags: gsoc, gsoc-2010
 comments: no
 
 [![Google Summer of Code Logo]({static}/images/news/GSoC-Logo.png)](http://socghop.appspot.com/)

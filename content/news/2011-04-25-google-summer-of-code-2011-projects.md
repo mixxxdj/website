@@ -1,6 +1,7 @@
 title: Google Summer of Code 2011 Projects!
 authors: RJ Ryan
 date: 2011-04-25 18:13:00
+tags: gsoc, gsoc-2011
 comments: no
 
 The Summer of Code is upon us! Google has just [announced](http://socghop.appspot.com/gsoc/org/home/google/gsoc2011/mixxx) which students Mixxx has accepted into the **Google Summer of Code 2011** program.

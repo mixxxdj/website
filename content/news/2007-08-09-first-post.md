@@ -1,6 +1,7 @@
 title: First Post
 authors: Albert Santoni
 date: 2007-08-09 23:50:00
+tags: website
 comments: no
 
 Welcome to the official blog of the <a href="http://mixxx.sourceforge.net">Mixxx</a>

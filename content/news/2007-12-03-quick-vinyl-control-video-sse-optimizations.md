@@ -1,6 +1,7 @@
 title: Quick Vinyl Control Video, SSE optimizations
 authors: Albert Santoni
 date: 2007-12-03 01:56:00
+tags: video, hardware, development
 comments: no
 
 A few nights ago I captured a video while doing a quick test mix using Mixxx's vinyl control.<br />

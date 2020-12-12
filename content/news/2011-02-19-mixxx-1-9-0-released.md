@@ -1,6 +1,7 @@
 title: Mixxx 1.9.0 Released!
 authors: Albert Santoni
 date: 2011-02-19 19:19:00
+tags: 1.9, 1.9.0, release announcement
 comments: no
 
 The Mixxx development team is pleased to announce the release of **Mixxx 1.9.0!**

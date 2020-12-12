@@ -1,6 +1,7 @@
 title: File browsing 2.0
 authors: Albert Santoni
 date: 2007-09-04 13:10:00
+tags: 1.6, development, library
 comments: no
 
 Cedric coded up something cool yesterday:

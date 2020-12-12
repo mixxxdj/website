@@ -1,6 +1,7 @@
 title: Turning the Mixxx Blog into a Blog
 authors: Albert Santoni
 date: 2010-06-27 23:22:00
+tags: website
 comments: no
 
 Near the end of each release cycle, we try to round up as many developers as we can and have a giant meeting to figure out what we're doing for our next release cycle.

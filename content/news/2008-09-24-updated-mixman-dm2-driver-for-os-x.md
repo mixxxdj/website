@@ -1,6 +1,7 @@
 title: Updated MixMan DM2 Driver for OS X
 authors: Albert Santoni
 date: 2008-09-24 17:36:00
+tags: hardware, macos
 comments: no
 
 [Joe Mattiello](http://www.joemattiello.com) has updated his [MixMan DM2 driver for Mac OS X](http://www.joemattiello.com/dm2/).

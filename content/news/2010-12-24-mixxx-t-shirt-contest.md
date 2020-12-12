@@ -1,6 +1,7 @@
 title: Mixxx T-shirt contest
 authors: Pegasus
 date: 2010-12-24 18:29:00
+tags: merchandise, tshirt, community, contest
 comments: no
 
 OK everyone.

@@ -1,6 +1,7 @@
 title: Build Server Fundraiser a Success - Thank You!
 authors: Albert Santoni
 date: 2010-12-24 20:37:00
+tags: fundraiser
 comments: no
 
 [![Pledgie Fundraiser]({static}/images/news/pledgie.png)](http://pledgie.com/campaigns/13624)

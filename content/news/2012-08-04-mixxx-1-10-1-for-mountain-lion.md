@@ -1,6 +1,7 @@
 title: Mixxx 1.10.1 for Mountain Lion
 authors: Albert Santoni
 date: 2012-08-04 11:52:00
+tags: 1.10, 1.10.1, macos
 comments: no
 
 With the recent release of Mac OS X 10.8 Mountain Lion, all Mac applications are required to be* signed*  by a developer registered with Apple, otherwise it won't work out-of-the-box.

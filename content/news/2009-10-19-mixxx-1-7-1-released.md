@@ -1,6 +1,7 @@
 title: Mixxx 1.7.1 Released!
 authors: Albert Santoni
 date: 2009-10-19 21:13:00
+tags: 1.7, 1.7.1, release announcement
 comments: no
 
 [![Mixxx 1.7.1]({static}/images/news/Picture-5.png)]({static}/images/news/Picture-5.png)

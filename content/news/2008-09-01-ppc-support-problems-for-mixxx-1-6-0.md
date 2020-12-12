@@ -1,6 +1,7 @@
 title: PPC Support Problems for Mixxx 1.6.0
 authors: Adam Davison
 date: 2008-09-01 20:24:00
+tags: 1.6, 1.6.0, macos, development
 comments: no
 
 We've got some <span style="font-weight: bold;">bad news about the Mac PPC version of 1.6.0</span>

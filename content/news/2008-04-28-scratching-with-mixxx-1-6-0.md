@@ -1,6 +1,7 @@
 title: Scratching with Mixxx 1.6.0
 authors: Albert Santoni
 date: 2008-04-28 18:35:00
+tags: 1.6, 1.6.0, video, hardware
 comments: no
 
 This latest video of [Mixxx](http://www.mixxx.org) 1.6.0 in action
