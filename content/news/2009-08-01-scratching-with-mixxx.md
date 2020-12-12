@@ -1,5 +1,5 @@
 title: Scratching with Mixxx
-author: Albert
+authors: Albert Santoni
 date: 2009-08-01 04:05:00
 comments: no
 

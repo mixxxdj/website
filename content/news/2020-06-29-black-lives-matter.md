@@ -1,5 +1,5 @@
 title: #BlackLivesMatter: Taking a Stand with Terminology and Recruitment
-author: Mixxx, April
+authors: Mixxx Team, April M. Crehan
 date: 2020-06-29 15:00:00
 
 Alongside the protesters in the US and around the world, the Mixxx team unequivocally condemns police brutality.

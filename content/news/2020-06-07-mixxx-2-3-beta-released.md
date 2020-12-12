@@ -1,5 +1,5 @@
 title: Mixxx 2.3 beta released
-author: Be.
+authors: Be.
 date: 2020-06-07 01:00:00
 comments: no
 

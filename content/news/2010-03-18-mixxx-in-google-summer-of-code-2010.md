@@ -1,5 +1,5 @@
 title: Mixxx in Google Summer of Code 2010!
-author: Albert
+authors: Albert Santoni
 date: 2010-03-18 20:43:00
 comments: no
 

@@ -1,5 +1,5 @@
 title: More Mixxx Videos
-author: Albert
+authors: Albert Santoni
 date: 2008-02-26 15:31:00
 comments: no
 

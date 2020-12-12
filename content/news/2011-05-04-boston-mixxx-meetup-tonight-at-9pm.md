@@ -1,5 +1,5 @@
 title: Boston Mixxx Meetup -- Tonight at 9pm!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2011-05-04 18:40:00
 comments: no
 

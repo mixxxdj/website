@@ -1,5 +1,5 @@
 title: Mixxx accepted for GSoC 2020!
-author: Holzhaus
+authors: Jan Holthuis
 date: 2020-02-20 20:00:00
 comments: no
 

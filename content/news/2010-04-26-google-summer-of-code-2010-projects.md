@@ -1,5 +1,5 @@
 title: Google Summer of Code 2010 Projects
-author: Albert
+authors: Albert Santoni
 date: 2010-04-26 11:30:00
 comments: no
 

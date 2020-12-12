@@ -1,5 +1,5 @@
 title: Looking for a Community Coordinator
-author: Albert
+authors: Albert Santoni
 date: 2008-12-17 23:46:00
 comments: no
 

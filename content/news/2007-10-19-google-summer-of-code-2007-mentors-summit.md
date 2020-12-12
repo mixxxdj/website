@@ -1,5 +1,5 @@
 title: Google Summer of Code 2007 Mentors Summit
-author: Adam Davison
+authors: Adam Davison
 date: 2007-10-19 19:31:00
 comments: no
 

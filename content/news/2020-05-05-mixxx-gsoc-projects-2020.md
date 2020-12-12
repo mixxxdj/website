@@ -1,5 +1,5 @@
 title: Announcing our Google Summer of Code Projects 2020
-author: Holzhaus
+authors: Jan Holthuis
 date: 2020-05-05 01:00:00
 comments: no
 
@@ -18,7 +18,7 @@ Harshit will [focus on creating the user interface](https://summerofcode.withgoo
 [Uwe Klotz](https://github.com/uklotzde) will be his primary mentor.
 
 Janek will be working on a [macro recording feature](https://summerofcode.withgoogle.com/projects/#4641898733502464) inspired by [Serato Flip](https://serato.com/dj/pro/expansions/flip) to record custom edits in Mixxx without altering the audio files.
-His project will be mentored by [Jan Holthuis](https://github.com/Holzhaus).
+His project will be mentored by [Jan Holthuis](https://github.com/Jan Holthuis).
 
 We're going to do things a bit differently for GSoC this year than we have in the past.
 Before, mentors have had a lot of private one-on-one communication with students.

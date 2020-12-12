@@ -1,5 +1,5 @@
 title: Mixxx 2009 User Survey
-author: Albert
+authors: Albert Santoni
 date: 2009-08-06 18:11:00
 comments: no
 

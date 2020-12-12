@@ -1,5 +1,5 @@
 title: Mixxx 2.1.2 released
-author: Pegasus
+authors: Pegasus
 date: 2018-08-19 21:52:00
 comments: no
 

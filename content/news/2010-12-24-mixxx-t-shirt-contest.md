@@ -1,5 +1,5 @@
 title: Mixxx T-shirt contest
-author: Pegasus
+authors: Pegasus
 date: 2010-12-24 18:29:00
 comments: no
 

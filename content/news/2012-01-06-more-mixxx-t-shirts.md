@@ -1,5 +1,5 @@
 title: More Mixxx T-Shirts!
-author: Pegasus
+authors: Pegasus
 date: 2012-01-06 13:31:00
 comments: no
 

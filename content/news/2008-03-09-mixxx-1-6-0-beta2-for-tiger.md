@@ -1,5 +1,5 @@
 title: Mixxx 1.6.0 Beta2 for Tiger
-author: Albert
+authors: Albert Santoni
 date: 2008-03-09 15:22:00
 comments: no
 

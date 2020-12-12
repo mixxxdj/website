@@ -1,5 +1,5 @@
 title: Progress towards 1.6.0
-author: Albert
+authors: Albert Santoni
 date: 2008-06-21 18:49:00
 comments: no
 

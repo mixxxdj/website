@@ -1,5 +1,5 @@
 title: Mixxx 1.6.0 Release Code-a-thon
-author: Adam Davison
+authors: Adam Davison
 date: 2008-07-25 15:09:00
 comments: no
 

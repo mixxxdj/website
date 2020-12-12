@@ -1,5 +1,5 @@
 title: Mixxx at Cheap as Chips 2008
-author: Albert
+authors: Albert Santoni
 date: 2008-03-12 00:19:00
 comments: no
 

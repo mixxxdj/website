@@ -1,5 +1,5 @@
 title: Computer Music... again!
-author: Albert
+authors: Albert Santoni
 date: 2007-09-18 16:36:00
 comments: no
 

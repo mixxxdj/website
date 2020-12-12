@@ -1,5 +1,5 @@
 title: Mixxx 1.12 Beta Released!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2015-04-29 03:12:00
 comments: no
 

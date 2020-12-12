@@ -1,5 +1,5 @@
 title: Mixxx 1.7.2 Released!
-author: Albert
+authors: Albert Santoni
 date: 2009-12-30 21:06:00
 comments: no
 

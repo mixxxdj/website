@@ -1,5 +1,5 @@
 title: Minor Website Revamp
-author: Albert
+authors: Albert Santoni
 date: 2008-02-15 15:30:00
 comments: no
 

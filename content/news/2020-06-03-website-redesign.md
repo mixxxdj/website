@@ -1,5 +1,5 @@
 title: Website Redesign
-author: Holzhaus
+authors: Jan Holthuis
 date: 2020-06-03 01:00:00
 comments: no
 

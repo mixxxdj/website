@@ -1,5 +1,5 @@
 title: New in 2.3: Color your Hotcues
-author: Holzhaus
+authors: Jan Holthuis
 date: 2020-08-25 12:00:00
 
 Hotcues are a neat thing and one of the major benefits of digital DJing.

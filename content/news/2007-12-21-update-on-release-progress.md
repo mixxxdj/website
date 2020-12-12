@@ -1,5 +1,5 @@
 title: Update on Release Progress
-author: Adam Davison
+authors: Adam Davison
 date: 2007-12-21 20:50:00
 comments: no
 

@@ -1,5 +1,5 @@
 title: Turning the Mixxx Blog into a Blog
-author: Albert
+authors: Albert Santoni
 date: 2010-06-27 23:22:00
 comments: no
 

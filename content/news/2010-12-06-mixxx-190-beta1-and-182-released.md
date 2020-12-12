@@ -1,5 +1,5 @@
 title: Mixxx 1.9.0 Beta1 and 1.8.2 Released!
-author: Albert
+authors: Albert Santoni
 date: 2010-12-06 00:32:00
 comments: no
 

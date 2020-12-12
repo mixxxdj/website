@@ -1,5 +1,5 @@
 title: Mixxx in Your Language!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2011-05-24 15:29:00
 comments: no
 

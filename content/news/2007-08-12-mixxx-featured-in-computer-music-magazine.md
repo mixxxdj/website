@@ -1,5 +1,5 @@
 title: Mixxx featured in Computer Music magazine
-author: Albert
+authors: Albert Santoni
 date: 2007-08-12 18:39:00
 comments: no
 

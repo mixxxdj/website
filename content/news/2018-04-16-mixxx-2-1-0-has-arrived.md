@@ -1,5 +1,5 @@
 title: Mixxx 2.1.0 has arrived!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2018-04-16 17:56:00
 comments: no
 

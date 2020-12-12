@@ -1,5 +1,5 @@
 title: Mixxx 1.8.1 Released!
-author: Albert
+authors: Albert Santoni
 date: 2010-10-18 21:00:00
 comments: no
 

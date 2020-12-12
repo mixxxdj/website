@@ -1,5 +1,5 @@
 title: Mixxx 1.10.1 Released!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2012-06-30 00:38:00
 comments: no
 

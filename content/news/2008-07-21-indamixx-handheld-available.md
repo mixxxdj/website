@@ -1,5 +1,5 @@
 title: Indamixx Handheld Available
-author: Albert
+authors: Albert Santoni
 date: 2008-07-21 23:56:00
 comments: no
 

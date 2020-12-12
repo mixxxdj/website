@@ -1,5 +1,5 @@
 title: The Mixxx Class Diagram
-author: Albert
+authors: Albert Santoni
 date: 2010-08-16 04:59:00
 comments: no
 

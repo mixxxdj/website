@@ -1,5 +1,5 @@
 title: Effects Progress
-author: Albert
+authors: Albert Santoni
 date: 2008-11-24 07:05:00
 comments: no
 

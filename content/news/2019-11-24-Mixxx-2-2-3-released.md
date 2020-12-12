@@ -1,5 +1,5 @@
 title: Mixxx 2.2.3 released
-author: Be.
+authors: Be.
 date: 2019-12-09 16:25:00
 comments: no
 

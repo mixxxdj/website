@@ -1,5 +1,5 @@
 title: Mixxx 1.9.0 Released!
-author: Albert
+authors: Albert Santoni
 date: 2011-02-19 19:19:00
 comments: no
 

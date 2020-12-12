@@ -1,5 +1,5 @@
 title: Updated MixMan DM2 Driver for OS X
-author: Albert
+authors: Albert Santoni
 date: 2008-09-24 17:36:00
 comments: no
 

@@ -1,5 +1,5 @@
 title: New in 2.3: Importing tracks and cues from Rekordbox removable devices
-author: ehendrikd
+authors: Evan
 date: 2020-07-20 12:00:00
 
 Do you rock your gigs armed only with your cans and a Rekordbox prepared USB flash drive? Ever been tempted to play your carefully curated tracks on something other than a CDJ or Rekordbox, on something that is free and open-source? We have news for you!

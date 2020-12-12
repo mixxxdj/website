@@ -1,5 +1,5 @@
 title: Rewriting the Library
-author: Albert
+authors: Albert Santoni
 date: 2008-12-03 01:03:00
 comments: no
 

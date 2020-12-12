@@ -1,5 +1,5 @@
 title: Mixxx 1.10.0 Beta and Mixxx 1.9.2 Released!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2011-11-06 20:41:00
 comments: no
 

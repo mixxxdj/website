@@ -1,5 +1,5 @@
 title: Digital DJ Tips Interviews Mixxx
-author: Albert
+authors: Albert Santoni
 date: 2010-12-07 18:07:00
 comments: no
 

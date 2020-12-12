@@ -1,5 +1,5 @@
 title: Build Server Fundraiser a Success - Thank You!
-author: Albert
+authors: Albert Santoni
 date: 2010-12-24 20:37:00
 comments: no
 

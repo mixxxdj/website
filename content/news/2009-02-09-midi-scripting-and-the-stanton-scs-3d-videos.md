@@ -1,5 +1,5 @@
 title: MIDI Scripting and the Stanton SCS.3d (Videos)
-author: Albert
+authors: Albert Santoni
 date: 2009-02-09 16:25:00
 comments: no
 

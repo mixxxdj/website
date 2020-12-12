@@ -1,5 +1,5 @@
 title: Mixxx 2.2.4 released
-author: Holzhaus
+authors: Jan Holthuis
 date: 2020-06-25 12:00:00
 comments: no
 

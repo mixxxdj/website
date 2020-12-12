@@ -1,5 +1,5 @@
 title: Mixxx 1.10.1 for Mountain Lion
-author: Albert
+authors: Albert Santoni
 date: 2012-08-04 11:52:00
 comments: no
 

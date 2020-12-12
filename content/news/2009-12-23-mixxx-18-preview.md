@@ -1,5 +1,5 @@
 title: Mixxx 1.8 Preview
-author: Albert
+authors: Albert Santoni
 date: 2009-12-23 21:56:00
 comments: no
 

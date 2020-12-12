@@ -1,5 +1,5 @@
 title: Mixxx 1.10.0 Launch Party in Boston, Tonight! December 1st, 9pm
-author: RJ Ryan
+authors: RJ Ryan
 date: 2011-12-01 23:16:00
 comments: no
 

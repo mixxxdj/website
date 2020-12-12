@@ -1,5 +1,5 @@
 title: PPC Support Problems for Mixxx 1.6.0
-author: Adam Davison
+authors: Adam Davison
 date: 2008-09-01 20:24:00
 comments: no
 

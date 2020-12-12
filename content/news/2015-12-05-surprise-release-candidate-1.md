@@ -1,5 +1,5 @@
 title: Surprise! Release Candidate 1
-author: RJ Ryan
+authors: RJ Ryan
 date: 2015-12-05 19:04:00
 comments: no
 

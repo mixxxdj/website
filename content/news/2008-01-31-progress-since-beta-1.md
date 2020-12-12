@@ -1,5 +1,5 @@
 title: Progress since Beta 1
-author: Albert
+authors: Albert Santoni
 date: 2008-01-31 22:12:00
 comments: no
 

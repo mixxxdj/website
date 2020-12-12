@@ -1,5 +1,5 @@
 title: Mixxx T-shirts - ORDER NOW!
-author: Pegasus
+authors: Pegasus
 date: 2011-01-25 08:32:00
 comments: no
 

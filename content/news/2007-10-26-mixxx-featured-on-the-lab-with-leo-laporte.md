@@ -1,5 +1,5 @@
 title: Mixxx featured on The Lab with Leo Laporte
-author: Albert
+authors: Albert Santoni
 date: 2007-10-26 14:06:00
 comments: no
 

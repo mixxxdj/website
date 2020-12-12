@@ -1,5 +1,5 @@
 title: Beyond Mixxx 1.8
-author: Philip "Madjester" Whelan
+authors: Philip "Madjester" Whelan
 date: 2010-12-10 03:18:00
 comments: no
 

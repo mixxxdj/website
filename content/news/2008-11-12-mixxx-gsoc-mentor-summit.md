@@ -1,5 +1,5 @@
 title: Mixxx @ GSoC Mentor Summit
-author: Adam Davison
+authors: Adam Davison
 date: 2008-11-12 19:08:00
 comments: no
 

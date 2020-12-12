@@ -1,5 +1,5 @@
 title: Mixxx 1.7.0 Beta1 for Windows x64 Now Available!
-author: Albert
+authors: Albert Santoni
 date: 2009-05-07 14:43:00
 comments: no
 

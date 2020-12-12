@@ -1,5 +1,5 @@
 title: Mixxx 1.6.0 Released!
-author: Albert
+authors: Albert Santoni
 date: 2008-08-06 11:00:00
 comments: no
 

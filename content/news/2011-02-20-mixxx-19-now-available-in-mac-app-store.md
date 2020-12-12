@@ -1,5 +1,5 @@
 title: Mixxx Debuts as #1 Free App in the Mac App Store
-author: Albert
+authors: Albert Santoni
 date: 2011-02-20 05:43:00
 comments: no
 

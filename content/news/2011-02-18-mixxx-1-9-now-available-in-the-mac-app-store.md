@@ -1,5 +1,5 @@
 title: Mixxx 1.9 Now Available in the Mac App Store
-author: Albert
+authors: Albert Santoni
 date: 2011-02-18 07:06:00
 comments: no
 

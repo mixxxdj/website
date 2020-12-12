@@ -1,5 +1,5 @@
 title: Mixxx GSoc Coding Begins
-author: Cristiano
+authors: Cristiano Lacerda
 date: 2020-06-08 01:00:00
 comments: no
 

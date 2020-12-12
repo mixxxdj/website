@@ -1,5 +1,5 @@
 title: 1.6.0 beta1 Nearly Ready
-author: Adam Davison
+authors: Adam Davison
 date: 2007-12-04 23:24:00
 comments: no
 

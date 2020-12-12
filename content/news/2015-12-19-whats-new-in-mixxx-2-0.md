@@ -1,5 +1,5 @@
 title: What's New in Mixxx 2.0
-author: ywwg
+authors: Owen Williams
 date: 2015-12-19 18:50:22
 comments: no
 

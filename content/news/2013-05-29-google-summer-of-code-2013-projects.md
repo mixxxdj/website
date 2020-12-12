@@ -1,5 +1,5 @@
 title: Google Summer of Code 2013 Projects!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2013-05-29 22:14:00
 comments: no
 

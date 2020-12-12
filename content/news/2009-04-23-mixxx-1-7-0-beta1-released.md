@@ -1,5 +1,5 @@
 title: Mixxx 1.7.0 Beta1 Released!
-author: Albert
+authors: Albert Santoni
 date: 2009-04-23 09:00:00
 comments: no
 

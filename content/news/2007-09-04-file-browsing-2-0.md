@@ -1,5 +1,5 @@
 title: File browsing 2.0
-author: Albert
+authors: Albert Santoni
 date: 2007-09-04 13:10:00
 comments: no
 

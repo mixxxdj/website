@@ -1,5 +1,5 @@
 title: What's New in Mixxx 1.11
-author: Albert
+authors: Albert Santoni
 date: 2013-02-18 00:14:33
 comments: no
 

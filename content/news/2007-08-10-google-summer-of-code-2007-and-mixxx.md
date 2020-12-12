@@ -1,5 +1,5 @@
 title: Google Summer of Code 2007 and Mixxx
-author: Albert
+authors: Albert Santoni
 date: 2007-08-10 00:10:00
 comments: no
 

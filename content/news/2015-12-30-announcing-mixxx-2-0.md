@@ -1,5 +1,5 @@
 title: Announcing Mixxx 2.0!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2015-12-30 00:59:00
 comments: no
 

@@ -1,5 +1,5 @@
 title: Mixxx with the Stanton SCS.3d and SCS.1m
-author: Albert
+authors: Albert Santoni
 date: 2009-06-19 16:37:00
 comments: no
 

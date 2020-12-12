@@ -1,5 +1,5 @@
 title: Quick Vinyl Control Video, SSE optimizations
-author: Albert
+authors: Albert Santoni
 date: 2007-12-03 01:56:00
 comments: no
 

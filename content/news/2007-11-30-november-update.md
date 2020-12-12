@@ -1,5 +1,5 @@
 title: November Update
-author: Albert
+authors: Albert Santoni
 date: 2007-11-30 15:24:00
 comments: no
 

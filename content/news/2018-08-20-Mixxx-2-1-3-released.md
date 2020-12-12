@@ -1,5 +1,5 @@
 title: 2.1.3 released
-author: Pegasus
+authors: Pegasus
 date: 2018-08-20 22:42:00
 comments: no
 

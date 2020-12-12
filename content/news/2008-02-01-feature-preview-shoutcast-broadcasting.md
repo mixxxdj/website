@@ -1,5 +1,5 @@
 title: Feature Preview: Shoutcast Broadcasting
-author: Albert
+authors: Albert Santoni
 date: 2008-02-01 15:40:00
 comments: no
 

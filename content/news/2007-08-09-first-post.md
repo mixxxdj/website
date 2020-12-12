@@ -1,5 +1,5 @@
 title: First Post
-author: Albert
+authors: Albert Santoni
 date: 2007-08-09 23:50:00
 comments: no
 

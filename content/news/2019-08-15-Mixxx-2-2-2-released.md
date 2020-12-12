@@ -1,5 +1,5 @@
 title: Mixxx 2.2.2 released
-author: tapir
+authors: Uwe Klotz
 date: 2019-08-15 07:06:00
 comments: no
 

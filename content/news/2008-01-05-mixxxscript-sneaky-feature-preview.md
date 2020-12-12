@@ -1,5 +1,5 @@
 title: MixxxScript - A Sneaky Feature Preview
-author: Adam Davison
+authors: Adam Davison
 date: 2008-01-05 16:42:00
 comments: no
 

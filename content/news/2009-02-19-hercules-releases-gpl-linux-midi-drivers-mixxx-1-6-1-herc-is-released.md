@@ -1,5 +1,5 @@
 title: Hercules releases GPL Linux MIDI drivers & Mixxx 1.6.1+Herc is released
-author: GED
+authors: GED
 date: 2009-02-19 02:03:00
 comments: no
 

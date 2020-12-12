@@ -1,5 +1,5 @@
 title: You don't need to pay for Mixxx!
-author: Holzhaus
+authors: Jan Holthuis
 date: 2020-05-22 13:00:00
 comments: no
 

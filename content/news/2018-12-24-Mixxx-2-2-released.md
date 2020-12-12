@@ -1,5 +1,5 @@
 title: Mixxx 2.2 released
-author: Be.
+authors: Be.
 date: 2018-12-24 18:07:00
 comments: no
 

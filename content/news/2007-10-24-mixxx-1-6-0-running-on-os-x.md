@@ -1,5 +1,5 @@
 title: Mixxx 1.6.0 Running on OS X
-author: Albert
+authors: Albert Santoni
 date: 2007-10-24 02:23:00
 comments: no
 

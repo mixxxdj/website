@@ -1,5 +1,5 @@
 title: Calling all Students: Hack on Mixxx in Google Summer of Code 2013!
-author: RJ Ryan
+authors: RJ Ryan
 date: 2013-04-08 19:16:00
 comments: no
 
