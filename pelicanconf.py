@@ -10,6 +10,7 @@ TIMEZONE = "Europe/Berlin"
 DEFAULT_LANG = "en"
 
 PATH = "content"
+FEED_ATOM = "feed.xml"
 
 ARTICLE_PATHS = [
     "news",
