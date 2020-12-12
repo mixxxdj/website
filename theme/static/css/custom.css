@@ -552,6 +552,21 @@ h6 a.headline-link {
     font-size: small;
 }
 
+.news-meta a {
+    text-decoration: none;
+}
+
+.news-meta img.icon {
+    display: inline-block;
+    height: 1em;
+    margin-right: 0.25em;
+}
+
+.news-meta > .authors,
+.news-meta > .tags {
+    margin-left: 1em;
+}
+
 .news-comments {
     border-top: 1px solid var(--border-color-softer);
     padding-top:2rem;
