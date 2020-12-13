@@ -19,10 +19,10 @@ Big thanks to **[Mark Glines](http://www.glines.org/)** for helping us out tempo
 
 Our MIDI guru, Sean Pappalardo, has put a new video this week showcasing the SCS.3d and SCS.3m MIDI controllers in action:
 
-http://www.youtube.com/v/73ermPUL-Og
+http://www.youtube.com/watch?v=73ermPUL-Og
 
 Lastly, check out YouTube user [Scratchtometry](http://www.youtube.com/user/Scratchometry)  busting out his SCS.3d hot cueing and scratching skillz with Mixxx in two videos:
 
-https://www.youtube.com/v/C6NcejJXDJc
+https://www.youtube.com/watch?v=C6NcejJXDJc
 
-https://www.youtube.com/v/2onMLSpYON8
+https://www.youtube.com/watch?v=2onMLSpYON8

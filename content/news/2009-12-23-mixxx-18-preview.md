@@ -1,7 +1,7 @@
 title: Mixxx 1.8 Preview
 authors: Albert Santoni
 date: 2009-12-23 21:56:00
-tags: 1.8, 1.8.0, development
+tags: 1.8, 1.8.0, development, video
 comments: no
 
 After many months of planning and development, we're finally
@@ -9,11 +9,8 @@ approaching a beta release of Mixxx 1.8. Since our last release, several
 major new features have matured and are almost ready for public
 testing.
 
-[ ]{.Apple-style-span style="white-space: pre;"} Our main focus for 1.8
-has been improving the library, which is a direct result of continued
-feedback from our users. We're also excited to have been able to
-address several other major feature requests, and we think 1.8 is a big
-step in the right direction.
+Our main focus for 1.8 has been improving the library, which is a direct result of continued feedback from our users.
+We're also excited to have been able to address several other major feature requests, and we think 1.8 is a big step in the right direction.
 
 ## Library
 
@@ -46,7 +43,7 @@ The hot new addition for 1.8 is integrated **multiple MIDI device support** .
 
 What do we mean by integrated? Check it out:
 
-http://www.youtube.com/v/ccOvlwXW5Fw
+http://www.youtube.com/watch?v=ccOvlwXW5Fw
 
 ## AAC and iTunes Support
 

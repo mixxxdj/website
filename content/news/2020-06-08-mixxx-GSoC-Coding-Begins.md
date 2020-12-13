@@ -1,7 +1,7 @@
 title: Mixxx GSoc Coding Begins
 authors: Cristiano Lacerda
 date: 2020-06-08 01:00:00
-tags: gsoc, gsoc-2020, analyzer
+tags: gsoc, gsoc-2020, analyzer, video
 comments: no
 
 This year Mixxx is again [taking part in Google Summer of Code]({filename}/news/2020-05-05-mixxx-gsoc-projects-2020.md), and 3 students are working full-time for 3 months to make Mixxx even more awesome.

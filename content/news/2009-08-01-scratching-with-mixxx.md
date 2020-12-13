@@ -7,6 +7,6 @@ comments: no
 
 *A DJ tears it up with Mixxx and the SCS.3d.*
 
-http://www.youtube.com/v/nQ_UyreA4kgbr
+http://www.youtube.com/watch?v=nQ_UyreA4kgbr
 
 [Source](http://forums.stantondj.com/viewtopic.php?f=8&t=459)

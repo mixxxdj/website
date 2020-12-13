@@ -13,7 +13,7 @@ The **Stanton SCS.3d** replaces conventional knobs, buttons and sliders found on
 It's compact, rugged, light-weight, and best of all, reliable, since there are almost no moving parts to break.
 The large central circular area is where all the magic happens as it can be configured to serve multiple purposes (jog dial/vinyl emulation, three sliders, or 9 buttons) depending on the control needs of the software.
 
-http://www.youtube.com/v/qfkJnTqIeAw
+http://www.youtube.com/watch?v=qfkJnTqIeAw
 
 *Sean demonstrating the SCS.3d with Mixxx 1.6.2*
 
@@ -49,4 +49,4 @@ We hope to have a beta release out within the next month or two for our DJs to p
 Lastly, we'd like to thank [Stanton](http://www.stantondj.com/) for their gracious support and cooperation.
 We think the [SCS.3d](http://www.enterthesystem.com/system/scs3d/) is going to be a great device for [Mixxx](http://www.mixxx.org/) users in the future!
 
-http://www.youtube.com/v/FgARVcLsfl0
+http://www.youtube.com/watch?v=FgARVcLsfl0
