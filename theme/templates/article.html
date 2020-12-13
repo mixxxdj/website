@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "utils.html" as utils %}
 
-{% block title %}{% trans %}{{title}}{% endtrans %}{% endblock %}
+{% block title %}{% with title=article.title %}{% trans %}{{title}}{% endtrans %}{% endwith %}{% endblock %}
 
 {% block body %}
 <div class="docs-section container">
