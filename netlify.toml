@@ -13,6 +13,10 @@
   # been specified, include it in the publish directory path.
   publish = "output/"
 
+[context.production]
+  # Default build command.
+  command = "pelican && rm -rf output/drafts"
+
 [[headers]]
   for = "/*"
   [headers.values]
