@@ -1,2 +1,3 @@
 pelican
 markdown
+git+https://github.com/Holzhaus/Python-Markdown-Video.git#egg=Markdown-Video
