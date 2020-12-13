@@ -60,8 +60,8 @@ YEAR_ARCHIVE_SAVE_AS = "news/archives/{date:%Y}/index.html"
 MONTH_ARCHIVE_URL = "news/archives/{date:%Y}/{date:%m}"
 MONTH_ARCHIVE_SAVE_AS = "news/archives/{date:%Y}/{date:%m}/index.html"
 
-AUTHOR_URL = "team/{slug}"
-AUTHOR_SAVE_AS = "team/{slug}/index.html"
+AUTHOR_URL = "news/author/{slug}"
+AUTHOR_SAVE_AS = "news/author/{slug}/index.html"
 
 CATEGORY_URL = "news/category/{slug}"
 CATEGORY_SAVE_AS = "news/category/{slug}/index.html"
