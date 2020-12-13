@@ -577,17 +577,39 @@ article.news + article.news {
 }
 
 
+.author-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-meta > div {
+    margin-bottom: 0.5em;
+}
+
+.author-meta > div,
+.author-meta > div .button {
+    width: 100%;
+}
+
 @media (min-width: 600px) {
     .docs-section.news-author {
         padding-top: 2em;
         padding-bottom: 2em;
     }
-}
 
-.author-meta {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    .author-meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .author-meta > div {
+        margin-bottom: 0;
+    }
+    .author-meta > div,
+    .author-meta > div .button {
+        width: auto;
+    }
 }
 
 .author-meta + .author-meta {
