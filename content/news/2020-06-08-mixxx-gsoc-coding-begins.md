@@ -1,6 +1,7 @@
 title: Mixxx GSoc Coding Begins
 authors: Cristiano Lacerda
 date: 2020-06-08 01:00:00
+slug: mixxx-GSoC-Coding-Begins
 tags: gsoc, gsoc-2020, analyzer, video
 comments: no
 
