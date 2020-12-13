@@ -12,7 +12,7 @@ virtual mixer. I changed Mixxx's crossfader curve setting in the
 preferences to "fast cut", which is what you'd set the curve control
 on a real mixer to when you're scratching.
 
-https://www.youtube.com/watch?v=nAqI4HAcQi4
+@Video(https://www.youtube.com/watch?v=nAqI4HAcQi4)
 
 The turntable is plugged directly into my laptop using the turntable's
 line-out and my laptop's onboard soundcard.

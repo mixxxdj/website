@@ -10,14 +10,14 @@ this first video, Sean explains some of the neat features he's coded
 like fader-start, real-time feedback using the SCS.1m LED digit
 displays, and lots of other bells and whistles.
 
-http://www.youtube.com/watch?v=crJksOEuTx0
+@Video(http://www.youtube.com/watch?v=crJksOEuTx0)
 
 In this second video, Sean demonstrates some of the new features he's
 implemented since he made his [original SCS.3d
 video](http://www.youtube.com/watch?v=qfkJnTqIeAw), including the new
 vinyl platter mode and VU meters.
 
-http://www.youtube.com/watch?v=8DUpTikA8u0
+@Video(http://www.youtube.com/watch?v=8DUpTikA8u0)
 
 Our improved SCS.3d and SCS.1m support will be available for everyone to
 play with in our next beta. In the meantime, current hardware owners can

@@ -10,7 +10,7 @@ After one month of community bonding period, they started coding last week. Cris
 
 Cristiano which is focusing his work on the auto detection of such features is making weekly vlogs on YouTube to share his progress with the community. The first one is available here:
 
-https://www.youtube.com/watch?v=rVJ7pBWHp8E
+@Video(https://www.youtube.com/watch?v=rVJ7pBWHp8E)
 
 Janek, who is working on [a feature similar to Serato Flip](https://www.mixxx.org/wiki/doku.php/mixxx_macros), had the great idea and prepared a community call where the new and old members alike had the opportunity to get to know each other better and put some faces to their usernames.
 

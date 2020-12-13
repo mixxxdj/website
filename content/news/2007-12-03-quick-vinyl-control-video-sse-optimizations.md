@@ -7,7 +7,7 @@ comments: no
 
 A few nights ago I captured a video while doing a quick test mix using Mixxx's vinyl control.
 
-http://www.youtube.com/watch?v=9dRLNT2yspg
+@Video(http://www.youtube.com/watch?v=9dRLNT2yspg)
 
 Not my best transition ever, but it works. :)
 

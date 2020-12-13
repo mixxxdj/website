@@ -43,7 +43,7 @@ The hot new addition for 1.8 is integrated **multiple MIDI device support** .
 
 What do we mean by integrated? Check it out:
 
-http://www.youtube.com/watch?v=ccOvlwXW5Fw
+@Video(http://www.youtube.com/watch?v=ccOvlwXW5Fw)
 
 ## AAC and iTunes Support
 
