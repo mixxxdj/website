@@ -24,6 +24,29 @@ directory. To stand up a development server to test out your change, type:
 You can then visit ```http://127.0.0.1:8000``` to see your development version
 of the site.
 
+## Adding new articles
+
+To add a new article, add a file named `XXXX-XX-XX-my-first-post.md` to `content/news/`:
+
+```markdown
+title: My first post
+authors: Jan Holthuis
+status: draft
+tags: some tag, some other tag, yet another tag
+comments: yes
+
+Here goes the article content.
+Articles are formatted in [Markdown](https://python-markdown.github.io/).
+
+YouTube videos can be embedded like this:
+
+@Video(https://www.youtube.com/watch?v=rt5Ed5GZ1U8)
+```
+
+Note that the `XXXX-XX-XX` part of the filename is *not* meant to be a placeholder, just use it literally.
+Let the `status` on `draft` and don't add a `date` field.
+When the PR is merged, GitHub actions will automatically rename the file, add the appropriate date and remove the draft status.
+
 ## Documentation
 
 Pelican uses [Jinja2][jinja2] templates for rendering pages.
