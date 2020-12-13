@@ -644,12 +644,6 @@ article.news + article.news {
     height: 0.9em;
 }
 
-.archievement {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .footer .copyright {
     text-align: center;
 }
