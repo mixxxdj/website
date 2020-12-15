@@ -19,14 +19,14 @@ jobs:
       with:
         python-version: 3.9
     - name: Update dates of news posts
-      run: tools/update_news_date.py -b website pages/news/
+      run: tools/update_news_date.py -b website content/news/
     - name: Check if changes any changes were made
       run: echo "GIT_DIRTY=$(git diff --quiet ; printf "%d" "$?")" >> "${GITHUB_ENV}"
     - uses: EndBug/add-and-commit@v5
       if: env.GIT_DIRTY != null && env.GIT_DIRTY != '0'
       with:
-        add: 'pages/news'
-        message: 'pages/news: Update blog post date after merge'
+        add: 'content/news'
+        message: 'content/news: Update blog post date after merge'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Trigger Netlify build

@@ -7,6 +7,7 @@ import subprocess
 import sys
 
 RE_POST_DATE = re.compile(r"^date:\s+(.*)$", flags=re.MULTILINE)
+RE_POST_STATUS = re.compile(r"\nstatus:[ \t]+draft\n")
 
 
 def find_commit_that_added_file(path: str, format: str = "oneline"):
@@ -104,7 +105,11 @@ def main(argv=None):
                 ).partition(" ")
                 print(f"  Added in commit: {commit}")
                 print(f"    {commit_msg}")
-                merge_commit = find_merge_commit_to_branch(commit, branch)
+                try:
+                    merge_commit = find_merge_commit_to_branch(commit, branch)
+                except StopIteration:
+                    print("  Skipping because the merge commit was not found!")
+                    continue
                 print(f"  Merged to {branch} in commit: {merge_commit}")
                 merge_datestr, _, merge_msg = show_commit(
                     merge_commit, format="%cI %s"
@@ -125,21 +130,28 @@ def main(argv=None):
                     print("")
                     continue
 
+                with open(
+                    filepath, mode="r", encoding="utf-8", newline="\n"
+                ) as fp:
+                    header, sep, body = fp.read().partition("\n\n")
+                    if not RE_POST_STATUS.findall(header):
+                        print("  Skipping because post is not a draft!")
+
+                    header = RE_POST_STATUS.sub("\n", header)
+
+                    if RE_POST_DATE.findall(header):
+                        header = RE_POST_DATE.sub(f"date: {post_date}", header)
+                    else:
+                        header += f"\ndate: {post_date}"
+
                 print("")
 
                 if args.dry_run:
                     continue
 
                 with open(
-                    filepath, mode="r+", encoding="utf-8", newline="\n"
+                    filepath, mode="w", encoding="utf-8", newline="\n"
                 ) as fp:
-                    header, sep, body = fp.read().partition("\n\n")
-                    matchobj = RE_POST_DATE.findall(header)
-                    if matchobj:
-                        header = RE_POST_DATE.sub(f"date: {post_date}", header)
-                    else:
-                        header += f"\ndate: {post_date}"
-
                     fp.seek(0)
                     fp.write(header)
                     fp.write(sep)
