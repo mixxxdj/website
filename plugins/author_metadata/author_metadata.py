@@ -6,7 +6,7 @@ def update_author(settings, author):
     author_metadata = settings.get("AUTHOR_METADATA", {})
     author_dict = author_metadata.get(author.name, {})
 
-    author.description = author_dict.get("description")
+    author.tagline = author_dict.get("tagline")
     author.discourse = author_dict.get("discourse")
     author.discourse_url = (
         "https://mixxx.discourse.group/u/{}/".format(author.discourse)
