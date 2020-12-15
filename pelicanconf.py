@@ -75,6 +75,14 @@ TEMPLATE_PAGES = {
     "pages/error.html": "error.html",
 }
 
+PLUGIN_PATHS = [
+    "plugins",
+]
+
+PLUGINS = [
+    "author_metadata",
+]
+
 
 class MenuItem:
     def __init__(self, url, title, context, css="", children=()):
@@ -144,13 +152,6 @@ NAV_MENU = (
 )
 
 
-class AuthorMeta:
-    def __init__(self, description="", email="", github=""):
-        self.description = description
-        self.email = email
-        self.github = github
-
-
 AUTHOR_METADATA = {
     "Mixxx Team": {
         "github": "mixxxdj",
@@ -204,20 +205,9 @@ AUTHOR_METADATA = {
     },
 }
 
-
-def get_author_meta(author):
-    author_dict = AUTHOR_METADATA.get(author.name, {})
-    return AuthorMeta(
-        description=author_dict.get("description"),
-        github=author_dict.get("github"),
-        email=author_dict.get("email"),
-    )
-
-
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
     "NAV_MENU": NAV_MENU,
-    "get_author_meta": get_author_meta,
 }
 JINJA_ENVIRONMENT = {
     "trim_blocks": True,

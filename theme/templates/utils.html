@@ -1,15 +1,14 @@
 {% macro author_box(author, more_button=True) %}
 <div class="author-meta">
-  {% set author_meta = get_author_meta(author) %}
   <div>
-    <img class="author-avatar" src="{{ SITEURL }}/theme/images/avatars/{% if author_meta.github %}{{ author_meta.github }}{% else %}default_avatar{% endif %}.png" />
+    <img class="author-avatar" src="{{ SITEURL }}/theme/images/avatars/{% if author.github %}{{ author.github }}{% else %}default_avatar{% endif %}.png" />
     <div>
       <span class="author-name">{{ author }}</span>
-      {% if author_meta.github %}
-      <a href="https://github.com/{{ author_meta.github }}"><img src="{{ SITEURL}}/theme/images/social_icons/github.svg" alt="GitHub profile" title="GitHub profile" class="author-social-link" /></a>
+      {% if author.github %}
+      <a href="https://github.com/{{ author.github }}"><img src="{{ SITEURL}}/theme/images/social_icons/github.svg" alt="GitHub profile" title="GitHub profile" class="author-social-link" /></a>
       {% endif %}
-      {% if author_meta.description %}
-      <div class="author-desc">{{ author_meta.description }}</div>
+      {% if author.description %}
+      <div class="author-desc">{{ author.description }}</div>
       {% endif %}
     </div>
   </div>
