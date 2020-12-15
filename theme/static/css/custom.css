@@ -629,8 +629,9 @@ article.news + article.news {
     font-weight: bold;
 }
 
-.author-desc {
-    font-size: small;
+.author-tagline {
+    color: var(--text-color-softer);
+    font-size: 0.9em;
 }
 
 .author-avatar {
@@ -638,10 +639,12 @@ article.news + article.news {
     height: 60px;
     border-radius: 50%;
     margin-right: 0.75em;
+    background-color: var(--text-color-normal);
 }
 
 .author-social-link {
-    height: 0.9em;
+    height: 1em;
+    margin-left: 0.2em;
 }
 
 .footer .copyright {

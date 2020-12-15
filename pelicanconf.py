@@ -43,6 +43,9 @@ PAGINATION_PATTERNS = (
     (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
 )
 FILENAME_METADATA = r"(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)"
+DEFAULT_METADATA = {
+    "comments": "yes",
+}
 
 INDEX_URL = "news"
 INDEX_SAVE_AS = "news/index.html"
@@ -156,53 +159,63 @@ NAV_MENU = (
 AUTHOR_METADATA = {
     "Mixxx Team": {
         "github": "mixxxdj",
-        "url": "https://github.com/orgs/mixxxdj/people",
+        "twitter": "mixxxdj",
+        "facebook": "mixxxdj",
         "email": "core-team@mixxx.org",
-        "description": "Mixxx DJ Software Development Team",
+        "tagline": "Mixxx DJ Software Development Team",
     },
     "Be.": {
         "github": "Be-ing",
+        "discourse": "Be0",
         "email": "be@mixxx.org",
-        "description": "Mixxx Core Developer",
+        "tagline": "Mixxx Core Developer",
     },
     "Albert Santoni": {
         "github": "asantoni",
-        "description": "Mixxx Core Developer",
+        "discourse": "albert",
+        "tagline": "Mixxx Core Developer",
     },
     "Jan Holthuis": {
         "github": "Holzhaus",
+        "discourse": "hlzhs",
         "email": "jholthuis@mixxx.org",
-        "description": "Mixxx Core Developer",
+        "tagline": "Mixxx Core Developer",
     },
     "RJ Ryan": {
         "github": "rryan",
+        "discourse": "rryan",
         "email": "rryan@mixxx.org",
-        "description": "Mixxx Core Developer",
+        "tagline": "Mixxx Core Developer",
     },
     "Pegasus": {
         "github": "Pegasus-RPG",
-        "description": "Mixxx Core Developer",
+        "discourse": "Pegasus",
+        "tagline": "Mixxx Core Developer",
     },
     "Owen Williams": {
         "github": "ywwg",
-        "description": "Mixxx Core Developer",
+        "discourse": "owilliams",
+        "tagline": "Mixxx Core Developer",
     },
     "Uwe Klotz": {
         "github": "uklotzde",
-        "description": "Mixxx Core Developer",
+        "discourse": "tapir",
+        "tagline": "Mixxx Core Developer",
     },
     "April M. Crehan": {
         "github": "ThisGrrrlFriday",
         "email": "amcrehan@gmail.com",
-        "description": "Mixxx Supporter",
+        "tagline": "Mixxx Supporter",
     },
     "Evan": {
         "github": "ehendrikd",
-        "description": "Mixxx Contributor",
+        "discourse": "ehendrikd",
+        "tagline": "Mixxx Contributor",
     },
     "Cristiano Lacerda": {
         "github": "crisclacerda",
-        "description": "GSoC 2020 Student",
+        "discourse": "crisclacerda",
+        "tagline": "GSoC 2020 Student",
     },
 }
 

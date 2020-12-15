@@ -1,7 +1,6 @@
 title: Improving our Website
 authors: Jan Holthuis
 tags: website
-comments: yes
 date: 2020-12-15 13:21:32
 
 Our website is now based on the [Pelican](https://github.com/getpelican/pelican) instead of the [Cactus](https://github.com/eudicots/Cactus) static site generator.
