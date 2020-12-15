@@ -156,39 +156,47 @@ NAV_MENU = (
 AUTHOR_METADATA = {
     "Mixxx Team": {
         "github": "mixxxdj",
-        "url": "https://github.com/orgs/mixxxdj/people",
+        "twitter": "mixxxdj",
+        "facebook": "mixxxdj",
         "email": "core-team@mixxx.org",
         "description": "Mixxx DJ Software Development Team",
     },
     "Be.": {
         "github": "Be-ing",
+        "discourse": "Be0",
         "email": "be@mixxx.org",
         "description": "Mixxx Core Developer",
     },
     "Albert Santoni": {
         "github": "asantoni",
+        "discourse": "albert",
         "description": "Mixxx Core Developer",
     },
     "Jan Holthuis": {
         "github": "Holzhaus",
+        "discourse": "hlzhs",
         "email": "jholthuis@mixxx.org",
         "description": "Mixxx Core Developer",
     },
     "RJ Ryan": {
         "github": "rryan",
+        "discourse": "rryan",
         "email": "rryan@mixxx.org",
         "description": "Mixxx Core Developer",
     },
     "Pegasus": {
         "github": "Pegasus-RPG",
+        "discourse": "Pegasus",
         "description": "Mixxx Core Developer",
     },
     "Owen Williams": {
         "github": "ywwg",
+        "discourse": "owilliams",
         "description": "Mixxx Core Developer",
     },
     "Uwe Klotz": {
         "github": "uklotzde",
+        "discourse": "tapir",
         "description": "Mixxx Core Developer",
     },
     "April M. Crehan": {
@@ -198,10 +206,12 @@ AUTHOR_METADATA = {
     },
     "Evan": {
         "github": "ehendrikd",
+        "discourse": "ehendrikd",
         "description": "Mixxx Contributor",
     },
     "Cristiano Lacerda": {
         "github": "crisclacerda",
+        "discourse": "crisclacerda",
         "description": "GSoC 2020 Student",
     },
 }

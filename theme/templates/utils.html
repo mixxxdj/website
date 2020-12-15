@@ -7,6 +7,15 @@
       {% if author.github %}
       <a href="{{ author.github_url }}"><img src="{{ SITEURL}}/theme/images/social_icons/github.svg" alt="GitHub profile" title="GitHub profile" class="author-social-link" /></a>
       {% endif %}
+      {% if author.discourse %}
+      <a href="{{ author.discourse_url }}"><img src="{{ SITEURL}}/theme/images/social_icons/discourse.svg" alt="Discourse profile" title="Discourse profile" class="author-social-link" /></a>
+      {% endif %}
+      {% if author.twitter %}
+      <a href="{{ author.twitter_url }}"><img src="{{ SITEURL}}/theme/images/social_icons/twitter.svg" alt="Twitter profile" title="Twitter profile" class="author-social-link" /></a>
+      {% endif %}
+      {% if author.facebook %}
+      <a href="{{ author.facebook_url }}"><img src="{{ SITEURL}}/theme/images/social_icons/facebook.svg" alt="Facebook profile" title="Facebook profile" class="author-social-link" /></a>
+      {% endif %}
       {% if author.description %}
       <div class="author-desc">{{ author.description }}</div>
       {% endif %}
