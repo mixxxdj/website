@@ -2,7 +2,6 @@ title: SCons build system dropped in favor of CMake
 author: Jan Holthuis
 date: 2020-12-14 14:07:57
 tags: development, 2.3, beta, cmake, scons
-comments: yes
 
 If you wanted to compile a recent version of Mixxx 2.3 beta or 2.4 yourself, you may have already noticed that we removed our old and rusty [SCons](https://scons.org/) setup in favor of [CMake](https://cmake.org/).
 

@@ -56,7 +56,7 @@
   {# Discourse Comments #}
   <div class="news-comments">
     <h4>{% trans %}Comments{% endtrans %}</h4>
-    {% if article.comments %}
+    {% if article.comments and article.comments in ("true", "yes") %}
     <div id="discourse-comments"></div>
     <script type="text/javascript">
       DiscourseEmbed = {
