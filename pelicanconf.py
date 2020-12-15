@@ -74,7 +74,6 @@ TAG_URL = "news/tag/{slug}"
 TAG_SAVE_AS = "news/tag/{slug}/index.html"
 
 TEMPLATE_PAGES = {
-    "pages/maintenance.html": "maintenance.html",
     "pages/error.html": "error.html",
 }
 
