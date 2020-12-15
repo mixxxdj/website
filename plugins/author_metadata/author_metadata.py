@@ -40,6 +40,9 @@ def article_generator_context(article_generator, metadata):
     for author in metadata.get("authors", []):
         update_author(article_generator.settings, author)
 
+    if "author" in metadata:
+        update_author(article_generator.settings, metadata["author"])
+
 
 def register():
     """ Subscribe to Pelican's signals. """
