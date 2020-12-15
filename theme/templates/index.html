@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}{% trans %}News{% endtrans %}{% endblock %}
+
+{% block content %}
+<h1>{% block content_title %}{% trans %}News and Announcements{% endtrans %}{% endblock %}</h1>
+
+{% block extra_content %}{% endblock %}
+
+<div class="docs-section">
+  {% for article in articles_page.object_list %}
+  <article class="news">
+    <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
+    <p class="news-meta">
+      <span class="date">
+        <img class="icon" src="{{ SITEURL }}/theme/images/icons/date.svg" alt="Date" />
+        <time>{{ article.locale_date }}</time>
+      </span>
+      {% if article.authors %}
+      <span class="authors">
+        <img class="icon" src="{{ SITEURL }}/theme/images/icons/author.svg" alt="Author" />
+        {% for author in article.authors[:-2] %}
+        <span class="author"><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></span>,
+        {% endfor %}
+        {% for author in article.authors[-2:-1] %}
+        <span class="author"><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></span> and
+        {% endfor %}
+        {% for author in article.authors[-1:] %}
+        <span class="author"><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></span>
+        {% endfor %}
+      </span>
+      {% endif %}
+      {% if article.tags %}
+      <span class="tags">
+        <img class="icon" src="{{ SITEURL }}/theme/images/icons/tag.svg" alt="Tag" />
+        {% for tag in article.tags[:-1] %}
+        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></span>,
+        {% endfor %}
+        {% for tag in article.tags[-1:] %}
+        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></span>
+        {% endfor %}
+      </span>
+      {% endif %}
+    </p>
+
+    <p>{{ article.summary }}</p>
+
+    <a class="button button-secondary" href="{{ SITEURL }}/{{ article.url }}">{% trans %}Read More{% endtrans %}</a>
+  </article>
+  {% endfor %}
+</div>
+
+{% if articles_page.has_other_pages() %}
+  {% include "pagination.html" %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% import "utils.html" as utils %}
+
+{% block title %}{% with title=article.title %}{% trans %}{{title}}{% endtrans %}{% endwith %}{% endblock %}
+
+{% block body %}
+<div class="docs-section container">
+  <div class="news">
+    <h1>{{ article.title }}</h1>
+    {# Post content #}
+    <p class="news-meta">
+      <span class="date">
+        <img class="icon" src="{{ SITEURL }}/theme/images/icons/date.svg" alt="Date" />
+        <time>{{ article.locale_date }}</time>
+      </span>
+      {% if article.authors %}
+      <span class="authors">
+        <img class="icon" src="{{ SITEURL }}/theme/images/icons/author.svg" alt="Author" />
+        {% for author in article.authors[:-2] %}
+        <span class="author"><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></span>,
+        {% endfor %}
+        {% for author in article.authors[-2:-1] %}
+        <span class="author"><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></span> and
+        {% endfor %}
+        {% for author in article.authors[-1:] %}
+        <span class="author"><a href="{{ SITEURL }}/{{ author.url }}">{{ author.name }}</a></span>
+        {% endfor %}
+      </span>
+      {% endif %}
+      {% if article.tags %}
+      <span class="tags">
+        <img class="icon" src="{{ SITEURL }}/theme/images/icons/tag.svg" alt="Tag" />
+        {% for tag in article.tags[:-1] %}
+        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></span>,
+        {% endfor %}
+        {% for tag in article.tags[-1:] %}
+        <span class="tag"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></span>
+        {% endfor %}
+      </span>
+      {% endif %}
+    </p>
+    <p>
+      {{ article.content }}
+    </p>
+    <div style="clear: both;"></div>
+  </div>
+
+  {% if article.authors %}
+  <div class="docs-section author-box">
+    {% for author in article.authors %}
+      {{ utils.author_box(author) }}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# Discourse Comments #}
+  <div class="news-comments">
+    <h4>{% trans %}Comments{% endtrans %}</h4>
+    {% if article.comments and article.comments in ("true", "yes") %}
+    <div id="discourse-comments"></div>
+    <script type="text/javascript">
+      DiscourseEmbed = {
+        discourseUrl: 'https://mixxx.discourse.group/',
+        {% if SITEURL %}
+        discourseEmbedUrl: '{{ SITEURL }}/{{ article.url }}'
+        {% else %}
+        discourseEmbedUrl: location.origin + '/{{ article.url }}'
+        {% endif %}
+      };
+
+      (function() {
+        var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+        d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+      })();
+    </script>
+    {% else %}
+    <p>The comment section has been closed.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
