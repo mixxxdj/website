@@ -5,7 +5,7 @@
     <div>
       <span class="author-name">{{ author }}</span>
       {% if author.github %}
-      <a href="https://github.com/{{ author.github }}"><img src="{{ SITEURL}}/theme/images/social_icons/github.svg" alt="GitHub profile" title="GitHub profile" class="author-social-link" /></a>
+      <a href="{{ author.github_url }}"><img src="{{ SITEURL}}/theme/images/social_icons/github.svg" alt="GitHub profile" title="GitHub profile" class="author-social-link" /></a>
       {% endif %}
       {% if author.description %}
       <div class="author-desc">{{ author.description }}</div>

@@ -7,6 +7,9 @@ def update_author(settings, author):
     author_dict = author_metadata.get(author.name, {})
     author.description = author_dict.get("description")
     author.github = author_dict.get("github")
+    author.github_url = (
+        "https://github.com/{}".format(author.github) if author.github else ""
+    )
     author.email = author_dict.get("email")
 
 
