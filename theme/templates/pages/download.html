@@ -7,8 +7,6 @@
 {% endblock %}
 
 {% macro download_box(version, os_name, os_min_version, variants, ppa=None, next_stable_version=None) %}
-    {% with unstable_win64=page.unstable_win64,
-            unstable_win64_analytics_conversion=page.unstable_win64_analytics_conversion %}
     <div>
       <h3><img src="{{ SITEURL }}/theme/images/download_{{ os_name|lower }}.png" class="feature-icon" alt="{{ os_name }}"> {{ os_name}}</h3>
       <p>{% trans %}Download {{ version }} for {{ os_name }} {{ os_min_version }} or later{% endtrans %}.</p>
@@ -43,7 +41,6 @@ sudo apt install mixxx</code></pre>
       </p>
       {% endif %}
     </div>
-    {% endwith %}
 {% endmacro %}
 {% macro sourcecode_box(branch) %}
   <div>
