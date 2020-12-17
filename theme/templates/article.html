@@ -42,7 +42,9 @@
     <p>
       {{ article.content }}
     </p>
-    <div style="clear: both;"></div>
+
+    {# Ensure that all floats in post body are cleared. #}
+    <div class="u-cf"></div>
   </div>
 
   {% if article.authors %}
