@@ -25,9 +25,9 @@ sudo apt install mixxx</code></pre>
       <p>{% trans %}Using the PPA ensures that new package versions will be installed automatically with <code>apt</code>. Otherwise, you can download individual packages for {{ os_name }} {{ os_min_version }} or later and install them manually.{% endtrans %}</p>
       {% endif %}
 
-      {% for name, slug, url, analytics_conversion in variants %}
+      {% for name, slug, url in variants %}
       <div>
-        <a class="button button-primary download-{{ slug }}" href="{{ url }}" data-os="{% trans %}{{ os_name }} {{ unstable_win_min_version }} or later ({{ name }}){% endtrans %}" onclick="javascript:trackDownload('{{ analytics_conversion }}');">{% trans %}Download ({{ name }}){% endtrans %}</a>
+        <a class="button button-primary download-{{ slug }}" href="{{ url }}" data-os="{% trans %}{{ os_name }} {{ unstable_win_min_version }} or later ({{ name }}){% endtrans %}">{% trans %}Download ({{ name }}){% endtrans %}</a>
       </div>
       {% endfor %}
 
@@ -133,7 +133,7 @@ sudo apt install mixxx</code></pre>
         os_name="Windows",
         os_min_version=page.unstable_win_min_version,
         variants=[
-          ("64-Bit", "win64", page.unstable_win64, page.unstable_win64_analytics_conversion),
+          ("64-Bit", "win64", page.unstable_win64),
         ]) }}
 
     {# macOS unstable #}
@@ -143,7 +143,7 @@ sudo apt install mixxx</code></pre>
         os_name="macOS",
         os_min_version=page.unstable_macos_min_version,
         variants=[
-          ("Intel", "macosintel", page.unstable_macosintel, page.unstable_macosintel_analytics_conversion),
+          ("Intel", "macosintel", page.unstable_macosintel),
         ]) }}
 
     {# Ubuntu unstable #}
@@ -154,7 +154,7 @@ sudo apt install mixxx</code></pre>
         os_min_version=page.unstable_ubuntu_min_version,
         ppa="mixxxbetas",
         variants=[
-          ("64-Bit", "ubuntu64", page.unstable_ubuntu64, page.unstable_ubuntu64_analytics_conversion),
+          ("64-Bit", "ubuntu64", page.unstable_ubuntu64),
         ]) }}
 
     <div>
@@ -216,8 +216,8 @@ sudo apt install mixxx</code></pre>
         os_name="Windows",
         os_min_version=page.stable_win_min_version,
         variants=[
-          ("32-Bit", "win32", page.stable_win32, page.stable_win32_analytics_conversion),
-          ("64-Bit", "win64", page.stable_win64, page.stable_win64_analytics_conversion),
+          ("32-Bit", "win32", page.stable_win32),
+          ("64-Bit", "win64", page.stable_win64),
         ]) }}
 
     {# macOS stable #}
@@ -226,7 +226,7 @@ sudo apt install mixxx</code></pre>
         os_name="macOS",
         os_min_version=page.stable_macos_min_version,
         variants=[
-          ("Intel", "macosintel", page.stable_macosintel, page.stable_macosintel_analytics_conversion),
+          ("Intel", "macosintel", page.stable_macosintel),
         ]) }}
 
     {# Ubuntu stable #}
@@ -236,8 +236,8 @@ sudo apt install mixxx</code></pre>
         os_min_version=page.stable_ubuntu_min_version,
         ppa="mixxx",
         variants=[
-          ("32-Bit", "ubuntu32", page.stable_ubuntu32, page.stable_ubuntu32_analytics_conversion),
-          ("64-Bit", "ubuntu64", page.stable_ubuntu64, page.stable_ubuntu64_analytics_conversion),
+          ("32-Bit", "ubuntu32", page.stable_ubuntu32),
+          ("64-Bit", "ubuntu64", page.stable_ubuntu64),
         ]) }}
 
 
