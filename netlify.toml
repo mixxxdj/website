@@ -22,7 +22,7 @@
   [headers.values]
     # Only allow resources to be loaded from the current origin. Styles may
     # also be specified inline, and allow the Google Analytics scripts.
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' https://ssl.google-analytics.com 'sha256-6q+coHkwpyuBHHI7+nDAZewGV9mVIuZU5UJyx19Gdrs='"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' https://ssl.google-analytics.com"
 
     # Disable all browser features that we don't need. Unfortunately
     # there is no way to specify a default for all directives yet, so
@@ -49,4 +49,4 @@
   for = "/news/*"
   [headers.values]
     # Additionally allow YouTube/Discourse frames and scripts
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://ssl.google-analytics.com/ga.js https://mixxx.discourse.group/javascripts/embed.js; frame-src 'self' https://www.youtube-nocookie.com https://mixxx.discourse.group ; img-src 'self' https://i.ytimg.com ; connect-src 'self' https://mixxx.discourse.group https://*.discourse-cdn.com"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' https://ssl.google-analytics.com/ga.js https://mixxx.discourse.group/javascripts/embed.js *.discourse-cdn.com; frame-src 'self' https://www.youtube-nocookie.com https://mixxx.discourse.group ; img-src 'self' https://i.ytimg.com ; connect-src 'self' https://mixxx.discourse.group https://*.discourse-cdn.com"
