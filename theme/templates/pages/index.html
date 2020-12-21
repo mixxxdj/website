@@ -119,16 +119,4 @@
   </div>
 </div>
 {% endif %}
-
-
-<div id="community" class="docs-section container">
-  <h2><a class="headline-link" href="community">{% trans %}Friendly Community{% endtrans %}</a></h2>
-  <p>
-    {% trans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endtrans %}
-  </p>
-
-  <p>
-  {% with launchpad_bugs="https://bugs.launchpad.net/mixxx/", mapping_link="https://github.com/mixxxdj/mixxx/wiki/Contributing-Mappings", create_a_branch_link="/get-involved#developers", help_with_translations_link="/get-involved#translators", starter_tasks_link="/get-involved" %}{% trans %}You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endtrans %}{% endwith %}
-  </p>
-</div>
 {% endblock %}
