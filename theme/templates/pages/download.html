@@ -272,13 +272,7 @@ sudo apt install mixxx</code></pre>
 <div id="snapshots" class="docs-section container">
   <h2><a class="headline-link" href="#snapshots">{% trans %}Development Snapshots{% endtrans %}</a></h2>
   <p>
-    {% with source_link="https://github.com/mixxxdj/mixxx", windows_snapshot_link="https://downloads.mixxx.org/builds/main/Windows/Mixxx-main-latest.msi", macos_snapshot_link="https://downloads.mixxx.org/builds/main/macOS/Mixxx-main-latest.dmg", ubuntu_dev_ppa_link="https://launchpad.net/~mixxx/+archive/ubuntu/nightlies" %}{% trans %}Want to test and experiment with the latest changes?
-    The best way to keep up with Mixxx development is to grab the <a href="{{ source_link }}">source code</a> and compile Mixxx yourself.
-    Additionally, we provide pre-built development snapshots for <a href="{{ windows_snapshot_link }}">Windows</a> and <a href="{{ macos_snapshot_link }}">macOS</a>. Ubuntu users can use the <a href="{{ ubuntu_dev_ppa_link }}">Mixxx nightlies PPA</a> (despite the PPA name, builds are triggered every time the code is changed, not on a nightly schedule).{% endtrans %}{% endwith %}
-  </p>
-  <p>
-    {% trans %}Every change is peer reviewed, however, it is more likely that new bugs will be found on the main branch than stable or beta releases.
-    For most users, we recommend using the mature <a href="#stable">stable</a> version.{% endtrans %}
+    {% with testing_wiki="https://github.com/mixxxdj/mixxx/wiki/Testing" %}{% trans %}Testing the latest code we're working on and giving early feedback is a great way to contribute to Mixxx. Refer to the <a href="{{ testing_wiki }}">Testing wiki page</a> for where to find the latest builds and instructions how to test pull requests before they are merged.{% endtrans %}{% endwith %}
   </p>
 </div>
 
