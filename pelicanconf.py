@@ -24,6 +24,9 @@ STATIC_PATHS = [
 MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "full_yaml_metadata": {
+            "allow_missing_delimiters": True,
+        },
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
         "markdown_video": {},
@@ -84,6 +87,7 @@ PLUGIN_PATHS = [
 PLUGINS = [
     "author_metadata",
     "draft_override",
+    "md_yaml",
 ]
 
 

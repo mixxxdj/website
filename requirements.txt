@@ -1,3 +1,4 @@
 pelican
-markdown
+Markdown
+git+https://github.com/Holzhaus/python-markdown-full-yaml-metadata@metadata-without-delimiters#egg=markdown-full-yaml-metadata
 git+https://github.com/Holzhaus/Python-Markdown-Video.git#egg=Markdown-Video
