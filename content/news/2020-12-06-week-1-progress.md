@@ -1,6 +1,6 @@
 title: All about my Outreachy internship with Mixxx DJ: Week 1 progress
 authors: Aanyu Deborah Oduman
-tags: website, Outreachy, internship
+tags: outreachy, internship, manual
 date: 2020-12-06 18:10:00
 
 _This is the first of many weekly progress reports that I will be doing for the duration of the internship_.
@@ -15,4 +15,4 @@ This week:
 
 * Lost a day of work (maybe two) to the last two issues.
 
-* I’m thinking of a proper way to start working on the cookbook. I will need to consult on this – whether it should be in GitHub pages, a GitHub repo with .rst files (like the manual) or….. a simple website or…. something else.
+* I’m thinking of a proper way to start working on the cookbook. I will need to consult on this – whether it should be in GitHub pages, a GitHub repo with `*.rst` files (like the manual) or….. a simple website or…. something else.
