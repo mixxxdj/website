@@ -216,6 +216,12 @@ AUTHOR_METADATA = {
         "discourse": "crisclacerda",
         "tagline": "GSoC 2020 Student",
     },
+    "Aanyu Deborah Oduman": {
+        "github": "deborahtrez",
+        "discourse": "deborahao",
+        "email": "deborahtrez12@gmail.com",
+        "tagline": "Outreachy contributor (Dec 2020 - Mar 2021)",
+    }
 }
 
 JINJA_GLOBALS = {
