@@ -15,4 +15,4 @@ This week:
 
 * Lost a day of work (maybe two) to the last two issues.
 
-* I’m thinking of a proper way to start working on the cookbook. I will need to consult on this – whether it should be in GitHub pages, a GitHub repo with .rst files (like the manual) or….. a simple website or…. something else.
+* I’m thinking of a proper way to start working on the cookbook. I will need to consult on this – whether it should be in GitHub pages, a GitHub repo with `*.rst` files (like the manual) or….. a simple website or…. something else.
