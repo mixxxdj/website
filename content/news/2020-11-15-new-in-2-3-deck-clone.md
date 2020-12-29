@@ -1,4 +1,4 @@
-title: New in 2.3: Deck Cloning
+title: "New in 2.3: Deck Cloning"
 authors: Matthew Nicholson
 tags: 2.3
 date: 2020-11-15 13:36:00

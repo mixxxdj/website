@@ -1,4 +1,4 @@
-title: #BlackLivesMatter: Taking a Stand with Terminology and Recruitment
+title: "#BlackLivesMatter: Taking a Stand with Terminology and Recruitment"
 authors: Mixxx Team, April M. Crehan
 tags: black lives matter, diversity, community, outreachy
 date: 2020-06-29 15:00:00

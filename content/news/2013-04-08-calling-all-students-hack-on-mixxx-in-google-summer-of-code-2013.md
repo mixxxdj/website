@@ -1,4 +1,4 @@
-title: Calling all Students: Hack on Mixxx in Google Summer of Code 2013!
+title: "Calling all Students: Hack on Mixxx in Google Summer of Code 2013!"
 authors: RJ Ryan
 date: 2013-04-08 19:16:00
 tags: gsoc, gsoc-2013
