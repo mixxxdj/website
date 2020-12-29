@@ -1,4 +1,4 @@
-title: New in 2.3: Color your Hotcues
+title: "New in 2.3: Color your Hotcues"
 authors: Jan Holthuis
 tags: raspberry pi
 date: 2020-08-25 12:00:00

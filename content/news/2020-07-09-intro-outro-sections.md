@@ -1,4 +1,4 @@
-title: New In 2.3: Intro & Outro Cues, Silence Detection, and AutoDJ Improvements
+title: "New In 2.3: Intro & Outro Cues, Silence Detection, and AutoDJ Improvements"
 authors: Be.
 tags: 2.3
 date: 2020-07-09 01:00:00
