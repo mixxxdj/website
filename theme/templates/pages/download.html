@@ -12,19 +12,17 @@
   <h1><a class="headline-link" href="#download">Download Mixxx</a></h1>
   <p>{% trans %}Mixxx is available for Windows, macOS, and Linux.{% endtrans %}</p>
   <p>
-    {% with stable_version=page.stable_version %}
+    {% with stable_version=page.versions.stable.name %}
     {% trans %}For live use, we recommend to download the stable <a href="#stable">{{ stable_version }}</a> version.{% endtrans %}
     {% endwith %}
 
-    {% if page.unstable_version %}
-    {% with unstable_version=page.unstable_version, next_stable_version=page.next_stable_version %}
+    {% if page.versions.unstable %}
+    {% with unstable_version=page.versions.unstable.name, next_stable_version=page.versions.unstable.next_stable_version %}
     {% trans %}If you want to test the latest features of the upcoming {{ next_stable_version }} release, check out <a href="#unstable">{{ unstable_version }}</a>.{% endtrans %}
     {% endwith %}
     {% endif %}
 
-    {% if page.previous_version %}
     {% trans %}More conservative users can still download one of the <a href="#previous">older and unsupported versions of Mixxx</a> below.{% endtrans %}
-    {% endif %}
   </p>
 
   <p class="grid-container full">
