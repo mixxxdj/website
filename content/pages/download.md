@@ -28,13 +28,13 @@ versions:
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
         text: |
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxxbetas) to make installing install the latest beta version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
-              sudo add-apt-repository ppa:mixxx/mixxxbetas
-              sudo apt update
-              sudo apt install mixxx
+              $ sudo add-apt-repository ppa:mixxx/mixxxbetas
+              $ sudo apt update
+              $ sudo apt install mixxx
 
-          This will install the latest version of Mixxx from the [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxxbetas).
 
           Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
         note: |
@@ -61,7 +61,8 @@ versions:
       - slug: archlinux
         os: Arch Linux
         text: |
-          The beta version of Mixxx can be [installed](https://aur.archlinux.org/packages/mixxx_beta-git/#comment-783242) from the Arch User Repository (AUR). Open a terminal an run:
+          The beta version of Mixxx can be [installed](https://aur.archlinux.org/packages/mixxx_beta-git/#comment-783242) from the Arch User Repository (AUR).
+          Open a terminal, and enter:
 
               $ git clone https://aur.archlinux.org/mixxx_beta-git.git
               $ cd mixxx_beta-git
@@ -110,13 +111,12 @@ versions:
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
         text: |
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
-              sudo add-apt-repository ppa:mixxx/mixxx
-              sudo apt update
-              sudo apt install mixxx
-
-          This will install the latest version of Mixxx from the [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx).
+              $ sudo add-apt-repository ppa:mixxx/mixxx
+              $ sudo apt update
+              $ sudo apt install mixxx
 
           Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
         note: |
@@ -141,7 +141,8 @@ versions:
       - slug: archlinux
         os: Arch Linux
         text: |
-          The latest stable version of Mixxx is [available](https://archlinux.org/packages/community/x86_64/mixxx/) in the community repository and can be installed using `pacman`. Open a terminal and type:
+          The latest stable version of Mixxx is [available](https://archlinux.org/packages/community/x86_64/mixxx/) in the community repository and can be installed using `pacman`.
+          Open a terminal, and enter:
 
               # pacman -S mixxx
       - slug: source
