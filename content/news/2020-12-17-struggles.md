@@ -9,7 +9,7 @@ summary: Everybody struggles. This blog post is about a struggle that i went thr
 I hate feeling stuck.
 Staring at your screen blankly, at the verge of ripping your hair out because you have exhausted all the possible solutions and none of them has worked.
 
-![stressed out]({static}/images/news/ahmad-gunnaivi-OupUvbC_TEY-unsplash.jpg)
+![stressed out]({static}/images/news/frustrated_dev.jpg)
 
 It makes me second guess myself, what I know, how I got here, the education that I got and all of the things that have led me to this career path.
 I have been in this position many times before and yet each time, the feelings of self-doubt are as fresh as the first time that I encountered a bug in my code (it was HTML by the way).
