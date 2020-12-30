@@ -67,7 +67,7 @@
   </h2>
 
   {% if version_status == "unstable" %}
-  {% with stable_version=version.next_stable_version, stable_link="#stable" %}
+  {% with stable_version=page.versions.stable.name, stable_link="#stable" %}
   <p>{% trans %}For live use, we recommend to download the stable <a href="{{ stable_link }}">{{ stable_version }}</a> version below.{% endtrans %}</p>
   {% endwith %}
 
