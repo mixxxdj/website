@@ -121,11 +121,11 @@
         {% endif %}
         {% endif %}
 
+        {% if download.note %}
         <small>
-          {% if download.note %}
           {{ download.note|markdown }}
-          {% endif %}
         </small>
+        {% endif %}
       </div>
     </div>
   {% endfor %}
