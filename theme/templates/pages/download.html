@@ -101,11 +101,13 @@
         {% endif %}
 
         {% if download.packages %}
-        {% for package in download.packages %}
-        {% with os=download.os, package_name=package.name %}
-        <a class="button button-primary download-{{version_status}}-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
-        {% endwith %}
-        {% endfor %}
+        <div class="grid-container halves">
+          {% for package in download.packages %}
+          {% with os=download.os, package_name=package.name %}
+          <a class="button button-primary download-{{version_status}}-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+          {% endwith %}
+          {% endfor %}
+        </div>
 
         {% if version.status == "unstable" %}
         <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ version.next_stable_version }} is released.</p>
