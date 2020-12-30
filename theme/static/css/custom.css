@@ -650,3 +650,36 @@ article.news + article.news {
 .footer .copyright {
     text-align: center;
 }
+
+.accordion-box > input {
+    display: none;
+}
+
+.accordion-box > input + label {
+    display: block;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.accordion-box > input:checked + label {
+    border-color: var(--accent-color);
+}
+
+.accordion-content {
+    border: 1px solid var(--border-color);
+    margin: 0 0 1em 1em;
+    border-radius: 3px;
+}
+
+.accordion-box > input + label + .accordion-content {
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0px;
+    font-size: 0;
+    transition: ease .3s;
+}
+
+.accordion-box > input:checked + label + .accordion-content {
+    opacity: 1;
+    max-height: 100vh;
+}

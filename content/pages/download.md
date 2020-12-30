@@ -1,39 +1,101 @@
+---
 title: Download
 template: pages/download
-unstable_version: Mixxx 2.3.0 Beta
-next_stable_version: 2.3.0
-unstable_release_announcement: /news/2020-06-07-mixxx-2-3-beta-released/
-unstable_win_min_version: 7
-unstable_macos_min_version: 10.12
-unstable_ubuntu_min_version: 18.04 (Bionic)
-unstable_git_branch: 2.3
-unstable_win32: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-x86-latest.exe
-unstable_win64: https://downloads.mixxx.org/builds/2.3/Windows/Mixxx-2.3-latest.msi
-unstable_macosintel: https://downloads.mixxx.org/builds/2.3/macOS/Mixxx-2.3-latest.dmg
-unstable_ubuntu32: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-bionic-i386-latest.deb
-unstable_ubuntu64: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-bionic-amd64-latest.deb
-unstable_win32_analytics_conversion: /downloads/2.3.0-beta-win32
-unstable_win64_analytics_conversion: /downloads/2.3.0-beta-win64
-unstable_macosintel_analytics_conversion: /downloads/2.3.0-beta-osxintel
-unstable_ubuntu32_analytics_conversion: /downloads/2.3.0-beta-ubuntu32
-unstable_ubuntu64_analytics_conversion: /downloads/2.3.0-beta-ubuntu64
-unstable_ubuntu_ppa_analytics_conversion: /downloads/2.3.0-beta-ubuntu-ppa
-stable_version: Mixxx 2.2.4
-stable_release_announcement: /news/2020-06-11-Mixxx-2-2-4-released/
-stable_win_min_version: 7
-stable_macos_min_version: 10.11
-stable_ubuntu_min_version: 16.04 (Xenial)
-stable_git_branch: 2.2
-stable_win32: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
-stable_win64: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
-stable_macosintel: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
-stable_ubuntu32: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-i386.deb
-stable_ubuntu64: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-amd64.deb
-stable_linuxsrc: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
-stable_win32_analytics_conversion: /downloads/2.2.4-win32
-stable_win64_analytics_conversion: /downloads/2.2.4-win64
-stable_macosintel_analytics_conversion: /downloads/2.2.4-osxintel
-stable_ubuntu32_analytics_conversion: /downloads/2.2.4-ubuntu-bionic32
-stable_ubuntu64_analytics_conversion: /downloads/2.2.4-ubuntu-bionic64
-stable_ubuntu_ppa_analytics_conversion: NOT YET EXTRACTED, FIX ME BELOW
-stable_linuxsrc_analytics_conversion: /downloads/2.2.4-linuxsrc
+versions:
+  unstable:
+    name: 2.3.0 Beta
+    next_stable_version: 2.3.0
+    release_announcement: /news/2020-06-07-mixxx-2-3-beta-released/
+    downloads:
+      - slug: windows
+        os: Windows 7 or later
+        packages:
+          - slug: win32
+            name: 32-Bit
+            url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-x86-latest.exe
+            analytics_conversion: /downloads/2.3.0-beta-win32
+          - slug: win64
+            name: 64-Bit
+            url: https://downloads.mixxx.org/builds/2.3/Windows/Mixxx-2.3-latest.msi
+            analytics_conversion: /downloads/2.3.0-beta-win64
+      - slug: macos
+        os: macOS 10.12 or later
+        packages:
+        - slug: intel
+          name: Intel
+          url: https://downloads.mixxx.org/builds/2.3/macOS/Mixxx-2.3-latest.dmg
+          analytics_conversion: /downloads/2.3.0-beta-osxintel
+      - slug: ubuntu
+        os: Ubuntu 18.04 "Bionic Beaver" or later
+        ppa:
+          org: mixxx
+          name: mixxxbetas
+          analytics_conversion: /downloads/2.3.0-beta-ubuntu-ppa
+        packages:
+        - slug: ubuntu32
+          name: 32-Bit
+          url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-bionic-i386-latest.deb
+          analytics_conversion: /downloads/2.3.0-beta-ubuntu32
+        - ubuntu64:
+          name: 64-Bit
+          url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-bionic-amd64-latest.deb
+          analytics_conversion: /downloads/2.3.0-beta-ubuntu64
+      - slug: fedora
+        os: Fedora
+        rpmfusion: true
+      - slug: source
+        name: Source Code
+        git_branch: 2.3
+        packages:
+        - slug: source
+          name: Source Code
+          url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
+  stable:
+    name: 2.2.4
+    release_announcement: /news/2020-06-11-Mixxx-2-2-4-released/
+    downloads:
+      - slug: windows
+        os: Windows 7 or later
+        packages:
+          - slug: win32
+            name: 32-Bit
+            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
+            analytics_conversion: /downloads/2.2.4-win32
+          - slug: win64
+            name: 64-Bit
+            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
+            analytics_conversion: /downloads/2.2.4-win64
+      - slug: macos
+        os: macOS 10.11 or later
+        packages:
+          - slug: intel
+            name: Intel
+            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
+            analytics_conversion: /downloads/2.2.4-osxintel
+      - slug: ubuntu
+        os: Ubuntu 16.04 "Xenial Xerus" or later
+        ppa:
+          org: mixxx
+          name: mixxx
+        packages:
+          - slug: ubuntu32
+            name: 32-Bit
+            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-i386.deb
+            analytics_conversion: /downloads/2.2.4-ubuntu-bionic32
+          - slug: ubuntu64
+            name: 64-Bit
+            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-amd64.deb
+            analytics_conversion: /downloads/2.2.4-ubuntu-bionic64
+      - slug: fedora
+        os: Fedora
+        rpmfusion: true
+      - slug: source
+        name: Source Code
+        git_branch: 2.2
+        git_tag: 2.2.4
+        packages:
+        - slug: source
+          name: Source Code
+          url: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
+          analytics_conversion: /downloads/2.2.4-linuxsrc
+...
