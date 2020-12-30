@@ -9,7 +9,7 @@ This week:
 
 * I made a [pull request #327](https://github.com/mixxxdj/manual/pull/327) in response to [this issue](https://github.com/mixxxdj/manual/issues/289) . I moved the standard effects mapping documentation to section 11.5 of the manual.
 
-* Currently working on the cookbook chapter. I am moving documentation about deck cloning that I found in [this article](https://mixxx.discourse.group/t/new-in-2-3-deck-cloning/20267) to a new chapter of the manual that I am calling the cookbook. I will then move onto moving the chapter “[DJing with Mixxx](https://manual.mixxx.org/2.3/en/chapters/djing_with_mixxx.html)” to the cookbook as well.
+* Currently working on the cookbook chapter. I am moving documentation about deck cloning that I found in [this article]({filename}/news/new-in-2-3-deck-cloning.md) to a new chapter of the manual that I am calling the cookbook. I will then move onto moving the chapter “[DJing with Mixxx](https://manual.mixxx.org/2.3/en/chapters/djing_with_mixxx.html)” to the cookbook as well.
 
 * This week, I plan to move all my blog posts about my internship with Outreachy to the Mixxx website repository, and then if time allows, I will record another video tutorial about Mixxx DJ.
 
