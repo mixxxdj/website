@@ -58,6 +58,18 @@ versions:
           RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
 
           The beta package will be continuously updated until Mixxx 2.3.0 is released.
+      - slug: archlinux
+        os: Arch Linux
+        text: |
+          The beta version of Mixxx can be [installed](https://aur.archlinux.org/packages/mixxx_beta-git/#comment-783242) from the Arch User Repository (AUR). Open a terminal an run:
+
+              $ git clone https://aur.archlinux.org/mixxx_beta-git.git
+              $ cd mixxx_beta-git
+              $ makepkg -si
+
+          Alternatively, you can also use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers) to make the installation more straightforward.
+        note: |
+          **The AUR is an untrusted source.** Before installing any package from the AUR, always read its `PKGBUILD` to make sure it doesn't contain malicious code. Please note that the `mixxx_beta-git` package is maintained by a third-party contributor, not the Mixxx development team.
       - slug: source
         name: Source Code
         icon: terminal.svg
@@ -126,6 +138,12 @@ versions:
           Please refer to [RPM Fusion's instructions](https://rpmfusion.org/Configuration) on how to enable the repositories on your system. Mixxx only requires enabling the free repository; the nonfree repository is not necessary for Mixxx.
 
           RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
+      - slug: archlinux
+        os: Arch Linux
+        text: |
+          The latest stable version of Mixxx is [available](https://archlinux.org/packages/community/x86_64/mixxx/) in the community repository and can be installed using `pacman`. Open a terminal and type:
+
+              # pacman -S mixxx
       - slug: source
         name: Source Code
         icon: terminal.svg
