@@ -74,7 +74,7 @@ versions:
         name: Source Code
         icon: terminal.svg
         text: |
-          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the LICENSE file in our source tree for complete licensing information.
+          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the `LICENSE` file in our source tree for complete licensing information.
 
           Download the latest code from Mixxx's `2.3` branch on [GitHub](https://github.com/mixxxdj/mixxx/tree/2.3) by opening a terminal and running:
 
@@ -148,7 +148,7 @@ versions:
         name: Source Code
         icon: terminal.svg
         text: |
-          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the LICENSE file in our source tree for complete licensing information.
+          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the `LICENSE` file in our source tree for complete licensing information.
 
           Download the latest code from Mixxx's `2.2` branch on [GitHub](https://github.com/mixxxdj/mixxx/tree/2.2) by opening a terminal and running:
 
