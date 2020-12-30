@@ -60,6 +60,7 @@ versions:
           The beta package will be continuously updated until Mixxx 2.3.0 is released.
       - slug: source
         name: Source Code
+        icon: terminal.svg
         text: |
           The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the LICENSE file in our source tree for complete licensing information.
 
@@ -127,6 +128,7 @@ versions:
           RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
       - slug: source
         name: Source Code
+        icon: terminal.svg
         text: |
           The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the LICENSE file in our source tree for complete licensing information.
 
