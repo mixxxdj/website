@@ -70,7 +70,7 @@ versions:
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
-          name: Source Code
+          name: Source Code of 2.3 branch
           url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
   stable:
     name: 2.2.4
@@ -139,7 +139,11 @@ versions:
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
-          name: Source Code
+          name: Source Code of 2.2 branch
+          url: https://github.com/mixxxdj/mixxx/archive/2.2.zip
+          analytics_conversion: /downloads/2.2.4-linuxsrc
+        - slug: source
+          name: Source Code of 2.2.4 release
           url: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
           analytics_conversion: /downloads/2.2.4-linuxsrc
 ...
