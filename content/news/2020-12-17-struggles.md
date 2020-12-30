@@ -1,4 +1,4 @@
-title: All about my Outreachy internship with Mixxx DJ: Struggles
+title: About my Outreachy internship with Mixxx DJ: Struggles
 authors: Aanyu Deborah Oduman
 tags: personal, outreachy, internship
 date: 2020-12-06 18:10:00
