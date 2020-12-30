@@ -53,7 +53,7 @@
 {% for version_status, version in page.versions.items() %}
 <div id="{{ version_status }}" class="docs-section container">
   <h2>
-    <a class="headline-link" href="#{{ version.status }}">
+    <a class="headline-link" href="#{{ version_status }}">
       {% with version_name=version.name %}
       {% if version_status == "stable" %}
       {% trans %}Mixxx {{ version_name }} (Stable Version){% endtrans %}
@@ -126,7 +126,7 @@
           {% endfor %}
         </div>
 
-        {% if version.status == "unstable" %}
+        {% if version_status == "unstable" %}
         <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ version.next_stable_version }} is released.</p>
         {% endif %}
         {% endif %}
