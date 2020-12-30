@@ -27,10 +27,18 @@ versions:
           analytics_conversion: /downloads/2.3.0-beta-osxintel
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
-        ppa:
-          org: mixxx
-          name: mixxxbetas
-          analytics_conversion: /downloads/2.3.0-beta-ubuntu-ppa
+        text: |
+          Open a terminal, and enter:
+
+              sudo add-apt-repository ppa:mixxx/mixxxbetas
+              sudo apt update
+              sudo apt install mixxx
+
+          This will install the latest version of Mixxx from the [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxxbetas).
+
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
+        note: |
+          **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
         packages:
         - slug: ubuntu32
           name: 32-Bit
@@ -42,10 +50,24 @@ versions:
           analytics_conversion: /downloads/2.3.0-beta-ubuntu64
       - slug: fedora
         os: Fedora
-        rpmfusion: true
+        text: |
+          An [RPM package](https://admin.rpmfusion.org/pkgdb/package/free/mixxx/) for installation is available in the [RPM Fusion](https://rpmfusion.org/) repositories.
+
+          Please refer to [RPM Fusion's instructions](https://rpmfusion.org/Configuration) on how to enable the repositories on your system. Mixxx only requires enabling the free repository; the nonfree repository is not necessary for Mixxx.
+
+          RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
+
+          The beta package will be continuously updated until Mixxx 2.3.0 is released.
       - slug: source
         name: Source Code
-        git_branch: 2.3
+        text: |
+          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the LICENSE file in our source tree for complete licensing information.
+
+          Download the latest code from Mixxx's `2.3` branch on [GitHub](https://github.com/mixxxdj/mixxx/tree/2.3) by opening a terminal and running:
+
+              git clone -b 2.3 https://github.com/mixxxdj/mixxx.git
+
+          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
           name: Source Code
@@ -74,9 +96,18 @@ versions:
             analytics_conversion: /downloads/2.2.4-osxintel
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
-        ppa:
-          org: mixxx
-          name: mixxx
+        text: |
+          Open a terminal, and enter:
+
+              sudo add-apt-repository ppa:mixxx/mixxx
+              sudo apt update
+              sudo apt install mixxx
+
+          This will install the latest version of Mixxx from the [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx).
+
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
+        note: |
+          **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
         packages:
           - slug: ubuntu32
             name: 32-Bit
@@ -88,11 +119,24 @@ versions:
             analytics_conversion: /downloads/2.2.4-ubuntu-bionic64
       - slug: fedora
         os: Fedora
-        rpmfusion: true
+        text: |
+          An [RPM package](https://admin.rpmfusion.org/pkgdb/package/free/mixxx/) for installation is available in the [RPM Fusion](https://rpmfusion.org/) repositories.
+
+          Please refer to [RPM Fusion's instructions](https://rpmfusion.org/Configuration) on how to enable the repositories on your system. Mixxx only requires enabling the free repository; the nonfree repository is not necessary for Mixxx.
+
+          RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
       - slug: source
         name: Source Code
-        git_branch: 2.2
-        git_tag: 2.2.4
+        text: |
+          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the LICENSE file in our source tree for complete licensing information.
+
+          Download the latest code from Mixxx's `2.2` branch on [GitHub](https://github.com/mixxxdj/mixxx/tree/2.2) by opening a terminal and running:
+
+              git clone -b 2.2 https://github.com/mixxxdj/mixxx.git
+
+          The 2.2.4 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/release-2.2.4) with `release-2.2.4`.
+
+          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
           name: Source Code

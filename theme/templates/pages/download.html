@@ -92,40 +92,15 @@
       <input type="radio" name="download-{{ version_status }}" id="{{ version_status }}-{{ download.slug }}" />
       <label for="{{ version_status }}-{{ download.slug }}" class="button button-secondary">{% if download.name %}{{ download.name }}{% else %}{{ download.os }}{% endif %}</label>
       <div class="accordion-content">
-        {% if download.ppa %}
-        <p>Open a terminal, and enter:<p>
-        <pre><code>sudo add-apt-repository ppa:{{ download.ppa.org }}/{{ download.ppa.name }}
-sudo apt update
-sudo apt install mixxx</code></pre>
-        <p>This will install the latest version of Mixxx from the <a href="https://launchpad.net/~{{ download.ppa.org }}/+archive/{{ download.ppa.name }}">PPA on Launchpad</a>.</p>
-        {% endif %}
-
-        {% if download.rpmfusion %}
-        <p>An <a href="https://admin.rpmfusion.org/pkgdb/package/free/mixxx/">RPM package</a> for installation is available in the <a href="https://rpmfusion.org/">RPM Fusion</a> repositories.</p>
-        <p>Please refer to <a href="https://rpmfusion.org/Configuration">RPM Fusion's instructions</a> on how to enable the repositories on your system. Mixxx only requires enabling the free repository; the nonfree repository is not necessary for Mixxx.</p>
-        <p>RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.</p>
-        {% if version_status == "unstable" %}
-        <p>The package will be continuously updated until Mixxx {{ version.next_stable_version }} is released.</p>
-        {% endif %}
-        {% endif %}
-
-        {% if download.git_branch %}
-        <p>
-          {% with git_branch=download.git_branch %}
-          The source code for Mixxx {{ version_name }} can be found in the <a href="https://github.com/mixxxdj/mixxx/tree/{{ git_branch }}"><code>{{ git_branch }}</code> branch</a> of the Mixxx repository on GitHub.
-          {% endwith %}
-          {% if download.git_tag %}
-          {% with git_tag=download.git_tag %}
-          This specific release has been tagged with <a href="https://github.com/mixxxdj/mixxx/releases/tag/{{ git_tag }}"><code>{{ git_tag }}</code></a>.
-          {% endwith %}
-          {% endif %}
-        </p>
+        {% if download.text %}
+        {{ download.text|markdown }}
+        {% elif download.os %}
+        <p>Download Mixxx {{ version_name }} for {{ download.os }}.</p>
+        {% else %}
+        <p>Download Mixxx {{ version_name }}.</p>
         {% endif %}
 
         {% if download.packages %}
-        {% if download.os %}
-        <p>Download Mixxx {{ version_name }} for {{ download.os }}.</p>
-        {% endif %}
         {% for package in download.packages %}
         {% with os=download.os, package_name=package.name %}
         <a class="button button-primary download-{{version_status}}-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
@@ -136,6 +111,12 @@ sudo apt install mixxx</code></pre>
         <p>New versions will be made available every time the code is changed, so check back periodically for updates until Mixxx {{ version.next_stable_version }} is released.</p>
         {% endif %}
         {% endif %}
+
+        <small>
+          {% if download.note %}
+          {{ download.note|markdown }}
+          {% endif %}
+        </small>
       </div>
     </div>
   {% endfor %}
