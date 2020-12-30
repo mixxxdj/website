@@ -3,7 +3,7 @@ authors: Aanyu Deborah Oduman
 tags: personal, internship, manual, personal
 date: 2020-12-06 18:10:00
 
-_This is the first of many weekly progress reports that I will be doing for the duration of the internship_.
+_This is the first of many weekly progress reports that I will be publishing for the duration of my Outreachy internship with Mixxx DJ_.
 
 This week:
 

@@ -2,13 +2,14 @@ title: All about my Outreachy internship with Mixxx DJ: Struggles
 authors: Aanyu Deborah Oduman
 tags: personal, outreachy, internship
 date: 2020-12-06 18:10:00
+summary: Everybody struggles. This blog post is about a struggle that i went through in the past two weeks. I ran into this blocker while using git (as i normally do) and making some improvements on the Mixxx manual. I write about how i got stuck and the measures that i took to get unstuck.
 
 ####  I thought i knew git until this day - struggles
 
 I hate feeling stuck.
 Staring at your screen blankly, at the verge of ripping your hair out because you have exhausted all the possible solutions and none of them has worked.
 
-![stressed out]({static}/images/news/stressed_guy.jpg)
+![stressed out]({static}/images/news/ahmad-gunnaivi-OupUvbC_TEY-unsplash.jpg)
 
 It makes me second guess myself, what I know, how I got here, the education that I got and all of the things that have led me to this career path.
 I have been in this position many times before and yet each time, the feelings of self-doubt are as fresh as the first time that I encountered a bug in my code (it was HTML by the way).
@@ -106,7 +107,7 @@ We have to be humble enough to acknowledge that indeed things aren’t working a
 
 Secondly, it’s always good to ask for help but before you do, please, do your research.
 
-![the question]({static}/images/news/research.jpeg)
+![the question]({static}/images/news/research.jpg)
 
 Try to ensure that you have exhausted all the resources at your disposal so that by the time you ask, you are better informed about all the alternative methods you could have used, but didn’t for justifiable reasons.
 You will not feel completely clueless when asked if you’ve tried a certain solution because you know that you tried it, and it didn’t work or that if you had tried it, it wouldn’t work for reasons A, B, C and D.
