@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+import jinja2
+import markdown
 
 AUTHOR = "Mixxx DJ Team"
 SITENAME = "Mixxx"
@@ -222,6 +224,9 @@ AUTHOR_METADATA = {
     },
 }
 
+# Needed for Jinja2 markdown filter
+md = markdown.Markdown()
+
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
     "NAV_MENU": NAV_MENU,
@@ -234,6 +239,7 @@ JINJA_ENVIRONMENT = {
         "jinja2.ext.i18n",
     ],
 }
+JINJA_FILTERS = {"markdown": lambda text: jinja2.Markup(md.convert(text))}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
