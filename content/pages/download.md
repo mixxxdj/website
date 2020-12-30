@@ -35,7 +35,6 @@ versions:
               $ sudo apt update
               $ sudo apt install mixxx
 
-
           Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
         note: |
           **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
