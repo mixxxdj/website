@@ -667,19 +667,21 @@ article.news + article.news {
 
 .accordion-content {
     border: 1px solid var(--border-color);
-    margin: 0 0 1em 1em;
+    font-size: 0.9em;
+    margin: 0;
     border-radius: 3px;
 }
 
 .accordion-box > input + label + .accordion-content {
     opacity: 0;
-    overflow: hidden;
     max-height: 0px;
-    font-size: 0;
+    overflow: hidden;
     transition: ease .3s;
 }
 
 .accordion-box > input:checked + label + .accordion-content {
     opacity: 1;
     max-height: 100vh;
+    padding: 1em;
+    margin: 0 0 2em 0;
 }
