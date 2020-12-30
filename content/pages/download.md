@@ -10,18 +10,18 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: win32
+          - slug: windows32
             name: 32-Bit
             url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-x86-latest.exe
             analytics_conversion: /downloads/2.3.0-beta-win32
-          - slug: win64
+          - slug: windows64
             name: 64-Bit
             url: https://downloads.mixxx.org/builds/2.3/Windows/Mixxx-2.3-latest.msi
             analytics_conversion: /downloads/2.3.0-beta-win64
       - slug: macos
         os: macOS 10.12 or later
         packages:
-        - slug: intel
+        - slug: macosintel
           name: Intel
           url: https://downloads.mixxx.org/builds/2.3/macOS/Mixxx-2.3-latest.dmg
           analytics_conversion: /downloads/2.3.0-beta-osxintel
@@ -80,18 +80,18 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: win32
+          - slug: windows32
             name: 32-Bit
             url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
             analytics_conversion: /downloads/2.2.4-win32
-          - slug: win64
+          - slug: windows64
             name: 64-Bit
             url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
             analytics_conversion: /downloads/2.2.4-win64
       - slug: macos
         os: macOS 10.11 or later
         packages:
-          - slug: intel
+          - slug: macosintel
             name: Intel
             url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
             analytics_conversion: /downloads/2.2.4-osxintel

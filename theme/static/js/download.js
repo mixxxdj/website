@@ -27,7 +27,7 @@
         //    return "ubuntu" + detectBitness();
         //}
         if (window.navigator.userAgent.indexOf("Mac") !== -1) {
-            return "osxintel";
+            return "macosintel";
         }
         return "unknown";
     }
@@ -57,6 +57,7 @@
         if (link.onclick) {
             button.setAttribute("onclick", link.onclick.toString());
         }
-        description.innerHTML = link.dataset.os;
+        button.innerHTML = button.dataset.osdetectText.replace("%s", link.dataset.os);
+        description.innerHTML = description.dataset.osdetectText;
     });
 }());

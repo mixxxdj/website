@@ -28,9 +28,9 @@
   </p>
 
   <p class="grid-container full">
-    {% with stable_version=page.stable_version %}
-    <a href="#stable" class="button button-primary download-button" title="{% trans %}Download stable version of Mixxx{% endtrans %}">{% trans %}Download {{ stable_version }}{% endtrans %}</a>
-    <span class="download-button-description">{% trans %}Select your Operating System below.{% endtrans %}</span>
+    {% with stable_version=page.versions.stable.name, stable_link="#stable" %}
+    <a href="#stable" class="button button-primary download-button" title="{% trans %}Download stable version of Mixxx{% endtrans %}" data-osdetect-text="{% trans %}Download Mixxx {{ stable_version }} for %s{% endtrans %}">{% trans %}Download Mixxx {{ stable_version }}{% endtrans %}</a>
+    <span class="download-button-description" data-osdetect-text="{% trans %}Want to download Mixxx for a different OS? Then select it manually &lt;a href=&quot;{{ stable_link }}&quot;&gt;below&lt;/a&gt;.{% endtrans %}">{% trans %}Select your Operating System <a href="{{ stable_link }}">below</a>.{% endtrans %}</span>
     {% endwith %}
   </p>
 </div>
@@ -111,7 +111,7 @@
         <div class="grid-container halves">
           {% for package in download.packages %}
           {% with os=download.os, package_name=package.name %}
-          <a class="button button-primary download-{{version_status}}-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+          <a class="button button-primary download-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
           {% endwith %}
           {% endfor %}
         </div>
