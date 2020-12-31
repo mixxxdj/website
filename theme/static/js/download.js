@@ -13,27 +13,33 @@
         ];
         for (let needle in indicators64Bit) {
             if (window.navigator.appVersion.indexOf(needle) !== -1) {
-                return "64";
+                return ["64", "32"];
             }
         }
-        return "32";
+        return ["32"];
     }
 
     let detectOS = function () {
         if (window.navigator.userAgent.indexOf("Windows") !== -1) {
-            return "windows" + detectBitness();
+            return ["windows", detectBitness()];
         }
-        //if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
-        //    return "ubuntu" + detectBitness();
-        //}
         if (window.navigator.userAgent.indexOf("Mac") !== -1) {
-            return "macosintel";
+            return ["macos", ["intel"]];
         }
-        return "unknown";
+        if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
+            return ["ubuntu", []];
+        }
+        if (window.navigator.userAgent.indexOf("Fedora") !== -1) {
+            return ["fedora", []];
+        }
+        if (window.navigator.userAgent.indexOf("Arch Linux") !== -1) {
+            return ["archlinux", []];
+        }
+        return null;
     }
 
-    let osName = detectOS();
-    if (osName === "unknown") {
+    let os = detectOS();
+    if (os === null) {
         return;
     }
 
@@ -48,16 +54,48 @@
             return;
         }
 
-        let link = document.querySelector("#stable .download-" + osName)
-        if (!link || !link.href || !link.dataset.os) {
+        let osName = os[0];
+        let osArch = os[1];
+
+        // Check if we can find a direct package download. If so, make the
+        // download button download it.
+        let packageFound = osArch.every(function(item) {
+            let dlName = osName + osArch;
+
+            let package = document.querySelector("#stable .download-" + osName + " .package-" + dlName)
+            if (!package || !package.href || !package.dataset.os) {
+                // This is equivalent to a for loop's "continue"
+                return true;
+            }
+
+            button.href = package.href;
+            if (package.onclick) {
+                button.setAttribute("onclick", package.onclick.toString());
+            }
+            button.innerHTML = button.dataset.osdetectText.replace("%s", package.dataset.os);
+            description.innerHTML = description.dataset.osdetectText;
+            return false;
+        });
+
+        // Array.every(callback) returns true if callback returned true for
+        // each value *or* if the array was empty.
+        if (packageFound && osArch.length > 0) {
             return;
         }
 
-        button.href = link.href;
-        if (link.onclick) {
-            button.setAttribute("onclick", link.onclick.toString());
+        // We didn't find a matching package to download. Check if there is a
+        // matching download section and make the button scroll to it.
+        let input = document.querySelector("#stable .download-" + osName);
+        if (!input) {
+            return;
         }
-        button.innerHTML = button.dataset.osdetectText.replace("%s", link.dataset.os);
-        description.innerHTML = description.dataset.osdetectText;
+
+        let section = input.parentNode;
+        if (section || section.id || section.dataset.os) {
+            button.href = "#" + section.id;
+            button.innerHTML = button.dataset.osdetectText.replace("%s", section.dataset.os);
+            description.innerHTML = description.dataset.osdetectText;
+            input.checked = true;
+        }
     });
 }());

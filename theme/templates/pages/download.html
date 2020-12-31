@@ -98,9 +98,8 @@
 
   <div class="accordion">
   {% for download in version.downloads %}
-    <div class="accordion-box">
-      <input type="radio" name="download-{{ version_status }}" id="{{
-      version_status }}-{{ download.slug }}" />
+  <div class="accordion-box" id="{{ version_status }}-{{ download.slug }}" data-os="{{ download.os }}">
+      <input type="radio" name="mixxx-{{ version_status }}" class="download-{{ download.slug }}" />
       <label for="{{ version_status }}-{{ download.slug }}" class="button button-secondary">
         <div>
           <img src="{{ SITEURL }}/theme/images/icons/{% if download.icon %}{{ download.icon }}{% else %}os_{{ download.slug }}.svg{% endif %}" class="icon" title="{{ download.os }}" alt="{{ download.os }}" />
@@ -121,7 +120,7 @@
         <div class="grid-container halves">
           {% for package in download.packages %}
           {% with os=download.os, package_name=package.name %}
-          <a class="button button-primary download-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+          <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
           {% endwith %}
           {% endfor %}
         </div>
