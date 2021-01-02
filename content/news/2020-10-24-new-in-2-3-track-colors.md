@@ -1,4 +1,4 @@
-title: New in 2.3: Colorize your Tracks!
+title: "New in 2.3: Colorize your Tracks!"
 authors: Jan Holthuis
 tags: 2.3, library
 date: 2020-10-24 12:00:00
