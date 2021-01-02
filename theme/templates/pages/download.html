@@ -99,8 +99,8 @@
   <div class="accordion">
   {% for download in version.downloads %}
   <div class="accordion-box" id="{{ version_status }}-{{ download.slug }}" data-os="{{ download.os }}">
-      <input type="radio" name="mixxx-{{ version_status }}" class="download-{{ download.slug }}" />
-      <label for="{{ version_status }}-{{ download.slug }}" class="button button-secondary">
+      <input type="radio" name="mixxx-{{ version_status }}" id="download-{{ version_status }}-{{ download.slug }}" />
+      <label for="download-{{ version_status }}-{{ download.slug }}" class="button button-secondary">
         <div>
           <img src="{{ SITEURL }}/theme/images/icons/{% if download.icon %}{{ download.icon }}{% else %}os_{{ download.slug }}.svg{% endif %}" class="icon" title="{{ download.os }}" alt="{{ download.os }}" />
         <span>{% if download.name %}{{ download.name }}{% else %}{{ download.os }}{% endif %}</span>
