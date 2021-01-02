@@ -127,6 +127,7 @@ i.fas, i.fab {
     z-index: 99;
     border-top: 1px solid var(--border-color-softer);
     border-bottom: 1px solid var(--border-color-softer);
+    box-sizing: border-box;
 }
 .navbar-spacer {
     display: none;
