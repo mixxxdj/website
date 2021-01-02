@@ -107,6 +107,11 @@ i.fas, i.fab {
     position: sticky;
     top: 0;
 }
+
+[id] {
+    scroll-margin-top: 5rem;
+}
+
 .navbar .navbar-main {
     display: flex;
     justify-content: space-between;
