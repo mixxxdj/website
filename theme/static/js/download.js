@@ -54,15 +54,21 @@
             return;
         }
 
+        console.log("OS", os);
+
         let osName = os[0];
         let osArch = os[1];
 
         // Check if we can find a direct package download. If so, make the
         // download button download it.
-        let packageFound = osArch.every(function(item) {
-            let dlName = osName + osArch;
+        let packageNotFound = osArch.every(function(item) {
+            let dlName = osName + item;
 
             let package = document.querySelector("#stable .download-" + osName + " .package-" + dlName)
+            console.log("#stable .download-" + osName + " .package-" + dlName)
+            console.log(package)
+            console.log(package.href)
+            console.log(package.dataset.os)
             if (!package || !package.href || !package.dataset.os) {
                 // This is equivalent to a for loop's "continue"
                 return true;
@@ -76,13 +82,13 @@
 
         // Array.every(callback) returns true if callback returned true for
         // each value *or* if the array was empty.
-        if (packageFound && osArch.length > 0) {
+        if (!packageNotFound) {
             return;
         }
 
         // We didn't find a matching package to download. Check if there is a
         // matching download section and make the button scroll to it.
-        let input = document.querySelector("#stable .download-" + osName);
+        let input = document.querySelector("#stable .download-" + osName + " input.expander");
         if (!input) {
             return;
         }
