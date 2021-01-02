@@ -69,9 +69,6 @@
             }
 
             button.href = package.href;
-            if (package.onclick) {
-                button.setAttribute("onclick", package.onclick.toString());
-            }
             button.innerHTML = button.dataset.osdetectText.replace("%s", package.dataset.os);
             description.innerHTML = description.dataset.osdetectText;
             return false;

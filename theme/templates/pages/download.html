@@ -120,7 +120,7 @@
         <div class="grid-container halves">
           {% for package in download.packages %}
           {% with os=download.os, package_name=package.name %}
-          <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}" onclick="javascript:trackDownload('{{ package.analytics_conversion }}');">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+          <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
           {% endwith %}
           {% endfor %}
         </div>
