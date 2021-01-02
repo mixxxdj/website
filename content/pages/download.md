@@ -10,9 +10,6 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: windows32
-            name: 32-Bit
-            url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-x86-latest.exe
           - slug: windows64
             name: 64-Bit
             url: https://downloads.mixxx.org/builds/2.3/Windows/Mixxx-2.3-latest.msi
