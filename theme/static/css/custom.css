@@ -107,6 +107,11 @@ i.fas, i.fab {
     position: sticky;
     top: 0;
 }
+
+[id] {
+    scroll-margin-top: 5rem;
+}
+
 .navbar .navbar-main {
     display: flex;
     justify-content: space-between;
@@ -122,6 +127,7 @@ i.fas, i.fab {
     z-index: 99;
     border-top: 1px solid var(--border-color-softer);
     border-bottom: 1px solid var(--border-color-softer);
+    box-sizing: border-box;
 }
 .navbar-spacer {
     display: none;
@@ -649,4 +655,94 @@ article.news + article.news {
 
 .footer .copyright {
     text-align: center;
+}
+
+.accordion-box > input {
+    display: none;
+}
+
+.accordion-box > input + label {
+    display: block;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+.accordion-box > input + label div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-box > input + label img {
+    height: 2em;
+    vertical-align: middle;
+    filter: brightness(67%);
+}
+
+.accordion-box > input + label:hover img {
+    filter: brightness(80%);
+}
+
+.accordion-box > input + label .expander {
+    background: transparent;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.accordion-box > input + label .expander:before,
+.accordion-box > input + label .expander:after {
+    background: var(--text-color-normal);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.accordion-box > input + label .expander:before {
+    transform: matrix(0.5, 0.5, 1.5, 0, 0, -4.5)
+}
+
+.accordion-box > input + label .expander:after {
+    transform: matrix(0.5, -0.5, 1.5, 0, 0, 4.5)
+}
+
+/* Toggle Effect */
+.accordion-box > input:checked + label .expander:before {
+    transform: matrix(0.5, 0.5, 0, 1.5, -4.5, 0)
+}
+.accordion-box > input:checked + label .expander:after {
+    transform: matrix(0.5, -0.5, 0, 1.5, 4.5, 0)
+}
+
+.accordion-box > input:checked + label {
+    border-color: var(--accent-color);
+}
+
+.accordion-content {
+    border: 1px solid var(--border-color);
+    font-size: 0.9em;
+    margin: 0;
+    border-radius: 3px;
+}
+
+.accordion-content *:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-box > input + label + .accordion-content {
+    opacity: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: ease .3s;
+}
+
+.accordion-box > input:checked + label + .accordion-content {
+    opacity: 1;
+    max-height: 100vh;
+    padding: 1em;
+    margin: 0 0 2em 0;
 }
