@@ -1,4 +1,4 @@
-title: About my Outreachy internship with Mixxx DJ: Week 4 progress
+title: "About my Outreachy internship with Mixxx DJ: Week 4 progress"
 authors: Aanyu Deborah Oduman
 tags: personal, outreachy, internship, manual
 date: 2020-12-29 23:55:00
