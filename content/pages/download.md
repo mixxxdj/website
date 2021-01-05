@@ -154,9 +154,9 @@ versions:
   testing:
     title: Development Snapshots
     text: |
-      Testing the latest code we're working on and giving early feedback is a great way to contribute to Mixxx. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
+      A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
 
-      **Development snapshots are not intended for live use!** Expect crashes and make sure to [back up your Mixxx settings and library](https://manual.mixxx.org/2.4/en/chapters/getting_started.html#upgrading-mixxx) before upgrading.
+      **Development snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
     downloads:
       - slug: archlinux
         os: Arch Linux
