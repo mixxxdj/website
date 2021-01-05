@@ -61,7 +61,7 @@ versions:
 
           Alternatively, you can also use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers) to make the installation more straightforward.
         note: |
-          **The AUR is an untrusted source.** Before installing any package from the AUR, always read its `PKGBUILD` to make sure it doesn't contain malicious code. Please note that the `mixxx_beta-git` package is maintained by a third-party contributor, not the Mixxx development team.
+          **The AUR is an untrusted source.** Although the `mixxx_beta-git` package is maintained by the Mixxx development team, you should always read the `PKGBUILD` of each AUR package you install to make sure it doesn't contain malicious code.
       - slug: source
         name: Source Code
         icon: terminal.svg
@@ -170,7 +170,7 @@ versions:
 
           Alternatively, you can also use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers) to make the installation more straightforward.
         note: |
-          **The AUR is an untrusted source.** Before installing any package from the AUR, always read its `PKGBUILD` to make sure it doesn't contain malicious code. Please note that the `mixxx-git` package is maintained by a third-party contributor, not the Mixxx development team.
+          **The AUR is an untrusted source.** Although the `mixxx-git` package is maintained by the Mixxx development team, you should always read the `PKGBUILD` of each AUR package you install to make sure it doesn't contain malicious code.
       - slug: source
         name: Source Code
         icon: terminal.svg
