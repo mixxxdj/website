@@ -22,7 +22,7 @@
     {% endwith %}
     {% endif %}
 
-    {% trans %}More conservative users can still download one of the <a href="#previous">older and unsupported versions of Mixxx</a> below.{% endtrans %}
+    {% trans %}More conservative users can still download one of the <a href="#previous">older and unsupported versions of Mixxx</a> instead.{% endtrans %}
   </p>
 
   <p class="grid-container full">
@@ -54,6 +54,9 @@
 <div id="{{ version_status }}" class="docs-section container">
   <h2>
     <a class="headline-link" href="#{{ version_status }}">
+      {% if version.title %}
+      {{ version.title }}
+      {% else %}
       {% with version_name=version.name %}
       {% if version_status == "stable" %}
       {% trans %}Mixxx {{ version_name }} (Stable Version){% endtrans %}
@@ -63,14 +66,20 @@
       {% trans %}Mixxx {{ version_name }}{% endtrans %}
       {% endif %}
       {% endwith %}
+      {% endif %}
     </a>
   </h2>
 
-  {% if version_status == "unstable" %}
+  {% if version.text %}
+  {{ version.text|markdown }}
+  {% endif %}
+
+  {% if version_status != "stable" %}
   {% with stable_version=page.versions.stable.name, stable_link="#stable" %}
-  <p>{% trans %}For live use, we recommend to download the stable <a href="{{ stable_link }}">{{ stable_version }}</a> version below.{% endtrans %}</p>
+  <p>{% trans %}For live use, we recommend to download the stable <a href="{{ stable_link }}">{{ stable_version }}</a> version instead.{% endtrans %}</p>
   {% endwith %}
 
+  {% if version_status == "unstable" %}
   {% with release_announcement=version.release_announcement %}
   <p>{% trans %}The Mixxx team has been working hard on the next version of Mixxx. Check out the <a href="{{ release_announcement }}">release announcement</a> for a list of the new features.{% endtrans %}</p>
   {% endwith %}
@@ -80,7 +89,8 @@
     {% trans %}While {{ version }} has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endtrans %}</a>
     {% endwith %}
   </p>
-  {% elif version_status == "stable" %}
+  {% endif %}
+  {% else %}
   <p>
     {% with version_name=version.name %}
     {% trans %}This is the current stable version of Mixxx, which means it has been thoroughly tested and is considered stable enough for live use.{% endtrans %}
@@ -92,7 +102,6 @@
     {% endwith %}
     {% endif %}
   </p>
-
   <p>{% trans %}Although Mixxx {{ version_name }} contains many important updates and bugfixes, it's possible some users may experience issues. If you do, you can still get one of our <a href="#previous">previous versions</a>.{% endtrans %}</p>
   {% endif %}
 
@@ -141,13 +150,6 @@
   </div>
 </div>
 {% endfor %}
-
-<div id="snapshots" class="docs-section container">
-  <h2><a class="headline-link" href="#snapshots">{% trans %}Development Snapshots{% endtrans %}</a></h2>
-  <p>
-    {% with testing_wiki="https://github.com/mixxxdj/mixxx/wiki/Testing" %}{% trans %}Testing the latest code we're working on and giving early feedback is a great way to contribute to Mixxx. Refer to the <a href="{{ testing_wiki }}">Testing wiki page</a> for where to find the latest builds and instructions how to test pull requests before they are merged.{% endtrans %}{% endwith %}
-  </p>
-</div>
 
 <div id="previous" class="docs-section container">
   <h2><a class="headline-link" href="#previous">{% trans %}Previous Mixxx Versions{% endtrans %}</a></h2>
