@@ -38,12 +38,21 @@
         return null;
     }
 
-    let os = detectOS();
-    if (os === null) {
-        return;
-    }
-
     document.addEventListener("DOMContentLoaded", function() {
+        // Expand section that has been navigated to with an anchor
+        if (document.location.hash) {
+            let anchorButton = document.querySelector(".accordion " + location.hash + " > input.expander");
+            if (anchorButton) {
+                anchorButton.checked = true;
+            }
+        }
+
+        let os = detectOS();
+        if (os === null) {
+            return;
+        }
+
+        // Update the "Download" button at the top of the page
         let button = document.querySelector("#download .download-button")
         if (!button) {
             return;
