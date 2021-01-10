@@ -38,12 +38,29 @@
         return null;
     }
 
-    let os = detectOS();
-    if (os === null) {
-        return;
+    let expandAccordionByHash = function() {
+        if (document.location.hash) {
+            let anchorButton = document.querySelector(".accordion " + location.hash + " > input.expander");
+            if (anchorButton) {
+                anchorButton.checked = true;
+
+                // Re-scoll to anchor (works around wrong scroll position
+                // caused by the accordion changes *after* we already scrolled).
+                let section = document.querySelector(".accordion " + location.hash)
+                if (section) {
+                    section.scrollIntoView();
+                }
+            }
+        }
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
+    let updateDownloadButton = function() {
+        let os = detectOS();
+        if (os === null) {
+            return;
+        }
+
+        // Update the "Download" button at the top of the page
         let button = document.querySelector("#download .download-button")
         if (!button) {
             return;
@@ -98,7 +115,10 @@
             button.href = "#" + section.id;
             button.innerHTML = button.dataset.osdetectText.replace("%s", section.dataset.os);
             description.innerHTML = description.dataset.osdetectText;
-            input.checked = true;
         }
-    });
+    }
+
+    window.addEventListener('hashchange', expandAccordionByHash);
+    document.addEventListener("DOMContentLoaded", expandAccordionByHash);
+    document.addEventListener("DOMContentLoaded", updateDownloadButton);
 }());
