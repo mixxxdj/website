@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+import jinja2
+import markdown
 
 AUTHOR = "Mixxx DJ Team"
 SITENAME = "Mixxx"
@@ -24,6 +26,9 @@ STATIC_PATHS = [
 MARKDOWN = {
     "extension_configs": {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "full_yaml_metadata": {
+            "allow_missing_delimiters": True,
+        },
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
         "markdown_video": {},
@@ -74,7 +79,6 @@ TAG_URL = "news/tag/{slug}"
 TAG_SAVE_AS = "news/tag/{slug}/index.html"
 
 TEMPLATE_PAGES = {
-    "pages/maintenance.html": "maintenance.html",
     "pages/error.html": "error.html",
 }
 
@@ -85,6 +89,7 @@ PLUGIN_PATHS = [
 PLUGINS = [
     "author_metadata",
     "draft_override",
+    "md_yaml",
 ]
 
 
@@ -217,7 +222,16 @@ AUTHOR_METADATA = {
         "discourse": "crisclacerda",
         "tagline": "GSoC 2020 Student",
     },
+    "Aanyu Deborah Oduman": {
+        "github": "deborahtrez",
+        "discourse": "deborahao",
+        "email": "deborahtrez12@gmail.com",
+        "tagline": "Outreachy contributor (Dec 2020 - Mar 2021)",
+    },
 }
+
+# Needed for Jinja2 markdown filter
+md = markdown.Markdown()
 
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
@@ -231,6 +245,7 @@ JINJA_ENVIRONMENT = {
         "jinja2.ext.i18n",
     ],
 }
+JINJA_FILTERS = {"markdown": lambda text: jinja2.Markup(md.convert(text))}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

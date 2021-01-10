@@ -1,4 +1,4 @@
-title: New in 2.3: Importing tracks and cues from Serato
+title: "New in 2.3: Importing tracks and cues from Serato"
 authors: Jan Holthuis
 tags: 2.3, serato, library
 status: draft

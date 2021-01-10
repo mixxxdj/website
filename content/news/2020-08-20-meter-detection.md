@@ -1,4 +1,4 @@
-title: GSoC 2020: Adding Experimental Meter Detection
+title: "GSoC 2020: Adding Experimental Meter Detection"
 authors: Cristiano Lacerda
 tags: gsoc, gsoc-2020, analyzer
 slug: Meter-Detection

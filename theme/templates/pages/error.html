@@ -1,23 +1,14 @@
 {% extends "base.html" %}
 
-{% block body %}
+{% block title %}Page Not found{% endblock  %}
 
+{% block body %}
 <div class="docs-section container">
   <h1>{% trans %}We're sorry!{% endtrans %}</h1>
-  <p>{% trans %}The page <strong id="url"></strong> couldn't be found.{% endtrans %}</p>
+  <p>{% trans %}The page <strong id="error-path"></strong> couldn't be found.{% endtrans %}</p>
 </div>
-
 {% endblock %}
 
 {% block extra_head %}
-<script>
-;(function() {
-  document.addEventListener("DOMContentLoaded", function() {
-      let element = document.querySelector("#url");
-      if (element) {
-        element.textContent = window.location.pathname;
-      }
-  });
-}());
-</script>
+<script src="{{ SITEURL }}/theme/js/error.js"></script>
 {% endblock %}

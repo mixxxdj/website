@@ -1,4 +1,4 @@
-title: New in 2.3: Importing tracks and cues from Rekordbox removable devices
+title: "New in 2.3: Importing tracks and cues from Rekordbox removable devices"
 authors: Evan
 tags: 2.3, rekordbox
 date: 2020-07-20 12:00:00

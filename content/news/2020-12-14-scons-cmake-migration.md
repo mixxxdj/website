@@ -1,5 +1,5 @@
 title: SCons build system dropped in favor of CMake
-author: Jan Holthuis
+authors: Jan Holthuis
 date: 2020-12-14 14:07:57
 tags: development, 2.3, beta, cmake, scons
 
