@@ -109,4 +109,3 @@ Starting out can be confusing, so, based on my experience so far,  here are a fe
     I would be happy to hear from you!
 
 That said, good luck with your first contribution, and happy documenting! 🙂
-
