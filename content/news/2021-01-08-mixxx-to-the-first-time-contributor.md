@@ -2,8 +2,7 @@ title: Mixxx to the first time contributor
 authors: Aanyu Deborah Oduman
 tags: personal, outreachy, internship
 date: 2021-01-08 17:38:00
-summary: In this blog post themed "Think about your audience", I explain the project that I'm working on for the Outreachy internship, the tasks involved, and I try to break down some of the technical concepts to the first time user and contributor.
-I explain how my project fits into the larger Mixxx community and what makes me excited to work on it. I talk about some of the new concepts that I've learned and some the things that confused me when I was just getting started.
+summary: Before the Outreachy internship program, I had never contributed to open-source software. I didn’t know what the term "open source" meant or how different it was from other software. Looking back, it's hard to believe how clueless I was four months ago and then compare to how far I've come. I think it is safe to say that I have learned a lot about different open source software, Mixxx in particular, and the different ways that I can contribute. I feel very fortunate to have been offered the Outreachy internship, and now I will share everything that I know about contributing to the Mixxx open source projects - from the perspective of a first time contributor :)
 
 ![Mixxx logo]({static}/images/news/mixxx_logo.png)
 
@@ -21,7 +20,7 @@ A large number of Mixxx users live in the global South, so Mixxx plays a vital r
 Before the Outreachy internship program, I had never contributed to open-source software.
 I didn’t know what open source software was (or how different it was from other software) until a friend explained it to me. Since applying to Outreachy, I have learned a whole lot about different open source software and the different ways that you can contribute.
 I thought it was rocket science (because of the term “open source”) but really, it’s not.
-I feel fortunate to have earned the internship contributing to Mixxx DJ, and now I can’t wait to share everything that I know about contributing to open-source software – Mixxx in particular.
+I feel fortunate to have been offered the internship contributing to Mixxx, and now I can’t wait to share everything that I know about contributing to open-source software – Mixxx in particular.
 
 I am contributing to Mixxx by improving their documentation ([User manual](https://manual.mixxx.org/2.2/en/)).
 Mixxx’s [user manual](https://manual.mixxx.org/2.2/en/) does a decent job of explaining the application, however, there is lots of room for improvement.
