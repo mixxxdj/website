@@ -84,9 +84,9 @@
   <p>{% trans %}The Mixxx team has been working hard on the next version of Mixxx. Check out the <a href="{{ release_announcement }}">release announcement</a> for a list of the new features.{% endtrans %}</p>
   {% endwith %}
   <p>
-    {% with version=page.version, stable_link="#stable" %}
+    {% with version_name=version.name, stable_link="#stable" %}
     <b>{% trans %}Important:{% endtrans %}</b>
-    {% trans %}While {{ version }} has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endtrans %}</a>
+    {% trans %}While {{ version_name }} has been stable in testing it is not yet recommended for live use unless you are willing to risk a crash. Looking for the stable release? <a href="{{ stable_link }}">Scroll on down.{% endtrans %}</a>
     {% endwith %}
   </p>
   {% endif %}
