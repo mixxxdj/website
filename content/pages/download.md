@@ -99,7 +99,7 @@ versions:
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx) to make installing the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/mixxx
@@ -161,7 +161,7 @@ versions:
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies) to make installing install the latest development snapshot of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies) to make installing the latest development snapshot of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/nightlies
