@@ -168,7 +168,7 @@ versions:
               $ sudo apt update
               $ sudo apt install mixxx
 
-          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies/+packages) and install them manually.
       - slug: archlinux
         os: Arch Linux
         text: |
