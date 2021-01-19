@@ -92,7 +92,7 @@ versions:
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx) to make installing the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/mixxx
@@ -144,6 +144,17 @@ versions:
 
       **Development snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
     downloads:
+      - slug: ubuntu
+        os: Ubuntu 20.04 "Focal Fossa" or later
+        text: |
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies) to make installing the latest development snapshot of Mixxx as easy as possible.
+          Open a terminal, and enter:
+
+              $ sudo add-apt-repository ppa:mixxx/nightlies
+              $ sudo apt update
+              $ sudo apt install mixxx
+
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies/+packages) and install them manually.
       - slug: archlinux
         os: Arch Linux
         text: |
