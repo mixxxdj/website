@@ -10,12 +10,12 @@
     <meta name="keywords" content="{% block meta_keywords %}dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer{% endblock %}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link href="https://plus.google.com/102441931224839455484" rel="publisher">
-    <link href="{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="Mixxx Atom Feed" />
+    <link href="{{ SITEURL }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="Mixxx Atom Feed" />
 
     <!-- Open Graph Protocol metadata (e.g. for Facebook, https://ogp.me/) -->
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ output_file }}"/>
-    <meta property="og:image" content="{{SITEURL}}/theme/images/splash-1080x717.png"/>
+    <meta property="og:url" content="{{ SITEURL }}/{{ output_file }}"/>
+    <meta property="og:image" content="{{ SITEURL }}/theme/images/splash-1080x717.png"/>
     <meta property="og:image:width" content="1080"/>
     <meta property="og:image:height" content="717"/>
 
