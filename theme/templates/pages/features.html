@@ -2,6 +2,10 @@
 
 {% block title %}{% trans %}Features{% endtrans %}{% endblock %}
 
+{% block extra_head %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages/features.css">
+{% endblock %}
+
 {% block body %}
 <div class="docs-section container">
   <h2>{% trans %}Everything You Need, However You DJ{% endtrans %}</h2>
@@ -59,7 +63,7 @@
   </div>
 </div>
 
-<div id="hardware" class="docs-section cover-bg" style="background-image: url({{ SITEURL }}/theme/images/cover/hardware-bg.jpg);">
+<div id="hardware" class="docs-section cover-bg">
   <div class="container splash-text">
     <h2><a class="headline-link" href="#hardware">{% trans %}Customizable DJ Hardware Support{% endtrans %}</a></h2>
     <p>
@@ -118,8 +122,7 @@
   <img class="responsive drop-shadow" src="{{ SITEURL }}/theme/images/2.3/feature-effect-unit-expanded.png">
 </div>
 
-<div id="library" class="docs-section cover-bg"
-  style="background-image: url({{ SITEURL }}/theme/images/cover/library-bg.jpg);">
+<div id="library" class="docs-section cover-bg">
   <div class="container splash-text">
     <h2><a class="headline-link" href="#library">{% trans %}Sophisticated Music Library{% endtrans %}</a></h2>
     <p>
@@ -186,7 +189,7 @@
   </div>
 </div>
 
-<div id="broadcast" class="docs-section cover-bg" style="background-image: url({{ SITEURL }}/theme/images/cover/broadcast-bg.jpg);">
+<div id="broadcast" class="docs-section cover-bg">
   <div class="container splash-text">
     <h2><a class="headline-link" href="#broadcast">{% trans %}Record and Broadcast{% endtrans %}</a></h2>
     <p>
