@@ -2,6 +2,10 @@
 
 {% block title %}{% trans %}Press{% endtrans %}{% endblock %}
 
+{% block extra_head %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages/press.css">
+{% endblock %}
+
 {% block body %}
 <div class="docs-section container">
   <h1>{% trans %}Press{% endtrans %}</h1>
@@ -12,7 +16,7 @@
 
 <div id="logo" class="docs-section container">
   <h2><a class="headline-link" href="logo">{% trans %}Logo{% endtrans %}</a></h2>
-  <img class="u-pull-right" style="max-height: 2em" src="{{ SITEURL }}/theme/images/press_art/logocolour_nopadding_small.png" alt="Mixxx Logo">
+  <img class="u-pull-right" src="{{ SITEURL }}/theme/images/press_art/logocolour_nopadding_small.png" alt="Mixxx Logo">
   <p>The Mixxx Logo was designed by Paul Bloch back in 2007. It was originally introduced as part of the <a href="{{ SITEURL }}/news/2008-02-15-minor-website-revamp">website redesign for the Mixxx 1.6.0</a> release.</p>
   <div class="u-cf"></div>
 
