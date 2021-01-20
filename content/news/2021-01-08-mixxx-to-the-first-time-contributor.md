@@ -14,10 +14,10 @@ Mixxx is a free/open source DJ performance software for Windows/Mac/and Linux. I
 
 Mixxx was first released in 2003 as a graduate student project, and then it was picked up by the community and greatly enhanced. Mixxx has an unusually broad community that encompasses performing musicians, C++ programmers, amateur DJs, Internet radio broadcasters and even casual users. All contributors, from programmers to skin designers to translators are unpaid volunteers, hence it is entirely community driven.
 
-One of the main problems that Mixxx is trying to solve is that a lot of DJing applications are either expensive or limited (for the free features).
-Mixxx exists for people who want to try DJing or do not have the money to buy equipment or the latest fastest computers.
+Since Mixxx is completely free and also runs on older hardware, it is popular among people who want to try DJing or do not have the money to buy equipment or the latest fastest computers.
 Also, most commercial competitors will not create (good) fully featured DJing applications for Linux OS, perhaps because of its [low desktop marketshare](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems).
-In contrast to the above points, it is also the only DJ software that one can fully customize to one's needs, since full access to the source code is always available.
+It is also the only DJ software that one can fully customize to one's needs, since full access to the source code is always available.
+These, among many, are the reasons that set Mixxx apart from other DJing software.
 In essence, Mixxx plays a vital role in allowing anyone anywhere to throw a party.
 
 I am contributing to Mixxx by improving their documentation ([User manual](https://manual.mixxx.org/2.2/en/)).
