@@ -1,33 +1,31 @@
-title: Mixxx to the first time contributor
+title: "About my Outreachy internship with Mixxx DJ: Mixxx to the first time contributor"
 authors: Aanyu Deborah Oduman
 tags: personal, outreachy, internship
 date: 2021-01-08 17:38:00
-summary: Before the Outreachy internship program, I had never contributed to open-source software. I didn’t know what the term "open source" meant or how different it was from other software. Looking back, it's hard to believe how clueless I was four months ago and then compare to how far I've come. I think it is safe to say that I have learned a lot about different open source software, Mixxx in particular, and the different ways that I can contribute. I feel very fortunate to have been offered the Outreachy internship, and now I will share everything that I know about contributing to the Mixxx open source projects - from the perspective of a first time contributor :)
+
+Before the Outreachy internship program, I had never contributed to open-source software.
+I didn’t know what open source software was (or how different it was from other software) until a friend explained it to me. Since  made my first contribution to Mixxx, I have learned a lot about different open source software and the different ways that I can contribute.
+I thought it was rocket science (because of the term “open source”) but really, it’s not.
+I feel fortunate to have been offered the internship contributing to Mixxx, and now I can’t wait to share everything that I know about contributing to open-source software – Mixxx in particular.
 
 ![Mixxx logo]({static}/images/news/mixxx_logo.png)
 
-Mixxx is a free/open source DJ performance software for Windows/Mac/and Linux. It was first released in 2003 as a graduate student project, and was picked up by the community and greatly enhanced. All contributors, from programmers to skin designers to translators are unpaid volunteers, hence it is entirely community driven.
+Mixxx is a free/open source DJ performance software for Windows/Mac/and Linux. It supports effects, harmonic mixing, beat matching with thousands of users all over the world and it integrates the tools DJs need to perform creative live mixes with digital music files.
 
-Mixxx is a feature-rich DJ mixing application that supports many MIDI and HID DJ controllers.
-It supports effects, harmonic mixing, beat matching with thousands of users all over the world.
-It integrates the tools DJs need to perform creative live mixes with digital music files.
-Mixxx has an unusually broad community for an open-source project, encompassing performing musicians, C++ programmers and addicts, amateur DJs, Internet radio broadcasters and even casual users.
+Mixxx was first released in 2003 as a graduate student project, and then it was picked up by the community and greatly enhanced. Mixxx has an unusually broad community that encompasses performing musicians, C++ programmers, amateur DJs, Internet radio broadcasters and even casual users. All contributors, from programmers to skin designers to translators are unpaid volunteers, hence it is entirely community driven.
 
-Besides being a fully-featured DJing application, the main problem that Mixxx is trying to solve is that a lot of DJing applications are either expensive or limited (for the free features).
+One of the main problems that Mixxx is trying to solve is that a lot of DJing applications are either expensive or limited (for the free features).
 Mixxx exists for people who want to try DJing or do not have the money to buy equipment or the latest fastest computers.
-A large number of Mixxx users live in the global South, so Mixxx plays a vital role in allowing anyone anywhere to throw a party.
-
-Before the Outreachy internship program, I had never contributed to open-source software.
-I didn’t know what open source software was (or how different it was from other software) until a friend explained it to me. Since applying to Outreachy, I have learned a whole lot about different open source software and the different ways that you can contribute.
-I thought it was rocket science (because of the term “open source”) but really, it’s not.
-I feel fortunate to have been offered the internship contributing to Mixxx, and now I can’t wait to share everything that I know about contributing to open-source software – Mixxx in particular.
+Also, most commercial competitors will not create (good) fully featured DJing applications for Linux OS, perhaps because of its [low desktop marketshare](https://en.wikipedia.org/wiki/Usage_share_of_operating_systems).
+In contrast to the above points, it is also the only DJ software that one can fully customize to one's needs, since full access to the source code is always available.
+In essence, Mixxx plays a vital role in allowing anyone anywhere to throw a party.
 
 I am contributing to Mixxx by improving their documentation ([User manual](https://manual.mixxx.org/2.2/en/)).
 Mixxx’s [user manual](https://manual.mixxx.org/2.2/en/) does a decent job of explaining the application, however, there is lots of room for improvement.
 Many users come to Mixxx without any prior experience DJing and are left wondering how to practically use the application to mix music.
 My job as an intern is to improve the manual by explaining not only how to set up Mixxx and how to use specific features, but also explain the bigger picture of how to play music with Mixxx.
-There is some information in the manual that is obvious or already explained in the application with tooltips but some of this may be deleted from the manual.
-Other text could be moved directly into the Mixxx GUI. One of my major tasks is to explain information that would take too many words to adequately explain in the Mixxx GUI.
+There is some information in the manual that is obvious or already explained in the application with tooltips but some of it may be deleted from the manual.
+Other text may be moved directly into the Mixxx GUI. One of my major tasks is to explain information that would take too many words to adequately explain in the Mixxx GUI.
 This also involves adding more links to specific sections of the manual from the Mixxx GUI (and edit the manual text with this context in mind).
 
 This project is important because it will better the experience of many first time users of Mixxx.
