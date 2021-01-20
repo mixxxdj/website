@@ -29,16 +29,9 @@ versions:
               $ sudo apt update
               $ sudo apt install mixxx
 
-          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas/+packages) and install them manually.
         note: |
           **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
-        packages:
-        - slug: ubuntu32
-          name: 32-Bit
-          url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-bionic-i386-latest.deb
-        - ubuntu64:
-          name: 64-Bit
-          url: https://downloads.mixxx.org/builds/2.3/release/mixxx-2.3.0-beta-2.3-release-bionic-amd64-latest.deb
       - slug: fedora
         os: Fedora
         text: |
@@ -99,23 +92,16 @@ versions:
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx) to make installing the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/mixxx
               $ sudo apt update
               $ sudo apt install mixxx
 
-          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can download individual packages and install them manually.
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx/+packages) and install them manually.
         note: |
           **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
-        packages:
-          - slug: ubuntu32
-            name: 32-Bit
-            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-i386.deb
-          - slug: ubuntu64
-            name: 64-Bit
-            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-bionic-amd64.deb
       - slug: fedora
         os: Fedora
         text: |
@@ -158,6 +144,17 @@ versions:
 
       **Development snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
     downloads:
+      - slug: ubuntu
+        os: Ubuntu 20.04 "Focal Fossa" or later
+        text: |
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies) to make installing the latest development snapshot of Mixxx as easy as possible.
+          Open a terminal, and enter:
+
+              $ sudo add-apt-repository ppa:mixxx/nightlies
+              $ sudo apt update
+              $ sudo apt install mixxx
+
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies/+packages) and install them manually.
       - slug: archlinux
         os: Arch Linux
         text: |
