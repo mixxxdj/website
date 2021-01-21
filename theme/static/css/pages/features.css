@@ -1,0 +1,11 @@
+#hardware.cover-bg {
+    background-image: url('/theme/images/cover/hardware-bg.jpg');
+}
+
+#library.cover-bg {
+    background-image: url('/theme/images/cover/library-bg.jpg');
+}
+
+#broadcast.cover-bg {
+    background-image: url('/theme/images/cover/broadcast-bg.jpg');
+}

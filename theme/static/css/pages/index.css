@@ -1,0 +1,32 @@
+.splash.cover-bg {
+    background-image: url('/theme/images/cover/splash-bg.jpg');
+}
+
+.splash .splash-logo {
+    width: 240px;
+    height: 60px;
+    max-width: 60%;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splash-social {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    justify-content: space-between;
+}
+
+.splash-social img {
+    height: 1.5em;
+}
+
+#opensource.cover-bg {
+    background-image: url('/theme/images/cover/code-bg.jpg');
+}

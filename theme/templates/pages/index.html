@@ -2,10 +2,14 @@
 
 {% block title %}{% trans %}Free DJ Mixing Software App{% endtrans %}{% endblock %}
 
+{% block extra_head %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages/index.css">
+{% endblock %}
+
 {% block header %}
-<div class="header splash cover-bg" style="background-image: url('{{ SITEURL }}/theme/images/cover/splash-bg.jpg'); background-position: center;">
+<div class="header splash cover-bg">
   <div class="container">
-    <img class="splash-logo drop-shadow" src="{{ SITEURL }}/theme/images/press_art/logocolour_nopadding_small.png" alt="Mixxx Logo">
+    <img class="splash-logo drop-shadow" src="{{ SITEURL }}/theme/images/mixxx-logo.svg" alt="Mixxx Logo">
     <div class="splash-text">
       <h2>{% trans %}DJ Your Way{% endtrans %}</h2>
       <p>Free and open source DJ software for Windows, macOS, and Linux</p>
@@ -77,7 +81,7 @@
   </div>
 </div>
 
-<div id="opensource" class="docs-section cover-bg" style="background-image: url({{ SITEURL }}/theme/images/cover/code-bg.jpg);">
+<div id="opensource" class="docs-section cover-bg">
   <div class="container splash-text">
     <h2><a class="headline-link" href="#opensource">{% trans %}Free &amp; Open Source{% endtrans %}</a></h2>
     <p>
