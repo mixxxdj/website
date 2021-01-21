@@ -12,4 +12,3 @@ This week:
   The internet just got restored today (as I write, it's Monday of week 8) but social media is still blocked.
 - Since I did not finish accomplishing some of [last week's tasks]({filename}/news/2021-01-04-week-5-progress-report.md), I will work on those first then record the second YouTube tutorial. It will most likely be an in-depth video about mixing once the program is set up (following the first video).
 - I will be working on issue [#335](https://github.com/mixxxdj/manual/issues/335) as well. Finding a reasonable arrangement for the Record/ Broadcast your mix chapter.
-

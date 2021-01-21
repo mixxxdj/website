@@ -20,6 +20,5 @@ This week:
 - So most of this week went into research and planning, stuff that didn't really require the internet.
 - Next week, I plan to record at least three video tutorials for the “Create video tutorials” project.
  This will be my main priority for this week.
-- I will open a pull request for [issue #335](https://github.com/mixxxdj/manual/issues/335)
+- I will open a pull request for [issue #335](https://github.com/mixxxdj/manual/issues/335) .
 - And if time allows, I will make at least one addition to the Cookbook, or at least start a different conversation about it.
-
