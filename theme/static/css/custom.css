@@ -115,6 +115,7 @@ i.fas, i.fab {
 .navbar .navbar-main {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 .navbar + .docs-section {
     border-top-width: 0;
@@ -132,9 +133,6 @@ i.fas, i.fab {
 .navbar-spacer {
     display: none;
 }
-/*.navbar > .container {
-    width: 100%;
-}*/
 .navbar-list {
     list-style: none;
     margin-bottom: 0;
@@ -163,6 +161,7 @@ i.fas, i.fab {
     vertical-align: middle;
 }
 .navbar-link {
+    height: 100%;
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: 600;
@@ -290,6 +289,7 @@ img.responsive {
 
 .navbar-download-button .button {
     width: 100%;
+    margin: 0;
 }
 
 .navbar-download-button .navbar-link {
@@ -347,7 +347,7 @@ img.responsive {
     overflow: hidden;
     margin: 0;
     position: absolute;
-    top: 50px;
+    top: 48px;
     right: 0;
     width: calc(100% - 4rem);
     display: block;
@@ -376,7 +376,8 @@ img.responsive {
 }
 
 .navbar-hamburger-button:checked ~ .navbar-hamburger-content {
-    border: 1px solid var(--border-color-softer);
+    border-top: 1px solid var(--border-color-softer);
+    border-bottom: 1px solid var(--border-color-softer);
     padding: 2rem;
     max-height: unset;
 }
@@ -463,29 +464,6 @@ h6 a.headline-link {
 .splash .splash-text h5,
 .splash .splash-text h6 {
     margin: 0;
-}
-
-.splash-logo {
-    max-width: 60%;
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.splash-social {
-    list-style: none;
-    display: flex;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12em;
-    justify-content: space-between;
-}
-
-.splash-social img {
-    height: 1.5em;
 }
 
 .cover-bg {

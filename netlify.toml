@@ -22,7 +22,7 @@
   [headers.values]
     # Only allow resources to be loaded from the current origin. Styles may
     # also be specified inline, and allow the Google Analytics scripts.
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' https://ssl.google-analytics.com"
+    Content-Security-Policy = "default-src 'self'; style-src 'self'; script-src 'self'"
 
     # Disable all browser features that we don't need. Unfortunately
     # there is no way to specify a default for all directives yet, so
