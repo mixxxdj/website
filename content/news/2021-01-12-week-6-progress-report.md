@@ -22,3 +22,4 @@ This week:
  This will be my main priority for this week.
 - I will open a pull request for [issue #335](https://github.com/mixxxdj/manual/issues/335)
 - And if time allows, I will make at least one addition to the Cookbook, or at least start a different conversation about it.
+
