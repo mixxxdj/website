@@ -1,10 +1,15 @@
-title: "About my Outreachy internship with Mixxx DJ: Contributing to open source amidst Uganda’s internet restrictions"
+title: "About my Outreachy internship with Mixxx DJ: Contributing to open source amid Uganda’s internet restrictions"
 authors: Aanyu Deborah Oduman
 tags: personal, outreachy, internship
 date: 2021-01-24 14:00:00
-summary: Last week, amid the 2021 general election, Uganda was disconnected from the internet entirely. The country experienced a widespread internet blackout that lasted 4 days, starting on the eve of the election (13th January 2021) and ending in the morning of 18th January 2021. In the days leading up to the election, access to major social media platforms and circumvention tools was blocked – even when the OTT (Over the Top) tax (commonly referred to as the “Social Media Tax”) was paid. This internet shutdown and the social media ban that followed affected many online jobs and businesses, my internship with Mixxx under the Outreachy program was no exception.
+summary: In the days leading up to the Ugandan election, access to major social media platforms and circumvention tools was blocked. This internet shutdown and the social media ban that followed affected many online jobs and businesses, my internship with Mixxx under the Outreachy program was no exception.
 
 ![Internet shutdown]({static}/images/news/internet_shutdown.jpg)
+
+Last week, amid the 2021 general election, Uganda was disconnected from the internet entirely.
+The country experienced a widespread internet blackout that lasted 4 days, starting on the eve of the election (13th January 2021) and ending in the morning of 18th January 2021.
+In the days leading up to the election, access to major social media platforms and circumvention tools was blocked – even when the OTT (Over the Top) tax (commonly referred to as the “Social Media Tax”) was paid.
+This internet shutdown and the social media ban that followed affected many online jobs and businesses, my internship with Mixxx under the Outreachy program was no exception.
 
 Before I write this article, one thing to note is that Ugandans have been in this internet battle with the government for quite some time now.
 The internet shut down came as a surprise when it did, but at the end of the day, I feel like we should have seen it coming.
@@ -17,17 +22,17 @@ Ugandans are tired, and they want change. They have been more vocal about the in
 This resistance from the public has been causing anxiety in State House, and it’s starting to show.
 
 In the 2016 presidential elections, Ugandan authorities blocked access to Facebook, Twitter and WhatsApp saying the platforms would be used by the opposition to mobilize protests.
-(See [[this article from the BBC](https://www.bbc.com/news/world-africa-35601220))
+([This article from the BBC](https://www.bbc.com/news/world-africa-35601220) has more context on the social media blockage)
 President Yoweri Museveni was facing a tough challenge from veteran activist [Kizza Besigye](https://twitter.com/kizzabesigye1?s=20), and he believed shutting down social media would help to curb the “threat”.
 Authorities also suspended mobile transfers of money.
 
 In 2019, the government introduced a tax on the use of the social media, which activists have called an attempt at controlling free speech.
 He said that the youth only use social media to gossip and spread wrong rumors (about him).
-(See [this article from the BBC](https://www.bbc.com/news/world-africa-44315675)) .
+([This article from the BBC](https://www.bbc.com/news/world-africa-44315675) provides a better account of the imposition of the social media tax by President Museveni on Ugandans) .
 He imposed OTT – Over the Top Tax and since then, it’s never been enough to simply have a good internet connection.
 You have to pay a daily fee of UGX 200 to your Internet Service Provider, or if you’re being rebellious, a VPN application installed on your phone or computer.
 He insisted that the revenue collected from the tax would help the country cope with the consequences of olugambo [gossiping].
-I don’t know.. but to me, these look like the actions of an increasingly anxious person in power.
+I don’t know... but to me, these look like the actions of an increasingly anxious person in power.
 
 On 12th January 2021, the Uganda Communications Commission (UCC) ordered internet service providers in the country to immediately suspend any access and use of all messaging apps and social media platforms until further notice.
 This was done so suddenly and without prior notice that it took most of us a couple of failed OTT subscriptions to realize that social media platforms had indeed been blocked.
@@ -35,7 +40,7 @@ Before that, internet speeds had become excruciatingly slow, it was any wonder w
 A few days after the social media block, the government decided to shut down the entire internet! (The social media ban was simply not cutting it)
 So when Google stopped working and our parents were restarting their phones several times, is when we realized that truly, there was no end to the surprises.
 
-During this [not so brief] period we were in total blackout. No internet services were available anywhere.
+During this (not so brief) period we were in total blackout. No internet services were available anywhere.
 I was not doing any work as far as the [Outreachy](https://twitter.com/outreachy) internship with [Mixxx](https://mixxx.org/) goes.
 I was not making any contributions, and sadly, that whole week went just like that.
 We (devs) wondered if there was a backdoor to the whole situation, maybe some independent internet Service Provider that didn’t serve the government or something – lol.
@@ -50,7 +55,7 @@ On the other hand, neither the ISPs nor the Uganda Communications Commission ope
 The internet had been restored alright, but we still could not access social media.
 Not with OTT, and definitely not with certain VPNs. But the election was over, was it not? Then why was social media still blocked?
 This time, not only had social media been blocked, but all app stores, YouTube, and most VPN clients.
-(See [this article by techjaja](https://techjaja.com/social-media-vpns-app-stores-and-youtube-indefinitely-banned-in-uganda/))
+([This article by techjaja](https://techjaja.com/social-media-vpns-app-stores-and-youtube-indefinitely-banned-in-uganda/) provides more detail on the platorms that were banned in Uganda and when it happened.)
 
 ![email from Roke Telecom to customer]({static}/images/news/email.jpg) ![Email from UCC]({static}/images/news/email2.jpg)
 
