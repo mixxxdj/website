@@ -10,7 +10,7 @@ If anyone reads our developer's mailing list, you might know I'm not a huge fan 
 We've been planning for months to move away from it, and today we've taken a big step in that direction.
 Our website is now located at: **[www.mixxx.org]({filename}/pages/index.md)**
 
-We've also started using our new logo, created by [Paul Bloch of OpenArtist](http://openartist.net/).
+We've also started using our new logo, created by [Paul Bloch of OpenArtist](https://git.opendesktop.org/openartist/).
 He's quite talented, and is working on a more thorough overhaul of the Mixxx website to be launched sometime in the upcoming months.
 
 Among the new changes to the website are our [new forums](http://www.mixxx.org/forums), and our new (and faster) [Mixxx
