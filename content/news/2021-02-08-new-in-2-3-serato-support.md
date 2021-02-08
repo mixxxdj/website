@@ -1,7 +1,7 @@
 title: "New in 2.3: Importing tracks and cues from Serato"
 authors: Jan Holthuis
 tags: 2.3, serato, library
-status: draft
+date: 2021-02-08 11:18:15
 
 As all of you probably know, Mixxx is the best DJ software in the market.
 However, we've recently been made aware that a minor competitor has emerged and tries to steal that title from us - [Serato DJ Pro](https://serato.com/dj/pro).
