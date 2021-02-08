@@ -7,7 +7,8 @@ import subprocess
 import sys
 
 RE_POST_DATE = re.compile(r"^date:\s+(.*)$", flags=re.MULTILINE)
-RE_POST_STATUS = re.compile(r"\nstatus:[ \t]+draft\n")
+RE_POST_STATUS = re.compile(r"^status:\s+draft$", flags=re.MULTILINE)
+RE_MULTIPLE_NEWLINES = re.compile(r"\n+")
 
 
 def find_commit_that_added_file(path: str, format: str = "oneline"):
@@ -138,7 +139,8 @@ def main(argv=None):
                     if not RE_POST_STATUS.findall(header):
                         print("  Skipping because post is not a draft!")
 
-                    header = RE_POST_STATUS.sub("\n", header)
+                    header = RE_POST_STATUS.sub("", header)
+                    header = RE_MULTIPLE_NEWLINES.sub("\n", header.strip())
 
                     if RE_POST_DATE.findall(header):
                         header = RE_POST_DATE.sub(f"date: {post_date}", header)
