@@ -15,6 +15,7 @@ def find_commit_that_added_file(path: str, format: str = "oneline"):
         (
             "git",
             "log",
+            "-m",
             "--follow",
             "--diff-filter=A",
             f"--pretty={format}",
