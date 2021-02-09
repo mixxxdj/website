@@ -25,7 +25,7 @@ The builds from GitHub Actions were so laggy that they were completely unusable,
 
 But that was not the end of the macOS-specific bugs. While working on rebuilding our dependencies, we updated to Qt 5.12.10 from 5.12.3. However, when Mixxx was built with Qt 5.12.10, it [would not show any windows at all](https://bugreports.qt.io/browse/QTBUG-87014) on macOS 11. So for now we are stuck with Qt 5.12.3 and the macOS 10.13 SDK. Altogther, dealing with these macOS-specific problems took about 3 months of work, and we are glossing over some details here.
 
-With CMake support working on every OS we support, we changed our plans and decided to [drop support for SCons for 2.3]({filename}/news/2020-12-14-scons-cmake-migration.md).
+With CMake working on every OS we support, we changed our plans and decided to [drop support for SCons for 2.3]({filename}/news/2020-12-14-scons-cmake-migration.md).
 
 ## Winwoes
 
