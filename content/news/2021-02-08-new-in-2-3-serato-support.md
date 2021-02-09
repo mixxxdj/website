@@ -29,7 +29,7 @@ Serato saves them in special file tags along with the other track metadata like 
 It took months of work, but we finally managed to [reverse-engineer the binary formats](https://github.com/Holzhaus/serato-tags) used by Serato to a degree that allows us to parse this information and use it in Mixxx.
 
 This means you can import the positions, labels and [colors of your hotcues]({filename}/news/2020-08-25-new-in-2-3-hotcue-colors.md) into Mixxx automatically when you load the track for the first time.
-Mixx will also import the Beatgrid from Serato, which works for both Beatgrid that were automatically detected by Serato's track analyzer and those that you edited manually.
+Mixxx will also import the Beatgrid from Serato, which works for both Beatgrid that were automatically detected by Serato's track analyzer and those that you edited manually.
 
 ![Beatgrid and Hotcues imported from Serato]({static}/images/news/serato-import-sbs.png)
 
