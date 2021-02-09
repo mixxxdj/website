@@ -5,7 +5,7 @@ status: draft
 
 Since we [published Mixxx 2.3 beta in June 2020]({filename}/news/2020-06-07-mixxx-2-3-beta-released.md), you may have been wondering what has taken so long to get the 2.3.0 release out. Well, we have been very busy the past few months building a more sustainable technical infrastructure for the Mixxx project. We have [moved this website to the Pelican static site generator]({filename}/news/2020-12-15-website-improvents.md) and moved the [forums](https://mixxx.discourse.group/) to [Discourse](https://www.discourse.org/). Additionally, we had to do a ton of work for the macOS and Windows builds. "Building" software is the process of transforming the code that we write into 0s and 1s that tell your computer what to do.
 
-## Build servers
+## Build Servers
 
 We [introduced support for the CMake build system]({filename}/news/2020-07-15-new-in-2-3-cmake.md) with the release of 2.3 beta, but there were still rough edges at that time, particularly for building Mixxx on Windows and macOS. When we released 2.3 beta, we planned to keep using the old SCons build system for 2.3 on the servers that make our official builds. However, shortly after we announced 2.3 beta, the self-hosted [Jenkins](https://www.jenkins.io/) Windows build server stopped working. That was far from the first time our self-hosted build servers went offline and we got tired of continually troubleshooting these self-hosted servers. So, we decided to not bother fixing the old build server and instead move our builds to a hosted service.
 
@@ -13,7 +13,7 @@ We were already using [AppVeyor](https://www.appveyor.com/) for Windows and [Tra
 
 It turned out that [GitHub Actions](https://github.com/features/actions) met all our needs with support for macOS, Windows, and Ubuntu. GitHub Actions allows us to run a maximum of 20 concurrent builds or 5 concurrent macOS builds with a 6 hour time limit for jobs. The 6 hour time limit for jobs is important because Mixxx's dependencies take about 4 hours for a full build without a cache. While we are wary of being dependent on services that are powered by proprietary software and have [other serious issues](https://www.theverge.com/2019/10/9/20906213/github-ice-microsoft-software-email-contract-immigration-nonprofit-donation), no other service provides comparable computing resources as GitHub Actions does for free. For a busy project with little budget, that is super helpful. Moreover, GitHub Actions hosts the artifacts from every build, even on pull requests. This allows users to [test Mixxx](https://github.com/mixxxdj/mixxx/wiki/Testing) before we merge changes to the code without the users needing to know how to build Mixxx. This also makes it much easier for developers to test changes on operating systems they do not use personally, which is very helpful because all of our core development team runs Linux.
 
-## macOS woes
+## macOS Woes
 
 Since we were switching to a whole new build server setup, we decided to get the new system working with CMake rather than keep using the old SCons build system. Although CMake comes with tools to make macOS application bundle packages (the files users download and drag and drop to their `/Applications` folder), they are [sorely lacking](https://gitlab.kitware.com/cmake/cmake/-/issues/21568) and [badly documented](https://discourse.cmake.org/t/lost-with-getting-cpack-to-make-a-macos-bundle/2102/). Since none of our core developers use macOS and macOS is cumbersome to run in virtual machines, one of our core developers had to borrow an old Macbook Air from a friend to do this work. Getting CMake correctly building macOS packages took more than a week, but that was only the beginning of the journey.
 
@@ -60,7 +60,7 @@ vcpkg is great for us because it works on Windows, macOS, and Linux. This allows
 
 Most of our dependencies already work on macOS and Linux with vcpkg, with the notable exception of the unmaintained [portmidi](http://portmedia.sourceforge.net/portmidi/) library. When we get that working with vcpkg, or potentially replace it with a currently maintained crossplatform MIDI library such as [RtMidi17](https://github.com/jcelerier/RtMidi17), we will be able to use vcpkg for all our dependencies for both Windows and macOS. For Linux, we are considering distributing Mixxx as a Flatpak using the dependencies from vcpkg in the future, but this [will have to wait](https://github.com/flatpak/flatpak/issues/1509) until [PipeWire](https://pipewire.org/) is included in more Linux distributions, which will start happening in the next couple of months with the releases of [Fedora 34](https://fedoraproject.org/wiki/Changes/DefaultPipeWire) and [Ubuntu 21.04](https://bugs.launchpad.net/ubuntu/+source/pipewire/+bug/1802533/comments/33).
 
-## Developer experience
+## Developer Experience
 
 All of this work has been very tedious. We would have much rather spent this effort writing fun new features for Mixxx, but this had to be done to keep the project going. Now that it is working, developing for Mixxx is much nicer.
 
