@@ -54,7 +54,7 @@ This took another month of work after spending three months working on the macOS
 
 Using vcpkg has allowed us to build Mixxx with some dependencies that were missing on Windows before because nobody wanted to put in the effort to write Windows batch scripts to build them. Now, Mixxx can play module tracker files with [libmodplug](https://github.com/Konstanty/libmodplug) and use LV2 effects plugins on Windows. Coincidentally, as we were working on this, falkTX at DISTRHO published the first release of [PawPaw](https://kx.studio/News/?action=view&url=announcing-pawpaw-cross-platform-lv2-ports-for-macos-and-windows) bringing many LV2 plugins common on Linux to Windows and macOS, which can now be used with Mixxx!
 
-![screenshot showing Mixxx with LV2 plugins, module tracker support, and KeyFinder support]({static}/images/news/lv2-modplug-keyfinder-windows.png)
+![Screenshot showing Mixxx with LV2 plugins, module tracker support, and KeyFinder support]({static}/images/news/lv2-modplug-keyfinder-windows.png)
 
 vcpkg is great for us because it works on Windows, macOS, and Linux. This allows us to work on packaging Mixxx's dependencies for Windows while we work on Linux. As long as the dependency's build system is crossplatform (CMake or Meson), this is quite easy. If they do not have crossplatform build systems, that is one reason we are working on getting CMake support merged upstream. Plus vcpkg's [overlay feature](https://github.com/microsoft/vcpkg/blob/master/docs/specifications/ports-overlay.md) makes it easy for us to make custom modifications to certain packages while easily merging updates from upstream for every other package.
 
