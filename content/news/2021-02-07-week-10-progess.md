@@ -11,7 +11,7 @@ This week:
  [Here is the link.](https://www.youtube.com/watch?v=0f6QrjiFNJQ)
 - I had a brief video call with community team leaders from the [Tor Project](https://www.torproject.org/) to discuss more about the [internet censorship situation](https://explorer.ooni.org/country/UG) that has been going on in Uganda.
  The purpose of the discussion was to understand more about how I am using Tor and other anti-censorship tools, and how it can be improved based on my feedback.
-- As part of the homework that I did for the cookbook chapter, I read through the first few chapters of the Mixxx manual, looking for sections that could use the step by step instruction approach that the cookbook will provide.
+- To get some inspiration for the cookbook chapter, I read through the first few chapters of the Mixxx manual, looking for sections that could use the step by step instruction approach that the cookbook will provide.
  I found an area in the “[Analyze your tracks/ library](https://manual.mixxx.org/2.2/en/chapters/library.html#analyze-prepare-your-tracks)” section that needed more explanation, and discussed it in the Zulip chat.
  I will be filing an issue and making a pull request for it soon.
 - I lost a day of work to no electricity and maybe half a day to the poor internet speeds (some of the downsides to using VPNs).
