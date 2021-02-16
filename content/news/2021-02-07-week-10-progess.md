@@ -8,7 +8,7 @@ _This is the tenth weekly progress report of my Outreachy internship with Mixxx 
 This week:
 
 - I made the necessary edits to the YouTube tutorial about the Mixxx community and uploaded it to YouTube.
- Here is the link. [Get in touch with the Mixxx community](https://www.youtube.com/watch?v=0f6QrjiFNJQ)
+ [Here is the link.](https://www.youtube.com/watch?v=0f6QrjiFNJQ)
 - I had a brief video call with community team leaders from the [Tor Project](https://www.torproject.org/) to discuss more about the [internet censorship situation](https://explorer.ooni.org/country/UG) that has been going on in Uganda.
  The purpose of the discussion was to understand more about how I am using Tor and other anti-censorship tools, and how it can be improved based on my feedback.
 - As part of the homework that I did for the cookbook chapter, I read through the first few chapters of the Mixxx manual, looking for sections that could use the step by step instruction approach that the cookbook will provide.
