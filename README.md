@@ -47,6 +47,12 @@ Note that the `XXXX-XX-XX` part of the filename is *not* meant to be a placehold
 Let the `status` on `draft` and don't add a `date` field.
 When the PR is merged, GitHub actions will automatically rename the file, add the appropriate date and remove the draft status.
 
+If you are previewing your changes locally, Pelican will not add the new post to the blog unless you set the environment variable `CONTEXT` to `deploy-preview`:
+
+    $ CONTEXT=deploy-preview pelican --listen --autoreload
+
+Run that command from the root of this git repository.
+
 ## Documentation
 
 Pelican uses [Jinja2][jinja2] templates for rendering pages.
