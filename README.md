@@ -51,6 +51,8 @@ If you are previewing your changes locally, Pelican will not add the new post to
 
     $ CONTEXT=deploy-preview pelican --listen --autoreload
 
+Run that command from the root of this git repository.
+
 ## Documentation
 
 Pelican uses [Jinja2][jinja2] templates for rendering pages.
