@@ -17,8 +17,8 @@ I have also been making video tutorials for the [Mixxx](https://mixxx.org) YouTu
 
 #### My background
 
-I have always taken a keen interest in tech, but I didn’t get to fully explore it until I joined the university and enrolled in a Computer Engineering course [High school](https://msmcnamagunga.ac.ug)
-provided a couple of opportunities in robotics and innovation, but with the limited resources and the vast number of students, the time was never enough to learn and master a new skill.
+I have always taken a keen interest in tech, but I didn’t get to fully explore it until I joined the university and enrolled in a Computer Engineering course.
+[High school](https://msmcnamagunga.ac.ug) provided a couple of opportunities in robotics and innovation, but with the limited resources and the vast number of students, the time was never enough to learn and master a new skill.
 But even with the limited resources, I am grateful to have had the chance to learn how to build lego prototypes and write simple programs for them.
 
 I started learning C+ and Python, as part of the engineering curriculum and this foundation propelled me into wanting to learn more about programming and seeing what else I could do with code.
@@ -40,7 +40,7 @@ I got to collaborate with really talented developers from all over Africa and re
 
 Shortly after, towards the end of the program, I started applying for the [Outreachy FOSS internship](https://twitter.com/outreachy), and this where I am now.
 
-#### The skills that i have learned through working with Mixxx
+#### The skills that I have learned through working for Mixxx
 
 ![skills]({static}/images/news/skills.jpg)
 
@@ -53,8 +53,7 @@ I am more comfortable with git now than I used to be.
 I think it is safe to say that I can extricate myself from sticky git errors and I understand git tree structures much better.
 
 I have gained more confidence in my skills as a video and content creator, especially for technical projects such as [Mixxx](https://mixxx.org).
-I understand better how to use video editing tools to make great YouTube tutorials.
-I know better how to plan the videos such that they are easily understandable by the new [Mixxx](https://mixxx.org) user, and this came with learning script writing as well.
+I understand better how to use video editing tools to make short understandable YouTube tutorials for the new Mix user, and how to write scripts for the videos.
 
 I have learned more about usability, in the context of how easy software should be to understand and to use by people new to them.
 With every new addition that I make to the [Mixxx manual](https://manual.mixxx.org/2.2/en/), I understand more about how the software works and the GUI aspects of it.
