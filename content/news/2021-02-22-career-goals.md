@@ -142,4 +142,3 @@ I believe that this background provides me with a unique perspective on certain 
 In five years’, time, I hope to be an exceptional software developer who has imparted the skills that she has learned to other younger people aiming to get into the field.
 I hope to have empowered other people who wish to join this industry by teaching them what I know and exposing them to opportunities that will help them progress in their career, like I’ve had.
 I hope to have scored a more permanent job doing the things that I love and effecting change in other people’s lives, one way or another, and I’m grateful to [Mixxx](https://mixxx.org) and [Outreachy](https://twitter.com/outreachy) for launching my career in the right direction.
-
