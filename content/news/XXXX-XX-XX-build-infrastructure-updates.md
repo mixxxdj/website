@@ -68,7 +68,7 @@ Most of our dependencies already work on macOS and Linux with vcpkg, with the no
 
 All of this work has been very tedious. We would have much rather spent this effort writing fun new features for Mixxx, but this had to be done to keep the project going. Now that it is working, developing for Mixxx is much nicer.
 
-As we got the new setup going with GitHub Actions, we wrote scripts that can be used both by GitHub Actions and by developers that want to set up a development environment on their computer. The scripts automatically download the archive of Mixxx's dependencies. On macOS, the script sets the appropriate environment variables. On Windows, the script generates a `CMakeSettings.json` file which can be used to setup Visual Studio to work on Mixxx very easily. We hope this makes Mixxx more welcoming for Windows and macOS developers to contribute.
+As we got the new setup going with GitHub Actions, we wrote scripts that can be used both by GitHub Actions and by developers that want to set up a development environment on their computer. The scripts automatically download the archive of Mixxx's dependencies. On macOS, the script sets the appropriate environment variables. On Windows, the script generates a [`CMakeSettings.json` file](https://docs.microsoft.com/en-us/cpp/build/cmakesettings-reference) which can be used to setup Visual Studio to work on Mixxx very easily. We hope this makes Mixxx more welcoming for Windows and macOS developers to contribute.
 
 Developers on every OS can now easily have their code built and tested automatically on Windows, macOS, and Linux simply by pushing commits to GitHub, and we can ask users to give feedback using the build artifacts from GitHub Actions.
 
