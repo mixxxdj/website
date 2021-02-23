@@ -1,7 +1,7 @@
 title: "Improving the Mixxx developer experience with maintainable build infrastructure"
 authors: Be.
 tags: 2.3, builds, infrastructure
-status: draft
+date: 2021-02-23 19:17:51
 
 Since we [published Mixxx 2.3 beta in June 2020]({filename}/news/2020-06-07-mixxx-2-3-beta-released.md), you may have been wondering what has taken so long to get the 2.3.0 release out. Well, we have been very busy the past few months building a more sustainable technical infrastructure for the Mixxx project. We have [moved this website to the Pelican static site generator]({filename}/news/2020-12-15-website-improvents.md) and moved the [forums](https://mixxx.discourse.group/) to [Discourse](https://www.discourse.org/). Additionally, we had to do a ton of work for the macOS and Windows builds. "Building" software is the process of transforming the code that we write into an executable file that you can run on your computer.
 
