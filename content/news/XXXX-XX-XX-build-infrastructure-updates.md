@@ -76,4 +76,4 @@ On macOS and Linux, the builds on GitHub Actions only take a few minutes now tha
 
 Historically, issues with the build servers have been a major factor why Mixxx releases have been so few and far between. We hope that by having this automated on a reliable service that we do not need to maintain ourselves, we can focus more on programming cool new features and getting Mixxx releases published more regularly.
 
-If you want to [get involved](https://mixxx.org/get-involved/) in making Mixxx more awesome, come introduce yourself on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself). This new infrastructure makes it easier both for developers to contribute code and for users to test new code, so you do not need to be a coder to contribute!
+If you want to [get involved](https://mixxx.org/get-involved/) in making Mixxx more awesome, come introduce yourself on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself). You do not need to be a coder to contribute. Our new infrastructure makes contributing easier both for developers and testers!
