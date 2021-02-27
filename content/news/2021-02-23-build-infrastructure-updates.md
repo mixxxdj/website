@@ -77,3 +77,8 @@ On macOS and Linux, the builds on GitHub Actions only take a few minutes now tha
 Historically, issues with the build servers have been a major factor why Mixxx releases have been so few and far between. We hope that by having this automated on a reliable service that we do not need to maintain ourselves, we can focus more on programming cool new features and getting Mixxx releases published more regularly.
 
 If you want to [get involved](https://mixxx.org/get-involved/) in making Mixxx more awesome, come introduce yourself on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself). You do not need to be a coder to contribute. Our new infrastructure makes contributing easier both for developers and testers!
+
+## Addendum: compiler caching on Windows
+
+After figuring out [undocumented requirements](https://github.com/mozilla/sccache/pull/963) for [sccache](https://github.com/mozilla/sccache), [fixing](https://github.com/mozilla/sccache/pull/962) a bug in it, and [fixing](https://github.com/google/googletest/pull/3291) another bug in [Google Test](https://github.com/google/googletest), and working around [a bug in GitHub Actions caching](https://github.com/actions/cache/issues/531), we have compiler caching [working on Windows](https://github.com/mixxxdj/mixxx/pull/3618). Windows builds now take 16-18 minutes. That is significantly longer than macOS which takes about 10 minutes, but it is a
+big improvement from 40 minutes per Windows build without compiler caching!
