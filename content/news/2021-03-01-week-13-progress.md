@@ -17,5 +17,5 @@ Overall, I would say my internship has been a success because I was able to gain
 I could not be more thankful.
 
 This is NOT goodbye, because I am still going to continue contributing to Mixxx, and endeavor to finish the projects that I started.
-That is, I will still be making tutorials for the [Mixxx YouTube channel](https://www.youtube.com/watch?v=ADh_svLuU7g), working on the DJing techniques/cookbook project, and making other improvements to the manual.
+That is, I will still be making tutorials for the [Mixxx YouTube channel](https://www.youtube.com/channel/UC1t9_tylS7XPBIJIpXhXQmQ), working on the DJing techniques/cookbook project, and making other improvements to the manual.
 See you next week 😉
