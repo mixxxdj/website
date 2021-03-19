@@ -3,7 +3,7 @@ authors: Daniel Schürmann
 tags: 2.3, jack
 date: 2021.03.18 02:42:18
 
-In regular intervals, we discuss how much latency the JACK layer introduces. The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
+In regular intervals, we discuss how much latency the JACK Audio Connection Kit introduces. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux and it's a layer on top of the Advances Linux Sound Architecture (ALSA). The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
 > There is **NO** extra latency caused by using JACK for audio input and output. When we say none, we mean absolutely zero.
 This is true on its own, because JACK uses directly the buffer provided by ALSA to mix the audio sources together. ALSA has a second buffer that is used to feed the samples into the hardware. That's all.
 
