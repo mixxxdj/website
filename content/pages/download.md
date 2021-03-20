@@ -109,7 +109,7 @@ versions:
       - slug: fedora
         os: Fedora
         text: |
-          Mixxx 2.2 is no longer available as a Fedora package. Refer to the instructions for installing Mixxx 2.3 beta instead.
+          Mixxx 2.2 is no longer available as a Fedora package. Refer to the [instructions for installing Mixxx 2.3 beta](#unstable-fedora) instead.
 
           WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
