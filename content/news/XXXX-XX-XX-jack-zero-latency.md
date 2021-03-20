@@ -46,12 +46,12 @@ The result is 70 ms ~3 buffers = Driver + ALSA + jack_iodelay. This is one buffe
 
 ## Conclusion
 
-Don't use Jack when you don't need it for another reason. The same will be true for Pipewire using the same architecture.
+For now, we recommend using Mixxx with the ALSA backends even if you are running JACK. The same applies to [PipeWire](https://pipewire.org) as Mixxx uses JACK protocol to connect to it.
 
 It should be also noted that JACK can't deal (well) with two or more sound cards. Mixxx can do this using the ALSA API and this with no extra latency as long the underlying driver allows it.
 
 ## What comes next?
 
-There is a chance to get rid of the extra latency and make Mixxx use the buffer provided by Jack (or upcoming [PipeWire](https://pipewire.org) providing a JACK API). This requires that Mixxx becomes a native Jack or Pipewire application by using their client libraries directly or via a thin wrapper library.
+There is a chance to get rid of the extra latency and make Mixxx use the buffer provided by Jack/PipeWire. This requires that Mixxx becomes a native Jack or Pipewire application by using their client libraries directly or via a thin wrapper library.
 
 A lot to do. Do you have interest to help? Get in contact with us at [Zulip](https://mixxx.zulipchat.com)
