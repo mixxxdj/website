@@ -35,13 +35,17 @@ versions:
       - slug: fedora
         os: Fedora
         text: |
-          An [RPM package](https://admin.rpmfusion.org/pkgdb/package/free/mixxx/) for installation is available in the [RPM Fusion](https://rpmfusion.org/) repositories.
+          RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible. If you do not have the RPM Fusion repository installed already, before installing Mixxx, run:
 
-          Please refer to [RPM Fusion's instructions](https://rpmfusion.org/Configuration) on how to enable the repositories on your system. Mixxx only requires enabling the free repository; the nonfree repository is not necessary for Mixxx.
+              $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-          RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
+          Then to install Mixxx:
+
+              $ sudo dnf install mixxx
 
           The beta package will be continuously updated until Mixxx 2.3.0 is released.
+
+          WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
         os: Arch Linux
         text: |
@@ -105,11 +109,9 @@ versions:
       - slug: fedora
         os: Fedora
         text: |
-          An [RPM package](https://admin.rpmfusion.org/pkgdb/package/free/mixxx/) for installation is available in the [RPM Fusion](https://rpmfusion.org/) repositories.
+          Mixxx 2.2 is no longer available as a Fedora package. Refer to the [instructions for installing Mixxx 2.3 beta](#unstable-fedora) instead.
 
-          Please refer to [RPM Fusion's instructions](https://rpmfusion.org/Configuration) on how to enable the repositories on your system. Mixxx only requires enabling the free repository; the nonfree repository is not necessary for Mixxx.
-
-          RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible.
+          WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
         os: Arch Linux
         text: |
