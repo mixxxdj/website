@@ -8,7 +8,7 @@ In regular intervals, we discuss how much latency the [JACK Audio Connection Kit
 
 This is true on its own, because JACK uses directly the buffer configured for ALSA to mix the audio sources together. ALSA has a second buffer with the same length that is used to feed these samples into the hardware. That's all.
 
-However, in the case of Mixxx another buffer is used, because Mixxx has its own real-time mixing stage and uses the [PortAudio](http://www.portaudio.com) abstraction layer.
+However, in the case of Mixxx another buffer is used, because Mixxx has its own real-time mixing stage and uses the [PortAudio](http://www.portaudio.com) abstraction layer. In addition, most distros use JACK with it's default "Server Asynchronous Mode" which introduce one buffer extra latency (--async-latency);
 
 When using the ALSA API directly Mixxx does what JACK does. It uses the ALSA buffer directly, which doesn't add any latency.
 
@@ -22,12 +22,13 @@ Here the resulting recordings visualized in [Audacity](https://www.audacityteam.
 The upper stream is the JACK case. The left channel is the recorded master 440 Hz sine wave and the right channel is the mic input.
 
 JACK is configured with a 1024 frames buffer and reports a latency of 46.4 ms for the sum of two buffers .
-The round trip latency is 95 ms ~4 buffers = Driver + ALSA + 2 x Mixxx (PortAudio)
+The round trip latency is 95 ms ~4 buffers = Driver + ALSA + JACK Async mode + (PortAudio)
 
 The lower stream is the ALSA case. Mixxx is configures with the same single buffer of 1024 frames = 23.2 ms
 The round trip latency is 49 ms ~2 buffers = Driver + ALSA
 
 Not in the picture is the ALSA pulse device. It runs at a latency of 104 ms ~5 buffers. Driver + ALSA + 2 x Pulse + ALSA
+PipeWire on Fedora 34 has by default the same latency like JACK in this test.
 
 With this picture we can verify that Mixxx actually has the same buffer size in both cases. When pressing pause, it fades the signal out over one buffer length which is equal in both cases.
 The peaks in the recorded right channel is the sound of the mouse click. You can only barely see the recorded sine wave.
@@ -42,7 +43,9 @@ For reference, I have done the same test using [jack_iodelay](http://manpages.ub
 	use 21 for the backend arguments -I and -O Inv
 ```
 
-The result is 70 ms ~3 buffers = Driver + ALSA + jack_iodelay. This is one buffer more than a native ALSA implementation.
+The result is 70 ms ~3 buffers = Driver + ALSA + JACK Async mode. This is one buffer more than a native ALSA implementation.
+
+From Ubuntu Hirsute 21.4, QJackCtl exposes a "Use server synchronous mode" checkbox in the sound card preferences. It is grayed out by default but becomes active if "Enable JACK D-Bus interface" is checked as well. In this case the JACK mixing is done after Mixxx in the same time interval.
 
 ## Conclusion
 
