@@ -76,7 +76,7 @@ versions:
           url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
   stable:
     name: 2.2.4
-    release_announcement: /news/2020-06-11-Mixxx-2-2-4-released/
+    release_announcement: /news/2020-06-25-mixxx-2-2-4-released/
     downloads:
       - slug: windows
         os: Windows 7 or later
