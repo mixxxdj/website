@@ -20,6 +20,14 @@ def page_generator_context(page_generator, metadata):
     """
     logger = logging.getLogger(__name__)
 
+    try:
+        date_format = tuple(
+            page_generator.context["generated_content"].values()
+        )[0].date_format
+    except IndexError:
+        date_format = "%Y-%m-%d"
+    datetime_format = f"{date_format} %H:%M"
+
     for version_name, version_data in metadata.get("versions", {}).items():
         manifest_url = version_data.get("download_manifest")
         if not manifest_url:
@@ -31,8 +39,6 @@ def page_generator_context(page_generator, metadata):
         except IOError:
             logger.warning("Failed to retrieve manifest URL: %s", manifest_url)
             continue
-
-        print(manifest_data)
 
         manifest = json.loads(manifest_data)
         for download in version_data.get("downloads", []):
@@ -47,6 +53,9 @@ def page_generator_context(page_generator, metadata):
                 package["size"] = format_size(int(metadata["file_size"]))
                 package["date"] = datetime.datetime.fromisoformat(
                     metadata["file_date"]
+                )
+                package["locale_date"] = package["date"].strftime(
+                    datetime_format
                 )
                 package["commit_id"] = metadata["commit_id"]
                 package["commit_url"] = metadata["commit_url"]

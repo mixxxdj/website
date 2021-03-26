@@ -131,7 +131,7 @@
           {% with os=download.os, package_name=package.name %}
           <div>
             <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
-            {% if package.size or package.commit_id or package.date %}
+            {% if package.size or package.commit_id or package.locale_date %}
             <ul class="download-meta">
               {% if package.size %}
               <li>
@@ -151,13 +151,13 @@
                 {% endif %}
               </li>
               {% endif %}
-              {% if package.date %}
+              {% if package.locale_date %}
               <li>
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/date.svg" alt="Build Date" />
                 {% if package.build_log_url %}
                 <a href="{{ package.build_log_url }}" target="_blank">
                 {% endif %}
-                {{ package.date.strftime("%Y-%m-%d %H:%M") }}
+                {{ package.locale_date }}
                 {% if package.build_log_url %}
                 </a>
                 {% endif %}
