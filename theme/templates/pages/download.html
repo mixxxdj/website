@@ -126,10 +126,46 @@
         {% endif %}
 
         {% if download.packages %}
-        <div class="grid-container halves">
+        <div class="grid-container halves packages">
           {% for package in download.packages %}
           {% with os=download.os, package_name=package.name %}
-          <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+          <div>
+            <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+            {% if package.size or package.commit_id or package.date %}
+            <ul class="download-meta">
+              {% if package.size %}
+              <li>
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/hdd.svg" alt="File Size" />
+                {{ package.size }}
+              </li>
+              {% endif %}
+              {% if package.commit_id %}
+              <li>
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/commit.svg" alt="Commit" />
+                {% if package.commit_url %}
+                <a href="{{ package.commit_url }}" target="_blank">
+                {% endif %}
+                {{ package.commit_id|truncate(7, True, "") }}
+                {% if package.commit_url %}
+                </a>
+                {% endif %}
+              </li>
+              {% endif %}
+              {% if package.date %}
+              <li>
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/date.svg" alt="Build Date" />
+                {% if package.build_log_url %}
+                <a href="{{ package.build_log_url }}" target="_blank">
+                {% endif %}
+                {{ package.date.strftime("%Y-%m-%d %H:%M") }}
+                {% if package.build_log_url %}
+                </a>
+                {% endif %}
+              </li>
+              {% endif %}
+            </ul>
+            {% endif %}
+          </div>
           {% endwith %}
           {% endfor %}
         </div>

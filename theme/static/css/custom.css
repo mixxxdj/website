@@ -725,3 +725,32 @@ article.news + article.news {
     padding: 1em;
     margin: 0 0 2em 0;
 }
+
+/* Download page */
+.packages .button {
+    width: 100%;
+}
+
+.download-meta {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: small;
+    color: var(--text-color-softer);
+}
+
+.download-meta a {
+    text-decoration: none
+}
+
+.download-meta li {
+    display: inline;
+    list-style-type: none;
+}
+
+.download-meta .icon {
+    display: inline-block;
+    height: 1em;
+    margin-right: 0.25em;
+    filter: brightness(67%);
+}

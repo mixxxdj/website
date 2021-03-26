@@ -88,6 +88,7 @@ PLUGIN_PATHS = [
 
 PLUGINS = [
     "author_metadata",
+    "download_metadata",
     "draft_override",
     "md_yaml",
 ]
