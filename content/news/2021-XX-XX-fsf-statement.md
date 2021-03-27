@@ -8,15 +8,15 @@ _A Statement from Mixxx on Richard Stallman's return to the FSF._
 The contributors to the Mixxx project were dismayed this week to learn that Richard Stallman had been reinstated to the board of directors of the Free Software Foundation.
 His departure in 2019 was a consequence of the criticism he faced regarding his inappropriate behavior towards women, his hurtful comments about people with Down's Syndrome and his remarks relating to the Epstein scandal.
 His resignation came as a relief for many who have suffered his bad behavior.
-We as free software developers strive build an inclusive and welcoming community and Richard Stallman's actions disqualify him from representing the FSF and the free software community as a whole.
+Richard Stallman's actions disqualify him from representing the FSF and the free software community as a whole.
 
 While Mixxx is not officially associated with the Free Software Foundation, there's an inevitable connection in the public's mind between all FOSS projects and the FSF.
 Furthermore, Mixxx is and always has been licensed under the terms of the GNU General Public License, version 2 or *later*, and only the Free Software Foundation can publish new versions of the GNU GPL which could be retroactively applied to the Mixxx code.
 Given this relationship, the Mixxx project has an interest in ensuring that the Free Software Foundation has inclusive, principled, and wise leadership which can effectively lead the broad free software community to meet present and future challenges.
 Therefore, we feel an obligation to add our voices to the chorus of those who have expressed dismay at this turn of events and call for the resignation not only of Richard Stallman, but the entire FSF board of directors.
 By sanctioning his return, the board of directors has lost all credibility on the issues of diversity, equity, and inclusion.
-Furthermore, we call upon the Free Software Foundation to revise its bylaws to institute democratic processes for choosing leadership.
-We believe that the myriad software developers who chose to trust the FSF with stewardship of licenses for the code we wrote deserve to have a voice on the leadership of the FSF.
+We also call upon the Free Software Foundation to revise its bylaws to institute democratic processes for choosing leadership.
+The myriad software developers who chose to trust the FSF with stewardship of licenses for the code we wrote deserve to have a voice on the leadership of the FSF.
 We cannot trust an organization that knowingly makes controversial decisions behind closed doors.
 
 The FOSS community has led the way for the rest of the wider tech industry, showing that open standards and practices result in better products.
