@@ -13,7 +13,7 @@ If you want to enjoy advanced DJ features such as using a second deck and crossf
 
 The Mixxx **Pro** plan ($19.99/month) even goes one step further and lets you spice up your mix by adding EQs, controller support and samplers!
 
-With our additional **FX**, **DVS** and **Spinal Tap** plans ($4.99/month each, can be purchased addition to any of the Core/Creative/Pro plans) you can take your DJing to the next level and open even more possibilities by adding support for effect chains, enabling support for timecode vinyl and making all knobs and sliders go up to eleven (for that extra push over the cliff).
+With our additional **FX**, **DVS** and **Spinal Tap** plans ($4.99/month each, can be purchased in addition to any of the Core/Creative/Pro plans) you can take your DJing to the next level and open even more possibilities by adding support for effect chains, enabling support for timecode vinyl and making all knobs and sliders go up to eleven (for that extra push over the cliff).
 
 For real headliners, the **Bottle Service VIP** plan ($499.99/program launch) will guarantee the appearance of at least three Instagram Influencers at each of your parties.
 
