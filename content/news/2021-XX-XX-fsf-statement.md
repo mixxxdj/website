@@ -1,4 +1,4 @@
-title: "A Statement on Richard Stallman"
+title: "A Statement on Richard Stallman and the Free Software Foundation"
 authors: Owen Williams
 tags: community, diversity, politics
 date: 2021-03-26 00:00:00
