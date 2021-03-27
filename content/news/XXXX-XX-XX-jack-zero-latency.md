@@ -8,7 +8,7 @@ In regular intervals, we discuss how much latency the [JACK Audio Connection Kit
 
 This is true on its own, because JACK uses directly the buffer configured for ALSA to mix the audio sources together. ALSA has a second buffer with the same length that is used to feed these samples into the hardware. That's all.
 
-However, in the case of Mixxx another buffer is used, because Mixxx has its own real-time mixing stage and uses the [PortAudio](http://www.portaudio.com) abstraction layer. In addition, most distros use JACK with it's default "Server Asynchronous Mode" which introduce one buffer extra latency (--async-latency);
+However, in the case of Mixxx two more buffers are used by JACK, for syncing and to mixing the buffers of the patch field. It allows the clienet applications to use the full CPU time of each buffer cycle.
 
 When using the ALSA API directly Mixxx does what JACK does. It uses the ALSA buffer directly, which doesn't add any latency.
 
@@ -18,17 +18,16 @@ Here the resulting recordings visualized in [Audacity](https://www.audacityteam.
 
 ![Screenshot of audacity showing the round trip latency]({static}/images/news/roundtriplatency.png)
 
-
 The upper stream is the JACK case. The left channel is the recorded master 440 Hz sine wave and the right channel is the mic input.
 
-JACK is configured with a 1024 frames buffer and reports a latency of 46.4 ms for the sum of two buffers .
-The round trip latency is 95 ms ~4 buffers = Driver + ALSA + JACK Async mode + (PortAudio)
+JACK is configured with a 1024 frames buffer and reports a latency of 46.4 ms for the sum of two buffers.
+The round trip latency is 95 ms ~4 buffers = Driver + ALSA + JACK Async mode + duplex stream
 
 The lower stream is the ALSA case. Mixxx is configures with the same single buffer of 1024 frames = 23.2 ms
 The round trip latency is 49 ms ~2 buffers = Driver + ALSA
 
 Not in the picture is the ALSA pulse device. It runs at a latency of 104 ms ~5 buffers. Driver + ALSA + 2 x Pulse + ALSA
-PipeWire on Fedora 34 has by default the same latency like JACK in this test.
+PipeWire on Fedora 34 has by default the same latency as JACK in this test.
 
 With this picture we can verify that Mixxx actually has the same buffer size in both cases. When pressing pause, it fades the signal out over one buffer length which is equal in both cases.
 The peaks in the recorded right channel is the sound of the mouse click. You can only barely see the recorded sine wave.
@@ -43,9 +42,28 @@ For reference, I have done the same test using [jack_iodelay](http://manpages.ub
 	use 21 for the backend arguments -I and -O Inv
 ```
 
-The result is 70 ms ~3 buffers = Driver + ALSA + JACK Async mode. This is one buffer more than a native ALSA implementation.
+The result is 70 ms ~3 buffers = Driver + ALSA + JACK Async mode. The duplex cycle is omitted here. This is one buffer more than a native ALSA implementation.
 
-From Ubuntu Hirsute 21.4, QJackCtl exposes a "Use server synchronous mode" checkbox in the sound card preferences. It is grayed out by default but becomes active if "Enable JACK D-Bus interface" is checked as well. In this case the JACK mixing is done after Mixxx in the same time interval.
+To verify that the duplex cycle is not introduced in the Mixxx or [PortAudio](http://www.portaudio.com) abstraction layer used by Mixxx. I have routed the jack_iodelay signal trough Mixxx.
+
+![Jack patch field showing the jack_iodelay Mixxx loop]({static}/images/news/jackpatch.png)
+
+
+```
+  2048.000 frames     46.440 ms total roundtrip latency
+	extra loopback latency: 2047 frames
+	use 1023 for the backend arguments -I and -O
+```
+
+This is the minimum we can expect, one buffer is needed for jack_iodelay and one for Mixxx. The result can be confirmed with the same setup using jack_latent_client which just passes the input to the output.
+
+If we connect the output of Mixxx to the input, an extra buffer is used for some reasons. This can be also confirmed with jack_latent_client and the same feedback loop.
+
+![Jack feedback loop]({static}/images/news/feedbackloop.png)
+
+The upper stream shows the Mixxx results and the lower stream shows the jack_latent_client results.
+
+In addition, most distros use JACK with it's default "Server Asynchronous Mode" which introduce one buffer extra latency (--async-latenc) when accessing the sound card. From Ubuntu Hirsute 21.4, QJackCtl exposes a "Use server synchronous mode" checkbox in the sound card preferences. It is grayed out by default but becomes active if "Enable JACK D-Bus interface" is checked as well. In this case the JACK mixing is done after Mixxx in the same time interval.
 
 ## Conclusion
 
@@ -53,8 +71,4 @@ For now, we recommend using Mixxx with the ALSA backends even if you are running
 
 It should be also noted that JACK can't deal (well) with two or more sound cards. Mixxx can do this using the ALSA API and this with no extra latency as long the underlying driver allows it.
 
-## What comes next?
-
-There is a chance to get rid of the extra latency and make Mixxx use the buffer provided by Jack/PipeWire. This requires that Mixxx becomes a native Jack or Pipewire application by using their client libraries directly or via a thin wrapper library.
-
-A lot to do. Do you have interest to help? Get in contact with us at [Zulip](https://mixxx.zulipchat.com)
+Pipewire will become default on most diestros and we need to find out what is the best setup for using it with Mixxx. Do you have interest to help? Get in contact with us at [Zulip](https://mixxx.zulipchat.com)
