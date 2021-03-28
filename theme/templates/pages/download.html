@@ -135,13 +135,13 @@
             {% if package.size or package.commit_id or package.locale_date or package.sha256_url %}
             <ul class="download-meta">
               {% if package.size %}
-              <li>
+              <li title="{% trans %}File Size{% endtrans %}">
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/hdd.svg" alt="{% trans %}File Size{% endtrans %}" />
                 {{ package.size }}
               </li>
               {% endif %}
               {% if package.commit_id %}
-              <li>
+              <li title="{% trans %}Commit ID{% endtrans %}">
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/commit.svg" alt="{% trans %}Commit{% endtrans %}" />
                 {% if package.commit_url %}
                 <a href="{{ package.commit_url }}" target="_blank">
@@ -153,7 +153,7 @@
               </li>
               {% endif %}
               {% if package.locale_date %}
-              <li>
+              <li title="{% if package.build_log_url %}{% trans %}Build Date/Log{% endtrans %}{% else %}{% trans %}Build Date{% endtrans %}{% endif %}">
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/date.svg" alt="{% trans %}Build Date{% endtrans %}" />
                 {% if package.build_log_url %}
                 <a href="{{ package.build_log_url }}" target="_blank">
@@ -165,9 +165,9 @@
               </li>
               {% endif %}
               {% if package.sha256_url %}
-              <li>
+              <li title="{% if package.sha256 %}{{ package.sha256 }}{% else %}{% trans %}SHA256 Checksum{% endtrans %}{% endif %}">
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/fingerprint.svg" alt="{% trans %}SHA256 Checksum{% endtrans %}" />
-                <a href="{{ package.sha256_url }}" {% if package.sha256 %}title="{{ package.sha256 }}" {% endif %}target="_blank">SHA256</a>
+                <a href="{{ package.sha256_url }}" target="_blank">SHA256</a>
               </li>
               {% endif %}
             </ul>
