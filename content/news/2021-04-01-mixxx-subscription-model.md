@@ -9,7 +9,7 @@ Starting with Mixxx 2.3, Mixxx will switch to a new, multi-tiered subscription p
 Using our Mixxx **Core** plan for only $6.99/month (introductory offer, $9.99/month after the first 3 months), you can get your party started.
 It offers advanced DJ functions like a top-notch library and tag editing for organizing your music and supports playback of a single deck.
 
-If you want to enjoy advanced DJ features such as using a second deck and crossfader, recording your set, streaming to shoutcast servers, check out our Mixxx **Creative** plan for only $9.99/month (introductory offer, $14.99/month after the first 3 months).
+If you want to enjoy advanced DJ features such as using a second deck and crossfader, recording your set, streaming to Shoutcast servers, check out our Mixxx **Creative** plan for only $9.99/month (introductory offer, $14.99/month after the first 3 months).
 
 The Mixxx **Pro** plan ($19.99/month) even goes one step further and lets you spice up your mix by adding EQs, controller support and samplers!
 
