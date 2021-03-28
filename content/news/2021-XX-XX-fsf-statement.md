@@ -15,7 +15,7 @@ Furthermore, Mixxx is and always has been licensed under the terms of the GNU Ge
 Given this relationship, the Mixxx project has an interest in ensuring that the Free Software Foundation has inclusive, principled, and wise leadership which can effectively lead the broad free software community to meet present and future challenges.
 Therefore, we feel an obligation to add our voices to the chorus of those who have expressed dismay at this turn of events and call for the resignation not only of Richard Stallman, but the entire FSF board of directors.
 By sanctioning his return, the board of directors has lost all credibility on the issues of diversity, equity, and inclusion.
-We also call upon the Free Software Foundation to revise its bylaws to institute democratic processes for choosing leadership.
+We also call upon the Free Software Foundation to revise its bylaws to institute democratic processes for choosing leadership and increase the transparency of its operations.
 The myriad software developers who chose to trust the FSF with stewardship of licenses for the code we wrote deserve to have a voice on the leadership of the FSF.
 We cannot trust an organization that knowingly makes controversial decisions behind closed doors.
 
