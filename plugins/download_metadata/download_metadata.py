@@ -6,6 +6,7 @@ from pelican import signals
 
 
 def format_size(num, suffix="B"):
+    """Convert a file size in bytes into a human-readable format."""
     for unit in ("", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"):
         if abs(num) < 1024.0:
             return "%3.1f%s%s" % (num, unit, suffix)
@@ -15,11 +16,12 @@ def format_size(num, suffix="B"):
 
 def page_generator_context(page_generator, metadata):
     """
-    Iterate through author objects in metadata and add some additional
-    properties.
+    Iterate through page objects and augment the download page's package data
+    with information from the download manifest file (if specified).
     """
     logger = logging.getLogger(__name__)
 
+    # Get the configured datetime format
     try:
         date_format = tuple(
             page_generator.context["generated_content"].values()
@@ -29,6 +31,7 @@ def page_generator_context(page_generator, metadata):
     datetime_format = f"{date_format} %H:%M"
 
     for version_name, version_data in metadata.get("versions", {}).items():
+        # Check if a manifest URL is specified for this version and download it
         manifest_url = version_data.get("download_manifest")
         if not manifest_url:
             continue
@@ -51,6 +54,8 @@ def page_generator_context(page_generator, metadata):
             continue
 
         manifest = json.loads(manifest_data)
+
+        # Override the package data with information from the manifest file
         for download in version_data.get("downloads", []):
             for package in download.get("packages", []):
                 slug = f"{download['slug']}-{package['slug']}"
