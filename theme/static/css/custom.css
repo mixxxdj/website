@@ -544,6 +544,7 @@ h6 a.headline-link {
     display: inline-block;
     height: 1em;
     margin-right: 0.25em;
+    filter: brightness(80%);
 }
 
 .news-meta > .authors,

@@ -6,6 +6,7 @@ versions:
     name: 2.3.0 Beta
     next_stable_version: 2.3.0
     release_announcement: /news/2020-06-07-mixxx-2-3-beta-released/
+    download_manifest: https://downloads.mixxx.org/builds/2.3/manifest.json
     downloads:
       - slug: windows
         os: Windows 7 or later

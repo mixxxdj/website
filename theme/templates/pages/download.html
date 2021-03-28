@@ -3,6 +3,7 @@
 {% block title %}{% trans %}Download the Best Free DJ Mixing Software App{% endtrans %}{% endblock %}
 
 {% block extra_head %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages/download.css">
 <script src="{{ SITEURL }}/theme/js/download.js"></script>
 {% endblock %}
 
@@ -126,10 +127,52 @@
         {% endif %}
 
         {% if download.packages %}
-        <div class="grid-container halves">
+        <div class="grid-container halves packages">
           {% for package in download.packages %}
           {% with os=download.os, package_name=package.name %}
-          <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+          <div>
+            <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+            {% if package.size or package.commit_id or package.locale_date or package.sha256_url %}
+            <ul class="download-meta">
+              {% if package.size %}
+              <li title="{% trans %}File Size{% endtrans %}">
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/hdd.svg" alt="{% trans %}File Size{% endtrans %}" />
+                {{ package.size }}
+              </li>
+              {% endif %}
+              {% if package.commit_id %}
+              <li title="{% trans %}Commit ID{% endtrans %}">
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/commit.svg" alt="{% trans %}Commit{% endtrans %}" />
+                {% if package.commit_url %}
+                <a href="{{ package.commit_url }}" target="_blank">
+                {% endif %}
+                {{ package.commit_id|truncate(7, True, "") }}
+                {% if package.commit_url %}
+                </a>
+                {% endif %}
+              </li>
+              {% endif %}
+              {% if package.locale_date %}
+              <li title="{% if package.build_log_url %}{% trans %}Build Date/Log{% endtrans %}{% else %}{% trans %}Build Date{% endtrans %}{% endif %}">
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/date.svg" alt="{% trans %}Build Date{% endtrans %}" />
+                {% if package.build_log_url %}
+                <a href="{{ package.build_log_url }}" target="_blank">
+                {% endif %}
+                {{ package.locale_date }}
+                {% if package.build_log_url %}
+                </a>
+                {% endif %}
+              </li>
+              {% endif %}
+              {% if package.sha256_url %}
+              <li title="{% if package.sha256 %}{{ package.sha256 }}{% else %}{% trans %}SHA256 Checksum{% endtrans %}{% endif %}">
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/fingerprint.svg" alt="{% trans %}SHA256 Checksum{% endtrans %}" />
+                <a href="{{ package.sha256_url }}" target="_blank">SHA256</a>
+              </li>
+              {% endif %}
+            </ul>
+            {% endif %}
+          </div>
           {% endwith %}
           {% endfor %}
         </div>
