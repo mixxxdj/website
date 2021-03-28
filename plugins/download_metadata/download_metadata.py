@@ -33,11 +33,21 @@ def page_generator_context(page_generator, metadata):
         if not manifest_url:
             continue
 
+        req = urllib.request.Request(
+            manifest_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0",
+            },
+        )
         try:
-            resp = urllib.request.urlopen(manifest_url, timeout=10)
+            resp = urllib.request.urlopen(req, timeout=10)
             manifest_data = resp.read().decode()
         except IOError:
-            logger.warning("Failed to retrieve manifest URL: %s", manifest_url)
+            logger.warning(
+                "Failed to retrieve manifest URL: %s",
+                manifest_url,
+                exc_info=True,
+            )
             continue
 
         manifest = json.loads(manifest_data)
