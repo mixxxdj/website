@@ -70,6 +70,8 @@ def page_generator_context(page_generator, metadata):
                 package["commit_id"] = metadata["commit_id"]
                 package["commit_url"] = metadata["commit_url"]
                 package["build_log_url"] = metadata["build_log_url"]
+                package["sha256"] = metadata["sha256"]
+                package["sha256_url"] = metadata["sha256_url"]
 
 
 def register():

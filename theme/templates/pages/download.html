@@ -132,7 +132,7 @@
           {% with os=download.os, package_name=package.name %}
           <div>
             <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
-            {% if package.size or package.commit_id or package.locale_date %}
+            {% if package.size or package.commit_id or package.locale_date or package.sha256_url %}
             <ul class="download-meta">
               {% if package.size %}
               <li>
@@ -162,6 +162,12 @@
                 {% if package.build_log_url %}
                 </a>
                 {% endif %}
+              </li>
+              {% endif %}
+              {% if package.sha256_url %}
+              <li>
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/fingerprint.svg" alt="SHA256 Checksum" />
+                <a href="{{ package.sha256_url }}" {% if package.sha256 %}title="{{ package.sha256 }}" {% endif %}target="_blank">SHA256</a>
               </li>
               {% endif %}
             </ul>
