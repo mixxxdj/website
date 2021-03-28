@@ -2,9 +2,12 @@ title: "Announcing the Mixxx Subscription Service"
 authors: Jan Holthuis
 tags: subscription, cloud
 date: 2021-04-01 12:00:00
+summary: Starting with Mixxx 2.3, Mixxx will switch to a new, multi-tiered subscription plan.
 
 We are happy to announce a major change in our licensing model:
 Starting with Mixxx 2.3, Mixxx will switch to a new, multi-tiered subscription plan.
+
+![Mixxx Subscription Service]({static}/images/news/subscription-service.png)
 
 Using our Mixxx **Core** plan for only $6.99/month (introductory offer, $9.99/month after the first 3 months), you can get your party started.
 It offers advanced DJ functions like a top-notch library and tag editing for organizing your music and supports playback of a single deck.
