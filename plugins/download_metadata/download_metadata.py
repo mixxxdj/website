@@ -46,6 +46,15 @@ def page_generator_context(page_generator, metadata):
             resp = urllib.request.urlopen(req, timeout=10)
             manifest_data = resp.read().decode()
         except IOError:
+            # If the download manifest file failed to download, print a warning
+            # and continue. This allows to build the website locally without
+            # and internet connection (it will use the hardcoded values in
+            # `download.md` in that case). On Netlify, we build the website
+            # with `--fatal warnings` so that the deploy will fail and the
+            # website is not updated if the download manifest fails to
+            # download.
+            # In any case, the metadata and URL will never be inconsistent
+            # unless the data in `download.md` or `manifest.json` are wrong.
             logger.warning(
                 "Failed to retrieve manifest URL: %s",
                 manifest_url,
