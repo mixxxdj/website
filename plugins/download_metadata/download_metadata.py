@@ -14,6 +14,17 @@ def format_size(num, suffix="B"):
     return "%.1f%s%s" % (num, "Yi", suffix)
 
 
+def url_add_query_params(original_url, query_params):
+    """Returns the URL with the given query parameters added."""
+    url = urllib.parse.urlparse(original_url)
+    query = urllib.parse.parse_qs(url.query)
+    query.update(query_params)
+    query = urllib.parse.urlencode(query)
+    return urllib.parse.urlunparse(
+        (url.scheme, url.netloc, url.path, url.params, query, url.fragment)
+    )
+
+
 def page_generator_context(page_generator, metadata):
     """
     Iterate through page objects and augment the download page's package data
@@ -35,6 +46,13 @@ def page_generator_context(page_generator, metadata):
         manifest_url = version_data.get("download_manifest")
         if not manifest_url:
             continue
+
+        # FIXME: This is a hack to get around Cloudflare's caching. By adding a
+        # timestamp to the query parameter's, we ensure that this URL is
+        # "fresh" and Cloudflare doesn't respond with cached (stale) data.
+        manifest_url = url_add_query_params(
+            manifest_url, {"timestamp": datetime.datetime.now().strftime("%s")}
+        )
 
         req = urllib.request.Request(
             manifest_url,
