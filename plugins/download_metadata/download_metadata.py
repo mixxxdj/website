@@ -48,7 +48,7 @@ def page_generator_context(page_generator, metadata):
             continue
 
         # FIXME: This is a hack to get around Cloudflare's caching. By adding a
-        # timestamp to the query parameter's, we ensure that this URL is
+        # timestamp to the query parameters, we ensure that this URL is
         # "fresh" and Cloudflare doesn't respond with cached (stale) data.
         manifest_url = url_add_query_params(
             manifest_url, {"timestamp": datetime.datetime.now().strftime("%s")}
