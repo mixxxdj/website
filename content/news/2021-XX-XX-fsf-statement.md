@@ -15,7 +15,7 @@ Given this relationship, the Mixxx project has an interest in ensuring that the 
 Therefore, we feel an obligation to add our voices to the chorus of those who have expressed dismay at this turn of events and call for the resignation of Richard Stallman.
 The FSF board of directors, by allowing him to return, is giving the appearance of endorsing his conduct and can't remain effective without significant personnel changes and bylaw reforms.
 By sanctioning his return, the board of directors has lost all credibility on the issues of diversity, equity, and inclusion.
-We also call upon the Free Software Foundation to revise its bylaws to institute democratic processes for choosing leadership and increase the transparency of its operations.
+We acknowledge the Free Software Foundation's efforts to revise its bylaws to establish democratic processes for electing leadership and to increase the transparency of its activities.
 The myriad software developers who chose to trust the FSF with stewardship of licenses for the code we wrote deserve to have a voice on the leadership of the FSF.
 We cannot trust an organization that knowingly makes controversial decisions behind closed doors.
 
