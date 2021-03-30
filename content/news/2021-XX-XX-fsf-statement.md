@@ -5,7 +5,7 @@ date: 2021-03-26 00:00:00
 
 The contributors to the Mixxx project were dismayed this week to learn that Richard Stallman had been reinstated to the board of directors of the Free Software Foundation.
 His departure in 2019 was a consequence of the criticism he faced regarding his inappropriate behavior towards women, his hurtful comments about people with Down's Syndrome and his remarks relating to the Epstein scandal.
-His resignation came as a relief for many who have suffered his bad behavior.
+His resignation came as a relief for many who have suffered his actions.
 Richard Stallman's actions disqualify him from representing the FSF and the free software community as a whole.
 
 While Mixxx is not officially associated with the Free Software Foundation, there's an inevitable connection in the public's mind between all FOSS projects and the FSF.
