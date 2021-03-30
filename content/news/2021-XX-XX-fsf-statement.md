@@ -22,4 +22,4 @@ We cannot trust an organization that knowingly makes controversial decisions beh
 The FOSS community has led the way for the rest of the wider tech industry, showing that open standards and practices result in better products while respecting users' freedom, privacy, and community.
 Now we have the opportunity to light a better way for the industry at large by showing that a more welcoming, inclusive industry also creates products that are better for everyone.
 Our community needs to demonstrate a strong sense of accountability at this time.
-We urge the FSF board to do the right thing by accepting responsibility for this bad decision and enact specific commitments for change to rebuild trust.
+We expect the FSF board to do the right thing and follow up its statements with actions by accepting responsibility for this bad decision and enacting specific commitments for change to rebuild trust.
