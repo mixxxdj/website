@@ -21,7 +21,8 @@ With our additional **FX**, **DVS** and **Spinal Tap** plans ($4.99/month each, 
 For real headliners, the **Bottle Service VIP** plan ($499.99/program launch) will guarantee the appearance of at least three Instagram Influencers at each of your parties.
 
 This is an amazing opportunity for us to generate shareholder value for our hedge fund investors and reshape the DJ experience for our customers.
-Because of this is such a huge step forward, we don't want to overwhelm our users and will postpone all bug fixes and features for an indefinite amount of time instead of including them in Mixxx 2.3.
+Because of this is such a huge step forward, we don't want to overwhelm our users and make the transition as easy as possible.
+Therefore, we will postpone all bug fixes and features for an indefinite amount of time instead of including them in Mixxx 2.3.
 
 *Note:* Existing Mixxx installations will start a 30-day free trial of the Mixxx Core plan.
 Customers need to enter payment data before the trial period is over to continue using Mixxx.
