@@ -57,13 +57,13 @@ To verify that the duplex cycle is not introduced by Mixxx or the [PortAudio](ht
 	use 1023 for the backend arguments -I and -O
 ```
 
-This is the minimum we can expect, one buffer is needed for jack_iodelay and one for Mixxx. The result can be confirmed with the same setup using jack_latent_client which just passes the input to the output.
+This is the minimum we can expect, one buffer is needed for `jack_iodelay` and one for Mixxx. The result can be confirmed with the same setup using `jack_latent_client` which just passes the input to the output.
 
 If we connect the output of Mixxx to the input, an extra buffer is used for some reason. This can be also confirmed with `jack_latent_client` and the same feedback loop.
 
 ![Jack feedback loop]({static}/images/news/feedbackloop.png)
 
-The upper stream shows the Mixxx results and the lower stream shows the jack_latent_client results.
+The upper stream shows the Mixxx results and the lower stream shows the `jack_latent_client` results.
 
 In addition, most distros use JACK with it's default "Server Asynchronous Mode" which introduce one buffer extra latency (`--async-latency`) when accessing the sound card. From Ubuntu Hirsute 21.4, QJackCtl exposes a "Use server synchronous mode" checkbox in the sound card preferences. It is grayed out by default but becomes active if "Enable JACK D-Bus interface" is checked as well. In this case the JACK mixing is done after Mixxx in the same time interval.
 
