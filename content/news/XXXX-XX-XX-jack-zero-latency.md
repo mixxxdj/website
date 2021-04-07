@@ -23,12 +23,12 @@ Here the resulting recordings visualized in [Audacity](https://www.audacityteam.
 The upper stream is the JACK case. The left channel is the recorded master 440 Hz sine wave and the right channel is the mic input.
 
 JACK is configured with a 1024 frames buffer and reports a latency of 46.4 ms for the sum of two buffers.
-The round trip latency is 95 ms ~4 buffers = Driver + ALSA + JACK Async mode + duplex stream
+The round trip latency is 95 ms (driver + ALSA + JACK async mode + duplex stream = 4 buffers).
 
 The lower stream is the ALSA case. Mixxx is configures with the same single buffer of 1024 frames = 23.2 ms
-The round trip latency is 49 ms ~2 buffers = Driver + ALSA
+The round trip latency is 49 ms (driver + ALSA = 2 buffers).
 
-Not in the picture is the ALSA pulse device. It runs at a latency of 104 ms ~5 buffers. Driver + ALSA + 2 x Pulse + ALSA
+Not in the picture is the ALSA pulse device. It runs at a latency of 104 ms (driver + ALSA + 2 x pulse + ALSA = 5 buffers)
 PipeWire on Fedora 34 has by default the same latency as JACK in this test.
 
 With this picture we can verify that Mixxx actually has the same buffer size in both cases. When pressing pause, it fades the signal out over one buffer length which is equal in both cases.
@@ -44,7 +44,7 @@ For reference, I have done the same test using [jack_iodelay](http://manpages.ub
 	use 21 for the backend arguments -I and -O Inv
 ```
 
-The result is 70 ms ~3 buffers = Driver + ALSA + JACK Async mode. The duplex cycle is omitted here. This is one buffer more than a native ALSA implementation.
+The result is 70 ms (driver + ALSA + JACK async mode = 3 buffers). The duplex cycle is omitted here. This is one buffer more than a native ALSA implementation.
 
 To verify that the duplex cycle is not introduced by Mixxx or the [PortAudio](http://www.portaudio.com) abstraction layer used by Mixxx, I have routed the `jack_iodelay` signal through Mixxx.
 
