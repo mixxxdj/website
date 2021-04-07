@@ -1,4 +1,4 @@
-title: "Has JACK zero latency?"
+title: "Does using Mixxx with JACK give you zero latency?"
 authors: Daniel Schürmann
 tags: jack, alsa, sound, latency, pipewire
 date: 2021.03.18 02:42:18
