@@ -1,6 +1,6 @@
 title: "Has JACK zero latency?"
 authors: Daniel Schürmann
-tags: 2.3, jack, alsa, sound, latency, pipewire
+tags: jack, alsa, sound, latency, pipewire
 date: 2021.03.18 02:42:18
 
 In regular intervals, we discuss how much latency the [JACK Audio Connection Kit](https://jackaudio.org) introduces when used in Mixxx. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux, and it's a layer on top of the [Advances Linux Sound Architecture (ALSA)](https://www.alsa-project.org). The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
