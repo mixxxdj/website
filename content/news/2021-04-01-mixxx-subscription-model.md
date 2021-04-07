@@ -1,6 +1,6 @@
 title: "Announcing the Mixxx Subscription Service"
 authors: Jan Holthuis
-tags: subscription, cloud
+tags: april fools
 date: 2021-04-01 12:00:00
 summary: Starting with Mixxx 2.3, Mixxx will switch to a new, multi-tiered subscription plan.
 
@@ -29,3 +29,5 @@ Customers need to enter payment data before the trial period is over to continue
 If you're not satisfied with the service, you may cancel anytime.
 Please note that canceling the subscription does not cancel payments.
 Refunds are not available.
+
+**EDIT:** As you probably noticed, this is an April Fool's joke. There is no subscription plan, and [Mixxx is and always will be free]({filename}/news/2020-05-22-you-dont-need-to-pay-for-mixxx.md).
