@@ -1,7 +1,7 @@
 title: "Does using Mixxx with JACK give you zero latency?"
 authors: Daniel Schürmann
 tags: jack, alsa, sound, latency, pipewire
-date: 2021.03.18 02:42:18
+status: draft
 
 In regular intervals, we discuss how much latency the [JACK Audio Connection Kit](https://jackaudio.org) introduces when used in Mixxx. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux, and it's a layer on top of the [Advances Linux Sound Architecture (ALSA)](https://www.alsa-project.org).
 
@@ -40,7 +40,7 @@ The peaks in the recorded right channel is the sound of the mouse click. You can
 
 ![Screenshot of audacity showing the fade out]({static}/images/news/fadeoutcompare.png)
 
-For reference, I have done the same test using [jack_iodelay](http://manpages.ubuntu.com/manpages/bionic/man1/jack_iodelay.1.html)
+For reference, I have done the same test using [`jack_iodelay`](http://manpages.ubuntu.com/manpages/bionic/man1/jack_iodelay.1.html)
 
 
     3114.842 frames     70.631 ms total roundtrip latency
