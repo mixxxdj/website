@@ -6,7 +6,7 @@ date: 2021.03.18 02:42:18
 In regular intervals, we discuss how much latency the [JACK Audio Connection Kit](https://jackaudio.org) introduces when used in Mixxx. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux, and it's a layer on top of the [Advances Linux Sound Architecture (ALSA)](https://www.alsa-project.org). The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
 > There is **NO** extra latency caused by using JACK for audio input and output. When we say none, we mean absolutely zero.
 
-This is true on its own, because JACK uses directly the buffer configured for ALSA to mix the audio sources together. ALSA has a second buffer with the same length that is used to feed these samples into the hardware. That's all.
+This is true on its own, because JACK uses the buffer configured for ALSA directly to mix the audio sources together. ALSA has a second buffer with the same length that is used to feed these samples into the hardware. That's all.
 
 However, in the case of Mixxx two more buffers are used by JACK for syncing and mixing the buffers of the patch field. It allows the client applications to use the full CPU time of each buffer cycle.
 
