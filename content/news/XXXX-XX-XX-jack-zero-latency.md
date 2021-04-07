@@ -38,11 +38,11 @@ The peaks in the recorded right channel is the sound of the mouse click. You can
 
 For reference, I have done the same test using [jack_iodelay](http://manpages.ubuntu.com/manpages/bionic/man1/jack_iodelay.1.html)
 
-```
-  3114.842 frames     70.631 ms total roundtrip latency
-	extra loopback latency: 42 frames
-	use 21 for the backend arguments -I and -O Inv
-```
+
+    3114.842 frames     70.631 ms total roundtrip latency
+    extra loopback latency: 42 frames
+    use 21 for the backend arguments -I and -O
+
 
 The result is 70 ms (driver + ALSA + JACK async mode = 3 buffers). The duplex cycle is omitted here. This is one buffer more than a native ALSA implementation.
 
@@ -50,12 +50,9 @@ To verify that the duplex cycle is not introduced by Mixxx or the [PortAudio](ht
 
 ![Jack patch field showing the jack_iodelay Mixxx loop]({static}/images/news/jackpatch.png)
 
-
-```
-  2048.000 frames     46.440 ms total roundtrip latency
-	extra loopback latency: 2047 frames
-	use 1023 for the backend arguments -I and -O
-```
+    2048.000 frames     46.440 ms total roundtrip latency
+    extra loopback latency: 2047 frames
+    use 1023 for the backend arguments -I and -O
 
 This is the minimum we can expect, one buffer is needed for `jack_iodelay` and one for Mixxx. The result can be confirmed with the same setup using `jack_latent_client` which just passes the input to the output.
 
