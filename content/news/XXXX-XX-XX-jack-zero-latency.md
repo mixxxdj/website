@@ -5,7 +5,8 @@ status: draft
 
 In regular intervals, we discuss how much latency the [JACK Audio Connection Kit](https://jackaudio.org) introduces when used in Mixxx. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux, and it's a layer on top of the [Advances Linux Sound Architecture (ALSA)](https://www.alsa-project.org).
 
-Unlike analog devices, digital audio devices process audio in time slices of samples stored in memory buffers. These are passed through the various layers. It takes at least the time of one of such buffers, but can be longer depending on the nature of these layers. The resulting time is the latency of a digital audio device.
+Unlike analog devices, digital audio devices process audio in time slices of samples stored in memory buffers. These are passed through the various layers. The latency of a digital audio device depends on the number and size of those buffers.
+The aim is to minimize the latency, so that pressing a button or turning a knob in Mixxx works without noticeable delay, which would make DJing by ear impossible.
 
 The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
 > There is **NO** extra latency caused by using JACK for audio input and output. When we say none, we mean absolutely zero.
