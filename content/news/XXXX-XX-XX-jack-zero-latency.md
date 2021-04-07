@@ -3,7 +3,11 @@ authors: Daniel Schürmann
 tags: jack, alsa, sound, latency, pipewire
 date: 2021.03.18 02:42:18
 
-In regular intervals, we discuss how much latency the [JACK Audio Connection Kit](https://jackaudio.org) introduces when used in Mixxx. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux, and it's a layer on top of the [Advances Linux Sound Architecture (ALSA)](https://www.alsa-project.org). The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
+In regular intervals, we discuss how much latency the [JACK Audio Connection Kit](https://jackaudio.org) introduces when used in Mixxx. That is one of the [Sound APIs](https://manual.mixxx.org/2.3/en/chapters/preferences.html#sound-api) that Mixxx supports on Linux, and it's a layer on top of the [Advances Linux Sound Architecture (ALSA)](https://www.alsa-project.org).
+
+Unlike analog devices, digital audio devices process audio in time slices of samples stored in memory buffers. These are passed through the various layers. It takes at least the time of one of such buffers, but can be longer depending on the nature of these layers. The resulting time is the latency of a digital audio device.
+
+The [JACK FAQ](https://jackaudio.org/faq/no_extra_latency.html) state that:
 > There is **NO** extra latency caused by using JACK for audio input and output. When we say none, we mean absolutely zero.
 
 This is true on its own, because JACK uses the buffer configured for ALSA directly to mix the audio sources together. ALSA has a second buffer with the same length that is used to feed these samples into the hardware. That's all.
