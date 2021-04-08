@@ -73,6 +73,6 @@ In addition, most distros use JACK with it's default "Server Asynchronous Mode" 
 
 For now, we recommend using Mixxx with the ALSA backends even if you are running JACK. The same applies to [PipeWire](https://pipewire.org) as Mixxx uses JACK protocol to connect to it.
 
-It should be also noted that JACK [can't deal well](https://jackaudio.org/faq/multiple_devices.html) with two or more sound cards. Mixxx can do the required clock sync using the ALSA API and this with no extra latency as long the underlying driver allows it. For details refer the [Mixxx manual](https://manual.mixxx.org/2.2/de/chapters/preferences.html#other-sound-hardware-options).
+It should be also noted that JACK [can't deal well](https://jackaudio.org/faq/multiple_devices.html) with two or more sound cards. Mixxx can do the required clock sync using the ALSA API and this with no extra latency as long the underlying driver allows it. For details refer the [Mixxx manual](https://manual.mixxx.org/2.2/chapters/preferences.html#other-sound-hardware-options).
 
 Pipewire will become default on most distros and we need to find out what is the best setup for using it with Mixxx. Do you have interest to help? Get in contact with us at [Zulip](https://mixxx.zulipchat.com)
