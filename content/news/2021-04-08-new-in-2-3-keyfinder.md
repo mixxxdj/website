@@ -1,7 +1,7 @@
 title: "New in 2.3: KeyFinder support"
 authors: Jan Holthuis
 tags: key detection, 2.3, beta
-status: draft
+date: 2021-04-08 20:00:00
 
 Starting with the 2.3, Mixxx will integrate support for the excellent [KeyFinder library](https://github.com/mixxxdj/libKeyFinder) by Ibrahim Sha'ath.
 
