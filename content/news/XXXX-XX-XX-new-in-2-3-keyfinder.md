@@ -15,7 +15,7 @@ Until then, the Queen Mary key Analyzer will be selected by default and you'll h
 ![KeyFinder option in the Key Detection preferences]({static}/images/news/keyfinder-key-detection.png)
 
 On Windows, macOS and Arch Linux, KeyFinder support is already enabled.
-To try it out, grab one of the [2.3 beta builds](/download#unstable) from our download page.
+To try it out, grab one of the [2.3 beta builds]({filename}/pages/download.md#unstable) from our download page.
 On Ubuntu, KeyFinder is not enabled yet, because we didn't find the time to create a DEB package for it.
 
 If you want to help with out with that or work on improving key detection in Mixxx, get in touch with us on [Zulip Chat](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/KeyFinder).
