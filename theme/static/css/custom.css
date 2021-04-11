@@ -214,11 +214,15 @@ i.fas, i.fab {
     margin-top: 0.5rem;
 }
 
-/* Images */
-.news img {
-    display:block;
+/* Images/Tables */
+.news img,
+.news table {
     margin-left:auto;
     margin-right:auto;
+}
+
+.news img {
+    display:block;
     max-width: 100%;
 }
 
