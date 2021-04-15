@@ -11,7 +11,7 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: windows64
+          - slug: win64
             name: 64-Bit
       - slug: macos
         os: macOS 10.12 or later
@@ -80,10 +80,10 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: windows32
+          - slug: win32
             name: 32-Bit
             url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
-          - slug: windows64
+          - slug: win64
             name: 64-Bit
             url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
       - slug: macos
