@@ -13,13 +13,11 @@ versions:
         packages:
           - slug: windows64
             name: 64-Bit
-            url: https://downloads.mixxx.org/builds/2.3/Windows/Mixxx-2.3-latest.msi
       - slug: macos
         os: macOS 10.12 or later
         packages:
         - slug: macosintel
           name: Intel
-          url: https://downloads.mixxx.org/builds/2.3/macOS/Mixxx-2.3-latest.dmg
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
         text: |

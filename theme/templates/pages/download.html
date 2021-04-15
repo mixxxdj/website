@@ -131,9 +131,10 @@
           {% for package in download.packages %}
           {% with os=download.os, package_name=package.name %}
           <div>
-            <a class="button button-primary package-{{ package.slug }}" href="{{ package.url }}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
-            {% if package.size or package.commit_id or package.locale_date or package.sha256_url %}
+            <a class="button button-primary package-{{ package.slug }}{% if package.url %}" href="{{ package.url }}{% else %} button-disabled" title="{% trans %}Not Available{% endtrans %}{% endif %}" data-os="{% trans %}{{ os }} ({{ package_name }}){% endtrans %}">{% trans %}Download ({{ package_name }}){% endtrans %}</a>
+            {% if not package.url or package.size or package.commit_id or package.locale_date or package.sha256_url %}
             <ul class="download-meta">
+              {% if package.url %}
               {% if package.size %}
               <li title="{% trans %}File Size{% endtrans %}">
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/hdd.svg" alt="{% trans %}File Size{% endtrans %}" />
@@ -168,6 +169,12 @@
               <li title="{% if package.sha256 %}{{ package.sha256 }}{% else %}{% trans %}SHA256 Checksum{% endtrans %}{% endif %}">
                 <img class="icon" src="{{ SITEURL }}/theme/images/icons/fingerprint.svg" alt="{% trans %}SHA256 Checksum{% endtrans %}" />
                 <a href="{{ package.sha256_url }}" target="_blank">SHA256</a>
+              </li>
+              {% endif %}
+              {% else %}
+              <li>
+                <img class="icon" src="{{ SITEURL }}/theme/images/icons/warning.svg" alt="{% trans %}Warning{% endtrans %}" />
+                <span>{% trans %}Download is currently not available, please try again later.{% endtrans %}</span>
               </li>
               {% endif %}
             </ul>
