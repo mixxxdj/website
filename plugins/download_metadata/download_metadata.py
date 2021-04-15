@@ -91,19 +91,17 @@ def page_generator_context(page_generator, metadata):
                     continue
 
                 logger.debug("Updating download: %s", slug)
-                package["url"] = metadata["file_url"]
-                package["size"] = format_size(int(metadata["file_size"]))
-                package["date"] = datetime.datetime.fromisoformat(
-                    metadata["file_date"]
-                )
-                package["locale_date"] = package["date"].strftime(
-                    datetime_format
-                )
-                package["commit_id"] = metadata["commit_id"]
-                package["commit_url"] = metadata["commit_url"]
-                package["build_log_url"] = metadata["build_log_url"]
-                package["sha256"] = metadata["sha256"]
-                package["sha256_url"] = metadata["sha256_url"]
+
+                for key, value in metadata.items():
+                    if key.endswith("_date"):
+                        package[key] = datetime.datetime.fromisoformat(value)
+                        package[f"locale_{key}"] = package[key].strftime(
+                            datetime_format
+                        )
+                    elif key.endswith("_size"):
+                        package[key] = format_size(int(metadata[key]))
+                    else:
+                        package[key] = metadata[key]
 
 
 def register():
