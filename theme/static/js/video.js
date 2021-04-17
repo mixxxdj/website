@@ -1,4 +1,4 @@
-;(function() {
+(function() {
     document.addEventListener("DOMContentLoaded", function() {
         // Your code to run since DOM is loaded and ready
         for (let element of document.querySelectorAll(".video-container")) {
