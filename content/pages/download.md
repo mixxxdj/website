@@ -144,7 +144,18 @@ versions:
       A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
 
       **Development snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
+    download_manifest: https://downloads.mixxx.org/builds/main/manifest.json
     downloads:
+      - slug: windows
+        os: Windows 7 or later
+        packages:
+          - slug: win64
+            name: 64-Bit
+      - slug: macos
+        os: macOS 10.12 or later
+        packages:
+        - slug: macosintel
+          name: Intel
       - slug: ubuntu
         os: Ubuntu 20.04 "Focal Fossa" or later
         text: |
