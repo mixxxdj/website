@@ -11,15 +11,13 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: windows64
+          - slug: win64
             name: 64-Bit
-            url: https://downloads.mixxx.org/builds/2.3/Windows/Mixxx-2.3-latest.msi
       - slug: macos
         os: macOS 10.12 or later
         packages:
         - slug: macosintel
           name: Intel
-          url: https://downloads.mixxx.org/builds/2.3/macOS/Mixxx-2.3-latest.dmg
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
         text: |
@@ -74,7 +72,7 @@ versions:
         packages:
         - slug: source
           name: 2.3 branch
-          url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
+          file_url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
   stable:
     name: 2.2.4
     release_announcement: /news/2020-06-25-mixxx-2-2-4-released/
@@ -82,18 +80,18 @@ versions:
       - slug: windows
         os: Windows 7 or later
         packages:
-          - slug: windows32
+          - slug: win32
             name: 32-Bit
-            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
-          - slug: windows64
+            file_url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
+          - slug: win64
             name: 64-Bit
-            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
+            file_url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
       - slug: macos
         os: macOS 10.11 or later
         packages:
           - slug: macosintel
             name: Intel
-            url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
+            file_url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
         text: |
@@ -136,10 +134,10 @@ versions:
         packages:
         - slug: source
           name: 2.2 branch
-          url: https://github.com/mixxxdj/mixxx/archive/2.2.zip
+          file_url: https://github.com/mixxxdj/mixxx/archive/2.2.zip
         - slug: source
           name: 2.2.4 release
-          url: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
+          file_url: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
   testing:
     title: Development Snapshots
     text: |
@@ -185,5 +183,5 @@ versions:
         packages:
         - slug: source
           name: main branch
-          url: https://github.com/mixxxdj/mixxx/archive/main.zip
+          file_url: https://github.com/mixxxdj/mixxx/archive/main.zip
 ...

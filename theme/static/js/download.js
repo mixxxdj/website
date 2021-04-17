@@ -21,10 +21,10 @@
 
     let detectOS = function () {
         if (window.navigator.userAgent.indexOf("Windows") !== -1) {
-            return ["windows", detectBitness()];
+            return ["windows", "win" + detectBitness()];
         }
         if (window.navigator.userAgent.indexOf("Mac") !== -1) {
-            return ["macos", ["intel"]];
+            return ["macos", ["macosintel"]];
         }
         if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
             return ["ubuntu", []];
@@ -78,9 +78,7 @@
 
         // Check if we can find a direct package download. If so, make the
         // download button download it.
-        let packageNotFound = osArch.every(function(item) {
-            let dlName = osName + item;
-
+        let packageNotFound = osArch.every(function(dlName) {
             let package = document.querySelector("#stable .download-" + osName + " .package-" + dlName)
             console.log("#stable .download-" + osName + " .package-" + dlName)
             console.log(package)
