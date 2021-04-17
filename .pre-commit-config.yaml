@@ -31,3 +31,11 @@ repos:
     name: "Check for Python warnings"
     files: ^tools/.*$
     types: [text, python]
+- repo: https://github.com/pre-commit/mirrors-eslint
+  rev: v7.12.1
+  hooks:
+  - id: eslint
+    args: [--fix, --report-unused-disable-directives]
+    stages:
+    - commit
+    - manual
