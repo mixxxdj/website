@@ -1,7 +1,7 @@
 {% macro author_box(author, more_button=True) %}
 <div class="author-meta">
   <div>
-    <img class="author-avatar" src="{{ SITEURL }}/theme/images/avatars/{% if author.github %}{{ author.github }}{% else %}default_avatar{% endif %}.png" />
+    <img class="author-avatar" src="{{ SITEURL }}/{% if author.avatar_url %}{{ author.avatar_url }}{% else %}theme/images/avatars/default_avatar.png{% endif %}" />
     <div>
       <span class="author-name">{{ author }}</span>
       {% if author.github %}
