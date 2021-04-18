@@ -1,4 +1,4 @@
-;(function() {
+(function() {
     let detectBitness = function() {
         // Detect is OS is 64 bit
         const indicators64Bit = [
@@ -17,9 +17,9 @@
             }
         }
         return ["32"];
-    }
+    };
 
-    let detectOS = function () {
+    let detectOS = function() {
         if (window.navigator.userAgent.indexOf("Windows") !== -1) {
             return ["windows", "win" + detectBitness()];
         }
@@ -36,7 +36,7 @@
             return ["archlinux", []];
         }
         return null;
-    }
+    };
 
     let expandAccordionByHash = function() {
         if (document.location.hash) {
@@ -46,13 +46,13 @@
 
                 // Re-scoll to anchor (works around wrong scroll position
                 // caused by the accordion changes *after* we already scrolled).
-                let section = document.querySelector(".accordion " + location.hash)
+                let section = document.querySelector(".accordion " + location.hash);
                 if (section) {
                     section.scrollIntoView();
                 }
             }
         }
-    }
+    };
 
     let updateDownloadButton = function() {
         let os = detectOS();
@@ -61,12 +61,12 @@
         }
 
         // Update the "Download" button at the top of the page
-        let button = document.querySelector("#download .download-button")
+        let button = document.querySelector("#download .download-button");
         if (!button) {
             return;
         }
 
-        let description = document.querySelector("#download .download-button-description")
+        let description = document.querySelector("#download .download-button-description");
         if (!description) {
             return;
         }
@@ -79,11 +79,11 @@
         // Check if we can find a direct package download. If so, make the
         // download button download it.
         let packageNotFound = osArch.every(function(dlName) {
-            let package = document.querySelector("#stable .download-" + osName + " .package-" + dlName)
-            console.log("#stable .download-" + osName + " .package-" + dlName)
-            console.log(package)
-            console.log(package.href)
-            console.log(package.dataset.os)
+            let package = document.querySelector("#stable .download-" + osName + " .package-" + dlName);
+            console.log("#stable .download-" + osName + " .package-" + dlName);
+            console.log(package);
+            console.log(package.href);
+            console.log(package.dataset.os);
             if (!package || !package.href || !package.dataset.os) {
                 // This is equivalent to a for loop's "continue"
                 return true;
@@ -114,9 +114,9 @@
             button.innerHTML = button.dataset.osdetectText.replace("%s", section.dataset.os);
             description.innerHTML = description.dataset.osdetectText;
         }
-    }
+    };
 
-    window.addEventListener('hashchange', expandAccordionByHash);
+    window.addEventListener("hashchange", expandAccordionByHash);
     document.addEventListener("DOMContentLoaded", expandAccordionByHash);
     document.addEventListener("DOMContentLoaded", updateDownloadButton);
 }());
