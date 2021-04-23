@@ -32,6 +32,9 @@ def page_generator_context(page_generator, metadata):
     """
     logger = logging.getLogger(__name__)
 
+    if metadata.get("slug") != "download":
+        return
+
     # Get the configured datetime format
     try:
         date_format = tuple(

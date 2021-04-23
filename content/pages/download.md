@@ -1,5 +1,6 @@
 ---
 title: Download
+slug: download
 template: pages/download
 versions:
   unstable:
