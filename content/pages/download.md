@@ -6,7 +6,7 @@ versions:
     name: 2.3.0 Beta
     next_stable_version: 2.3.0
     release_announcement: /news/2020-06-07-mixxx-2-3-beta-released/
-    download_manifest: https://downloads.mixxx.org/builds/2.3/manifest.json
+    download_manifest: https://downloads.mixxx.org/snapshots/2.3/manifest.json
     downloads:
       - slug: windows
         os: Windows 7 or later
@@ -82,16 +82,16 @@ versions:
         packages:
           - slug: win32
             name: 32-Bit
-            file_url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win32.exe
+            file_url: https://downloads.mixxx.org/releases/2.2.4/mixxx-2.2.4-win32.exe
           - slug: win64
             name: 64-Bit
-            file_url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-win64.exe
+            file_url: https://downloads.mixxx.org/releases/2.2.4/mixxx-2.2.4-win64.exe
       - slug: macos
         os: macOS 10.11 or later
         packages:
           - slug: macosintel
             name: Intel
-            file_url: https://downloads.mixxx.org/mixxx-2.2.4/mixxx-2.2.4-osxintel.dmg
+            file_url: https://downloads.mixxx.org/releases/2.2.4/mixxx-2.2.4-osxintel.dmg
       - slug: ubuntu
         os: Ubuntu 16.04 "Xenial Xerus" or later
         text: |
@@ -144,7 +144,7 @@ versions:
       A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
 
       **Development snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
-    download_manifest: https://downloads.mixxx.org/builds/main/manifest.json
+    download_manifest: https://downloads.mixxx.org/snapshots/main/manifest.json
     downloads:
       - slug: windows
         os: Windows 7 or later
