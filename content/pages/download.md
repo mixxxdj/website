@@ -4,6 +4,7 @@ slug: download
 template: pages/download
 versions:
   unstable:
+    version: 2.3
     name: 2.3.0 Beta
     next_stable_version: 2.3.0
     release_announcement: /news/2020-06-07-mixxx-2-3-beta-released/
@@ -75,7 +76,7 @@ versions:
           name: 2.3 branch
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
   stable:
-    name: 2.2.4
+    version: 2.2.4
     release_announcement: /news/2020-06-25-mixxx-2-2-4-released/
     downloads:
       - slug: windows
@@ -140,6 +141,7 @@ versions:
           name: 2.2.4 release
           file_url: https://github.com/mixxxdj/mixxx/archive/release-2.2.4.tar.gz
   testing:
+    version: 2.4
     title: Development Snapshots
     text: |
       A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.

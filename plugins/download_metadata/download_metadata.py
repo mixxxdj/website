@@ -45,6 +45,9 @@ def page_generator_context(page_generator, metadata):
     datetime_format = f"{date_format} %H:%M"
 
     for version_name, version_data in metadata.get("versions", {}).items():
+        if "name" not in version_data:
+            version_data["name"] = version_data["version"]
+
         # Check if a manifest URL is specified for this version and download it
         manifest_url = version_data.get("download_manifest")
         if not manifest_url:
