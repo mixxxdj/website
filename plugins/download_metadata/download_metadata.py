@@ -1,8 +1,18 @@
+import datetime
 import json
 import logging
-import datetime
+import os
+import os.path
 import urllib.request
 from pelican import signals
+
+
+class JSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, datetime.datetime):
+            return obj.isoformat()
+        else:
+            return json.JSONEncoder.default(self, obj)
 
 
 def format_size(num, suffix="B"):
@@ -92,22 +102,49 @@ def page_generator_context(page_generator, metadata):
         for download in version_data.get("downloads", []):
             for package in download.get("packages", []):
                 slug = f"{download['slug']}-{package['slug']}"
-                metadata = manifest.get(slug)
-                if not metadata:
+                package_metadata = manifest.get(slug)
+                if not package_metadata:
                     continue
 
                 logger.debug("Updating download: %s", slug)
 
-                for key, value in metadata.items():
+                for key, value in package_metadata.items():
                     if key.endswith("_date"):
                         package[key] = datetime.datetime.fromisoformat(value)
                         package[f"locale_{key}"] = package[key].strftime(
                             datetime_format
                         )
                     elif key.endswith("_size"):
-                        package[key] = format_size(int(metadata[key]))
+                        package[key] = format_size(int(package_metadata[key]))
                     else:
-                        package[key] = metadata[key]
+                        package[key] = package_metadata[key]
+
+    # Build update metadata for auto-updater
+    siteurl = page_generator.settings.get("SITEURL")
+    if not siteurl:
+        logger.warning("Cannot generate download.json without SITEURL")
+        return
+
+    download_data = {}
+    for version_name, version_data in metadata.get("versions", {}).items():
+        release_announcement_url = None
+        if version_data.get("release_announcement"):
+            release_announcement_url = urllib.parse.urljoin(
+                siteurl, version_data["release_announcement"]
+            )
+        download_data[version_name] = {
+            "version": version_data["version"],
+            "name": version_data.get("name", version_data["version"]),
+            "release_announcement_url": release_announcement_url,
+            "download_url": urllib.parse.urljoin(
+                siteurl, f"download#{version_name}"
+            ),
+        }
+
+    os.makedirs(page_generator.output_path, exist_ok=True)
+    output_path = os.path.join(page_generator.output_path, "download.json")
+    with open(output_path, mode="w") as fp:
+        json.dump(download_data, fp, cls=JSONEncoder)
 
 
 def register():
