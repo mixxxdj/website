@@ -8,7 +8,7 @@ Over the past few years there have been multiple instances of sellers that distr
 While it's not illegal to do this per se, we are not affiliated with these sellers and neither earn money from this nor endorse this in any way.
 Instead, you can download the latest version of Mixxx from the [download page on our website]({filename}/pages/download.md) for free.
 
-If you want to support Mixxx financially, consider [donating](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QSFMYWN2B3JD2&source=url) - we'll appreciate it!
+If you want to support Mixxx financially, consider [donating](https://mixxx.org/donate) - we'll appreciate it!
 
 
 ### Mixxx was, is and always will be free
