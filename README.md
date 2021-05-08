@@ -6,7 +6,7 @@ built with [Pelican][pelican], a static site generator.
 ## Quick Start
 
 To get started contributing to the Mixxx website, first install all requirements
-(e.g. Pelican). Optionally, use a [Virtualenv][virtualenv] to isolate
+(e.g. Pelican). Optionally, use a [virtual environment][virtualenv] to isolate
 dependencies.
 
     $ pip install -r requirements.txt
@@ -78,4 +78,4 @@ wrap them in a `{% trans %}Hello World{% endtrans %}` block.
 [django_templates]: https://jinja.palletsprojects.com/en/2.11.x/templates/
 [jinja2_template_i18n]: https://jinja.palletsprojects.com/en/2.11.x/extensions/#i18n-extension
 [download_button.html]: https://github.com/mixxxdj/website/blob/website/templates/download_button.html
-[virtualenv]: https://virtualenv.pypa.io/en/stable/
+[virtualenv]: https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment
