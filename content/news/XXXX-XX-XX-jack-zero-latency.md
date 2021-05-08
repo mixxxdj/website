@@ -67,7 +67,7 @@ If we connect the output of Mixxx to the input, an extra buffer is used for some
 
 The upper stream shows the Mixxx results and the lower stream shows the `jack_latent_client` results.
 
-In addition, most distros use JACK with it's default "Server Asynchronous Mode" which introduce one buffer extra latency (`--async-latency`) when accessing the sound card. From Ubuntu Hirsute 21.4, QJackCtl exposes a "Use server synchronous mode" checkbox in the sound card preferences. It is grayed out by default but becomes active if "Enable JACK D-Bus interface" is checked as well. In this case the JACK mixing is done after Mixxx in the same time interval.
+In addition, most distros use JACK with its default "Server Asynchronous Mode" which introduce one buffer of extra latency (`--async-latency`) when accessing the sound card. In Ubuntu Hirsute 21.4, QJackCtl exposes a "Use server synchronous mode" checkbox in the sound card preferences. It is grayed out by default but becomes active if "Enable JACK D-Bus interface" is checked as well. In this case the JACK mixing is done after Mixxx in the same time interval.
 
 ## Conclusion
 
