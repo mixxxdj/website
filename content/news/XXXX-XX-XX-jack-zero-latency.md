@@ -30,7 +30,7 @@ The upper stream is the JACK case. The left channel is the recorded master 440 H
 JACK is configured with a 1024 frames buffer and reports a latency of 46.4 ms for the sum of two buffers.
 The round trip latency is 95 ms (driver + ALSA + JACK async mode + duplex stream = 4 buffers).
 
-The lower stream is the ALSA case. Mixxx is configures with the same single buffer of 1024 frames = 23.2 ms
+The lower stream is the ALSA case. Mixxx is configured with the same single buffer of 1024 frames = 23.2 ms.
 The round trip latency is 49 ms (driver + ALSA = 2 buffers).
 
 Not in the picture is the ALSA pulse device. It runs at a latency of 104 ms (driver + ALSA + 2 x pulse + ALSA = 5 buffers)
