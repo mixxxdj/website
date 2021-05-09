@@ -110,13 +110,15 @@ def main(argv=None):
                 try:
                     merge_commit = find_merge_commit_to_branch(commit, branch)
                 except StopIteration:
-                    print("  Skipping because the merge commit was not found!")
-                    continue
-                print(f"  Merged to {branch} in commit: {merge_commit}")
-                merge_datestr, _, merge_msg = show_commit(
-                    merge_commit, format="%cI %s"
-                ).partition(" ")
-                print(f"    {merge_msg}")
+                    print("Merge commit not found, assuming squash-and-merge!")
+                    merge_datestr = show_commit(commit, format="%cI")
+                else:
+                    print(f"  Merged to {branch} in commit: {merge_commit}")
+                    merge_datestr, _, merge_msg = show_commit(
+                        merge_commit, format="%cI %s"
+                    ).partition(" ")
+                    print(f"    {merge_msg}")
+
                 merge_datetime = datetime.datetime.fromisoformat(merge_datestr)
                 print(f"  Merge date: {merge_datetime}")
 
