@@ -229,6 +229,12 @@ AUTHOR_METADATA = {
         "email": "deborahtrez12@gmail.com",
         "tagline": "Outreachy contributor (Dec 2020 - Mar 2021)",
     },
+    "Daniel Schürmann": {
+        "github": "daschuer",
+        "discourse": "daschuer",
+        "email": "daschuer@mixxx.org",
+        "tagline": "Mixxx Core Developer",
+    },
 }
 
 # Needed for Jinja2 markdown filter
