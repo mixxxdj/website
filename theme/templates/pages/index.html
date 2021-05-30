@@ -79,6 +79,9 @@
       </p>
     </div>
   </div>
+  <div style="text-align: center">
+    <a class="button button-secondary" href="{{ SITEURL }}/features">{% trans %}More features{% endtrans %}</a>
+  </div>
 </div>
 
 <div id="opensource" class="docs-section cover-bg">
@@ -96,7 +99,7 @@
       {% include "donate_paypal.html" %}
     </div>
     <div>
-      <a class="button button-secondary" href="{{ SITEURL }}/features"">{% trans %}More Features{% endtrans %}</a>
+      <a class="button button-secondary" href="{{ SITEURL }}/get-involved"">{% trans %}Get Involved{% endtrans %}</a>
     </div>
     <div>
       <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans %}Source Code{% endtrans %}</a>
@@ -123,45 +126,4 @@
   </div>
 </div>
 {% endif %}
-
-
-<div id="community" class="docs-section container">
-  <h2><a class="headline-link" href="community">{% trans %}Friendly Community{% endtrans %}</a></h2>
-  <p>
-    {% trans %}Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx is <b>free (<a href="https://www.gnu.org/philosophy/free-sw.html">as in freedom</a> and price), open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!{% endtrans %}
-  </p>
-
-  <p>
-  {% with launchpad_bugs="https://bugs.launchpad.net/mixxx/", mapping_link="https://github.com/mixxxdj/mixxx/wiki/Contributing-Mappings", create_a_branch_link="/get-involved#developers", help_with_translations_link="/get-involved#translators", starter_tasks_link="/get-involved" %}{% trans %}You can get involved with Mixxx today by <a href="{{ launchpad_bugs }}">reporting bugs and suggesting features</a>, <a href="{{ mapping_link }}">making a controller mapping</a>, <a href="{{ create_a_branch_link }}">adding features &amp; fixing bugs</a>, <a href="{{ help_with_translations_link }}">helping with translations</a>, or working on one of our other <a href="{{ starter_tasks_link }}">starter tasks</a>.{% endtrans %}{% endwith %}
-  </p>
-</div>
-
-<div id="archievements" class="docs-section container">
-  <div class="grid-container quarters">
-    <div class="archievement">
-      <img src="{{ SITEURL }}/theme/images/rating_macappstore.png" alt="Mac App Store">
-      <br>
-      {% trans %}#1 Top Free Mac App Worldwide{% endtrans %}<br>
-      Mac App Store<br>
-      <small>{% trans %}February 2011{% endtrans %}</small>
-    </div>
-
-    <div class="archievement">
-      <img src="{{ SITEURL }}/theme/images/rating_cnet.png" alt="CNet">
-    </div>
-
-    <div class="archievement">
-      <img src="{{ SITEURL }}/theme/images/rating_cm.png" alt="Computer Music"><br>
-      {% trans %}Free Pick of the Month{% endtrans %}<br>
-      <small>{% trans %}September 2007{% endtrans %}</small>
-    </div>
-
-    <div class="archievement">
-      <img src="{{ SITEURL }}/theme/images/rating_synthtopia.png" alt="Synthtopia">
-      <br>
-      {% trans %}"The coolest open source<br>application ever?"{% endtrans %}<br>
-      <small>{% trans %}February 2011{% endtrans %}</small>
-    </div>
-  </div>
-</div>
 {% endblock %}
