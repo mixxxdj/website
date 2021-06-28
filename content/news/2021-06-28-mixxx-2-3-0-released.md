@@ -1,8 +1,8 @@
 title: Mixxx 2.3.0 released
 authors: Jan Holthuis
 tags: 2.3, 2.3.0, release announcement
-status: draft
 comments: yes
+date: 2021-06-28 18:11:51
 
 We are proud to announce the [release of Mixxx 2.3.0](https://github.com/mixxxdj/mixxx/releases/tag/2.3.0)!
 If you want to give it a spin, [you can download it now]({filename}/pages/download.md#stable) on Windows, macOS and Linux.
