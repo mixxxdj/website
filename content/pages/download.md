@@ -64,7 +64,7 @@ versions:
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
-          name: 2.2 branch
+          name: 2.3 branch
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
         - slug: source
           name: 2.3.0 release
