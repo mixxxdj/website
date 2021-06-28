@@ -30,7 +30,7 @@ https://www.mixxx.org/* https://mixxx.org/:splat                301!
 /wiki                             https://github.com/mixxxdj/mixxx/wiki                        301!
 
 # Redirect to donation page
-/donate https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QSFMYWN2B3JD2 302!
+/donate https://www.opencollective.com/mixxx 302!
 
 # Error page
 /*                      /error/                                 404
