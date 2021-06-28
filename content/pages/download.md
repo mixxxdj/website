@@ -41,8 +41,6 @@ versions:
 
               $ sudo dnf install mixxx
 
-          The beta package will be continuously updated until Mixxx 2.3.0 is released.
-
           WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
         os: Arch Linux
