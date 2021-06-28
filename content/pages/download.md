@@ -4,7 +4,7 @@ template: pages/download
 versions:
   stable:
     name: 2.3.0
-    #release_announcement: /news/XXXX-XX-XX-mixxx-2-3-0-released/
+    release_announcement: /news/2021-06-28-mixxx-2-3-0-released/
     download_manifest: https://downloads.mixxx.org/releases/2.3.0/manifest.json
     downloads:
       - slug: windows
