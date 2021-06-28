@@ -20,14 +20,14 @@ versions:
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxxbetas) to make installing install the latest stable version of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/mixxx
               $ sudo apt update
               $ sudo apt install mixxx
 
-          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas/+packages) and install them manually.
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx/+packages) and install them manually.
         note: |
           **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
       - slug: fedora
