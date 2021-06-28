@@ -20,14 +20,14 @@ versions:
       - slug: ubuntu
         os: Ubuntu 18.04 "Bionic Beaver" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxxbetas) to make installing install the latest stable version of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/mixxx
               $ sudo apt update
               $ sudo apt install mixxx
 
-          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas/+packages) and install them manually.
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx/+packages) and install them manually.
         note: |
           **Note:** Ubuntu also provides a version of Mixxx which can be installed directly from the Ubuntu Software Centre. This version is usually woefully out of date; therefore using the PPA is advised.
       - slug: fedora
@@ -40,8 +40,6 @@ versions:
           Then to install Mixxx:
 
               $ sudo dnf install mixxx
-
-          The beta package will be continuously updated until Mixxx 2.3.0 is released.
 
           WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
@@ -66,7 +64,7 @@ versions:
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
-          name: 2.2 branch
+          name: 2.3 branch
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
         - slug: source
           name: 2.3.0 release
