@@ -48,7 +48,7 @@ versions:
           The latest stable version of Mixxx is [available](https://archlinux.org/packages/community/x86_64/mixxx/) in the community repository and can be installed using `pacman`.
           Open a terminal, and enter:
 
-              pacman -S mixxx
+              sudo pacman -S mixxx
       - slug: source
         name: Source Code
         icon: terminal.svg
