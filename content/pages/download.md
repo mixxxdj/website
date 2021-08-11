@@ -23,9 +23,9 @@ versions:
           We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/mixxx) to make installing install the latest stable version of Mixxx as easy as possible.
           Open a terminal, and enter:
 
-              $ sudo add-apt-repository ppa:mixxx/mixxx
-              $ sudo apt update
-              $ sudo apt install mixxx
+              sudo add-apt-repository ppa:mixxx/mixxx
+              sudo apt update
+              sudo apt install mixxx
 
           Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxx/+packages) and install them manually.
         note: |
@@ -35,11 +35,11 @@ versions:
         text: |
           RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible. If you do not have the RPM Fusion repository installed already, before installing Mixxx, run:
 
-              $ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+              sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
           Then to install Mixxx:
 
-              $ sudo dnf install mixxx
+              sudo dnf install mixxx
 
           WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
@@ -48,7 +48,7 @@ versions:
           The latest stable version of Mixxx is [available](https://archlinux.org/packages/community/x86_64/mixxx/) in the community repository and can be installed using `pacman`.
           Open a terminal, and enter:
 
-              # pacman -S mixxx
+              sudo pacman -S mixxx
       - slug: source
         name: Source Code
         icon: terminal.svg
