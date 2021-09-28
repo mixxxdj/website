@@ -3,9 +3,9 @@ title: Download
 template: pages/download
 versions:
   stable:
-    name: 2.3.0
-    release_announcement: /news/2021-06-28-mixxx-2-3-0-released/
-    download_manifest: https://downloads.mixxx.org/releases/2.3.0/manifest.json
+    name: 2.3.2
+    #release_announcement: /news/xxxx-xx-xx-mixxx-2-3-2-released/
+    download_manifest: https://downloads.mixxx.org/releases/2.3.2/manifest.json
     downloads:
       - slug: windows
         os: Windows 7 or later
@@ -59,7 +59,7 @@ versions:
 
               git clone -b 2.3 https://github.com/mixxxdj/mixxx.git
 
-          The 2.3.0 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.3.0) with `2.3.0`.
+          The 2.3.2 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.3.2) with `2.3.2`.
 
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
@@ -67,8 +67,8 @@ versions:
           name: 2.3 branch
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
         - slug: source
-          name: 2.3.0 release
-          file_url: https://github.com/mixxxdj/mixxx/archive/2.3.0.tar.gz
+          name: 2.3.2 release
+          file_url: https://github.com/mixxxdj/mixxx/archive/2.3.2.tar.gz
   testing:
     title: Development Snapshots
     text: |
