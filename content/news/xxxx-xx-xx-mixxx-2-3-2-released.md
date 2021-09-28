@@ -5,7 +5,7 @@ status: draft
 comments: yes
 
 We are happy to announce second minor release of [Mixxx 2.3.2](https://github.com/mixxxdj/mixxx/releases/tag/2.3.2)!
-You will find the download links [here]({filename}/pages/download.md#stable) on Windows, macOS and Linux.
+You will find the download links [here]({filename}/pages/download.md#stable) for Windows, macOS and Linux.
 
 This release comes with updated controller mappings and includes some bugfixes.
 
