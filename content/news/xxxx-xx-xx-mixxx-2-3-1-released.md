@@ -9,7 +9,7 @@ You will find the download links [here]({filename}/pages/download.md#stable) on 
 
 This release comes with new and updated controller mappings, fixes packaging issues and includes some bugfixes.
 
-Mixxx now includes mappings for the [Numark DJ2GO2 Touch](https://manual.mixxx.org/2.3/en/hardware/controllers/numark_dj2go2_touch.html) controller and the [Numark Mixtrack Pro FX](https://manual.mixxx.org/2.3/en/hardware/controllers/numark_mixtrack_pro_fx.html) controller. The [Behringer DDM4000](https://manual.mixxx.org/2.3/en/hardware/controllers/behringer_ddm4000.html) and the [Traktor S3](https://manual.mixxx.org/2.3/en/hardware/controllers/native_instruments_traktor_kontrol_s3.html) mapping has been improved with Mixxx 2.3.
+Mixxx now includes mappings for the [Numark DJ2GO2 Touch](https://manual.mixxx.org/2.3/en/hardware/controllers/numark_dj2go2_touch.html) controller and the [Numark Mixtrack Pro FX](https://manual.mixxx.org/2.3/en/hardware/controllers/numark_mixtrack_pro_fx.html) controller. The [Behringer DDM4000](https://manual.mixxx.org/2.3/en/hardware/controllers/behringer_ddm4000.html) and the [Traktor S3](https://manual.mixxx.org/2.3/en/hardware/controllers/native_instruments_traktor_kontrol_s3.html) mapping have been improved with Mixxx 2.3.
 
 For the full list of changes, have a look at the [changelog](https://manual.mixxx.org/2.3/en/chapters/appendix/changelog.html) and the [2.3.1 milestone on Launchpad](https://launchpad.net/mixxx/+milestone/2.3.1).
 
