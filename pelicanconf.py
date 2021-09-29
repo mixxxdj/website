@@ -148,6 +148,11 @@ NAV_MENU = (
                 "Navigation bar link to Mixxx Forums.",
             ),
             MenuItem(
+                "https://bugs.launchpad.net/mixxx/",
+                "Bug Tracker",
+                "Navigation bar link to Mixxx Bug Tracker.",
+            ),
+            MenuItem(
                 "https://github.com/mixxxdj/mixxx/wiki",
                 "Wiki",
                 "Navigation bar link to Mixxx Wiki.",
