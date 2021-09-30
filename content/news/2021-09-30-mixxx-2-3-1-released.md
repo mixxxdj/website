@@ -1,8 +1,8 @@
 title: Mixxx 2.3.1 released
 authors: Daniel Schürmann
 tags: 2.3, 2.3.1, release announcement
-status: draft
 comments: yes
+date: 2021-09-30 15:57:13
 
 We are happy to announce the release of [Mixxx 2.3.1](https://github.com/mixxxdj/mixxx/releases/tag/2.3.1)!
 Head over to the [download page]({filename}/pages/download.md#stable) and download it on Windows, macOS and Linux.
