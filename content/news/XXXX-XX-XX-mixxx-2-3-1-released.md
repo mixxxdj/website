@@ -5,7 +5,7 @@ status: draft
 comments: yes
 
 We are happy to announce first bugfix release of [Mixxx 2.3.1](https://github.com/mixxxdj/mixxx/releases/tag/2.3.1)!
-Head over to the [download page] ({filename}/pages/download.md#stable) and download it on Windows, macOS and Linux.
+Head over to the [download page]({filename}/pages/download.md#stable) and download it on Windows, macOS and Linux.
 
 This release comes with new and updated controller mappings, fixes packaging issues and includes some bugfixes.
 
