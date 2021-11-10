@@ -89,6 +89,7 @@ PLUGIN_PATHS = [
 PLUGINS = [
     "author_metadata",
     "download_metadata",
+    "discourse_hotlist",
     "draft_override",
     "md_yaml",
 ]
@@ -124,6 +125,11 @@ NAV_MENU = (
                 "/press",
                 "Press",
                 "Navigation bar link to Mixxx Press page",
+            ),
+            MenuItem(
+                "/controller-hotlist",
+                "Hot-List",
+                "Navigation bar link to Mixxx Controller Hotlist",
             ),
             MenuItem(
                 "/contact",
