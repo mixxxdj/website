@@ -127,11 +127,6 @@ NAV_MENU = (
                 "Navigation bar link to Mixxx Press page",
             ),
             MenuItem(
-                "/controller-hotlist",
-                "Hot-List",
-                "Navigation bar link to Mixxx Controller Hotlist",
-            ),
-            MenuItem(
                 "/contact",
                 "Contact & Team",
                 "Navigation bar link to Mixxx contact page.",
