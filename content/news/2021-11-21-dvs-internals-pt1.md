@@ -1,8 +1,8 @@
 title: "How Does Timecode Vinyl Actually Work? (Pt. 1)"
 authors: Jan Holthuis
 tags: timecode, dvs, vinyl control, serato, cd
-status: draft
 # Analog/Digital diagram via matplotlib: https://gist.github.com/Holzhaus/46ab8ea32d3b89025a0a640db171a14b
+date: 2021-11-21 00:09:09
 
 
 Since the dawn of DJing, spinning vinyl records has never really gone out of fashion.
