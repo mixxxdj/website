@@ -1,8 +1,8 @@
 title: "How Does Timecode Vinyl Actually Work? (Pt. 2)"
 authors: Jan Holthuis
 tags: serato, timecode, dvs, vinyl control
-status: draft
 # Resources: https://gist.github.com/a55f32dab374fa674ac09ced217ca38e
+date: 2021-12-22 23:00:18
 
 In the [last post]({filename}/news/2021-11-21-dvs-internals-pt1.md), I explained how a basic relative-mode Digital Vinyl System (DVS) works.
 But there are two problems that are still left to solve:
