@@ -21,4 +21,4 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Check if website build is warning-free
-      run: pelican --extra-settings SITEURL=https://example.com --fatal warnings
+      run: pelican --extra-settings SITEURL='"https://example.com"' --fatal warnings
