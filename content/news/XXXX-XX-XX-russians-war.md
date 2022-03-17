@@ -4,13 +4,13 @@ tags: russian ukraine war
 status: draft
 comments: yes
 
-Since the 2022-02-24 we receive horrible news from Ukaine, which have become even worse since then. This requires that we all speak up and show solidarity for Ukraine.
+Since 2022-02-24 we receive horrible news from Ukaine, which have become even worse since then. As an organization commited to freedom we feel the urge speak up and show solidarity for Ukraine.
 
-Russia's brutal invasion of Ukraine cannot be justified by anything and has already been condemned by the UN as a violation of international law. The attack creates endless suffering for men, women and children in Ukraine but also for the many young Russian soldiers who are sent by a dictator into a senseless war that they do not want, do not understand and are not even allowed to call it as such.
+Russia's brutal invasion of Ukraine cannot be justified by anything and has already been condemned by the UN as a violation of international law. The attack creates endless suffering for men, women and children in Ukraine but also for the many Russian soldiers who are sent into a senseless war that they do not want, do not understand and are not even allowed to call it as such.
 
 Putin's propaganda, misinformation and punishment of the opposition has secured him some positive support among russian people. The extent of censorship and political persecution is unprecedented in the recent Russian history.
 
-Mixxx and the FOSS movements respects users' freedom and stands also for feedome in other regards, including free speech and world wide peaceful collaboration. Let's express this also our DJ set's by integrating tracks from Ukrainian artist, Russian activists or anti war tracks.
+Mixxx and the FOSS movements respects users' freedom and stands also for freedom in other regards, including free speech and world wide peaceful collaboration. Let's express this also in our DJ sets by integrating tracks from Ukrainian artist, Russian activists or anti-war tracks in general.
 
 Here two examples:
 
