@@ -4,16 +4,17 @@ tags: russian ukraine war
 status: draft
 comments: yes
 
-Since the 2022-02-24 we receive horrible news from Ukaine, which have become even worse since than. This requires that we all speak up and show solidarity for the Ukraine.
+Since the 2022-02-24 we receive horrible news from Ukaine, which have become even worse since then. This requires that we all speak up and show solidarity for Ukraine.
 
-Russia's brutal invasion of Ukraine cannot be justified by anything and has already been condemned by the UN as a violation of international law. The attack creates endless suffering for men, women and children in Ukraine but also for the many young Russian soldiers who are sent by a dictator into a senseless war that they do not want, do not understand and are not even allowed to call it such.
+Russia's brutal invasion of Ukraine cannot be justified by anything and has already been condemned by the UN as a violation of international law. The attack creates endless suffering for men, women and children in Ukraine but also for the many young Russian soldiers who are sent by a dictator into a senseless war that they do not want, do not understand and are not even allowed to call it as such.
 
-However, starting the war is not done solely by Putin. 50 - 60 % of Russians still support Putin and his war. Putin's power is based largely on the mood of the majority of the population controlled by propaganda, misinformation and punishment of the opposition. The extent of censorship and political persecution is unprecedented in the recent Russian history.
+Putin's propaganda, misinformation and punishment of the opposition has secured him some positive support among russian people. The extent of censorship and political persecution is unprecedented in the recent Russian history.
 
-Mixxx and the FOSS movements respects users' freedom and stands also for feedome in other regards including free speech. This should we also express in our DJ set's by integrating traks from Ukrain artist, Russian activists or anti war tracks.
+Mixxx and the FOSS movements respects users' freedom and stands also for feedome in other regards, including free speech and world wide peaceful collaboration. Let's express this also our DJ set's by integrating tracks from Ukrainian artist, Russian activists or anti war tracks.
 
-Here some examples:
-*
-*
+Here two examples:
 
-In case you have no access to them ....
+1. [Океан Ельзи - Не твоя війна (Not your war)](https://music.youtube.com/watch?v=QFZV_j5fjEM)
+2. [PROBASS ∆ HARDI - ДОБРОГО ВЕЧОРА (Where are you from?)](https://music.youtube.com/watch?v=wir4k8BbX_Q)
+
+In case you have no access to them contact us on [Zulip](https://mixxx.zulipchat.com)
