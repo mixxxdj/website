@@ -1,6 +1,6 @@
-title: Russian's war on Ukraine
+title: Russia's invasion of Ukraine
 authors: Daniel Schürmann
-tags: russian ukraine war
+tags: russian ukraine war invasion
 status: draft
 comments: yes
 
