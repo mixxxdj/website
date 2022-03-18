@@ -1,8 +1,8 @@
 title: Mixxx accepted for GSoC 2022!
 authors: Daniel Schürmann
 tags: gsoc, gsoc-2022
-status: draft
 comments: no
+date: 2022-03-18 12:26:02
 
 Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/programs/2022/organizations/mixxx) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development.
 
