@@ -10,9 +10,10 @@ Russia's invasion of Ukraine cannot be justified by anything and has already bee
 
 Mixxx and the FOSS movements respects users' freedom and stands also for freedom in other regards, including free speech and worldwide peaceful collaboration. Let's express this also in our DJ sets by integrating tracks from Ukrainian artist, Russian activists or anti-war tracks in general.
 
-Here two examples:
+Here three examples:
 
-1. [Океан Ельзи - Не твоя війна (Not your war)](https://music.youtube.com/watch?v=QFZV_j5fjEM)
-2. [PROBASS ∆ HARDI - ДОБРОГО ВЕЧОРА (Where are you from?)](https://music.youtube.com/watch?v=wir4k8BbX_Q)
+1. [Бетон - Kyiv Calling](https://www.youtube.com/watch?v=9guzUoTNxeE)
+2. [Океан Ельзи - Не твоя війна (Not your war)](https://music.youtube.com/watch?v=QFZV_j5fjEM)
+3. [PROBASS ∆ HARDI - ДОБРОГО ВЕЧОРА (Where are you from?)](https://music.youtube.com/watch?v=wir4k8BbX_Q)
 
 In case you have no access to them contact us on [Zulip](https://mixxx.zulipchat.com)
