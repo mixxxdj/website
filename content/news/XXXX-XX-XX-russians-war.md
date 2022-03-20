@@ -12,7 +12,7 @@ Mixxx and the FOSS movements respects users' freedom and stands also for freedom
 
 Here three examples:
 
-1. [Бетон - Kyiv Calling](https://www.youtube.com/watch?v=9guzUoTNxeE)
+1. [Бетон - Kyiv Calling](https://www.youtube.com/watch?v=WLCiA38No3Y)
 2. [Океан Ельзи - Не твоя війна (Not your war)](https://music.youtube.com/watch?v=QFZV_j5fjEM)
 3. [PROBASS ∆ HARDI - ДОБРОГО ВЕЧОРА (Where are you from?)](https://music.youtube.com/watch?v=wir4k8BbX_Q)
 
