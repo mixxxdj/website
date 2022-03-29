@@ -1,8 +1,8 @@
 title: Russia's invasion of Ukraine
 authors: Daniel Schürmann
 tags: russian ukraine war invasion
-status: draft
 comments: yes
+date: 2022-03-29 23:18:45
 
 On 2022-02-24 we received horrible news from Ukraine, which has become even worse since then. As an organization committed to freedom we feel the urge speak up and show solidarity with Ukraine.
 
