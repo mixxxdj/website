@@ -17,7 +17,7 @@ def download_avatar(username):
 
 
 def update_author(article_generator, author):
-    """ Updates the Author metadata objects with extra information. """
+    """Updates the Author metadata objects with extra information."""
     settings = article_generator.settings
 
     author_metadata = settings.get("AUTHOR_METADATA", {})
@@ -90,5 +90,5 @@ def article_generator_context(article_generator, metadata):
 
 
 def register():
-    """ Subscribe to Pelican's signals. """
+    """Subscribe to Pelican's signals."""
     signals.article_generator_context.connect(article_generator_context)
