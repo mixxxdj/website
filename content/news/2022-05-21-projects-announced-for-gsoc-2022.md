@@ -1,8 +1,8 @@
 title: Projects Announced for GSoC 2022
 authors: Daniel Schürmann
 tags: gsoc, gsoc-2022
-status: draft
 comments: no
+date: 2022-05-21 16:51:39
 
 Google has accepted two [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/)new contributor's projects for Mixxx. GSoC is a stipend program that allows new contributors to work Mixxx on their own ~175 hours or ~350 hours project.
 
