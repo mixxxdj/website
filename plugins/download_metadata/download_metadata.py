@@ -105,5 +105,5 @@ def page_generator_context(page_generator, metadata):
 
 
 def register():
-    """ Subscribe to Pelican's signals. """
+    """Subscribe to Pelican's signals."""
     signals.page_generator_context.connect(page_generator_context)
