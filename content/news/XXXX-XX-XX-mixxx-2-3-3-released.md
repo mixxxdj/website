@@ -6,7 +6,7 @@ status: draft
 
 # Mixxx 2.3.3 Released
 
-Its that time again! 🎉  
+Its that time again!  
 Almost a year after [the release of 2.3.0]({filename}/news/2021-06-28-mixxx-2-3-0-released.md)
 we're bringing you the next bugfix release [Mixxx 2.3.3](https://github.com/mixxxdj/mixxx/releases/tag/2.3.3).
 
