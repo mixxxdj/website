@@ -11,11 +11,11 @@ Almost a year after [the release of 2.3.0]({filename}/news/2021-06-28-mixxx-2-3-
 we're bringing you the next bugfix release [Mixxx 2.3.3](https://github.com/mixxxdj/mixxx/releases/tag/2.3.3).
 
 This release features - you guessed it - various bugfixes and improvements:
-But since we're not your run-off-the-mill mobile App, we'll get a bit into
+But since we're not your run-off-the-mill mobile app, we'll get a bit into
 detail:
 
 A bunch of controller mappings have received various improvements,
-such as the Pioneer-DDJ-SB3, the NI Traktor S3, Behringer DDM4000 and Denon MC7000.
+such as the Pioneer DDJ-SB3, the NI Traktor S3, Behringer DDM4000 and Denon MC7000.
 We've also addressed some long-standing bugs in our controller engine and the
 Auto DJ, smoothed out the preference dialog and fixed a bunch of possibly
 show-stopping bugs. 😬 😌
@@ -27,10 +27,10 @@ If you are interested in the detailed CHANGELOG, here you go 😉:
 
 ## Changelog
 
-* Pioneer-DDJ-SB3: Fix controller breaking when releasing the shift button [#4659](https://github.com/mixxxdj/mixxx/pull/4659)
+* Pioneer DDJ-SB3: Fix controller breaking when releasing the shift button [#4659](https://github.com/mixxxdj/mixxx/pull/4659)
 * Traktor S3: Push two deck switches to explicitly clone decks [#4665](https://github.com/mixxxdj/mixxx/pull/4665) [#4671](https://github.com/mixxxdj/mixxx/pull/4671) [lp:1960680](https://bugs.launchpad.net/mixxx/+bug/1960680)
 * Behringer DDM4000: Improve stability and add soft-takeover for encoder knobs [#4318](https://github.com/mixxxdj/mixxx/pull/4318) [#4799](https://github.com/mixxxdj/mixxx/pull/4799)
-* MC7000: Fix 'inverted shift' bug in the controller mapping [#4755](https://github.com/mixxxdj/mixxx/pull/4755)
+* Denon MC7000: Fix 'inverted shift' bug in the controller mapping [#4755](https://github.com/mixxxdj/mixxx/pull/4755)
 * Fix spinback and break effect in the controller engine [#4708](https://github.com/mixxxdj/mixxx/pull/4708)
 * Fix scratch on first wheel touch [#4761](https://github.com/mixxxdj/mixxx/pull/4761) [lp:1800343](https://bugs.launchpad.net/mixxx/+bug/1800343)
 * Preferences: Prevent controller settings being treated as changed even though they were not [#4721](https://github.com/mixxxdj/mixxx/pull/4721) [lp:1920844](https://bugs.launchpad.net/mixxx/+bug/1920844)
