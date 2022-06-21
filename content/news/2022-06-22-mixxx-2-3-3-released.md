@@ -2,7 +2,7 @@ title: Mixxx 2.3.3 released
 authors: Nikolaus Einhauser
 tags: 2.3, 2.3.3, release announcement
 comments: yes
-status: draft
+date: 2022-06-22 00:04:51
 
 # Mixxx 2.3.3 Released
 
