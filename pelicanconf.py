@@ -240,6 +240,12 @@ AUTHOR_METADATA = {
         "email": "daschuer@mixxx.org",
         "tagline": "Mixxx Core Developer",
     },
+    "Nikolaus Einhauser": {
+        "github": "Swiftb0y",
+        "discourse": "swiftb0y",
+        "email": "nikolaus.einhauser@mixxx.org",
+        "tagline": "Mixxx Core Developer",
+    },
 }
 
 # Needed for Jinja2 markdown filter
