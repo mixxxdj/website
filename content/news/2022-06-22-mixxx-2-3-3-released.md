@@ -4,8 +4,6 @@ tags: 2.3, 2.3.3, release announcement
 comments: yes
 date: 2022-06-22 00:04:51
 
-# Mixxx 2.3.3 Released
-
 Its that time again!  
 Almost a year after [the release of 2.3.0]({filename}/news/2021-06-28-mixxx-2-3-0-released.md)
 we're bringing you the next bugfix release [Mixxx 2.3.3](https://github.com/mixxxdj/mixxx/releases/tag/2.3.3).
