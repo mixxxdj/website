@@ -2,7 +2,7 @@ title: Migrated to GitHub Issues
 authors: Nikolaus Einhauser
 tags: infrastructure, development, contribute
 comments: yes
-status: draft
+date: 2022-08-24 15:19:17
 
 
 Yes everybody, we officially moved our bug tracking away from Launchpad to
