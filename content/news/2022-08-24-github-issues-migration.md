@@ -61,7 +61,7 @@ volunteer is free to work on whatever they choose anyways, we decided to drop
 the different priority levels assigned to issues.  
 
 I want to express a special thanks to our core team member
-[@Holzaus]({author}jan-holthuis) for writing a [custom import
+[@Holzhaus]({author}jan-holthuis) for writing a [custom import
 script](https://gist.github.com/Holzhaus/ed384b93465dcc516ae205090e4f179b) which
 made this migration feasible in the first place.
 
