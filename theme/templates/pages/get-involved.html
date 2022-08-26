@@ -28,7 +28,7 @@
           {% with com_github_link="https://github.com", using_git_wiki_link="https://github.com/mixxxdj/mixxx/wiki/using_git" %}{% trans %}Get a <a href="{{ com_github_link }}">Github</a> account and <a href="{{ using_git_wiki_link }} ">fork your own branch</a>!{% endtrans %}{% endwith %}
         </li>
         <li>
-          {% with easy_bug_list_link="https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy", mixxx_credits_link="/contact/" %}{% trans %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_credits_link }}">Mixxx credits</a>!{% endtrans %}{% endwith %}
+          {% with easy_bug_list_link="https://github.com/mixxxdj/mixxx/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy", mixxx_credits_link="/contact/" %}{% trans %}Pick a bug off our <a href="{{ easy_bug_list_link }} ">Easy Bugs List</a> and start hacking!<br><br> Fixed it? Your name will be in the <a href="{{ mixxx_credits_link }}">Mixxx credits</a>!{% endtrans %}{% endwith %}
         </li>
         <li>
             {% trans %}You don't even have to know C++. There are developers who got into Mixxx development while learning C++ along the way.{% endtrans %}
@@ -53,7 +53,7 @@
           {% with controller_wiki_link="https://github.com/mixxxdj/mixxx/wiki#controller-mapping-documentation" %}{% trans %}<a href="{{ controller_wiki_link }}">Create or improve mappings</a> for your controller.{% endtrans %}{% endwith %}
         </li>
         <li>
-          {% with bug_tracker_link="https://bugs.launchpad.net/mixxx/+filebug" %}{% trans %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endtrans %}{% endwith %}
+          {% with bug_tracker_link="https://github.com/mixxxdj/mixxx/issues/new" %}{% trans %}<a href="{{ bug_tracker_link }}">Report bugs</a> as you find them.{% endtrans %}{% endwith %}
         </li>
         <li>
           {% with mixxx_wiki_link="/wiki/" %}{% trans %}Help keep our <a href="{{ mixxx_wiki_link }}">Wiki</a> up-to-date.{% endtrans %}{% endwith %}
