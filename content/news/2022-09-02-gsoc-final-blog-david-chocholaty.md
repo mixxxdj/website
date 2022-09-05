@@ -624,10 +624,9 @@ my summer colleague for the Mixxx organization and friend Fatih Emre
 for his help and synergy on the final blog structure and chapters. Of course,
 I would like to thank all Mixxx developers for welcoming me
 into the Mixxx family and for their help. I would like to continue
-our cooperation for the rest of the GSoC program and after GSoC end
-as Mixxx developers. I look forward to our future teamwork. Many thanks
-to the Google Summer of Code team they made this amazing experience possible
-for me.
+our cooperation after GSoC end as Mixxx developers. I look forward to our future
+teamwork. Many thanks to the Google Summer of Code team they made
+this amazing experience possible for me.
 
 #### Conclusion
 TODO(davidchocholaty) make this chapter.
