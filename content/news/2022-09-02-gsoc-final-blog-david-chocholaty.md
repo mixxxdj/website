@@ -457,22 +457,22 @@ CPU Caches:
 Load Average: 1.39, 1.82, 1.75
 
 | Benchmark                          | Time     | CPU      | Iterations |
-| ---------------------------------- | -------- | -------- | -------    |
-| BM_ZeroDelay/64                    |   260 ns |   260 ns | 2690728    |
-| BM_ZeroDelay/512                   |  2079 ns |  2078 ns |  336963    |
-| BM_ZeroDelay/4096                  | 16616 ns | 16614 ns |   42139    |
-| BM_DelaySmallerThanBufferSize/64   |   269 ns |   269 ns | 2600146    |
-| BM_DelaySmallerThanBufferSize/512  |  2119 ns |  2119 ns |  330263    |
-| BM_DelaySmallerThanBufferSize/4096 | 16978 ns | 16977 ns |   40822    |
-| BM_DelayGreaterThanBufferSize/64   |   269 ns |   269 ns | 2597728    |
-| BM_DelayGreaterThanBufferSize/512  |  2125 ns |  2125 ns |  329431    |
-| BM_DelayGreaterThanBufferSize/4096 | 16979 ns | 16978 ns |   40976    |
-| BM_DelayCrossfading/64             |   608 ns |   608 ns | 1151956    |
-| BM_DelayCrossfading/512            |  4865 ns |  4865 ns |  143875    |
-| BM_DelayCrossfading/4096           | 40081 ns | 40079 ns |   17621    |
-| BM_DelayNoCrossfading/64           |   539 ns |   539 ns | 1298494    |
-| BM_DelayNoCrossfading/512          |  4238 ns |  4238 ns |  165164    |
-| BM_DelayNoCrossfading/4096         | 33939 ns | 33936 ns |   20622    |
+|------------------------------------|----------|----------|------------|
+| BM_ZeroDelay/64                    | 260 ns   | 260 ns   | 2690728    |
+| BM_ZeroDelay/512                   | 2079 ns  | 2078 ns  | 336963     |
+| BM_ZeroDelay/4096                  | 16616 ns | 16614 ns | 42139      |
+| BM_DelaySmallerThanBufferSize/64   | 269 ns   | 269 ns   | 2600146    |
+| BM_DelaySmallerThanBufferSize/512  | 2119 ns  | 2119 ns  | 330263     |
+| BM_DelaySmallerThanBufferSize/4096 | 16978 ns | 16977 ns | 40822      |
+| BM_DelayGreaterThanBufferSize/64   | 269 ns   | 269 ns   | 2597728    |
+| BM_DelayGreaterThanBufferSize/512  | 2125 ns  | 2125 ns  | 329431     |
+| BM_DelayGreaterThanBufferSize/4096 | 16979 ns | 16978 ns | 40976      |
+| BM_DelayCrossfading/64             | 608 ns   | 608 ns   | 1151956    |
+| BM_DelayCrossfading/512            | 4865 ns  | 4865 ns  | 143875     |
+| BM_DelayCrossfading/4096           | 40081 ns | 40079 ns | 17621      |
+| BM_DelayNoCrossfading/64           | 539 ns   | 539 ns   | 1298494    |
+| BM_DelayNoCrossfading/512          | 4238 ns  | 4238 ns  | 165164     |
+| BM_DelayNoCrossfading/4096         | 33939 ns | 33936 ns | 20622      |
 
 ##### *With RingDelayBuffer*
 
@@ -487,44 +487,44 @@ CPU Caches:
 Load Average: 1.50, 1.85, 1.76
 
 
-|Benchmark                          | Time    | CPU     | Iterations |
-| --------------------------------- | ------- | ------- | ---------- |
-BM_ZeroDelay/64                     | 14.3 ns | 14.3 ns |  48804839  |
-BM_ZeroDelay/512                    | 84.7 ns | 84.7 ns |   8291923  |
-BM_ZeroDelay/4096                   |  510 ns |  510 ns |   1345199  |
-BM_DelaySmallerThanBufferSize/64    | 21.7 ns | 21.7 ns |  32209113  |
-BM_DelaySmallerThanBufferSize/512   |  108 ns |  108 ns |   6460461  |
-BM_DelaySmallerThanBufferSize/4096  | 1627 ns | 1627 ns |    429938  |
-BM_DelayGreaterThanBufferSize/64    | 21.9 ns | 21.9 ns |  31799348  |
-BM_DelayGreaterThanBufferSize/512   |  108 ns |  108 ns |   6471893  |
-BM_DelayGreaterThanBufferSize/4096  | 1625 ns | 1624 ns |    435414  |
-BM_DelayCrossfading/64              |  153 ns |  153 ns |   4596623  |
-BM_DelayCrossfading/512             |  841 ns |  841 ns |    832905  |
-BM_DelayCrossfading/4096            | 9451 ns | 9450 ns |     73944  |
-BM_DelayNoCrossfading/64            | 44.1 ns | 44.1 ns |  15865504  |
-BM_DelayNoCrossfading/512           |  209 ns |  209 ns |   3345740  |
-BM_DelayNoCrossfading/4096          | 3236 ns | 3235 ns |    215491  |
-BM_WriteReadWholeBufferNoDelay/64   |  714 ns |  715 ns |    978487  |
-BM_WriteReadWholeBufferNoDelay/512  |  796 ns |  797 ns |    878388  |
-BM_WriteReadWholeBufferNoDelay/4096 | 1594 ns | 1628 ns |    429600  |
-BM_WriteReadWholeBufferDelay/64     |  714 ns |  715 ns |    978692  |
-BM_WriteReadWholeBufferDelay/512    |  795 ns |  796 ns |    878389  |
-BM_WriteReadWholeBufferDelay/4096   | 1500 ns | 1528 ns |    457952  |
-BM_MemCpy/64                        | 4.68 ns | 4.68 ns | 174373476  |
-BM_MemCpy/512                       | 33.0 ns | 33.0 ns |  21221060  |
-BM_MemCpy/4096                      |  154 ns |  154 ns |   4535488  |
-BM_StdCpy/64                        | 4.68 ns | 4.68 ns | 152600697  |
-BM_StdCpy/512                       | 32.1 ns | 32.1 ns |  21839231  |
-BM_StdCpy/4096                      |  158 ns |  158 ns |   4418188  |
-BM_SampleUtilCopy/64                | 4.68 ns | 4.68 ns | 174349198  |
-BM_SampleUtilCopy/512               | 33.0 ns | 33.0 ns |  21194709  |
-BM_SampleUtilCopy/4096              |  154 ns |  154 ns |   4515069  |
-BM_Copy2WithGain/64                 | 8.03 ns | 8.03 ns |  87167131  |
-BM_Copy2WithGain/512                | 64.2 ns | 64.2 ns |  10889704  |
-BM_Copy2WithGain/4096               |  823 ns |  823 ns |    847146  |
-BM_Copy2WithRampingGain/64          | 15.6 ns | 15.6 ns |  44785697  |
-BM_Copy2WithRampingGain/512         |  116 ns |  116 ns |   6011618  |
-BM_Copy2WithRampingGain/4096        | 1113 ns | 1113 ns |    629003  |
+| Benchmark                           | Time    | CPU     | Iterations |
+|-------------------------------------|---------|---------|------------|
+| BM_ZeroDelay/64                     | 14.3 ns | 14.3 ns | 48804839   |
+| BM_ZeroDelay/512                    | 84.7 ns | 84.7 ns | 8291923    |
+| BM_ZeroDelay/4096                   | 510 ns  | 510 ns  | 1345199    |
+| BM_DelaySmallerThanBufferSize/64    | 21.7 ns | 21.7 ns | 32209113   |
+| BM_DelaySmallerThanBufferSize/512   | 108 ns  | 108 ns  | 6460461    |
+| BM_DelaySmallerThanBufferSize/4096  | 1627 ns | 1627 ns | 429938     |
+| BM_DelayGreaterThanBufferSize/64    | 21.9 ns | 21.9 ns | 31799348   |
+| BM_DelayGreaterThanBufferSize/512   | 108 ns  | 108 ns  | 6471893    |
+| BM_DelayGreaterThanBufferSize/4096  | 1625 ns | 1624 ns | 435414     |
+| BM_DelayCrossfading/64              | 153 ns  | 153 ns  | 4596623    |
+| BM_DelayCrossfading/512             | 841 ns  | 841 ns  | 832905     |
+| BM_DelayCrossfading/4096            | 9451 ns | 9450 ns | 73944      |
+| BM_DelayNoCrossfading/64            | 44.1 ns | 44.1 ns | 15865504   |
+| BM_DelayNoCrossfading/512           | 209 ns  | 209 ns  | 3345740    |
+| BM_DelayNoCrossfading/4096          | 3236 ns | 3235 ns | 215491     |
+| BM_WriteReadWholeBufferNoDelay/64   | 714 ns  | 715 ns  | 978487     |
+| BM_WriteReadWholeBufferNoDelay/512  | 796 ns  | 797 ns  | 878388     |
+| BM_WriteReadWholeBufferNoDelay/4096 | 1594 ns | 1628 ns | 429600     |
+| BM_WriteReadWholeBufferDelay/64     | 714 ns  | 715 ns  | 978692     |
+| BM_WriteReadWholeBufferDelay/512    | 795 ns  | 796 ns  | 878389     |
+| BM_WriteReadWholeBufferDelay/4096   | 1500 ns | 1528 ns | 457952     |
+| BM_MemCpy/64                        | 4.68 ns | 4.68 ns | 174373476  |
+| BM_MemCpy/512                       | 33.0 ns | 33.0 ns | 21221060   |
+| BM_MemCpy/4096                      | 154 ns  | 154 ns  | 4535488    |
+| BM_StdCpy/64                        | 4.68 ns | 4.68 ns | 152600697  |
+| BM_StdCpy/512                       | 32.1 ns | 32.1 ns | 21839231   |
+| BM_StdCpy/4096                      | 158 ns  | 158 ns  | 4418188    |
+| BM_SampleUtilCopy/64                | 4.68 ns | 4.68 ns | 174349198  |
+| BM_SampleUtilCopy/512               | 33.0 ns | 33.0 ns | 21194709   |
+| BM_SampleUtilCopy/4096              | 154 ns  | 154 ns  | 4515069    |
+| BM_Copy2WithGain/64                 | 8.03 ns | 8.03 ns | 87167131   |
+| BM_Copy2WithGain/512                | 64.2 ns | 64.2 ns | 10889704   |
+| BM_Copy2WithGain/4096               | 823 ns  | 823 ns  | 847146     |
+| BM_Copy2WithRampingGain/64          | 15.6 ns | 15.6 ns | 44785697   |
+| BM_Copy2WithRampingGain/512         | 116 ns  | 116 ns  | 6011618    |
+| BM_Copy2WithRampingGain/4096        | 1113 ns | 1113 ns | 629003     |
 
 
 #### Demo video
