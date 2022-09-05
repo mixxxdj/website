@@ -1,4 +1,4 @@
-title: GSoC 2022 Work Product- Pitch Shift effect and Group delay handling
+title: GSoC 2022 Work Product - Pitch Shift effect and Group delay handling
 authors: David Chocholatý
 status: draft
 tags: TODO(davidchocholaty) add tags
@@ -179,7 +179,7 @@ of the original repository.
 
 Based on the [#4810](https://github.com/mixxxdj/mixxx/pull/4810) implementation
 it was figured out the bug in the EngineFilterDelay structure was. The structure
-works in a similar way but for a little bit different use case.
+works in a similar way but for a little different use case.
 Newly the unacceptably huge delay values are clamped in the setter, so,
 based on the inner calculation the structure will not produce absolutely wrong
 output. The PR was merged the same day as its creation.
@@ -261,7 +261,7 @@ data structure, the delay handling performance is highly improved based on
 the benchmark measurements. Unfortunately, the PR was not merged during
 the coding period due to a failing test for the macOS CI (based on the inner
 rounding problem for zero value). At the same time, Mixxx's macOS CI
-started crashing during the configuration stage because of a problem
+started crashing during the configuration stage because of an issue
 that the workflow runner has changed. For that reason, the bug fix
 couldn't be tested and the PR was not merged in time.
 
@@ -271,7 +271,7 @@ couldn't be tested and the PR was not merged in time.
 [#10843](https://github.com/mixxxdj/mixxx/pull/10843)
 - RingDelayBufferTest: refactor includes and span creation
 
-The tests for the RingDelayBuffer are refactorized and the span creations
+The tests for the RingDelayBuffer are refactored and the span creations
 are deduplicated.
 
 <hr />
@@ -348,7 +348,7 @@ from the effect chain used effects. The main algorithm of the group delay
 handling for the effect chain is implemented in the EngineEffectsDelay class.
 The implemented APIs take the group delay and the input signal and return
 the delayed signal using the inner data structures. For group delay changes,
-it performs crossfading to avoid unwanted clicks in the output audio signal.
+it performs cross-fading to avoid unwanted clicks in the output audio signal.
 The implemented API was used and built into the implementation
 of the effect chain. Now, the sum of the latency reported by effects
 is processed. As was mentioned, lastly, the group delay reporting
@@ -535,16 +535,16 @@ TODO(davidchocholaty) add demo video
 #### Challenges
 Several problems arose during the coding period.
 Despite the medium project size, it was needed to spend much more time
-working on the project based on the problems. I think the biggest challenge
+working on the project based on the issues. I think the biggest challenge
 in this project was exactly the implementation of the Pitch Shift effect
-using the RubberBand library. The problem occurred soon, that the effect chain
+using the RubberBand library. The issue occurred soon, that the effect chain
 offers the effect to work only with the fixed size audio chunks. Based on that,
 it is not possible to require an amount of input audio data as needed
 for the RubberBand library “pull model” implementation. The SoundTouch library
 for Pitch Shifting was tested too but produced results with the worse
 audio quality and with the same amount of delay. Based on all
-of the discussions, the RubberBand library has shown as the best option
-for the effect, despite the problems which are associated with it. After that,
+the discussions, the RubberBand library has shown as the best option
+for the effect, despite the issues which are associated with it. After that,
 the Mixxx application did not have implemented the effects delay handler
 for the effect chain, so, the implementation of this structure
 was automatically needed. Based on that, the goals of the project were changed.
@@ -570,7 +570,7 @@ As the next project extensions, based on the survey, the following options
 or features can be added to the Pitch shift effect implementation:
 
 <ul>
-    <li>Autotune effect</li>
+    <li>Auto-tune effect</li>
     <li>A piano keyboard interface</li>
     <li>Optimize interface for common controllers</li>
     <li>CPU load balancing</li>
