@@ -612,6 +612,29 @@ to just have feedback on my work which opens me the opportunities to learn.
 I really felt that I’m a part of the community. I will be happy to continue
 being part of the Mixxx organization and contributing to open source.
 
+#### Conclusion
+The wished new effect was implemented, and the issue which requested
+this new feature was closed with the "Fix Committed" status.  All requirements
+by the Mixxx organization in their project idea, on which the project proposal
+was based, were met. Thanks to enough time in the GSoC Coding period was worked
+on the project extension. Based on the situation and the importance of new
+Mixxx features, the originally proposed extension was replanned and changed.
+The new group delay handling structure was successfully implemented
+and optimized with the implementation of the extended data structure.
+In the GSoC Coding period, the effect was started to optimized and polished
+for minimizing the latency.
+
+During the coding period, I lined up among the top Mixxx contributors
+for the last month, with 61 commits authored, and I became
+the 27th of 238 contributors for the Mixxx application, with 119 commits
+in total.
+
+*August 2022 mixxxdj/mixxx contributors*
+![TODO]({static}/images/news/august-2022-contributors.png)
+
+*Contributor summary*
+![TODO]({static}/images/news/contributor-summary.png)
+
 #### Acknowledgements
 First, I would like to many thank my mentor Swiftb0y for his guidance, help,
 reviews, and a lot of new information and lessons he gave me during the summer.
@@ -627,9 +650,6 @@ into the Mixxx family and for their help. I would like to continue
 our cooperation after GSoC end as Mixxx developers. I look forward to our future
 teamwork. Many thanks to the Google Summer of Code team they made
 this amazing experience possible for me.
-
-#### Conclusion
-TODO(davidchocholaty) make this chapter.
 
 #### Resources
 

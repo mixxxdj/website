@@ -250,7 +250,7 @@ AUTHOR_METADATA = {
         "github": "davidchocholaty",
         "email": "david.chocholaty12@gmail.com",
         "tagline": "GSoC 2022 Student",
-    },    
+    },
 }
 
 # Needed for Jinja2 markdown filter
