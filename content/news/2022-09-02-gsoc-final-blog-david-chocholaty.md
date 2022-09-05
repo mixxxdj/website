@@ -598,16 +598,19 @@ was completely different and gives me a lot. I have learned so many cool things
 about audio processing, development in C++ with the best practices,
 using the new C++20 standard, testing and benchmarking with the use
 of Google frameworks, and improving my knowledge with git and approaches
-to open source development in general. I really improved my English, both,
-written and spoken. I think, that it was the best experience so far for me
-as a developer I ever had. It is awesome, that I can publish my work
-and have immediately the feedback and proposed improvements. With that,
-I liked the open source development to just how much I can learn
-by the awesome people and create new cool stuff. Despite I’m a college student,
-this actually missed me a lot, to just have feedback on my work
-which opens me the opportunities to learn. I really felt that I’m a part
-of the community. I will be happy to continue being part
-of the Mixxx organization and contributing to open source.
+to open source development in general. Thanks to the change
+in the proposed project extension, I learned a lot about real-time audio signal
+processing and about cool data structures. I had a chance to try to design
+the data structure with extensions too. I am really glad about the plan change
+now. I really improved my English, both, written and spoken. I think,
+that it was the best experience so far for me as a developer I ever had.
+It is awesome, that I can publish my work and have immediately the feedback
+and proposed improvements. With that, I liked the open source development
+to just how much I can learn by the awesome people and create new cool stuff.
+Despite I’m a college student, this actually missed me a lot,
+to just have feedback on my work which opens me the opportunities to learn.
+I really felt that I’m a part of the community. I will be happy to continue
+being part of the Mixxx organization and contributing to open source.
 
 #### Acknowledgements
 First, I would like to many thank my mentor Swiftb0y for his guidance, help,
