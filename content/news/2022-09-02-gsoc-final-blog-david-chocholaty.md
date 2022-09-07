@@ -1,7 +1,7 @@
 title: GSoC 2022 Work Product - Pitch Shift effect and Group delay handling
 authors: David Chocholatý
 status: draft
-tags: TODO(davidchocholaty) add tags
+tags: gsoc, gsoc-2022
 comments: yes
 
 Disclaimer: *The blog post primarily serves as the documentation
