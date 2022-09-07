@@ -11,10 +11,9 @@ of an audio signal. Thanks to the long working period, the project was expanded
 with the implementation of the Group Delay handling for the effect chain.
 
 #### Motivation
-Before the effect is implemented, the pitch could be changed using the master
-Pitch Shifter for each deck player separately only. Unfortunately,
-the mentioned Pitch Shifter has no wide range and is not really useful
-for the interesting DJ skills on live sets. In this project, the new Pitch Shift
+Before the effect is implemented, the pitch could be changed using the deck's
+rate slider separately only. This imposes significant restrictions on the ways
+other effects can interact with the sound. In this project, the new Pitch Shift
 effect is introduced in the built-in effects, which can be used
 in the effect chain. It implements the wish
 [Add a Transpose / Pitch Shift effect](https://github.com/mixxxdj/mixxx/issues/7389)
