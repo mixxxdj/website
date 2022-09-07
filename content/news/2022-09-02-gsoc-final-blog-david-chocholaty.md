@@ -12,7 +12,7 @@ than the other Mixxx blog posts.*
 #### Introduction
 The project implements the Pitch Shift effect for the Mixxx DJ
 application. The Pitch Shift effect raises or lowers the original pitch
-of an audio signal. Thanks to the long working period, the project was expanded
+of an audio signal[^1]. Thanks to the long working period, the project was expanded
 with the implementation of the Group Delay handling for the effect chain.
 
 #### Motivation
@@ -38,48 +38,48 @@ and development in general:
     * In music theory, a scale is any set of musical notes ordered
      by fundamental frequency or pitch. The scale ordered
      by increasing pitch is an ascending scale, and a scale ordered
-     by decreasing pitch is a descending scale.
+     by decreasing pitch is a descending scale[^2].
 * Octave
     * In music, an octave is an interval between one musical pitch
-     and another with double its frequency.
+     and another with double its frequency[^3].
 * Interval
     * In music theory, an interval is a difference in pitch between
      two sounds. In western scales, intervals are most commonly differences
-     between whole tones and semitones.
+     between whole tones and semitones[^4].
 * Semitone
     * A semitone is a distance in pitch between a note
      and the very next note, higher or lower. It is the smallest interval
-     in most western scales.
+     in most western scales[^5].
 * Chromatic scale
     * A chromatic scale is a set of twelve pitches used
      in tonal music, with notes separated by the interval
-     of a semitone.
+     of a semitone[^6].
 * Pitch
     * Pitch is a perceptual property of sounds that allows
      their ordering on a frequency-related scale. The pitch
      is the quality that makes it possible to judge sounds as "higher"
-     and "lower" in the sense associated with musical melodies.
+     and "lower" in the sense associated with musical melodies[^7].
 * Wet and dry signals
     * Dry sound signals refer to the raw or unprocessed sounds
      that usually come from a direct recording. On the other hand,
-     wet sounds refer to the processed sound/signal.
+     wet sounds refer to the processed sound/signal[^8].
 * Ring buffer (circular buffer)
     * In computer science, a circular buffer or ring buffer
      is a data structure that uses a single, fixed-size buffer
      as if it were connected end-to-end. This structure lends itself
-     easily to buffering data streams.
+     easily to buffering data streams[^9].
 * Audio buffer
     * An audio buffer holds a fixed size amount of sampled audio data.
      The audio buffer size determines the time allowed for the computer
      to process the audio data. Thus, it also determines Latency.
 * Latency
-    * In the audio world, “latency” is another word for “delay”.
+    * In the audio world, “latency” is another word for “delay”[^10].
      The latency (time) of an audio system refers to the time difference
      from the moment a signal is fed into the system, to the moment it appears
-     at the output. For example, audio latency is when there’s a noticeable
+     at the output[^11]. For example, audio latency is when there’s a noticeable
      delay between the sound being played and the moment it reaches
-     the speakers. Depending on the application, such a delay can have various
-     effects. Usually, the aim is to achieve the lowest possible latency.
+     the speakers[^10]. Depending on the application, such a delay can have various
+     effects. Usually, the aim is to achieve the lowest possible latency[^11].
 
 #### Pull requests and issues
 [mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
@@ -572,7 +572,7 @@ or features can be added to the Pitch shift effect implementation:
  funny things without extra CPU cycles
 
 More widely, as the future work for the Mixxx application, the wider support
-for the LV2 standard for effects can be implemented or better, the Carla
+for the LV2 standard for effects can be implemented or better, the Carla[^2]
 audio plugin host can be introduced in the Mixxx application.
 It will allow users to use their own effects they like directly with the support
 of standards such as  LADSPA, DSSI, LV2, VST2, VST3 and so on,
@@ -651,32 +651,6 @@ for me.
  https://bugs.launchpad.net/mixxx/+bug/1299035)
 * [https://breakfastquay.com/rubberband/](
  https://breakfastquay.com/rubberband/)
-* [https://en.wikipedia.org/wiki/Pitch_shift](
- https://en.wikipedia.org/wiki/Pitch_shift)
-* [https://en.wikipedia.org/wiki/Scale_(music)](
- https://en.wikipedia.org/wiki/Scale_(music))
-* [https://en.wikipedia.org/wiki/Octave](
- https://en.wikipedia.org/wiki/Octave)
-* [https://hellomusictheory.com/learn/semitones-tones/](
- https://hellomusictheory.com/learn/semitones-tones/)
-* [https://en.wikipedia.org/wiki/Interval_(music)](
- https://en.wikipedia.org/wiki/Interval_(music))
-* [https://en.wikipedia.org/wiki/Chromatic_scale](
- https://en.wikipedia.org/wiki/Chromatic_scale)
-* [https://en.wikipedia.org/wiki/Pitch_(music)](
- https://en.wikipedia.org/wiki/Pitch_(music))
-* [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](
- http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
-* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](
- https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
-* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](
- https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
-* [https://en.wikipedia.org/wiki/Circular_buffer](
- https://en.wikipedia.org/wiki/Circular_buffer)
-* [https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/](
- https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/)
-* [https://www.nti-audio.com/en/news/latency-in-audio-systems](
- https://www.nti-audio.com/en/news/latency-in-audio-systems)
 * [https://kx.studio/Applications:Carla](
  https://kx.studio/Applications:Carla)
 * [https://lv2plug.in/](
@@ -685,3 +659,52 @@ for me.
  https://github.com/google/googletest)
 * [https://github.com/google/benchmark](
  https://github.com/google/benchmark)
+* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](
+ https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
+* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](
+ https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
+
+[^1]: Wikipedia, Pitch shift, Modified: 6 June 2022,
+Accessed 2 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Pitch_shift](
+ https://en.wikipedia.org/wiki/Pitch_shift)
+[^2]: Wikipedia, Scale (music), Modified: 13 July 2022,
+Accessed 1 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Scale_(music)](
+ https://en.wikipedia.org/wiki/Scale_(music))
+[^3]: Wikipedia, Octave, Modified: 18 June 2022,
+Accessed 1 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Octave](
+ https://en.wikipedia.org/wiki/Octave)
+[^4]: Wikipedia, Interval (music), Modified: 6 Sept. 2022,
+Accessed: 1 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Interval_(music)](
+ https://en.wikipedia.org/wiki/Interval_(music))
+[^5]: Dan Farrant, A Guide To Semitones & Tones (Half & Whole Steps),
+Modified: 25 June 2022, Accessed: 2 Sept. 2022, Retrieved from:
+[https://hellomusictheory.com/learn/semitones-tones/](
+ https://hellomusictheory.com/learn/semitones-tones/)
+[^6]: Wikipedia, Chromatic scale, Modified: 15 March 2022,
+Accessed: 1 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Chromatic_scale](
+ https://en.wikipedia.org/wiki/Chromatic_scale)
+[^7]: Wikipedia, Pitch (music), Modified: 6 Sept. 2022,
+Accessed: 1 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Pitch_(music)](
+ https://en.wikipedia.org/wiki/Pitch_(music))
+[^8]: Celine, Difference Between Wet and Dry Signals or Sounds,
+Modified: 22 Feb. 2012, Accessed: 3 Sept. 2022, Retrieved from:
+[http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](
+ http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
+[^9]: Wikipedia, Circular buffer, Modified: 29 Oct. 2018,
+Accessed: 2 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Circular_buffer](
+ https://en.wikipedia.org/wiki/Circular_buffer)
+[^10]: Audio Modeling,  Grow Your Knowledge, Accessed: 3 Sept. 2022,
+Retrieved from:
+[https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/](
+ https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/)
+[^11]: NTi Audio, Latency in Audio Systems, Modified: 10 March 2021,
+Accessed: 7 Sept. 2022, Retrieved from:
+[https://www.nti-audio.com/en/news/latency-in-audio-systems](
+ https://www.nti-audio.com/en/news/latency-in-audio-systems)
