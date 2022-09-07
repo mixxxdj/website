@@ -42,7 +42,7 @@ and development in general:
 * Semitone
   * A semitone is a distance in pitch between a note
    and the very next note, higher or lower. It is the smallest interval
-   in western music.
+   in most western scales.
 * Chromatic scale
   * A chromatic scale is a set of twelve pitches used
    in tonal music, with notes separated by the interval
@@ -62,9 +62,9 @@ and development in general:
    as if it were connected end-to-end. This structure lends itself
    easily to buffering data streams.
 * Audio buffer
-  * An audio buffer holds a single buffer of audio data.
-   The audio buffer size is the amount of time allowed for the computer
-   to process the audio of your sound card or audio interface.
+  * An audio buffer holds a fixed size amount of sampled audio data.
+   The audio buffer size determines the time allowed for the computer
+   to process the audio data. Thus, it also determines Latency.
 * Latency
   * Latency, from a general point of view, is a time delay
    between the cause and the effect of some physical change
