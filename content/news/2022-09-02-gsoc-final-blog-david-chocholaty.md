@@ -21,7 +21,8 @@ rate slider separately only. This imposes significant restrictions on the ways
 other effects can interact with the sound. In this project, the new Pitch Shift
 effect is introduced in the built-in effects, which can be used
 in the effect chain. It implements the wish
-[Add a Transpose / Pitch Shift effect](https://github.com/mixxxdj/mixxx/issues/7389)
+[Add a Transpose / Pitch Shift effect](
+https://github.com/mixxxdj/mixxx/issues/7389)
 for the Mixxx application. The effect has to work with the effect chain API.
 With that, the other extensional options can be used. Primarily, it allows
 for the user to use a much wider range, than the Pitch Shifter
@@ -291,8 +292,10 @@ and other instruments (compensates for “chipmunk” or “growling” voices).
 
 Related files:
 
-* [pitchshifteffect.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.cpp)
-* [pitchshifteffect.h](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.h)
+* [pitchshifteffect.cpp](
+https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.cpp)
+* [pitchshifteffect.h](
+https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.h)
 
 Screenshots:
 
@@ -328,13 +331,20 @@ from the effects was implemented using the Mixxx API structures for effects
 
 Related files:
 
-* [engineeffectsdelay.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.cpp)
-* [engineeffectsdelay.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.h)
-* [engineeffectsdelay_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/engineeffectsdelay_test.cpp)
-* [effectprocessor.h](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/effectprocessor.h)
-* [engineeffect.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffect.h)
-* [engineeffectchain.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.cpp)
-* [engineeffectchain.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.h)
+* [engineeffectsdelay.cpp](
+https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.cpp)
+* [engineeffectsdelay.h](
+https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.h)
+* [engineeffectsdelay_test.cpp](
+https://github.com/mixxxdj/mixxx/blob/main/src/test/engineeffectsdelay_test.cpp)
+* [effectprocessor.h](
+https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/effectprocessor.h)
+* [engineeffect.h](
+https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffect.h)
+* [engineeffectchain.cpp](
+https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.cpp)
+* [engineeffectchain.h](
+https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.h)
 
 Based on the implementation of the `EngineEffectsDelay`, it was soon figured out,
 that the custom optimized data structure for the group delay handling
@@ -348,9 +358,12 @@ The implementation can be found in the `RingDelayBuffer` class.
 
 Related files:
 
-* [ringdelaybuffer.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.cpp)
-* [ringdelaybuffer.h](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.h)
-* [ringdelaybuffer_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/ringdelaybuffer_test.cpp)
+* [ringdelaybuffer.cpp](
+https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.cpp)
+* [ringdelaybuffer.h](
+https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.h)
+* [ringdelaybuffer_test.cpp](
+https://github.com/mixxxdj/mixxx/blob/main/src/test/ringdelaybuffer_test.cpp)
 
 After the `RingDelayBuffer` was implemented, the new optimized data structure
 was introduced in the `EngineEffectsDelay` for group delay handling. With that,
@@ -623,22 +636,41 @@ this amazing experience possible for me.
 
 #### Resources
 
-* [https://bugs.launchpad.net/mixxx/+bug/1299035](https://bugs.launchpad.net/mixxx/+bug/1299035)
-* [https://breakfastquay.com/rubberband/](https://breakfastquay.com/rubberband/)
-* [https://en.wikipedia.org/wiki/Pitch_shift](https://en.wikipedia.org/wiki/Pitch_shift)
-* [https://en.wikipedia.org/wiki/Scale_(music)](https://en.wikipedia.org/wiki/Scale_(music))
-* [https://en.wikipedia.org/wiki/Octave](https://en.wikipedia.org/wiki/Octave)
-* [https://hellomusictheory.com/learn/semitones-tones/](https://hellomusictheory.com/learn/semitones-tones/)
-* [https://en.wikipedia.org/wiki/Interval_(music)](https://en.wikipedia.org/wiki/Interval_(music))
-* [https://en.wikipedia.org/wiki/Chromatic_scale](https://en.wikipedia.org/wiki/Chromatic_scale)
-* [https://en.wikipedia.org/wiki/Pitch_(music)](https://en.wikipedia.org/wiki/Pitch_(music))
-* [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
-* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
-* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
-* [https://en.wikipedia.org/wiki/Circular_buffer](https://en.wikipedia.org/wiki/Circular_buffer)
-* [https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/](https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/)
-* [https://www.nti-audio.com/en/news/latency-in-audio-systems](https://www.nti-audio.com/en/news/latency-in-audio-systems)
-* [https://kx.studio/Applications:Carla](https://kx.studio/Applications:Carla)
-* [https://lv2plug.in/](https://lv2plug.in/)
-* [https://github.com/google/googletest](https://github.com/google/googletest)
-* [https://github.com/google/benchmark](https://github.com/google/benchmark)
+* [https://bugs.launchpad.net/mixxx/+bug/1299035](
+https://bugs.launchpad.net/mixxx/+bug/1299035)
+* [https://breakfastquay.com/rubberband/](
+https://breakfastquay.com/rubberband/)
+* [https://en.wikipedia.org/wiki/Pitch_shift](
+https://en.wikipedia.org/wiki/Pitch_shift)
+* [https://en.wikipedia.org/wiki/Scale_(music)](
+https://en.wikipedia.org/wiki/Scale_(music))
+* [https://en.wikipedia.org/wiki/Octave](
+https://en.wikipedia.org/wiki/Octave)
+* [https://hellomusictheory.com/learn/semitones-tones/](
+https://hellomusictheory.com/learn/semitones-tones/)
+* [https://en.wikipedia.org/wiki/Interval_(music)](
+https://en.wikipedia.org/wiki/Interval_(music))
+* [https://en.wikipedia.org/wiki/Chromatic_scale](
+https://en.wikipedia.org/wiki/Chromatic_scale)
+* [https://en.wikipedia.org/wiki/Pitch_(music)](
+https://en.wikipedia.org/wiki/Pitch_(music))
+* [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](
+http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
+* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](
+https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
+* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](
+https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
+* [https://en.wikipedia.org/wiki/Circular_buffer](
+https://en.wikipedia.org/wiki/Circular_buffer)
+* [https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/](
+https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/)
+* [https://www.nti-audio.com/en/news/latency-in-audio-systems](
+https://www.nti-audio.com/en/news/latency-in-audio-systems)
+* [https://kx.studio/Applications:Carla](
+https://kx.studio/Applications:Carla)
+* [https://lv2plug.in/](
+https://lv2plug.in/)
+* [https://github.com/google/googletest](
+https://github.com/google/googletest)
+* [https://github.com/google/benchmark](
+https://github.com/google/benchmark)
