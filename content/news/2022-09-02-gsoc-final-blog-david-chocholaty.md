@@ -625,6 +625,7 @@ this amazing experience possible for me.
 * [https://en.wikipedia.org/wiki/Scale_(music)](https://en.wikipedia.org/wiki/Scale_(music))
 * [https://en.wikipedia.org/wiki/Octave](https://en.wikipedia.org/wiki/Octave)
 * [https://hellomusictheory.com/learn/semitones-tones/](https://hellomusictheory.com/learn/semitones-tones/)
+* [https://en.wikipedia.org/wiki/Interval_(music)](https://en.wikipedia.org/wiki/Interval_(music))
 * [https://en.wikipedia.org/wiki/Chromatic_scale](https://en.wikipedia.org/wiki/Chromatic_scale)
 * [https://en.wikipedia.org/wiki/Pitch_(music)](https://en.wikipedia.org/wiki/Pitch_(music))
 * [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
