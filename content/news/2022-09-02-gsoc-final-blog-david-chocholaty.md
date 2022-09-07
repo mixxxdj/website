@@ -106,7 +106,7 @@ is being upgraded using the C++20 standard.
 [mixxx#4848](https://github.com/mixxxdj/mixxx/pull/4848)
 - Fix EngineDelay and EngineFilterDelay modulo calculation documentation
 
-Based on the code changes in the EngineEffectsDelay and discussion
+Based on the code changes in the `EngineEffectsDelay` and discussion
 with my mentor, the explanation commentary was added to two other Mixxx
 structures working on a quite similar principle.
 
@@ -115,12 +115,12 @@ structures working on a quite similar principle.
 [mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852)
 - RingDelayBuffer: ring buffer for delay handling
 
-During the creation of the EngineEffectsDelay for the group delay handling
+During the creation of the `EngineEffectsDelay` for the group delay handling
 of the effect chain, it was suggested to create an optimized data structure
 for the inner processing based on the ring buffer. This widely-known
 signal processing structure was improved and optimized specifically
 for the use case with handling of delay. Again, tests and benchmarks
-were created for the RingDelayBuffer and based on benchmarks the used data
+were created for the `RingDelayBuffer` and based on benchmarks the used data
 copy functions were compared.
 
 ---
@@ -140,7 +140,7 @@ of the original repository.
 - EngineFilterDelay: clamp wrong delay values
 
 Based on the [#4810](https://github.com/mixxxdj/mixxx/pull/4810) implementation
-it was figured out the bug in the EngineFilterDelay structure was. The structure
+it was figured out the bug in the `EngineFilterDelay` structure was. The structure
 works in a similar way but for a little different use case.
 Newly the unacceptably huge delay values are clamped in the setter, so,
 based on the inner calculation the structure will not produce absolutely wrong
@@ -233,7 +233,7 @@ couldn't be tested and the PR was not merged in time.
 [mixxx#10843](https://github.com/mixxxdj/mixxx/pull/10843)
 - RingDelayBufferTest: refactor includes and span creation
 
-The tests for the RingDelayBuffer are refactored and the span creations
+The tests for the `RingDelayBuffer` are refactored and the span creations
 are deduplicated.
 
 ---
@@ -249,7 +249,7 @@ Added the comments for the Pitch shift effect processing.
 
 ##### *Pitch shift effect*
 The Pitch shift effect main algorithm is implemented
-in the PitchShiftEffect class. The implementation uses the widely known
+in the `PitchShiftEffect` class. The implementation uses the widely known
 audio time-stretching and pitch-shifting library RubberBand.
 The implementation adheres to the “push model”. That means, that
 the input audio samples are offered to the RubberBand library API directly.
@@ -302,10 +302,10 @@ and the processed one together using the wet/dry or wet+dry mode, the two
 audio signals will not overlap based on the latency. With that, the common
 audio processing approach is to delay the original signal by the amount
 of latency to overlap the signals. Based on the Mixxx effect chain API
-(EngineEffectChain), the group delay latency handling was implemented
+(`EngineEffectChain`), the group delay latency handling was implemented
 for the whole effect chain and works for the total produced latency
 from the effect chain used effects. The main algorithm of the group delay
-handling for the effect chain is implemented in the EngineEffectsDelay class.
+handling for the effect chain is implemented in the `EngineEffectsDelay` class.
 The implemented APIs take the group delay and the input signal and return
 the delayed signal using the inner data structures. For group delay changes,
 it performs cross-fading to avoid unwanted clicks in the output audio signal.
@@ -313,7 +313,7 @@ The implemented API was used and built into the implementation
 of the effect chain. Now, the sum of the latency reported by effects
 is processed. As was mentioned, lastly, the group delay reporting
 from the effects was implemented using the Mixxx API structures for effects
-(EngineEffect and EffectProcessor).
+(`EngineEffect` and `EffectProcessor`).
 
 
 Related files:
@@ -326,7 +326,7 @@ Related files:
 * [engineeffectchain.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.cpp)
 * [engineeffectchain.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.h)
 
-Based on the implementation of the EngineEffectsDelay, it was soon figured out,
+Based on the implementation of the `EngineEffectsDelay`, it was soon figured out,
 that the custom optimized data structure for the group delay handling
 should be created. A common approach for working with the audio signal stream
 is to use the ring buffer data structure. However, based on the specification
@@ -334,7 +334,7 @@ of group delay handling and requirements on the buffer data structure,
 the classic widely known implementation is not appropriate for use. So,
 the new improved and optimized variant of the ring buffer data structure
 was created specifically for the group delay handling use case.
-The implementation can be found in the RingDelayBuffer class.
+The implementation can be found in the `RingDelayBuffer` class.
 
 Related files:
 
@@ -342,8 +342,8 @@ Related files:
 * [ringdelaybuffer.h](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.h)
 * [ringdelaybuffer_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/ringdelaybuffer_test.cpp)
 
-After the RingDelayBuffer was implemented, the new optimized data structure
-was introduced in the EngineEffectsDelay for group delay handling. With that,
+After the `RingDelayBuffer` was implemented, the new optimized data structure
+was introduced in the `EngineEffectsDelay` for group delay handling. With that,
 the performance has highly improved based on the benchmark results comparison.
 The benchmarking process and results will be described in detail
 in the Testing and benchmarking chapter later.
@@ -388,8 +388,8 @@ implementation for the Pitch shift effect in the effect chain is not optimal,
 it should be preferred before the “push model” implementation.
 
 #### Testing and benchmarking
-With the implementation of the EngineEffectsDelay for group delay handling
-and the RingDelayBuffer as an optimized data structure for the same use case,
+With the implementation of the `EngineEffectsDelay` for group delay handling
+and the `RingDelayBuffer` as an optimized data structure for the same use case,
 the tests were included with the use of the GoogleTest framework. Basically,
 the common situations were tested, then extreme cases and cases
 that are not allowed but have to be handled for the release builds.
@@ -397,8 +397,8 @@ On the basis that these implemented structures are critical
 from the point of view of performance, with tests, the benchmarks were created
 with the use of the Google Benchmark. Based on the results of benchmarks,
 the used functions and algorithms were compared. After both of the mentioned
-structures were implemented, tested and optimized, the RingDelayBuffer
-was introduced in the EngineEffectsDelay as an inner structure
+structures were implemented, tested and optimized, the `RingDelayBuffer`
+was introduced in the `EngineEffectsDelay` as an inner structure
 for the group delay handling. Based on the changes and use of optimized
 data structure the performance has highly improved. The performance differences
 are shown in the following benchmarks results taken over
@@ -520,7 +520,7 @@ the usage of the std::span from the standard library which is supported
 by C++20. Because the Mixxx organization adheres to the
 [Minimum requirements policy](
 https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
-for the Ubuntu LTS, the EngineEffectsDelay and RingDelayBuffer
+for the Ubuntu LTS, the `EngineEffectsDelay` and `RingDelayBuffer`
 could be merged after the official Ubuntu release was announced in the middle
 of August due to support of C++20.
 
