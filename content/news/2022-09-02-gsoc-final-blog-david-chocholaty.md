@@ -402,7 +402,7 @@ the “push model” even with the latency produced before the output data.
 Simultaneously, the delay between dynamic Pitch changes is in a smaller range.
 
 *Push and pull model group delay comparison*
-![TODO]({static}/images/news/pitch-shift-effect-graph-1.png)
+![TODO]({static}/images/news/pitch-shift-effect-graph-1.svg)
 
 In the second graph, the group delay for the unchanged pitch was measured.
 The differences in the measurements are, that the previous pitch values
@@ -412,7 +412,8 @@ and produces a similar, almost constant delay after dynamic pitch changes
 for the same pitch setting.
 
 *Push and pull model group delay comparison for unchanged pitch*
-![TODO]({static}/images/news/pitch-shift-effect-graph-2.png)
+
+![TODO]({static}/images/news/pitch-shift-effect-graph-2.svg)
 
 The results of the measurements clearly show, that despite the “pull model”
 implementation for the Pitch shift effect in the effect chain is not optimal,
