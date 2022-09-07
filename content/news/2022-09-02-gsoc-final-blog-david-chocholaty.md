@@ -150,7 +150,7 @@ of the original repository.
 [mixxx#4869](https://github.com/mixxxdj/mixxx/pull/4869)
 - EngineFilterDelay: clamp wrong delay values
 
-Based on the [#4810](https://github.com/mixxxdj/mixxx/pull/4810) implementation
+Based on the [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810) implementation
 it was figured out the bug in the `EngineFilterDelay` structure was. The structure
 works in a similar way but for a little different use case.
 Newly the unacceptably huge delay values are clamped in the setter, so,
