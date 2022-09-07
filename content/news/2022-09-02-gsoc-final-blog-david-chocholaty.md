@@ -29,46 +29,46 @@ List of terms from the field of music, sound processing
 and development in general:
 
 * Scale
-  * In music theory, a scale is any set of musical notes ordered
-   by fundamental frequency or pitch. The scale ordered
-   by increasing pitch is an ascending scale, and a scale ordered
-   by decreasing pitch is a descending scale.
+    * In music theory, a scale is any set of musical notes ordered
+     by fundamental frequency or pitch. The scale ordered
+     by increasing pitch is an ascending scale, and a scale ordered
+     by decreasing pitch is a descending scale.
 * Octave
-  * In music, an octave is an interval between one musical pitch
-   and another with double its frequency.
+    * In music, an octave is an interval between one musical pitch
+     and another with double its frequency.
 * Interval
-  * An interval in music is the distance in pitch
-   between any two notes.
+    * An interval in music is the distance in pitch
+     between any two notes.
 * Semitone
-  * A semitone is a distance in pitch between a note
-   and the very next note, higher or lower. It is the smallest interval
-   in most western scales.
+    * A semitone is a distance in pitch between a note
+     and the very next note, higher or lower. It is the smallest interval
+     in most western scales.
 * Chromatic scale
-  * A chromatic scale is a set of twelve pitches used
-   in tonal music, with notes separated by the interval
-   of a semitone.
+    * A chromatic scale is a set of twelve pitches used
+     in tonal music, with notes separated by the interval
+     of a semitone.
 * Pitch
-  * Pitch is a perceptual property of sounds that allows
-   their ordering on a frequency-related scale. The pitch
-   is the quality that makes it possible to judge sounds as "higher"
-   and "lower" in the sense associated with musical melodies.
+    * Pitch is a perceptual property of sounds that allows
+     their ordering on a frequency-related scale. The pitch
+     is the quality that makes it possible to judge sounds as "higher"
+     and "lower" in the sense associated with musical melodies.
 * Wet and dry signals
-  * Dry sound signals refer to the raw or unprocessed sounds
-   that usually come from a direct recording. On the other hand,
-   wet sounds refer to the processed sound/signal.
+    * Dry sound signals refer to the raw or unprocessed sounds
+     that usually come from a direct recording. On the other hand,
+     wet sounds refer to the processed sound/signal.
 * Ring buffer (circular buffer)
-  * In computer science, a circular buffer or ring buffer
-   is a data structure that uses a single, fixed-size buffer
-   as if it were connected end-to-end. This structure lends itself
-   easily to buffering data streams.
+    * In computer science, a circular buffer or ring buffer
+     is a data structure that uses a single, fixed-size buffer
+     as if it were connected end-to-end. This structure lends itself
+     easily to buffering data streams.
 * Audio buffer
-  * An audio buffer holds a fixed size amount of sampled audio data.
-   The audio buffer size determines the time allowed for the computer
-   to process the audio data. Thus, it also determines Latency.
+    * An audio buffer holds a fixed size amount of sampled audio data.
+     The audio buffer size determines the time allowed for the computer
+     to process the audio data. Thus, it also determines Latency.
 * Latency
-  * Latency, from a general point of view, is a time delay
-   between the cause and the effect of some physical change
-   in the system being observed.
+    * Latency, from a general point of view, is a time delay
+     between the cause and the effect of some physical change
+     in the system being observed.
 
 #### Pull requests and issues
 [mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
