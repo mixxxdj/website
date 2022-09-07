@@ -69,9 +69,6 @@ and development in general:
   * Latency, from a general point of view, is a time delay
    between the cause and the effect of some physical change
    in the system being observed.
-* Minimum requirements policy
-  * The main branch must build with the packages in the latest
-   Ubuntu LTS which has had at least one point release.
 
 #### Pull requests and issues
 [#4775](https://github.com/mixxxdj/mixxx/pull/4775)
@@ -520,8 +517,10 @@ was changed to the implementation and optimization of the group delay handling
 for the effect chain to improve the performance of the Pitch Shift effect
 for the wet/dry and wet+dry mode. As the last challenge, I would like to mention
 the usage of the std::span from the standard library which is supported
-by C++20. Because the Mixxx organization adheres to the Minimum requirements
-policy for the Ubuntu LTS, the EngineEffectsDelay and RingDelayBuffer
+by C++20. Because the Mixxx organization adheres to the
+[Minimum requirements policy](
+https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
+for the Ubuntu LTS, the EngineEffectsDelay and RingDelayBuffer
 could be merged after the official Ubuntu release was announced in the middle
 of August due to support of C++20.
 
@@ -626,8 +625,7 @@ this amazing experience possible for me.
 * [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
 * [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
 * [https://en.wikipedia.org/wiki/Circular_buffer](https://en.wikipedia.org/wiki/Circular_buffer)
-* [https://en.wikipedia.org/wiki/Latency_(engineering)](https://en.wikipedia.org/wiki/Latency_(engineering))
-* [https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy](https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
+* [https://en.wikipedia.org/wiki/Latency_(engineering)](https://en.wikipedia.org/wiki/Latency_(engineering))f
 * [https://kx.studio/Applications:Carla](https://kx.studio/Applications:Carla)
 * [https://lv2plug.in/](https://lv2plug.in/)
 * [https://github.com/google/googletest](https://github.com/google/googletest)
