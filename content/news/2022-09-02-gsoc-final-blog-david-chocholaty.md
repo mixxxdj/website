@@ -72,9 +72,13 @@ and development in general:
      The audio buffer size determines the time allowed for the computer
      to process the audio data. Thus, it also determines Latency.
 * Latency
-    * Latency, from a general point of view, is a time delay
-     between the cause and the effect of some physical change
-     in the system being observed.
+    * In the audio world, “latency” is another word for “delay”.
+     The latency (time) of an audio system refers to the time difference
+     from the moment a signal is fed into the system, to the moment it appears
+     at the output. For example, audio latency is when there’s a noticeable
+     delay between the sound being played and the moment it reaches
+     the speakers. Depending on the application, such a delay can have various
+     effects. Usually, the aim is to achieve the lowest possible latency.
 
 #### Pull requests and issues
 [mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
@@ -632,7 +636,8 @@ this amazing experience possible for me.
 * [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
 * [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
 * [https://en.wikipedia.org/wiki/Circular_buffer](https://en.wikipedia.org/wiki/Circular_buffer)
-* [https://en.wikipedia.org/wiki/Latency_(engineering)](https://en.wikipedia.org/wiki/Latency_(engineering))f
+* [https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/](https://kb.audiomodeling.com/en/c/grow-your-knowledge/d/what-is-audio-latency-how-do-i-fix-latency-issues-while-recording/)
+* [https://www.nti-audio.com/en/news/latency-in-audio-systems](https://www.nti-audio.com/en/news/latency-in-audio-systems)
 * [https://kx.studio/Applications:Carla](https://kx.studio/Applications:Carla)
 * [https://lv2plug.in/](https://lv2plug.in/)
 * [https://github.com/google/googletest](https://github.com/google/googletest)
