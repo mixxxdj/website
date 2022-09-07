@@ -293,9 +293,9 @@ and other instruments (compensates for “chipmunk” or “growling” voices).
 Related files:
 
 * [pitchshifteffect.cpp](
-https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.cpp)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/effects/backends/builtin/pitchshifteffect.cpp)
 * [pitchshifteffect.h](
-https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.h)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/effects/backends/builtin/pitchshifteffect.h)
 
 Screenshots:
 
@@ -332,19 +332,19 @@ from the effects was implemented using the Mixxx API structures for effects
 Related files:
 
 * [engineeffectsdelay.cpp](
-https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.cpp)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/engine/effects/engineeffectsdelay.cpp)
 * [engineeffectsdelay.h](
-https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.h)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/engine/effects/engineeffectsdelay.h)
 * [engineeffectsdelay_test.cpp](
-https://github.com/mixxxdj/mixxx/blob/main/src/test/engineeffectsdelay_test.cpp)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/test/engineeffectsdelay_test.cpp)
 * [effectprocessor.h](
-https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/effectprocessor.h)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/effects/backends/effectprocessor.h)
 * [engineeffect.h](
-https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffect.h)
+  https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/engine/effects/engineeffect.h)
 * [engineeffectchain.cpp](
-https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.cpp)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/engine/effects/engineeffectchain.cpp)
 * [engineeffectchain.h](
-https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.h)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/engine/effects/engineeffectchain.h)
 
 Based on the implementation of the `EngineEffectsDelay`, it was soon figured out,
 that the custom optimized data structure for the group delay handling
@@ -359,11 +359,11 @@ The implementation can be found in the `RingDelayBuffer` class.
 Related files:
 
 * [ringdelaybuffer.cpp](
-https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.cpp)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/util/ringdelaybuffer.cpp)
 * [ringdelaybuffer.h](
-https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.h)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/util/ringdelaybuffer.h)
 * [ringdelaybuffer_test.cpp](
-https://github.com/mixxxdj/mixxx/blob/main/src/test/ringdelaybuffer_test.cpp)
+https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/test/ringdelaybuffer_test.cpp)
 
 After the `RingDelayBuffer` was implemented, the new optimized data structure
 was introduced in the `EngineEffectsDelay` for group delay handling. With that,
