@@ -520,11 +520,12 @@ Load Average: 1.50, 1.85, 1.76
 | BM_Copy2WithRampingGain/512         | 116 ns  | 116 ns  | 6011618    |
 | BM_Copy2WithRampingGain/4096        | 1113 ns | 1113 ns | 629003     |
 
-
+<!---
 #### Demo video
 TODO(davidchocholaty) add demo video
 
 @Video(https://www.youtube.com/watch?v=rt5Ed5GZ1U8)
+-->
 
 #### Challenges
 Several problems arose during the coding period.
