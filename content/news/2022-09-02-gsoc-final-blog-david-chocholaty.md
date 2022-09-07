@@ -628,19 +628,20 @@ in total.
 ![TODO]({static}/images/news/contributor-summary.png)
 
 #### Acknowledgements
-First, I would like to many thank my mentor Swiftb0y for his guidance, help,
-reviews, and a lot of new information and lessons he gave me during the summer.
-I'm just motivated and learned a lot. I would like thank to Mixxx organization
-admin Daniel Schürmann for his help, reviews and active contributions
-with new ideas and improvements to my project and pull requests. Thank you both
-for involving me in the Mixxx development process and for constructive criticism
-which offers me learn many new things in the past weeks. I would like to thank
-my summer colleague for the Mixxx organization and friend Fatih Emre
-for his help and synergy on the final blog structure and chapters. Of course,
-I would like to thank all Mixxx developers for welcoming me
-into the Mixxx family and for their help. I would like to continue
-our cooperation after GSoC end as Mixxx developers. I look forward to our future
-teamwork. Many thanks to the Google Summer of Code team they made
+First, I would like to many thank my mentor [@Swiftb0y](
+{author}nikolaus-einhauser) for his guidance, help, reviews, and a lot of new
+information and lessons he gave me during the summer. I'm just motivated
+and learned a lot. I would like thank to Mixxx organization admin
+[@Daniel Schürmann]({author}daniel-schurmann) for his help, reviews
+and active contributions with new ideas and improvements to my project
+and pull requests. Thank you both for involving me in the Mixxx development
+process and for constructive criticism which offers me learn many new things
+in the past weeks. I would like to thank my summer colleague for the Mixxx
+organization and friend Fatih Emre for his help and synergy on the final blog
+structure and chapters. Of course, I would like to thank all Mixxx developers
+for welcoming me into the Mixxx family and for their help. I would like to
+continue our cooperation after GSoC end as Mixxx developers. I look forward
+to our future teamwork. Many thanks to the Google Summer of Code team they made
 this amazing experience possible for me.
 
 #### Resources
