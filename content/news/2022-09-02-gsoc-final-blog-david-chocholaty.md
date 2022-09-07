@@ -256,6 +256,14 @@ Added the comments for the Pitch shift effect processing.
 
 ---
 
+[website#279](https://github.com/mixxxdj/website/pull/279)
+- content/news: add GSoC 2022 Work Product
+
+Adds a blog post containing the *"Work Product"* for Google Summer of Code 2022
+on the Mixxx website.
+
+---
+
 #### Implementation
 
 ##### *Pitch shift effect*
