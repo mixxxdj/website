@@ -106,7 +106,7 @@ to overlap with the wet signal was implemented too. Because it is
 a critical part of the application engine performance, the tests and benchmarks
 were included in the development.
 
-In this PR, the std::span was newly introduced into the Mixxx app code
+In this PR, the `std::span` was newly introduced into the Mixxx app code
 with the design proposal and cooperation of my Mentor. The util for working
 with spans was implemented, so other developers can easily work with spans
 directly from the custom Mixxx data structures. With that, the Mixxx code
