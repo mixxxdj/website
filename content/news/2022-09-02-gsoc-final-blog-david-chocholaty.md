@@ -42,8 +42,9 @@ and development in general:
     * In music, an octave is an interval between one musical pitch
      and another with double its frequency.
 * Interval
-    * An interval in music is the distance in pitch
-     between any two notes.
+    * In music theory, an interval is a difference in pitch between
+     two sounds. In western scales, intervals are most commonly differences
+     between whole tones and semitones.
 * Semitone
     * A semitone is a distance in pitch between a note
      and the very next note, higher or lower. It is the smallest interval
