@@ -28,85 +28,51 @@ to ensure that the original (dry) and processed (wet) signals overlap.
 #### Background
 List of terms from the field of music, sound processing
 and development in general:
-<ul>
-    <li>Scale
-        <ul>
-            <li>In music theory, a scale is any set of musical notes ordered
-            by fundamental frequency or pitch. The scale ordered
-            by increasing pitch is an ascending scale, and a scale ordered
-            by decreasing pitch is a descending scale.</li>
-        </ul>
-    </li>
-    <li>Octave
-        <ul>
-            <li>In music, an octave is an interval between one musical pitch
-            and another with double its frequency.</li>
-        </ul>
-    </li>
-    <li>Interval
-        <ul>
-            <li>An interval in music is the distance in pitch
-            between any two notes.</li>
-        </ul>
-    </li>
-    <li>Semitone
-        <ul>
-            <li>A semitone is a distance in pitch between a note
-            and the very next note, higher or lower. It is the smallest interval
-            in western music.</li>
-        </ul>  
-    </li>
-    <li>Chromatic scale
-        <ul>
-            <li>A chromatic scale is a set of twelve pitches used
-            in tonal music, with notes separated by the interval
-            of a semitone.</li>
-        </ul>
-    </li>
-    <li>Pitch
-        <ul>
-            <li>Pitch is a perceptual property of sounds that allows
-            their ordering on a frequency-related scale. The pitch
-            is the quality that makes it possible to judge sounds as "higher"
-            and "lower" in the sense associated with musical melodies.</li>
-        </ul>  
-    </li>
-    <li>Wet and dry signals
-        <ul>
-            <li>Dry sound signals refer to the raw or unprocessed sounds
-            that usually come from a direct recording. On the other hand,
-            wet sounds refer to the processed sound/signal.</li>
-        </ul>  
-    </li>
-    <li>Ring buffer (circular buffer)
-        <ul>
-            <li>In computer science, a circular buffer or ring buffer
-            is a data structure that uses a single, fixed-size buffer
-            as if it were connected end-to-end. This structure lends itself
-            easily to buffering data streams.</li>
-        </ul>  
-    </li>
-    <li>Audio buffer
-        <ul>
-            <li>An audio buffer holds a single buffer of audio data.
-            The audio buffer size is the amount of time allowed for the computer
-            to process the audio of your sound card or audio interface.</li>
-        </ul>  
-    </li>
-    <li>Latency
-        <ul>
-            <li>Latency, from a general point of view, is a time delay
-            between the cause and the effect of some physical change
-            in the system being observed.</li>
-        </ul>  
-    </li>
-    <li>Minimum requirements policy
-        <ul>
-            <li>The main branch must build with the packages in the latest
-            Ubuntu LTS which has had at least one point release.</li>
-        </ul>  
-    </li>
-</ul>
+
+* Scale
+  * In music theory, a scale is any set of musical notes ordered
+   by fundamental frequency or pitch. The scale ordered
+   by increasing pitch is an ascending scale, and a scale ordered
+   by decreasing pitch is a descending scale.
+* Octave
+  * In music, an octave is an interval between one musical pitch
+   and another with double its frequency.
+* Interval
+  * An interval in music is the distance in pitch
+   between any two notes.
+* Semitone
+  * A semitone is a distance in pitch between a note
+   and the very next note, higher or lower. It is the smallest interval
+   in western music.
+* Chromatic scale
+  * A chromatic scale is a set of twelve pitches used
+   in tonal music, with notes separated by the interval
+   of a semitone.
+* Pitch
+  * Pitch is a perceptual property of sounds that allows
+   their ordering on a frequency-related scale. The pitch
+   is the quality that makes it possible to judge sounds as "higher"
+   and "lower" in the sense associated with musical melodies.
+* Wet and dry signals
+  * Dry sound signals refer to the raw or unprocessed sounds
+   that usually come from a direct recording. On the other hand,
+   wet sounds refer to the processed sound/signal.
+* Ring buffer (circular buffer)
+  * In computer science, a circular buffer or ring buffer
+   is a data structure that uses a single, fixed-size buffer
+   as if it were connected end-to-end. This structure lends itself
+   easily to buffering data streams.
+* Audio buffer
+  * An audio buffer holds a single buffer of audio data.
+   The audio buffer size is the amount of time allowed for the computer
+   to process the audio of your sound card or audio interface.
+* Latency
+  * Latency, from a general point of view, is a time delay
+   between the cause and the effect of some physical change
+   in the system being observed.
+* Minimum requirements policy
+  * The main branch must build with the packages in the latest
+   Ubuntu LTS which has had at least one point release.
 
 #### Pull requests and issues
 [#4775](https://github.com/mixxxdj/mixxx/pull/4775)
@@ -119,7 +85,7 @@ to the “push model” implementation. It means that the input data are offered
 to the RubberBand library instead of that the library requires the amount
 of input data.
 
-<hr />
+---
 
 [#4810](https://github.com/mixxxdj/mixxx/pull/4810)
 - EngineEffectsDelay: effect chain delay handling
@@ -139,7 +105,7 @@ with spans was implemented, so other developers can easily work with spans
 directly from the custom Mixxx data structures. With that, the Mixxx code
 is being upgraded using the C++20 standard.
 
-<hr />
+---
 
 [#4848](https://github.com/mixxxdj/mixxx/pull/4848)
 - Fix EngineDelay and EngineFilterDelay modulo calculation documentation
@@ -148,7 +114,7 @@ Based on the code changes in the EngineEffectsDelay and discussion
 with my mentor, the explanation commentary was added to two other Mixxx
 structures working on a quite similar principle.
 
-<hr />
+---
 
 [#4852](https://github.com/mixxxdj/mixxx/pull/4852)
 - RingDelayBuffer: ring buffer for delay handling
@@ -161,7 +127,7 @@ for the use case with handling of delay. Again, tests and benchmarks
 were created for the RingDelayBuffer and based on benchmarks the used data
 copy functions were compared.
 
-<hr />
+---
 
 [#48](https://github.com/mixxxdj/vcpkg/pull/48)
 - [rubberband] add overlaid rubberband v3
@@ -172,7 +138,7 @@ into the microsoft / vcpkg repository by the Mixxx organization admin,
 the RubberBand v3.0.0 was added into the overlaid ports in the Mixxx fork
 of the original repository.
 
-<hr />
+---
 
 [#4869](https://github.com/mixxxdj/mixxx/pull/4869)
 - EngineFilterDelay: clamp wrong delay values
@@ -184,7 +150,7 @@ Newly the unacceptably huge delay values are clamped in the setter, so,
 based on the inner calculation the structure will not produce absolutely wrong
 output. The PR was merged the same day as its creation.
 
-<hr />
+---
 
 [#4898](https://github.com/mixxxdj/mixxx/pull/4898)
 - PitchShiftEffect: decrease and report latency
@@ -203,7 +169,7 @@ the right size of the input ring buffer.  Eventually, implement the input
 ring buffer size depending on the range, that was set. As the last thing,
 the valid delay value propagation for the effect will be finished.
 
-<hr />
+---
 
 [#4901](https://github.com/mixxxdj/mixxx/pull/4901)
 - PitchShiftEffect: extend effect options
@@ -223,7 +189,7 @@ and other instruments (compensates for “chipmunk” or “growling” voices).
 With the PR, the new function for the calculation of the Sign function was added
 to the Mixxx util for math operations.
 
-<hr />
+---
 
 [#10827](https://github.com/mixxxdj/mixxx/pull/10827)
 - Improve buffers size function const-correctness
@@ -231,7 +197,7 @@ to the Mixxx util for math operations.
 The PR improves Mixxx’s buffers data structures by using the C++ constant
 expressions for the size function.
 
-<hr />
+---
 
 [#10832](https://github.com/mixxxdj/mixxx/issues/10832)
 - EngineEffect: invalid engine parameters handed over into an effect
@@ -242,14 +208,14 @@ possible values are used instead and based on that, some newly added effects
 can work wrong, based on the invalid values for sample rate or size
 of the buffer, for example.
 
-<hr />
+---
 
 [#10835](https://github.com/mixxxdj/mixxx/pull/10835)
 - EngineBufferScaleRubberBand: remove unused include
 
 The unused include was removed from the implemented Mixxx structure.
 
-<hr />
+---
 
 
 [#10840](https://github.com/mixxxdj/mixxx/pull/10840)
@@ -265,7 +231,7 @@ started crashing during the configuration stage because of an issue
 that the workflow runner has changed. For that reason, the bug fix
 couldn't be tested and the PR was not merged in time.
 
-<hr />
+---
 
 
 [#10843](https://github.com/mixxxdj/mixxx/pull/10843)
@@ -274,14 +240,14 @@ couldn't be tested and the PR was not merged in time.
 The tests for the RingDelayBuffer are refactored and the span creations
 are deduplicated.
 
-<hr />
+---
 
 [#10858](https://github.com/mixxxdj/mixxx/pull/10858)
 - PitchShiftEffect: add description comments
 
 Added the comments for the Pitch shift effect processing.
 
-<hr />
+---
 
 #### Implementation
 
@@ -297,12 +263,10 @@ which means not even an octave), the independent Pitch shift effect offers
 to work in the range of + 2 octaves (+ 24 semitones) and - 2 octaves
 (-24 semitones). The pitch shift effect has the following options:
 
-<ul>
-	<li>Pitch knob</li>
-	<li>Range knob</li>
-	<li>Semitones mode</li>
-	<li>Formant preserving</li>
-</ul>
+* Pitch knob
+* Range knob
+* Semitones mode
+* Formant preserving
 
 The Pitch knob changes the Pitch of the track up or down. For the default
 middle position, the track pitch is unchanged. The Range knob ensures setting
@@ -321,8 +285,8 @@ and other instruments (compensates for “chipmunk” or “growling” voices).
 
 Related files:
 
-- [pitchshifteffect.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.cpp)
-- [pitchshifteffect.h](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.h)
+* [pitchshifteffect.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.cpp)
+* [pitchshifteffect.h](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/builtin/pitchshifteffect.h)
 
 Screenshots:
 
@@ -358,13 +322,13 @@ from the effects was implemented using the Mixxx API structures for effects
 
 Related files:
 
-- [engineeffectsdelay.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.cpp)
-- [engineeffectsdelay.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.h)
-- [engineeffectsdelay_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/engineeffectsdelay_test.cpp)
-- [effectprocessor.h](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/effectprocessor.h)
-- [engineeffect.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffect.h)
-- [engineeffectchain.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.cpp)
-- [engineeffectchain.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.h)
+* [engineeffectsdelay.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.cpp)
+* [engineeffectsdelay.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectsdelay.h)
+* [engineeffectsdelay_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/engineeffectsdelay_test.cpp)
+* [effectprocessor.h](https://github.com/mixxxdj/mixxx/blob/main/src/effects/backends/effectprocessor.h)
+* [engineeffect.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffect.h)
+* [engineeffectchain.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.cpp)
+* [engineeffectchain.h](https://github.com/mixxxdj/mixxx/blob/main/src/engine/effects/engineeffectchain.h)
 
 Based on the implementation of the EngineEffectsDelay, it was soon figured out,
 that the custom optimized data structure for the group delay handling
@@ -378,9 +342,9 @@ The implementation can be found in the RingDelayBuffer class.
 
 Related files:
 
-- [ringdelaybuffer.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.cpp)
-- [ringdelaybuffer.h](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.h)
-- [ringdelaybuffer_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/ringdelaybuffer_test.cpp)
+* [ringdelaybuffer.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.cpp)
+* [ringdelaybuffer.h](https://github.com/mixxxdj/mixxx/blob/main/src/util/ringdelaybuffer.h)
+* [ringdelaybuffer_test.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/test/ringdelaybuffer_test.cpp)
 
 After the RingDelayBuffer was implemented, the new optimized data structure
 was introduced in the EngineEffectsDelay for group delay handling. With that,
@@ -449,10 +413,10 @@ from the Ubuntu GitHub CI’s results.
 Run on (2 X 2593.91 MHz CPU s)  
 CPU Caches:
 
-- L1 Data 32 KiB (x2)
-- L1 Instruction 32 KiB (x2)
-- L2 Unified 1024 KiB (x2)
-- L3 Unified 36608 KiB (x1)
+* L1 Data 32 KiB (x2)
+* L1 Instruction 32 KiB (x2)
+* L2 Unified 1024 KiB (x2)
+* L3 Unified 36608 KiB (x1)
 
 Load Average: 1.39, 1.82, 1.75
 
@@ -479,10 +443,10 @@ Load Average: 1.39, 1.82, 1.75
 Run on (2 X 2593.91 MHz CPU s)  
 CPU Caches:
 
-- L1 Data 32 KiB (x2)
-- L1 Instruction 32 KiB (x2)
-- L2 Unified 1024 KiB (x2)
-- L3 Unified 36608 KiB (x1)
+* L1 Data 32 KiB (x2)
+* L1 Instruction 32 KiB (x2)
+* L2 Unified 1024 KiB (x2)
+* L3 Unified 36608 KiB (x1)
 
 Load Average: 1.50, 1.85, 1.76
 
@@ -569,15 +533,13 @@ With that, the wet/dry mode will be done for the effect too.
 As the next project extensions, based on the survey, the following options
 or features can be added to the Pitch shift effect implementation:
 
-<ul>
-    <li>Auto-tune effect</li>
-    <li>A piano keyboard interface</li>
-    <li>Optimize interface for common controllers</li>
-    <li>CPU load balancing</li>
-    <li>Consider interaction with the main Pitch shifter</li>
-    <li>Expose compensation delay as additional parameter for making
-    funny things without extra CPU cycles</li>
-</ul>
+* Auto-tune effect
+* A piano keyboard interface
+* Optimize interface for common controllers
+* CPU load balancing
+* Consider interaction with the main Pitch shifter
+* Expose compensation delay as additional parameter for making
+ funny things without extra CPU cycles
 
 More widely, as the future work for the Mixxx application, the wider support
 for the LV2 standard for effects can be implemented or better, the Carla
@@ -653,21 +615,21 @@ this amazing experience possible for me.
 
 #### Resources
 
-- [https://bugs.launchpad.net/mixxx/+bug/1299035](https://bugs.launchpad.net/mixxx/+bug/1299035)
-- [https://breakfastquay.com/rubberband/](https://breakfastquay.com/rubberband/)
-- [https://en.wikipedia.org/wiki/Pitch_shift](https://en.wikipedia.org/wiki/Pitch_shift)
-- [https://en.wikipedia.org/wiki/Scale_(music)](https://en.wikipedia.org/wiki/Scale_(music))
-- [https://en.wikipedia.org/wiki/Octave](https://en.wikipedia.org/wiki/Octave)
-- [https://hellomusictheory.com/learn/semitones-tones/](https://hellomusictheory.com/learn/semitones-tones/)
-- [https://en.wikipedia.org/wiki/Chromatic_scale](https://en.wikipedia.org/wiki/Chromatic_scale)
-- [https://en.wikipedia.org/wiki/Pitch_(music)](https://en.wikipedia.org/wiki/Pitch_(music))
-- [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
-- [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
-- [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
-- [https://en.wikipedia.org/wiki/Circular_buffer](https://en.wikipedia.org/wiki/Circular_buffer)
-- [https://en.wikipedia.org/wiki/Latency_(engineering)](https://en.wikipedia.org/wiki/Latency_(engineering))
-- [https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy](https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
-- [https://kx.studio/Applications:Carla](https://kx.studio/Applications:Carla)
-- [https://lv2plug.in/](https://lv2plug.in/)
-- [https://github.com/google/googletest](https://github.com/google/googletest)
-- [https://github.com/google/benchmark](https://github.com/google/benchmark)
+* [https://bugs.launchpad.net/mixxx/+bug/1299035](https://bugs.launchpad.net/mixxx/+bug/1299035)
+* [https://breakfastquay.com/rubberband/](https://breakfastquay.com/rubberband/)
+* [https://en.wikipedia.org/wiki/Pitch_shift](https://en.wikipedia.org/wiki/Pitch_shift)
+* [https://en.wikipedia.org/wiki/Scale_(music)](https://en.wikipedia.org/wiki/Scale_(music))
+* [https://en.wikipedia.org/wiki/Octave](https://en.wikipedia.org/wiki/Octave)
+* [https://hellomusictheory.com/learn/semitones-tones/](https://hellomusictheory.com/learn/semitones-tones/)
+* [https://en.wikipedia.org/wiki/Chromatic_scale](https://en.wikipedia.org/wiki/Chromatic_scale)
+* [https://en.wikipedia.org/wiki/Pitch_(music)](https://en.wikipedia.org/wiki/Pitch_(music))
+* [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/)
+* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
+* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
+* [https://en.wikipedia.org/wiki/Circular_buffer](https://en.wikipedia.org/wiki/Circular_buffer)
+* [https://en.wikipedia.org/wiki/Latency_(engineering)](https://en.wikipedia.org/wiki/Latency_(engineering))
+* [https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy](https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
+* [https://kx.studio/Applications:Carla](https://kx.studio/Applications:Carla)
+* [https://lv2plug.in/](https://lv2plug.in/)
+* [https://github.com/google/googletest](https://github.com/google/googletest)
+* [https://github.com/google/benchmark](https://github.com/google/benchmark)
