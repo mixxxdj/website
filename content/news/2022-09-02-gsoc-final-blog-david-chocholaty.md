@@ -4,6 +4,11 @@ status: draft
 tags: TODO(davidchocholaty) add tags
 comments: yes
 
+Disclaimer: *The blog post primarily serves as the documentation
+for the Google Summer of Code 2022 project: "Pitch Shift effect
+and Group delay handling". Thus, it contains a lot more detailed description,
+than the other Mixxx blog posts.*
+
 #### Introduction
 The project implements the Pitch Shift effect for the Mixxx DJ
 application. The Pitch Shift effect raises or lowers the original pitch
