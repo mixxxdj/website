@@ -150,8 +150,8 @@ of the original repository.
 [mixxx#4869](https://github.com/mixxxdj/mixxx/pull/4869)
 - EngineFilterDelay: clamp wrong delay values
 
-Based on the [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810) implementation
-it was figured out the bug in the `EngineFilterDelay` structure was. The structure
+While working on [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810),
+I encountered a bug in the `EngineFilterDelay` structure: The structure
 works in a similar way but for a little different use case.
 Newly the unacceptably huge delay values are clamped in the setter, so,
 based on the inner calculation the structure will not produce absolutely wrong
@@ -173,7 +173,7 @@ in the non-GSoC time as a future Mixxx contributor. With the new implementation,
 the Mixxx circular buffer data structure was improved and optimized
 for performance. So, it remains to finish the pull implementation by setting
 the right size of the input ring buffer.  Eventually, implement the input
-ring buffer size depending on the range, that was set. As the last thing,
+ring buffer size depending on the range that was set. As the last thing,
 the valid delay value propagation for the effect will be finished.
 
 ---
@@ -188,8 +188,8 @@ in clubs for live DJ mixing. With that, the Semitones mode toggle was added
 for changing the scale of the Pitch knob.  By default, this toggle is on,
 and the Pitch knob works in the semitones mode. In musical terminology,
 the pitch is changed based on the semitone chromatic scale. If the toggle
-is off, the Pitch knob works in the continuous mode, as is the default
-for the RubberBand library. As last, the Formant preserving option was added
+is off, the Pitch knob works in the continuous mode, which is also the default
+in the RubberBand library. At last, the Formant preserving option was added
 which works with the RubberBand library option. It preserves
 the resonant frequencies (formants) of the human vocal tract
 and other instruments (compensates for “chipmunk” or “growling” voices).
@@ -275,8 +275,8 @@ the input audio samples are offered to the RubberBand library API directly.
 Instead of the main Pitch shifter for each deck player, which
 has a limited range (only 7 semitones up and down in musical terms,
 which means not even an octave), the independent Pitch shift effect offers
-to work in the range of + 2 octaves (+ 24 semitones) and - 2 octaves
-(-24 semitones). The pitch shift effect has the following options:
+to work in the range of ± 2 octaves (± 24 semitones).
+The pitch shift effect has the following options:
 
 * Pitch knob
 * Range knob
@@ -417,7 +417,7 @@ for the same pitch setting.
 
 The results of the measurements clearly show, that despite the “pull model”
 implementation for the Pitch shift effect in the effect chain is not optimal,
-it should be preferred before the “push model” implementation.
+it should be preferred over the “push model” implementation.
 
 #### Testing and benchmarking
 With the implementation of the `EngineEffectsDelay` for group delay handling
@@ -533,7 +533,7 @@ using the RubberBand library. The issue occurred soon, that the effect chain
 offers the effect to work only with the fixed size audio chunks. Based on that,
 it is not possible to require an amount of input audio data as needed
 for the RubberBand library “pull model” implementation. The SoundTouch library
-for Pitch Shifting was tested too but produced results with the worse
+for Pitch Shifting was tested too but produced results with worse
 audio quality and with the same amount of delay. Based on all
 the discussions, the RubberBand library has shown as the best option
 for the effect, despite the issues which are associated with it. After that,
@@ -574,13 +574,12 @@ or features can be added to the Pitch shift effect implementation:
 More widely, as the future work for the Mixxx application, the wider support
 for the LV2 standard for effects can be implemented or better, the Carla[^2]
 audio plugin host can be introduced in the Mixxx application.
-It will allow users to use their own effects they like directly with the support
-of standards such as  LADSPA, DSSI, LV2, VST2, VST3 and so on,
+It will allow users to use their favorite effects enabled via audio plugin
+standards such as LADSPA, DSSI, LV2, VST2, VST3 and so on,
 in the application instead of offering only the built-in effects or poor API
 for the LV2 standard. After consultation with my mentor, we agreed,
 that I will take on this task as a regular Mixxx contributor after the end
 of GSoC.
-
 
 #### Things I learned from GSoC
 I don't think I can even express how much the GSoC experience has given me.
@@ -613,8 +612,9 @@ on the project extension. Based on the situation and the importance of new
 Mixxx features, the originally proposed extension was replanned and changed.
 The new group delay handling structure was successfully implemented
 and optimized with the implementation of the extended data structure.
-In the GSoC Coding period, the effect was started to optimized and polished
-for minimizing the latency.
+In the GSoC Coding period, work was started to minimize the effects latency as
+well as to polish the effect even more.  Unfortunately, that work could
+not be finished before the GSoC deadline.
 
 During the coding period, I lined up among the top Mixxx contributors
 for the last month, with 61 commits authored, and I became
@@ -631,7 +631,7 @@ in total.
 First, I would like to many thank my mentor [@Swiftb0y](
 {author}nikolaus-einhauser) for his guidance, help, reviews, and a lot of new
 information and lessons he gave me during the summer. I'm just motivated
-and learned a lot. I would like thank to Mixxx organization admin
+and learned a lot. I would like to thank the Mixxx organization admin
 [@Daniel Schürmann]({author}daniel-schurmann) for his help, reviews
 and active contributions with new ideas and improvements to my project
 and pull requests. Thank you both for involving me in the Mixxx development
