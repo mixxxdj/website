@@ -71,7 +71,7 @@ and development in general:
    in the system being observed.
 
 #### Pull requests and issues
-[#4775](https://github.com/mixxxdj/mixxx/pull/4775)
+[mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
 - PitchShiftEffect: add independent effect
 
 The PR adds an independent effect to Mixxx's built-in effects.
@@ -83,7 +83,7 @@ of input data.
 
 ---
 
-[#4810](https://github.com/mixxxdj/mixxx/pull/4810)
+[mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810)
 - EngineEffectsDelay: effect chain delay handling
 
 This PR adds the structure for the group delay handling of the effect chain.
@@ -103,7 +103,7 @@ is being upgraded using the C++20 standard.
 
 ---
 
-[#4848](https://github.com/mixxxdj/mixxx/pull/4848)
+[mixxx#4848](https://github.com/mixxxdj/mixxx/pull/4848)
 - Fix EngineDelay and EngineFilterDelay modulo calculation documentation
 
 Based on the code changes in the EngineEffectsDelay and discussion
@@ -112,7 +112,7 @@ structures working on a quite similar principle.
 
 ---
 
-[#4852](https://github.com/mixxxdj/mixxx/pull/4852)
+[mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852)
 - RingDelayBuffer: ring buffer for delay handling
 
 During the creation of the EngineEffectsDelay for the group delay handling
@@ -125,7 +125,7 @@ copy functions were compared.
 
 ---
 
-[#48](https://github.com/mixxxdj/vcpkg/pull/48)
+[vcpkg#48](https://github.com/mixxxdj/vcpkg/pull/48)
 - [rubberband] add overlaid rubberband v3
 
 During the coding period, the new RubberBand library release v3.0.0
@@ -136,7 +136,7 @@ of the original repository.
 
 ---
 
-[#4869](https://github.com/mixxxdj/mixxx/pull/4869)
+[mixxx#4869](https://github.com/mixxxdj/mixxx/pull/4869)
 - EngineFilterDelay: clamp wrong delay values
 
 Based on the [#4810](https://github.com/mixxxdj/mixxx/pull/4810) implementation
@@ -148,7 +148,7 @@ output. The PR was merged the same day as its creation.
 
 ---
 
-[#4898](https://github.com/mixxxdj/mixxx/pull/4898)
+[mixxx#4898](https://github.com/mixxxdj/mixxx/pull/4898)
 - PitchShiftEffect: decrease and report latency
 
 In this draft PR was worked as another project extension. The implemented “push”
@@ -167,7 +167,7 @@ the valid delay value propagation for the effect will be finished.
 
 ---
 
-[#4901](https://github.com/mixxxdj/mixxx/pull/4901)
+[mixxx#4901](https://github.com/mixxxdj/mixxx/pull/4901)
 - PitchShiftEffect: extend effect options
 
 The PR extends options of the Pitch shift effect. The Range knob is added
@@ -187,7 +187,7 @@ to the Mixxx util for math operations.
 
 ---
 
-[#10827](https://github.com/mixxxdj/mixxx/pull/10827)
+[mixxx#10827](https://github.com/mixxxdj/mixxx/pull/10827)
 - Improve buffers size function const-correctness
 
 The PR improves Mixxx’s buffers data structures by using the C++ constant
@@ -195,7 +195,7 @@ expressions for the size function.
 
 ---
 
-[#10832](https://github.com/mixxxdj/mixxx/issues/10832)
+[mixxx#10832](https://github.com/mixxxdj/mixxx/issues/10832)
 - EngineEffect: invalid engine parameters handed over into an effect
 
 During the work on the Pitch shift effect, it was figured out, that the actual
@@ -206,7 +206,7 @@ of the buffer, for example.
 
 ---
 
-[#10835](https://github.com/mixxxdj/mixxx/pull/10835)
+[mixxx#10835](https://github.com/mixxxdj/mixxx/pull/10835)
 - EngineBufferScaleRubberBand: remove unused include
 
 The unused include was removed from the implemented Mixxx structure.
@@ -214,7 +214,7 @@ The unused include was removed from the implemented Mixxx structure.
 ---
 
 
-[#10840](https://github.com/mixxxdj/mixxx/pull/10840)
+[mixxx#10840](https://github.com/mixxxdj/mixxx/pull/10840)
 - EngineEffectsDelay: introduce ring delay buffer
 
 The implemented optimized ring buffer data structure for delay handling is built
@@ -230,7 +230,7 @@ couldn't be tested and the PR was not merged in time.
 ---
 
 
-[#10843](https://github.com/mixxxdj/mixxx/pull/10843)
+[mixxx#10843](https://github.com/mixxxdj/mixxx/pull/10843)
 - RingDelayBufferTest: refactor includes and span creation
 
 The tests for the RingDelayBuffer are refactored and the span creations
@@ -238,7 +238,7 @@ are deduplicated.
 
 ---
 
-[#10858](https://github.com/mixxxdj/mixxx/pull/10858)
+[mixxx#10858](https://github.com/mixxxdj/mixxx/pull/10858)
 - PitchShiftEffect: add description comments
 
 Added the comments for the Pitch shift effect processing.
