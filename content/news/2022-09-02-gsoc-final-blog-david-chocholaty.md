@@ -649,12 +649,12 @@ for the last month, with 61 commits authored, and I became
 the 27th of 238 contributors for the Mixxx application, with 119 commits
 in total.
 
-*August 2022 mixxxdj/mixxx contributors*
-![August 2022 mixxxdj/mixxx contributors insight](
+*August 2022 contributors - mixxxdj/mixxx*
+![August 2022 contributors insight - mixxxdj/mixxx](
  {static}/images/news/august-2022-contributors.png)
 
-*Contributor summary*
-![Contributor summary insight]({static}/images/news/contributor-summary.png)
+*Contributor summary - mixxxdj/mixxx*
+![Contributor summary insight - mixxxdj/mixxx]({static}/images/news/contributor-summary.png)
 
 #### Acknowledgements
 First, I would like to many thank my mentor [@Swiftb0y](
