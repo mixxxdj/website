@@ -445,8 +445,8 @@ data copy functions were compared.
 
 During the coding period, the new RubberBand library release v3.0.0
 was announced. Based on the implementation for adding RubberBand v2.0.2 directly
-into the microsoft / vcpkg repository by the Mixxx organization administrator,
-the RubberBand v3.0.0 was added into the overlaid ports in the Mixxx fork
+into the microsoft / vcpkg repository by the Mixxx organization developer,
+the RubberBand v3.0.0 was added to the overlaid ports in the Mixxx fork
 of the original repository.
 
 ---
@@ -667,7 +667,7 @@ in total.
 First, I would like to many thank my mentor [@Swiftb0y](
 {author}nikolaus-einhauser) for his guidance, help, reviews, and a lot of new
 information and lessons he gave me during the summer. I'm just motivated
-and learned a lot. I would like to thank the Mixxx organization administrator
+and learned a lot. I would like to thank the Mixxx organization developer
 [@Daniel Schürmann]({author}daniel-schurmann) for his help, reviews
 and active contributions with new ideas and improvements to my project
 and pull requests. Thank you both for involving me in the Mixxx development
