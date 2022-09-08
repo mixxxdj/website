@@ -89,224 +89,6 @@ and development in general:
      digital file will resemble the original. A higher sample rate tends
      to deliver a better-quality audio reproduction[^12].
 
-#### Pull requests and issues
-[mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
-- PitchShiftEffect: add independent effect
-
-*Status: Merged*
-
-The PR adds an independent effect to Mixxx's built-in effects.
-The implementation uses the [RubberBand library](
- https://breakfastquay.com/rubberband/) for changing a pitch
-of an input track. The effect works in real-time mode and adheres
-to the “push model” implementation. That means that the input data are offered
-to the RubberBand instead of that the library requires the amount
-of input data.
-
----
-
-[mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810)
-- EngineEffectsDelay: effect chain delay handling
-
-*Status: Merged*
-
-This PR adds the structure for the Group Delay handling of the effect chain.
-Based on that, some effects can produce latency due to their inner processing.
-The latency has to be handled for the Dry/Wet and Dry+Wet modes that the dry
-and wet signals overlapped. The structure for delay reporting from the effects
-into the effect chain was implemented. With that, the dry signal delaying
-to overlap with the wet signal was implemented as well. Because it is
-a critical part of the application engine performance, the tests and benchmarks
-were included in the development.
-
-In this PR, the `std::span` was newly introduced into the Mixxx software code
-with the design proposal and cooperation of my mentor. The util for working
-with spans was implemented, so other developers can easily work with spans
-directly from the custom Mixxx data structures. With that, the Mixxx code
-is being upgraded using the [C++20 standard](
- https://en.cppreference.com/w/cpp/20).
-
----
-
-[mixxx#4848](https://github.com/mixxxdj/mixxx/pull/4848)
-- Fix EngineDelay and EngineFilterDelay modulo calculation documentation
-
-*Status: Merged*
-
-Based on the code changes in the `EngineEffectsDelay` and discussion
-with my mentor, the explanation commentary was added to two other Mixxx
-structures working on a quite similar principle.
-
----
-
-[mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852)
-- RingDelayBuffer: ring buffer for delay handling
-
-*Status: Merged*
-
-During the creation of the `EngineEffectsDelay` for the Group Delay handling
-of the effect chain, it was suggested to create an optimized data structure
-for the inner processing based on the ring buffer. This widely-known
-signal processing structure was improved and optimized specifically
-for the use case with handling of delay. Again, tests and benchmarks
-were created for the `RingDelayBuffer` and based on benchmarks results the used
-data copy functions were compared.
-
----
-
-[vcpkg#48](https://github.com/mixxxdj/vcpkg/pull/48)
-- [rubberband] add overlaid rubberband v3
-
-*Status: Merged*
-
-During the coding period, the new RubberBand library release v3.0.0
-was announced. Based on the implementation for adding RubberBand v2.0.2 directly
-into the microsoft / vcpkg repository by the Mixxx organization administrator,
-the RubberBand v3.0.0 was added into the overlaid ports in the Mixxx fork
-of the original repository.
-
----
-
-[mixxx#4869](https://github.com/mixxxdj/mixxx/pull/4869)
-- EngineFilterDelay: clamp wrong delay values
-
-*Status: Merged*
-
-While working on [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810),
-I encountered a bug in the `EngineFilterDelay` structure: The structure
-works in a similar way but for a little different use case.
-Newly the unacceptably huge delay values are clamped in the setter, so,
-based on the inner calculation the structure will not produce absolutely wrong
-output. The PR was merged the same day as its creation.
-
----
-
-[mixxx#4898](https://github.com/mixxxdj/mixxx/pull/4898)
-- PitchShiftEffect: decrease and report latency
-
-*Status: Draft (WIP), last GSoC commit: [146f104](
- https://github.com/mixxxdj/mixxx/pull/4898/commits/146f104e0e3d544178428f12f2f0c295b4545966)*
-
-In this draft PR was worked as another project extension. The implemented “push”
-way model is extended into the “pull” model instead. The new approach decreases
-the effect latency and this latency is reported in the effect chain
-delay handler. This PR is still a "Work In Progress". As the last work done
-the latency measurements were performed for several implementations
-and for different pitch settings. The measured data was plotted
-for demonstration. The new implementation was accepted and the PR will be done
-in the non-GSoC time as a future Mixxx contributor. With the new implementation,
-the Mixxx circular buffer data structure was improved and optimized
-for performance. So, it remains to finish the pull implementation by setting
-the right size of the input ring buffer.  Eventually, implement the input
-ring buffer size depending on the range that was set. As the last thing,
-the valid delay value propagation for the effect will be finished.
-
----
-
-[mixxx#4901](https://github.com/mixxxdj/mixxx/pull/4901)
-- PitchShiftEffect: extend effect options
-
-*Status: Merged*
-
-The PR extends options of the Pitch Shift effect. The Range knob is added
-to the setting of the range of the Pitch knob. These two knobs work similarly
-to the real professional Pioneer DJM-900NX2 mixer which is widely used
-in clubs for live DJ mixing. With that, the Semitones mode toggle was added
-for changing the scale of the Pitch knob.  By default, this toggle is on,
-and the Pitch knob works in the Semitones mode. In musical terminology,
-the pitch is changed based on the semitone chromatic scale. If the toggle
-is off, the Pitch knob works in the Continuous mode, which is also the default
-in the RubberBand library. At last, the Formant preserving option was added
-which works with the namesake RubberBand library option. It preserves
-the resonant frequencies (formants) of the human vocal tract
-and other instruments (compensates for “chipmunk” or “growling” voices).
-With the PR, the new function for the calculation of the [Sign function](
- https://en.wikipedia.org/wiki/Sign_function) was added
-to the Mixxx util for math operations.
-
----
-
-[mixxx#10827](https://github.com/mixxxdj/mixxx/pull/10827)
-- Improve buffers size function const-correctness
-
-*Status: Merged*
-
-This PR improves Mixxx’s buffers data structures by using the C++ constant
-expressions for the size function.
-
----
-
-[mixxx#10832](https://github.com/mixxxdj/mixxx/issues/10832)
-- EngineEffect: invalid engine parameters handed over into an effect
-
-*Status: Open*
-
-During the work on the Pitch Shift effect, it was figured out, that the actual
-parameter settings are not propagated into the effects. The maximum
-possible values are used instead and based on that, some newly added effects
-can work wrong, based on the invalid values for sample rate or size
-of the buffer, for example.
-
----
-
-[mixxx#10835](https://github.com/mixxxdj/mixxx/pull/10835)
-- EngineBufferScaleRubberBand: remove unused include
-
-*Status: Merged*
-
-The unused include was removed from the implemented Mixxx structure.
-
----
-
-
-[mixxx#10840](https://github.com/mixxxdj/mixxx/pull/10840)
-- EngineEffectsDelay: introduce ring delay buffer
-
-*Status: Open (WIP), last (non-failing) GSoC commit: [0c01e34](
- https://github.com/mixxxdj/mixxx/pull/10840/commits/0c01e340f43386155896f56333e608695d407677)*
-
-The implemented optimized ring buffer data structure for delay handling is built
-into the effect chain handling structure. With the use of the new
-data structure, the delay handling performance is highly improved based on
-the benchmark measurements. Unfortunately, the PR was not merged during
-the coding period due to a failing test for the macOS CI (based on the inner
-rounding problem for zero value). At the same time, Mixxx's macOS CI
-started crashing during the configuration stage because of an issue
-that the workflow runner has changed. For that reason, the bug fix
-couldn't be tested and the PR was not merged in time. After the bug fix
-will be able to test on macOS CI and will pass, this PR is ready for merging.
-
----
-
-[mixxx#10843](https://github.com/mixxxdj/mixxx/pull/10843)
-- RingDelayBufferTest: refactor includes and span creation
-
-*Status: Merged*
-
-The tests for the `RingDelayBuffer` are refactored and the span creations
-are deduplicated.
-
----
-
-[mixxx#10858](https://github.com/mixxxdj/mixxx/pull/10858)
-- PitchShiftEffect: add description comments
-
-*Status: Merged*
-
-Added the comments for the Pitch Shift effect processing.
-
----
-
-[website#279](https://github.com/mixxxdj/website/pull/279)
-- content/news: add GSoC 2022 Work Product
-
-*Status: Merged*
-
-Adds a blog post containing the *"Work Product"* for Google Summer of Code 2022
-on the Mixxx website.
-
----
-
 #### Implementation
 
 ##### *Pitch Shift effect*
@@ -590,6 +372,224 @@ for the Ubuntu LTS, the [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810)
 and the [mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852) pull requests
 could be merged after the official Ubuntu release was announced in the middle
 of August due to support of C++20.
+
+#### Pull requests and issues
+[mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
+- PitchShiftEffect: add independent effect
+
+*Status: Merged*
+
+The PR adds an independent effect to Mixxx's built-in effects.
+The implementation uses the [RubberBand library](
+https://breakfastquay.com/rubberband/) for changing a pitch
+of an input track. The effect works in real-time mode and adheres
+to the “push model” implementation. That means that the input data are offered
+to the RubberBand instead of that the library requires the amount
+of input data.
+
+---
+
+[mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810)
+- EngineEffectsDelay: effect chain delay handling
+
+*Status: Merged*
+
+This PR adds the structure for the Group Delay handling of the effect chain.
+Based on that, some effects can produce latency due to their inner processing.
+The latency has to be handled for the Dry/Wet and Dry+Wet modes that the dry
+and wet signals overlapped. The structure for delay reporting from the effects
+into the effect chain was implemented. With that, the dry signal delaying
+to overlap with the wet signal was implemented as well. Because it is
+a critical part of the application engine performance, the tests and benchmarks
+were included in the development.
+
+In this PR, the `std::span` was newly introduced into the Mixxx software code
+with the design proposal and cooperation of my mentor. The util for working
+with spans was implemented, so other developers can easily work with spans
+directly from the custom Mixxx data structures. With that, the Mixxx code
+is being upgraded using the [C++20 standard](
+https://en.cppreference.com/w/cpp/20).
+
+---
+
+[mixxx#4848](https://github.com/mixxxdj/mixxx/pull/4848)
+- Fix EngineDelay and EngineFilterDelay modulo calculation documentation
+
+*Status: Merged*
+
+Based on the code changes in the `EngineEffectsDelay` and discussion
+with my mentor, the explanation commentary was added to two other Mixxx
+structures working on a quite similar principle.
+
+---
+
+[mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852)
+- RingDelayBuffer: ring buffer for delay handling
+
+*Status: Merged*
+
+During the creation of the `EngineEffectsDelay` for the Group Delay handling
+of the effect chain, it was suggested to create an optimized data structure
+for the inner processing based on the ring buffer. This widely-known
+signal processing structure was improved and optimized specifically
+for the use case with handling of delay. Again, tests and benchmarks
+were created for the `RingDelayBuffer` and based on benchmarks results the used
+data copy functions were compared.
+
+---
+
+[vcpkg#48](https://github.com/mixxxdj/vcpkg/pull/48)
+- [rubberband] add overlaid rubberband v3
+
+*Status: Merged*
+
+During the coding period, the new RubberBand library release v3.0.0
+was announced. Based on the implementation for adding RubberBand v2.0.2 directly
+into the microsoft / vcpkg repository by the Mixxx organization administrator,
+the RubberBand v3.0.0 was added into the overlaid ports in the Mixxx fork
+of the original repository.
+
+---
+
+[mixxx#4869](https://github.com/mixxxdj/mixxx/pull/4869)
+- EngineFilterDelay: clamp wrong delay values
+
+*Status: Merged*
+
+While working on [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810),
+I encountered a bug in the `EngineFilterDelay` structure: The structure
+works in a similar way but for a little different use case.
+Newly the unacceptably huge delay values are clamped in the setter, so,
+based on the inner calculation the structure will not produce absolutely wrong
+output. The PR was merged the same day as its creation.
+
+---
+
+[mixxx#4898](https://github.com/mixxxdj/mixxx/pull/4898)
+- PitchShiftEffect: decrease and report latency
+
+*Status: Draft (WIP), last GSoC commit: [146f104](
+https://github.com/mixxxdj/mixxx/pull/4898/commits/146f104e0e3d544178428f12f2f0c295b4545966)*
+
+In this draft PR was worked as another project extension. The implemented “push”
+way model is extended into the “pull” model instead. The new approach decreases
+the effect latency and this latency is reported in the effect chain
+delay handler. This PR is still a "Work In Progress". As the last work done
+the latency measurements were performed for several implementations
+and for different pitch settings. The measured data was plotted
+for demonstration. The new implementation was accepted and the PR will be done
+in the non-GSoC time as a future Mixxx contributor. With the new implementation,
+the Mixxx circular buffer data structure was improved and optimized
+for performance. So, it remains to finish the pull implementation by setting
+the right size of the input ring buffer.  Eventually, implement the input
+ring buffer size depending on the range that was set. As the last thing,
+the valid delay value propagation for the effect will be finished.
+
+---
+
+[mixxx#4901](https://github.com/mixxxdj/mixxx/pull/4901)
+- PitchShiftEffect: extend effect options
+
+*Status: Merged*
+
+The PR extends options of the Pitch Shift effect. The Range knob is added
+to the setting of the range of the Pitch knob. These two knobs work similarly
+to the real professional Pioneer DJM-900NX2 mixer which is widely used
+in clubs for live DJ mixing. With that, the Semitones mode toggle was added
+for changing the scale of the Pitch knob.  By default, this toggle is on,
+and the Pitch knob works in the Semitones mode. In musical terminology,
+the pitch is changed based on the semitone chromatic scale. If the toggle
+is off, the Pitch knob works in the Continuous mode, which is also the default
+in the RubberBand library. At last, the Formant preserving option was added
+which works with the namesake RubberBand library option. It preserves
+the resonant frequencies (formants) of the human vocal tract
+and other instruments (compensates for “chipmunk” or “growling” voices).
+With the PR, the new function for the calculation of the [Sign function](
+https://en.wikipedia.org/wiki/Sign_function) was added
+to the Mixxx util for math operations.
+
+---
+
+[mixxx#10827](https://github.com/mixxxdj/mixxx/pull/10827)
+- Improve buffers size function const-correctness
+
+*Status: Merged*
+
+This PR improves Mixxx’s buffers data structures by using the C++ constant
+expressions for the size function.
+
+---
+
+[mixxx#10832](https://github.com/mixxxdj/mixxx/issues/10832)
+- EngineEffect: invalid engine parameters handed over into an effect
+
+*Status: Open*
+
+During the work on the Pitch Shift effect, it was figured out, that the actual
+parameter settings are not propagated into the effects. The maximum
+possible values are used instead and based on that, some newly added effects
+can work wrong, based on the invalid values for sample rate or size
+of the buffer, for example.
+
+---
+
+[mixxx#10835](https://github.com/mixxxdj/mixxx/pull/10835)
+- EngineBufferScaleRubberBand: remove unused include
+
+*Status: Merged*
+
+The unused include was removed from the implemented Mixxx structure.
+
+---
+
+
+[mixxx#10840](https://github.com/mixxxdj/mixxx/pull/10840)
+- EngineEffectsDelay: introduce ring delay buffer
+
+*Status: Open (WIP), last (non-failing) GSoC commit: [0c01e34](
+https://github.com/mixxxdj/mixxx/pull/10840/commits/0c01e340f43386155896f56333e608695d407677)*
+
+The implemented optimized ring buffer data structure for delay handling is built
+into the effect chain handling structure. With the use of the new
+data structure, the delay handling performance is highly improved based on
+the benchmark measurements. Unfortunately, the PR was not merged during
+the coding period due to a failing test for the macOS CI (based on the inner
+rounding problem for zero value). At the same time, Mixxx's macOS CI
+started crashing during the configuration stage because of an issue
+that the workflow runner has changed. For that reason, the bug fix
+couldn't be tested and the PR was not merged in time. After the bug fix
+will be able to test on macOS CI and will pass, this PR is ready for merging.
+
+---
+
+[mixxx#10843](https://github.com/mixxxdj/mixxx/pull/10843)
+- RingDelayBufferTest: refactor includes and span creation
+
+*Status: Merged*
+
+The tests for the `RingDelayBuffer` are refactored and the span creations
+are deduplicated.
+
+---
+
+[mixxx#10858](https://github.com/mixxxdj/mixxx/pull/10858)
+- PitchShiftEffect: add description comments
+
+*Status: Merged*
+
+Added the comments for the Pitch Shift effect processing.
+
+---
+
+[website#279](https://github.com/mixxxdj/website/pull/279)
+- content/news: add GSoC 2022 Work Product
+
+*Status: Merged*
+
+Adds a blog post containing the *"Work Product"* for Google Summer of Code 2022
+on the Mixxx website.
+
+---
 
 #### Future work
 Concretely for the Pitch Shift effect, the effect will be improved
