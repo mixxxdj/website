@@ -575,7 +575,7 @@ or features can be added to the Pitch shift effect implementation:
  funny things without extra CPU cycles
 
 More widely, as the future work for the Mixxx application, the wider support
-for the LV2 standard for effects can be implemented or better, the Carla[^2]
+for the LV2 standard for effects can be implemented or better, the Carla
 audio plugin host can be introduced in the Mixxx application.
 It will allow users to use their favorite effects enabled via audio plugin
 standards such as LADSPA, DSSI, LV2, VST2, VST3 and so on,
