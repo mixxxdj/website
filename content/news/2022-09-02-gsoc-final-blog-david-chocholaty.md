@@ -520,12 +520,10 @@ Load Average: 1.50, 1.85, 1.76
 | BM_Copy2WithRampingGain/512         | 116 ns  | 116 ns  | 6011618    |
 | BM_Copy2WithRampingGain/4096        | 1113 ns | 1113 ns | 629003     |
 
-<!---
 #### Demo video
-TODO(davidchocholaty) add demo video
+*The video with a couple of examples of Pitch shift effect possible usage*
 
-@Video(https://www.youtube.com/watch?v=rt5Ed5GZ1U8)
--->
+@Video(https://www.youtube.com/watch?v=NTjV7s5Jb_o)
 
 #### Challenges
 Several problems arose during the coding period.
