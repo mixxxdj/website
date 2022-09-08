@@ -85,6 +85,8 @@ and development in general:
 [mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
 - PitchShiftEffect: add independent effect
 
+*Status: Merged*
+
 The PR adds an independent effect to Mixxx's built-in effects.
 The implementation uses the RubberBand library for changing a pitch
 of an input track. The effect works in real-time mode and adheres
@@ -96,6 +98,8 @@ of input data.
 
 [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810)
 - EngineEffectsDelay: effect chain delay handling
+
+*Status: Merged*
 
 This PR adds the structure for the group delay handling of the effect chain.
 Based on that, some effects can produce latency due to their inner processing.
@@ -117,6 +121,8 @@ is being upgraded using the C++20 standard.
 [mixxx#4848](https://github.com/mixxxdj/mixxx/pull/4848)
 - Fix EngineDelay and EngineFilterDelay modulo calculation documentation
 
+*Status: Merged*
+
 Based on the code changes in the `EngineEffectsDelay` and discussion
 with my mentor, the explanation commentary was added to two other Mixxx
 structures working on a quite similar principle.
@@ -125,6 +131,8 @@ structures working on a quite similar principle.
 
 [mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852)
 - RingDelayBuffer: ring buffer for delay handling
+
+*Status: Merged*
 
 During the creation of the `EngineEffectsDelay` for the group delay handling
 of the effect chain, it was suggested to create an optimized data structure
@@ -139,6 +147,8 @@ copy functions were compared.
 [vcpkg#48](https://github.com/mixxxdj/vcpkg/pull/48)
 - [rubberband] add overlaid rubberband v3
 
+*Status: Merged*
+
 During the coding period, the new RubberBand library release v3.0.0
 was announced. Based on the implementation for adding RubberBand v2.0.2 directly
 into the microsoft / vcpkg repository by the Mixxx organization admin,
@@ -149,6 +159,8 @@ of the original repository.
 
 [mixxx#4869](https://github.com/mixxxdj/mixxx/pull/4869)
 - EngineFilterDelay: clamp wrong delay values
+
+*Status: Merged*
 
 While working on [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810),
 I encountered a bug in the `EngineFilterDelay` structure: The structure
@@ -161,6 +173,9 @@ output. The PR was merged the same day as its creation.
 
 [mixxx#4898](https://github.com/mixxxdj/mixxx/pull/4898)
 - PitchShiftEffect: decrease and report latency
+
+*Status: Draft (WIP), last GSoC commit: [146f104](
+ https://github.com/mixxxdj/mixxx/pull/4898/commits/146f104e0e3d544178428f12f2f0c295b4545966)*
 
 In this draft PR was worked as another project extension. The implemented “push”
 way model is extended into the “pull” model instead. The new approach decreases
@@ -180,6 +195,8 @@ the valid delay value propagation for the effect will be finished.
 
 [mixxx#4901](https://github.com/mixxxdj/mixxx/pull/4901)
 - PitchShiftEffect: extend effect options
+
+*Status: Merged*
 
 The PR extends options of the Pitch shift effect. The Range knob is added
 to the setting of the range of Pitch knob. These two knobs work similarly
@@ -201,6 +218,8 @@ to the Mixxx util for math operations.
 [mixxx#10827](https://github.com/mixxxdj/mixxx/pull/10827)
 - Improve buffers size function const-correctness
 
+*Status: Merged*
+
 The PR improves Mixxx’s buffers data structures by using the C++ constant
 expressions for the size function.
 
@@ -208,6 +227,8 @@ expressions for the size function.
 
 [mixxx#10832](https://github.com/mixxxdj/mixxx/issues/10832)
 - EngineEffect: invalid engine parameters handed over into an effect
+
+*Status: Open*
 
 During the work on the Pitch shift effect, it was figured out, that the actual
 parameter settings are not propagated into the effects. The maximum
@@ -220,6 +241,8 @@ of the buffer, for example.
 [mixxx#10835](https://github.com/mixxxdj/mixxx/pull/10835)
 - EngineBufferScaleRubberBand: remove unused include
 
+*Status: Merged*
+
 The unused include was removed from the implemented Mixxx structure.
 
 ---
@@ -227,6 +250,9 @@ The unused include was removed from the implemented Mixxx structure.
 
 [mixxx#10840](https://github.com/mixxxdj/mixxx/pull/10840)
 - EngineEffectsDelay: introduce ring delay buffer
+
+*Status: Open (WIP), last (non-failing) GSoC commit: [0c01e34](
+ https://github.com/mixxxdj/mixxx/pull/10840/commits/0c01e340f43386155896f56333e608695d407677)*
 
 The implemented optimized ring buffer data structure for delay handling is built
 into the effect chain handling structure. With the use of the new
@@ -244,6 +270,8 @@ couldn't be tested and the PR was not merged in time.
 [mixxx#10843](https://github.com/mixxxdj/mixxx/pull/10843)
 - RingDelayBufferTest: refactor includes and span creation
 
+*Status: Merged*
+
 The tests for the `RingDelayBuffer` are refactored and the span creations
 are deduplicated.
 
@@ -252,12 +280,16 @@ are deduplicated.
 [mixxx#10858](https://github.com/mixxxdj/mixxx/pull/10858)
 - PitchShiftEffect: add description comments
 
+*Status: Merged*
+
 Added the comments for the Pitch shift effect processing.
 
 ---
 
 [website#279](https://github.com/mixxxdj/website/pull/279)
 - content/news: add GSoC 2022 Work Product
+
+*Status: Merged*
 
 Adds a blog post containing the *"Work Product"* for Google Summer of Code 2022
 on the Mixxx website.
