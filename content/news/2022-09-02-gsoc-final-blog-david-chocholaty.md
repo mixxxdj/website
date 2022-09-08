@@ -470,13 +470,7 @@ Load Average: 1.39, 1.82, 1.75
 
 ##### *With RingDelayBuffer*
 
-Run on (2 X 2593.91 MHz CPU s)  
-CPU Caches:
-
-* L1 Data 32 KiB (x2)
-* L1 Instruction 32 KiB (x2)
-* L2 Unified 1024 KiB (x2)
-* L3 Unified 36608 KiB (x1)
+Run on the same system as above.
 
 Load Average: 1.50, 1.85, 1.76
 
