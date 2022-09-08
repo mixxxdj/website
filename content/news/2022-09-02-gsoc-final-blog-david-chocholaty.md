@@ -491,8 +491,6 @@ CPU Caches:
 * L2 Unified 1024 KiB (x2)
 * L3 Unified 36608 KiB (x1)
 
-Load Average: 1.39, 1.82, 1.75
-
 | Benchmark                          | Time     | CPU      | Iterations |
 |------------------------------------|----------|----------|------------|
 | BM_ZeroDelay/64                    | 260 ns   | 260 ns   | 2690728    |
@@ -514,9 +512,6 @@ Load Average: 1.39, 1.82, 1.75
 ##### *With RingDelayBuffer*
 
 Run on the same system as above.
-
-Load Average: 1.50, 1.85, 1.76
-
 
 | Benchmark                           | Time    | CPU     | Iterations |
 |-------------------------------------|---------|---------|------------|
