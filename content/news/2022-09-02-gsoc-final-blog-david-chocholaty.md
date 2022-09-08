@@ -11,23 +11,24 @@ than the other Mixxx blog posts.*
 
 #### Introduction
 The project implements the Pitch Shift effect for the Mixxx DJ
-application. The Pitch Shift effect raises or lowers the original pitch
-of an audio signal[^1]. Thanks to the long working period, the project was expanded
-with the implementation of the Group Delay handling for the effect chain.
+Software Application. The Pitch Shift effect raises or lowers the original pitch
+of an audio signal[^1]. Thanks to the long working period, the project
+was expanded with the implementation of the Group Delay handling
+for the effect chain.
 
 #### Motivation
-Before the effect is implemented, the pitch could be changed using the deck's
+Before the effect was implemented, the pitch could be changed using the deck's
 rate slider separately only. This imposes significant restrictions on the ways
 other effects can interact with the sound. In this project, the new Pitch Shift
 effect is introduced in the built-in effects, which can be used
 in the effect chain. It implements the wish
 [Add a Transpose / Pitch Shift effect](
  https://github.com/mixxxdj/mixxx/issues/7389)
-for the Mixxx application. The effect has to work with the effect chain API.
+for the Mixxx software. The effect has to work with the effect chain API.
 With that, the other extensional options can be used. Primarily, it allows
-for the user to use a much wider range, than the Pitch Shifter
+for a user to use a much wider range, than the Pitch Shifter
 for the deck player. Due to the produced latency based on the pitch processing,
-the production delay has to be handled for the wet/dry or wet+dry mode
+the production delay has to be handled for the Dry/Wet or Dry+Wet mode
 to ensure that the original (dry) and processed (wet) signals overlap.
 
 #### Background
