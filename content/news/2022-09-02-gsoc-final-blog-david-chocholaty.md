@@ -99,7 +99,7 @@ The PR adds an independent effect to Mixxx's built-in effects.
 The implementation uses the [RubberBand library](
  https://breakfastquay.com/rubberband/) for changing a pitch
 of an input track. The effect works in real-time mode and adheres
-to the “push model” implementation. It means that the input data are offered
+to the “push model” implementation. That means that the input data are offered
 to the RubberBand instead of that the library requires the amount
 of input data.
 
@@ -120,10 +120,11 @@ a critical part of the application engine performance, the tests and benchmarks
 were included in the development.
 
 In this PR, the `std::span` was newly introduced into the Mixxx software code
-with the design proposal and cooperation of my Mentor. The util for working
+with the design proposal and cooperation of my mentor. The util for working
 with spans was implemented, so other developers can easily work with spans
 directly from the custom Mixxx data structures. With that, the Mixxx code
-is being upgraded using the C++20 standard.
+is being upgraded using the [C++20 standard](
+ https://en.cppreference.com/w/cpp/20).
 
 ---
 
@@ -160,7 +161,7 @@ data copy functions were compared.
 
 During the coding period, the new RubberBand library release v3.0.0
 was announced. Based on the implementation for adding RubberBand v2.0.2 directly
-into the microsoft / vcpkg repository by the Mixxx organization admin,
+into the microsoft / vcpkg repository by the Mixxx organization administrator,
 the RubberBand v3.0.0 was added into the overlaid ports in the Mixxx fork
 of the original repository.
 
@@ -585,7 +586,8 @@ the usage of the `std::span` from the standard library which is supported
 by C++20. Because the Mixxx organization adheres to its own
 [Minimum requirements policy](
  https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
-for the Ubuntu LTS, the `EngineEffectsDelay` and `RingDelayBuffer`
+for the Ubuntu LTS, the [mixxx#4810](https://github.com/mixxxdj/mixxx/pull/4810)
+and the [mixxx#4852](https://github.com/mixxxdj/mixxx/pull/4852) pull requests
 could be merged after the official Ubuntu release was announced in the middle
 of August due to support of C++20.
 
@@ -621,17 +623,17 @@ the workflow and development for the greater organization as Mixxx
 was completely different and gives me a lot. I have learned so many cool things
 about audio processing, development in C++ with the best practices,
 using the new C++20 standard, testing and benchmarking with the use
-of Google frameworks, and improving my knowledge with git and approaches
-to open source development in general. Thanks to the change
-in the proposed project extension, I learned a lot about real-time audio signal
-processing and about cool data structures. I had a chance to try to design
-the data structure with extensions too. I am really glad about the plan change
-now. I really improved my English, both, written and spoken. I think,
-that it was the best experience so far for me as a developer I ever had.
-It is awesome, that I can publish my work and have immediately the feedback
-and proposed improvements. With that, I liked the open source development
-to just how much I can learn from the awesome people and create new cool stuff.
-Despite I’m a college student, this actually missed me a lot,
+of Google frameworks, and improving my knowledge with [git](
+ https://git-scm.com/) and approaches to open source development in general.
+Thanks to the change in the proposed project extension, I learned a lot about
+real-time audio signal processing and about cool data structures. I had a chance
+to try to design the data structure with extensions too. I am really glad about
+the plan change now. I really improved my English, both, written and spoken.
+I think, that it was the best experience so far for me as a developer
+I ever had. It is awesome, that I can publish my work and have immediately
+the feedback and proposed improvements. With that, I liked the open source
+development to just how much I can learn from the awesome people and create new
+cool stuff. Despite I’m a college student, this actually missed me a lot,
 to just have feedback on my work which opens me the opportunities to learn.
 I really felt that I’m a part of the community. I will be happy to continue
 being part of the Mixxx organization and contributing to open source.
@@ -646,7 +648,7 @@ Mixxx features, the originally proposed extension was replanned and changed.
 The new Group Delay handling structure was successfully implemented
 and optimized with the implementation of the extended data structure.
 In the GSoC Coding period, work was started to minimize the effects latency as
-well as to polish the effect even more.  Unfortunately, that work could
+well as to polish the effect even more. Unfortunately, that work could
 not be finished before the GSoC deadline.
 
 During the coding period, I lined up among the top Mixxx contributors
@@ -665,21 +667,19 @@ in total.
 First, I would like to many thank my mentor [@Swiftb0y](
 {author}nikolaus-einhauser) for his guidance, help, reviews, and a lot of new
 information and lessons he gave me during the summer. I'm just motivated
-and learned a lot. I would like to thank the Mixxx organization admin
+and learned a lot. I would like to thank the Mixxx organization administrator
 [@Daniel Schürmann]({author}daniel-schurmann) for his help, reviews
 and active contributions with new ideas and improvements to my project
 and pull requests. Thank you both for involving me in the Mixxx development
 process and for constructive criticism which offers me learn many new things
 in the past weeks. I would like to thank my summer colleague for the Mixxx
 organization and friend [@Fatih Emre](https://github.com/fatihemreyildiz)
-for his help and synergy on the final blog structure and chapters. Thank you
-to [@Be.]({author}be) for taking care of publishing
-the demo video on the Mixxx DJ Software YouTube channel. Of course,
-I would like to thank all Mixxx developers for welcoming me into the Mixxx
-family and for their help. I would like to continue our cooperation after GSoC
-end as Mixxx developers. I look forward to our future teamwork. Many thanks
-to the Google Summer of Code team they made this amazing experience possible
-for me.
+for his help and synergy on the final blog post structure and chapters.
+Of course, I would like to thank all Mixxx developers for welcoming me
+into the Mixxx family and for their help. I would like to continue our
+cooperation after GSoC end as Mixxx developers. I look forward to our future
+teamwork. Many thanks to the Google Summer of Code team they made this amazing
+experience possible for me.
 
 #### Resources
 
@@ -687,8 +687,14 @@ for me.
  https://summerofcode.withgoogle.com/)
 * [https://bugs.launchpad.net/mixxx/+bug/1299035](
  https://bugs.launchpad.net/mixxx/+bug/1299035)
+* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](
+ https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
+* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](
+ https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
 * [https://breakfastquay.com/rubberband/](
  https://breakfastquay.com/rubberband/)
+* [https://en.cppreference.com/w/cpp/20](
+ https://en.cppreference.com/w/cpp/20)
 * [https://en.wikipedia.org/wiki/Sign_function](
  https://en.wikipedia.org/wiki/Sign_function)
 * [https://www.surina.net/soundtouch/](
@@ -701,10 +707,8 @@ for me.
  https://github.com/google/googletest)
 * [https://github.com/google/benchmark](
  https://github.com/google/benchmark)
-* [https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained](
- https://support.focusrite.com/hc/en-gb/articles/115004120965-Sample-Rate-Bit-Depth-Buffer-Size-Explained)
-* [https://developer.apple.com/documentation/coreaudiotypes/audiobuffer](
- https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)
+* [https://git-scm.com/](
+ https://git-scm.com/)
 
 [^1]: Wikipedia, Pitch shift, Modified: 6 June 2022,
 Accessed 2 Sept. 2022, Retrieved from:
