@@ -678,7 +678,7 @@ process and for constructive criticism which offers me learn many new things
 in the past weeks. I would like to thank my summer colleague for the Mixxx
 organization and friend [@Fatih Emre](https://github.com/fatihemreyildiz)
 for his help and synergy on the final blog structure and chapters. Thank you
-to [@Be.](http://127.0.0.1:8000/news/author/be) for taking care of publishing
+to [@Be.]({author}be) for taking care of publishing
 the demo video on the Mixxx DJ Software YouTube channel. Of course,
 I would like to thank all Mixxx developers for welcoming me into the Mixxx
 family and for their help. I would like to continue our cooperation after GSoC
