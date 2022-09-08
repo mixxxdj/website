@@ -35,32 +35,32 @@ to ensure that the original (dry) and processed (wet) signals overlap.
 List of terms from the field of music, sound processing
 and development in general:
 
+* Pitch
+    * Pitch is a perceptual property of sounds that allows
+      their ordering on a frequency-related scale. The pitch
+      is the quality that makes it possible to judge sounds as "higher"
+      and "lower" in the sense associated with musical melodies[^2].
 * Scale
     * In music theory, a scale is any set of musical notes ordered
      by fundamental frequency or pitch. The scale ordered
      by increasing pitch is an ascending scale, and a scale ordered
-     by decreasing pitch is a descending scale[^2].
+     by decreasing pitch is a descending scale[^3].
 * Octave
     * In music, an octave is an interval between one musical pitch
-     and another with double its frequency[^3].
+     and another with double its frequency[^4].
 * Interval
     * In music theory, an interval is a difference in pitch between
      two sounds. In western scales, intervals are most commonly differences
-     between whole tones and semitones[^4].
+     between whole tones and semitones[^5].
 * Semitone
     * A semitone is a distance in pitch between a note
      and the very next note, higher or lower. It is the smallest interval
-     in most western scales[^5].
+     in most western scales[^6].
 * Chromatic scale
     * A chromatic scale is a set of twelve pitches used
      in tonal music, with notes separated by the interval
-     of a semitone[^6].
-* Pitch
-    * Pitch is a perceptual property of sounds that allows
-     their ordering on a frequency-related scale. The pitch
-     is the quality that makes it possible to judge sounds as "higher"
-     and "lower" in the sense associated with musical melodies[^7].
-* Wet and dry signals
+     of a semitone[^7].
+* Dry and wet signals
     * Dry sound signals refer to the raw or unprocessed sounds
      that usually come from a direct recording. On the other hand,
      wet sounds refer to the processed sound/signal[^8].
@@ -72,13 +72,13 @@ and development in general:
 * Audio buffer
     * An audio buffer holds a fixed size amount of sampled audio data.
      The audio buffer size determines the time allowed for the computer
-     to process the audio data. Thus, it also determines Latency.
+     to process the audio data. Thus, it also determines latency.
 * Latency
     * In the audio world, “latency” is another word for “delay”[^10].
      The latency (time) of an audio system refers to the time difference
      from the moment a signal is fed into the system, to the moment it appears
-     at the output[^11]. For example, audio latency is when there’s a noticeable
-     delay between the sound being played and the moment it reaches
+     at the output[^11]. For example, audio latency is when there is
+     a noticeable delay between the sound being played and the moment it reaches
      the speakers[^10]. Depending on the application, such a delay can have various
      effects. Usually, the aim is to achieve the lowest possible latency[^11].
 
@@ -700,30 +700,30 @@ for me.
 Accessed 2 Sept. 2022, Retrieved from:
 [https://en.wikipedia.org/wiki/Pitch_shift](
  https://en.wikipedia.org/wiki/Pitch_shift)
-[^2]: Wikipedia, Scale (music), Modified: 13 July 2022,
+[^2]: Wikipedia, Pitch (music), Modified: 6 Sept. 2022,
+Accessed: 7 Sept. 2022, Retrieved from:
+[https://en.wikipedia.org/wiki/Pitch_(music)](
+ https://en.wikipedia.org/wiki/Pitch_(music))
+[^3]: Wikipedia, Scale (music), Modified: 13 July 2022,
 Accessed 1 Sept. 2022, Retrieved from:
 [https://en.wikipedia.org/wiki/Scale_(music)](
  https://en.wikipedia.org/wiki/Scale_(music))
-[^3]: Wikipedia, Octave, Modified: 18 June 2022,
+[^4]: Wikipedia, Octave, Modified: 18 June 2022,
 Accessed 1 Sept. 2022, Retrieved from:
 [https://en.wikipedia.org/wiki/Octave](
  https://en.wikipedia.org/wiki/Octave)
-[^4]: Wikipedia, Interval (music), Modified: 6 Sept. 2022,
-Accessed: 1 Sept. 2022, Retrieved from:
+[^5]: Wikipedia, Interval (music), Modified: 6 Sept. 2022,
+Accessed: 7 Sept. 2022, Retrieved from:
 [https://en.wikipedia.org/wiki/Interval_(music)](
  https://en.wikipedia.org/wiki/Interval_(music))
-[^5]: Dan Farrant, A Guide To Semitones & Tones (Half & Whole Steps),
+[^6]: Dan Farrant, A Guide To Semitones & Tones (Half & Whole Steps),
 Modified: 25 June 2022, Accessed: 2 Sept. 2022, Retrieved from:
 [https://hellomusictheory.com/learn/semitones-tones/](
  https://hellomusictheory.com/learn/semitones-tones/)
-[^6]: Wikipedia, Chromatic scale, Modified: 15 March 2022,
+[^7]: Wikipedia, Chromatic scale, Modified: 15 March 2022,
 Accessed: 1 Sept. 2022, Retrieved from:
 [https://en.wikipedia.org/wiki/Chromatic_scale](
  https://en.wikipedia.org/wiki/Chromatic_scale)
-[^7]: Wikipedia, Pitch (music), Modified: 6 Sept. 2022,
-Accessed: 1 Sept. 2022, Retrieved from:
-[https://en.wikipedia.org/wiki/Pitch_(music)](
- https://en.wikipedia.org/wiki/Pitch_(music))
 [^8]: Celine, Difference Between Wet and Dry Signals or Sounds,
 Modified: 22 Feb. 2012, Accessed: 3 Sept. 2022, Retrieved from:
 [http://www.differencebetween.net/technology/difference-between-wet-and-dry-signals-or-sounds/](
