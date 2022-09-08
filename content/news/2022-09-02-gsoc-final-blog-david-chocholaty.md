@@ -325,9 +325,9 @@ The Pitch Shift effect has the following options:
 * Semitones mode
 * Formant preserving
 
-The Pitch knob changes a pitch of a track up or down. For the default
+The Pitch knob changes the pitch of a track up or down. For the default
 middle position, the track pitch is unchanged. The Range knob ensures setting
-a range of the Pitch knob. The Pitch knob based on the range setting can work
+the range of the Pitch knob. The Pitch knob based on the range setting can work
 from zero range to 2 octaves range. These two knobs work similarly to the real
 professional Pioneer DJM-900NX2 mixer which is widely used in clubs for live
 DJ mixing. Then, the Semitones mode toggle was added. This option sets the scale
