@@ -81,6 +81,13 @@ and development in general:
      a noticeable delay between the sound being played and the moment it reaches
      the speakers[^10]. Depending on the application, such a delay can have various
      effects. Usually, the aim is to achieve the lowest possible latency[^11].
+* Sample Rate
+    * Audio sampling is the process of transforming a musical source
+     into a digital file. Digital audio recording does this by taking samples
+     of the audio source along the soundwaves at regular intervals. The more
+     samples are taken - known as the ‘sample rate’ - the more closely the final
+     digital file will resemble the original. A higher sample rate tends
+     to deliver a better-quality audio reproduction[^12].
 
 #### Pull requests and issues
 [mixxx#4775](https://github.com/mixxxdj/mixxx/pull/4775)
@@ -89,10 +96,11 @@ and development in general:
 *Status: Merged*
 
 The PR adds an independent effect to Mixxx's built-in effects.
-The implementation uses the RubberBand library for changing a pitch
+The implementation uses the [RubberBand library](
+ https://breakfastquay.com/rubberband/) for changing a pitch
 of an input track. The effect works in real-time mode and adheres
 to the “push model” implementation. It means that the input data are offered
-to the RubberBand library instead of that the library requires the amount
+to the RubberBand instead of that the library requires the amount
 of input data.
 
 ---
@@ -102,16 +110,16 @@ of input data.
 
 *Status: Merged*
 
-This PR adds the structure for the group delay handling of the effect chain.
+This PR adds the structure for the Group Delay handling of the effect chain.
 Based on that, some effects can produce latency due to their inner processing.
-The latency has to be handled for the wet/dry and wet+dry modes that the dry
+The latency has to be handled for the Dry/Wet and Dry+Wet modes that the dry
 and wet signals overlapped. The structure for delay reporting from the effects
 into the effect chain was implemented. With that, the dry signal delaying
-to overlap with the wet signal was implemented too. Because it is
+to overlap with the wet signal was implemented as well. Because it is
 a critical part of the application engine performance, the tests and benchmarks
 were included in the development.
 
-In this PR, the `std::span` was newly introduced into the Mixxx app code
+In this PR, the `std::span` was newly introduced into the Mixxx software code
 with the design proposal and cooperation of my Mentor. The util for working
 with spans was implemented, so other developers can easily work with spans
 directly from the custom Mixxx data structures. With that, the Mixxx code
@@ -140,8 +148,8 @@ of the effect chain, it was suggested to create an optimized data structure
 for the inner processing based on the ring buffer. This widely-known
 signal processing structure was improved and optimized specifically
 for the use case with handling of delay. Again, tests and benchmarks
-were created for the `RingDelayBuffer` and based on benchmarks the used data
-copy functions were compared.
+were created for the `RingDelayBuffer` and based on benchmarks results the used
+data copy functions were compared.
 
 ---
 
@@ -181,7 +189,7 @@ output. The PR was merged the same day as its creation.
 In this draft PR was worked as another project extension. The implemented “push”
 way model is extended into the “pull” model instead. The new approach decreases
 the effect latency and this latency is reported in the effect chain
-delay handler. This PR is still a Work In Progress. As the last work done
+delay handler. This PR is still a "Work In Progress". As the last work done
 the latency measurements were performed for several implementations
 and for different pitch settings. The measured data was plotted
 for demonstration. The new implementation was accepted and the PR will be done
@@ -200,18 +208,19 @@ the valid delay value propagation for the effect will be finished.
 *Status: Merged*
 
 The PR extends options of the Pitch shift effect. The Range knob is added
-to the setting of the range of Pitch knob. These two knobs work similarly
+to the setting of the range of the Pitch knob. These two knobs work similarly
 to the real professional Pioneer DJM-900NX2 mixer which is widely used
 in clubs for live DJ mixing. With that, the Semitones mode toggle was added
 for changing the scale of the Pitch knob.  By default, this toggle is on,
-and the Pitch knob works in the semitones mode. In musical terminology,
+and the Pitch knob works in the Semitones mode. In musical terminology,
 the pitch is changed based on the semitone chromatic scale. If the toggle
-is off, the Pitch knob works in the continuous mode, which is also the default
+is off, the Pitch knob works in the Continuous mode, which is also the default
 in the RubberBand library. At last, the Formant preserving option was added
-which works with the RubberBand library option. It preserves
+which works with the namesake RubberBand library option. It preserves
 the resonant frequencies (formants) of the human vocal tract
 and other instruments (compensates for “chipmunk” or “growling” voices).
-With the PR, the new function for the calculation of the Sign function was added
+With the PR, the new function for the calculation of the [Sign function](
+ https://en.wikipedia.org/wiki/Sign_function) was added
 to the Mixxx util for math operations.
 
 ---
@@ -221,7 +230,7 @@ to the Mixxx util for math operations.
 
 *Status: Merged*
 
-The PR improves Mixxx’s buffers data structures by using the C++ constant
+This PR improves Mixxx’s buffers data structures by using the C++ constant
 expressions for the size function.
 
 ---
@@ -267,7 +276,6 @@ couldn't be tested and the PR was not merged in time. After the bug fix
 will be able to test on macOS CI and will pass, this PR is ready for merging.
 
 ---
-
 
 [mixxx#10843](https://github.com/mixxxdj/mixxx/pull/10843)
 - RingDelayBufferTest: refactor includes and span creation
@@ -683,6 +691,8 @@ for me.
  https://bugs.launchpad.net/mixxx/+bug/1299035)
 * [https://breakfastquay.com/rubberband/](
  https://breakfastquay.com/rubberband/)
+* [https://en.wikipedia.org/wiki/Sign_function](
+ https://en.wikipedia.org/wiki/Sign_function)
 * [https://kx.studio/Applications:Carla](
  https://kx.studio/Applications:Carla)
 * [https://lv2plug.in/](
@@ -740,3 +750,7 @@ Retrieved from:
 Accessed: 7 Sept. 2022, Retrieved from:
 [https://www.nti-audio.com/en/news/latency-in-audio-systems](
  https://www.nti-audio.com/en/news/latency-in-audio-systems)
+[^12]: Adobe, Sample rates and audio sampling: a guide for beginners,
+Accessed: 8 Sept. 2022, Retrieved from:
+[https://www.adobe.com/uk/creativecloud/video/discover/audio-sampling.html](
+ https://www.adobe.com/uk/creativecloud/video/discover/audio-sampling.html)
