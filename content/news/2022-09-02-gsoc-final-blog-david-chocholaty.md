@@ -1,4 +1,4 @@
-title: GSoC 2022 Work Product - Pitch Shift effect and Group delay handling
+title: GSoC 2022 Work Product - Pitch Shift effect and Group Delay handling
 authors: David Chocholatý
 status: draft
 tags: gsoc, gsoc-2022
@@ -6,7 +6,7 @@ comments: yes
 
 Disclaimer: *The blog post primarily serves as the documentation
 for the Google Summer of Code 2022 project: "Pitch Shift effect
-and Group delay handling". Thus, it contains a lot more detailed description,
+and Group Delay handling". Thus, it contains a lot more detailed description,
 than the other Mixxx blog posts.*
 
 #### Introduction
@@ -143,7 +143,7 @@ structures working on a quite similar principle.
 
 *Status: Merged*
 
-During the creation of the `EngineEffectsDelay` for the group delay handling
+During the creation of the `EngineEffectsDelay` for the Group Delay handling
 of the effect chain, it was suggested to create an optimized data structure
 for the inner processing based on the ring buffer. This widely-known
 signal processing structure was improved and optimized specifically
@@ -207,7 +207,7 @@ the valid delay value propagation for the effect will be finished.
 
 *Status: Merged*
 
-The PR extends options of the Pitch shift effect. The Range knob is added
+The PR extends options of the Pitch Shift effect. The Range knob is added
 to the setting of the range of the Pitch knob. These two knobs work similarly
 to the real professional Pioneer DJM-900NX2 mixer which is widely used
 in clubs for live DJ mixing. With that, the Semitones mode toggle was added
@@ -240,7 +240,7 @@ expressions for the size function.
 
 *Status: Open*
 
-During the work on the Pitch shift effect, it was figured out, that the actual
+During the work on the Pitch Shift effect, it was figured out, that the actual
 parameter settings are not propagated into the effects. The maximum
 possible values are used instead and based on that, some newly added effects
 can work wrong, based on the invalid values for sample rate or size
@@ -292,7 +292,7 @@ are deduplicated.
 
 *Status: Merged*
 
-Added the comments for the Pitch shift effect processing.
+Added the comments for the Pitch Shift effect processing.
 
 ---
 
@@ -308,35 +308,35 @@ on the Mixxx website.
 
 #### Implementation
 
-##### *Pitch shift effect*
-The Pitch shift effect main algorithm is implemented
+##### *Pitch Shift effect*
+The Pitch Shift effect main algorithm is implemented
 in the `PitchShiftEffect` class. The implementation uses the widely known
 audio time-stretching and pitch-shifting library RubberBand.
 The implementation adheres to the “push model”. That means, that
 the input audio samples are offered to the RubberBand library API directly.
-Instead of the main Pitch shifter for each deck player, which
+Instead of the main Pitch Shifter for each deck player, which
 has a limited range (only 7 semitones up and down in musical terms,
-which means not even an octave), the independent Pitch shift effect offers
+which means not even an octave), the independent Pitch Shift effect offers
 to work in the range of ± 2 octaves (± 24 semitones).
-The pitch shift effect has the following options:
+The Pitch Shift effect has the following options:
 
 * Pitch knob
 * Range knob
 * Semitones mode
 * Formant preserving
 
-The Pitch knob changes the Pitch of the track up or down. For the default
+The Pitch knob changes a pitch of a track up or down. For the default
 middle position, the track pitch is unchanged. The Range knob ensures setting
-the range of the Pitch knob. The Pitch knob based on the range setting can work
+a range of the Pitch knob. The Pitch knob based on the range setting can work
 from zero range to 2 octaves range. These two knobs work similarly to the real
 professional Pioneer DJM-900NX2 mixer which is widely used in clubs for live
 DJ mixing. Then, the Semitones mode toggle was added. This option sets the scale
-of the Pitch knob. The knob can work in two modes: continuous or semitones mode.
-In the semitones mode, the pitch is changed based on the chromatic scale
-in a musical way. Otherwise, the pitch is processed continuously working,
-which is the default approach of the used RubberBand library. By default,
-the semitones mode is on. As last, the Formant preserving option was added
-which uses the RubberBand API same called option. It preserves
+of the Pitch knob. The knob can work in two modes: Continuous or Semitones mode.
+In the Semitones mode, the pitch is changed based on the chromatic scale
+in a musical way. Otherwise, the pitch is processed continuously,
+which is a default approach of the used RubberBand library. By default,
+the Semitones mode is on. As last, the Formant preserving option was added
+which uses the RubberBand API namesake option. It preserves
 the resonant frequencies (formants) of the human vocal tract
 and other instruments (compensates for “chipmunk” or “growling” voices).
 
@@ -349,32 +349,32 @@ Related files:
 
 Screenshots:
 
-*Pitch shift effect in the Mixxx app*
-![Pitch shift effect in the Mixxx app]({static}/images/news/mixxx-pitch-shift-app.png)
+*Pitch Shift effect in the Mixxx software*
+![Pitch Shift effect in the Mixxx software]({static}/images/news/mixxx-pitch-shift-app.png)
 
-*Pitch shift effect in the effect chain*
-![Pitch shift effect in the effect chain]({static}/images/news/mixxx-pitch-shift-effect.png)
+*Pitch Shift effect in the effect chain*
+![Pitch Shift effect in the effect chain]({static}/images/news/mixxx-pitch-shift-effect.png)
 
-##### *Group delay handling*
+##### *Group Delay handling*
 
-As a project extension, the group delay handling of the effect chain
-was implemented. Based on the Pitch shift effect processing,
+As a project extension, the Group Delay handling of the effect chain
+was implemented. Based on the Pitch Shift effect processing,
 using the RubberBand library, the effect produces some amount of latency.
-Based on that, if we would like to play the original unprocessed signal
-and the processed one together using the wet/dry or wet+dry mode, the two
-audio signals will not overlap based on the latency. With that, the common
+Due to that, if we would like to play the original unprocessed signal
+and the processed one together using the Dry/Wet or Dry+Wet mode, the two
+audio signals will not overlap because of latency. With that, the common
 audio processing approach is to delay the original signal by the amount
 of latency to overlap the signals. Based on the Mixxx effect chain API
 (`EngineEffectChain`), the group delay latency handling was implemented
 for the whole effect chain and works for the total produced latency
-from the effect chain used effects. The main algorithm of the group delay
+from the effect chain used effects. The main algorithm of the Group Delay
 handling for the effect chain is implemented in the `EngineEffectsDelay` class.
-The implemented APIs take the group delay and the input signal and return
+The implemented APIs take the group delay with the input signal and return
 the delayed signal using the inner data structures. For group delay changes,
 it performs cross-fading to avoid unwanted clicks in the output audio signal.
 The implemented API was used and built into the implementation
 of the effect chain. Now, the sum of the latency reported by effects
-is processed. As was mentioned, lastly, the group delay reporting
+is processed. As was mentioned, lastly, the Group Delay reporting
 from the effects was implemented using the Mixxx API structures for effects
 (`EngineEffect` and `EffectProcessor`).
 
@@ -397,13 +397,13 @@ Related files:
  https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/engine/effects/engineeffectchain.h)
 
 Based on the implementation of the `EngineEffectsDelay`, it was soon figured out,
-that the custom optimized data structure for the group delay handling
+that the custom optimized data structure for the Group Delay handling
 should be created. A common approach for working with the audio signal stream
 is to use the ring buffer data structure. However, based on the specification
-of group delay handling and requirements on the buffer data structure,
+of Group Delay handling and requirements on the buffer data structure,
 the classic widely known implementation is not appropriate for use. So,
 the new improved and optimized variant of the ring buffer data structure
-was created specifically for the group delay handling use case.
+was created specifically for the Group Delay handling use case.
 The implementation can be found in the `RingDelayBuffer` class.
 
 Related files:
@@ -416,19 +416,19 @@ Related files:
  https://github.com/mixxxdj/mixxx/blob/f3a3e04fe5a732d0a3e61b3bc2e2c3ec904a8630/src/test/ringdelaybuffer_test.cpp)
 
 After the `RingDelayBuffer` was implemented, the new optimized data structure
-was introduced in the `EngineEffectsDelay` for group delay handling. With that,
+was introduced in the `EngineEffectsDelay` for Group Delay handling. With that,
 the performance has highly improved based on the benchmark results comparison.
 The benchmarking process and results will be described in detail
-in the Testing and benchmarking chapter later.
+in the "Testing and benchmarking" chapter later.
 
-##### *Pitch shift effect improvement*
+##### *Pitch Shift effect improvement*
 
 At the latest, it was started the “pull model” implementation for decreasing
-the Pitch shift effect latency in the GSoC period. In the new
+the Pitch Shift effect latency in the GSoC period. In the new
 model implementation, the RubberBand API requires the amount of input samples
 and this amount of samples is passed. The main difference between the usage
-of these two implementations in the Mixxx app is, which little tradeoff
-has to be done. When the “push model” implementation is used, the input
+of these two implementations in the Mixxx software is which tradeoff
+has to be made. When the “push model” implementation is used, the input
 data samples have not to be prefilled between the processing
 but the audio dropouts can occur. On the other hand,
 the “pull model” implementation with correctly set structure sizes
@@ -460,11 +460,11 @@ for the same pitch setting.
 for unchanged pitch]({static}/images/news/pitch-shift-effect-graph-2.svg)
 
 The results of the measurements clearly show, that despite the “pull model”
-implementation for the Pitch shift effect in the effect chain is not optimal,
+implementation for the Pitch Shift effect in the effect chain is not optimal,
 it should be preferred over the “push model” implementation.
 
 #### Testing and benchmarking
-With the implementation of the `EngineEffectsDelay` for group delay handling
+With the implementation of the `EngineEffectsDelay` for Group Delay handling
 and the `RingDelayBuffer` as an optimized data structure for the same use case,
 the tests were included with the use of the GoogleTest framework. Basically,
 the common situations were tested, then extreme cases and cases
@@ -475,7 +475,7 @@ with the use of the Google Benchmark. Based on the results of benchmarks,
 the used functions and algorithms were compared. After both of the mentioned
 structures were implemented, tested and optimized, the `RingDelayBuffer`
 was introduced in the `EngineEffectsDelay` as an inner structure
-for the group delay handling. Based on the changes and use of optimized
+for the Group Delay handling. Based on the changes and use of optimized
 data structure the performance has highly improved. The performance differences
 are shown in the following benchmarks results taken over
 from the Ubuntu GitHub CI’s results.
@@ -557,7 +557,7 @@ Load Average: 1.50, 1.85, 1.76
 | BM_Copy2WithRampingGain/4096        | 1113 ns | 1113 ns | 629003     |
 
 #### Demo video
-*The video with a couple of examples of Pitch shift effect possible usage*
+*The video with a couple of examples of Pitch Shift effect possible usage*
 
 @Video(https://www.youtube.com/watch?v=NTjV7s5Jb_o)
 
@@ -577,12 +577,12 @@ for the effect, despite the issues which are associated with it. After that,
 the Mixxx application did not have implemented the effects delay handler
 for the effect chain, so, the implementation of this structure
 was automatically needed. Based on that, the goals of the project were changed.
-The original proposal contained the Pitch shift effect, and with that
+The original proposal contained the Pitch Shift effect, and with that
 as a project extension to the project requirements of the Mixxx organization,
 the Auto-tune effect was proposed. After consideration, the Zulip chat survey
 for other Mixxx developers and users was created to be able to vote for possible
 project extensions. Based on the survey results, the project extension goal
-was changed to the implementation and optimization of the group delay handling
+was changed to the implementation and optimization of the Group Delay handling
 for the effect chain to improve the performance of the Pitch Shift effect
 for the wet/dry and wet+dry mode. As the last challenge, I would like to mention
 the usage of the `std::span` from the standard library which is supported
@@ -598,13 +598,13 @@ Concretely for the Pitch Shift effect, the effect will be improved
 using the “pull model” implementation after the end of the GSoC period.
 With that, the wet/dry mode will be done for the effect too.
 As the next project extensions, based on the survey, the following options
-or features can be added to the Pitch shift effect implementation:
+or features can be added to the Pitch Shift effect implementation:
 
 * Auto-tune effect
 * A piano keyboard interface
 * Optimize interface for common controllers
 * CPU load balancing
-* Consider interaction with the main Pitch shifter
+* Consider interaction with the main Pitch Shifter
 * Expose compensation delay as additional parameter for making
  funny things without extra CPU cycles
 
@@ -647,7 +647,7 @@ by the Mixxx organization in their project idea, on which the project proposal
 was based, were met. Thanks to enough time in the GSoC Coding period was worked
 on the project extension. Based on the situation and the importance of new
 Mixxx features, the originally proposed extension was replanned and changed.
-The new group delay handling structure was successfully implemented
+The new Group Delay handling structure was successfully implemented
 and optimized with the implementation of the extended data structure.
 In the GSoC Coding period, work was started to minimize the effects latency as
 well as to polish the effect even more.  Unfortunately, that work could
