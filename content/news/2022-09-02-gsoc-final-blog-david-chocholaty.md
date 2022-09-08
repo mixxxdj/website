@@ -577,7 +577,7 @@ project extensions. Based on the survey results, the project extension goal
 was changed to the implementation and optimization of the group delay handling
 for the effect chain to improve the performance of the Pitch Shift effect
 for the wet/dry and wet+dry mode. As the last challenge, I would like to mention
-the usage of the std::span from the standard library which is supported
+the usage of the `std::span` from the standard library which is supported
 by C++20. Because the Mixxx organization adheres to the own
 [Minimum requirements policy](
  https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
