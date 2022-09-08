@@ -5,9 +5,9 @@ tags: gsoc, gsoc-2022
 comments: yes
 
 Disclaimer: *The blog post primarily serves as the documentation
-for the Google Summer of Code 2022 project: "Pitch Shift effect
-and Group Delay handling". Thus, it contains a lot more detailed description,
-than the other Mixxx blog posts.*
+for the [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022
+project: "Pitch Shift effect and Group Delay handling". Thus, it contains
+a lot more detailed description, than the other Mixxx blog posts.*
 
 #### Introduction
 The project implements the Pitch Shift effect for the Mixxx DJ
@@ -466,12 +466,13 @@ it should be preferred over the “push model” implementation.
 #### Testing and benchmarking
 With the implementation of the `EngineEffectsDelay` for Group Delay handling
 and the `RingDelayBuffer` as an optimized data structure for the same use case,
-the tests were included with the use of the GoogleTest framework. Basically,
-the common situations were tested, then extreme cases and cases
-that are not allowed but have to be handled for the release builds.
-On the basis that these implemented structures are critical
-from the point of view of performance, with tests, the benchmarks were created
-with the use of the Google Benchmark. Based on the results of benchmarks,
+the tests were included with the use of the [GoogleTest framework](
+ https://github.com/google/googletest). Basically, the common situations were
+tested, then extreme cases and cases that are not allowed but have to be handled
+for the release builds. On the basis that these implemented structures
+are critical from the point of view of performance, with tests, the benchmarks
+were created with the use of the [Google Benchmark](
+ https://github.com/google/benchmark). Based on the results of benchmarks,
 the used functions and algorithms were compared. After both of the mentioned
 structures were implemented, tested and optimized, the `RingDelayBuffer`
 was introduced in the `EngineEffectsDelay` as an inner structure
@@ -569,13 +570,13 @@ in this project was exactly the implementation of the Pitch Shift effect
 using the RubberBand library. The issue occurred soon, that the effect chain
 offers the effect to work only with the fixed size audio chunks. Based on that,
 it is not possible to require an amount of input audio data as needed
-for the RubberBand library “pull model” implementation. The SoundTouch library
-for Pitch Shifting was tested too but produced results with worse
-audio quality and with the same amount of delay. Based on all
-the discussions, the RubberBand library has shown as the best option
-for the effect, despite the issues which are associated with it. After that,
-the Mixxx application did not have implemented the effects delay handler
-for the effect chain, so, the implementation of this structure
+for the RubberBand library “pull model” implementation.
+The [SoundTouch library](https://www.surina.net/soundtouch/) for Pitch Shifting
+was tested too but produced results with worse audio quality and with the same
+amount of delay. Based on all the discussions, the RubberBand library has shown
+as the best option for the effect, despite the issues which are associated
+with it. After that, the Mixxx application did not have implemented the effects
+delay handler for the effect chain, so, the implementation of this structure
 was automatically needed. Based on that, the goals of the project were changed.
 The original proposal contained the Pitch Shift effect, and with that
 as a project extension to the project requirements of the Mixxx organization,
@@ -584,9 +585,9 @@ for other Mixxx developers and users was created to be able to vote for possible
 project extensions. Based on the survey results, the project extension goal
 was changed to the implementation and optimization of the Group Delay handling
 for the effect chain to improve the performance of the Pitch Shift effect
-for the wet/dry and wet+dry mode. As the last challenge, I would like to mention
+for the Dry/Wet and Dry+Wet modes. As the last challenge, I would like to mention
 the usage of the `std::span` from the standard library which is supported
-by C++20. Because the Mixxx organization adheres to the own
+by C++20. Because the Mixxx organization adheres to its own
 [Minimum requirements policy](
  https://github.com/mixxxdj/mixxx/wiki/Minimum%20requirements%20policy)
 for the Ubuntu LTS, the `EngineEffectsDelay` and `RingDelayBuffer`
@@ -596,7 +597,7 @@ of August due to support of C++20.
 #### Future work
 Concretely for the Pitch Shift effect, the effect will be improved
 using the “pull model” implementation after the end of the GSoC period.
-With that, the wet/dry mode will be done for the effect too.
+With that, the Dry/Wet and Dry+Wet modes will be done for the effect too.
 As the next project extensions, based on the survey, the following options
 or features can be added to the Pitch Shift effect implementation:
 
@@ -608,14 +609,14 @@ or features can be added to the Pitch Shift effect implementation:
 * Expose compensation delay as additional parameter for making
  funny things without extra CPU cycles
 
-More widely, as the future work for the Mixxx application, the wider support
-for the LV2 standard for effects can be implemented or better, the Carla
-audio plugin host can be introduced in the Mixxx application.
-It will allow users to use their favorite effects enabled via audio plugin
-standards such as LADSPA, DSSI, LV2, VST2, VST3 and so on,
-in the application instead of offering only the built-in effects or poor API
-for the LV2 standard. After consultation with my mentor, we agreed,
-that I will take on this task as a regular Mixxx contributor after the end
+More widely, as the future work for the Mixxx software, the wider support
+for the [LV2 standard](https://lv2plug.in/) for effects can be implemented or better, the [Carla
+audio plugin host](https://kx.studio/Applications:Carla) can be introduced
+in the Mixxx application. It will allow users to use their favorite effects
+enabled via audio plugin standards such as LADSPA, DSSI, LV2, VST2, VST3
+and so on, in the application instead of offering only the built-in effects
+or poor API for the LV2 standard. After consultation with my mentor, we agreed,
+that I can take on this task as a regular Mixxx contributor after the end
 of GSoC.
 
 #### Things I learned from GSoC
@@ -634,7 +635,7 @@ now. I really improved my English, both, written and spoken. I think,
 that it was the best experience so far for me as a developer I ever had.
 It is awesome, that I can publish my work and have immediately the feedback
 and proposed improvements. With that, I liked the open source development
-to just how much I can learn by the awesome people and create new cool stuff.
+to just how much I can learn from the awesome people and create new cool stuff.
 Despite I’m a college student, this actually missed me a lot,
 to just have feedback on my work which opens me the opportunities to learn.
 I really felt that I’m a part of the community. I will be happy to continue
@@ -645,7 +646,7 @@ The wished new effect was implemented, and the issue which requested
 this new feature was closed with the "Fix Committed" status.  All requirements
 by the Mixxx organization in their project idea, on which the project proposal
 was based, were met. Thanks to enough time in the GSoC Coding period was worked
-on the project extension. Based on the situation and the importance of new
+on the project extensions. Based on the situation and the importance of new
 Mixxx features, the originally proposed extension was replanned and changed.
 The new Group Delay handling structure was successfully implemented
 and optimized with the implementation of the extended data structure.
@@ -655,7 +656,7 @@ not be finished before the GSoC deadline.
 
 During the coding period, I lined up among the top Mixxx contributors
 for the last month, with 61 commits authored, and I became
-the 27th of 238 contributors for the Mixxx application, with 119 commits
+the 27th of 238 contributors for the Mixxx software, with 119 commits
 in total.
 
 *August 2022 contributors - mixxxdj/mixxx*
@@ -687,12 +688,16 @@ for me.
 
 #### Resources
 
+* [https://summerofcode.withgoogle.com/](
+ https://summerofcode.withgoogle.com/)
 * [https://bugs.launchpad.net/mixxx/+bug/1299035](
  https://bugs.launchpad.net/mixxx/+bug/1299035)
 * [https://breakfastquay.com/rubberband/](
  https://breakfastquay.com/rubberband/)
 * [https://en.wikipedia.org/wiki/Sign_function](
  https://en.wikipedia.org/wiki/Sign_function)
+* [https://www.surina.net/soundtouch/](
+ https://www.surina.net/soundtouch/)
 * [https://kx.studio/Applications:Carla](
  https://kx.studio/Applications:Carla)
 * [https://lv2plug.in/](
