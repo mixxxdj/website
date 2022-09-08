@@ -262,7 +262,8 @@ the coding period due to a failing test for the macOS CI (based on the inner
 rounding problem for zero value). At the same time, Mixxx's macOS CI
 started crashing during the configuration stage because of an issue
 that the workflow runner has changed. For that reason, the bug fix
-couldn't be tested and the PR was not merged in time.
+couldn't be tested and the PR was not merged in time. After the bug fix
+will be able to test on macOS CI and will pass, this PR is ready for merging.
 
 ---
 
