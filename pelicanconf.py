@@ -248,6 +248,7 @@ AUTHOR_METADATA = {
     },
     "David Chocholatý": {
         "github": "davidchocholaty",
+        "discourse": "davidchocholaty",
         "email": "david.chocholaty12@gmail.com",
         "tagline": "GSoC 2022 Student",
     },
