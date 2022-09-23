@@ -252,6 +252,12 @@ AUTHOR_METADATA = {
         "email": "david.chocholaty12@gmail.com",
         "tagline": "GSoC 2022 Student",
     },
+    "Fatih Emre YILDIZ": {
+        "github": "fatihemreyildiz",
+        "discourse": "fatihemreyildiz",
+        "email": "fatihemreyildiz@gmail.com",
+        "tagline": "GSoC 2022 Student",
+    },
 }
 
 # Needed for Jinja2 markdown filter
