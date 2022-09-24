@@ -7,39 +7,46 @@ comments: yes
 Disclaimer: *The blog post primarily serves as the documentation for the [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022 project: "Track Suggestion Feature". Thus, it contains a lot more detailed description, than the other Mixxx blog posts.*
 
 #### Introduction
-There is a big problem for almost every DJ. After long hours of playing, when the floor is crowded it shows up. "What to play next?". This project aims to give suggestions according to tracks playing on the decks. With this feature, Mixxx will have a helper for all these DJs. 
+After long hours of playing, when the floor is crowded the question shows up. "What to play next?". That is a big problem for almost every DJ. This project aims to give suggestions according to tracks playing on the decks. With this feature, Mixxx will have a helper for all the DJs. 
 
 Hey everyone! It's Emre and you've just read my project description. I would like to introduce myself before I dive into the detailed explanation of the blog. I love to listen and play music. I have been always into DJing. That's why I wanted to take a part in Mixxx. I am a person who plays music while chilling-partying with my friends. They always find my music choices are the right fit. But they don't know how difficult to pick the right song, especially after a while of playing. So I thought that would be the best project to work on this summer.
 
 #### Motivation
-The track suggestion feature was on the wishlist a long time ago. This feature was mentioned firstly on the [Bug Tracker](https://github.com/mixxxdj/mixxx/issues/6106) and on the [Forum](https://mixxx.discourse.group/t/individual-possible-followers-for-each-track-track-mind/11893). These discussions inspired me. Before we started to work on this project, I and my mentor planned to do it in small steps. So, that would be easier to review the code and implement it into the Mixxx. That also helped me to get to know the code base. We have come up with a few different ideas. The first idea was to have a feature called `Find On Web`. This feature aims to help users if they are looking for additional info about a track on online music databases. After this is implemented roughly, we decided to polish it with the `Factory Design Pattern`. Which makes other online music databases easier to implement into codebase. After these two side projects we decided to get cover art of the tracks which is `Cover Art Fetcher`. As a person who cares about appearance a lot, I found this side project very good and important! Whenever I listen to music, I always wanted to have the correct metadata of the track and also the correct cover art. At last, the main project comes along the `Track Suggestion Feature` which is getting Track Suggestions from various services.
+The track suggestion feature was on the wishlist a long time ago. This feature was mentioned firstly on the [Bug Tracker](https://github.com/mixxxdj/mixxx/issues/6106) and on the [Forum](https://mixxx.discourse.group/t/individual-possible-followers-for-each-track-track-mind/11893). These discussions inspired me to do this project. 
+
+Before we started to work on this project, I and my mentor planned to do it with the side projects. We choose the side projects so with that, implementation of the big features would have been into pieces and with that we could have a chance to test and review them in smaller environment. These side projects also helped me to get to know the code base, we can think of them just like preparation ground. Also, in one of those side projects we have encountered a bug that took long time to review and test, there was a risk to exceed the time of the project, but luckily time didn't exceed and we could focused on the main part. 
+
+We have come up with a few different side project ideas.
+
+The first idea was to have a feature called `Find On Web`. This feature aims to help users if they are looking for additional info about a track on online music databases. After this is implemented roughly, we decided to polish it with the `Factory Design Pattern`. Which makes other online music databases easier to implement into codebase. After these two side projects we decided to get cover art of the tracks which is `Cover Art Fetcher`. When I collect tracks for my library, I always wanted to have the correct metadata of the track and also the correct cover art. As a person who cares about appearance a lot, I thought that I am not alone in this situation and people would love it too. That's why I found this side project very good and important! At last, the main project comes along the `Track Suggestion Feature` which is getting Track Suggestions from various services.
 
 #### Implementation
 ##### *Find On Web Feature*
-This was the first side project. The `Find On Web`. That helps if the user looking for additional info about a track, album, or artist. Think about a scenario, you have only a track from an album and you would like to get more information about other tracks in that album. In normal cases, what you do is 1-) Open a browser 2-) Type the Artist and Album 3-) Find the related web page 4-) Get more information. Think about that you do it very often for each track. That would take your time. This is where the Find On Web comes into hand.
+This was the first side project. The `Find On Web`. That helps if the user looking for additional info about a track, album, or artist. 
 
-There is also another use case mentioned on the Zulip. If you are looking for Remixes of a particular track very often, the SoundCloud service would be the right choice for you.
+Think about a scenario, you have only just a track from an album and you would like to get more information about other tracks in that album. In normal cases, what you do is, first you Open your favourite browser, then you type the Artist and Album on your search engine, you hit the button to search and you find the web page and finally you can get more information. Think about that you do it very often for each track. That would take your time. This is where the Find On Web comes into hand.
+
+Let's think about another scenario. You love to find out remixes of each track in your library and with those remixes you expend your library. You probably use SoundCloud or a similar service very often. Luckily we have this service in our Find On Web feature. If you are looking for Remixes of tracks in your library very often, Find On Web feature will help you along with that.
 
 This feature is placed in the Track Menu. When you right-click on a track, you will see different Menus and Actions that you can take over a track. This is called `Track Menu`. On the track menu, in the Metadata section, you can see the Find On Web. There are three main Online Music Databases that exist as menus. They will be called services after this part. These services are:
 
-* Discogs
 * SoundCloud
+* Discogs
 * Last.fm
 
 When you hover your mouse over those services-menus, you can see the related track properties as actions. Each action populates the suggested Service with the suggested Track Information on a default browser. This looks like:
 
-
 *Find On Web Feature*
 ![Find On Web Feature]({static}/images/news/findonwebfeature.png)
 
-With this Implementation, I had the chance to get to know the code base and got familiar with the QT. I also used the git command rebase for the first time.
-
-This Implementation was designed roughly for the next step. That's why the related files are going to be in the next title. The next step was:
+This Implementation was designed roughly for the next step. The next step was:
 
 ##### *Find On Web With Factory Design Pattern*
-This implementation aims to have a Factory Design Pattern for the Find On Web feature. Before I talk about the `Find On Web with Factory Design Pattern` First things first, we need to know what is design patterns and why we need them. Design Patterns are typical solutions to general problems in software design and many patterns exist. We need them to solve these problems in a proven and correct way. Factory Pattern is just one of the creational design patterns. As its name states, we can think about we have a factory and we can produce products. Our factory is the Find On Web itself and our products are the services. The most important point here is that all products coming out of a factory must be derived from the same interface or class. Thanks to this pattern, we can abstract our Services for future use.  We can produce products - add new services - easily without making any changes in the codebase.
+This implementation aims to have a Factory Design Pattern for the Find On Web feature. 
 
-Since there are many other online music databases, that is nice to have Find On Web feature with the Factory Design Pattern. Just in case if wanted any other service can be added easily.
+As its name states, you can think about you have a factory and you can produce products. Our factory is the Find On Web itself and our products are the services. The most important point here is that all products coming out of a factory must be derived from the same interface or class. Thanks to this pattern, you can abstract our Services for future use. you can produce products - add new services - straight forward.
+
+Since there are many other online music databases, that is nice to have Find On Web feature with the Factory Design Pattern. Just in case if needed any other service can be added easily without making any changes in the code base.
 
 Related Files:
 
@@ -47,29 +54,34 @@ Related Files:
 * [findonwebfactory.h](https://github.com/mixxxdj/mixxx/blob/main/src/widget/findonwebmenufactory.h)
 * [Find On Web Menu Services Folder](https://github.com/mixxxdj/mixxx/tree/main/src/widget/findonwebmenuservices)
 
-With that, I have learned design patterns. Not only the factory design pattern, Even though I didn't use it I also learned the other design patterns, such as Abstract Factory, Singleton, and more. I am pretty sure that I will encounter these general problems in software and I will use the design patterns.
-
 ##### *Editable Track Menu*
 While discussing the `Find On Web` feature on Zulip. There was an idea which was the Track Menu getting crowded and we might consider making it editable. At first I thought the same and this feature would be nice to have and that can help me to get to know the code base for the preference option. So I tried to make it, just to learn how to deal with the preferences. After I introduced this idea on the Zulip channel, that was rejected by the community. So we have decided to not implement this.
 
-Even though we didn't implement this, this taught me that the code base for the preference option (which I was going to use later for the cover art fetcher and the track suggestion feature), I was encountering a Segmentation Fault while implementing this and I have learned to debug with the GNU Debugger, thanks to my mentor. At last, I have learned that `communication is the key` in a community.
-
 ##### *Cover Art Fetcher*
-This is the third side project for the Track Suggestion Feature. Fetching cover art from different services. According to the search we have done, we decided to fetch the cover art from CAA (Cover Art Archive). The Cover Art Archive described as on Its web page as "The Cover Art Archive is a joint project between the Internet Archive and MusicBrainz, whose goal is to make cover art images available to everyone on the Internet in an organized and convenient way."
+This is the third side project for the Track Suggestion Feature. Fetching cover art from online resources. According to the search we have done, we decided to fetch the cover art from Cover Art Archive (CAA) hosted by https://archive.org. The Cover Art Archive is a joint project between the Internet Archive and MusicBrainz.
 
-Since the status of the related PR is not merged yet, I will tell you what is on that branch in this section and what is left to do in the Future Work section.
+The CAA uses the track's Release MBID (MusicBrainz Identifier) to retrieve cover art. For that, the `Import Metadata From Musicbrainz` feature could be used.
 
-The CAA uses the track's Release MBID (MusicBrainz Identifier) to retrieve cover art. For that, the `Import Metadata From Musicbrainz` could be used. The results returned from the Music Brainz have Release IDs, and by using that we can start to get cover arts from the CAA. To do that, the new network task needed to add, and the design of the `Import Metadata From Musicbrainz` should have been changed.
-
-While Implementing this, At first, I sent the request as described in the API documentation. I was having the response but not correctly, it was saying that the redirected response is received. At first, I tried to solve this issue by sending another request to the redirected URL which was a really poor solution. Then I stopped for a moment and thought about what I can do in this situation, then I found out that QT's class QNetworkAccessManager has [Redirect Policy](https://doc.qt.io/qt-6/qnetworkrequest.html#RedirectPolicy-enum) already. After a long time trying to fix this issue, that was surprising that the solution was in front of me and that was simple.
-
-After solving this, I realized that the response consists of links of the cover art in different sizes as a JSON format. The possible sizes can be 250px, 500px, 1200px and if it is available also the HQ! Which can be bigger in size such as 3-5-10 Megabytes. This response also had the back cover art besides then the main cover art. After discussing that with the community, we have decided to only allow the front cover art, also with every possible size, which means HQ is included too!
-
-Then we needed a different Network Task to get the `Actual Image` of the cover art. According to the user choices. Users can choose between these available pixels. After this task was done, we needed to decide how will it be the use case.
+While Implementing this, At first, I sent the request as described in the API documentation. I was having the response but not correctly, it was saying that the redirected response is received. At first, I tried to solve this issue by sending another request to the redirected URL which was not possible. Then I stopped for a moment and thought about what I can do in this situation, then I found out that QT's class QNetworkAccessManager has [Redirect Policy](https://doc.qt.io/qt-6/qnetworkrequest.html#RedirectPolicy-enum) already. After a long time trying to fix this issue, that was surprising that the solution was in front of me and that was simple.
 
 There was another problem related to the links task. Some of the results retrieved from MusicBrainz didn't have related cover art. The response was 404. That was changing the dialog window to network error, and by that, the metadata results were lost. Thus we needed to have a different use case for the dialog.
 
-There were many use cases discussed and tested. The possible use cases and their Pros and Cons can be found in the discussion on Zulip and on the related PR. But to make this section as short as possible and descriptive at the same time, I would like to talk about just one of the use cases which is declined due to various reasons. At first, we tried to fetch all the links and their smallest size cover art as thumbnails. We did it after the metadata fetching is a success before showing the metadata results. This was not changing the dialog window to the network error, and all the cover arts were ready when fetching is finished. But that was not the best use case, because it was increasing the time of the fetching visibly, there were a lot of network requests that needed to send, and that needed another task for fetching the cover art thumbnails. The best use case was to change the `Import Metadata From Musicbrainz` window to be suitable for cover art fetching. That was solving all the possible issues mentioned.  
+After solving this, I realized that the response consists of links of the cover art in different sizes as a JSON format. The possible sizes were 250px, 500px all the time and if it is available for that individual release 1200px and also the HQ! HQ could be bigger in size such as 3-5-10 Megabytes. This response also had the back cover art besides then the main cover art. After discussing that with the community, we have decided to only allow the front cover art but with the every possible size, which means HQ is included too.
+
+On the preferences the user will see these options:
+
+* Lowest:  250x250
+* Medium:  500x500
+* High:    1200x1200 if available on CAA.
+* Highest: More than 1200px if available on CAA.
+
+Then we needed a different Network Task to get the `Actual Image` of the cover art. According to the preferences chosen by the user, the actual image can be retrieved. After this task is done, we had to decide to use case.
+
+There were many use cases discussed and tested. The possible use cases and their Pros and Cons can be found in the discussion on Zulip and on the related PR. But to make this section as short as possible and descriptive at the same time, I would like to talk about just one of the use cases which is declined due to various reasons. 
+
+At first, we tried to fetch all the links and their smallest size cover art as thumbnails. This was not changing the dialog window to the network error, and all the cover arts were ready when fetching is finished. But that was not the best use case, because it was increasing the fetching time extremely, there were a lot of network requests that needed to send, and that needed another task for fetching the cover art thumbnails. 
+
+The best use case was to change the `Import Metadata From Musicbrainz` window to be suitable for cover art fetching. That was solving all the possible issues mentioned.  
 
 Right now, users can select between the lowest quality to highest quality, when they press apply on the tag fetcher cover art is downloaded and updated for that track.
 
@@ -83,22 +95,15 @@ Related files:
 *Cover Art Fetcher*
 ![Cover Art Fetcher]({static}/images/news/coverartfetcher.png)
 
-With this side project and Its little mergeable small steps and the bugs that I have encountered. I have learned a lot related to the QT Network, network statuses, delaying the requests with a reasonable amount of time due to rate limiting of the service, informing the user about the status of the process, user cases, debugging and testing, activity diagram 'Swimlane' and UML State charts and more on...
-
 ##### *Track Suggestion Feature*
 
 This is the main part of the project. In my opinion Track Suggestion is a cool feature for a DJ app. Getting a hint for the next track at right time would be so precious for a DJ. But the possibility of the finding correct track has also the same amount of difficulty. 
-
-Since the status of the related PR is not merged yet, I will tell you what is on that branch in this section and what is left to do in the Future Work section.
 
 To find similar tracks, we have used Last.fm Thanks to their [API](https://www.last.fm/api) we can get track suggestions by just providing the Artist and Title. What is changed is basically on the library sidebar, there is a new feature called "Track Suggestion" which can be turned on or turned off on the preferences page. There are five different sub-menus located under this feature. Four of them belong to the decks and one of them belongs to the user's choice. When a track is placed on a deck, the correlated sub-menu changes to the `Artist | Track Title`. If the user clicks on that menu a new library is populated. If the suggestions are fetched before the user will be retrieved from the database, If it is not, the user will see a button that says `Load Track Suggestions For Artist | Track Title`. After this button is pressed, we send the request and get the response cached in the database.
 
 The new library is an External Library. The located tracks are not available for to play, because they are only text retrieved from Last.fm. But the tracks listed in that library can give an idea to the DJ about what to play next. DJ can see a title or an artist and this can help about picking the next song.
 
 There is a problem with the Last.fm service, when the track or artist name is misspelled the suggestions can not be fetched. Also for some tracks, there is no suggestion available on the Last.fm servers. To fix this issue, there was another service implementation that was in process, to get the same bpm or key.
-
-This has taught me a lot about databases, schema, and SQL execution and I have learned that the original library and the external library should have stored separately.
-
 
 *Track Suggestion Feature*
 ![Track Suggestion Feature]({static}/images/news/tracksuggestionfeature.png)
@@ -153,6 +158,8 @@ Meanwhile, I've learned that m3u files can have different encodings while m3u8 f
 This PR was my first PR in the coding period. `FindOnWebMenu` helps users to find related
 track properties on various online music databases.
 
+In this PR, I had the chance to get to know the code base and got familiar with the QT. I also used the git command rebase for the first time, that was difficult at those days, but right now I am more experienced with the git commands.
+
 ---
 
 [mixxx#4836](https://github.com/mixxxdj/mixxx/pull/4836)
@@ -161,7 +168,8 @@ track properties on various online music databases.
 *Status: Merged*
 
 This PR is the second step of the previous one. This changes all the code into the factory pattern.
-With this design pattern as mentioned before, if needed, more online databases can easily be added to the codebase. 
+
+In this PR, I have learned design patterns. Not only the factory design pattern, I also learned the other design patterns, such as Abstract Factory, Singleton, and more. I am pretty sure that I will encounter these general problems in software and I will use the design patterns.
 
 ---
 
@@ -171,7 +179,6 @@ With this design pattern as mentioned before, if needed, more online databases c
 *Status: Open (WIP) | last GSoC commit: [18ed28d](https://github.com/mixxxdj/mixxx/pull/4851/commits/18ed28d9061feb19b58aa4db1730f347622686a5)*
 
 This is the main PR about the cover art fetcher.
-
 
 ---
 
@@ -217,7 +224,7 @@ This PR aims to fix the related bug mentioned below.
 
 *Status: Closed*
 
-This was a bug that I noticed while working on the new Musicbrainz design. I've tried to fix this by adding a state called "Looping" in the first place. But later on, this PR was superseded by [mixxx#10875](https://github.com/mixxxdj/mixxx/pull/10875). But even though, thanks to my mentor for providing additional information about how to overcome this issue.  I have learned about the activity diagram 'Swimlane' and UML State charts.
+This was a bug that I noticed while working on the new Musicbrainz design. I've tried to fix this by adding a state called "Looping" in the first place. But later on, this PR was superseded by [mixxx#10875](https://github.com/mixxxdj/mixxx/pull/10875). But even though, thanks to my mentor for providing additional information about how to overcome this issue. I have learned about the activity diagram 'Swimlane' and UML State charts.
 
 
 ---
@@ -371,7 +378,7 @@ There are few ideas that have been discussed before on Zulip. These are not mand
 * `Find On Web` could have a preference option to enable - disable the services.
 
 #### Things I learned from GSoC
-First of all, I can easily say that GSoC was one of the best experiences in my life. It deserves Its title "Summer of Code". I had a great summer full of coding and I learned a lot and had so much fun meanwhile. During this period, being an open-source contributor to a community felt amazing. Before the GSoC, I did some projects for my university projects and used git very basically. But first time in my life, I did coding for a real project and used git professionally, and learned a lot about it. I have learned that Every aspect is really important while coding and even small glitches can cause a big bug. I have developed features which people can use. Fixed existing bugs that people encountered. This was such a unique experience. If I wouldn't meet with GSoC this year, I wouldn't be an open source contributor or I would have been very late in another time in my life. I can easily say that I've learned a lot about C++, QT, web services, testing, debugging, git and gained important experience on all of them. What I have learned was I am enjoying hours of coding, testing, hunting bug, and solving problems. If I should have compare myself before the GSoC and after the GSoC, the difference is awesome.
+First of all, I can easily say that GSoC was one of the best experiences in my life. It deserves Its title "Summer of Code". I had a great summer full of coding and I learned a lot and had so much fun meanwhile. During this period, being an open-source contributor to a community felt amazing. Before the GSoC, I did some projects for my university projects and used git very basically. But first time in my life, I did coding for a real project and used git professionally, and learned a lot about it. I have learned that Every aspect is really important while coding and even small glitches can cause a big bug. I have developed features which people can use. Fixed existing bugs that people encountered. This was such a unique experience. If I wouldn't meet with GSoC this year, I wouldn't be an open source contributor or I would have been very late in another time in my life. I can easily say that I've learned a lot about C++, QT, design patterns, web services, testing, debugging, git and gained important experience on all of them. What I have learned was I am enjoying hours of coding, testing, hunting bug, and solving problems. If I should have compare myself before the GSoC and after the GSoC, the difference is awesome.
 
 #### Conclusion
 At the end of the coding period, the decided side projects and their little steps were implemented into Mixxx. Such as Find On Web, Find on Web with Factory Design, and Cover Art Label without a menu.  Besides the side projects, there were many bugs (which were affecting both the stable 2.3.3 version and the upstream branch) reported and fixed. Such as the empty XML, the rate limit of MusicBrainz, aborting the tag fetcher, etc. With those fixes, Mixxx users will have the better fetching metadata experience. At the end of the period, unfortunately, the Track suggestion feature couldn't be implemented into the Mixxx code base but we have a working POC as an open PR. Also, an existing request from a long time ago was discussed seriously with the developers and users on the Zulip GSoC channel. We have over-searched the available services and discussed the main problems with fetching suggestions from different services, how to make this feature useful and what needs to be done to have the best use-case. This will be a reference to the future for sure.
