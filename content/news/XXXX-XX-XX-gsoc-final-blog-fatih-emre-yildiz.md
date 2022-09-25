@@ -178,7 +178,7 @@ In this PR, I have learned design patterns. Not only the factory design pattern,
 [mixxx#4851](https://github.com/mixxxdj/mixxx/pull/4851)
 - Cover Art Fetcher
 
-*Status: Open (WIP) | last GSoC commit: [18ed28d](https://github.com/mixxxdj/mixxx/pull/4851/commits/18ed28d9061feb19b58aa4db1730f347622686a5)*
+*Status: Open (WIP) | last GSoC commit: [8856e4b](https://github.com/mixxxdj/mixxx/pull/4851/commits/8856e4b994e48a80eac5f03f85459eb5649e1260)*
 
 This is the main PR about the cover art fetcher.
 
@@ -234,7 +234,7 @@ This was a bug that I noticed while working on the new Musicbrainz design. I've 
 [mixxx#10860](https://github.com/mixxxdj/mixxx/pull/10860)
 - Track Suggestion Feature: Get tracks suggestions according to the track playing on the decks
 
-*Status: Open (WIP) | last GSoC commit: [03b1b68](https://github.com/mixxxdj/mixxx/pull/10860/commits/03b1b6831e15428745398c20e36ef704db336c29)*
+*Status: Open (WIP) | last GSoC commit: [0c02074](https://github.com/mixxxdj/mixxx/pull/10860/commits/0c020741edc5a4f9c3dcb7916bad959744c72602)*
 
 This is an initial PR about the Track Suggestion Feature. This is used Last.fm's API to get similar tracks that are placed on the deck and also tracks selected by the user.
 
@@ -279,7 +279,7 @@ There was a new user who introduced himself on the Zulip channel. I wanted to gi
 [mixxx#10902](https://github.com/mixxxdj/mixxx/pull/10902)
 - Cover Art Copy Worker
 
-*Status: Open (WIP) | last GSoC commit: [690c645](https://github.com/mixxxdj/mixxx/pull/10902/commits/690c6457a1a28d8a01dbd7fb902da83085deaec1)*
+*Status: Open (WIP) | last GSoC commit: [2e13c64](https://github.com/mixxxdj/mixxx/pull/10902/commits/2e13c64705390e3dd58526ec66a28c126347792c)*
 
 This PR was opened due to the size of the PR about "Ask user after changing the cover art". This is the smaller version of it. There is no comparison, wizard, or dialog but the other must-needed parts for the cover art fetcher are included in this PR.
 
