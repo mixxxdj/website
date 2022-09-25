@@ -7,12 +7,12 @@ comments: yes
 Disclaimer: *The blog post primarily serves as the documentation for the [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022 project: "Track Suggestion Feature". Thus, it contains a lot more detailed description, than the other Mixxx blog posts.*
 
 #### Introduction
-After long hours of playing, when the floor is crowded the question shows up. "What to play next?". That is a big problem for almost every DJ. This project aims to give suggestions according to tracks playing on the decks. With this feature, Mixxx will have a helper for all the DJs. 
+After long hours of playing, when the floor is crowded the question shows up. "What to play next?". That is a big problem for almost every DJ. This project aims to give suggestions according to tracks playing on the decks. With this feature, Mixxx will have a helper for all the DJs.
 
 Hey everyone! It's Emre and you've just read my project description. I would like to introduce myself before I dive into the detailed explanation of the blog. I love to listen and play music. I have been always into DJing. That's why I wanted to take a part in Mixxx. I am a person who plays music while chilling-partying with my friends. They always find my music choices are the right fit. But they don't know how difficult to pick the right song, especially after a while of playing. So I thought that would be the best project to work on this summer.
 
 #### Motivation
-The track suggestion feature was on the wishlist a long time ago. This feature was mentioned firstly on the [Bug Tracker](https://github.com/mixxxdj/mixxx/issues/6106) and on the [Forum](https://mixxx.discourse.group/t/individual-possible-followers-for-each-track-track-mind/11893). These discussions inspired me to do this project. 
+The track suggestion feature was on the wishlist a long time ago. This feature was mentioned firstly on the [Bug Tracker](https://github.com/mixxxdj/mixxx/issues/6106) and on the [Forum](https://mixxx.discourse.group/t/individual-possible-followers-for-each-track-track-mind/11893). These discussions inspired me to do this project.
 
 Before we started to work on this project, I and my mentor decided to do it with the side projects. We choose the side projects so with that, implementation of the big features is split into pieces and with that we have a chance to test and review them in smaller environment. These side projects also helped me to get to know the code base, we can think of them just like preparation ground. Also, in one of those side projects we have encountered a bug that took long time to review and test, there was a risk to exceed the time of the project, but luckily we made it and could focus on the main part.
 
@@ -42,7 +42,7 @@ When you hover your mouse over those services menus, you can see the related tra
 This Implementation was designed roughly for the next step. The next step was:
 
 ##### *Find On Web With Factory Design Pattern*
-This implementation aims to have a Factory Design Pattern for the Find On Web feature. 
+This implementation aims to have a Factory Design Pattern for the Find On Web feature.
 
 As its name states, you can think about you have a factory and you can produce products. Our factory is the *Find On Web* itself and our products are the services. The most important point here is that all products coming out of a factory must be derived from the same interface or class. Thanks to this pattern, you can abstract our Services for future use. You can produce products - add new services - straight forward.
 
@@ -57,7 +57,7 @@ Related Files:
 ##### *Editable Track Menu*
 While discussing about *Find On Web* feature and where we could placed it on Mixxx. We have decided to place it on Track Menu. There was an idea on Zulip, that the Track Menu was gettin crowded, and we can consider to make it configurable.
 
-At first I thought the same and this feature would be nice to have and that can help me to get to know the code base for the preferences option. 
+At first I thought the same and this feature would be nice to have and that can help me to get to know the code base for the preferences option.
 
 I introduced this idea on the Zulip channel. The idea of making the track menu configurable rejected in the discussion with the community in favor of Mixxx. Sometimes the configuration option proves the developers' inability to make decisions for them. As a result, we have chosen not to implement this.
 
@@ -79,7 +79,7 @@ On the preferences the user will see these options:
 * High:    1200x1200 if available on CAA.
 * Highest: More than 1200px if available on CAA.
 
-Then we needed the second task to get the *Actual Image* of the cover art. According to the preferences chosen by the user, the actual image is retrieved. 
+Then we needed the second task to get the *Actual Image* of the cover art. According to the preferences chosen by the user, the actual image is retrieved.
 
 After this task was successfully done, there was only one thing left and it was the use case.
 
@@ -99,7 +99,7 @@ Related files:
 
 ##### *Track Suggestion Feature*
 
-This is the main part of the project. In my opinion, Track Suggestion is a cool feature for a DJ app. Getting a hint for the next track at right time would be so precious for a DJ. But the possibility of the finding correct track has also the same amount of difficulty. 
+This is the main part of the project. In my opinion, Track Suggestion is a cool feature for a DJ app. Getting a hint for the next track at right time would be so precious for a DJ. But the possibility of the finding correct track has also the same amount of difficulty.
 
 To find similar tracks, we have used Last.fm Thanks to their [API](https://www.last.fm/api) we can get track suggestions by just providing the Artist and Title. What is changed is basically on the library sidebar, there is a new feature called "Track Suggestion" which can be turned on or turned off on the preferences page. There are five different sub-menus located under this feature. Four of them belong to the decks and one of them belongs to the user's choice. When a track is placed on a deck, the correlated sub-menu changes to the *Artist | Track Title*. If the user clicks on that menu a new library is populated. If the suggestions are fetched before the user will be retrieved from the database, if it is not, the user will see a button that says *Load Track Suggestions For Artist | Track Title*. After this button is pressed, we send the request and get the response cached in the database.
 
@@ -108,7 +108,7 @@ The new library is an External Library. The located tracks are not available for
 There is a problem with the Last.fm service, when the track or artist name is misspelled the suggestions can not be fetched. Also for some tracks, there is no suggestion available on the Last.fm servers. To fix this issue, we have discussed few different solutions, such as finding another service as a back up.
 
 *Track Suggestion Feature*
-![Track Suggestion Feature]({static}/images/news/tracksuggestionfeature.png)
+![Track Suggestion Feature]({static}/images/news/tracksuggestion.png)
 
 Related files:
 
@@ -123,7 +123,7 @@ Related files:
 
 *Status: Merged*
 
-This PR is the beginning of my story. That was my initial PR in my open-source experience. As mentioned on the Mixxx [GSoC advice page](https://github.com/mixxxdj/mixxx/wiki/gsocadvice) before, I fixed a bug from the easy tag. 
+This PR is the beginning of my story. That was my initial PR in my open-source experience. As mentioned on the Mixxx [GSoC advice page](https://github.com/mixxxdj/mixxx/wiki/gsocadvice) before, I fixed a bug from the easy tag.
 
 In order to do that, I needed to fork the project, clone it, compile it, make changes, install the pre-commit, push the changes, and open a PR.
 
@@ -146,7 +146,7 @@ This PR is similar to my first PR. After the first PR is merged, That was also m
 *Status: Merged*
 
 This PR aims to have a better playlist/crate exporting experience. While I was surfing on the
-discourse, in one of the topics a user asked a question related to the exporting playlist. Just to help the user, I tried to export my playlist, but suddenly I realized that when I import my playlist back there was some tracks were missing. I have mentioned that on Zulip and with the help of other developers, I realized that there were missing characters and I wanted to solve this issue and I did. 
+discourse, in one of the topics a user asked a question related to the exporting playlist. Just to help the user, I tried to export my playlist, but suddenly I realized that when I import my playlist back there was some tracks were missing. I have mentioned that on Zulip and with the help of other developers, I realized that there were missing characters and I wanted to solve this issue and I did.
 
 Meanwhile, I've learned that m3u files can have different encodings while m3u8 files are UTF-8.
 
@@ -213,7 +213,7 @@ This PR was about a "TODO:" comment in the code base. But after I work on it for
 ---
 
 [mixxx#4909](https://github.com/mixxxdj/mixxx/pull/4909)
-- CoverArtUtils: Fix Reload From File/Folder, Updates Wrong Cover Art 
+- CoverArtUtils: Fix Reload From File/Folder, Updates Wrong Cover Art
 
 *Status: Merged*
 
@@ -241,7 +241,7 @@ This is an initial PR about the Track Suggestion Feature. This is used Last.fm's
 ---
 
 [mixxx#10861](https://github.com/mixxxdj/mixxx/pull/10861)
-- BaseSqlTableModel: remove duplicated line. 
+- BaseSqlTableModel: remove duplicated line.
 
 *Status: Merged*
 
@@ -259,11 +259,11 @@ This PR aims to fix the related bug mentioned below.
 ---
 
 [mixxx#10897](https://github.com/mixxxdj/mixxx/pull/10897)
-- Moving SafelyWritableFile class to the utility folder. 
+- Moving SafelyWritableFile class to the utility folder.
 
 *Status: Merged*
 
-This is a part of the cover art copy worker PR. This PR aims to move the SafelyWritableClass from inside a file to the utility folder. 
+This is a part of the cover art copy worker PR. This PR aims to move the SafelyWritableClass from inside a file to the utility folder.
 
 ---
 
@@ -308,7 +308,7 @@ I was testing the latest status of the *Tag Fetcher*. If the Musicbrainz window 
 ---
 
 [mixxx#10816](https://github.com/mixxxdj/mixxx/issues/10816)
-- Updating Cover Art on Track Properties Doesn't Take Effect 
+- Updating Cover Art on Track Properties Doesn't Take Effect
 
 *Status: Open*
 
@@ -320,7 +320,7 @@ The bug is actually when the new cover art is updated on Track Properties and th
 ---
 
 [mixxx#10807](https://github.com/mixxxdj/mixxx/issues/10807)
-- Reload From File/Folder, Updates Wrong Cover Art 
+- Reload From File/Folder, Updates Wrong Cover Art
 
 *Status: Closed*
 
@@ -329,7 +329,7 @@ This was a bug that I encountered while working on the cover art fetcher. I have
 ---
 
 [mixxx#10796](https://github.com/mixxxdj/mixxx/issues/10796)
-- If MusicBrainz Returns an empty XML (404) whole task fails and no results displayed 
+- If MusicBrainz Returns an empty XML (404) whole task fails and no results displayed
 
 *Status: Open*
 
@@ -338,7 +338,7 @@ This bug was affecting some of the tracks in my library. While I was working on 
 ---
 
 [mixxx#10795](https://github.com/mixxxdj/mixxx/issues/10795)
-- Rate Limit exceeds for some songs while Importing Metadata From MusicBrainz 
+- Rate Limit exceeds for some songs while Importing Metadata From MusicBrainz
 
 *Status: Closed*
 
@@ -347,7 +347,7 @@ This bug is discovered the same as above. The error message displayed to the use
 ---
 
 [mixxx#10782](https://github.com/mixxxdj/mixxx/issues/10782)
-- Mixxx crashes when click on a track updated with Musicbrainz Metadata 
+- Mixxx crashes when click on a track updated with Musicbrainz Metadata
 
 *Status: Closed*
 
@@ -357,7 +357,7 @@ This bug was happening due to debug assertion when I select the tracks updated f
 
 *Discourse*
 
-In my free time, I was surfing through the Mixxx Forum to help the users as much as I could with my knowledge. In some of the topics, I was able to help the users, these topics and my answers were: 
+In my free time, I was surfing through the Mixxx Forum to help the users as much as I could with my knowledge. In some of the topics, I was able to help the users, these topics and my answers were:
 
 [Discourse - Exporting a playlist to m3u invalid characters](https://mixxx.discourse.group/t/exporting-a-playlist-to-m3u-invalid-characters/25181)
 
@@ -370,9 +370,9 @@ There are only a few to-do's left for the side projects we have discussed before
 
 * Merge the cover art worker for *Cover Art Fetcher*, with the caching class of the fetched cover art *Cover Art Fetcher* can be easily integrated.
 * Specialized External Playlist model for *Track Suggestion Feature* for better database interaction
-* Determination if the suggestions are in the user's library, with that *Track Suggestion Feature* can be much more usefull.
+* Determination if the suggestions are in the user's library, with that *Track Suggestion Feature* can be much more useful.
 
-There are few ideas that have been discussed before on Zulip. These are not mandatory works but that would have been nice to have. These can be a future reference. 
+There are few ideas that have been discussed before on Zulip. These are not mandatory works but that would have been nice to have. These can be a future reference.
 
 * Get cover art of the suggestions so the *Track Suggestion Feature* would look better.
 * User Clustering Playlists! There was a brilliant idea while we were brainstorming about Track Suggestion Feature. User's can make their own suggestions by using their own library.
