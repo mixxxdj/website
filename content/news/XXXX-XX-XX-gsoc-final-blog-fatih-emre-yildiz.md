@@ -279,7 +279,7 @@ There was a new user who introduced himself on the Zulip channel. I wanted to gi
 [mixxx#10902](https://github.com/mixxxdj/mixxx/pull/10902)
 - Cover Art Copy Worker
 
-*Status: Open (WIP) | last GSoC commit: [9a52cd3](https://github.com/mixxxdj/mixxx/pull/10902/commits/9a52cd354ef840ffd924a3a87358447fea1b20cf)*
+*Status: Open (WIP) | last GSoC commit: [690c645](https://github.com/mixxxdj/mixxx/pull/10902/commits/690c6457a1a28d8a01dbd7fb902da83085deaec1)*
 
 This PR was opened due to the size of the PR about "Ask user after changing the cover art". This is the smaller version of it. There is no comparison, wizard, or dialog but the other must-needed parts for the cover art fetcher are included in this PR.
 
