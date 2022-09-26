@@ -1,8 +1,8 @@
 title: GSoC 2022 Work Product - Track Suggestion Feature
 authors: Fatih Emre YILDIZ
-status: draft
 tags: gsoc, gsoc-2022
 comments: yes
+date: 2022-09-26 19:26:29
 
 Disclaimer: *The blog post primarily serves as the documentation for the [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022 project: "Track Suggestion Feature". Thus, it contains a lot more detailed description, than the other Mixxx blog posts.*
 
