@@ -9,12 +9,12 @@ Disclaimer: *The blog post primarily serves as the documentation for the [Google
 #### Introduction
 After long hours of playing, when the floor is crowded the question shows up. "What to play next?". That is a big problem for almost every DJ. This project aims to give suggestions according to tracks playing on the decks. With this feature, Mixxx will have a helper for all the DJs.
 
-Hey everyone! It's Emre and you've just read my project description. I would like to introduce myself before I dive into the detailed explanation of the blog. I love to listen and play music. I have been always into DJing. That's why I wanted to take a part in Mixxx. I am a person who plays music while chilling-partying with my friends. They always find my music choices are the right fit. But they don't know how difficult to pick the right song, especially after a while of playing. So I thought that would be the best project to work on this summer.
+Hey everyone It's Emre! You've just read my project description. First, let me introduce myself before I dive into a detailed explanation of my project. I love to listen and play music. I have been always into DJing. That's why I wanted to take a part in Mixxx. I am a person who plays music while chilling-partying with my friends. They always find my music choices are the right fit. But they don't know how difficult to pick the right song, especially after a while of playing. So I thought *Track Suggestion Feature* would be the best project to work on this summer.
 
 #### Motivation
 The track suggestion feature was on the wishlist a long time ago. This feature was mentioned firstly on the [Bug Tracker](https://github.com/mixxxdj/mixxx/issues/6106) and on the [Forum](https://mixxx.discourse.group/t/individual-possible-followers-for-each-track-track-mind/11893). These discussions inspired me to do this project.
 
-Before we started to work on this project, I and my mentor decided to do it with the side projects. We choose the side projects so with that, implementation of the big features is split into pieces and with that we have a chance to test and review them in smaller environment. These side projects also helped me to get to know the code base, we can think of them just like preparation ground. Also, in one of those side projects we have encountered a bug that took long time to review and test, there was a risk to exceed the time of the project, but luckily we made it and could focus on the main part.
+Before we started to work on this project, My mentor and I decided to do it with side projects. We chose the side projects, so the implementation of the enormous features split into pieces. With that, we have a chance to test and review them in smaller environments. These side projects also helped me to get to know the code base, we can think of them just like preparation ground. Also, in one of those side projects we have encountered a bug that took long time to review and test, there was a risk to exceed the time of the project, but luckily we made it and could focus on the main part.
 
 We have come up with a few different side project ideas.
 
@@ -26,7 +26,7 @@ The first side project *Find On Web* is supposed to help user finding additional
 
 Think about a scenario, you have only just a track from an album and you would like to get more information about other tracks in that album. Until now, you would first open your favourite web browser, then you type the Artist and Album in your search engine, you hit the button to search and you find the web page and finally you can get more information. This is very time-consuming. This is where the Find On Web comes in handy.
 
-Let's think about another scenario. You love to find out remixes of each track in your library and with those remixes you expend your library. You probably use [SoundCloud](https://soundcloud.com/) or a similar service very often. Luckily we have this service in our *Find On Web* feature. If you are looking for remixes in your library very often, *Find On Web* feature will help you along with that.
+Let's think about another scenario. You love to find out remixes of each track in your library and with those remixes you expand your library. You probably use [SoundCloud](https://soundcloud.com/) or a similar service very often. Luckily we have this service in our *Find On Web* feature. If you are looking for remixes in your library very often, *Find On Web* feature will help you along with that.
 
 This feature is placed in the Track Menu. When you right-click on a track, you will see different Menus and Actions that you can take over a track. This is called *Track Menu*. On the track menu, in the Metadata section, you can see the *Find On Web*. There are three main Online Music Databases that exist as menus. They will be called services after this part. These services are:
 
@@ -55,7 +55,7 @@ Related Files:
 * [Find On Web Menu Services Folder](https://github.com/mixxxdj/mixxx/tree/main/src/widget/findonwebmenuservices)
 
 ##### *Editable Track Menu*
-While discussing about *Find On Web* feature and where we could placed it on Mixxx. We have decided to place it on Track Menu. There was an idea on Zulip, that the Track Menu was gettin crowded, and we can consider to make it configurable.
+While discussing *Find On Web* feature and where we could placed it on Mixxx. We have decided to place it on Track Menu. There was an idea on Zulip, that the Track Menu was gettin crowded, and we can consider to make it configurable.
 
 At first I thought the same and this feature would be nice to have and that can help me to get to know the code base for the preferences option.
 
@@ -101,11 +101,11 @@ Related files:
 
 This is the main part of the project. In my opinion, Track Suggestion is a cool feature for a DJ app. Getting a hint for the next track at right time would be so precious for a DJ. But the possibility of the finding correct track has also the same amount of difficulty.
 
-To find similar tracks, we have used Last.fm Thanks to their [API](https://www.last.fm/api) we can get track suggestions by just providing the Artist and Title. What is changed is basically on the library sidebar, there is a new feature called "Track Suggestion" which can be turned on or turned off on the preferences page. There are five different sub-menus located under this feature. Four of them belong to the decks and one of them belongs to the user's choice. When a track is placed on a deck, the correlated sub-menu changes to the *Artist | Track Title*. If the user clicks on that menu a new library is populated. If the suggestions are fetched before the user will be retrieved from the database, if it is not, the user will see a button that says *Load Track Suggestions For Artist | Track Title*. After this button is pressed, we send the request and get the response cached in the database.
+To find similar tracks, we have used Last.fm. Thanks to their [API](https://www.last.fm/api) we can get track suggestions by just providing the Artist and Title. What is changed is basically on the library sidebar, there is a new feature called "Track Suggestion" which can be turned on or turned off on the preferences page. There are five different sub-menus located under this feature. Four of them belong to the decks and one of them belongs to the user's choice. When a track is placed on a deck, the correlated sub-menu changes to the *Artist | Track Title*. If the user clicks on that menu a new library is populated. If the suggestions are fetched before the user will be retrieved from the database, if it is not, the user will see a button that says *Load Track Suggestions For Artist | Track Title*. After this button is pressed, we send the request and get the response cached in the database.
 
-The new library is an External Library. The located tracks are not available for to play, because they are only text retrieved from Last.fm. But the tracks listed in that library can give an idea to the DJ about what to play next. DJ can see a title or an artist and this can help about picking the next song.
+The new library is an External Library. The located tracks are not available to play, because they are only text retrieved from Last.fm. But the tracks listed in that library can give an idea to the DJ about what to play next. DJ can see a title or an artist, and with that, this title or artist can guide the DJ to pick the next song.
 
-There is a problem with the Last.fm service, when the track or artist name is misspelled the suggestions can not be fetched. Also for some tracks, there is no suggestion available on the Last.fm servers. To fix this issue, we have discussed few different solutions, such as finding another service as a back up.
+There is a problem with the Last.fm service, when the track or artist name is misspelled the suggestions can not be fetched. Also for some tracks, there is no suggestion available on the Last.fm servers. To fix this issue, we have discussed a few different solutions, such as finding another service as a back up.
 
 *Track Suggestion Feature*
 ![Track Suggestion Feature]({static}/images/news/tracksuggestion.png)
@@ -127,7 +127,7 @@ This PR is the beginning of my story. That was my initial PR in my open-source e
 
 In order to do that, I needed to fork the project, clone it, compile it, make changes, install the pre-commit, push the changes, and open a PR.
 
-As a total beginner, that took my whole day to figure things out. But If I look at it now, I can say that I am more experienced, and that is easy peasy - lemon squeezy now.
+As a total beginner, that took my whole day to figure things out. But If I look at it now, I can say that I am more experienced and that it is easy peasy - lemon squeezy.
 
 ---
 
@@ -145,8 +145,7 @@ This PR is similar to my first PR. After the first PR is merged, That was also m
 
 *Status: Merged*
 
-This PR aims to have a better playlist/crate exporting experience. While I was surfing on the
-discourse, in one of the topics a user asked a question related to the exporting playlist. Just to help the user, I tried to export my playlist, but suddenly I realized that when I import my playlist back there was some tracks were missing. I have mentioned that on Zulip and with the help of other developers, I realized that there were missing characters and I wanted to solve this issue and I did.
+This PR aims to have a better playlist/crate exporting experience. While I was surfing on the discourse, in one of the topics a user asked a question related to the exporting playlist. To help the user, I tried to export my playlist, but suddenly I realized that when I import my playlist back, there were some missing tracks. I have mentioned that on Zulip and with the help of other developers, I realized that there were missing characters and I wanted to solve this issue. This PR is about that issue.
 
 Meanwhile, I've learned that m3u files can have different encodings while m3u8 files are UTF-8.
 
@@ -207,7 +206,7 @@ This PR was to aim for a better interface for "Import Metadata From MusicBrainz"
 
 *Status: Draft | last GSoC commit: [693ab90](https://github.com/mixxxdj/mixxx/pull/4887/commits/693ab90bff30f88bf4bbaaae64a574a251dd4c72)*
 
-This PR was about a "TODO:" comment in the code base. But after I work on it for a while, I discovered that this is a must, for the cover art fetcher. This PR asks users if they want to copy the cover art which they have updated. It started simply with a *QMessageBox* and then became big with the needed implementations. Such as making it atomic writing, moving to a separate thread, and adding a comparison between the old and new cover art. This PR was becoming more big and difficult to review-implement. So we had to break this into smaller PRs but this one is still open for the future implementation.
+This PR was about a "TODO:" comment in the code base. But after I work on it for a while, I discovered that this is a must, for the cover art fetcher. This PR asks users if they want to copy the cover art which they have updated. It started simply with a *QMessageBox* and then became big with the needed implementations. Such as making it atomic writing, moving to a separate thread, and adding a comparison between the old and new cover art. This PR was becoming more bigger and difficult to review-implement. So we had to break this into smaller PRs but this one is still open for the future implementation.
 
 
 ---
@@ -272,7 +271,7 @@ This is a part of the cover art copy worker PR. This PR aims to move the SafelyW
 
 *Status: Merged*
 
-There was a new user who introduced himself on the Zulip channel. I wanted to give additional info for to guide him. To do that I was looking at to documentation and realized that the links for bug reporting were directed to the launchpad which was the old bug tracker of Mixxx. This PR aims to delete the old links and replace them with the GitHub issues link.
+There was a new user who introduced himself on the Zulip channel. I wanted to give additional information to guide him. To do that I was looking at to documentation and realized that the links for bug reporting were directed to the launchpad which was the old bug tracker of Mixxx. This PR aims to delete the old links and replace them with the GitHub issues link.
 
 ---
 
@@ -333,7 +332,7 @@ This was a bug that I encountered while working on the cover art fetcher. I have
 
 *Status: Open*
 
-This bug was affecting some of the tracks in my library. While I was working on the Tag Fetcher, I realized some songs in my library were having an interesting error which is displayed as "Not Found" on the Musicbrainz windows. But the logs were not saying the same thing, they were some tasks were successful and related results exist for these tracks. But they were failing for some reason. When I dig that down, I realized that the responses from Musicbrainz are successful but empty, and in the codebase that was meant to be no results. This is still in progress, but after that is resolved we will increase the rate of the successful results of our Tag Fetcher.
+This bug was affecting some of the tracks in my library. While I was working on the Tag Fetcher, I realized some songs in my library could not get metadata from Musicbrainz. There was an error. That was displayed as "Not Found" on the Tag Fetcher. But the logs were different, there were some successful results, and they exist on the MusicBrainz. But importing metadata for these tracks was failing for some reason. When I dig that down, I realized that the responses from Musicbrainz are successful but empty, and in the codebase that was meant to be no results. This is still in progress, but after that is resolved we will increase the rate of the successful results of our Tag Fetcher.
 
 ---
 
@@ -342,7 +341,7 @@ This bug was affecting some of the tracks in my library. While I was working on 
 
 *Status: Closed*
 
-This bug is discovered the same as above. The error message displayed to the user was confusing too. The difference is, it was quite easier to find out why there was error. The tracks that can not have the results were the ones that have a lot of Recording IDs compared with the other tracks. When that is digged down, we found out that MusicBrainz Rate Limit was a request per second. But that was designed without any delay. That's why if a track has many Recording ID's retrieved from AcoustID, we were hitting the rate limits.
+This bug is discovered the same as above. The error message displayed to the user was confusing too. The difference is, it was quite easier to find out why there was an error. The tracks that can not have the results were the ones that have a lot of Recording IDs compared with the other tracks. When that is dug down, we found out that MusicBrainz Rate Limit was a request per second. But that was designed without any delay. That's why if a track has many Recording ID's retrieved from AcoustID, we were hitting the rate limits.
 
 ---
 
@@ -372,21 +371,21 @@ There are only a few to-do's left for the side projects we have discussed before
 * Specialized External Playlist model for *Track Suggestion Feature* for better database interaction
 * Determination if the suggestions are in the user's library, with that *Track Suggestion Feature* can be much more useful.
 
-There are few ideas that have been discussed before on Zulip. These are not mandatory works but that would have been nice to have. These can be a future reference.
+There are a few ideas that have been discussed before on Zulip. These are not mandatory works but that would have been nice to have. These can be future references.
 
 * Get cover art of the suggestions so the *Track Suggestion Feature* would look better.
 * User Clustering Playlists! There was a brilliant idea while we were brainstorming about Track Suggestion Feature. User's can make their own suggestions by using their own library.
-* There could be a field in preferences for *Find On Web* feature, which is a field can be filled by the user. With that users can add their own services.
+* There could be a field in preferences for *Find On Web* feature, which is a field that can be filled by the user. With that users can add their own services.
 * *Find On Web* could have a preference option to enable - disable the services.
 
 #### Things I learned from GSoC
-First of all, I can easily say that GSoC was one of the best experiences in my life. It deserves Its title "Summer of Code". I had a great summer full of coding and I learned a lot and had so much fun meanwhile. During this period, being an open-source contributor to a community felt amazing. Before the GSoC, I did some projects for my university projects and used git very basically. But first time in my life, I did coding for a real project and used git professionally, and learned a lot about it. I have learned that every aspect is really important while coding and even small glitches can cause a big bug. I have developed features which people can use. Fixed existing bugs that people encountered. This was such a unique experience. If I wouldn't meet with GSoC this year, I wouldn't be an open source contributor or I would have been very late in another time in my life. I can easily say that I've learned a lot about C++, Qt, design patterns, web services, testing, debugging, git and gained important experience on all of them. What I have learned was I am enjoying hours of coding, testing, hunting bug, and solving problems. If I should have compare myself before the GSoC and after the GSoC, the difference is awesome.
+First of all, I can easily say that GSoC was one of the best experiences in my life. It deserves Its title "Summer of Code" I had a great summer full of coding. I learned a lot and had so much fun. During this period, being an open-source contributor to a community felt amazing. Before the GSoC, I did some projects for my university projects and used git very basically. But for the first time in my life, I did coding for a real project and used git professionally, and learned a lot about it. I have learned that every aspect is really important while coding and even small glitches can cause a big bug. I have developed features which people can use. Fixed existing bugs that people encountered. This was such a unique experience. If I haven't met GSoC this year, I wouldn't be an open source contributor or I would have been very late in another time in my life. I can easily say that I've learned a lot about C++, Qt, design patterns, web services, testing, debugging, git and gained important experience on all of them. What I have learned was I am enjoying hours of coding, testing, hunting bug, and solving problems. If I have to compare myself before and after the GSoC, the difference is huge.
 
 #### Conclusion
-At the end of the coding period, the decided side projects and their little steps were implemented into Mixxx. Such as *Find On Web*, *Find on Web with Factory Design*, and *Cover Art Label* without a menu.  Besides the side projects, there were many bugs (which were affecting both the stable 2.3.3 version and the upstream branch) reported and fixed. Such as the empty XML, the rate limit of MusicBrainz, aborting the tag fetcher, etc. With those fixes, Mixxx users will have the better fetching metadata experience. At the end of the period, unfortunately, the Track suggestion feature couldn't be implemented into the Mixxx code base but we have a working POC as an open PR. Also, an existing request from a long time ago was discussed seriously with the developers and users on the Zulip GSoC channel. We have over-searched the available services and discussed the main problems with fetching suggestions from different services, how to make this feature useful and what needs to be done to have the best use-case. This will be a reference to the future for sure.
+At the end of the coding period, the decided side projects and their little steps were implemented into Mixxx. Such as *Find On Web*, *Find on Web with Factory Design*, and *Cover Art Label* without a menu.  Besides the side projects, there were many bugs (which were affecting both the stable 2.3.3 version and the upstream branch) reported and fixed. Such as the empty XML, the rate limit of MusicBrainz, aborting the tag fetcher, etc. With those fixes, Mixxx users will have a better fetching metadata experience. At the end of the period, unfortunately, the Track suggestion feature couldn't be implemented into the Mixxx code base but we have a working POC as an open PR. Also, an existing request from a long time ago was discussed seriously with the developers and users on the Zulip GSoC channel. We have over-searched the available services and discussed the main problems with fetching suggestions from different services, how to make this feature useful and what needs to be done to have the best use-case. This will be a reference to the future for sure.
 
 #### Acknowledgements
-I want to start with how great Mixxx is! Since the first day I joined the community and introduce myself on Zulip today, I am enjoying it a lot and I am so happy to be part of Mixxx. Everybody in the community was really helpful and they are doing their bests to make Mixxx the best DJ Software. I would like to thank all the developers and contributors who contributed to Mixxx in any way.
+I want to start with how great Mixxx is! Since the first day I joined the community and introduce myself on Zulip today, I am enjoying it a lot and I am so happy to be part of Mixxx. Everybody in the community was really helpful and they are doing their best to make Mixxx the best DJ Software. I would like to thank all the developers and contributors who contributed to Mixxx in any way.
 
 I can not express how thankful I am, to my mentor [@Daniel Schürmann]({author}daniel-schurmann). He has been such a great adviser, teacher, and guide from the very beginning to the end of the project. It won't be my fault if I say that he has been the best mentor! Besides being a really good mentor, he was so friendly. The ideas that he shared with me broadened my aspect through the project. At the beginning of the project, I was nervous about the whole big thing that needs to be done, and he gave me perspective in those sorts of circumstances. That was "broom stroke after broom stroke". This perspective helped me from the beginning till the end. There is one last thing left that I need to add, which is... "It's Friday Again!".
 
