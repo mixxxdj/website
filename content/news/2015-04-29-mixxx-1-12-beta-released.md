@@ -40,7 +40,7 @@ There are too many new features and fixes to list all of them, but here's just s
 <li><b>More to come! </b>
 </li>
 </ul>
-<li><b>Configurable, Resizeable User Interface with 3 Brand New Skins</b>
+<li><b>Configurable, Resizable User Interface with 3 Brand New Skins</b>
 </li>
 <li><b>Cover Art Display</b>
 </li>
