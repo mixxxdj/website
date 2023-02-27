@@ -1,8 +1,8 @@
 title: Mixxx accepted for GSoC 2023!
 authors: Daniel Schürmann
 tags: gsoc, gsoc-2023
-status: draft
 comments: no
+date: 2023-02-27 09:42:04
 
 Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/programs/2023/organizations/mixxx) for [Google Summer of Code 2023](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development.
 
