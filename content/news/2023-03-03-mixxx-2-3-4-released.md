@@ -1,8 +1,8 @@
 title: Mixxx 2.3.4 Released
 authors: Nikolaus Einhauser
-status: draft
 tags: 2.3, 2.3.4, release announcement
 comments: yes
+date: 2023-03-03 18:51:28
 
 
 You know the drill, another 2.3 bugfix release. [Mixxx
