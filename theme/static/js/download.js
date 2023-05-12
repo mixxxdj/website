@@ -23,8 +23,11 @@
         if (window.navigator.userAgent.indexOf("Windows") !== -1) {
             return ["windows", "win" + detectBitness()];
         }
-        if (window.navigator.userAgent.indexOf("Mac") !== -1) {
+        if (window.navigator.userAgent.indexOf("Intel Mac") !== -1) {
             return ["macos", ["macosintel"]];
+        }
+        if (window.navigator.userAgent.indexOf("ARM Mac") !== -1) {
+            return ["macos", ["macosarm"]];
         }
         if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
             return ["ubuntu", []];
