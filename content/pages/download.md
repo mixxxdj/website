@@ -87,6 +87,8 @@ versions:
         packages:
         - slug: macosintel
           name: Intel
+        - slug: macosarm
+          name: ARM
       - slug: ubuntu
         os: Ubuntu 20.04 "Focal Fossa" or later
         text: |
