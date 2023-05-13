@@ -88,7 +88,7 @@ versions:
       - slug: macos
         os: macOS 10.12 or later
         text: |
-          Download Mixxx 2.5-alpha for Intel macOS 10.12 or later or for ARM macOS 11.0 or later (Apple silicon M1/M2). Check your OS by clicking the Apple Logo in the menu bar, then About this Mac -> If chip contains Apple M..., then download the ARM build.
+          Download Mixxx 2.5-alpha for Intel macOS 10.12 or later or for ARM macOS 11.0 or later (Apple silicon M1/M2). You can check which version you need by clicking the Apple logo in the menu bar, then "About this Mac". If the window displays an "Apple M..." chip, download the ARM build, otherwise you need the Intel build.
         packages:
         - slug: macosintel
           name: Intel
