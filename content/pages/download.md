@@ -70,6 +70,7 @@ versions:
           name: 2.3.5 release
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.5.tar.gz
   testing:
+    name: 2.5-alpha
     title: Development Snapshots
     text: |
       A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
