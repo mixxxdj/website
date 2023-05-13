@@ -23,11 +23,11 @@
         if (window.navigator.userAgent.indexOf("Windows") !== -1) {
             return ["windows", "win" + detectBitness()];
         }
-        if (window.navigator.userAgent.indexOf("Intel Mac") !== -1) {
-            return ["macos", ["macosintel"]];
-        }
-        if (window.navigator.userAgent.indexOf("ARM Mac") !== -1) {
-            return ["macos", ["macosarm"]];
+        // The user agent of ARM Mac can be "Intel Mac" as well,
+        // so we cannot directly download "macosintel" here.
+        // [] scrolls to the two buttons for manual selection.
+        if (window.navigator.userAgent.indexOf("Mac") !== -1) {
+            return ["macos", []];
         }
         if (window.navigator.userAgent.indexOf("Ubuntu") !== -1) {
             return ["ubuntu", []];
