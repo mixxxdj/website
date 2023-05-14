@@ -121,9 +121,9 @@
         {% if download.text %}
         {{ download.text|markdown }}
         {% elif download.os %}
-        <p>Download Mixxx {{ version_name }} for {{ download.os }}.</p>
+        <p>Download Mixxx {{ version.name }} for {{ download.os }}.</p>
         {% else %}
-        <p>Download Mixxx {{ version_name }}.</p>
+        <p>Download Mixxx {{ version.name }}.</p>
         {% endif %}
 
         {% if download.packages %}

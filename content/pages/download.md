@@ -14,6 +14,8 @@ versions:
             name: 64-Bit
       - slug: macos
         os: macOS 10.12 or later
+        text: |
+          Download Mixxx 2.3.5 for Intel macOS 10.12 or later. This also runs with Rosetta 2 on ARM macOS (Apple silicon). Alternatively use the the native ARM build development snapshot from below.  
         packages:
         - slug: macosintel
           name: Intel
@@ -70,6 +72,7 @@ versions:
           name: 2.3.5 release
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.5.tar.gz
   testing:
+    name: 2.5-alpha
     title: Development Snapshots
     text: |
       A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
@@ -84,9 +87,13 @@ versions:
             name: 64-Bit
       - slug: macos
         os: macOS 10.12 or later
+        text: |
+          Download Mixxx 2.5-alpha for Intel macOS 10.12 or later or for ARM macOS 11.0 or later (Apple silicon M1/M2). You can check which version you need by clicking the Apple logo in the menu bar, then "About this Mac". If the window displays an "Apple M..." chip, download the ARM build, otherwise you need the Intel build.
         packages:
         - slug: macosintel
           name: Intel
+        - slug: macosarm
+          name: ARM
       - slug: ubuntu
         os: Ubuntu 20.04 "Focal Fossa" or later
         text: |
