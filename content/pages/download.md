@@ -75,9 +75,9 @@ versions:
     name: 2.4-beta
     title: Beta Snapshots
     text: |
-      A great way to contribute to Mixxx is testing the upcoming version before is has been released.
+      A great way to contribute to Mixxx is testing the upcoming version before it is being released.
       The Mixxx team relies on a significant number of users switching to the beta version and using it at home.
-      This is the only way to find bugs in time before a release that may have slip through the initial review process or affect rarely used use cases.
+      This is the only way to find bugs in time before a release that may have slipped through the initial review process or affect rare use cases.
 
       **Beta snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing).
     download_manifest: https://downloads.mixxx.org/snapshots/2.4/manifest.json
