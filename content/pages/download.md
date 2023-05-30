@@ -75,9 +75,11 @@ versions:
     name: 2.4-beta
     title: Beta Snapshots
     text: |
-      A great way to contribute to Mixxx is testing the upcoming version before is has been released. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
+      A great way to contribute to Mixxx is testing the upcoming version before is has been released.
+      The Mixxx team relies on a significant number of users switching to the beta version and using it at home.
+      This is the only way to find bugs in time before a release that may have slip through the initial review process or affect rarely used use cases.
 
-      **Beta snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
+      **Beta snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing).
     download_manifest: https://downloads.mixxx.org/snapshots/2.4/manifest.json
     downloads:
       - slug: windows
@@ -124,7 +126,8 @@ versions:
     name: 2.5-alpha
     title: Development Snapshots
     text: |
-      A great way to contribute to Mixxx is testing the latest code we're working on and giving early feedback. Refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they are merged.
+      If you're bored of thoroughly testing the beta snapshots, you can also test the current development snapshot to get a glimpse at the even newer features.
+      As for the beta snapshots, please refer to the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing) for where to find the latest builds and instructions how to test pull requests before they even reach this alpha.
 
       **Development snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the Testing wiki page.
     download_manifest: https://downloads.mixxx.org/snapshots/main/manifest.json
