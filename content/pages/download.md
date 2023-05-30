@@ -73,7 +73,7 @@ versions:
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.5.tar.gz
   beta:
     name: 2.4-beta
-    title: Beta Snapshots
+    title: Beta Snapshots (2.4)
     text: |
       A great way to contribute to Mixxx is testing the upcoming version before it is being released.
       The Mixxx team relies on a significant number of users switching to the beta version and using it at home.
