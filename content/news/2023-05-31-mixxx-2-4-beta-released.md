@@ -10,7 +10,8 @@ Keep your eyes peeled for the stable version of 2.4 being released in August if
 everything goes according to plan. In the meantime, we need help from **YOU**!
 In order to get 2.4 stable, we need lots of people testing this beta release,
 the more, the better. Please [download it](https://mixxx.org/download/#beta) and
-report any bugs you find on [our bugtracker](github.com/mixxxdj/mixxx/issues).
+report any bugs you find on [our
+bugtracker](https://github.com/mixxxdj/mixxx/issues).
 
 Here's a quick look at the most important changes and new features you can look
 forward to in Mixxx 2.4:
