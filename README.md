@@ -53,6 +53,26 @@ If you are previewing your changes locally, Pelican will not add the new post to
 
 Run that command from the root of this git repository.
 
+## Submitting Changes
+
+Regardless of whether you'd like to submit website content (blog posts, new
+pages, etc.) or changes in website coding. You will need to conform to our
+coding styles. As with most of our other repositories, we use
+[pre-commit](https://pre-commit.com/) for that. Since you should already have a
+working python setup, [installing pre-commit is very
+easy](https://pre-commit.com/#installation).
+
+```bash
+pip install pre-commit # to install pre-commit on your machine
+pre-commit install # to register pre-commit with git so your changes are checked before committing ("pre-commit" so to speak :) )
+```
+
+Afterwards, submitting changes is as easy as making your commits (make sure you
+make those on your own branch instead of the `website` one ), pushing them to
+your fork and filing a Pull request on the `mixxxdj/website` repository. If
+you're having trouble with this step and need a more in depth guide, there are
+plenty of good tutorials on the internet on how to use git and github.
+
 ## Documentation
 
 Pelican uses [Jinja2][jinja2] templates for rendering pages.
