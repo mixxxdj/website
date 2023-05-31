@@ -94,9 +94,7 @@ def main(argv=None):
                 if not entry.is_file():
                     continue
 
-                matchobj = re.match(
-                    r"^([0-9X]{4})-XX-XX-(?P<title>.*)$", entry.name
-                )
+                matchobj = re.match(r"^XXXX-XX-XX-(?P<slug>.+)$", entry.name)
                 if not matchobj:
                     continue
 
@@ -124,9 +122,9 @@ def main(argv=None):
 
                 post_date = merge_datetime.strftime("%Y-%m-%d %H:%M:%S")
 
-                title = matchobj.group("title")
+                slug = matchobj.group("slug")
                 date = merge_datetime.strftime("%Y-%m-%d")
-                new_filepath = os.path.join(path, f"{date}-{title}")
+                new_filepath = os.path.join(path, f"{date}-{slug}")
                 print(f"  New filename: {new_filepath}")
 
                 if os.path.exists(new_filepath):

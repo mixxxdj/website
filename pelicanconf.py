@@ -47,7 +47,7 @@ PAGINATION_PATTERNS = (
     (1, "{url}", "{save_as}"),
     (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
 )
-FILENAME_METADATA = r"(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)"
+FILENAME_METADATA = r"^((?P<date>\d{4}-\d{2}-\d{2})|XXXX-XX-XX)-(?P<slug>.+)$"
 DEFAULT_METADATA = {
     "comments": "yes",
 }

@@ -1,5 +1,6 @@
 import datetime
 import os
+import logging
 
 from pelican import signals
 
@@ -7,6 +8,13 @@ from pelican import signals
 def article_generator_context(article_generator, metadata):
     if metadata.get("status") != "draft":
         return
+
+    if "slug" not in metadata:
+        logger = logging.getLogger(__name__)
+        logger.warning(
+            "Draft article: '%s' is not named according to XXXX-XX-XX-my-post-title.md",
+            metadata["title"],
+        )
 
     # This environment variable is set when building a deploy preview on
     # Netlify. We use it to update the draft status of articles to "published",
