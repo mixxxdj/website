@@ -1,8 +1,8 @@
 title: Mixxx 2.4 beta release
 authors: Nikolaus Einhauser
-status: draft
 tags: 2.4, beta, release announcement
 comments: yes
+date: 2023-05-31 11:29:40
 
 It's been a while, but after almost exactly 3 years, we're proud to announce the
 beta version of the next major release: Mixxx 2.4!  
