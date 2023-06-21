@@ -99,14 +99,14 @@ versions:
       - slug: ubuntu
         os: Ubuntu 20.04 "Focal Fossa" or later
         text: |
-          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies) to make installing the latest development snapshot of Mixxx as easy as possible.
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas) to make installing the latest development snapshot of Mixxx as easy as possible.
           Open a terminal, and enter:
 
               $ sudo add-apt-repository ppa:mixxx/mixxxbetas
               $ sudo apt update
               $ sudo apt install mixxx
 
-          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/nightlies/+packages) and install them manually.
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas/+packages) and install them manually.
       - slug: source
         name: Source Code
         icon: terminal.svg
