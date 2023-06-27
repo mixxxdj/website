@@ -22,9 +22,20 @@ The Mixxx application doesn't use any user account, and does not collect any use
 Mixxx does not collect any data, nor any telemetry, when Mixxx is being run.
 However, some limited personal information could be collected or shared in 3 precise cases:
 
-- during the crash report process,
-- during updates checking,
-- for metadata retrieval.
+- for metadata retrieval
+- during the crash report process
+- during automatic updates process
+
+## Mixxx Metadata Requests
+
+The Mixxx Application can automatically search online for metadata associated to your media, on 3rd partiy services.
+This metadata mechanism can be disabled at every moment, in Mixxx preferences.
+The information sent does not contain any name, username, email from the user, but these requests will
+contain information about audio files on your computer, including artist, title, album, etc...
+
+The 3rd party that can be contacted by Mixxx, automatically is:
+
+ - MusicBrainz - For this service, please refer their Privacy Policy here: [https://metabrainz.org/privacy](https://metabrainz.org/privacy)
 
 ## Mixxx Crash Reporting
 
@@ -48,20 +59,8 @@ The Mixxx application itself doesn't provide an update mechanism.
 In case updates are handled by the platform stores, where the user has downloaded Mixxx from,
 please refer to those platforms for information about the privacy policies.
 
-## Mixxx Metadata Requests
 
-Mixxx can automatically search online for metadata associated to your media, to 3rd parties.
-Those requests can contain information about the media, including artist, title, album, etc...
-This metadata mechanism can be disabled at every moment, in Mixxx preferences.
-
-The main 3rd parties that can be contacted by Mixxx, automatically is:
-
- - MusicBrainz
-
-Please refer to those services for their own privacy policy.
-Mixxx does not have access to any of those requests and data, except in the MusicBrainz case, detailed below, in this document.
-
-## Mixxx Website
+## Main Mixxx Website
 
 The main website of Mixxx, aka www.mixxx.org, does not create or use any user account.
 There are no registration forms, or any similar mechanism.
@@ -82,19 +81,5 @@ Each of those websites have different users system, but work in a similar way. U
 - You can find the Zulip Privacy Policy here: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
 One can modify their user information at any time, through the options of those websites.
-
-## MusicBrainz
-
-Mixxx is running a MusicBrainz instance, that can be used to find information about a music, and artist and so on.
-
-Those automatic requests can contain information about the media, including artist, title, album, etc…
-
-This metadata mechanism is accepted on the first run of Mixxx, and can be disabled at every moment, in Mixxx preferences.
-
-The information sent does not contain any name, username, email from the user.
-
-No information from the request is kept after the transaction.
-
-The connection logs can contain some limited information (like user-agents) and partial search next to the IP.
 
 *Last updated: 27 June 2023*
