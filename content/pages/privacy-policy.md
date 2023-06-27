@@ -40,13 +40,13 @@ Depending on the platform, Mixxx Core Developers have access to these reports, w
 - List of DLLs loaded by the process
 
 None of these data is stored on Mixxx servers.
-
+In addition Mixxx writes a mixxx.log file which contains entries that may expose personal data. In a support case we may ask to share this file in public. This is a manual process during which you may obfuscate sensitive date before sharing.  
 ## Mixxx Update Mechanism
 
 The Mixxx application itself doesn't provide an update mechanism.
 
-Updates are handled by the Stores of each platforms, where the user has downloaded Mixxx from.
-Please refer to those platforms for information about the privacy policies.
+In case updates are handled by the platform stores, where the user has downloaded Mixxx from,
+please refer to those platforms for information about the privacy policies.
 
 ## Mixxx Metadata Requests
 
@@ -56,7 +56,7 @@ This metadata mechanism can be disabled at every moment, in Mixxx preferences.
 
 The main 3rd parties that can be contacted by Mixxx, automatically is:
 
- - Mixxx MusicBrainz instance.
+ - MusicBrainz
 
 Please refer to those services for their own privacy policy.
 Mixxx does not have access to any of those requests and data, except in the MusicBrainz case, detailed below, in this document.
