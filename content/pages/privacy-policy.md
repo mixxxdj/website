@@ -60,7 +60,6 @@ The main 3rd parties that can be contacted by Mixxx, automatically is:
 
 Please refer to those services for their own privacy policy.
 Mixxx does not have access to any of those requests and data, except in the MusicBrainz case, detailed below, in this document.
-Mixxx mobile
 
 ## Mixxx Website
 
