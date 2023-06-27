@@ -15,7 +15,7 @@ For privacy policies and conformance to GDPR, a few distinctions will be done be
 
 For each of the previous software/websites, we'll detail the different privacy policies.
 
-## Mixxx application
+## Mixxx Application
 
 The Mixxx application doesn't use any user account, and does not collect any user data, when running.
 
@@ -26,7 +26,7 @@ However, some limited personal information could be collected or shared in 3 pre
 - during updates checking,
 - for metadata retrieval.
 
-## Mixxx crash reporting
+## Mixxx Crash Reporting
 
 The Mixxx application itself neither collects crash reports nor shares them.
 
@@ -41,14 +41,14 @@ Depending on the platform, Mixxx Core Developers have access to these reports, w
 
 None of these data is stored on Mixxx servers.
 
-## Mixxx update mechanism
+## Mixxx Update Mechanism
 
 The Mixxx application itself doesn't provide an update mechanism.
 
 Updates are handled by the Stores of each platforms, where the user has downloaded Mixxx from.
 Please refer to those platforms for information about the privacy policies.
 
-## Mixxx metadata requests
+## Mixxx Metadata Requests
 
 Mixxx can automatically search online for metadata associated to your media, to 3rd parties.
 Those requests can contain information about the media, including artist, title, album, etc...
@@ -62,13 +62,13 @@ Please refer to those services for their own privacy policy.
 Mixxx does not have access to any of those requests and data, except in the MusicBrainz case, detailed below, in this document.
 Mixxx mobile
 
-## Main Mixxx website
+## Mixxx Website
 
 The main website of Mixxx, aka www.mixxx.org, does not create or use any user account.
 There are no registration forms, or any similar mechanism.
 Therefore, no personal information is stored at any moment, about the user, by Mixxx.
 
-## Community Mixxx websites
+## Community Mixxx Websites
 
 The community websites from Mixxx are related to development and community, and are the following:
 
@@ -92,7 +92,7 @@ One can request deletion of their account, by contacting Mixxx.
 
 Mixxx is running a MusicBrainz instance, that can be used to find information about a music, and artist and so on.
 
-Those automatic requests can contain information about the media, including artist, title, album, etc...
+Those automatic requests can contain information about the media, including artist, title, album, etc…
 
 This metadata mechanism is accepted on the first run of Mixxx, and can be disabled at every moment, in Mixxx preferences.
 
@@ -102,4 +102,4 @@ No information from the request is kept after the transaction.
 
 The connection logs can contain some limited information (like user-agents) and partial search next to the IP.
 
-Last update date: 27 June 2023.
+*Last updated: 27 June 2023*
