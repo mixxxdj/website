@@ -17,12 +17,13 @@ For each of the previous software/websites, we'll detail the different privacy p
 
 ## Mixxx Application
 
-The Mixxx application doesn't use any user account, and does not collect any user data, when running.
+The Mixxx application doesn't use any kind of Mixxx user account, and doesn't collect any user data, when running.
 
 Mixxx does not collect any data, nor any telemetry, when Mixxx is being run.
 However, some limited personal information could be collected or shared in 3 precise cases:
 
 - for metadata retrieval
+- during broadcasting
 - during the crash report process
 - during automatic updates process
 
@@ -36,6 +37,11 @@ contain information about audio files on your computer, including artist, title,
 The 3rd party that can be contacted by Mixxx, automatically is:
 
  - MusicBrainz - For this service, please refer their Privacy Policy here: [https://metabrainz.org/privacy](https://metabrainz.org/privacy)
+
+## Broadcasting
+
+If you use the broadcasting feature of the Mixxx application, you need to enter login data of a third party Soundcast/Icecast server.
+Mixxx itself doesn't offer such a service. Only metadata of the played tracks are send to these servers by the Mixxx application.
 
 ## Mixxx Crash Reporting
 
