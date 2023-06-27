@@ -72,21 +72,17 @@ Therefore, no personal information is stored at any moment, about the user, by M
 
 The community websites from Mixxx are related to development and community, and are the following:
 
-- GitHub
+- GitHub (Code, Issue Tracking, Wiki)
 - Discourse Forum
 - Zulip Chat
 
-Each of those websites have different users system, but work in a similar way.
+Each of those websites have different users system, but work in a similar way. User need to log in and have a profile, this requires the use of login data and cookies. Refer the privacy statements of these sites for details:
 
-No user information is processed in any way other than being able to log in and have a profile.
-
-On GitHub no user information is shared to any 3rd party.
-
-Our Discourse Forum has an own Privacy Policy. You can find it at: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
+- You can find the GitHub Privacy Statement here: [https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement)
+- You can find the Privacy Policy of the Mixxx Discourse Forum here: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
+- You can find the Zulip Privacy Policy here: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
 One can modify their user information at any time, through the options of those websites.
-
-One can request deletion of their account, by contacting Mixxx.
 
 ## MusicBrainz
 
