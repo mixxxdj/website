@@ -9,13 +9,11 @@ There is no business-model around Mixxx, and the only revenue we receive is thro
 
 For privacy policies and conformance to GDPR, a few distinctions will be done between:
 
-- Mixxx application
-- Main Mixxx website
-- Community Mixxx websites
+1. Mixxx application
+2. Main Mixxx website
+3. Community Mixxx websites
 
-For each of the previous software/websites, we'll detail the different privacy policies.
-
-## Mixxx Application
+## 1. Mixxx Application
 
 The Mixxx application doesn't use any kind of Mixxx user account, and doesn't collect any user data, when running.
 
@@ -27,7 +25,7 @@ However, some limited personal information could be collected or shared in 3 pre
 - during the crash report process
 - during automatic updates process
 
-## Mixxx Metadata Requests
+### Mixxx Metadata Requests
 
 The Mixxx Application can automatically search online for metadata associated to your media, on 3rd partiy services.
 This metadata mechanism can be disabled at every moment, in Mixxx preferences.
@@ -38,12 +36,12 @@ The 3rd party that can be contacted by Mixxx, automatically is:
 
  - MusicBrainz - For this service, please refer their Privacy Policy here: [https://metabrainz.org/privacy](https://metabrainz.org/privacy)
 
-## Broadcasting
+### Broadcasting
 
 If you use the broadcasting feature of the Mixxx application, you need to enter login data of a third party Soundcast/Icecast server.
 Mixxx itself doesn't offer such a service. Only metadata of the played tracks are send to these servers by the Mixxx application.
 
-## Mixxx Crash Reporting
+### Mixxx Crash Reporting
 
 The Mixxx application itself neither collects crash reports nor shares them.
 
@@ -58,7 +56,7 @@ Depending on the platform, Mixxx Core Developers have access to these reports, w
 
 None of these data is stored on Mixxx servers.
 In addition Mixxx writes a mixxx.log file which contains entries that may expose personal data. In a support case we may ask to share this file in public. This is a manual process during which you may obfuscate sensitive date before sharing.  
-## Mixxx Update Mechanism
+### Mixxx Update Mechanism
 
 The Mixxx application itself doesn't provide an update mechanism.
 
@@ -66,13 +64,13 @@ In case updates are handled by the platform stores, where the user has downloade
 please refer to those platforms for information about the privacy policies.
 
 
-## Main Mixxx Website
+## 2. Main Mixxx Website
 
 The main website of Mixxx, aka www.mixxx.org, does not create or use any user account.
 There are no registration forms, or any similar mechanism.
 Therefore, no personal information is stored at any moment, about the user, by Mixxx.
 
-## Community Mixxx Websites
+## 3. Community Mixxx Websites
 
 The community websites from Mixxx are related to development and community, and are the following:
 
@@ -87,5 +85,9 @@ Each of those websites have different users system, but work in a similar way. U
 - You can find the Zulip Privacy Policy here: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
 One can modify their user information at any time, through the options of those websites.
+
+## Contact Mixxx
+
+Various contact options are listed here: [Contact Mixxx](contact)
 
 *Last updated: 27 June 2023*
