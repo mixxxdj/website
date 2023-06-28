@@ -27,12 +27,10 @@ However, some limited personal information could be collected or shared in 3 pre
 
 ### Mixxx Metadata Requests
 
-The Mixxx Application can automatically search online for metadata associated to your media, on 3rd partiy services.
-This metadata mechanism can be disabled at every moment, in Mixxx preferences.
-The information sent does not contain any name, username, email from the user, but these requests will
-contain information about audio files on your computer, including artist, title, album, etc...
+The Mixxx Application can use 3rd party online services to collect metadata associated to your media. 
+These requests contain information about audio files on your computer, including artist, title, album, etc...
 
-The 3rd party that can be contacted by Mixxx, automatically is:
+The 3rd party that can be contacted by Mixxx is:
 
  - MusicBrainz - For this service, please refer their Privacy Policy here: [https://metabrainz.org/privacy](https://metabrainz.org/privacy)
 
