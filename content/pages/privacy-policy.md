@@ -60,7 +60,7 @@ In addition Mixxx writes a mixxx.log file which contains entries that may expose
 
 The Mixxx application itself doesn't provide an update mechanism.
 
-In case updates are handled by the platform stores, where the user has downloaded Mixxx from,
+In case updates are handled by the platform stores the user has downloaded Mixxx from,
 please refer to those platforms for information about the privacy policies.
 
 
