@@ -93,6 +93,6 @@ Each of those websites have different users systems. In order to participate use
 
 ## Contact Mixxx
 
-Various contact options are listed here: [Contact Mixxx](/contact)
+Various contact options are listed here: [Contact Mixxx]({filename}contact.md)
 
 *Last updated: 27 June 2023*
