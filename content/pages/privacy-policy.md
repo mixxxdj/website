@@ -3,9 +3,10 @@ slug: privacy-policy
 
 ## Introduction
 
-Mixxx is a non-profit project, managed by volunteers.
+Mixxx is a non-profit project managed by volunteers.
 
-There is no business-model around Mixxx, and the only revenue we receive is through donations.
+There is no business model around Mixxx, and the only revenue we receive is through donations.
+
 
 For privacy policies and conformance to GDPR, a few distinctions will be made between:
 
