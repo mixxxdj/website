@@ -54,7 +54,9 @@ Depending on the platform, Mixxx Core Developers have access to these reports, w
 
 None of these data is stored on Mixxx servers.
 In addition Mixxx writes a mixxx.log file which contains entries that may expose personal data. In a support case we may ask to share this file in public. This is a manual process during which you may obfuscate sensitive date before sharing.  
+
 ### Mixxx Update Mechanism
+
 
 The Mixxx application itself doesn't provide an update mechanism.
 
