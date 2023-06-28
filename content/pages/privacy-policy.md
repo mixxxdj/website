@@ -43,7 +43,8 @@ Currently Mixxx supports web searches on the following 3rd party websites:
 ### Broadcasting
 
 If you use the broadcasting feature of the Mixxx application, you need to enter login data of a third party Soundcast/Icecast server.
-Mixxx itself doesn't offer such a service. Only metadata of the played tracks is send to these servers by the Mixxx application.
+Mixxx itself doesn't offer such a service.
+If used, the live audio stream as well as metadata of the played tracks is sent to these servers by the Mixxx application.
 
 
 ### Mixxx Crash Reporting
