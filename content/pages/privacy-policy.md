@@ -26,7 +26,8 @@ However, some limited personal information could be collected or shared in 4 pre
 - during the crash report process
 - during automatic updates process
 
-### Mixxx Metadata Requests
+#### Mixxx Metadata Requests
+
 
 The Mixxx application can use the 3rd party MusicBrainz online service to collect metadata associated to your media.
 
@@ -40,14 +41,16 @@ Currently Mixxx supports web searches on the following 3rd party websites:
 - [discogs.com](https://www.discogs.com)
 - [last.fm](https://www.last.fm)
 
-### Broadcasting
+#### Broadcasting
+
 
 If you use the broadcasting feature of the Mixxx application, you need to enter login data of a third party Soundcast/Icecast server.
 Mixxx itself doesn't offer such a service.
 If used, the live audio stream as well as metadata of the played tracks is sent to these servers by the Mixxx application.
 
 
-### Mixxx Crash Reporting
+#### Mixxx Crash Reporting
+
 
 The Mixxx application itself neither collects crash reports nor shares them.
 
@@ -65,7 +68,8 @@ None of these data is stored on Mixxx servers.
 In addition Mixxx writes a `mixxx.log` file which contains entries that may expose personal data. In a support case we may ask to share this file in public. This is a manual process during which you may obfuscate sensitive date before sharing.  
 
 
-### Mixxx Update Mechanism
+#### Mixxx Update Mechanism
+
 
 The Mixxx application itself doesn't provide an update mechanism.
 
