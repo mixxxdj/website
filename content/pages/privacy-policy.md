@@ -68,7 +68,8 @@ please refer to those platforms for information about the privacy policies.
 
 The main website of Mixxx, aka www.mixxx.org, does not create or use any user account.
 There are no registration forms, or any similar mechanism.
-Therefore, no personal information is stored at any moment, about the user, by Mixxx.
+Therefore, no personal information is stored at any moment by Mixxx.
+
 
 ## 3. Mixxx Community Websites
 
