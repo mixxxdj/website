@@ -79,7 +79,8 @@ The Mixxx community websites are related to development and community, and are t
 - Discourse Forum
 - Zulip Chat
 
-Each of those websites have different users system, but work in a similar way. In order to participate users need to create a login and a user profile which requires login data and cookies. Refer the privacy statements of these sites for details:
+Each of those websites have different users systems. In order to participate users need to create a login, share some personal data and accept cookies. Refer the privacy statements of these sites for details:
+
 
 - You can find the GitHub Privacy Statement here: [https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement)
 - You can find the Privacy Policy of the Mixxx Discourse Forum here: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
