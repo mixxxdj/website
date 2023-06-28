@@ -51,7 +51,7 @@ If used, the live audio stream as well as metadata of the played tracks is sent 
 
 The Mixxx application itself neither collects crash reports nor shares them.
 
-Crash reports may be handled by the vendors of each platform (e.g., through the [Windows Error Reporting](https://learn.microsoft.com/en-us/windows/win32/wer/windows-error-reporting) feature).
+Crash reports may be handled by the vendors of each platform (e.g., through the [Windows Error Reporting](https://learn.microsoft.com/windows/win32/wer/windows-error-reporting) feature).
 Please refer to those platforms for information about the privacy policies.
 Depending on the platform, Mixxx core developers have access to these reports, which usually contain:
 
