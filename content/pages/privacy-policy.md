@@ -94,9 +94,9 @@ The Mixxx community websites are related to development and community, and are t
 Each of those websites have different users systems. In order to participate users need to create a login, share some personal data and accept cookies. Refer the privacy statements of these sites for details:
 
 
-- You can find the GitHub Privacy Statement here: [https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement)
-- You can find the Privacy Policy of the Mixxx Discourse Forum here: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
-- You can find the Zulip Privacy Policy here: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
+- GitHub Privacy Statement: [https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement)
+- Mixxx Discourse Forum Privacy Policy: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
+- Zulip Privacy Policy: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
 
 ## Contact Mixxx
