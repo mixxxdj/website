@@ -18,7 +18,8 @@ For privacy policies and conformance to GDPR, a few distinctions will be made be
 
 The Mixxx application doesn't require or use any kind of user account, nor does it collect any user data when being used, nor does it use any kind of telemetry.
 
-However, some limited personal information could be collected or shared in 3 precise cases:
+However, some limited personal information could be collected or shared in 4 precise cases:
+
 
 - for metadata retrieval
 - during broadcasting
