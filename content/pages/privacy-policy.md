@@ -86,7 +86,6 @@ Each of those websites have different users systems. In order to participate use
 - You can find the Privacy Policy of the Mixxx Discourse Forum here: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
 - You can find the Zulip Privacy Policy here: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
-One can modify their user information at any time, through the options of those websites.
 
 ## Contact Mixxx
 
