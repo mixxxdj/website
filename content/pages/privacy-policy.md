@@ -28,12 +28,16 @@ However, some limited personal information could be collected or shared in 3 pre
 
 ### Mixxx Metadata Requests
 
-The Mixxx Application can use 3rd party online services to collect metadata associated to your media.
+The Mixxx Application can use the 3rd party MusicBrainz online service to collect metadata associated to your media.
 These requests contain information about audio files on your computer, which is the [AcoustID](https://acoustid.org/), artist, title and album.
+For this service, please refer their Privacy Policy here: [https://metabrainz.org/privacy](https://metabrainz.org/privacy)
 
-The 3rd party that can be contacted by Mixxx is:
+A further option is the 'Find On Web' menu, which opens a 3rd party website in your web browser, using only the metadata listed in the particula sub-menu as search key.
+Currently Mixxx supports web searches on the following 3rd party websites:
 
- - MusicBrainz - For this service, please refer their Privacy Policy here: [https://metabrainz.org/privacy](https://metabrainz.org/privacy)
+- [soundcloud.com](https://soundcloud.com)
+- [discogs.com](https://www.discogs.com)
+- [last.fm](https://www.last.fm)
 
 ### Broadcasting
 
