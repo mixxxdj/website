@@ -16,9 +16,8 @@ For privacy policies and conformance to GDPR, a few distinctions will be made be
 
 ## 1. Mixxx Application
 
-The Mixxx application doesn't require or use any kind of user account, nor does it collect any user data when being used.
+The Mixxx application doesn't require or use any kind of user account, nor does it collect any user data when being used, nor does it use any kind of telemetry.
 
-Mixxx does not collect any data, nor any telemetry, when Mixxx is being run.
 However, some limited personal information could be collected or shared in 3 precise cases:
 
 - for metadata retrieval
