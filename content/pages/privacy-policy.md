@@ -49,7 +49,7 @@ Mixxx itself doesn't offer such a service. Only metadata of the played tracks is
 
 The Mixxx application itself neither collects crash reports nor shares them.
 
-Crash reports are handled by the Stores/Vendors of each platforms.
+Crash reports may be handled by the vendors of each platform (e.g., through the [Windows Error Reporting](https://learn.microsoft.com/en-us/windows/win32/wer/windows-error-reporting) feature).
 Please refer to those platforms for information about the privacy policies.
 Depending on the platform, Mixxx Core Developers have access to these reports, which usually contain:
 
