@@ -99,8 +99,8 @@ Each of those websites have different users systems. In order to participate use
 - Zulip Privacy Policy: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
 
-## Contact Mixxx
+## Contact
 
-Various contact options are listed here: [Contact Mixxx]({filename}contact.md)
+You can contact the `Mixxx Development Team` here: [Contact Mixxx]({filename}contact.md)
 
 *Last updated: 27 June 2023*
