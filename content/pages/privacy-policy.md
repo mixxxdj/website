@@ -57,12 +57,10 @@ In addition Mixxx writes a mixxx.log file which contains entries that may expose
 
 ### Mixxx Update Mechanism
 
-
 The Mixxx application itself doesn't provide an update mechanism.
 
 In case updates are handled by the platform stores the user has downloaded Mixxx from,
 please refer to those platforms for information about the privacy policies.
-
 
 ## 2. Main Mixxx Website
 
@@ -74,13 +72,11 @@ Therefore, no personal information is stored at any moment, about the user, by M
 
 The Mixxx community websites are related to development and community, and are the following:
 
-
 - GitHub (Code, Issue Tracking, Wiki)
 - Discourse Forum
 - Zulip Chat
 
 Each of those websites have different users system, but work in a similar way. In order to participate users need to create a login and a user profile which requires login data and cookies. Refer the privacy statements of these sites for details:
-
 
 - You can find the GitHub Privacy Statement here: [https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement)
 - You can find the Privacy Policy of the Mixxx Discourse Forum here: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
