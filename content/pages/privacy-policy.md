@@ -88,6 +88,6 @@ One can modify their user information at any time, through the options of those 
 
 ## Contact Mixxx
 
-Various contact options are listed here: [Contact Mixxx](contact)
+Various contact options are listed here: [Contact Mixxx](/contact)
 
 *Last updated: 27 June 2023*
