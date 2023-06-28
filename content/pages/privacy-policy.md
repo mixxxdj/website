@@ -29,7 +29,7 @@ However, some limited personal information could be collected or shared in 3 pre
 ### Mixxx Metadata Requests
 
 The Mixxx Application can use 3rd party online services to collect metadata associated to your media.
-These requests contain information about audio files on your computer, including artist, title, album, etc...
+These requests contain information about audio files on your computer, which is the [AcoustID](https://acoustid.org/), artist, title and album.
 
 The 3rd party that can be contacted by Mixxx is:
 
