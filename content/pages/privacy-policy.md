@@ -70,7 +70,7 @@ please refer to those platforms for information about the privacy policies.
 
 ## 2. Main Mixxx Website
 
-The main website of Mixxx, aka www.mixxx.org, does not create or use any user account.
+The main website of Mixxx, which can be accessed via the `mixxx.org` domain, does not create or use any user account.
 There are no registration forms, or any similar mechanism.
 Therefore, no personal information is stored at any moment by Mixxx.
 
