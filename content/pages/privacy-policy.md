@@ -38,7 +38,8 @@ The 3rd party that can be contacted by Mixxx is:
 ### Broadcasting
 
 If you use the broadcasting feature of the Mixxx application, you need to enter login data of a third party Soundcast/Icecast server.
-Mixxx itself doesn't offer such a service. Only metadata of the played tracks are send to these servers by the Mixxx application.
+Mixxx itself doesn't offer such a service. Only metadata of the played tracks is send to these servers by the Mixxx application.
+
 
 ### Mixxx Crash Reporting
 
