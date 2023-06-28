@@ -7,7 +7,7 @@ Mixxx is a non-profit project, managed by volunteers.
 
 There is no business-model around Mixxx, and the only revenue we receive is through donations.
 
-For privacy policies and conformance to GDPR, a few distinctions will be done between:
+For privacy policies and conformance to GDPR, a few distinctions will be made between:
 
 1. Mixxx application
 2. Main Mixxx website
@@ -27,7 +27,7 @@ However, some limited personal information could be collected or shared in 3 pre
 
 ### Mixxx Metadata Requests
 
-The Mixxx Application can use 3rd party online services to collect metadata associated to your media. 
+The Mixxx Application can use 3rd party online services to collect metadata associated to your media.
 These requests contain information about audio files on your computer, including artist, title, album, etc...
 
 The 3rd party that can be contacted by Mixxx is:
@@ -70,15 +70,17 @@ The main website of Mixxx, aka www.mixxx.org, does not create or use any user ac
 There are no registration forms, or any similar mechanism.
 Therefore, no personal information is stored at any moment, about the user, by Mixxx.
 
-## 3. Community Mixxx Websites
+## 3. Mixxx Community Websites
 
-The community websites from Mixxx are related to development and community, and are the following:
+The Mixxx community websites are related to development and community, and are the following:
+
 
 - GitHub (Code, Issue Tracking, Wiki)
 - Discourse Forum
 - Zulip Chat
 
-Each of those websites have different users system, but work in a similar way. User need to log in and have a profile, this requires the use of login data and cookies. Refer the privacy statements of these sites for details:
+Each of those websites have different users system, but work in a similar way. In order to participate users need to create a login and a user profile which requires login data and cookies. Refer the privacy statements of these sites for details:
+
 
 - You can find the GitHub Privacy Statement here: [https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement)
 - You can find the Privacy Policy of the Mixxx Discourse Forum here: [https://mixxx.discourse.group/privacy](https://mixxx.discourse.group/privacy)
