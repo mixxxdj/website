@@ -99,8 +99,8 @@ Each of those websites have different users systems. In order to participate use
 - Zulip Privacy Policy: [https://zulip.com/policies/privacy](https://zulip.com/policies/privacy)
 
 
-## Contact
+## Contact Us
 
-You can contact the `Mixxx Development Team` here: [Contact Mixxx]({filename}contact.md)
+In case of privacy related question or requests, you can contact the `Mixxx Development Team` using the following e-mail address: ![Contact address for privacy issues]({static}/images/PrivacyAtMixxxDotOrg.png){align="top" height="25px" }
 
-*Last updated: 27 June 2023*
+*Last updated: 5 July 2023*
