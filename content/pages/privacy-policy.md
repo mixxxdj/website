@@ -78,8 +78,7 @@ please refer to those platforms for information about the privacy policies.
 
 ## 2. Main Mixxx Website
 
-The main website of Mixxx, which can be accessed via the `mixxx.org` domain, does not create or use any user account.
-There are no registration forms, or any similar mechanism.
+The main website of Mixxx, which can be accessed via the `mixxx.org` domain, does not create or use any user account. The Mixxx main page does not use cookies or similar tracking methods.
 Therefore, no personal information is stored at any moment by Mixxx.
 
 
@@ -103,4 +102,4 @@ Each of those websites have different users systems. In order to participate use
 
 In case of privacy related question or requests, you can contact the `Mixxx Development Team` here: [Contact Page]({filename}contact.md){align="top" height="25px" }
 
-*Last updated: 5 July 2023*
+*Last updated: 8 July 2023*
