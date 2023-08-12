@@ -10,18 +10,18 @@ We are proud to announce Mixxx 2.4, which will be released NEXT WEEK, a new majo
 Here you can find some highlights of the Mixxx 2.4 features:
 
 ### EngineOS export
-Mixxx 2.4 adds support for exporting crates, playlists and the library to Engine OS devices ( Denon and Numark standalone controllers).
+Mixxx 2.4 adds support for exporting crates, playlists and the library to Engine DJ OS devices (Denon and Numark standalone controllers).
 This allows users to prepare their tracks on a laptop using Mixxx, export them on an USB stick and plug it to the standalone controller at your gig.
 
 ### Saved Loops
-Mixxx 2.4 adds support for Saved loops
+Mixxx 2.4 adds support for Saved Loops
 If you have already tracks with Saved Loops defined by Serato DJ, Mixxx 2.4 will automatically read them from the track metadata.
 
 
 ### Effects
 Mixxx 2.4 introduces Effect Chains, a set of effects with parameters which can be saved and loaded with all it's parameters.
 In the effect units, Mixxx 2.4 visualizes these effect parameter by value, unit and knob position.
-If you've defined an Effect Chain, you can also load it as Quick-Effect, where you have only one knob to control.
+Once you've created an Effect Chain, you can also define individual Super Knob mappings, that allows to use it as Quick-Effect, where you take creative control with a single knob.
 
 ### Sync
 Mixxx 2.4 adds support to set an explicit leader for sync, by click on the new button with the crown symbol next to the Sync button.
@@ -29,15 +29,15 @@ This mode is useful when tracks have variable BPM and sync is enabled, all the d
 
 ### Track Menu
 The track menu in Mixxx 2.4 is extended by several new features:
--An action to select loaded track in library
--An action to analyze/re-analyze with variable/constant BPM on a per-track basis
--An action for looking up track metadata at Discogs, Soundcoud and LastFM
--An action to remove track files from disk
+- An action to select loaded track in library
+- An action to analyze/re-analyze with variable/constant BPM on a per-track basis
+- An action for looking up track metadata at Discogs, Soundcoud and LastFM
+- An action to remove track files from disk
 
 ### Many other changes
 
 #### Soundstrecher / Key-Shift-Algorithms
-Mixxx 2.4 supports now 3 alternative Key-Shift-Algorithms
+Mixxx 2.4 supports now 3 alternative Key-Shift algorithms
 - Soundtouch (Basic audio quality - high performance)
 - Rubberband R2 (High audio quality - higher CPU usage)
 - Rubberband R3 (HIFI audio quality - very high CPU usage)
