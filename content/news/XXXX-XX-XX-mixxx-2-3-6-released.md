@@ -6,13 +6,13 @@ comments: yes
 
 Welcome the Mixxx release version 2.3.6, the final maintenance release before releasing the upcoming 2.4.0 with exiting new features.
 
-This little bug fix release may appear insignificant, but it's a testament to the rock-solid quality we bring to every user and ensuring a reliable mixing experience.
+This small bug fix release may appear insignificant, but it's a testament to the rock-solid quality we bring to every user and tp ensure a reliable mixing experience.
 
-This release improves among other things some details with looping, allows playing tracks exceeding 6 hours and fixes rare crashes in exceptional situations.
+This release improves, among other things, some details with looping, allows playing tracks exceeding 6 hours and fixes rare crashes in exceptional situations.
 
-You can download the new version here: https://mixxx.org/download/ There you will also find the 2.4 beta with which you can already try the new features that will be released soon.
+You can download the new version from https://mixxx.org/download/ There, you will also find the 2.4&nbsp;beta to test the new features that will be released soon.
 
-Here is the full change log of Mixxx 2.3.6 for more details:
+Here is the full changelog of Mixxx 2.3.6 for more details:
 
 * Fixed possible crash when closing Mixxx while browsing the file system
   [#11593](https://github.com/mixxxdj/mixxx/pull/11593)
