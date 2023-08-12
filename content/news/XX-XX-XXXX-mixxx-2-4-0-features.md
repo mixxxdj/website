@@ -20,7 +20,9 @@ If you have already tracks with Saved Loops defined by Serato DJ, Mixxx 2.4 will
 
 
 ### Effects
-Mixxx 2.4 introduces Effect Chains, a set of effects with parameters which can be saved and loaded with all it's parameters. Mixxx 2.4 visualizes these effect parameter by value, unit and knob position.
+Mixxx 2.4 introduces Effect Chains, a set of effects with parameters which can be saved and loaded with all it's parameters.
+In the effect units, Mixxx 2.4 visualizes these effect parameter by value, unit and knob position.
+If you've defined an Effect Chain, you can also load it as Quick-Effect, where you have only one knob to control.
 
 ### Sync
 Mixxx 2.4 adds support to set an explicit leader for sync, by click on the new button with the crown symbol next to the Sync button.
