@@ -23,8 +23,8 @@ If you have already tracks with Saved Loops defined by Serato DJ, Mixxx 2.4 will
 Mixxx 2.4 introduces Effect Chains, a set of effects with parameters which can be saved and loaded with all it's parameters. Mixxx 2.4 visualizes these effect parameter by value, unit and knob position.
 
 ### Sync
-Mixxx 2.4 adds support for setting an explicit leader for sync. Only one deck can be the sync leader, this is set and indicated by the new crown symbol button.
-This mode is useful if you work with tracks, with variable BPM.
+Mixxx 2.4 adds support to set an explicit leader for sync, by click on the new button with the crown symbol next to the Sync button.
+This mode is useful when tracks have variable BPM and sync is enabled, all the decks will follow the changing BPM of the sync leader.
 
 ### Track Menu
 The track menu in Mixxx 2.4 is extended by several new features:
