@@ -10,7 +10,7 @@ This small bug fix release may appear insignificant, but it's a testament to the
 
 This release improves, among other things, some details with looping, allows playing tracks exceeding 6 hours and fixes rare crashes in exceptional situations.
 
-You can download the new version from https://mixxx.org/download/ There, you will also find the 2.4&nbsp;beta to test the new features that will be released soon.
+You can download the new version from the [Donload](https://mixxx.org/download/) page. There, you will also find the 2.4&nbsp;beta to test the new features that will be released soon.
 
 Here is the full changelog of Mixxx 2.3.6 for more details:
 
