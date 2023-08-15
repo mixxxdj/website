@@ -3,9 +3,9 @@ title: Download
 template: pages/download
 versions:
   stable:
-    name: 2.3.5
+    name: 2.3.6
     release_announcement: /news/2023-05-11-mixxx-2-3-5-released/
-    download_manifest: https://downloads.mixxx.org/releases/2.3.5/manifest.json
+    download_manifest: https://downloads.mixxx.org/releases/2.3.6/manifest.json
     downloads:
       - slug: windows
         os: Windows 7 or later
@@ -15,7 +15,7 @@ versions:
       - slug: macos
         os: macOS 10.12 or later
         text: |
-          Download Mixxx 2.3.5 for Intel macOS 10.12 or later. This also runs with Rosetta 2 on ARM macOS (Apple silicon). Alternatively use the the native ARM build development snapshot from below.  
+          Download Mixxx 2.3.6 for Intel macOS 10.12 or later. This also runs with Rosetta 2 on ARM macOS (Apple silicon). Alternatively use the the native ARM build development snapshot from below.  
         packages:
         - slug: macosintel
           name: Intel
@@ -61,7 +61,7 @@ versions:
 
               git clone -b 2.3 https://github.com/mixxxdj/mixxx.git
 
-          The 2.3.5 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.3.5) with `2.3.5`.
+          The 2.3.6 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.3.6) with `2.3.6`.
 
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
@@ -69,8 +69,8 @@ versions:
           name: 2.3 branch
           file_url: https://github.com/mixxxdj/mixxx/archive/2.3.zip
         - slug: source
-          name: 2.3.5 release
-          file_url: https://github.com/mixxxdj/mixxx/archive/2.3.5.tar.gz
+          name: 2.3.6 release
+          file_url: https://github.com/mixxxdj/mixxx/archive/2.3.6.tar.gz
   beta:
     name: 2.4-beta
     title: Beta Snapshots (2.4)
