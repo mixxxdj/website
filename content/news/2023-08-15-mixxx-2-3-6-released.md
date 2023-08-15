@@ -1,8 +1,8 @@
 title: Mixxx 2.3.6 released
 authors: Daniel Schürmann
 tags: 2.3, 2.3.6, release announcement
-status: draft
 comments: yes
+date: 2023-08-15 13:09:47
 
 Welcome the Mixxx release version 2.3.6, the final maintenance release before releasing the upcoming 2.4.0 with exiting new features.
 
