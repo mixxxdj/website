@@ -47,7 +47,7 @@ versions:
       - slug: archlinux
         os: Arch Linux
         text: |
-          The latest stable version of Mixxx is [available](https://archlinux.org/packages/community/x86_64/mixxx/) in the community repository and can be installed using `pacman`.
+          The latest stable version of Mixxx is [available](https://archlinux.org/packages/extra/x86_64/mixxx/) in the extra repository and can be installed using `pacman`.
           Open a terminal, and enter:
 
               sudo pacman -S mixxx
