@@ -11,7 +11,7 @@ Here you can find some highlights of the Mixxx 2.4 features:
 
 ### EngineOS export
 Mixxx 2.4 adds support for exporting crates, playlists and the library to Engine DJ OS devices (Denon and Numark standalone controllers).
-This allows users to prepare their tracks on a laptop using Mixxx, export them on an USB stick and plug it to the standalone controller at your gig.
+This lets users prepare their tracks on a laptop using Mixxx and export them to a USB stick for use on a standalone controller at their gig.
 
 ### Saved Loops
 Mixxx 2.4 adds support for Saved Loops
