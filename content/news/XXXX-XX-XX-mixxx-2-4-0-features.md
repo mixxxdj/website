@@ -7,7 +7,7 @@ comments: yes
 
 We are proud to announce Mixxx 2.4, which will be released NEXT WEEK, a new major version of our free open source DJ software. It took about two years since the last release due to the large number of new features and changes under the hood.
 
-Here you can find some highlights of the Mixxx 2.4 features:
+The 2.4 release includes the following highlights:
 
 ### EngineOS export
 Mixxx 2.4 adds support for exporting crates, playlists and the library to Engine DJ OS devices (Denon and Numark standalone controllers).
