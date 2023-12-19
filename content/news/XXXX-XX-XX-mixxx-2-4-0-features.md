@@ -25,7 +25,7 @@ In the effect units, Mixxx 2.4 visualizes these effect parameter by value, unit 
 Once you've created an Effect Chain, you can also define individual Super Knob mappings, that allows to use it as Quick-Effect, where you take creative control with a single knob.
 
 ### Sync
-Mixxx 2.4 adds support to set an explicit leader for sync, by click on the new button with the crown symbol next to the Sync button.
+Mixxx 2.4 adds support for choosing the sync leader by clicking on the new button with the crown symbol next to the Sync button.
 This mode is useful when tracks have variable BPM and sync is enabled, all the decks will follow the changing BPM of the sync leader.
 
 ### Track Menu
