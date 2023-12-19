@@ -20,7 +20,7 @@ If you already have tracks with Saved Loops from Serato DJ, Mixxx 2.4 will autom
 <video autoplay loop><source src="/images/news/SavedLoopsFeature.mp4" type='video/mp4'></video>
 
 ### Effects
-Mixxx 2.4 introduces Effect Chains, a set of effects with parameters which can be saved and loaded with all it's parameters.
+Mixxx 2.4 introduces Effect Chains, a set of effects with parameters which can be saved and loaded with all its parameters.
 In the effect units, Mixxx 2.4 visualizes these effect parameter by value, unit and knob position.
 Once you've created an Effect Chain, you can also define individual Super Knob mappings, that allows to use it as Quick-Effect, where you take creative control with a single knob.
 
