@@ -1,9 +1,9 @@
 #hardware.cover-bg {
-    background-image: url('/theme/images/cover/hardware-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/theme/images/cover/hardware-bg.jpg');
 }
 
 #library.cover-bg {
-    background-image: url('/theme/images/cover/library-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/theme/images/cover/library-bg.jpg');
 }
 
 #broadcast.cover-bg {
