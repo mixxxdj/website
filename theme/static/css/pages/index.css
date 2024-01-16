@@ -1,5 +1,5 @@
 .splash.cover-bg {
-    background-image: url('/theme/images/cover/splash-bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('/theme/images/cover/splash-bg.jpg');
 }
 
 .splash .splash-logo {
