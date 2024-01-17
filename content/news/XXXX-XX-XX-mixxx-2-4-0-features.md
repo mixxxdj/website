@@ -40,9 +40,9 @@ The track menu in Mixxx 2.4 is extended by several new features:
 
 #### Soundstretcher / Key-Shift Algorithms
 Mixxx 2.4 now supports three different key shift algorithms:
-- Soundtouch (Basic audio quality - high performance)
-- Rubberband R2 (High audio quality - higher CPU usage)
-- Rubberband R3 (HIFI audio quality - very high CPU usage)
+ - Soundtouch (Basic audio quality - high performance)
+ - Rubberband R2 (High audio quality - higher CPU usage)
+ - Rubberband R3 (HIFI audio quality - very high CPU usage)
 
 #### Major rework of the Waveform Rendering code
 Solves some long lasting performance issue, especially on macOS.
