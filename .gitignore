@@ -1,3 +1,4 @@
-/output/
+# Directories without trailing slash to allow symbolic links
+/output
 *.pyc
 *~
