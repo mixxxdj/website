@@ -50,8 +50,8 @@ Solves some long lasting performance issue, especially on macOS.
 #### Native macOS ARM builds for M1/M2 Apple silicon
 
 #### Controller Backend
-ES6 based controller mapping system
-HID backend rework
+ES7 based controller mapping system.  
+HID backend rework.
 
 ## Mixxx 2.4 Factsheet
 
