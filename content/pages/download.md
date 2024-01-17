@@ -35,7 +35,7 @@ versions:
       - slug: fedora
         os: Fedora
         text: |
-          RPM Fusion builds are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible. If you do not have the RPM Fusion repository installed already, before installing Mixxx, run:
+          [RPM Fusion builds](https://koji.rpmfusion.org/koji/packageinfo?packageID=148) are maintained by the Mixxx development team. We support the next, the current, and selected previous Fedora release(s) if possible. If you do not have the RPM Fusion repository installed already, before installing Mixxx, run:
 
               sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
