@@ -15,7 +15,7 @@ versions:
       - slug: macos
         os: macOS 10.12 or later
         text: |
-          Download Mixxx 2.3.6 for Intel macOS 10.12 or later. This also runs with Rosetta 2 on ARM macOS (Apple silicon). Alternatively use the the native ARM build development snapshot from below.  
+          Download Mixxx 2.3.6 for Intel macOS 10.12 or later. This also runs with Rosetta 2 on ARM macOS (Apple silicon). Alternatively use the the native ARM build development snapshot from below.
         packages:
         - slug: macosintel
           name: Intel
