@@ -31,6 +31,7 @@ This mode is useful when tracks have variable BPM and sync is enabled, all the d
 
 ### Track Menu
 The track menu in Mixxx 2.4 is extended by several new features:
+
 - An action to select loaded track in library
 - An action to analyze/re-analyze with variable/constant BPM on a per-track basis
 - An action for looking up track metadata at Discogs, Soundcoud and LastFM
@@ -40,9 +41,10 @@ The track menu in Mixxx 2.4 is extended by several new features:
 
 #### Soundstretcher / Key-Shift Algorithms
 Mixxx 2.4 now supports three different key shift algorithms:
- - Soundtouch (Basic audio quality - high performance)
- - Rubberband R2 (High audio quality - higher CPU usage)
- - Rubberband R3 (HIFI audio quality - very high CPU usage)
+
+- Soundtouch (Basic audio quality - high performance)
+- Rubberband R2 (High audio quality - higher CPU usage)
+- Rubberband R3 (HIFI audio quality - very high CPU usage)
 
 #### Major rework of the Waveform Rendering code
 Solves some long lasting performance issue, especially on macOS.
@@ -56,12 +58,14 @@ HID backend rework.
 ## Mixxx 2.4 Factsheet
 
 Supported platforms:
+
 - Windows7 or later on x64 processors
 - macOS 10.12 or later on x64 processors
 - macOS 11.0 or later on ARM processors (M1/M2 Apple silicon)
 - Ubuntu Linux 20.4 or later (other Linux distributions are supported by third-parties)
 
 Supported controllers:
+
 - Mappings for 100 MIDI controllers included
 - Mappings for 100 HID controllers included
 
