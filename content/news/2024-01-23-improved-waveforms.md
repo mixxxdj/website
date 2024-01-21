@@ -1,4 +1,4 @@
-title: Improved Scrolling Waveform in Mixxx 2.4.0
+title: Improved Scrolling Waveforms in Mixxx 2.4.0
 authors: Maarten de Boer
 tags: 2.4, improvements
 status: draft
