@@ -5,7 +5,7 @@ status: draft
 comments: yes
 date: 2023-08-15 13:09:47
 
-One of the improvements of Mixxx 2.4 is a rewrite of the scrolling waveforms code. This results in smoother animation at a higher frame rate (60 fps), with less frame-drops and lower CPU load. These improvements are particularly noticeable on macOS, but also apply to Windows and Linux.
+One of the major improvements of Mixxx 2.4 is a rewrite of the scrolling waveforms code. This results in smoother animation at a higher frame rate (60 fps), with less frame-drops and lower CPU load. These improvements are particularly noticeable on macOS, but also apply to Windows and Linux.
 
 The Mixxx scrolling waveforms are drawn with a number of overlapping layers: The beat grid, the looping-, intro- and outro-ranges, the markers, the end-of-track indication, and the actual waveform. Originally these layers were rendered with a combination of Qt (QPainter) and Legacy OpenGL calls, on the now deprecated QGLWidget. Profiling showed that this combination was a performance bottleneck, particularly on macOS. With the rewrite, all these layers are now using Modern OpenGL, with hardware accelerated GLSL shaders. The different waveform types (Simple, Filtered, HSV, RGB and RGB L/R) all come with a GLSL implementation. In addition to the waveforms, the spinny widgets and VU-meters have been rewritten with the same approach.
 
