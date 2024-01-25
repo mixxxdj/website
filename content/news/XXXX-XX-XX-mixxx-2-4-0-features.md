@@ -1,5 +1,5 @@
 title: Mixxx 2.4 Release
-authors: Jörg Wartenberg
+authors: Mixxx Team
 status: draft
 tags: release, 2.4
 comments: yes
