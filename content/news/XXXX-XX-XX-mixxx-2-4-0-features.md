@@ -18,7 +18,7 @@ This lets users prepare their tracks on a laptop using Mixxx and export them to 
 Mixxx 2.4 adds support for Saved Loops
 If you already have tracks with Saved Loops from Serato DJ, Mixxx 2.4 will automatically read them from the track metadata.
 
-<video autoplay loop><source src="/images/news/SavedLoopsFeature.mp4" type='video/mp4'></video>
+@Video(https://www.youtube.com/watch?v=f8hI_uv9zHY)
 
 ### Effects
 Mixxx 2.4 introduces Effect Chains, a set of effects which can be saved and reloaded with all its parameters and their individual Meta Knob mapping. Effect Chains can also be exported and imported, which allows to share them with others.
