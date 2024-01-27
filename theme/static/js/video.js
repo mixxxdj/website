@@ -2,7 +2,7 @@
     document.addEventListener("DOMContentLoaded", function() {
         // Your code to run since DOM is loaded and ready
         for (let element of document.querySelectorAll(".video-container")) {
-            let dialog = document.querySelector(".video-dialog");
+            let dialog = element.querySelector(".video-dialog");
             let videoId = dialog.dataset.source;
             let button = element.querySelector(".video-button");
             button.addEventListener("click", function() {

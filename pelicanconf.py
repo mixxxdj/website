@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 import jinja2
+import markupsafe
 import markdown
 
 AUTHOR = "Mixxx DJ Team"
@@ -276,7 +277,7 @@ JINJA_ENVIRONMENT = {
         "jinja2.ext.i18n",
     ],
 }
-JINJA_FILTERS = {"markdown": lambda text: jinja2.Markup(md.convert(text))}
+JINJA_FILTERS = {"markdown": lambda text: markupsafe.Markup(md.convert(text))}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
