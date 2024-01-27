@@ -1,3 +1,4 @@
-/output/
-*.pyc
-*~
+# default destination for files rendered by pelican
+/output
+# python bytecode cache
+__pycache__
