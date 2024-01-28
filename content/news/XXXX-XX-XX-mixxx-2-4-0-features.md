@@ -66,8 +66,8 @@ Supported platforms:
 
 Supported controllers:
 
-- Mappings for 100 MIDI controllers included
-- Mappings for 100 HID controllers included
+- Mappings for 129 MIDI controllers included
+- Mappings for 16 HID controllers included
 
 
 
