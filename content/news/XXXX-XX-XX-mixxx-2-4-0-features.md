@@ -68,6 +68,7 @@ Supported controllers:
 
 - Mappings for 129 MIDI controllers included
 - Mappings for 16 HID controllers included
+see the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) of supported controllers in the Mixxx Manual
 
 
 
