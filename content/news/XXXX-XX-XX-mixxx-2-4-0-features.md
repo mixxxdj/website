@@ -5,7 +5,7 @@ tags: release, 2.4
 comments: yes
 
 
-We are proud to announce Mixxx 2.4, which will be released NEXT WEEK, a new major version of our free open source DJ software. It took about two years since the last release due to the large number of new features and changes under the hood.
+We are proud to announce Mixxx 2.4, which will be released TKTKTKTKTKTK, a new major version of our free open source DJ software. It took about two years since the last release due to the large number of new features and changes under the hood.
 
 The 2.4 release includes the following highlights:
 
@@ -83,7 +83,7 @@ High-Resolution images of the Mixxx logo can be downloaded here:
 https://mixxx.org/press/logo
 
 Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:
-https://mixxx.org/tbd
+https://mixxx.org/TKTKTKTKTKTK
 
 Press contact
 Feel free to contact us via:
