@@ -32,10 +32,10 @@ This mode is useful when tracks have variable BPM and sync is enabled, all the d
 ### Track Menu
 The track menu in Mixxx 2.4 is extended by several new features:
 
-- An action to select loaded track in library
-- An action to analyze/re-analyze with variable/constant BPM on a per-track basis
-- An action for looking up track metadata at Discogs, Soundcoud and LastFM
-- An action to remove track files from disk
+- Select loaded track in library
+- Analyze/re-analyze with variable/constant BPM on a per-track basis
+- Looking up track metadata at Discogs, Soundcoud and LastFM
+- Remove track files from disk
 
 ### Many other changes
 
