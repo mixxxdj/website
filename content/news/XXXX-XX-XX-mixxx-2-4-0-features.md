@@ -39,33 +39,31 @@ The track menu in Mixxx 2.4 is extended by several new features:
 
 ### Many other changes
 
-#### Soundstretcher / Key-Shift Algorithms
+##### Soundstretcher / Key-Shift Algorithms
 Mixxx 2.4 now supports three different key shift algorithms:
 
 - Soundtouch (Basic audio quality - medium CPU usage)
 - Rubberband R2 (High audio quality - higher CPU usage)
 - Rubberband R3 (HIFI audio quality - very high CPU usage)
 
-#### Major rework of the Waveform Rendering code
+##### Major rework of the Waveform Rendering code
 Solves some long lasting performance issue, especially on macOS.
 
-#### Native macOS ARM builds for M1/M2 Apple silicon
+##### Native macOS ARM builds for M1/M2 Apple silicon
 
-#### Controller Backend
+##### Controller Backend
 ES7 based controller mapping system.  
 HID backend rework.
 
 ## Mixxx 2.4 Factsheet
 
-Supported platforms:
-
+#####Supported platforms:
 - Windows 7 or later on x86_64 ("x64") processors
 - macOS 10.12 or later on x86_64 processors
 - macOS 11.0 or later on ARM processors (M1/M2 Apple silicon)
 - Ubuntu Linux 20.4 or later (other Linux distributions are supported by third parties)
 
-Supported controllers:
-
+#####Supported controllers:
 - Mappings for 129 MIDI controllers included
 - Mappings for 16 HID controllers included
 see the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) of supported controllers in the Mixxx Manual
@@ -73,19 +71,19 @@ see the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) o
 
 
 ## Media information
-Test builds of Mixxx 2.4 can be found here before the final release:
-https://mixxx.org/download/#beta
+Test builds of Mixxx 2.4 can be found here before the final release:  
+[https://mixxx.org/download/#beta](https://mixxx.org/download/#beta)
 
-The manual for Mixxx 2.4 can be found here:
-https://manual.mixxx.org/2.4/en/
+The manual for Mixxx 2.4 can be found here:  
+[https://manual.mixxx.org/2.4/en/](https://manual.mixxx.org/2.4/en/)
 
-Images for media use
-High-Resolution images of the Mixxx logo can be downloaded here:
-https://mixxx.org/press/logo
+#####Images for media use
+High-Resolution images of the Mixxx logo can be downloaded here:  
+[https://mixxx.org/press/logo](https://mixxx.org/press/logo)
 
-Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:
-https://mixxx.org/TKTKTKTKTKTK
+Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:  
+[https://mixxx.org/TKTKTKTKTKTK](https://mixxx.org/TKTKTKTKTKTK)
 
-Press contact
-Feel free to contact us via:
-press@mixxx.org
+#####Press contact
+Feel free to contact us via:  
+[press@mixxx.org](mailto:press@mixxx.org)
