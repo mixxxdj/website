@@ -25,10 +25,6 @@ Mixxx 2.4 introduces Effect Chains, a set of effects which can be saved and relo
 Once you've created an Effect Chain, you can define individual Super Knob mappings which allows to use it as Quick-Effect, where you take creative control with a single knob. Effect parameters can be reordered and or hidden.
 In the effect units, Mixxx 2.4 also displays value and unit of effect knob parameters while they are being adjusted.
 
-### Sync
-Mixxx 2.4 adds support for choosing the sync leader by clicking on the new button with the crown symbol next to the Sync button.
-This mode is useful when tracks have variable BPM and sync is enabled, all the decks will follow the changing BPM of the sync leader.
-
 ### Track Menu
 The track menu in Mixxx 2.4 is extended by several new features:
 
@@ -36,6 +32,11 @@ The track menu in Mixxx 2.4 is extended by several new features:
 - Analyze/re-analyze with variable/constant BPM on a per-track basis
 - Looking up track metadata at Discogs, Soundcoud and LastFM
 - Remove track files from disk
+
+### Sync
+Mixxx 2.4 adds support for choosing the sync leader by clicking on the new button with the crown symbol next to the Sync button.
+This mode is useful when tracks have variable BPM and sync is enabled, all the decks will follow the changing BPM of the sync leader.
+@Video(https://www.youtube.com/watch?v=Rt6KvqzcaGo)
 
 ### Many other changes
 
