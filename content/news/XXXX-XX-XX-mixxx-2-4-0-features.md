@@ -59,8 +59,8 @@ HID backend rework.
 
 Supported platforms:
 
-- Windows7 or later on x64 processors
-- macOS 10.12 or later on x64 processors
+- Windows 7 or later on x86_64 ("x64") processors
+- macOS 10.12 or later on x86_64 processors
 - macOS 11.0 or later on ARM processors (M1/M2 Apple silicon)
 - Ubuntu Linux 20.4 or later (other Linux distributions are supported by third parties)
 
