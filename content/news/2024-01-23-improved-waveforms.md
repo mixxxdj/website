@@ -5,7 +5,7 @@ status: draft
 comments: yes
 date: 2023-08-15 13:09:47
 
-One of the major improvements of Mixxx 2.4 is a revision of the scrolling waveform implementation, to achieve smoother animation at a higher frame rate (60 fps), with less frame-drops and lower CPU load.
+One of the major improvements in Mixxx 2.4 is a revision of the scrolling waveform implementation, to achieve smoother animation at a higher frame rate (60 fps), with fewer frame-drops and a lower CPU load.
 
 ## Rewrite
 
@@ -33,4 +33,4 @@ The deprecated QGLWidget has been replaced by a custom solution using a QOpenGLW
 
 ## New display synchronization mode
 
-Finally, a last minute addition is an alternative mode to synchronise the scrolling waveform animation with the display refresh rate, using a so-called phase-locked-loop (PLL). This mechanism attempts to track the actual refresh rate and timing of the display automatically. On particular hardware, the default periodic timer-based approach can result in jitter and frame drops and the PLL may gives better results. The PLL has been made the default on macOS. See [instructions to change the V-Sync mode](https://github.com/mixxxdj/mixxx/wiki/Changing-the-VSync-Mode-for-Scrolling-Waveforms) if you want to try which mode works best for you.
+Finally, a last minute addition is an alternative mode to synchronise the scrolling waveform animation with the display refresh rate, using a so-called phase-locked-loop (PLL). This mechanism attempts to track the actual refresh rate and timing of the display automatically. On particular hardware, the default periodic timer-based approach can result in jitter and frame drops, and the PLL may give better results. The PLL has been made the default on macOS. See [instructions to change the V-Sync mode](https://github.com/mixxxdj/mixxx/wiki/Changing-the-VSync-Mode-for-Scrolling-Waveforms) if you want to try which mode works best for you.
