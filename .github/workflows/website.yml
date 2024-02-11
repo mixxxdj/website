@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - website
+      - 2.4
 
 jobs:
   update-news-date:
