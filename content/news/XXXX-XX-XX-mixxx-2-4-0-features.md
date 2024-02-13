@@ -79,7 +79,7 @@ HID backend rework.
 - Mappings for 129 MIDI controllers included
 - Mappings for 16 HID controllers included
 
-See the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) of supported controllers in the Mixxx Manual
+See the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) of supported controllers in the Mixxx Manual.
 
 ## Media information
 
