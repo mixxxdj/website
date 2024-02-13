@@ -22,7 +22,7 @@ If you already have tracks from Serato DJ with Saved Loops, Mixxx 2.4 will impor
 
 @Video(https://www.youtube.com/watch?v=f8hI_uv9zHY)
 
-### Effects
+### Effect Chains
 
 Mixxx 2.4 introduces Effect Chains, a set of effects which can be saved and reloaded with all their parameters and individual Meta Knob mappings.
 Effect Chains can also be exported and imported, which allows you to share them with other Mixxx DJs.
@@ -30,7 +30,7 @@ Once you've created an Effect Chain, you can create a custom Super Knob mapping 
 Effect parameters can be reordered and or hidden.
 In the effect units, Mixxx 2.4 also displays the value and unit of effect knob parameters while they are being adjusted.
 
-### Track Menu
+### Track Menu Enhancements
 
 The track menu in Mixxx 2.4 is enhanced by several new features:
 
@@ -39,7 +39,7 @@ The track menu in Mixxx 2.4 is enhanced by several new features:
 - Looking up track metadata at Discogs, Soundcoud and LastFM.
 - Remove track files from disk.
 
-### Sync Improvements
+### Sync Lock Improvements
 
 Mixxx 2.4 adds support for manually selecting the Sync Leader by clicking on the new button with the crown symbol next to the Sync button.
 This mode is useful when tracks have variable BPM.
