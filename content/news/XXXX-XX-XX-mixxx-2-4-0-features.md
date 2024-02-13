@@ -36,7 +36,7 @@ The track menu in Mixxx 2.4 is enhanced by several new features:
 
 - Select loaded track in library.
 - Analyze/re-analyze with variable/constant BPM on a per-track basis.
-- Looking up track metadata at Discogs, Soundcoud and LastFM.
+- Look up track metadata at Discogs, SoundCloud and LastFM.
 - Remove track files from disk.
 
 ### Sync Lock Improvements
