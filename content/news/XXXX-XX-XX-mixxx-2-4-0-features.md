@@ -69,23 +69,23 @@ For macOS users, this increases the stability and performance of Mixxx on Apple 
 Modernized Javascript ES7 based controller mapping system.
 HID backend rework.
 
-## Mixxx 2.4 Factsheet
+### Mixxx 2.4 Factsheet
 
-### Supported Platforms
+#### Supported Platforms
 
 - Windows 7 or later on 64bit processors
 - macOS 10.12 or later on Intel processors
 - macOS 11.0 or later on ARM processors (Apple Silicon)
 - Ubuntu Linux 20.04 or later (other Linux distributions are supported by third parties)
 
-### Supported Controllers
+#### Supported Controllers
 
 - Mappings for 129 MIDI controllers included
 - Mappings for 16 HID controllers included
 
 See the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) of supported controllers in the Mixxx Manual.
 
-## Press Information
+### Press Information
 
 Mixxx 2.4 is available right now:
 [https://mixxx.org/download/](https://mixxx.org/download/)
@@ -93,7 +93,7 @@ Mixxx 2.4 is available right now:
 The manual for Mixxx 2.4 can be found here:
 [https://manual.mixxx.org/2.4/en/](https://manual.mixxx.org/2.4/en/)
 
-### Images For Media Use
+#### Images For Media Use
 
 High-Resolution images of the Mixxx logo can be downloaded here:
 [https://mixxx.org/press/logo](https://mixxx.org/press/logo)
@@ -101,7 +101,7 @@ High-Resolution images of the Mixxx logo can be downloaded here:
 Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:
 [https://mixxx.org/screenshots](https://mixxx.org/screenshots)
 
-### Press Contact
+#### Press Contact
 
 Feel free to contact us via:
 [press@mixxx.org](mailto:press@mixxx.org)
