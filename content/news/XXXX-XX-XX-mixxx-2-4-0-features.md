@@ -4,12 +4,11 @@ status: draft
 tags: release, 2.4
 comments: yes
 
-
 We are proud to announce Mixxx 2.4, a new major version of our free open source DJ software, [available right now](https://mixxx.org/download/). It's been two years since the last release due to the large number of great new features and important changes under the hood.
 
 The 2.4 release includes the following highlights:
 
-### EngineOS export
+### EngineOS Export
 
 Mixxx 2.4 adds support for exporting crates, playlists and the library to Engine DJ OS devices, including Denon and Numark standalone controllers.
 @Video(https://www.youtube.com/watch?v=Qle9Y1KdD2Y)
@@ -46,9 +45,9 @@ This mode is useful when tracks have variable BPM.
 All decks with sync enabled will follow the changing BPM of the Sync Leader.
 @Video(https://www.youtube.com/watch?v=REiG8DBKr-M)
 
-### Many other changes
+### Many Other Changes
 
-##### Soundstretcher / Key-Shift Algorithms
+#### Soundstretcher / Key-Shift Algorithms
 
 Mixxx 2.4 now supports three different key shift algorithms:
 
@@ -56,34 +55,37 @@ Mixxx 2.4 now supports three different key shift algorithms:
 - Rubberband R2 (Good audio quality - higher CPU usage)
 - Rubberband R3 (High audio quality - very high CPU usage)
 
-##### Major rework of the Waveform Rendering code
+#### Waveform Rendering Reworked
 
 The waveform display has been rewritten, solving some longstanding performance issues, especially on macOS.
 
-##### Native macOS ARM builds for Apple silicon
+#### Apple Silicon Support
 
-##### Controller Backend
+Mixxx now supports macOS ARM systems ("Apple Silicon") such as M1 natively and provides installation packages for those architectures.
+For macOS users, this increases the stability and performance of Mixxx on Apple silicon.
+
+#### Controller Backend
 
 Modernized Javascript ES7 based controller mapping system.
 HID backend rework.
 
 ## Mixxx 2.4 Factsheet
 
-##### Supported platforms:
+### Supported Platforms
 
 - Windows 7 or later on 64bit processors
 - macOS 10.12 or later on Intel processors
 - macOS 11.0 or later on ARM processors (Apple Silicon)
 - Ubuntu Linux 20.04 or later (other Linux distributions are supported by third parties)
 
-##### Supported controllers:
+### Supported Controllers
 
 - Mappings for 129 MIDI controllers included
 - Mappings for 16 HID controllers included
 
 See the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) of supported controllers in the Mixxx Manual.
 
-## Media information
+## Press Information
 
 Mixxx 2.4 is available right now:
 [https://mixxx.org/download/](https://mixxx.org/download/)
@@ -91,7 +93,7 @@ Mixxx 2.4 is available right now:
 The manual for Mixxx 2.4 can be found here:
 [https://manual.mixxx.org/2.4/en/](https://manual.mixxx.org/2.4/en/)
 
-##### Images for media use
+### Images For Media Use
 
 High-Resolution images of the Mixxx logo can be downloaded here:
 [https://mixxx.org/press/logo](https://mixxx.org/press/logo)
@@ -99,7 +101,7 @@ High-Resolution images of the Mixxx logo can be downloaded here:
 Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:
 [https://mixxx.org/screenshots](https://mixxx.org/screenshots)
 
-##### Press contact
+### Press Contact
 
 Feel free to contact us via:
 [press@mixxx.org](mailto:press@mixxx.org)
