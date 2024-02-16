@@ -95,9 +95,6 @@ The manual for Mixxx 2.4 can be found here:
 
 #### Images For Media Use
 
-High-Resolution images of the Mixxx logo can be downloaded here:
-[https://mixxx.org/press/logo](https://mixxx.org/press/logo)
-
 Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:
 [https://mixxx.org/screenshots](https://mixxx.org/screenshots)
 
