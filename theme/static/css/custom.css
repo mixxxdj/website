@@ -214,6 +214,9 @@ input[type="button"].button-primary:disabled:hover {
     #buttons .grid-container.quarters {
         grid-template-columns: repeat(4, 1fr);
     }
+    #buttons .grid-container.thirds {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Feature Indents */
