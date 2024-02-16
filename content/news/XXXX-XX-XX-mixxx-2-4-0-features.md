@@ -4,7 +4,7 @@ status: draft
 tags: release, 2.4
 comments: yes
 
-We are proud to announce Mixxx 2.4, a new major version of our free open source DJ software, [available right now](https://mixxx.org/download/). It's been two years since the last release due to the large number of great new features and important changes under the hood.
+We are proud to announce Mixxx 2.4, a new major version of our free open source DJ software, [available right now](/download/). It's been two years since the last release due to the large number of great new features and important changes under the hood.
 
 The 2.4 release includes the following highlights:
 
@@ -88,7 +88,7 @@ See the [full list](https://manual.mixxx.org/2.4/hardware/manuals#controllers) o
 ### Press Information
 
 Mixxx 2.4 is available right now:
-[https://mixxx.org/download/](https://mixxx.org/download/)
+[https://mixxx.org/download/](/download/)
 
 The manual for Mixxx 2.4 can be found here:
 [https://manual.mixxx.org/2.4](https://manual.mixxx.org/2.4)
@@ -96,7 +96,7 @@ The manual for Mixxx 2.4 can be found here:
 #### Images For Media Use
 
 Full-Resolution images of the Mixxx 2.4 screenshots above can be downloaded here:
-[https://mixxx.org/screenshots](https://mixxx.org/screenshots)
+[https://mixxx.org/screenshots](/screenshots)
 
 #### Press Contact
 
