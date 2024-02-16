@@ -56,7 +56,7 @@
       <img class="feature-icon" src="{{ SITEURL }}/theme/images/ic_preferences_keydetect.png" alt="{% trans %}BPM, Key Detection & Sync{% endtrans %}">
       <h5 class="docs-header">{% trans %}BPM, Key Detection & Sync{% endtrans %}</h5>
       <p>
-        {% trans %}BPM and musical key detection help you find the perfect next track from your library. Use master sync to match the tempo and beats of four songs for seamless mixing.{% endtrans %}
+        {% trans %}BPM and musical key detection help you find the perfect next track from your library. Use Sync Lock to match the tempo and beats of four songs for seamless mixing.{% endtrans %}
       </p>
     </div>
 
@@ -84,24 +84,27 @@
       </p>
     </div>
   </div>
+
+  <div>
+    <p>
+      {% trans %}See dozens <a href="{{ SITEURL }}/features">more features</a> or download Mixxx and start DJing now!{% endtrans %}
+    </p>
+  </div>
 </div>
 
 <div id="opensource" class="docs-section cover-bg">
   <div class="container splash-text">
     <h2><a class="headline-link" href="#opensource">{% trans %}Free &amp; Open Source{% endtrans %}</a></h2>
     <p>
-      {% trans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx &mdash; the development is shouldered by passionate DJs and programmers that dedicate their free time to working on their favorite DJ software. Mixxx is and always will be free! See dozens more features or download Mixxx and start DJing now!{% endtrans %}
+      {% trans %}Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx &mdash; the development is shouldered by passionate DJs and programmers that dedicate their free time to working on their favorite DJ software. Mixxx is and always will be free!{% endtrans %}
     </p>
   </div>
-  <div class="container grid-container quarters drop-shadow">
+  <div class="container grid-container thirds drop-shadow">
     <div>
       <a class="button button-primary" href="{{ SITEURL }}/download">{% trans %}Download{% endtrans %}</a>
     </div>
     <div>
       {% include "donate_paypal.html" %}
-    </div>
-    <div>
-      <a class="button button-secondary" href="{{ SITEURL }}/features"">{% trans %}More Features{% endtrans %}</a>
     </div>
     <div>
       <a class="button button-secondary" href="https://github.com/mixxxdj/mixxx" target="_blank">{% trans %}Source Code{% endtrans %}</a>
