@@ -6,7 +6,7 @@ feedgenerator==2.1.0
 Jinja2==3.1.3
 Markdown==3.5.2
 markdown-full-yaml-metadata @ git+https://github.com/Holzhaus/python-markdown-full-yaml-metadata@9af69835fa1ca154776a788666280a7019c6c636
-Markdown-Video @ git+https://github.com/Holzhaus/Python-Markdown-Video@20b57db7398e02cebcaeb0c202bebc79fc8d692b
+Markdown-Video @ git+https://github.com/Holzhaus/Python-Markdown-Video@98725ee09995fdeb05597d82defacaa7ceeca546
 MarkupSafe==2.1.3
 pelican==4.9.1
 Pygments==2.17.2
