@@ -1,8 +1,8 @@
 title: Mixxx 2.4 Released
 authors: Mixxx Team
-status: draft
 tags: release announcement, 2.4
 comments: yes
+date: 2024-02-16 13:39:52
 
 We are proud to announce Mixxx 2.4, a new major version of our free open source DJ software, [available right now](/download/). It's been two years since the last release due to the large number of great new features and important changes under the hood.
 
