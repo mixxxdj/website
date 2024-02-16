@@ -91,7 +91,7 @@ Mixxx 2.4 is available right now:
 [https://mixxx.org/download/](https://mixxx.org/download/)
 
 The manual for Mixxx 2.4 can be found here:
-[https://manual.mixxx.org/2.4/en/](https://manual.mixxx.org/2.4/en/)
+[https://manual.mixxx.org/2.4](https://manual.mixxx.org/2.4)
 
 #### Images For Media Use
 
