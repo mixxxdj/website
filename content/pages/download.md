@@ -46,13 +46,6 @@ versions:
               sudo dnf install mixxx
 
           WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
-      - slug: archlinux
-        os: Arch Linux
-        text: |
-          The latest stable version of Mixxx is [available](https://archlinux.org/packages/extra/x86_64/mixxx/) in the extra repository and can be installed using `pacman`.
-          Open a terminal, and enter:
-
-              sudo pacman -S mixxx
       - slug: source
         name: Source Code
         icon: terminal.svg
