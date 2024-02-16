@@ -43,6 +43,7 @@ The track menu in Mixxx 2.4 is enhanced by several new features:
 Mixxx 2.4 adds support for manually selecting the Sync Leader by clicking on the new button with the crown symbol next to the Sync button.
 This mode is useful when tracks have variable BPM.
 All decks with sync enabled will follow the changing BPM of the Sync Leader.
+@Video(https://www.youtube.com/watch?v=REiG8DBKr-M)
 
 ### Many Other Changes
 
