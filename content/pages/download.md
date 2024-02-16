@@ -124,7 +124,7 @@ versions:
 
               git clone -b main https://github.com/mixxxdj/mixxx.git
 
-          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
+          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-macOS), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
           name: main branch
@@ -190,7 +190,7 @@ versions:
 
           The 2.3.6 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.3.6) with `2.3.6`.
 
-          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Os-X), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
+          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-macOS), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
         - slug: source
           name: 2.3 branch
