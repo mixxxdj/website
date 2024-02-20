@@ -45,7 +45,7 @@ versions:
 
               sudo dnf install mixxx
 
-          WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
+          WARNING: GNOME Software defaults to installing an unofficial package from Flathub which [does not work with HID controllers](https://github.com/flathub/org.mixxx.Mixxx/issues/32). This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
         os: Arch Linux
         text: |
@@ -177,7 +177,7 @@ versions:
 
               sudo dnf install mixxx
 
-          WARNING: GNOME Software defaults to installing an unofficial package from Flathub which does not work with PipeWire yet. This setup is not supported by the Mixxx development team. Install with `dnf` instead.
+          WARNING: GNOME Software defaults to installing an unofficial package from Flathub which [does not work with HID controllers](https://github.com/flathub/org.mixxx.Mixxx/issues/32). This setup is not supported by the Mixxx development team. Install with `dnf` instead.
       - slug: archlinux
         os: Arch Linux
         text: |
