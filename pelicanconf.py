@@ -257,6 +257,12 @@ AUTHOR_METADATA = {
         "email": "fatihemreyildiz@gmail.com",
         "tagline": "GSoC 2022 Student",
     },
+    "Maarten de Boer": {
+        "github": "m0dB",
+        "discourse": "m0dB",
+        "email": "m0dB@mixxx.org",
+        "tagline": "Mixxx Core Developer",
+    },
 }
 
 # Needed for Jinja2 markdown filter
