@@ -7,9 +7,11 @@ date: 2023-08-15 13:09:47
 
 One of the major improvements in Mixxx 2.4 is a revision of the scrolling waveform implementation, to achieve smoother animation at a higher frame rate (60 fps), with fewer frame-drops and a lower CPU load.
 
-## Rewrite
+The revision consists of an optimized rewrite, not only of the actual waveform drawing, but also of the additional overlapping layers, i.e., the beat grid, the looping-, intro- and outro-ranges, the markers and the end-of-track indication. The improvements apply to all supported platforms and are particularly noticeable on macOS.
 
-The revision consists of an optimized rewrite, not only of the actual waveform drawing, but also of the additional overlapping layers, i.e., the beat grid, the looping-, intro- and outro-ranges, the markers and the end-of-track indication. The improvements apply to all supported platforms and are particularly noticeable on macOS. The new waveform types are marked "(GLSL)" in the Waveforms section in the settings dialog. When upgrading from older versions of Mixxx, the GLSL waveform type that best matches the old configuration will be selected automatically, as well as a frame rate of 60 fps.
+## New waveform types
+
+The new waveform types are marked "(GLSL)" in the Waveforms section in the settings dialog. When upgrading from older versions of Mixxx, the GLSL waveform type that best matches the old configuration will be selected automatically, as well as a frame rate of 60 fps.
 
 Visually, the new waveforms follow the design of the legacy waveforms, with some minor tweaks. Note for example the semi-transparently filled triangles pre- and post track. This also serves as a quick indication that you are using the new waveforms.
 
