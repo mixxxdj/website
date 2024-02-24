@@ -1,9 +1,8 @@
 title: Improved Scrolling Waveforms in Mixxx 2.4.0
 authors: Maarten de Boer
 tags: 2.4, improvements
-status: draft
 comments: yes
-date: 2023-08-15 13:09:47
+date: 2024-02-23 21:18:57
 
 One of the major improvements in Mixxx 2.4 is a revision of the scrolling waveform implementation, to achieve smoother animation at a higher frame rate (60 fps), with fewer frame-drops and a lower CPU load.
 
