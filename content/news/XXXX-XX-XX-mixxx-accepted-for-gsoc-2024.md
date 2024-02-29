@@ -3,6 +3,7 @@ authors: Daniel Schürmann
 tags: gsoc, gsoc-2024
 status: draft
 comments: yes
+summary: Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/programs/2024/organizations/mixxx) for [Google Summer of Code 2024](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development. This is a great opportunity for us to attract new contributors, as they will receive a stipend sponsored by Google. …
 
 Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/programs/2024/organizations/mixxx) for [Google Summer of Code 2024](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development. This is a great opportunity for us to attract new contributors, as they will receive a stipend sponsored by Google.
 
