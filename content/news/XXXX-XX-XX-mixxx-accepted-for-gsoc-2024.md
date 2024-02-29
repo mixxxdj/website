@@ -1,4 +1,4 @@
-title: Mixxx accepted for GSoC 2024!
+title: Google Summer of Code 2024, Get Involved
 authors: Daniel Schürmann
 tags: gsoc, gsoc-2024
 status: draft
