@@ -1,0 +1,84 @@
+title: Why Mixxx will not support streaming
+author: Be.
+date: 2020-05-22 01:00:00
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown %}
+
+Over the past several years, streaming services have come to dominate media distribution.
+Many people have stopped collecting music entirely and now only get media from streaming services.
+Recently, proprietary DJ applications and some standalone DJ hardware have integrated support for various streaming services.
+
+Many people have asked if Mixxx will similarly support streaming services.
+Mixxx will not support streaming services.
+The most important reason is so we can keep our promise to never impose artificial restrictions on how Mixxx is used.
+
+What sets Mixxx apart from other DJ software is that Mixxx is [free software](https://gnu.org/philosophy/free-sw.html).
+This means that you have these specific freedoms with Mixxx:
+
+- The freedom to run the program as you wish, for any purpose.
+- The freedom to study how the program works, and change it so it does your computing as you wish. Access to the source code is a precondition for this.
+- The freedom to redistribute copies so you can help others.
+- The freedom to distribute copies of your modified versions to others. By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+
+Supporting streaming services would require taking away the first of those freedoms: the freedom to run the program as you wish, *for any purpose*.
+The terms of service for using any streaming service in a software application require that the application does not record or broadcast the streamed music.
+Recording and broadcasting are features of Mixxx, so complying with these terms would mean that we would have to intentionally prevent you from using Mixxx to do what it was designed to do.
+
+Every streaming service has these restrictive terms and always will have these terms in the future.
+The streaming business model depends on this.
+If users could save downloaded content from streaming services, they would not be streaming services; they would be music stores.
+There would be no purpose of paying a subscription fee to continue to access music that you have already downloaded without imposing this artificial restriction prohibiting you from saving the music.
+Hypothetically, if there was a streaming service in the future that did not have these restrictions, there would be little benefit of supporting streaming from it in Mixxx because you would be able to download music files from it like any other online music store.
+
+To be clear, there is nothing in Mixxx's license, the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html), which would legally prevent us from complying with the terms of a streaming service.
+Free software is not about laws; it is about freedom.
+Even if you do not use the recording or broadcasting features of Mixxx, or you personally would agree to the restrictive terms of a streaming service, we want to maintain your trust that
+**Mixxx will always work for you, the user. Mixxx will never work for a company against your wishes.**
+
+Some users and Mixxx developers argue that a user should be able to agree to the restrictive terms of a streaming company if they want.
+You can still do that with other software, but that does not mean we have to support it in Mixxx.
+Mixxx does not have to do everything. It does not mix videos, nor control lights, nor does it brew coffee.
+Mixxx has always been a DJ application for mixing music files on your computer and that is what it will continue to be.
+
+Besides the restrictive terms of streaming services, there are many more reasons to not support streaming in Mixxx.
+
+Because everyone has the freedom to change how Mixxx works, it would be easy to disable restrictions on recording and broadcasting from streaming services.
+If a user didn't want to do this on their own, it would be easy for anyone to do it for them and host downloads of modified versions of Mixxx that could record and broadcast from streaming services.
+It would be difficult for us to distance these unofficial modifications from Mixxx, which would reflect badly on Mixxx.
+Other software teams [already](https://kodi.tv/article/piracy-box-sellers-and-youtube-promoters-are-killing-kodi) [have](https://kodi.tv/article/kodi-builds-streaming-add-ons-and-free-lunches) [trouble](https://kodi.tv/article/is-kodi-legal) [distancing their name](https://kodi.tv/article/in-defence-of-our-good-name) from illegal third party modifications/addons.
+Without supporting streaming, Mixxx already has [enough trouble](/news/2020-05-22-you-dont-need-to-pay-for-mixxx/) with third parties selling copies of Mixxx without complying with the license or trademark or providing support.
+We do not want to make this problem worse.
+Mixxx is made by a small team of volunteers (we are always looking for new people to [join us](/get-involved)!).
+We want to spend our time making Mixxx better, not defending the reputation of our work from unscrupulous third parties.
+
+There are many practical reasons to not support streaming services as well.
+Supporting streaming services in Mixxx would require a lot of work to implement, perhaps months of work.
+As with all Mixxx features, this would be done entirely by volunteers with limited time.
+Those volunteers would not be using that time working on other features.
+
+All this hard work could be wasted at the whim of the streaming company or a record company they get music from. 
+Either the streaming company or record company could decide to no longer allow Mixxx to use the streaming service or they could go out of business.
+These are not hypothetical concerns.
+They have already happened several times in the short history of DJ software using streaming services.
+Spotify [stopped VirtualDJ from using their service](https://djtechtools.com/2017/09/14/spotify-axes-dj-software-streaming-virtual-dj/) as well as [Algoriddim djay](https://djworx.com/spotify-withdraws-from-dj-streaming-apparently-not-the-end-of-the-world/).
+PulseLocker [shut down without any notice](https://djtechtools.com/2017/11/10/pulselocker-folds-streaming-dj-software/) after Serato, Rekordbox, and Virtual DJ had integrated the service.
+
+As a DJ, relying on streaming is not a good idea either.
+Internet connections will never be as reliable as music stored on your computer.
+Even if your home connection is reliable, that does not mean the Internet connection at the venue you play at will be reliable.
+Furthermore, you could lose access to the streaming service at the whim of the streaming or record company as discussed above, if you no longer can afford the subscription, or if you don't automatically renew the subscription fee.
+This could even happen during your gig without any warning.
+
+Besides these issues for DJs, streaming services have [many](https://www.theverge.com/2015/12/7/9861372/spotify-year-in-review-artist-payment-royalties) [other](https://www.vice.com/en_us/article/yp3vww/spotifys-spam-war-could-change-how-we-listen-to-music) [detrimental effects](https://thebaffler.com/downstream/big-mood-machine-pelly) which we will not go into detail about here.
+We encourage you to support musicians by buying music from sources that give most of the money you pay directly to the musicians.
+There are free, legal sources of music available as well.
+
+We know that some users will still be upset at this decision, but we hope this clarifies why we have made the decision.
+
+{% endfilter %}
+{% endblock %}
