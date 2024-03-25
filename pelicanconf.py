@@ -263,6 +263,12 @@ AUTHOR_METADATA = {
         "email": "m0dB@mixxx.org",
         "tagline": "Mixxx Core Developer",
     },
+    "Jörg Wartenberg": {
+        "github": "JoergAtGithub",
+        "discourse": "DJ_D-Town",
+        "email": "joerg.wartenberg@mixxx.org",
+        "tagline": "Mixxx Core Developer",
+    },
 }
 
 # Needed for Jinja2 markdown filter
