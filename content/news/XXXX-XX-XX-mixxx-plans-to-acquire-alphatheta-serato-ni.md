@@ -12,4 +12,4 @@ Some trademarks such as Rekordbox®, Serato® and Traktor® will likely be dropp
 
 The move will lead to new synergies and enables Mixxx to benefit from the know-how of its former competitors.
 *"Our new subsidiaries have a track record in profitable partnerships with hardware manufacturers."*, McScratch commented.
-*"We want to leverage their expertise to lock down DJ hardware and ensure that the majority of DJ equipment in the market will only work with Mixxx. We are committed to our customers, so it's only fair to demand that they stay committed to us as well."*
+*"We want to leverage their expertise on locking down DJ hardware artificially and ensure that the majority of DJ equipment in the market will only work with Mixxx. We are committed to our customers, so it's only fair to demand that they stay committed to us as well."*
