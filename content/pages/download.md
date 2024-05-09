@@ -3,9 +3,9 @@ title: Download
 template: pages/download
 versions:
   stable:
-    name: 2.4.0
-    release_announcement: /news/2024-02-16-mixxx-2-4-0-features/
-    download_manifest: https://downloads.mixxx.org/releases/2.4.0/manifest.json
+    name: 2.4.1
+    release_announcement: /news/2024-05-09-mixxx-2-4-1-released
+    download_manifest: https://downloads.mixxx.org/releases/2.4.1/manifest.json
     downloads:
       - slug: windows
         os: Windows 7 or later
@@ -15,7 +15,7 @@ versions:
       - slug: macos
         os: macOS 10.12 or later
         text: |
-          Download Mixxx 2.4.0 for Intel macOS 10.12 or later or for ARM macOS 11.0 or later (Apple Silicon M1/M2/M3). You can check which version you need by clicking the Apple logo in the menu bar, then "About this Mac". If the window displays an "Apple M..." chip, download the ARM build, otherwise you need the Intel build.
+          Download Mixxx 2.4.1 for Intel macOS 10.12 or later or for ARM macOS 11.0 or later (Apple Silicon M1/M2/M3). You can check which version you need by clicking the Apple logo in the menu bar, then "About this Mac". If the window displays an "Apple M..." chip, download the ARM build, otherwise you need the Intel build.
         packages:
         - slug: macosintel
           name: Intel
@@ -56,7 +56,7 @@ versions:
 
               git clone -b 2.4 https://github.com/mixxxdj/mixxx.git
 
-          The 2.4.0 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.4.0) with `2.4.0`.
+          The 2.4.1 release has been [tagged](https://github.com/mixxxdj/mixxx/releases/tag/2.4.1) with `2.4.1`.
 
           Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-on-macOS), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
         packages:
@@ -64,8 +64,8 @@ versions:
           name: 2.4 branch
           file_url: https://github.com/mixxxdj/mixxx/archive/2.4.zip
         - slug: source
-          name: 2.4.0 release
-          file_url: https://github.com/mixxxdj/mixxx/archive/2.4.0.tar.gz
+          name: 2.4.1 release
+          file_url: https://github.com/mixxxdj/mixxx/archive/2.4.1.tar.gz
   testing:
     name: 2.5-alpha
     title: Development Snapshots
