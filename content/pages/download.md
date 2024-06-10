@@ -81,8 +81,60 @@ versions:
         - slug: source
           name: 2.4.1 release
           file_url: https://github.com/mixxxdj/mixxx/archive/2.4.1.tar.gz
+  beta:
+    name: 2.5-beta
+    release_announcement: /news/2024-06-11-mixxx-2-5-beta-released
+    title: Beta Snapshots (2.5)
+    text: |
+      A great way to contribute to Mixxx is testing the upcoming version before it is being released.
+      The Mixxx team relies on a significant number of users switching to the beta version and using it at home.
+      This is the only way to find bugs in time before a release that may have slipped through the initial review process or affect rare use cases.
+
+      **Beta snapshots are not intended for live use!** Expect crashes and make sure to back up your Mixxx settings and library before upgrading as explained in the [Testing wiki page](https://github.com/mixxxdj/mixxx/wiki/Testing).
+    download_manifest: https://downloads.mixxx.org/snapshots/2.5/manifest.json
+    downloads:
+      - slug: windows
+        os: Windows 10 (1809 or later)
+        packages:
+          - slug: win64
+            name: 64-Bit
+      - slug: macos
+        os: macOS 11 or later
+        text: |
+          Download Mixxx 2.5-alpha for macOS 11 or later for Intel or ARM (Apple Silicon M1/M2/M3). You can check which version you need by clicking the Apple logo in the menu bar, then "About this Mac". If the window displays an "Apple M..." chip, download the ARM build, otherwise you need the Intel build.
+        packages:
+        - slug: macosintel
+          name: Intel
+        - slug: macosarm
+          name: ARM
+      - slug: ubuntu
+        os: Ubuntu 22.04 "Jammy Jellyfish" or later
+        text: |
+          We provide a [PPA on Launchpad](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas) to make installing the latest development snapshot of Mixxx as easy as possible.
+          Open a terminal, and enter:
+
+              $ sudo add-apt-repository ppa:mixxx/mixxxbetas
+              $ sudo apt update
+              $ sudo apt install mixxx
+
+          Using the PPA ensures that new package versions will be installed automatically with `apt`. Otherwise, you can [download individual packages](https://launchpad.net/~mixxx/+archive/ubuntu/mixxxbetas/+packages) and install them manually.
+      - slug: source
+        name: Source Code
+        icon: terminal.svg
+        text: |
+          The Mixxx source code is published under the GNU General Public License (GPL) v2 or later. Please check the `LICENSE` file in our source tree for complete licensing information.
+
+          Download the beta code from Mixxx's `2.5` branch on [GitHub](https://github.com/mixxxdj/mixxx/tree/2.5) by opening a terminal and running:
+
+              git clone -b 2.5 https://github.com/mixxxdj/mixxx.git
+
+          Compilation instructions are available for [Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows), [macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-macOS), and [Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux).
+        packages:
+        - slug: source
+          name: 2.5 branch
+          file_url: https://github.com/mixxxdj/mixxx/archive/2.5.zip
   testing:
-    name: 2.5-alpha
+    name: 2.6-alpha
     title: Development Snapshots
     text: |
       If you're bored of thoroughly testing the beta snapshots, you can also test the current development snapshot to get a glimpse at the even newer features.
