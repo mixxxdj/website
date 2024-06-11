@@ -27,19 +27,19 @@ In Mixxx, we (can) trust.
 #### Highlights
 
 * In version 2.5, Mixxx steps up from Qt 5 to [Qt 6](https://www.qt.io/product/qt6). This will improve hardware support, and should allow Mixxx to gain in compatibility with latest operating systems and hardware.
-* Controller mapping can now define custom settings for the user to adjust directly in the preference windows, compare to previously where they would have to edit the file manually.
+* There is now a GUI for adjusting custom controller mapping settings directly in the preferences, compared to previously where they would have to be edited the script file manually.
   ![Controller setting example]({static}/images/news/controller_setting.png)
   This is only supported on JavaScript mapping. Note that the 2.5 version will remain open for mapping contributions which add setting definitions. An example on how to do so can be found on [this pull request for the S4 Mk3](https://github.com/mixxxdj/mixxx/pull/12995).
 
 Here are some more highlights:
 
-* Display of the number of beats and the time until next hot-cue or loop in the waveform [#12994](https://github.com/mixxxdj/mixxx/pull/12994)
-* Visualization of SlipMode when using the RGB GLSL waveform [#13002](https://github.com/mixxxdj/mixxx/pull/13002)
+* Display the number of beats and the time until next hot-cue or loop in the waveform [#12994](https://github.com/mixxxdj/mixxx/pull/12994)
+* Visualization of Slip Mode when using the RGB GLSL waveform [#13002](https://github.com/mixxxdj/mixxx/pull/13002)
 * A hideable main window menu [#11526](https://github.com/mixxxdj/mixxx/pull/11526)
 * A command line option `--start-autodj` to start Auto DJ immediately after Mixxx start. [#13017](https://github.com/mixxxdj/mixxx/pull/13017)
 * A beatloop anchor to set and adjust loop from either start or end [#12745](https://github.com/mixxxdj/mixxx/pull/12745)
 * A Compressor [#12523](https://github.com/mixxxdj/mixxx/pull/12523) and Glitch effect [#11329](https://github.com/mixxxdj/mixxx/pull/11329)
-* Audio Unit (AU) plugins on macOS [#12112](https://github.com/mixxxdj/mixxx/pull/12112)
+* Support for Audio Unit (AU) plugins on macOS [#12112](https://github.com/mixxxdj/mixxx/pull/12112)
 * A track property editor for multiple track at once [#12548](https://github.com/mixxxdj/mixxx/pull/12548)
 * An experimental QML Skin that can be tested via the --qml command line option [#13152](https://github.com/mixxxdj/mixxx/pull/13152)
 
