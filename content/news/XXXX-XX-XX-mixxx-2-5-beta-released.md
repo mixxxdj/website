@@ -40,7 +40,7 @@ Here are some more highlights:
 * A beatloop anchor to set and adjust loop from either start or end [#12745](https://github.com/mixxxdj/mixxx/pull/12745)
 * A Compressor [#12523](https://github.com/mixxxdj/mixxx/pull/12523) and Glitch effect [#11329](https://github.com/mixxxdj/mixxx/pull/11329)
 * Support for Audio Unit (AU) plugins on macOS [#12112](https://github.com/mixxxdj/mixxx/pull/12112)
-* A track property editor for multiple track at once [#12548](https://github.com/mixxxdj/mixxx/pull/12548)
+* Modify properties on multiple tracks at once [#12548](https://github.com/mixxxdj/mixxx/pull/12548)
 * An experimental QML Skin that can be tested via the --qml command line option [#13152](https://github.com/mixxxdj/mixxx/pull/13152)
 
 
