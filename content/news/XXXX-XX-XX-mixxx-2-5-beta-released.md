@@ -4,7 +4,6 @@ tags: 2.5, beta, release announcement
 comments: yes
 status: draft
 
-#### Dear Mixxx-ers
 
 Funny things happen in spring, birds start nesting and lay eggs, and so did the Mixxx developers.
 A bit late for Easter but it is a magnificent giant gift filled with smaller gifts: Mixxx 2.5 beta!
