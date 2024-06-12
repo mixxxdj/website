@@ -35,7 +35,7 @@ Here are some more highlights:
 
 * Display the number of beats and the time until next hot-cue or loop in the waveform [#12994](https://github.com/mixxxdj/mixxx/pull/12994)
 * Visualization of Slip Mode when using the RGB GLSL waveform [#13002](https://github.com/mixxxdj/mixxx/pull/13002)
-* A hideable main window menu [#11526](https://github.com/mixxxdj/mixxx/pull/11526)
+* An option to hide the main window menu bar [#11526](https://github.com/mixxxdj/mixxx/pull/11526)
 * A command line option `--start-autodj` to start Auto DJ immediately after Mixxx starts. [#13017](https://github.com/mixxxdj/mixxx/pull/13017)
 * A beatloop anchor to set and adjust loop from either start or end [#12745](https://github.com/mixxxdj/mixxx/pull/12745)
 * New effects: A Compressor [#12523](https://github.com/mixxxdj/mixxx/pull/12523) and Glitch [#11329](https://github.com/mixxxdj/mixxx/pull/11329)
