@@ -38,7 +38,7 @@ Here are some more highlights:
 * A hideable main window menu [#11526](https://github.com/mixxxdj/mixxx/pull/11526)
 * A command line option `--start-autodj` to start Auto DJ immediately after Mixxx start. [#13017](https://github.com/mixxxdj/mixxx/pull/13017)
 * A beatloop anchor to set and adjust loop from either start or end [#12745](https://github.com/mixxxdj/mixxx/pull/12745)
-* A Compressor [#12523](https://github.com/mixxxdj/mixxx/pull/12523) and Glitch effect [#11329](https://github.com/mixxxdj/mixxx/pull/11329)
+* New effects: A Compressor [#12523](https://github.com/mixxxdj/mixxx/pull/12523) and Glitch [#11329](https://github.com/mixxxdj/mixxx/pull/11329)
 * Support for Audio Unit (AU) plugins on macOS [#12112](https://github.com/mixxxdj/mixxx/pull/12112)
 * Modify properties on multiple tracks at once [#12548](https://github.com/mixxxdj/mixxx/pull/12548)
 * An experimental QML Skin that can be tested via the --qml command line option [#13152](https://github.com/mixxxdj/mixxx/pull/13152)
