@@ -14,7 +14,7 @@ You can find the details about the new version below.
 
 Before releasing 2.5 as the next stable release, we need it to be tested thoroughly, something we can't do all on our own.
 After some time looking at the same release and searching for solutions, we might overlook minor bugs or problems.  
-That's why we need **YOU** to help us. The more people testing this Beta and reporting eventual bugs to the [bug tracker](https://github.com/mixxxdj/mixxx/issues), the faster the beta can be promoted to stable.  
+That's why we need **YOU** to help us. The more people testing this beta and reporting eventual bugs to the [bug tracker](https://github.com/mixxxdj/mixxx/issues), the faster the beta can be promoted to stable.  
 In case you're scared of messing up your neatly configured PC and losing your holy data is your Haloween nightmare, read the new wiki article [Safeguard Your Mixxx Data](https://github.com/mixxxdj/mixxx/wiki/Safeguard-your-Digital-DJ-Data).
 It explains how to creata a timestamped image, how to back up your data and offers tips and tricks.  
 A beta release contains the solutions for problems that occurred and were notified by users who tested the alpha release.
