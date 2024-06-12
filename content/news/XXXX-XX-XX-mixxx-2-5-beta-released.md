@@ -5,7 +5,7 @@ comments: yes
 status: draft
 
 
-Funny things happen in spring, birds start nesting and lay eggs, and so did the Mixxx developers.
+It's springtime, and baby birds recently hatched from their eggs are looking out of their nests deciding if they are ready to fly. So too it is with Mixxx, and version 2.5 is almost ready to greet the world.
 A bit late for Easter but it is a magnificent giant gift filled with smaller gifts: Mixxx 2.5 beta!
 You can find the details about the new version below.
 
