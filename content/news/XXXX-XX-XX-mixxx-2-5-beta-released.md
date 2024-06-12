@@ -27,7 +27,7 @@ In Mixxx, we (can) trust.
 #### Highlights
 
 * In version 2.5, Mixxx moves from depending on Qt 5 to [Qt 6](https://www.qt.io/product/qt6). This will improve hardware support and will enable Mixxx to be compatible with latest operating systems and hardware.
-* There is now a GUI for adjusting custom controller mapping settings directly in the preferences, compared to previously where they would have to be edited the script file manually.
+* Controller mapping settings can now be adjusted directly in the preferences, compared to previously where they would have to be manually edited in script files.
   ![Controller setting example]({static}/images/news/controller_setting.png)
   This is only supported on JavaScript mapping. Note that the 2.5 version will remain open for mapping contributions which add setting definitions. An example on how to do so can be found on [this pull request for the S4 Mk3](https://github.com/mixxxdj/mixxx/pull/12995).
 
