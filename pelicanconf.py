@@ -269,6 +269,12 @@ AUTHOR_METADATA = {
         "email": "Evelynne@protonmail.com",
         "tagline": "Enthusiastic Mixxx-er",
     },
+    "betalars": {
+        "github": "betalars",
+        "mastodon": "@betalars@mastodon.art",
+        "email": "contact@betalars.de",
+        "tagline": "Casual FOSS user, Creative Commons artist and storyteller.",
+    },
 }
 
 # Needed for Jinja2 markdown filter
