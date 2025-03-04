@@ -2,7 +2,7 @@ title: "Google Summer of Code 2025, Get Involved"
 authors: Daniel Schürmann
 tags: gsoc, gsoc-2025
 comments: yes
-status:draft
+status: draft
 summary: Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/programs/2025/organizations/mixxx) for [Google Summer of Code 2025](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development. This is a great opportunity for us to attract new contributors, as they will receive a stipend sponsored by Google.
 ####Google Summer of Code 2025, Get Googled, Get Mixxx-ed, Get Involved
 
