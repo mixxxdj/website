@@ -1,4 +1,4 @@
-title: Google Summer of Code 2025
+title: Google Summer of Code
 authors: Daniel Schürmann
 tags: gsoc, gsoc-2025
 comments: yes
