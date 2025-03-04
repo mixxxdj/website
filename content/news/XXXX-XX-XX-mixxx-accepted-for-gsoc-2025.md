@@ -4,17 +4,17 @@ tags: gsoc, gsoc-2025
 comments: yes
 status: draft
 summary: Mixxx has been [accepted as a mentoring organization](https://summerofcode.withgoogle.com/programs/2025/organizations/mixxx) for [Google Summer of Code 2025](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development. This is a great opportunity for us to attract new contributors, as they will receive a stipend sponsored by Google.
-####Google Summer of Code 2025, Get Googled, Get Mixxx-ed, Get Involved
+##Google Summer of Code 2025, Get Googled, Get Mixxx-ed, Get Involved
 
 Last year Antoine created the [STEM mixing support](https://mixxx.org/news/2024-08-26-stem-mixing/) and Daniel gave us the [Harmonic Mixing Enhancements](https://mixxx.org/news/2024-08-24-gsoc-project-report-daniel-fernandes/) as projects of GSoc 2024.This year Mixxx is accepted again as a [mentoring organization](https://summerofcode.withgoogle.com/programs/2025/organizations/mixxx) for [Google Summer of Code 2025](https://summerofcode.withgoogle.com/), a global program focused on bringing new contributors into open source software development. Afain this is a great opportunity for us to attract new contributors, as they will receive a stipend sponsored by Google.
 
-#### How Does GSoC Work?
+## How Does GSoC Work?
 
 Google Summer of Code is a program that enables students to work on open-source projects over the summer, typically lasting between 3 to 12 weeks. Participants are matched with mentoring organizations like Mixxx, where they collaborate on various projects under the guidance of experienced mentors. For more information, check out the [Google Summer of Code Contributor Guide](https://google.github.io/gsocguides/student/).
 
 Contributors will gain hands-on experience by working on an open-source project used by DJs worldwide. This will enhance their skills in software development, collaboration, and project management, which are highly valuable in the professional live. They are supported by experienced mentors and a community of developers and DJs who will help to get the right things done and are ready to clear out any obstacles when they arise.
 
-#### How to Get Involved?
+## How to Get Involved?
 
 You will find the [GSoC 2025 Project Ideas for Mixxx](https://github.com/mixxxdj/mixxx/wiki/GSOC-2025-Ideas) in our wiki, but your own ideas are also more than welcome. Taking a look at our [GSoC advice page](https://github.com/mixxxdj/mixxx/wiki/gsocadvice) is recommended if you're planning to apply. The best way to get started is to participate in the Mixxx community, so have a look at our [GitHub repository](https://github.com/mixxxdj/mixxx) and consider making a small code contribution to show that you're able to familiarize yourself with our codebase.
 
