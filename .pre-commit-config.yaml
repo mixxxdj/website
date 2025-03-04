@@ -51,5 +51,5 @@ repos:
   - id: eslint
     args: [--fix, --report-unused-disable-directives]
     stages:
-    - commit
+    - pre-commit
     - manual
