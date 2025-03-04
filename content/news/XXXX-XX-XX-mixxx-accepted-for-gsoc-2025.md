@@ -1,5 +1,5 @@
+title: "Google Summer of Code 2025, Get Involved"
 authors: Daniel Schürmann
-title: Google Summer of Code
 tags: gsoc, gsoc-2025
 comments: yes
 status:draft
