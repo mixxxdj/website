@@ -1,5 +1,5 @@
-title: Google Summer of Code 2025, Get Googled, Get Mixxxed, Get Involved
-authors: Daniel Schürmann, Evelynne VEYS
+title: Google Summer of Code 2025, Get Involved
+authors: Daniel Schürmann
 tags: gsoc, gsoc-2025
 comments: yes
 status:draft
