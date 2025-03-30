@@ -11,7 +11,7 @@ The research project wants to improve the detection of human sentiments, more pa
 As most of the project is still under embargo, we can only give a small description:
 
 - They are looking for +/- 25 DJ's that want to participate to the research project by installing the research gear on their gigs.
-- The DJ's would receive a computer with two heat-detecting camera's, one regular camera and a HQ microphone..
+- The DJ's would receive a computer with two heat-detecting cameras, one regular camera and a HQ microphone.
 - The cameras need to be pointed at the public.
 - Observing the audience DJ's would get some on-screen demands to play cheerfull / sad / uptempo or slow music, the camera's will observe emotions.
 - At some points the system can even demand to play a complete other genre than the public wants (to detect disappointment and happiness).
