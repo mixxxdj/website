@@ -10,7 +10,7 @@ Mixxx has been contacted by a joint research project between a university and a 
 The research project wants to improve the detection of human sentiments, more particular individuals located in a crowd.
 As most of the project is still under embargo, we can only give a small description:
 
-- They are looking for +/- 25 DJ's that want to participate to the research project by installing the research gear on their gigd.
+- They are looking for +/- 25 DJ's that want to participate to the research project by installing the research gear on their gigs.
 - The DJ's would receive a computer with two heat-detecting camera's, one regular camera and a HQ microphone..
 - The cameras need to be pointed at the public.
 - Observing the audience DJ's would get some on-screen demands to play cheerfull / sad / uptempo or slow music, the camera's will observe emotions.
