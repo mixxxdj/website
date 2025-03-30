@@ -24,4 +24,4 @@ If the research works out well, Mixxx will have the possibility to integrate the
 #### Appeal
 
 We insisted on keeping the coordinates of our users/DJ's private during the selection, so if you want to cooperate to this research please send us a message on our zulip chat, we will create a dedicated topic under #General.
-The researchers will contact you through our zulip as well. Theu are looking for +/- 25 DJ's, preferably of different countries (max 2 oer country).
+The researchers will contact you through our zulip as well. The research program is looking for +/- 25 DJ's, preferably of different countries (max 2 per country).
