@@ -9,6 +9,7 @@ status: draft
 Mixxx has been contacted by a joint research project between a university and a major AI company with the question if Mixxx wants to cooperate by asking DJ's to help them. Mixxx agreed.
 The research project wants to improve the detection of human sentiments, more particular individuals located in a crowd.
 As most of the project is still under embargo, we can only give a small description:
+
 - They are looking for +/- 25 DJ's that want to participate to the research project by installing the research gear on their gigd.
 - The DJ's would receive a computer with two heat-detecting camera's, one regular camera and a HQ microphone..
 - The camera's need to be pointed at the public.
