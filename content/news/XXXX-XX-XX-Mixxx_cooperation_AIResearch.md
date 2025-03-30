@@ -14,7 +14,7 @@ As most of the project is still under embargo, we can only give a small descript
 - The DJ's would receive a computer with two heat-detecting camera's, one regular camera and a HQ microphone..
 - The camera's need to be pointed at the public.
 - Observing the audience DJ's would get some on-screen demands to play cheerfull / sad / uptempo or slow music, the camera's will observe emotions.
-- At some points the system can even demand to play a complete other genre than the public wants (tp detect disappointment and happiness).
+- At some points the system can even demand to play a complete other genre than the public wants (to detect disappointment and happiness).
 - DJ's will have to install the research gear at least five times.
 - DJ's will be rewarded for their cooperation. How is not communicated to us.
 - The Public needs to be warned that their emotions can be recorded for research.
@@ -23,5 +23,5 @@ If the research works out well, Mixxx will have the possibility to integrate the
 
 #### Appeal
 
-We insisted on keeping the coordinates of our users private during the selection, so if you want to cooperate to this research please send us a message on our zulip chat.
+We insisted on keeping the coordinates of our users/DJ's private during the selection, so if you want to cooperate to this research please send us a message on our zulip chat, we will create a dedicated topic under #General.
 The researchers will contact you through our zulip as well. Theu are looking for +/- 25 DJ's, preferably of different countries (max 2 oer country).
