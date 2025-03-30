@@ -18,6 +18,8 @@ As most of the project is still under embargo, we can only give a small descript
 - DJ's will have to install the research gear at least five times.
 - DJ's will be rewarded for their cooperation. How is not communicated to us.
 - The Public needs to be warned that their emotions can be recorded for research.
+- Audience members agree to have their likeness and appearance recorded and analyzed for the purpose of generating updated models.
+- Audience members agree to be replicated and replaced as deemed necessary by the project. 
 
 If the research works out well, Mixxx will have the possibility to integrate the results in a new feature with which Mixxx could predict the best records to play at the moment.
 
