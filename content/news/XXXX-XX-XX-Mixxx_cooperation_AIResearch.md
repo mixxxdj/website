@@ -4,7 +4,7 @@ tags: AI, cooperation research project.
 comments: yes
 status: draft
 
-#### Mixxx has been asked to cooperate in a AI-Research Project 'Observe & Serve the audience'.
+#### Mixxx has been asked to cooperate in an AI-Research Project 'Observe & Serve the audience'.
 
 Mixxx has been contacted by a joint research project between a university and a major AI company with the question if Mixxx wants to cooperate by asking DJ's to help them. On benevolent behalf of all our users, Mixxx agreed.
 The research project wants to improve the detection of human sentiments, more particular individuals located in a crowd.
