@@ -6,11 +6,11 @@ status: draft
 
 #### Mixxx has been asked to cooperate in an AI-Research Project 'Observe & Serve the Audience'.
 
-Mixxx has been contacted by a joint research project between a university and a major AI company with the question if Mixxx wants to cooperate by asking DJ's to help them. On benevolent behalf of all our users, Mixxx agreed.
+Mixxx has been contacted by a joint research project between a university and a major AI company with the question if Mixxx wants to cooperate by asking DJs to help them. On benevolent behalf of all our users, Mixxx agreed.
 The research project wants to improve the detection of human sentiments, more particularly individuals located in a crowd.
 As most of the project is still under embargo, we can only give a small description:
 
-- They are looking for +/- 25 DJs that want to participate in the research project by installing the research gear on their gigs.
+- They are looking for ~25 DJs that want to participate in the research project by installing the research gear on their gigs.
 - The DJs would receive a computer with two heat-detecting cameras, one regular camera and a HQ microphone.
 - The cameras need to be pointed at the public.
 - Observing the audience, DJs would get some on-screen demands to play cheerful / sad / uptempo or slow music, the cameras will observe emotions.
