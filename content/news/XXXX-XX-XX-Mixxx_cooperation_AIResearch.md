@@ -1,4 +1,4 @@
-title: Demand for cooperation in AI research project
+title: Demand for cooperation in an AI-Research Project
 authors: Evelynne Veys
 tags: AI, cooperation research project.
 comments: yes
