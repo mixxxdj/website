@@ -2,3 +2,4 @@
 /output
 # python bytecode cache
 __pycache__
+.venv/

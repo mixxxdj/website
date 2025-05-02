@@ -49,4 +49,11 @@
   for = "/news/*"
   [headers.values]
     # Additionally allow YouTube/Discourse frames and scripts
-    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' https://mixxx.discourse.group/javascripts/embed.js *.discourse-cdn.com; frame-src 'self' https://www.youtube-nocookie.com https://mixxx.discourse.group ; img-src 'self' https://i.ytimg.com ; connect-src 'self' https://mixxx.discourse.group https://*.discourse-cdn.com"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' https://mixxx.discourse.group/javascripts/embed.js *.discourse-cdn.com 'sha384-7J/UM6Vde6cXqst3EI86P36213Jz5rooW1EEUvweQ3F3gQOHkTuSKAX67ANmYljn' 'https://cdn.jsdelivr.net/npm/mermaid@11.2.1/dist/mermaid.min.js'; frame-src 'self' https://www.youtube-nocookie.com https://mixxx.discourse.group ; img-src 'self' https://i.ytimg.com ; connect-src 'self' https://mixxx.discourse.group https://*.discourse-cdn.com"
+
+
+[[headers]]
+  for = "/release_roadmap/"
+  [headers.values]
+    # Additionally allow Mermaid script
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'sha384-7J/UM6Vde6cXqst3EI86P36213Jz5rooW1EEUvweQ3F3gQOHkTuSKAX67ANmYljn' 'nonce-VoYlObL+iS4p0ATVpB4f495PwA9FE4obmpj2VWc961Q='"

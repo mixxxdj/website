@@ -124,6 +124,11 @@ NAV_MENU = (
                 "Navigation bar link to Mixxx Press page",
             ),
             MenuItem(
+                "/release_roadmap",
+                "Release Roadmap",
+                "Navigation bar link to Mixxx Previsional Release Roadmap",
+            ),
+            MenuItem(
                 "/contact",
                 "Contact & Team",
                 "Navigation bar link to Mixxx contact page.",
