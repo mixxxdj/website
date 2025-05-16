@@ -23,7 +23,6 @@ html[data-theme="dark"] {
     --button-primary-color: white;
 }
 
-
 /* add a transition to ease into new themes */
 /* looks best in Mozilla, text transitions late in Safari/Chrome */
 html.transition-theme,
@@ -406,7 +405,6 @@ img.responsive {
     border-bottom: 1px solid var(--border-color-softer);
     padding: 2rem;
     max-height: unset;
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -428,8 +426,6 @@ img.responsive {
         width: 100%;
         border: 0;
         padding: 0;
-    /* height: 100vh; */
-
     }
 
     .navbar-download-button .button {
@@ -755,10 +751,9 @@ article.news + article.news {
     margin: 0 0 2em 0;
 }
 
-
-
-.scroll-lock {
-    overflow: auto;
-    position: fixed;
-    width: 100%;
+#page-wrapper.scroll-lock {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none;
+  -webkit-overflow-scrolling: none;
   }

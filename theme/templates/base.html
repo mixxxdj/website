@@ -46,7 +46,7 @@
 
   <body>
     <div id="fb-root"></div>
-
+    <div id="page-wrapper">
     <div id="main-container">
       {% block header %}
       {% endblock %}
@@ -65,17 +65,13 @@
       {% include "footer.html" %}
       {% endblock %}
     </div>
-
-    <script>
-      const navToggle = document.getElementById('navbar-hamburger-button');
-
-      navToggle.addEventListener('change', () => {
-        if (navToggle.checked) {
-          document.body.classList.add('scroll-lock');
-        } else {
-          document.body.classList.remove('scroll-lock');
-        }
-      });
-    </script>
-  </body>
+  </div>
+  <script>
+    const navToggle = document.getElementById('navbar-hamburger-button');
+    const wrapper = document.getElementById('page-wrapper');
+    navToggle.addEventListener('change', () => {
+      wrapper.classList.toggle('scroll-lock', navToggle.checked);
+    });
+  </script>
+</body>
 </html>
