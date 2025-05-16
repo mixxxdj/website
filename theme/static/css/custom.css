@@ -406,7 +406,7 @@ img.responsive {
     border-bottom: 1px solid var(--border-color-softer);
     padding: 2rem;
     max-height: unset;
-    
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -762,4 +762,3 @@ article.news + article.news {
     position: fixed;
     width: 100%;
   }
-  
