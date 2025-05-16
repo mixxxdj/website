@@ -65,5 +65,17 @@
       {% include "footer.html" %}
       {% endblock %}
     </div>
+
+    <script>
+      const navToggle = document.getElementById('navbar-hamburger-button');
+    
+      navToggle.addEventListener('change', () => {
+        if (navToggle.checked) {
+          document.body.classList.add('scroll-lock');
+        } else {
+          document.body.classList.remove('scroll-lock');
+        }
+      });
+    </script>
   </body>
 </html>
