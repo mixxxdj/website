@@ -28,6 +28,18 @@
           <a class="button button-primary" href="{{ SITEURL }}/download">{% trans %}Download{% endtrans %}</a>
         </span>
       </li>
+      <li class="navbar-item has-dropdown">
+        <a class="navbar-link" href="#">{{ gettext('Site Language')}}</a>
+        <ul class="navbar-list navbar-dropdown">
+        {% if lang_siteurls %}
+          {% for lang, siteurl in lang_siteurls.items() %}
+          <li class="navbar-item" {% if lang==DEFAULT_LANG %} class="active" {% endif %}>
+            <a class="navbar-link" href="{{ siteurl }}/">{{ lang | lookup_lang_name }}</a>
+          </li>
+          {% endfor %}
+        {% endif %}
+        </ul>
+      </li>
     </ul>
   </div>
 </nav>

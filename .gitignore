@@ -3,3 +3,4 @@
 # python bytecode cache
 __pycache__
 .venv/
+*.mo

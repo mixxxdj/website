@@ -82,6 +82,30 @@ stored in `theme/templates/pages/`. If there is a snippet of code you want to
 use in multiple places on the site, place it in the `/theme/templates/` folder
 -- for example [theme/templates/download_button.html][download_button.html].
 
+To generate the site:
+```
+pelican
+```
+
+If there are problems, running in debug can help:
+```
+pelican -D
+```
+
+Also might be useful to run in local mode (doesn't work for subsites):
+```
+pelican.exe --relative-urls 
+```
+
+It is also possible to run as an http server updating the contents as you modify it.
+```
+pelican --listen --autoreload
+```
+Then open this site on your browser:
+*http://127.0.0.1:8000*
+
+
+
 * [Jinja2 template language][jinja2_templates]
 * [template internationalization][jinja2_template_i18n]
 * [Pelican documentation][pelican_docs]
@@ -91,6 +115,31 @@ use in multiple places on the site, place it in the `/theme/templates/` folder
 All strings wrapped with `{% trans %}Hello World {% endtrans %}` are flagged
 for translation. Whenever adding new English strings to the website, please
 wrap them in a `{% trans %}Hello World{% endtrans %}` block.
+A more compact way is using gettext
+
+{% trans %}translatable content{% endtrans %}
+{{ gettext('translatable content') }}
+
+
+To create new languages, or to update existing languages once there are new
+translations, execute the following inside the //theme// subfolder.
+
+
+In order to create a new language (replace LANG with locale):
+
+```
+pybabel extract --mapping babel.cfg --output messages.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version=2025 ./
+pybabel init --input-file messages.pot --output-dir translations/ --locale *LANG* --domain messages
+pybabel compile --directory translations/ --domain messages
+```
+In order to update all existing languages when new content needs translation:
+
+```
+pybabel extract --mapping babel.cfg --output messages.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version=2025 ./
+pybabel update --input-file messages.pot --output-dir translations/ --domain messages
+pybabel compile --directory translations/ --domain messages
+```
+
 
 [mixxx.org]: http://mixxx.org/
 [pelican]: https://github.com/getpelican/pelican
