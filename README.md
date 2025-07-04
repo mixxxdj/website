@@ -94,7 +94,7 @@ pelican -D
 
 Also might be useful to run in local mode (doesn't work for subsites):
 ```
-pelican.exe --relative-urls 
+pelican.exe --relative-urls
 ```
 
 It is also possible to run as an http server updating the contents as you modify it.
@@ -117,9 +117,10 @@ for translation. Whenever adding new English strings to the website, please
 wrap them in a `{% trans %}Hello World{% endtrans %}` block.
 A more compact way is using gettext
 
+```
 {% trans %}translatable content{% endtrans %}
 {{ gettext('translatable content') }}
-
+```
 
 To create new languages, or to update existing languages once there are new
 translations, execute the following inside the //theme// subfolder.

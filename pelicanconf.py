@@ -89,7 +89,7 @@ PLUGINS = [
     "download_metadata",
     "draft_override",
     "md_yaml",
-    "i18n_subsites"
+    "i18n_subsites",
 ]
 
 
@@ -307,60 +307,62 @@ JINJA_ENVIRONMENT = {
 # Note; For development, it's recommended to comment all but one language to speed-up compilation.
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
-##    'bg': {},
-    'ca': {},
-##    'cs': {},
-##    'de': {},
-##    'el': {},
-##    'es': {},
-##    'fr': {},
-##    'it': {},
-##    'ja': {},
-##    'nl': {},
-##    'pl': {},
-##    'pt': {},
-##    'sl': {},
-##    'sv': {},
-##    'tr': {},
-##    'zh_cn': {},
-##    'zh_tw': {},
+    "bg": {},
+    "ca": {},
+    "cs": {},
+    "de": {},
+    "el": {},
+    "es": {},
+    "fr": {},
+    "it": {},
+    "ja": {},
+    "nl": {},
+    "pl": {},
+    "pt": {},
+    "sl": {},
+    "sv": {},
+    "tr": {},
+    "zh_cn": {},
+    "zh_tw": {},
 }
 
 languages_lookup = {
-    'bg': 'Български',
-    'ca': 'Català',
-    'cs': 'Čeština',
-    'de': 'Deutsch',
-    'el': 'Ελληνικά',
-    'en': 'English',
-    'es': 'Español',
-    'fr': 'Français',
-    'it': 'Italiano',
-    'ja': '日本語',
-    'nl': 'Nederlands',
-    'pl': 'Polski',
-    'pt': 'Português',
-    'tr': 'Türkçe',
-    'sl': 'Slovenščina',
-    'sv': 'Svenska',
-    'zh_cn': '简体中文',
-    'zh_tw': '繁體中文',
+    "bg": "Български",
+    "ca": "Català",
+    "cs": "Čeština",
+    "de": "Deutsch",
+    "el": "Ελληνικά",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "pt": "Português",
+    "tr": "Türkçe",
+    "sl": "Slovenščina",
+    "sv": "Svenska",
+    "zh_cn": "简体中文",
+    "zh_tw": "繁體中文",
 }
 
 def lookup_lang_name(lang_code):
     return languages_lookup[lang_code]
 
-JINJA_FILTERS = {"markdown": lambda text: markupsafe.Markup(md.convert(text)),
-                 "lookup_lang_name": lookup_lang_name}
 
+JINJA_FILTERS = {
+    "markdown": lambda text: markupsafe.Markup(md.convert(text)),
+    "lookup_lang_name": lookup_lang_name,
+}
 
 # Default localedir is "translations" subfolder inside the selected "THEME"
 # default domain is "messages". In pybabel that's the --domain value.
-#I18N_GETTEXT_LOCALEDIR = 'some/path/'
-#I18N_GETTEXT_DOMAIN = 'my_domain'
+##I18N_GETTEXT_LOCALEDIR = "some/path/"
+##I18N_GETTEXT_DOMAIN = "my_domain"
 
-I18N_UNTRANSLATED_ARTICLES = 'keep'
-I18N_UNTRANSLATED_PAGES = 'keep'
+I18N_UNTRANSLATED_ARTICLES = "keep"
+I18N_UNTRANSLATED_PAGES = "keep"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
