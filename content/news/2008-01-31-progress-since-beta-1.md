@@ -4,7 +4,7 @@ date: 2008-01-31 22:12:00
 tags: 1.6, 1.6.0, beta, development
 comments: no
 
-[![Sceenshot of Mixxx 1.6.0beta2]({static}/images/news/Screenshot-Mixxx-1.6.0beta2.png)]({static}/images/news/Screenshot-Mixxx-1.6.0beta2.png)
+[![Screenshot of Mixxx 1.6.0beta2]({static}/images/news/Screenshot-Mixxx-1.6.0beta2.png)]({static}/images/news/Screenshot-Mixxx-1.6.0beta2.png)
 
 Since the release of Mixxx 1.6.0 beta1, we've been busy busy busy getting new features and bug fixes ready for beta2.
 The library has undergone substantial work including new playlist support, improvements to the file scanning, and several bug fixes that were causing stability issues in beta1.

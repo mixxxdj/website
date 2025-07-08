@@ -347,6 +347,7 @@ languages_lookup = {
     "zh_tw": "繁體中文",
 }
 
+
 def lookup_lang_name(lang_code):
     return languages_lookup[lang_code]
 

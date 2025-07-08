@@ -55,7 +55,7 @@ Related Files:
 * [Find On Web Menu Services Folder](https://github.com/mixxxdj/mixxx/tree/main/src/widget/findonwebmenuservices)
 
 ##### *Editable Track Menu*
-While discussing *Find On Web* feature and where we could placed it on Mixxx. We have decided to place it on Track Menu. There was an idea on Zulip, that the Track Menu was gettin crowded, and we can consider to make it configurable.
+While discussing *Find On Web* feature and where we could placed it on Mixxx. We have decided to place it on Track Menu. There was an idea on Zulip, that the Track Menu was getting crowded, and we can consider to make it configurable.
 
 At first I thought the same and this feature would be nice to have and that can help me to get to know the code base for the preferences option.
 

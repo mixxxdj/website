@@ -55,7 +55,7 @@ On the other hand, neither the ISPs nor the Uganda Communications Commission ope
 The internet had been restored alright, but we still could not access social media.
 Not with OTT, and definitely not with certain VPNs. But the election was over, was it not? Then why was social media still blocked?
 This time, not only had social media been blocked, but all app stores, YouTube, and most VPN clients.
-([This article by techjaja](https://techjaja.com/social-media-vpns-app-stores-and-youtube-indefinitely-banned-in-uganda/) provides more detail on the platorms that were banned in Uganda and when it happened.)
+([This article by techjaja](https://techjaja.com/social-media-vpns-app-stores-and-youtube-indefinitely-banned-in-uganda/) provides more detail on the platforms that were banned in Uganda and when it happened.)
 
 ![email from Roke Telecom to customer]({static}/images/news/email.jpg) ![Email from UCC]({static}/images/news/email2.jpg)
 
