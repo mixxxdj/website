@@ -1,3 +1,32 @@
+# This is the configuration file for the pre-commit framework, a simple way
+# to manage, install and run git hooks to catch common problems early on.
+# See https://pre-commit.com/ for details.
+#
+# If you have Python >= 3.7 and python-pip installed, just run:
+#
+#     $ pip install --user pre-commit
+#     $ git clone https://github.com/your-fork-of/mixxx.git
+#     $ cd mixxx
+#     $ pre-commit install
+#     $ pre-commit install -t pre-push
+#
+# It will now run relevant hooks automatically on every `git commit` or
+# `git push` in the mixxx git repository.
+#
+# If you have a problems with a particular hook, you can use the `$SKIP`
+# environment variable to disable hooks:
+#
+#     $ SKIP=clang-format,end-of-file-fixer git commit
+#
+# This can also be used to separate logic changes and autoformatting into
+# two subsequent commits.
+#
+# Using the `$SKIP` var is preferable to using `git commit --no-verify`
+# because it won't prevent catching other, unrelated issues.
+
+#
+exclude: ^output/.*$
+minimum_pre_commit_version: 2.21.0
 default_language_version:
   python: python3
 repos:
@@ -8,22 +37,25 @@ repos:
     files: ^(theme/static/images|content/images)/.*\.svg$
     entry: tools/optimize_svg.py
     language: python
-    additional_dependencies:
-    - scour==0.38.2
+    additional_dependencies: [
+      scour==0.38.2
+    ]
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
+  rev: v5.0.0
   hooks:
-  - id: check-byte-order-marker
+  - id: fix-byte-order-marker
   - id: check-case-conflict
   - id: check-merge-conflict
   - id: end-of-file-fixer
+    exclude: ^(.*\.po|.*\.pot)$
   - id: mixed-line-ending
   - id: trailing-whitespace
     args: [--markdown-linebreak-ext=md]
+    exclude: ^(.*\.po|.*\.pot)$
   - id: check-yaml
   - id: check-json
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.2.2
+  rev: v2.3.0
   hooks:
   - id: codespell
     name: "Check for spelling mistakes"
@@ -34,12 +66,12 @@ repos:
     ]
     exclude: ^(.*\.svg|.*\.po|.*\.pot|pages/(?:contact|press)\.html)$
 - repo: https://github.com/psf/black
-  rev: 22.12.0
+  rev: 24.10.0
   hooks:
   - id: black
     name: "Reformat Python code"
 - repo: https://github.com/pycqa/flake8
-  rev: '6.0.0'
+  rev: "7.1.1"
   hooks:
   - id: flake8
     name: "Check for Python warnings"
