@@ -97,7 +97,7 @@ Also might be useful to run in local mode (doesn't work for subsites):
 pelican.exe --relative-urls
 ```
 
-It is also possible to run as an http server updating the contents as you modify it.
+For interactive development, run it as an http server and will update the contents as you modify it.
 ```
 pelican --listen --autoreload
 ```
