@@ -94,11 +94,14 @@ PLUGINS = [
 
 
 class MenuItem:
-    def __init__(self, url, title, context, css="", children=()):
+    def __init__(
+        self, url, title, context, css="", external=False, children=()
+    ):
         self.url = url
         self.title = title
         self.context = context
         self.css = css
+        self.external = external
         self.children = children
 
 
@@ -145,16 +148,19 @@ NAV_MENU = (
                 "https://mixxx.discourse.group/",
                 "Forums",
                 "Navigation bar link to Mixxx Forums.",
+                external=True,
             ),
             MenuItem(
                 "https://github.com/mixxxdj/mixxx/issues/",
                 "Bug Tracker",
                 "Navigation bar link to Mixxx Bug Tracker.",
+                external=True,
             ),
             MenuItem(
                 "https://github.com/mixxxdj/mixxx/wiki",
                 "Wiki",
                 "Navigation bar link to Mixxx Wiki.",
+                external=True,
             ),
             MenuItem(
                 "/get-involved",

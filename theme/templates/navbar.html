@@ -3,7 +3,7 @@
   <div class="container navbar-main">
     <span class="navbar-item navbar-logo">
       <a class="navbar-link" href="{{ SITEURL }}/">
-        <img src="{{ SITEURL }}/theme/images/mixxx-logo.svg" alt="Mixxx">
+        <img src="{{ main_siteurl }}/theme/images/mixxx-logo.svg" alt="Mixxx">
       </a>
     </span>
     <input class="navbar-hamburger-button" type="checkbox" id="navbar-hamburger-button" />
@@ -11,12 +11,12 @@
     <ul class="navbar-list navbar-hamburger-content">
       {% for item in NAV_MENU %}
       <li class="navbar-item{% if item.css %} {{ item.css }}{% endif %} {% if item.children %}has-dropdown{% endif %}">
-        <a class="navbar-link" href="{{ item.url }}">{{ item.title|replace(" ", "&nbsp;") }}</a>
+        <a class="navbar-link" href="{% if item.external==False and main_lang!=DEFAULT_LANG %}{{ SITEURL }}{% endif %}{{ item.url }}">{{ item.title|replace(" ", "&nbsp;") }}</a>
         {% if item.children %}
         <ul class="navbar-list navbar-dropdown">
           {% for child in item.children %}
           <li class="navbar-item{% if child.css %} {{ child.css }}{% endif %}">
-            <a class="navbar-link" href="{{ child.url }}">{{ child.title|replace(" ", "&nbsp;") }}</a>
+            <a class="navbar-link" href="{% if child.external==False and main_lang!=DEFAULT_LANG %}{{ SITEURL }}{% endif %}{{ child.url }}">{{ child.title|replace(" ", "&nbsp;") }}</a>
           </li>
           {% endfor %}
         </ul>
@@ -33,8 +33,8 @@
         <ul class="navbar-list navbar-dropdown">
         {% if lang_siteurls %}
           {% for lang, siteurl in lang_siteurls.items() %}
-          <li class="navbar-item" {% if lang==DEFAULT_LANG %} class="active" {% endif %}>
-            <a class="navbar-link" href="{{ siteurl }}/">{{ lang | lookup_lang_name }}</a>
+          <li class="navbar-item" >
+            <a class="navbar-link {% if lang==DEFAULT_LANG %}active{% endif %}" href="{{ siteurl }}/">{{ lang | lookup_lang_name }}</a>
           </li>
           {% endfor %}
         {% endif %}
