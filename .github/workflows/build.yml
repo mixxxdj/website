@@ -24,4 +24,4 @@ jobs:
       run: pybabel compile --directory themes/translations/ --domain messages
 
     - name: Check if website build is warning-free
-      run: pelican --extra-settings SITEURL='"https://example.com"' --fatal warnings
+      run: pelican --extra-settings SITEURL='"https://mixxx.org"' --fatal warnings

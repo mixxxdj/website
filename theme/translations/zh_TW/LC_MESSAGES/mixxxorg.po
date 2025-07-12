@@ -1,18 +1,20 @@
-# Swedish translations for Mixxx.
-# Copyright (C) 2025 Mixxx Development Team
-# This file is distributed under the same license as the Mixxx project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
+# Fred Chen, 2023
 msgid ""
 msgstr ""
-"Project-Id-Version: Mixxx 2025\n"
-"Report-Msgid-Bugs-To: https://github.com/mixxxdj/mixxx/issues/\n"
-"POT-Creation-Date: 2025-07-03 18:10+0200\n"
-"PO-Revision-Date: 2025-07-03 16:26+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: sv\n"
-"Language-Team: sv <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Mixxx DJ website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-12 16:12+0200\n"
+"PO-Revision-Date: 2015-05-14 03:50+0000\n"
+"Last-Translator: Fred Chen, 2023\n"
+"Language: zh_TW\n"
+"Language-Team: Chinese (Taiwan) (http://app.transifex.com/mixxx-dj-"
+"software/mixxxdj-website/language/zh_TW/)\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,6 +44,11 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
+#: templates/footer.html:54
+#, fuzzy
+msgid "Site Language"
+msgstr "本地語言支援"
+
 #: templates/index.html:3
 msgid "News"
 msgstr ""
@@ -50,25 +57,24 @@ msgstr ""
 msgid "News and Announcements"
 msgstr ""
 
-#: templates/index.html:48 templates/pages/index.html:128
+#: templates/index.html:48 templates/pages/index.html:131
+#, fuzzy
 msgid "Read More"
-msgstr ""
+msgstr "看更多"
 
-#: templates/navbar.html:28 templates/pages/index.html:104
+#: templates/navbar.html:28 templates/pages/index.html:107
+#, fuzzy
 msgid "Download"
-msgstr ""
-
-#: templates/navbar.html:32
-msgid "Site Language"
-msgstr ""
+msgstr "下載"
 
 #: templates/pages/contact.html:3
+#, fuzzy
 msgid "Contact "
-msgstr ""
+msgstr "聯繫我們"
 
 #: templates/pages/contact.html:7
 msgid "Get in Touch"
-msgstr ""
+msgstr "參與我們"
 
 #: templates/pages/contact.html:9
 #, python-format
@@ -98,8 +104,9 @@ msgid ""
 msgstr ""
 
 #: templates/pages/contact.html:20
+#, fuzzy
 msgid "Mixxx Development Team"
-msgstr ""
+msgstr "Mixxx 2.0.0 開發團隊"
 
 #: templates/pages/contact.html:22
 #, python-format
@@ -111,19 +118,19 @@ msgstr ""
 
 #: templates/pages/contact.html:41
 msgid "With contributions from:"
-msgstr ""
+msgstr "來自這些地方的貢獻者們："
 
 #: templates/pages/contact.html:112
 msgid "And special thanks to:"
-msgstr ""
+msgstr "特別感謝："
 
 #: templates/pages/contact.html:139
 msgid "Past Developers"
-msgstr ""
+msgstr "之前的開發者們"
 
 #: templates/pages/contact.html:174
 msgid "Past Contributors"
-msgstr ""
+msgstr "之前的貢獻者們"
 
 #: templates/pages/contact.html:401
 #, python-format
@@ -144,7 +151,7 @@ msgstr ""
 
 #: templates/pages/discover.html:7
 msgid "About Mixxx"
-msgstr ""
+msgstr "關於Mixxx"
 
 #: templates/pages/discover.html:9
 msgid ""
@@ -244,18 +251,19 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:31
+#, fuzzy
 msgid "Download stable version of Mixxx"
-msgstr ""
+msgstr "下載穩定版本的 Mixxx"
 
 #: templates/pages/download.html:31
-#, python-format
+#, fuzzy, python-format
 msgid "Download Mixxx %(stable_version)s for %%s"
-msgstr ""
+msgstr "下載 Mixxx %(stable_version)s 以用於 %%s"
 
 #: templates/pages/download.html:31
-#, python-format
+#, fuzzy, python-format
 msgid "Download Mixxx %(stable_version)s"
-msgstr ""
+msgstr "下載 Mixxx %(stable_version)s"
 
 #: templates/pages/download.html:32
 #, python-format
@@ -286,9 +294,9 @@ msgstr ""
 msgid "View Source Code on GitHub"
 msgstr ""
 
-#: templates/pages/download.html:49 templates/pages/index.html:110
+#: templates/pages/download.html:49 templates/pages/index.html:113
 msgid "Source Code"
-msgstr ""
+msgstr "原始碼"
 
 #: templates/pages/download.html:63
 #, python-format
@@ -418,7 +426,7 @@ msgstr ""
 
 #: templates/pages/error.html:7
 msgid "We're sorry!"
-msgstr ""
+msgstr "我們感到十分抱歉！"
 
 #: templates/pages/error.html:8
 msgid "The page <strong id=\"error-path\"></strong> couldn't be found."
@@ -426,7 +434,7 @@ msgstr ""
 
 #: templates/pages/features.html:3
 msgid "Features"
-msgstr ""
+msgstr "功能"
 
 #: templates/pages/features.html:11
 msgid "Everything You Need, However You DJ"
@@ -445,7 +453,7 @@ msgstr ""
 
 #: templates/pages/features.html:20
 msgid "Pitch and Key Control"
-msgstr ""
+msgstr "音準與曲調控制"
 
 #: templates/pages/features.html:22
 msgid ""
@@ -457,7 +465,7 @@ msgstr ""
 
 #: templates/pages/features.html:25
 msgid "Beat Looping"
-msgstr ""
+msgstr "拍點循環"
 
 #: templates/pages/features.html:27
 msgid ""
@@ -480,7 +488,7 @@ msgstr ""
 
 #: templates/pages/features.html:35
 msgid "Hotcues"
-msgstr ""
+msgstr "熱點"
 
 #: templates/pages/features.html:37
 msgid ""
@@ -518,7 +526,7 @@ msgstr ""
 
 #: templates/pages/features.html:58
 msgid "EQ and Crossfader Control"
-msgstr ""
+msgstr "等化器與交錯漸入漸出控制"
 
 #: templates/pages/features.html:60
 msgid ""
@@ -529,7 +537,7 @@ msgstr ""
 
 #: templates/pages/features.html:68
 msgid "Customizable DJ Hardware Support"
-msgstr ""
+msgstr "客製化DJ硬體支援"
 
 #: templates/pages/features.html:70
 msgid ""
@@ -566,7 +574,7 @@ msgstr ""
 
 #: templates/pages/features.html:90 templates/pages/features.html:102
 msgid "Read more"
-msgstr ""
+msgstr "看更多"
 
 #: templates/pages/features.html:98
 msgid "Free Timecode Vinyl Control"
@@ -582,7 +590,7 @@ msgstr ""
 
 #: templates/pages/features.html:109
 msgid "Sampler Decks"
-msgstr ""
+msgstr "採樣盤"
 
 #: templates/pages/features.html:111
 msgid "Load up to 64 sampler decks full of sounds to layer over your mix."
@@ -590,7 +598,7 @@ msgstr ""
 
 #: templates/pages/features.html:118
 msgid "Effects Chains"
-msgstr ""
+msgstr "效果鏈"
 
 #: templates/pages/features.html:120
 msgid ""
@@ -607,7 +615,7 @@ msgstr ""
 
 #: templates/pages/features.html:127
 msgid "Sophisticated Music Library"
-msgstr ""
+msgstr "複雜的音樂庫"
 
 #: templates/pages/features.html:129
 msgid ""
@@ -618,7 +626,7 @@ msgstr ""
 
 #: templates/pages/features.html:135
 msgid "Organization"
-msgstr ""
+msgstr "組織"
 
 #: templates/pages/features.html:137
 msgid "Crates and Playlists"
@@ -632,7 +640,7 @@ msgstr ""
 
 #: templates/pages/features.html:142
 msgid "Search &amp; Sort"
-msgstr ""
+msgstr "搜尋 &amp; 排序"
 
 #: templates/pages/features.html:144
 msgid ""
@@ -643,7 +651,7 @@ msgstr ""
 
 #: templates/pages/features.html:149
 msgid "iTunes and Traktor Library Integration"
-msgstr ""
+msgstr "iTunes與Traktor的資料庫整合"
 
 #: templates/pages/features.html:150
 msgid "Drop fresh tracks from your iTunes or Traktor library right into your mix."
@@ -651,7 +659,7 @@ msgstr ""
 
 #: templates/pages/features.html:152
 msgid "MusicBrainz Tag Lookup"
-msgstr ""
+msgstr "使用MusicBrainz幫忙編制音樂標籤"
 
 #: templates/pages/features.html:153
 msgid "Fingerprint your tracks and fetch missing tags from MusicBrainz."
@@ -659,7 +667,7 @@ msgstr ""
 
 #: templates/pages/features.html:157
 msgid "BPM &amp; Key Detection"
-msgstr ""
+msgstr "BPM與 &amp; 曲調偵測"
 
 #: templates/pages/features.html:159
 msgid ""
@@ -670,7 +678,7 @@ msgstr ""
 
 #: templates/pages/features.html:164
 msgid "Auto DJ"
-msgstr ""
+msgstr "自動 DJ"
 
 #: templates/pages/features.html:166
 msgid ""
@@ -680,7 +688,7 @@ msgstr ""
 
 #: templates/pages/features.html:174
 msgid "Choose Your Skin"
-msgstr ""
+msgstr "選擇你的外觀"
 
 #: templates/pages/features.html:175
 msgid ""
@@ -690,7 +698,7 @@ msgstr ""
 
 #: templates/pages/features.html:194
 msgid "Record and Broadcast"
-msgstr ""
+msgstr "錄音並直播"
 
 #: templates/pages/features.html:196
 msgid ""
@@ -707,7 +715,7 @@ msgstr ""
 
 #: templates/pages/features.html:209
 msgid "Live Broadcasting"
-msgstr ""
+msgstr "線上直播"
 
 #: templates/pages/features.html:211
 msgid ""
@@ -717,7 +725,7 @@ msgstr ""
 
 #: templates/pages/features.html:217
 msgid "ReplayGain Normalization"
-msgstr ""
+msgstr "自動歌曲增益平衡"
 
 #: templates/pages/features.html:219
 msgid ""
@@ -728,7 +736,7 @@ msgstr ""
 
 #: templates/pages/features.html:225
 msgid "Microphone &amp; Auxiliary Inputs"
-msgstr ""
+msgstr "麥克風 &amp; 耳機孔輸入"
 
 #: templates/pages/features.html:227
 msgid ""
@@ -742,7 +750,7 @@ msgstr ""
 
 #: templates/pages/features.html:235
 msgid "Native Language Support"
-msgstr ""
+msgstr "本地語言支援"
 
 #: templates/pages/features.html:238
 #, python-format
@@ -754,15 +762,15 @@ msgstr ""
 
 #: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
 msgid "Get Involved"
-msgstr ""
+msgstr "參與這項專案"
 
 #: templates/pages/get-involved.html:8
 msgid "Not a coder? Scroll down!"
-msgstr ""
+msgstr "不是資工系出身的嗎，往下看！"
 
 #: templates/pages/get-involved.html:13
 msgid "Software Developers"
-msgstr ""
+msgstr "軟體開發者們"
 
 #: templates/pages/get-involved.html:15
 #, python-format
@@ -784,7 +792,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:22
 msgid "Start Developing Now"
-msgstr ""
+msgstr "立刻開發！"
 
 #: templates/pages/get-involved.html:25
 #, python-format
@@ -818,7 +826,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:41
 msgid "Development Cycle in a Nutshell"
-msgstr ""
+msgstr "開發過程懶人包"
 
 #: templates/pages/get-involved.html:42
 msgid "Mixxx Development Cycle"
@@ -858,7 +866,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:65
 msgid "Promote Mixxx:"
-msgstr ""
+msgstr "推廣Mixxx："
 
 #: templates/pages/get-involved.html:65
 msgid ""
@@ -876,7 +884,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:73
 msgid "Translators"
-msgstr ""
+msgstr "翻譯者"
 
 #: templates/pages/get-involved.html:75
 msgid ""
@@ -897,7 +905,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:81
 msgid "Graphic Artists"
-msgstr ""
+msgstr "圖像藝術家"
 
 #: templates/pages/get-involved.html:83
 #, python-format
@@ -912,7 +920,7 @@ msgstr ""
 
 #: templates/pages/index.html:14
 msgid "DJ Your Way"
-msgstr ""
+msgstr "用你的風格玩DJ"
 
 #: templates/pages/index.html:50
 msgid "Powerful Features For All DJs"
@@ -927,8 +935,9 @@ msgid ""
 msgstr ""
 
 #: templates/pages/index.html:56 templates/pages/index.html:57
+#, fuzzy
 msgid "BPM, Key Detection & Sync"
-msgstr ""
+msgstr "BPM與 &amp; 曲調偵測"
 
 #: templates/pages/index.html:59
 msgid ""
@@ -939,7 +948,7 @@ msgstr ""
 
 #: templates/pages/index.html:64 templates/pages/index.html:65
 msgid "DJ Controller Support"
-msgstr ""
+msgstr "對DJ控制器的支援"
 
 #: templates/pages/index.html:67
 msgid ""
@@ -950,7 +959,7 @@ msgstr ""
 
 #: templates/pages/index.html:72 templates/pages/index.html:73
 msgid "Effects"
-msgstr ""
+msgstr "效果"
 
 #: templates/pages/index.html:75
 msgid ""
@@ -969,18 +978,18 @@ msgid ""
 "music vinyls into your set by toggling vinyl passthrough mode."
 msgstr ""
 
-#: templates/pages/index.html:90
+#: templates/pages/index.html:92
 #, python-format
 msgid ""
-"See dozens <a href=\"%(SITEURL)s/features\">more features</a> or download"
-" Mixxx and start DJing now!"
+"See dozens <a href=\"%(features_link)s\">more features</a> or download "
+"Mixxx and start DJing now!"
 msgstr ""
 
-#: templates/pages/index.html:97
+#: templates/pages/index.html:100
 msgid "Free &amp; Open Source"
 msgstr ""
 
-#: templates/pages/index.html:99
+#: templates/pages/index.html:102
 msgid ""
 "Mixxx is free open-source software and entirely community-driven. There "
 "is no company behind Mixxx &mdash; the development is shouldered by "
@@ -988,11 +997,11 @@ msgid ""
 "on their favorite DJ software. Mixxx is and always will be free!"
 msgstr ""
 
-#: templates/pages/index.html:117
+#: templates/pages/index.html:120
 msgid "Latest News"
 msgstr ""
 
-#: templates/pages/index.html:119
+#: templates/pages/index.html:122
 #, python-format
 msgid ""
 "To see a list of all news and announcements, head over to <a "
@@ -1000,11 +1009,11 @@ msgid ""
 "href=\"%(FEED_ATOM)s\">Atom feed</a>."
 msgstr ""
 
-#: templates/pages/index.html:137
+#: templates/pages/index.html:140
 msgid "Friendly Community"
-msgstr ""
+msgstr "友善的社群"
 
-#: templates/pages/index.html:139
+#: templates/pages/index.html:142
 msgid ""
 "Mixxx is developed by an international community of DJs, programmers, and"
 " artists. Because Mixxx is <b>free (<a "
@@ -1013,7 +1022,7 @@ msgid ""
 " even better&mdash;including you!"
 msgstr ""
 
-#: templates/pages/index.html:143
+#: templates/pages/index.html:146
 #, python-format
 msgid ""
 "You can get involved with Mixxx today by <a "
@@ -1025,25 +1034,25 @@ msgid ""
 "href=\"%(starter_tasks_link)s\">starter tasks</a>."
 msgstr ""
 
-#: templates/pages/index.html:152
+#: templates/pages/index.html:155
 msgid "#1 Top Free Mac App Worldwide"
 msgstr ""
 
-#: templates/pages/index.html:154 templates/pages/index.html:171
+#: templates/pages/index.html:157 templates/pages/index.html:174
 msgid "February 2011"
-msgstr ""
+msgstr "2011年2月"
 
-#: templates/pages/index.html:163
+#: templates/pages/index.html:166
 msgid "Free Pick of the Month"
 msgstr ""
 
-#: templates/pages/index.html:164
+#: templates/pages/index.html:167
 msgid "September 2007"
-msgstr ""
+msgstr "2007年9月"
 
-#: templates/pages/index.html:170
+#: templates/pages/index.html:173
 msgid "\"The coolest open source<br>application ever?\""
-msgstr ""
+msgstr "\"史上最酷的開源<br>軟體（應該）？\""
 
 #: templates/pages/press.html:13
 #, python-format
@@ -1055,8 +1064,9 @@ msgid ""
 msgstr ""
 
 #: templates/pages/press.html:18
+#, fuzzy
 msgid "Logo"
-msgstr ""
+msgstr "部落格"
 
 #: templates/pages/press.html:45
 msgid "Press Mirror"
@@ -1115,8 +1125,9 @@ msgid "2018-10-25:"
 msgstr ""
 
 #: templates/pages/screenshots.html:3 templates/pages/screenshots.html:7
+#, fuzzy
 msgid "Screenshots"
-msgstr ""
+msgstr "參考截圖："
 
 #: templates/pages/screenshots.html:9
 msgid "Here you can find some screenshots of Mixxx' user interface."
@@ -1140,7 +1151,7 @@ msgstr ""
 
 #: templates/pages/support.html:3
 msgid "Support"
-msgstr ""
+msgstr "支援"
 
 #: templates/pages/support.html:7
 msgid "Support &amp; Community"
@@ -1148,7 +1159,7 @@ msgstr ""
 
 #: templates/pages/support.html:11
 msgid "User Manual"
-msgstr ""
+msgstr "使用者說明"
 
 #: templates/pages/support.html:13
 #, python-format
@@ -1162,7 +1173,7 @@ msgstr ""
 
 #: templates/pages/support.html:18
 msgid "Wiki"
-msgstr ""
+msgstr "線上說明(Wiki)"
 
 #: templates/pages/support.html:20
 #, python-format
@@ -1176,7 +1187,7 @@ msgstr ""
 
 #: templates/pages/support.html:25
 msgid "Community Forums"
-msgstr ""
+msgstr "社群論壇"
 
 #: templates/pages/support.html:27
 #, python-format
@@ -1189,7 +1200,7 @@ msgstr ""
 
 #: templates/pages/support.html:32
 msgid "Bug Tracker"
-msgstr ""
+msgstr "漏洞追蹤(Bug Tracker)"
 
 #: templates/pages/support.html:34
 #, python-format
@@ -1199,4 +1210,10 @@ msgid ""
 "centralized place to pool our information on bugs, and prevents us from "
 "getting disorganized and forgetting about them."
 msgstr ""
+
+#~ msgid ""
+#~ "See dozens <a href=\"%(SITEURL)s/features\">more "
+#~ "features</a> or download Mixxx and start"
+#~ " DJing now!"
+#~ msgstr ""
 

@@ -87,7 +87,9 @@
 
   <div>
     <p>
-      {% trans %}See dozens <a href="{{ SITEURL }}/features">more features</a> or download Mixxx and start DJing now!{% endtrans %}
+	  {% with features_link=SITEURL+"/features" %}
+      {% trans %}See dozens <a href="{{ features_link }}">more features</a> or download Mixxx and start DJing now!{% endtrans %}
+	  {% endwith %}
     </p>
   </div>
 </div>

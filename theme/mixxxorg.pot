@@ -1,18 +1,17 @@
-# Japanese translations for Mixxx.
+# Translations template for Mixxx.
 # Copyright (C) 2025 Mixxx Development Team
 # This file is distributed under the same license as the Mixxx project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Mixxx 2025\n"
+"Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: https://github.com/mixxxdj/mixxx/issues/\n"
-"POT-Creation-Date: 2025-07-03 18:10+0200\n"
-"PO-Revision-Date: 2025-07-03 16:26+0200\n"
+"POT-Creation-Date: 2025-07-12 16:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja\n"
-"Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,6 +41,10 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
+#: templates/footer.html:54
+msgid "Site Language"
+msgstr ""
+
 #: templates/index.html:3
 msgid "News"
 msgstr ""
@@ -50,16 +53,12 @@ msgstr ""
 msgid "News and Announcements"
 msgstr ""
 
-#: templates/index.html:48 templates/pages/index.html:128
+#: templates/index.html:48 templates/pages/index.html:131
 msgid "Read More"
 msgstr ""
 
-#: templates/navbar.html:28 templates/pages/index.html:104
+#: templates/navbar.html:28 templates/pages/index.html:107
 msgid "Download"
-msgstr ""
-
-#: templates/navbar.html:32
-msgid "Site Language"
 msgstr ""
 
 #: templates/pages/contact.html:3
@@ -286,7 +285,7 @@ msgstr ""
 msgid "View Source Code on GitHub"
 msgstr ""
 
-#: templates/pages/download.html:49 templates/pages/index.html:110
+#: templates/pages/download.html:49 templates/pages/index.html:113
 msgid "Source Code"
 msgstr ""
 
@@ -969,18 +968,18 @@ msgid ""
 "music vinyls into your set by toggling vinyl passthrough mode."
 msgstr ""
 
-#: templates/pages/index.html:90
+#: templates/pages/index.html:92
 #, python-format
 msgid ""
-"See dozens <a href=\"%(SITEURL)s/features\">more features</a> or download"
-" Mixxx and start DJing now!"
+"See dozens <a href=\"%(features_link)s\">more features</a> or download "
+"Mixxx and start DJing now!"
 msgstr ""
 
-#: templates/pages/index.html:97
+#: templates/pages/index.html:100
 msgid "Free &amp; Open Source"
 msgstr ""
 
-#: templates/pages/index.html:99
+#: templates/pages/index.html:102
 msgid ""
 "Mixxx is free open-source software and entirely community-driven. There "
 "is no company behind Mixxx &mdash; the development is shouldered by "
@@ -988,11 +987,11 @@ msgid ""
 "on their favorite DJ software. Mixxx is and always will be free!"
 msgstr ""
 
-#: templates/pages/index.html:117
+#: templates/pages/index.html:120
 msgid "Latest News"
 msgstr ""
 
-#: templates/pages/index.html:119
+#: templates/pages/index.html:122
 #, python-format
 msgid ""
 "To see a list of all news and announcements, head over to <a "
@@ -1000,11 +999,11 @@ msgid ""
 "href=\"%(FEED_ATOM)s\">Atom feed</a>."
 msgstr ""
 
-#: templates/pages/index.html:137
+#: templates/pages/index.html:140
 msgid "Friendly Community"
 msgstr ""
 
-#: templates/pages/index.html:139
+#: templates/pages/index.html:142
 msgid ""
 "Mixxx is developed by an international community of DJs, programmers, and"
 " artists. Because Mixxx is <b>free (<a "
@@ -1013,7 +1012,7 @@ msgid ""
 " even better&mdash;including you!"
 msgstr ""
 
-#: templates/pages/index.html:143
+#: templates/pages/index.html:146
 #, python-format
 msgid ""
 "You can get involved with Mixxx today by <a "
@@ -1025,23 +1024,23 @@ msgid ""
 "href=\"%(starter_tasks_link)s\">starter tasks</a>."
 msgstr ""
 
-#: templates/pages/index.html:152
+#: templates/pages/index.html:155
 msgid "#1 Top Free Mac App Worldwide"
 msgstr ""
 
-#: templates/pages/index.html:154 templates/pages/index.html:171
+#: templates/pages/index.html:157 templates/pages/index.html:174
 msgid "February 2011"
 msgstr ""
 
-#: templates/pages/index.html:163
+#: templates/pages/index.html:166
 msgid "Free Pick of the Month"
 msgstr ""
 
-#: templates/pages/index.html:164
+#: templates/pages/index.html:167
 msgid "September 2007"
 msgstr ""
 
-#: templates/pages/index.html:170
+#: templates/pages/index.html:173
 msgid "\"The coolest open source<br>application ever?\""
 msgstr ""
 

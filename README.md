@@ -12,14 +12,15 @@ dependencies.
     $ pip install -r requirements.txt
 
 Then build the site from its templates, run this in root directory of the git
-repository:
+repository (Note: don't forget to compile the translations first as explained below):
 
-    $ pelican
+    $ Linux: pelican --extra-settings SITEURL='"http://localhost:8000"'
+    $ Windows: pelican --extra-settings SITEURL=\"http://localhost:8000\"
 
 If all goes well, you should have the rendered HTML in your `output/`
 directory. To stand up a development server to test out your change, type:
 
-    $ pelican --listen --autoreload
+    $ pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
 
 You can then visit ```http://127.0.0.1:8000``` to see your development version
 of the site.
@@ -84,22 +85,18 @@ use in multiple places on the site, place it in the `/theme/templates/` folder
 
 To generate the site:
 ```
-pelican
+pelican --extra-settings SITEURL='"http://localhost:8000"'
 ```
+Note that on windows console, you need to write: SITEURL=\"http://localhost:8000\" instead
 
 If there are problems, running in debug can help:
 ```
-pelican -D
-```
-
-Also might be useful to run in local mode (doesn't work for subsites):
-```
-pelican.exe --relative-urls
+pelican -D --extra-settings SITEURL='"http://localhost:8000"'
 ```
 
 For interactive development, run it as an http server and will update the contents as you modify it.
 ```
-pelican --listen --autoreload
+pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
 ```
 Then open this site on your browser:
 *http://127.0.0.1:8000*
@@ -127,18 +124,17 @@ translations, execute the following inside the //theme// subfolder.
 
 
 In order to create a new language (replace LANG with locale):
+```
+pybabel extract --mapping babel.cfg --output mixxxorg.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version="DJ website" ./
+pybabel init --input-file mixxxorg.pot --output-dir translations/ --locale *LANG* --domain mixxxorg
+pybabel compile --directory translations/ --domain mixxxorg
+```
 
-```
-pybabel extract --mapping babel.cfg --output messages.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version=2025 ./
-pybabel init --input-file messages.pot --output-dir translations/ --locale *LANG* --domain messages
-pybabel compile --directory translations/ --domain messages
-```
 In order to update all existing languages when new content needs translation:
-
 ```
-pybabel extract --mapping babel.cfg --output messages.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version=2025 ./
-pybabel update --input-file messages.pot --output-dir translations/ --domain messages
-pybabel compile --directory translations/ --domain messages
+pybabel extract --mapping babel.cfg --output mixxxorg.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version="DJ website" ./
+pybabel update --input-file mixxxorg.pot --output-dir translations/ --domain mixxxorg
+pybabel compile --directory translations/ --domain mixxxorg
 ```
 
 

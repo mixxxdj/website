@@ -313,21 +313,17 @@ JINJA_ENVIRONMENT = {
 # Note; For development, it's recommended to comment all but one language to speed-up compilation.
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
-    "bg": {},
     "ca": {},
-    "cs": {},
     "de": {},
-    "el": {},
     "es": {},
     "fr": {},
     "it": {},
-    "ja": {},
     "nl": {},
-    "pl": {},
     "pt": {},
+    "ru": {},
     "sl": {},
+    "sq": {},
     "sv": {},
-    "tr": {},
     "zh_cn": {},
     "zh_tw": {},
 }
@@ -346,9 +342,11 @@ languages_lookup = {
     "nl": "Nederlands",
     "pl": "Polski",
     "pt": "Português",
-    "tr": "Türkçe",
+    "ru": "Русский",
     "sl": "Slovenščina",
+    "sq": "shqip",
     "sv": "Svenska",
+    "tr": "Türkçe",
     "zh_cn": "简体中文",
     "zh_tw": "繁體中文",
 }
@@ -366,7 +364,7 @@ JINJA_FILTERS = {
 # Default localedir is "translations" subfolder inside the selected "THEME"
 # default domain is "messages". In pybabel that's the --domain value.
 ##I18N_GETTEXT_LOCALEDIR = "some/path/"
-##I18N_GETTEXT_DOMAIN = "my_domain"
+I18N_GETTEXT_DOMAIN = "mixxxorg"
 
 I18N_UNTRANSLATED_ARTICLES = "keep"
 I18N_UNTRANSLATED_PAGES = "keep"

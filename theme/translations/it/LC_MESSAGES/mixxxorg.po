@@ -1,18 +1,22 @@
-# German translations for Mixxx.
+# Italian translations for Mixxx.
 # Copyright (C) 2025 Mixxx Development Team
 # This file is distributed under the same license as the Mixxx project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+# Translators:
+# marcobra <marcobra.ubuntu@gmail.com>, 2022
 msgid ""
 msgstr ""
-"Project-Id-Version: Mixxx 2025\n"
+"Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: https://github.com/mixxxdj/mixxx/issues/\n"
-"POT-Creation-Date: 2025-07-03 18:10+0200\n"
-"PO-Revision-Date: 2025-07-03 16:26+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: de\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2025-07-12 16:12+0200\n"
+"PO-Revision-Date: 2015-05-14 03:50+0000\n"
+"Last-Translator: marcobra <marcobra.ubuntu@gmail.com>, 2022\n"
+"Language: it_IT\n"
+"Language-Team: Italian (Italy) (http://app.transifex.com/mixxx-dj-"
+"software/mixxxdj-website/language/it_IT/)\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 "
+"? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,11 +32,15 @@ msgid "Comments"
 msgstr ""
 
 #: templates/base.html:9
+#, fuzzy
 msgid ""
 "Download the most advanced FREE DJ software available, featuring iTunes "
 "integration, MIDI controller support, internet broadcasting, and "
 "integrated music library."
 msgstr ""
+"Scarica il più avanzato software per DJ GRATUITO disponibile, con "
+"integrazione di iTunes, supporto per controller MIDI, trasmissione via "
+"internet e libreria musicale integrata."
 
 #: templates/donate_paypal.html:2
 msgid "Donate via Paypal"
@@ -42,6 +50,11 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
+#: templates/footer.html:54
+#, fuzzy
+msgid "Site Language"
+msgstr "Supporto Lingua Nativa"
+
 #: templates/index.html:3
 msgid "News"
 msgstr ""
@@ -50,28 +63,27 @@ msgstr ""
 msgid "News and Announcements"
 msgstr ""
 
-#: templates/index.html:48 templates/pages/index.html:128
+#: templates/index.html:48 templates/pages/index.html:131
+#, fuzzy
 msgid "Read More"
-msgstr ""
+msgstr "Leggi di più"
 
-#: templates/navbar.html:28 templates/pages/index.html:104
+#: templates/navbar.html:28 templates/pages/index.html:107
+#, fuzzy
 msgid "Download"
-msgstr ""
-
-#: templates/navbar.html:32
-msgid "Site Language"
-msgstr ""
+msgstr "Download"
 
 #: templates/pages/contact.html:3
+#, fuzzy
 msgid "Contact "
-msgstr ""
+msgstr "Contatto"
 
 #: templates/pages/contact.html:7
 msgid "Get in Touch"
-msgstr ""
+msgstr "Entra in contatto"
 
 #: templates/pages/contact.html:9
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Please refer to the <a href=\"%(support_page_link)s\">Support page</a> if"
 " you need help setting up or using Mixxx. If you think you've found a "
@@ -89,6 +101,11 @@ msgid ""
 "donations and loans of DJ equipment which we use to improve both specific"
 " and general hardware support in Mixxx."
 msgstr ""
+"Se siete un produttore di hardware DJ e desiderate che il vostro prodotto"
+" funzioni con Mixxx, contattateci all'indirizzo, <a "
+"href=\"%(project_manager_link)s\">hardware@mixxx.org</a>. Accettiamo "
+"donazioni e prestiti di apparecchiature DJ che utilizziamo per migliorare"
+" il supporto hardware specifico e generale in Mixxx."
 
 #: templates/pages/contact.html:15
 #, python-format
@@ -96,34 +113,42 @@ msgid ""
 "For other inquiries, please contact <a "
 "href=\"%(project_manager_link)s\">press@mixxx.org</a>."
 msgstr ""
+"Per altre richieste, si prega di contattare <a "
+"href=\"%(project_manager_link)s\">press@mixxx.org</a>."
 
 #: templates/pages/contact.html:20
+#, fuzzy
 msgid "Mixxx Development Team"
-msgstr ""
+msgstr "Mixxx 2.0.0 Development Team"
 
 #: templates/pages/contact.html:22
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "In 2001, Mixxx was started by Ken and <a "
 "href=\"%(tue_anderson_link)s\">Tue</a> Haste Andersen. Today, development"
 " is done by an open source development team from around the world."
 msgstr ""
+"Nel 2001, Mixxx è stato avviato da Ken e <a "
+"href=\"%(tue_anderson_link)s\">Tue</a> Haste Andersen. Oggi lo sviluppo "
+"viene svolto da un team di sviluppo open source di tutto il mondo, "
+"guidato da RJ Ryan (Lead Developer), Owen Williams (User Experience "
+"Lead), Sean Pappalardo (Controller Manager), e S. Brandt (Lead Artist)."
 
 #: templates/pages/contact.html:41
 msgid "With contributions from:"
-msgstr ""
+msgstr "Con contributi da:"
 
 #: templates/pages/contact.html:112
 msgid "And special thanks to:"
-msgstr ""
+msgstr "E ringraziamenti speciali a:"
 
 #: templates/pages/contact.html:139
 msgid "Past Developers"
-msgstr ""
+msgstr "Sviluppatori precedenti"
 
 #: templates/pages/contact.html:174
 msgid "Past Contributors"
-msgstr ""
+msgstr "Collaboratori precedenti"
 
 #: templates/pages/contact.html:401
 #, python-format
@@ -136,15 +161,23 @@ msgid ""
 "fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs"
 " that have helped in designing Mixxx."
 msgstr ""
+"Mixxx dipende anche da un certo numero di librerie software. Senza "
+"queste, Mixxx non sarebbe possibile, specialmente come applicazione "
+"multipiattaforma. Un grande ringraziamento a <a "
+"href=\"%(qt_link)s\">Qt</a>, <a "
+"href=\"%(portaudio_link)s\">PortAudio</a>, and <a "
+"href=\"%(portmidi_link)s\">PortMidi</a>per essere "
+"fantastico.<br/><br/>Infine, vorremmo ringraziare i molti musicisti e DJ "
+"che ci hanno aiutato nella progettazione di Mixxx."
 
 #: templates/pages/discover.html:3 templates/pages/press.html:3
 #: templates/pages/press.html:11
 msgid "Press"
-msgstr ""
+msgstr "Stampa"
 
 #: templates/pages/discover.html:7
 msgid "About Mixxx"
-msgstr ""
+msgstr "Informazioni su Mixxx"
 
 #: templates/pages/discover.html:9
 msgid ""
@@ -153,6 +186,10 @@ msgid ""
 "as open source, dozens of contributors began modifying and improving "
 "Mixxx."
 msgstr ""
+"Mixxx è stato originariamente creato nel 2002 come parte di una tesi di "
+"dottorato su nuove interfacce per il DJing da Tue Haste Andersen. Dopo "
+"aver rilasciato il progetto come open source, decine di collaboratori "
+"hanno iniziato a modificare e migliorare Mixxx."
 
 #: templates/pages/discover.html:13
 msgid ""
@@ -164,18 +201,32 @@ msgid ""
 "annually</b>. Our committed team has worked hard to create great DJ "
 "software, and this growth is a sign of our success."
 msgstr ""
+"Nel 2006, un nuovo team di sviluppo guidato da Adam Davison e Albert "
+"Santoni ha iniziato a riorganizzare il progetto per garantire una "
+"crescita regolare sia del codebase che del numero di contributori. Una "
+"rinnovata attenzione all'usabilità e alla stabilità ha aiutato Mixxx a "
+"diventare il software per DJ gratuito più popolare al mondo, ricevendo "
+"<b>oltre 1,000,000 download all'anno</b>. Il nostro team impegnato ha "
+"lavorato duramente per creare un ottimo software per DJ, e questa "
+"crescita è un segno del nostro successo."
 
 #: templates/pages/discover.html:17
 msgid ""
 "In 2011, RJ Ryan took over as Lead Developer to successfully continue the"
 " team's endeavor to make Mixxx a world-class DJ software."
 msgstr ""
+"Nel 2011, RJ Ryan è diventato Lead Developer per continuare con successo "
+"lo sforzo del team per rendere Mixxx un software per DJ di livello "
+"mondiale."
 
 #: templates/pages/discover.html:21
 msgid ""
 "As our user community grows, so does our development team - As of Mixxx "
 "2.0, <b>over 100 developers and artists</b> have helped create Mixxx!"
 msgstr ""
+"Mentre cresce la nostra comunità di utenti, anche il nostro team di "
+"sviluppo - A partire da Mixxx 2.0, <b>oltre 100 sviluppatori e "
+"artisti</b> hanno contribuito a creare Mixxx!"
 
 #: templates/pages/discover.html:25
 #, python-format
@@ -187,10 +238,17 @@ msgid ""
 "source software development and helped them gain experience working with "
 "multi-threaded, real-time multimedia software."
 msgstr ""
+"Mixxx ha anche partecipato a <a href=\"%(gsoc_link)s\">Google Summer of "
+"Code</a> nel 2007, 2008 e nel 2010-2014. Google Summer of Code è un "
+"programma che offre agli studenti universitari uno stipendio durante "
+"l'estate per lavorare su progetti open source. I mentori di Mixxx hanno "
+"introdotto gli studenti nello sviluppo di software open source e li hanno"
+" aiutati ad acquisire esperienza lavorando con software multimediale, "
+"multi-threaded e in tempo reale."
 
 #: templates/pages/discover.html:30
 msgid "Why?"
-msgstr ""
+msgstr "Perché?"
 
 #: templates/pages/discover.html:33
 msgid ""
@@ -204,6 +262,16 @@ msgid ""
 "pursue new and exciting features that give DJs more tools to create "
 "better live mixes."
 msgstr ""
+"Mixxx è iniziato come un progetto open source a causa della domanda di "
+"software per DJ su Linux e del malcontento con il software proprietario "
+"di DJ su Windows e Mac OS X. Oggi lo sviluppo di Mixxx è guidato dalla "
+"semplice idea che insieme possiamo creare un modo migliore per DJ, e "
+"questo ha portato Mixxx all'avanguardia. Mixxx è l'unico software di "
+"controllo in vinile multipiattaforma gratuito e ha il supporto per "
+"controller più avanzato tramite il nostro innovativo motore di scripting "
+"MIDI e HID basato su Javascript. Stiamo continuando a perseguire nuove ed"
+" entusiasmanti funzionalità che danno ai DJ più strumenti per creare mix "
+"dal vivo migliori."
 
 #: templates/pages/discover.html:37
 msgid ""
@@ -213,14 +281,22 @@ msgid ""
 "a broad range of skills and talents, and that makes for a fun development"
 " team that helps Mixxx continue to grow."
 msgstr ""
+"Oltre a graffiare i nostri pruriti, molte persone lavorano su Mixxx come "
+"un modo per apprendere la programmazione audio, o anche solo perché è "
+"divertente e si divertono a programmare. L'aspetto creativo di Mixxx "
+"attira gli sviluppatori con una vasta gamma di competenze e talenti, e "
+"questo rappresenta un divertente team di sviluppo che aiuta Mixxx a "
+"crescere."
 
 #: templates/pages/download.html:3
+#, fuzzy
 msgid "Download the Best Free DJ Mixing Software App"
-msgstr ""
+msgstr "Scarica il miglior software gratuito per DJ Mixing MP3"
 
 #: templates/pages/download.html:14
+#, fuzzy
 msgid "Mixxx is available for Windows, macOS, and Linux."
-msgstr ""
+msgstr "Mixxx è disponibile per Windows, macOS, e Linux:"
 
 #: templates/pages/download.html:17
 #, python-format
@@ -244,18 +320,19 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:31
+#, fuzzy
 msgid "Download stable version of Mixxx"
-msgstr ""
+msgstr "Scarica Mixxx"
 
 #: templates/pages/download.html:31
-#, python-format
+#, fuzzy, python-format
 msgid "Download Mixxx %(stable_version)s for %%s"
-msgstr ""
+msgstr "Scarica %(stable_version)s per %%s"
 
 #: templates/pages/download.html:31
-#, python-format
+#, fuzzy, python-format
 msgid "Download Mixxx %(stable_version)s"
-msgstr ""
+msgstr "Scarica Mixxx (%(stable_version)s)"
 
 #: templates/pages/download.html:32
 #, python-format
@@ -265,7 +342,7 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:32
-#, python-format
+#, fuzzy, python-format
 msgid "Select your Operating System <a href=\"%(stable_link)s\">below</a>."
 msgstr ""
 
@@ -277,18 +354,21 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:42
+#, fuzzy
 msgid ""
 "We happily provide Mixxx for free and donations are appreciated but not "
 "required."
 msgstr ""
+"Mixxx è disponibile per Windows, macOS e Linux. Forniamo volentieri Mixxx"
+" gratuitamente e le donazioni sono apprezzate!"
 
 #: templates/pages/download.html:49
 msgid "View Source Code on GitHub"
 msgstr ""
 
-#: templates/pages/download.html:49 templates/pages/index.html:110
+#: templates/pages/download.html:49 templates/pages/index.html:113
 msgid "Source Code"
-msgstr ""
+msgstr "Codice Sorgente"
 
 #: templates/pages/download.html:63
 #, python-format
@@ -313,7 +393,7 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:85
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The Mixxx team has been working hard on the next version of Mixxx. Check "
 "out the <a href=\"%(release_announcement)s\">release announcement</a> for"
@@ -322,15 +402,19 @@ msgstr ""
 
 #: templates/pages/download.html:89
 msgid "Important:"
-msgstr ""
+msgstr "Importante:"
 
 #: templates/pages/download.html:90
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "While %(version_name)s has been stable in testing it is not yet "
 "recommended for live use unless you are willing to risk a crash. Looking "
 "for the stable release? <a href=\"%(stable_link)s\">Scroll on down."
 msgstr ""
+"Mentre Mixxx 2.1 è stato stabile nei test, non è ancora raccomandato per "
+"l'uso dal vivo, a meno che non siate disposti a rischiare un crash. Stai "
+"cercando la versione stabile? <a href=\"%(stable_link)s\">Scorri verso il"
+" basso."
 
 #: templates/pages/download.html:97
 msgid ""
@@ -339,7 +423,7 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:102
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "If you're upgrading from an older version of Mixxx, check out the <a "
 "href=\"%(release_announcement)s\">release announcement</a> for a list of "
@@ -347,12 +431,16 @@ msgid ""
 msgstr ""
 
 #: templates/pages/download.html:106
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Although Mixxx %(version_name)s contains many important updates and "
 "bugfixes, it's possible some users may experience issues. If you do, you "
 "can still get one of our <a href=\"#previous\">previous versions</a>."
 msgstr ""
+"(Anche se %(version_name)s contiene molti importanti aggiornamenti e "
+"correzioni di bug, è possibile che alcuni utenti possano avere problemi. "
+"In tal caso, è ancora possibile ottenere la nostra <a "
+"href=\"#previous\">precedente versione stabile</a>.)"
 
 #: templates/pages/download.html:134
 msgid "Not Available"
@@ -418,23 +506,24 @@ msgstr ""
 
 #: templates/pages/error.html:7
 msgid "We're sorry!"
-msgstr ""
+msgstr "Ci dispiace!"
 
 #: templates/pages/error.html:8
+#, fuzzy
 msgid "The page <strong id=\"error-path\"></strong> couldn't be found."
-msgstr ""
+msgstr "La pagina <b id=\"url\"></b> non è stata trovata."
 
 #: templates/pages/features.html:3
 msgid "Features"
-msgstr ""
+msgstr "Caratteristiche"
 
 #: templates/pages/features.html:11
 msgid "Everything You Need, However You DJ"
-msgstr ""
+msgstr "Tutto ciò di cui hai bisogno, a prescindere da come fai il DJ"
 
 #: templates/pages/features.html:15
 msgid "Four Decks"
-msgstr ""
+msgstr "Quattro Decks"
 
 #: templates/pages/features.html:17
 msgid ""
@@ -442,10 +531,14 @@ msgid ""
 "eye on beats and cue points with a scratchable, scrolling waveform "
 "together with a whole-song overview waveform for quick seeking."
 msgstr ""
+"Rilascia una canzone su un deck in Mixxx per iniziare subito a suonare. "
+"Tieni d'occhio i beat e i cue point con una forma d'onda scratcabile e "
+"scorrevole insieme a una forma d'onda panoramica dell'intera canzone per "
+"una rapida ricerca."
 
 #: templates/pages/features.html:20
 msgid "Pitch and Key Control"
-msgstr ""
+msgstr "Controllo Tono e Chiave"
 
 #: templates/pages/features.html:22
 msgid ""
@@ -454,39 +547,54 @@ msgid ""
 "Temporarily nudge the tempo faster or slower for manual beatmatching, "
 "with smooth changes in pitch just like vinyl."
 msgstr ""
+"Cambia il tempo delle canzoni senza cambiare la loro tonalità con il "
+"keylock, o cambia la tonalità senza interrompere la sincronizzazione in "
+"modo che le tue canzoni suonino in armonia. Accelera o rallenta "
+"temporaneamente il tempo per il beatmatching manuale, con cambiamenti "
+"fluidi del pitch proprio come nel vinile."
 
 #: templates/pages/features.html:25
 msgid "Beat Looping"
-msgstr ""
+msgstr "Beat Looping"
 
 #: templates/pages/features.html:27
+#, fuzzy
 msgid ""
 "Need to extend your mix while you bring in the next track? Instantly loop"
 " a 4, 8, or 16 beat segment with ease. Save loops to hotcue slots for "
 "complex re-arrangements."
 msgstr ""
+"Hai bisogno di estendere il tuo mix mentre inizi a inserire la traccia "
+"successiva? Manda istantaneamente in loop un segmento di 4, 8 o 16 beat "
+"con facilità."
 
 #: templates/pages/features.html:30
 msgid "Sync Lock"
 msgstr ""
 
 #: templates/pages/features.html:32
+#, fuzzy
 msgid ""
 "Engage Sync Lock on your decks and they'll stay locked in time even if "
 "you change speed. Construct remixes on the fly with multiple tracks and "
 "loops without losing control. Pick which deck you want to be Sync Leader "
 "or let Mixxx choose it for you."
 msgstr ""
+"Attiva il master sync sui tuoi deck ed essi rimarranno bloccati nel tempo"
+" anche se cambi velocità. Costruisci remix al volo con più tracce e loop "
+"senza perdere il controllo."
 
 #: templates/pages/features.html:35
 msgid "Hotcues"
-msgstr ""
+msgstr "Hotcue"
 
 #: templates/pages/features.html:37
 msgid ""
 "Set hotcues to mark places in tracks. Remix and mash up tracks with "
 "accurate, rapid-fire hotcue triggering."
 msgstr ""
+"Imposta gli hotcues per segnare i punti nelle tracce. Remixa e mescola le"
+" tracce con l'attivazione accurata e rapida degli hotcues."
 
 #: templates/pages/features.html:42
 msgid "Beat Rolls and Censor"
@@ -497,28 +605,32 @@ msgid ""
 "Play with rhythm by triggering short loops and reverse-playback effects. "
 "The track stays in time so you don't miss a beat."
 msgstr ""
+"Gioca con il ritmo attivando brevi loop ed effetti di reverse-playback. "
+"La traccia rimane a tempo in modo da non perdere un colpo."
 
 #: templates/pages/features.html:48
 msgid "Quantization"
-msgstr ""
+msgstr "Quantizzazione"
 
 #: templates/pages/features.html:50
 msgid "Mark and activate cue points and loops exactly on beat every time."
-msgstr ""
+msgstr "Marca e attiva i cue point e i loop esattamente ad ogni battuta."
 
 #: templates/pages/features.html:53
 msgid "Broad Format Support"
-msgstr ""
+msgstr "Ampio Supporto di Formati"
 
 #: templates/pages/features.html:55
 msgid ""
 "Compatible with music files in lossless FLAC, WAV, and AIFF formats as "
 "well as lossy MP3, M4A/AAC, Ogg Vorbis, and Opus formats."
 msgstr ""
+"Compatibile con i file musicali nei formati lossless FLAC, WAV e AIFF e "
+"nei formati lossy MP3, M4A/AAC, Ogg Vorbis e Opus."
 
 #: templates/pages/features.html:58
 msgid "EQ and Crossfader Control"
-msgstr ""
+msgstr "Controllo EQ e Crossfader"
 
 #: templates/pages/features.html:60
 msgid ""
@@ -526,10 +638,13 @@ msgid ""
 " Crossfader curve control lets you deliver quick cuts or long, smooth "
 "crossfades."
 msgstr ""
+"Scegli tra più equalizzatori e isolatori con livelli regolabili. Il "
+"controllo della curva del crossfader ti permette di offrire tagli rapidi "
+"o dissolvenze incrociate lunghe e morbide."
 
 #: templates/pages/features.html:68
 msgid "Customizable DJ Hardware Support"
-msgstr ""
+msgstr "Supporto Hardware DJ Personalizzabile"
 
 #: templates/pages/features.html:70
 msgid ""
@@ -537,16 +652,24 @@ msgid ""
 "restrictions or exclusive vendor lock-ins. Use whatever gear you want to "
 "build your unique setup."
 msgstr ""
+"Mixxx funziona bene con una varietà di hardware senza restrizioni "
+"artificiali o vincoli esclusivi del fornitore. Usa qualsiasi attrezzatura"
+" tu voglia per costruire il tuo setup unico."
 
 #: templates/pages/features.html:79
 msgid "MIDI and HID Controller Support"
-msgstr ""
+msgstr "Supporto Controller MIDI e HID"
 
 #: templates/pages/features.html:82
+#, fuzzy
 msgid ""
 "for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen"
 " &amp; Heath Xone K2, Hercules DJ Console Series, and many more."
 msgstr ""
+"<b>Preset Inclusi</b> <br>per controller come il Pioneer DDJ-SB2, Numark "
+"Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series e "
+"molti altri. <a href=\"%(hardware_compatibility_wiki_link)s\">Elenco "
+"completo dei dispositivi supportati</a>"
 
 #: templates/pages/features.html:84
 msgid "Supported Devices"
@@ -554,31 +677,43 @@ msgstr ""
 
 #: templates/pages/features.html:86
 msgid "Programmable Mapping Engine"
-msgstr ""
+msgstr "Motore Mapping Programmabile"
 
 #: templates/pages/features.html:88
+#, fuzzy
 msgid ""
 "For creative tinkerers, controller mappings can be customized with the "
 "full flexibility of the JavaScript programming language. MIDI or HID "
 "messages can be mapped onto custom functions which execute complex "
 "behaviour."
 msgstr ""
+"Per i creativi, le mappature dei controller possono essere personalizzate"
+" con la piena flessibilità del linguaggio di programmazione JavaScript. I"
+" messaggi MIDI o HID possono essere mappati su funzioni personalizzate "
+"che eseguono comportamenti complessi. <a "
+"href=\"%(midi_scripting_wiki_link)s\">Leggete di più</a>"
 
 #: templates/pages/features.html:90 templates/pages/features.html:102
 msgid "Read more"
-msgstr ""
+msgstr "Leggi di più"
 
 #: templates/pages/features.html:98
 msgid "Free Timecode Vinyl Control"
 msgstr ""
 
 #: templates/pages/features.html:100
+#, fuzzy
 msgid ""
 "Control your digital music files from turntables or CDJs and a mixer "
 "using timecoded vinyl or CDs. Grab the music as if it was pressed onto "
 "wax and scratch to your heart's content. Mixxx is the only free timecode "
 "vinyl control software for Windows, macOS, and Linux."
 msgstr ""
+"Controlla i tuoi file musicali digitali da giradischi o CDJ e un mixer "
+"usando vinili o CD con timecode. Prendete la musica come se fosse "
+"stampata su cera e scratchate a vostro piacimento. Mixxx è l'unico "
+"software gratuito di controllo del vinile con timecode per Windows, macOS"
+" e Linux.<a href=\"%(vinyl_control_manual_link)s\">Leggi di più</a> "
 
 #: templates/pages/features.html:109
 msgid "Sampler Decks"
@@ -587,12 +722,15 @@ msgstr ""
 #: templates/pages/features.html:111
 msgid "Load up to 64 sampler decks full of sounds to layer over your mix."
 msgstr ""
+"Carica fino a 64 deck di campioni pieni di suoni da sovrapporre al tuo "
+"mix."
 
 #: templates/pages/features.html:118
 msgid "Effects Chains"
-msgstr ""
+msgstr "Catena Effetti"
 
 #: templates/pages/features.html:120
+#, fuzzy
 msgid ""
 "Link up to three effects in a chain for a unique twist on your mix. Fine "
 "tune your sound by tweaking each parameter individually. Customize your "
@@ -604,10 +742,17 @@ msgid ""
 "chains to the Filter/QuickEffect knob to add color right from your mixer "
 "controls."
 msgstr ""
+"Collega fino a tre effetti in una catena per dare un tocco unico al tuo "
+"mix. Ottimizza il tuo suono regolando ogni parametro individualmente. "
+"Personalizza il tuo flusso di lavoro assegnando diversi parametri da "
+"regolare con la manopola dell'effetto. Metti a fuoco diversi effetti da "
+"un controller per un controllo flessibile delle catene di effetti, sia "
+"che il tuo controller abbia una sezione effetti completa o una singola "
+"manopola."
 
 #: templates/pages/features.html:127
 msgid "Sophisticated Music Library"
-msgstr ""
+msgstr "Libreria Musicale Sofisticata"
 
 #: templates/pages/features.html:129
 msgid ""
@@ -615,24 +760,31 @@ msgid ""
 " so you can find the perfect next track to play. Powered by a high-"
 "performance database, searching your collection is intuitive and fast."
 msgstr ""
+"Progettata dai DJ, per i DJ, la libreria musicale di Mixxx aiuta a "
+"organizzare la tua musica in modo da poter trovare il prossimo brano "
+"perfetto da suonare. Alimentato da un database ad alte prestazioni, la "
+"ricerca della tua collezione è intuitiva e veloce."
 
 #: templates/pages/features.html:135
 msgid "Organization"
-msgstr ""
+msgstr "Organizzazione"
 
 #: templates/pages/features.html:137
 msgid "Crates and Playlists"
-msgstr ""
+msgstr "Contenitori e Playlist"
 
 #: templates/pages/features.html:139
 msgid ""
 "Sort your music the way you want. Use playlists to plan your set and use "
 "crates to build your own categorization system."
 msgstr ""
+"Ordina la tua musica come vuoi tu. Usa le playlist per pianificare il tuo"
+" set e usa i contenitori per costruire il tuo sistema di "
+"categorizzazione."
 
 #: templates/pages/features.html:142
 msgid "Search &amp; Sort"
-msgstr ""
+msgstr "Cerca &amp; Ordina"
 
 #: templates/pages/features.html:144
 msgid ""
@@ -640,22 +792,29 @@ msgid ""
 "to a specific tag. Sort the library table hierarchically with multiple "
 "tags at a time."
 msgstr ""
+"Inizia a digitare per trovare il brano a cui stai pensando, o restringi "
+"la ricerca a un tag specifico. Ordina la tabella della libreria in modo "
+"gerarchico con più tag alla volta."
 
 #: templates/pages/features.html:149
 msgid "iTunes and Traktor Library Integration"
-msgstr ""
+msgstr "Integrazione iTunes e Traktor Library"
 
 #: templates/pages/features.html:150
 msgid "Drop fresh tracks from your iTunes or Traktor library right into your mix."
 msgstr ""
+"Trasferisci tracce fresche dalla tua libreria di iTunes o Traktor "
+"direttamente nel tuo mix."
 
 #: templates/pages/features.html:152
 msgid "MusicBrainz Tag Lookup"
-msgstr ""
+msgstr "Ricerca Tag MusicBrainz"
 
 #: templates/pages/features.html:153
 msgid "Fingerprint your tracks and fetch missing tags from MusicBrainz."
 msgstr ""
+"Calcola il fingerprint dei tuoi brani e recupera i tag mancanti da "
+"MusicBrainz."
 
 #: templates/pages/features.html:157
 msgid "BPM &amp; Key Detection"
@@ -667,36 +826,48 @@ msgid ""
 "detection helps identify tracks that are in harmony. Sort your library by"
 " BPM and key to quickly find tracks that will blend in seamlessly."
 msgstr ""
+"Il rilevamento dei BPM trova il ritmo anche nei ritmi più difficili. Il "
+"rilevamento della chiave musicale aiuta a identificare le tracce che sono"
+" in armonia. Ordina la tua libreria per BPM e chiave per trovare "
+"rapidamente le tracce che si fondono perfettamente."
 
 #: templates/pages/features.html:164
 msgid "Auto DJ"
-msgstr ""
+msgstr "Auto DJ"
 
 #: templates/pages/features.html:166
 msgid ""
 "Need a break? Create a quick playlist and let Auto DJ take over. "
 "Automatic crossfading watches your back until you return."
 msgstr ""
+"Hai bisogno di una pausa? Crea una rapida playlist e lascia che Auto DJ "
+"prenda il controllo. La dissolvenza incrociata automatica ti guarda le "
+"spalle fino al tuo ritorno."
 
 #: templates/pages/features.html:174
 msgid "Choose Your Skin"
-msgstr ""
+msgstr "Scegli la Tua Skin"
 
 #: templates/pages/features.html:175
+#, fuzzy
 msgid ""
 "Mixxx includes four different skins, each with a different look and a "
 "configurable layout."
 msgstr ""
+"Mixxx include quattro diverse skin, ognuna con un aspetto diverso e un "
+"layout configurabile"
 
 #: templates/pages/features.html:194
 msgid "Record and Broadcast"
-msgstr ""
+msgstr "Registrazione e Trasmissione"
 
 #: templates/pages/features.html:196
 msgid ""
 "Mixxx includes a number of recording and broadcasting features to help "
 "you share your mixes and spread your name."
 msgstr ""
+"Mixxx include una serie di funzioni di registrazione e trasmissione per "
+"aiutarti a condividere i tuoi mix e diffondere il tuo nome."
 
 #: templates/pages/features.html:203
 msgid ""
@@ -704,20 +875,26 @@ msgid ""
 "Vorbis format, with MP3 recording enabled by the separate LAME library. "
 "Recordings are automatically archived in the library for fast access."
 msgstr ""
+"Registra i tuoi mix dal vivo nei formati WAV e FLAC senza perdite o nel "
+"formato Ogg Vorbis senza perdite, con la registrazione MP3 abilitata "
+"dalla libreria LAME separata. Le registrazioni vengono archiviate "
+"automaticamente nella libreria per un accesso veloce."
 
 #: templates/pages/features.html:209
 msgid "Live Broadcasting"
-msgstr ""
+msgstr "Live Broadcasting"
 
 #: templates/pages/features.html:211
 msgid ""
 "Stream your mixes live over the Internet to your audience and friends "
 "through a Shoutcast or Icecast server."
 msgstr ""
+"Trasmetti i tuoi mix in diretta su Internet al tuo pubblico e ai tuoi "
+"amici attraverso un server Shoutcast o Icecast."
 
 #: templates/pages/features.html:217
 msgid "ReplayGain Normalization"
-msgstr ""
+msgstr "Normalizzazione ReplayGain"
 
 #: templates/pages/features.html:219
 msgid ""
@@ -725,10 +902,13 @@ msgid ""
 " maintain a consistent volume. Mixxx reads existing ReplayGain tags and "
 "analyzes songs that don't have them."
 msgstr ""
+"Il volume delle canzoni viene regolato automaticamente quando si carica "
+"un deck, così i tuoi mix mantengono un volume costante. Mixxx legge i tag"
+" ReplayGain esistenti e analizza le canzoni che non li hanno."
 
 #: templates/pages/features.html:225
 msgid "Microphone &amp; Auxiliary Inputs"
-msgstr ""
+msgstr "Microfono &amp; Input Ausiliari"
 
 #: templates/pages/features.html:227
 msgid ""
@@ -739,10 +919,16 @@ msgid ""
 "Latency compensation keeps your recorded and broadcasted mixes in time "
 "when using direct monitoring."
 msgstr ""
+"Che tu stia collaborando con un cantante, dando shoutout in onda o "
+"improvvisando con la tua chitarra, integra l'ingresso audio dal vivo nel "
+"tuo mix. Quattro ingressi microfonici e quattro ingressi ausiliari ti "
+"permettono di includere diverse fonti sonore senza bisogno di un mixer "
+"hardware esterno. La compensazione della latenza mantiene i tuoi mix "
+"registrati e trasmessi a tempo quando usi il monitoraggio diretto."
 
 #: templates/pages/features.html:235
 msgid "Native Language Support"
-msgstr ""
+msgstr "Supporto Lingua Nativa"
 
 #: templates/pages/features.html:238
 #, python-format
@@ -751,18 +937,22 @@ msgid ""
 "Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a "
 "href=\"%(com_transifex_mixxxdj_link)s\">Translation overview</a> page."
 msgstr ""
+" Usa Mixxx in spagnolo, catalano, francese, tedesco, italiano, russo, "
+"finlandese, ceco, olandese, polacco o giapponese... e altro ancora! Vedi "
+"la nostra pagina <a href=\"%(com_transifex_mixxxdj_link)s\">Panoramica "
+"delle traduzioni</a> ."
 
 #: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
 msgid "Get Involved"
-msgstr ""
+msgstr "Fatti Coinvolgere"
 
 #: templates/pages/get-involved.html:8
 msgid "Not a coder? Scroll down!"
-msgstr ""
+msgstr "Non sei un programmatore? Scorri verso il basso!"
 
 #: templates/pages/get-involved.html:13
 msgid "Software Developers"
-msgstr ""
+msgstr "Sviluppatori Software"
 
 #: templates/pages/get-involved.html:15
 #, python-format
@@ -773,6 +963,12 @@ msgid ""
 "you don't need any prior Qt or audio programming experience to start "
 "hacking on Mixxx</b>."
 msgstr ""
+"Mixxx è scritto in C++ e usa la libreria della piattaforma <a "
+"href=\"%(qt_link)s\">Qt</a> per la maggior parte delle strutture dati, il"
+" disegno grafico e la gestione delle finestre. Fortunatamente, Qt è "
+"facile da usare e molto ben documentato, <b>quindi non avete bisogno di "
+"alcuna esperienza precedente di Qt o di programmazione audio per iniziare"
+" a lavorare su Mixxx</b>."
 
 #: templates/pages/get-involved.html:18
 msgid ""
@@ -781,10 +977,14 @@ msgid ""
 " ideal way to learn about real-time audio programming, Qt, or even just "
 "hone your C++ skills."
 msgstr ""
+"Oltre a creare un bel software per DJ e a lavorare con un team "
+"divertente, contribuire a Mixxx fa anche un figurone sul tuo curriculum "
+"vitae. È anche un modo ideale per imparare la programmazione audio in "
+"tempo reale, Qt, o anche solo per affinare le tue abilità in C++."
 
 #: templates/pages/get-involved.html:22
 msgid "Start Developing Now"
-msgstr ""
+msgstr "Inizia a Sviluppare Ora"
 
 #: templates/pages/get-involved.html:25
 #, python-format
@@ -796,11 +996,13 @@ msgid ""
 msgstr ""
 
 #: templates/pages/get-involved.html:28
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Get a <a href=\"%(com_github_link)s\">GitHub</a> account and <a "
 "href=\"%(using_git_wiki_link)s \">fork your own branch</a>!"
 msgstr ""
+"Ottieni un account <a href=\"%(com_github_link)s\">Github</a> e <a "
+"href=\"%(using_git_wiki_link)s \">forka il tuo branch</a>!"
 
 #: templates/pages/get-involved.html:31
 #, python-format
@@ -809,28 +1011,33 @@ msgid ""
 " and start hacking!<br><br> Fixed it? Your name will be in the <a "
 "href=\"%(mixxx_credits_link)s\">Mixxx credits</a>!"
 msgstr ""
+"Scegli un bug dalla nostra <a href=\"%(easy_bug_list_link)s \">Easy Bugs "
+"List</a> e inizia ad hackerare! <br><br>L'hai risolto? Il tuo nome sarà "
+"nei <a href=\"%(mixxx_credits_link)s\">crediti del Mixxx</a>!"
 
 #: templates/pages/get-involved.html:34
 msgid ""
 "You don't even have to know C++. There are developers who got into Mixxx "
 "development while learning C++ along the way."
 msgstr ""
+"Non devi nemmeno conoscere il C ++. Ci sono sviluppatori che sono entrati"
+" nello sviluppo di Mixxx mentre imparavano il C ++ strada facendo."
 
 #: templates/pages/get-involved.html:41
 msgid "Development Cycle in a Nutshell"
-msgstr ""
+msgstr "Ciclo di Sviluppo in poche parole"
 
 #: templates/pages/get-involved.html:42
 msgid "Mixxx Development Cycle"
-msgstr ""
+msgstr "Ciclo di Sviluppo Mixxx"
 
 #: templates/pages/get-involved.html:49
 msgid "DJs"
-msgstr ""
+msgstr "DJs"
 
 #: templates/pages/get-involved.html:50
 msgid "There are many ways to help out as a DJ:"
-msgstr ""
+msgstr "Ci sono molti modi per dare una mano come DJ:"
 
 #: templates/pages/get-involved.html:53
 #, python-format
@@ -838,27 +1045,35 @@ msgid ""
 "<a href=\"%(controller_wiki_link)s\">Create or improve mappings</a> for "
 "your controller."
 msgstr ""
+"<a href=\"%(controller_wiki_link)s\">Crea o migliora le mappature</a> per"
+" il tuo controller."
 
 #: templates/pages/get-involved.html:56
 #, python-format
 msgid "<a href=\"%(bug_tracker_link)s\">Report bugs</a> as you find them."
 msgstr ""
+"<a href=\"%(bug_tracker_link)s\">Segnalate i bug</a> man mano che li "
+"trovate."
 
 #: templates/pages/get-involved.html:59
 #, python-format
 msgid "Help keep our <a href=\"%(mixxx_wiki_link)s\">Wiki</a> up-to-date."
 msgstr ""
+"Aiuta a mantenere aggiornato il nostro <a "
+"href=\"%(mixxx_wiki_link)s\">Wiki</a>."
 
 #: templates/pages/get-involved.html:62
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Support other DJs with their technical questions on <a "
 "href=\"%(forum_link)s\">the forums</a>."
 msgstr ""
+"Supporta gli altri DJ con le loro domande tecniche <a "
+"href=\"%(forum_link)s\">sui forum</a>."
 
 #: templates/pages/get-involved.html:65
 msgid "Promote Mixxx:"
-msgstr ""
+msgstr "Promuovere Mixxx:"
 
 #: templates/pages/get-involved.html:65
 msgid ""
@@ -866,6 +1081,9 @@ msgid ""
 "when new releases come out. Any exposure on the web and in print helps "
 "our project grow, and is much appreciated!"
 msgstr ""
+"Scrivi un articolo su come usi Mixxx per il tuo blog, o menzionaci quando"
+" escono nuove versioni. Qualsiasi esposizione sul web e sulla stampa "
+"aiuta il nostro progetto a crescere, ed è molto apprezzato!"
 
 #: templates/pages/get-involved.html:68
 #, python-format
@@ -873,10 +1091,12 @@ msgid ""
 "<a href=\"%(photos_forum_link)s\">Post some photos</a> of you using Mixxx"
 " at a gig!"
 msgstr ""
+"<a href=\"%(photos_forum_link)s\">Pubblica qualche foto</a> di te che usi"
+" Mixxx ad un concerto!"
 
 #: templates/pages/get-involved.html:73
 msgid "Translators"
-msgstr ""
+msgstr "Traduttori"
 
 #: templates/pages/get-involved.html:75
 msgid ""
@@ -885,6 +1105,10 @@ msgid ""
 "translations into more languages, as well as to update and ensure the "
 "accuracy of existing translations."
 msgstr ""
+"Siamo lieti di offrire Mixxx in molte lingue. Le nostre traduzioni sono "
+"interamente fornite dalla comunità, quindi abbiamo bisogno del tuo aiuto "
+"per diffondere Mixxx con traduzioni in più lingue, così come per "
+"aggiornare e garantire la precisione delle traduzioni esistenti."
 
 #: templates/pages/get-involved.html:78
 #, python-format
@@ -894,10 +1118,14 @@ msgid ""
 "help when translating, visit the <a href=\"%(i18n_forum_link)s\">Mixxx "
 "Localization forum</a>."
 msgstr ""
+"Puoi aiutare a tradurre visitando la nostra <a "
+"href=\"%(com_transifex_mixxxdj_link)s\">pagina delle traduzioni</a>. Per "
+"ottenere aiuto durante la traduzione, visita il <a "
+"href=\"%(i18n_forum_link)s\">forum Mixxx Localization</a>."
 
 #: templates/pages/get-involved.html:81
 msgid "Graphic Artists"
-msgstr ""
+msgstr "Artisti Grafici"
 
 #: templates/pages/get-involved.html:83
 #, python-format
@@ -905,41 +1133,54 @@ msgid ""
 "<a href=\"%(creating_skins_wiki_link)s\">Make skins</a> and share them on"
 " <a href=\"%(skins_forum_link)s\">our forum</a>."
 msgstr ""
+"<a href=\"%(creating_skins_wiki_link)s\">Crea delle skin</a> e "
+"condividile sul <a href=\"%(skins_forum_link)s\">nostro forum</a>."
 
 #: templates/pages/index.html:3
+#, fuzzy
 msgid "Free DJ Mixing Software App"
-msgstr ""
+msgstr "Software di Mixing MP3 Gratuito per DJ Digitali"
 
 #: templates/pages/index.html:14
 msgid "DJ Your Way"
-msgstr ""
+msgstr "DJ a Modo Tuo"
 
 #: templates/pages/index.html:50
 msgid "Powerful Features For All DJs"
-msgstr ""
+msgstr "Caratteristiche Potenti Per Tutti i DJ"
 
 #: templates/pages/index.html:52
+#, fuzzy
 msgid ""
 "Mixxx integrates the tools DJs need to perform creative live mixes with "
 "digital music files.<br />Whether you are a new DJ with just a laptop or "
 "an experienced turntablist, Mixxx can support your style and techniques "
 "of mixing."
 msgstr ""
+"Mixxx integra gli strumenti di cui i DJ hanno bisogno per eseguire mix "
+"creativi dal vivo con file musicali digitali. Che tu sia un nuovo DJ con "
+"solo un portatile o un esperto turntablist, Mixxx può supportare il tuo "
+"stile e le tue tecniche di mixaggio."
 
 #: templates/pages/index.html:56 templates/pages/index.html:57
 msgid "BPM, Key Detection & Sync"
 msgstr ""
 
 #: templates/pages/index.html:59
+#, fuzzy
 msgid ""
 "BPM and musical key detection help you find the perfect next track from "
 "your library. Use Sync Lock to match the tempo and beats of four songs "
 "for seamless mixing."
 msgstr ""
+"I BPM e il rilevamento della chiave musicale ti aiutano a trovare la "
+"prossima traccia perfetta dalla tua libreria. Usa il master sync per "
+"abbinare il tempo e i beat di quattro canzoni per un mixaggio senza "
+"soluzione di continuità."
 
 #: templates/pages/index.html:64 templates/pages/index.html:65
 msgid "DJ Controller Support"
-msgstr ""
+msgstr "Supporto DJ Controller"
 
 #: templates/pages/index.html:67
 msgid ""
@@ -947,20 +1188,27 @@ msgid ""
 "of Mixxx's features. Use the programmable mapping system to customize "
 "your workflow and add support for any MIDI or HID device."
 msgstr ""
+"Le mappature integrate per l'hardware del controller DJ ti danno il "
+"controllo pratico delle caratteristiche di Mixxx. Usa il sistema di "
+"mappatura programmabile per personalizzare il tuo flusso di lavoro e "
+"aggiungere il supporto per qualsiasi dispositivo MIDI o HID."
 
 #: templates/pages/index.html:72 templates/pages/index.html:73
 msgid "Effects"
-msgstr ""
+msgstr "Effetti"
 
 #: templates/pages/index.html:75
 msgid ""
 "Add your unique spin to tracks with sound effects. Get creative by "
 "chaining multiple effects together and twisting all their knobs."
 msgstr ""
+"Aggiungi il tuo tocco unico ai brani con gli effetti sonori. Diventa "
+"creativo concatenando più effetti insieme e girando tutte le loro "
+"manopole."
 
 #: templates/pages/index.html:80 templates/pages/index.html:81
 msgid "Vinyl Record Control"
-msgstr ""
+msgstr "Controllo Dischi in Vinile"
 
 #: templates/pages/index.html:83
 msgid ""
@@ -968,19 +1216,25 @@ msgid ""
 "scratch your digital music files as if they were pressed on vinyl. Mix "
 "music vinyls into your set by toggling vinyl passthrough mode."
 msgstr ""
+"Usa i giradischi con dischi in vinile con timecode per controllare la "
+"riproduzione e scratchare i tuoi file musicali digitali come se fossero "
+"stampati su vinile. Mixa i vinili di musica nel tuo set attivando la "
+"modalità di passaggio del vinile."
 
-#: templates/pages/index.html:90
-#, python-format
+#: templates/pages/index.html:92
+#, fuzzy, python-format
 msgid ""
-"See dozens <a href=\"%(SITEURL)s/features\">more features</a> or download"
-" Mixxx and start DJing now!"
+"See dozens <a href=\"%(features_link)s\">more features</a> or download "
+"Mixxx and start DJing now!"
 msgstr ""
+"Vedi <a href=\"%(features_link)s\">dozzine di altre caratteristiche</a> o"
+" inizia a scaricare Mixxx gratis adesso:"
 
-#: templates/pages/index.html:97
+#: templates/pages/index.html:100
 msgid "Free &amp; Open Source"
 msgstr ""
 
-#: templates/pages/index.html:99
+#: templates/pages/index.html:102
 msgid ""
 "Mixxx is free open-source software and entirely community-driven. There "
 "is no company behind Mixxx &mdash; the development is shouldered by "
@@ -988,11 +1242,11 @@ msgid ""
 "on their favorite DJ software. Mixxx is and always will be free!"
 msgstr ""
 
-#: templates/pages/index.html:117
+#: templates/pages/index.html:120
 msgid "Latest News"
 msgstr ""
 
-#: templates/pages/index.html:119
+#: templates/pages/index.html:122
 #, python-format
 msgid ""
 "To see a list of all news and announcements, head over to <a "
@@ -1000,11 +1254,11 @@ msgid ""
 "href=\"%(FEED_ATOM)s\">Atom feed</a>."
 msgstr ""
 
-#: templates/pages/index.html:137
+#: templates/pages/index.html:140
 msgid "Friendly Community"
-msgstr ""
+msgstr "Comunità amichevole"
 
-#: templates/pages/index.html:139
+#: templates/pages/index.html:142
 msgid ""
 "Mixxx is developed by an international community of DJs, programmers, and"
 " artists. Because Mixxx is <b>free (<a "
@@ -1012,9 +1266,14 @@ msgid ""
 "and price), open source</b> software, anyone can contribute to make Mixxx"
 " even better&mdash;including you!"
 msgstr ""
+"Mixxx è sviluppato da una comunità internazionale di DJ, programmatori e "
+"artisti. Poiché Mixxx è un software <b>libero (<a "
+"href=\"https://www.gnu.org/philosophy/free-sw.html\">come libertà</a> e "
+"prezzo) e open source</b>, chiunque può contribuire a rendere Mixxx "
+"ancora migliore&mdash;compreso te!"
 
-#: templates/pages/index.html:143
-#, python-format
+#: templates/pages/index.html:146
+#, fuzzy, python-format
 msgid ""
 "You can get involved with Mixxx today by <a "
 "href=\"%(github_issues)s\">reporting bugs and suggesting features</a>, <a"
@@ -1024,39 +1283,51 @@ msgid ""
 "translations</a>, or working on one of our other <a "
 "href=\"%(starter_tasks_link)s\">starter tasks</a>."
 msgstr ""
+" Puoi essere coinvolto in Mixxx oggi stesso <a "
+"href=\"%(github_issues)s\">segnalando bug e suggerendo "
+"caratteristiche</a>, <a href=\"%(mapping_link)s\">facendo una mappatura "
+"del controller</a>, <a href=\"%(create_a_branch_link)s\">aggiungendo "
+"caratteristiche &amp; correggendo bug</a>, <a "
+"href=\"%(help_with_translations_link)s\">aiutando con le traduzioni</a>, "
+"o lavorando su uno dei nostri altri <a "
+"href=\"%(starter_tasks_link)s\">compiti iniziali</a>."
 
-#: templates/pages/index.html:152
+#: templates/pages/index.html:155
 msgid "#1 Top Free Mac App Worldwide"
-msgstr ""
+msgstr "#1 La migliore app gratuita per Mac in tutto il mondo"
 
-#: templates/pages/index.html:154 templates/pages/index.html:171
+#: templates/pages/index.html:157 templates/pages/index.html:174
 msgid "February 2011"
-msgstr ""
+msgstr "Febbraio 2011"
 
-#: templates/pages/index.html:163
+#: templates/pages/index.html:166
 msgid "Free Pick of the Month"
-msgstr ""
+msgstr "Scelta Gratis del Mese"
 
-#: templates/pages/index.html:164
+#: templates/pages/index.html:167
 msgid "September 2007"
-msgstr ""
+msgstr "Settembre 2007"
 
-#: templates/pages/index.html:170
+#: templates/pages/index.html:173
 msgid "\"The coolest open source<br>application ever?\""
-msgstr ""
+msgstr "\"La più bella applicazione<br>open source di sempre?\""
 
 #: templates/pages/press.html:13
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "If you want to report on Mixxx and like to get information or interviews,"
 " please contact us at <a "
 "href=\"%(project_manager_mail_link)s\">press@mixxx.org</a>. We won't "
 "bite, we promise."
 msgstr ""
+"Vi preghiamo di contattarci a <a "
+"href=\"%(project_manager_mail_link)s\">press@mixxx.org</a> per "
+"informazioni o interviste. Non morderemo, lo promettiamo."
 
 #: templates/pages/press.html:18
+#, fuzzy
 msgid "Logo"
-msgstr ""
+msgstr "Blog"
 
 #: templates/pages/press.html:45
 msgid "Press Mirror"
@@ -1115,43 +1386,49 @@ msgid "2018-10-25:"
 msgstr ""
 
 #: templates/pages/screenshots.html:3 templates/pages/screenshots.html:7
+#, fuzzy
 msgid "Screenshots"
-msgstr ""
+msgstr "Schermate di riferimento:"
 
 #: templates/pages/screenshots.html:9
 msgid "Here you can find some screenshots of Mixxx' user interface."
 msgstr ""
 
 #: templates/pages/screenshots.html:14
+#, fuzzy
 msgid "Mixxx 2.5"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/screenshots.html:47
+#, fuzzy
 msgid "Mixxx 2.4"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/screenshots.html:80
+#, fuzzy
 msgid "Mixxx 2.3"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/screenshots.html:128
+#, fuzzy
 msgid "Mixxx 2.2"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/support.html:3
 msgid "Support"
-msgstr ""
+msgstr "Supporto"
 
 #: templates/pages/support.html:7
+#, fuzzy
 msgid "Support &amp; Community"
-msgstr ""
+msgstr "Supporto &amp; Comunità"
 
 #: templates/pages/support.html:11
 msgid "User Manual"
-msgstr ""
+msgstr "Manuale Utente"
 
 #: templates/pages/support.html:13
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The <a href=\"%(manual_latest_link)s\">Mixxx Manual</a> provides an "
 "overview of Mixxx's user interface, information about configuration and "
@@ -1159,13 +1436,18 @@ msgid ""
 "beginners under <a href=\"%(manual_beginner_link)s\">DJing with "
 "Mixxx</a>."
 msgstr ""
+"Il <a href=\"%(manual_latest_link)s\">Manuale Mixxx</a> fornisce una "
+"panoramica dell'interfaccia utente di Mixxx, informazioni sulla "
+"<b>configurazione</b> e l'hardware, e molto altro. Contiene anche "
+"informazioni utili per i <b>principianti</b> sotto il profilo del <a "
+"href=\"%(manual_beginner_link)s\">DJing con Mixxx</a>."
 
 #: templates/pages/support.html:18
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: templates/pages/support.html:20
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "The <a href=\"%(mixxx_wiki_link)s\">Mixxx Wiki</a> has a wealth of useful"
 " documentation for users and developers. New to it all and not sure how "
@@ -1173,10 +1455,15 @@ msgid ""
 "DJ Links</a>. Running into technical issues? See the <a "
 "href=\"%(wiki_troubleshooting)s\">Troubleshooting</a> guide."
 msgstr ""
+"La <a href=\"%(mixxx_wiki_link)s\">Wiki di Mixxx</a> è ricca di "
+"documentazione utile per utenti e sviluppatori. Sei nuovo e non sai come "
+"iniziare? Dai un'occhiata ai <a href=\"%(beginner_dj_links)s\">link per "
+"DJ principianti</a>. Ti imbatti in problemi tecnici? Guarda la guida alla"
+" risoluzione dei <a href=\"%(wiki_troubleshooting)s\">problemi</a>. "
 
 #: templates/pages/support.html:25
 msgid "Community Forums"
-msgstr ""
+msgstr "Forum della comunità"
 
 #: templates/pages/support.html:27
 #, python-format
@@ -1189,7 +1476,7 @@ msgstr ""
 
 #: templates/pages/support.html:32
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Bug Tracker"
 
 #: templates/pages/support.html:34
 #, python-format
@@ -1199,4 +1486,8 @@ msgid ""
 "centralized place to pool our information on bugs, and prevents us from "
 "getting disorganized and forgetting about them."
 msgstr ""
+"Per favore segnalate qualsiasi bug che trovate nel nostro <a href=\" "
+"%(bug_tracker_link)s\">Bug Tracker</a>. Il bug tracker ci fornisce un "
+"posto centralizzato per raccogliere le nostre informazioni sui bug, e ci "
+"impedisce di disorganizzarci e dimenticarci di loro."
 

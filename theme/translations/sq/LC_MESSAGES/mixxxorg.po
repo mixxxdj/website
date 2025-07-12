@@ -1,18 +1,20 @@
-# Chinese (Simplified, China) translations for Mixxx.
+# Albanian translations for Mixxx.
 # Copyright (C) 2025 Mixxx Development Team
 # This file is distributed under the same license as the Mixxx project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: Mixxx 2025\n"
+"Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: https://github.com/mixxxdj/mixxx/issues/\n"
-"POT-Creation-Date: 2025-07-03 18:10+0200\n"
-"PO-Revision-Date: 2025-07-03 16:26+0200\n"
+"POT-Creation-Date: 2025-07-12 16:12+0200\n"
+"PO-Revision-Date: 2015-05-14 03:50+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: zh_Hans_CN\n"
-"Language-Team: zh_Hans_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: sq\n"
+"Language-Team: Albanian (http://app.transifex.com/mixxx-dj-software"
+"/mixxxdj-website/language/sq/)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -42,6 +44,11 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
+#: templates/footer.html:54
+#, fuzzy
+msgid "Site Language"
+msgstr "Mbulim Gjuhësh Amtare"
+
 #: templates/index.html:3
 msgid "News"
 msgstr ""
@@ -50,25 +57,24 @@ msgstr ""
 msgid "News and Announcements"
 msgstr ""
 
-#: templates/index.html:48 templates/pages/index.html:128
+#: templates/index.html:48 templates/pages/index.html:131
+#, fuzzy
 msgid "Read More"
-msgstr ""
+msgstr "Lexoni më tepër"
 
-#: templates/navbar.html:28 templates/pages/index.html:104
+#: templates/navbar.html:28 templates/pages/index.html:107
+#, fuzzy
 msgid "Download"
-msgstr ""
-
-#: templates/navbar.html:32
-msgid "Site Language"
-msgstr ""
+msgstr "Shkarkim"
 
 #: templates/pages/contact.html:3
+#, fuzzy
 msgid "Contact "
-msgstr ""
+msgstr "Kontakt"
 
 #: templates/pages/contact.html:7
 msgid "Get in Touch"
-msgstr ""
+msgstr "Lidhuni"
 
 #: templates/pages/contact.html:9
 #, python-format
@@ -98,8 +104,9 @@ msgid ""
 msgstr ""
 
 #: templates/pages/contact.html:20
+#, fuzzy
 msgid "Mixxx Development Team"
-msgstr ""
+msgstr "Ekipi i Zhvillimit të Mixxx 2.0.0"
 
 #: templates/pages/contact.html:22
 #, python-format
@@ -111,19 +118,19 @@ msgstr ""
 
 #: templates/pages/contact.html:41
 msgid "With contributions from:"
-msgstr ""
+msgstr "Me ndihmesë nga:"
 
 #: templates/pages/contact.html:112
 msgid "And special thanks to:"
-msgstr ""
+msgstr "Dhe falënderime të veçanta për:"
 
 #: templates/pages/contact.html:139
 msgid "Past Developers"
-msgstr ""
+msgstr "Zhvillues të Dikurshëm"
 
 #: templates/pages/contact.html:174
 msgid "Past Contributors"
-msgstr ""
+msgstr "Kontribues të Dikurshëm"
 
 #: templates/pages/contact.html:401
 #, python-format
@@ -140,11 +147,11 @@ msgstr ""
 #: templates/pages/discover.html:3 templates/pages/press.html:3
 #: templates/pages/press.html:11
 msgid "Press"
-msgstr ""
+msgstr "Për Shtypin"
 
 #: templates/pages/discover.html:7
 msgid "About Mixxx"
-msgstr ""
+msgstr "Rreth Mixxx-it"
 
 #: templates/pages/discover.html:9
 msgid ""
@@ -190,7 +197,7 @@ msgstr ""
 
 #: templates/pages/discover.html:30
 msgid "Why?"
-msgstr ""
+msgstr "Pse?"
 
 #: templates/pages/discover.html:33
 msgid ""
@@ -286,9 +293,9 @@ msgstr ""
 msgid "View Source Code on GitHub"
 msgstr ""
 
-#: templates/pages/download.html:49 templates/pages/index.html:110
+#: templates/pages/download.html:49 templates/pages/index.html:113
 msgid "Source Code"
-msgstr ""
+msgstr "Kod Burim"
 
 #: templates/pages/download.html:63
 #, python-format
@@ -322,7 +329,7 @@ msgstr ""
 
 #: templates/pages/download.html:89
 msgid "Important:"
-msgstr ""
+msgstr "E rëndësishme:"
 
 #: templates/pages/download.html:90
 #, python-format
@@ -418,7 +425,7 @@ msgstr ""
 
 #: templates/pages/error.html:7
 msgid "We're sorry!"
-msgstr ""
+msgstr "Na ndjeni!"
 
 #: templates/pages/error.html:8
 msgid "The page <strong id=\"error-path\"></strong> couldn't be found."
@@ -426,11 +433,11 @@ msgstr ""
 
 #: templates/pages/features.html:3
 msgid "Features"
-msgstr ""
+msgstr "Veçori"
 
 #: templates/pages/features.html:11
 msgid "Everything You Need, However You DJ"
-msgstr ""
+msgstr "Everything You Need, However You DJ"
 
 #: templates/pages/features.html:15
 msgid "Four Decks"
@@ -508,7 +515,7 @@ msgstr ""
 
 #: templates/pages/features.html:53
 msgid "Broad Format Support"
-msgstr ""
+msgstr "Mbulim i Gjerë Formatesh"
 
 #: templates/pages/features.html:55
 msgid ""
@@ -566,7 +573,7 @@ msgstr ""
 
 #: templates/pages/features.html:90 templates/pages/features.html:102
 msgid "Read more"
-msgstr ""
+msgstr "Lexoni më tepër"
 
 #: templates/pages/features.html:98
 msgid "Free Timecode Vinyl Control"
@@ -607,7 +614,7 @@ msgstr ""
 
 #: templates/pages/features.html:127
 msgid "Sophisticated Music Library"
-msgstr ""
+msgstr "Muzikotekë e Sofistikuar"
 
 #: templates/pages/features.html:129
 msgid ""
@@ -618,11 +625,11 @@ msgstr ""
 
 #: templates/pages/features.html:135
 msgid "Organization"
-msgstr ""
+msgstr "Ent"
 
 #: templates/pages/features.html:137
 msgid "Crates and Playlists"
-msgstr ""
+msgstr "Shporta dhe Luajlista"
 
 #: templates/pages/features.html:139
 msgid ""
@@ -632,7 +639,7 @@ msgstr ""
 
 #: templates/pages/features.html:142
 msgid "Search &amp; Sort"
-msgstr ""
+msgstr "Kërkim &amp; Renditje"
 
 #: templates/pages/features.html:144
 msgid ""
@@ -651,7 +658,7 @@ msgstr ""
 
 #: templates/pages/features.html:152
 msgid "MusicBrainz Tag Lookup"
-msgstr ""
+msgstr "Kërkim Etiketash Në MusicBrainz"
 
 #: templates/pages/features.html:153
 msgid "Fingerprint your tracks and fetch missing tags from MusicBrainz."
@@ -670,7 +677,7 @@ msgstr ""
 
 #: templates/pages/features.html:164
 msgid "Auto DJ"
-msgstr ""
+msgstr "Auto DJ"
 
 #: templates/pages/features.html:166
 msgid ""
@@ -680,7 +687,7 @@ msgstr ""
 
 #: templates/pages/features.html:174
 msgid "Choose Your Skin"
-msgstr ""
+msgstr "Zgjidhni Lëkurçen Tuaj"
 
 #: templates/pages/features.html:175
 msgid ""
@@ -690,7 +697,7 @@ msgstr ""
 
 #: templates/pages/features.html:194
 msgid "Record and Broadcast"
-msgstr ""
+msgstr "Incizim dhe Transmetim"
 
 #: templates/pages/features.html:196
 msgid ""
@@ -707,7 +714,7 @@ msgstr ""
 
 #: templates/pages/features.html:209
 msgid "Live Broadcasting"
-msgstr ""
+msgstr "Transmetim i Drejtpërdrejtë"
 
 #: templates/pages/features.html:211
 msgid ""
@@ -742,7 +749,7 @@ msgstr ""
 
 #: templates/pages/features.html:235
 msgid "Native Language Support"
-msgstr ""
+msgstr "Mbulim Gjuhësh Amtare"
 
 #: templates/pages/features.html:238
 #, python-format
@@ -751,18 +758,22 @@ msgid ""
 "Finnish, Czech, Dutch, Polish, or Japanese... and more! See our <a "
 "href=\"%(com_transifex_mixxxdj_link)s\">Translation overview</a> page."
 msgstr ""
+" Përdoreni Mixxx-in në spanjisht, katalanisht, frëngjisht, gjermanisht, "
+"iItalisht, rusisht, finlandisht, çekisht, holandisht, polonisht, ose "
+"japonisht… etj! Shihni faqen tonë të <a "
+"href=\"%(com_transifex_mixxxdj_link)s\">përmbledhjes së Përkthimit</a>."
 
 #: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
 msgid "Get Involved"
-msgstr ""
+msgstr "Përfshihuni"
 
 #: templates/pages/get-involved.html:8
 msgid "Not a coder? Scroll down!"
-msgstr ""
+msgstr "S’jeni programues? Shihni më poshtë!"
 
 #: templates/pages/get-involved.html:13
 msgid "Software Developers"
-msgstr ""
+msgstr "Zhvillues Software-i"
 
 #: templates/pages/get-involved.html:15
 #, python-format
@@ -784,7 +795,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:22
 msgid "Start Developing Now"
-msgstr ""
+msgstr "Filloni të Programoni Që Tani"
 
 #: templates/pages/get-involved.html:25
 #, python-format
@@ -818,11 +829,11 @@ msgstr ""
 
 #: templates/pages/get-involved.html:41
 msgid "Development Cycle in a Nutshell"
-msgstr ""
+msgstr "Cikli i Zhvillimit me 2 Fjalë"
 
 #: templates/pages/get-involved.html:42
 msgid "Mixxx Development Cycle"
-msgstr ""
+msgstr "Cikli i Zhvillimit të Mixxx-it"
 
 #: templates/pages/get-involved.html:49
 msgid "DJs"
@@ -858,7 +869,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:65
 msgid "Promote Mixxx:"
-msgstr ""
+msgstr "Promovoni Mixxx-in:"
 
 #: templates/pages/get-involved.html:65
 msgid ""
@@ -876,7 +887,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:73
 msgid "Translators"
-msgstr ""
+msgstr "Përkthyes"
 
 #: templates/pages/get-involved.html:75
 msgid ""
@@ -897,7 +908,7 @@ msgstr ""
 
 #: templates/pages/get-involved.html:81
 msgid "Graphic Artists"
-msgstr ""
+msgstr "Artistë Grafikë"
 
 #: templates/pages/get-involved.html:83
 #, python-format
@@ -916,7 +927,7 @@ msgstr ""
 
 #: templates/pages/index.html:50
 msgid "Powerful Features For All DJs"
-msgstr ""
+msgstr "Veçori të Fuqishme Për Krejt Dj-t"
 
 #: templates/pages/index.html:52
 msgid ""
@@ -950,7 +961,7 @@ msgstr ""
 
 #: templates/pages/index.html:72 templates/pages/index.html:73
 msgid "Effects"
-msgstr ""
+msgstr "Efekte"
 
 #: templates/pages/index.html:75
 msgid ""
@@ -960,7 +971,7 @@ msgstr ""
 
 #: templates/pages/index.html:80 templates/pages/index.html:81
 msgid "Vinyl Record Control"
-msgstr ""
+msgstr "Kontroll Disku Vinil"
 
 #: templates/pages/index.html:83
 msgid ""
@@ -969,18 +980,18 @@ msgid ""
 "music vinyls into your set by toggling vinyl passthrough mode."
 msgstr ""
 
-#: templates/pages/index.html:90
+#: templates/pages/index.html:92
 #, python-format
 msgid ""
-"See dozens <a href=\"%(SITEURL)s/features\">more features</a> or download"
-" Mixxx and start DJing now!"
+"See dozens <a href=\"%(features_link)s\">more features</a> or download "
+"Mixxx and start DJing now!"
 msgstr ""
 
-#: templates/pages/index.html:97
+#: templates/pages/index.html:100
 msgid "Free &amp; Open Source"
 msgstr ""
 
-#: templates/pages/index.html:99
+#: templates/pages/index.html:102
 msgid ""
 "Mixxx is free open-source software and entirely community-driven. There "
 "is no company behind Mixxx &mdash; the development is shouldered by "
@@ -988,11 +999,11 @@ msgid ""
 "on their favorite DJ software. Mixxx is and always will be free!"
 msgstr ""
 
-#: templates/pages/index.html:117
+#: templates/pages/index.html:120
 msgid "Latest News"
 msgstr ""
 
-#: templates/pages/index.html:119
+#: templates/pages/index.html:122
 #, python-format
 msgid ""
 "To see a list of all news and announcements, head over to <a "
@@ -1000,11 +1011,11 @@ msgid ""
 "href=\"%(FEED_ATOM)s\">Atom feed</a>."
 msgstr ""
 
-#: templates/pages/index.html:137
+#: templates/pages/index.html:140
 msgid "Friendly Community"
-msgstr ""
+msgstr "Bashkësi Miqësore"
 
-#: templates/pages/index.html:139
+#: templates/pages/index.html:142
 msgid ""
 "Mixxx is developed by an international community of DJs, programmers, and"
 " artists. Because Mixxx is <b>free (<a "
@@ -1013,7 +1024,7 @@ msgid ""
 " even better&mdash;including you!"
 msgstr ""
 
-#: templates/pages/index.html:143
+#: templates/pages/index.html:146
 #, python-format
 msgid ""
 "You can get involved with Mixxx today by <a "
@@ -1025,23 +1036,23 @@ msgid ""
 "href=\"%(starter_tasks_link)s\">starter tasks</a>."
 msgstr ""
 
-#: templates/pages/index.html:152
+#: templates/pages/index.html:155
 msgid "#1 Top Free Mac App Worldwide"
 msgstr ""
 
-#: templates/pages/index.html:154 templates/pages/index.html:171
+#: templates/pages/index.html:157 templates/pages/index.html:174
 msgid "February 2011"
-msgstr ""
+msgstr "Shkurt 2011"
 
-#: templates/pages/index.html:163
+#: templates/pages/index.html:166
 msgid "Free Pick of the Month"
-msgstr ""
+msgstr "Zgjedhja e Lirë e Përmuajshme"
 
-#: templates/pages/index.html:164
+#: templates/pages/index.html:167
 msgid "September 2007"
-msgstr ""
+msgstr "Shtator 2007"
 
-#: templates/pages/index.html:170
+#: templates/pages/index.html:173
 msgid "\"The coolest open source<br>application ever?\""
 msgstr ""
 
@@ -1055,8 +1066,9 @@ msgid ""
 msgstr ""
 
 #: templates/pages/press.html:18
+#, fuzzy
 msgid "Logo"
-msgstr ""
+msgstr "Blog"
 
 #: templates/pages/press.html:45
 msgid "Press Mirror"
@@ -1115,40 +1127,46 @@ msgid "2018-10-25:"
 msgstr ""
 
 #: templates/pages/screenshots.html:3 templates/pages/screenshots.html:7
+#, fuzzy
 msgid "Screenshots"
-msgstr ""
+msgstr "Foto ekrani për Referencë:"
 
 #: templates/pages/screenshots.html:9
 msgid "Here you can find some screenshots of Mixxx' user interface."
 msgstr ""
 
 #: templates/pages/screenshots.html:14
+#, fuzzy
 msgid "Mixxx 2.5"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/screenshots.html:47
+#, fuzzy
 msgid "Mixxx 2.4"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/screenshots.html:80
+#, fuzzy
 msgid "Mixxx 2.3"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/screenshots.html:128
+#, fuzzy
 msgid "Mixxx 2.2"
-msgstr ""
+msgstr "Mixxx PPA"
 
 #: templates/pages/support.html:3
 msgid "Support"
-msgstr ""
+msgstr "Asistencë"
 
 #: templates/pages/support.html:7
+#, fuzzy
 msgid "Support &amp; Community"
-msgstr ""
+msgstr "Asistencë &amp; Bashkësi"
 
 #: templates/pages/support.html:11
 msgid "User Manual"
-msgstr ""
+msgstr "Doracak Përdoruesi"
 
 #: templates/pages/support.html:13
 #, python-format
@@ -1162,7 +1180,7 @@ msgstr ""
 
 #: templates/pages/support.html:18
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 #: templates/pages/support.html:20
 #, python-format
@@ -1176,7 +1194,7 @@ msgstr ""
 
 #: templates/pages/support.html:25
 msgid "Community Forums"
-msgstr ""
+msgstr "Forume Bashkësie"
 
 #: templates/pages/support.html:27
 #, python-format
@@ -1189,7 +1207,7 @@ msgstr ""
 
 #: templates/pages/support.html:32
 msgid "Bug Tracker"
-msgstr ""
+msgstr "Ndjekës të Metash"
 
 #: templates/pages/support.html:34
 #, python-format
@@ -1199,4 +1217,10 @@ msgid ""
 "centralized place to pool our information on bugs, and prevents us from "
 "getting disorganized and forgetting about them."
 msgstr ""
+
+#~ msgid ""
+#~ "See dozens <a href=\"%(SITEURL)s/features\">more "
+#~ "features</a> or download Mixxx and start"
+#~ " DJing now!"
+#~ msgstr ""
 

@@ -50,6 +50,18 @@
           <li><a href="https://github.com/mixxxdj/mixxx/wiki">Wiki</a></li>
         </ul>
       </div>
+      <div>
+        <h2 class="docs-header">{{ gettext('Site Language')}}</h2>
+		{% if lang_siteurls %}
+        <ul>
+          {% for lang, siteurl in lang_siteurls.items() %}
+          <li>
+            <a class="{% if lang==DEFAULT_LANG %}active{% endif %}" href="{{ siteurl }}/">{{ lang | lookup_lang_name }}</a>
+          </li>
+          {% endfor %}
+         </ul>
+		{% endif %}
+      </div>
     </div>
   </div>
 
