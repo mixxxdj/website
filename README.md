@@ -14,13 +14,13 @@ dependencies.
 Then build the site from its templates, run this in root directory of the git
 repository (Note: don't forget to compile the translations first as explained below):
 
-    $ Linux: pelican --extra-settings SITEURL='"http://localhost:8000"'
-    $ Windows: pelican --extra-settings SITEURL=\"http://localhost:8000\"
+    $ pelican
 
 If all goes well, you should have the rendered HTML in your `output/`
-directory. To stand up a development server to test out your change, type:
+directory. To start up a development server to test out your change, type:
 
-    $ pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
+    $ Linux: pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
+    $ Windows: pelican --listen --autoreload --extra-settings SITEURL=\"http://localhost:8000\"
 
 You can then visit ```http://127.0.0.1:8000``` to see your development version
 of the site.
@@ -85,19 +85,20 @@ use in multiple places on the site, place it in the `/theme/templates/` folder
 
 To generate the site:
 ```
-pelican --extra-settings SITEURL='"http://localhost:8000"'
+pelican
 ```
-Note that on windows console, you need to write: SITEURL=\"http://localhost:8000\" instead
 
 If there are problems, running in debug can help:
 ```
-pelican -D --extra-settings SITEURL='"http://localhost:8000"'
+pelican -D
 ```
 
 For interactive development, run it as an http server and will update the contents as you modify it.
 ```
 pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
 ```
+Note that on windows console, you need to write: SITEURL=\"http://localhost:8000\" instead
+
 Then open this site on your browser:
 *http://127.0.0.1:8000*
 
