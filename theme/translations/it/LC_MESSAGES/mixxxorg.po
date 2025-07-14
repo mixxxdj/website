@@ -666,10 +666,9 @@ msgid ""
 "for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen"
 " &amp; Heath Xone K2, Hercules DJ Console Series, and many more."
 msgstr ""
-"<b>Preset Inclusi</b> <br>per controller come il Pioneer DDJ-SB2, Numark "
+"per controller come il Pioneer DDJ-SB2, Numark "
 "Mixtrack Pro 3, Allen &amp; Heath Xone K2, Hercules DJ Console Series e "
-"molti altri. <a href=\"%(hardware_compatibility_wiki_link)s\">Elenco "
-"completo dei dispositivi supportati</a>"
+"molti altri."
 
 #: templates/pages/features.html:84
 msgid "Supported Devices"
@@ -690,8 +689,7 @@ msgstr ""
 "Per i creativi, le mappature dei controller possono essere personalizzate"
 " con la piena flessibilità del linguaggio di programmazione JavaScript. I"
 " messaggi MIDI o HID possono essere mappati su funzioni personalizzate "
-"che eseguono comportamenti complessi. <a "
-"href=\"%(midi_scripting_wiki_link)s\">Leggete di più</a>"
+"che eseguono comportamenti complessi."
 
 #: templates/pages/features.html:90 templates/pages/features.html:102
 msgid "Read more"
@@ -713,7 +711,7 @@ msgstr ""
 "usando vinili o CD con timecode. Prendete la musica come se fosse "
 "stampata su cera e scratchate a vostro piacimento. Mixxx è l'unico "
 "software gratuito di controllo del vinile con timecode per Windows, macOS"
-" e Linux.<a href=\"%(vinyl_control_manual_link)s\">Leggi di più</a> "
+" e Linux."
 
 #: templates/pages/features.html:109
 msgid "Sampler Decks"

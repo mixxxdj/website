@@ -314,6 +314,7 @@ JINJA_ENVIRONMENT = {
 # mapping: language_code -> settings_overrides_dict
 I18N_SUBSITES = {
     "ca": {},
+    "pseudo": {},
     "de": {},
     "es": {},
     "fr": {},
@@ -329,6 +330,7 @@ I18N_SUBSITES = {
 }
 
 languages_lookup = {
+    "pseudo": "Fake english",
     "bg": "Български",
     "ca": "Català",
     "cs": "Čeština",
