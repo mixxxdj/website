@@ -2,18 +2,18 @@
   <div class="box-center">
     <div class="grid-container thirds">
       <div>
-        <h2 class="docs-header">Pages</h2>
+        <h2 class="docs-header">{{gettext('Pages')}}</h2>
         <ul>
-          <li><a href="{{ SITEURL }}/index">Overview</a></li>
-          <li><a href="{{ SITEURL }}/features">Features</a></li>
-          <li><a href="{{ SITEURL }}/support">Support</a></li>
-          <li><a href="{{ SITEURL }}/get-involved">Get Involved</a></li>
+          <li><a href="{{ SITEURL }}/index">{{gettext('Overview')}}</a></li>
+          <li><a href="{{ SITEURL }}/features">{{gettext('Features')}}</a></li>
+          <li><a href="{{ SITEURL }}/support">{{gettext('Support')}}</a></li>
+          <li><a href="{{ SITEURL }}/get-involved">{{gettext('Get Involved')}}</a></li>
         </ul>
       </div>
       <div>
-        <h2 class="docs-header">Community</h2>
+        <h2 class="docs-header">{{gettext('Community')}}</h2>
         <ul>
-          <li><a href="https://mixxx.discourse.group/">Forums</a></li>
+          <li><a href="https://mixxx.discourse.group/">{{gettext('Forums')}}</a></li>
           <li>
             <a class="mastodon social_icon" href="https://floss.social/@mixxx" target="_blank">
               <img src="{{ main_siteurl }}/theme/images/social_icons/mastodon.svg" alt="Mastodon">
@@ -41,13 +41,13 @@
         </ul>
       </div>
       <div>
-        <h2 class="docs-header">About</h2>
+        <h2 class="docs-header">{{gettext('About')}}</h2>
         <ul>
-          <li><a href="{{ SITEURL }}/news">News</a> (<a href="{{ SITEURL }}/news/archives">Archives</a>, <a href="{{ SITEURL }}/{{ FEED_ATOM }}">Feed</a>)</li>
-          <li><a href="{{ SITEURL }}/press">Press</a></li>
-          <li><a href="{{ SITEURL }}/contact">Contact</a></li>
-          <li><a href="{{ SITEURL }}/privacy-policy">Privacy Policy</a></li>
-          <li><a href="https://github.com/mixxxdj/mixxx/wiki">Wiki</a></li>
+          <li><a href="{{ SITEURL }}/news">{{gettext('News')}}</a> (<a href="{{ SITEURL }}/news/archives">{{gettext('Archives')}}</a>, <a href="{{ SITEURL }}/{{ FEED_ATOM }}">{{gettext('Feed')}}</a>)</li>
+          <li><a href="{{ SITEURL }}/press">{{gettext('Press')}}</a></li>
+          <li><a href="{{ SITEURL }}/contact">{{gettext('Contact')}}</a></li>
+          <li><a href="{{ SITEURL }}/privacy-policy">{{gettext('Privacy Policy')}}</a></li>
+          <li><a href="https://github.com/mixxxdj/mixxx/wiki">{{gettext('Wiki')}}</a></li>
         </ul>
       </div>
     </div>
@@ -68,8 +68,8 @@
   </div>
 
   <div class="copyright">
-    &copy; 2001-2024 Mixxx Development Team<br>
-    Logo by Paul Bloch<br>
-    <a href="https://www.netlify.com/" target="_blank">This site is powered by Netlify.</a>
+    &copy; 2001-2025 {{gettext('Mixxx Development Team')}}<br>
+    {{gettext('Logo by')}} Paul Bloch<br>
+    <a href="https://www.netlify.com/" target="_blank">{{gettext('This site is powered by')}} Netlify.</a>
   </div>
 </div>

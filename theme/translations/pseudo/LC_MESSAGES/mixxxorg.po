@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-12 16:12+0200\n"
-"PO-Revision-Date: 2025-07-14 13:47+0200\n"
+"POT-Creation-Date: 2025-07-14 15:21+0200\n"
+"PO-Revision-Date: 2025-07-14 15:22+0200\n"
 "Last-Translator: \n"
-"Language-Team: English (http://app.transifex.com/mixxx-dj-software/mixxxdj-website/language/en/)\n"
+"Language-Team: English (http://app.transifex.com/mixxx-dj-software/mixxxdj-"
+"website/language/en/)\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -30,11 +31,13 @@ msgstr "[C0mm3nts]"
 
 #: templates/base.html:9
 msgid ""
-"Download the most advanced FREE DJ software available, featuring iTunes integration, MIDI "
-"controller support, internet broadcasting, and integrated music library."
+"Download the most advanced FREE DJ software available, featuring iTunes "
+"integration, MIDI controller support, internet broadcasting, and integrated "
+"music library."
 msgstr ""
-"[Ḓǿẇƞŀǿȧḓ ŧħḗ ḿǿşŧ ȧḓṽȧƞƈḗḓ ƑŘḖḖ ḒĴ şǿƒŧẇȧřḗ ȧṽȧīŀȧƀŀḗ, ƒḗȧŧŭřīƞɠ īŦŭƞḗş īƞŧḗɠřȧŧīǿƞ, ḾĪḒĪ "
-"ƈǿƞŧřǿŀŀḗř şŭƥƥǿřŧ, īƞŧḗřƞḗŧ ƀřǿȧḓƈȧşŧīƞɠ, ȧƞḓ īƞŧḗɠřȧŧḗḓ ḿŭşīƈ ŀīƀřȧřẏ.]"
+"[Ḓǿẇƞŀǿȧḓ ŧħḗ ḿǿşŧ ȧḓṽȧƞƈḗḓ ƑŘḖḖ ḒĴ şǿƒŧẇȧřḗ ȧṽȧīŀȧƀŀḗ, ƒḗȧŧŭřīƞɠ īŦŭƞḗş "
+"īƞŧḗɠřȧŧīǿƞ, ḾĪḒĪ ƈǿƞŧřǿŀŀḗř şŭƥƥǿřŧ, īƞŧḗřƞḗŧ ƀřǿȧḓƈȧşŧīƞɠ, ȧƞḓ īƞŧḗɠřȧŧḗḓ "
+"ḿŭşīƈ ŀīƀřȧřẏ.]"
 
 #: templates/donate_paypal.html:2
 msgid "Donate via Paypal"
@@ -44,23 +47,121 @@ msgstr "[D0n4t3 vi4 p4yp4l]"
 msgid "Donate"
 msgstr "[D0n4t3]"
 
-#: templates/footer.html:54
+#: templates/footer.html:5
+msgid "Pages"
+msgstr "[Ƥřḗşş ϰ衋ϰẛϕ]"
+
+#: templates/footer.html:7
+msgid "Overview"
+msgstr "[0v3rvL3w]"
+
+#: templates/footer.html:8 templates/navbar.html:19
+#: templates/pages/features.html:3
+msgid "Features"
+msgstr "[Ƒḗȧŧŭřḗş ϖẛϱıΐϱǅı]"
+
+#: templates/footer.html:9 templates/pages/support.html:3
+msgid "Support"
+msgstr "[Şŭƥƥǿřŧ 鶱ϰϵςςϕǅ]"
+
+#: templates/footer.html:10 templates/navbar.html:48
+#: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
+msgid "Get Involved"
+msgstr "[Ɠḗŧ Īƞṽǿŀṽḗḓ ǅ衋ϕ ΐΰ鶱ςϑϵ]"
+
+#: templates/footer.html:14
+msgid "Community"
+msgstr "[C0mmLt]"
+
+#: templates/footer.html:16 templates/navbar.html:39
+msgid "Forums"
+msgstr "[F0rUmz]"
+
+#: templates/footer.html:44
+msgid "About"
+msgstr "[Ȧƀǿŭŧ Ḿīẋẋẋ]"
+
+#: templates/footer.html:46 templates/index.html:3 templates/navbar.html:13
+msgid "News"
+msgstr "[N3ws]"
+
+#: templates/footer.html:46
+msgid "Archives"
+msgstr "[4rchLv3s]"
+
+#: templates/footer.html:46
+msgid "Feed"
+msgstr "[F33d]"
+
+#: templates/footer.html:47 templates/navbar.html:25
+#: templates/pages/discover.html:3 templates/pages/press.html:3
+#: templates/pages/press.html:11
+msgid "Press"
+msgstr "[Ƥřḗşş ϰ衋ϰẛϕ]"
+
+#: templates/footer.html:48
+msgid "Contact"
+msgstr "[Ƈǿƞŧȧƈŧ]"
+
+#: templates/footer.html:49
+msgid "Privacy Policy"
+msgstr "[PrL4cy P0lLcy]"
+
+#: templates/footer.html:50 templates/navbar.html:45
+#: templates/pages/support.html:18
+msgid "Wiki"
+msgstr "[Ẇīķī ϵΰϑǋ]"
+
+#: templates/footer.html:57
 msgid "Site Language"
 msgstr "[Ƞȧŧīṽḗ Ŀȧƞɠŭȧɠḗ Şŭƥƥǿřŧ ǈ靐ǈϕϑϰ ϑſ靐]"
 
-#: templates/index.html:3
-msgid "News"
-msgstr "[N3ws]"
+#: templates/footer.html:71 templates/pages/contact.html:20
+msgid "Mixxx Development Team"
+msgstr "[Ḿīẋẋẋ 2.0.0 Ḓḗṽḗŀǿƥḿḗƞŧ Ŧḗȧḿ ΰϰſǅẛ ǲϐẛı]"
+
+#: templates/footer.html:72
+msgid "Logo by"
+msgstr "[Ɓŀǿɠ ϐ鶱ϑǋ]"
+
+#: templates/footer.html:73
+msgid "This site is powered by"
+msgstr "[ThLs sLte Ls p0w3r3d by]"
 
 #: templates/index.html:6
 msgid "News and Announcements"
 msgstr "[N3ws 4nd 4nnounc3m3nts]"
 
-#: templates/index.html:48 templates/pages/index.html:131
+#: templates/index.html:48 templates/pages/index.html:130
 msgid "Read More"
 msgstr "[Řḗȧḓ ḿǿřḗ ǅϰΐ衋 ſıϰΰ]"
 
-#: templates/navbar.html:28 templates/pages/index.html:107
+#: templates/navbar.html:16
+msgid "Discover"
+msgstr "[DLsc0v3r]"
+
+#: templates/navbar.html:22 templates/pages/screenshots.html:3
+#: templates/pages/screenshots.html:7
+msgid "Screenshots"
+msgstr "[Řḗƒḗřḗƞƈḗ Şƈřḗḗƞşħǿŧş: ϕıǋǅ衋ǋϕ衋靐]"
+
+#: templates/navbar.html:28
+msgid "Contact & Team"
+msgstr "[Ƈǿƞŧȧƈŧ &amp; t34m]"
+
+#: templates/navbar.html:33
+msgid "Support & Community"
+msgstr "[Şŭƥƥǿřŧ &amp; Ƈǿḿḿŭƞīŧẏ]"
+
+#: templates/navbar.html:36
+msgid "Manual"
+msgstr "[Ŭşḗř Ḿȧƞŭȧŀ ϵϱǲǅ ΰΐϱǋǋ]"
+
+#: templates/navbar.html:42 templates/pages/support.html:32
+msgid "Bug Tracker"
+msgstr "[Ɓŭɠ Ŧřȧƈķḗř]"
+
+#: templates/navbar.html:54 templates/pages/index.html:106
 msgid "Download"
 msgstr "[Ḓǿẇƞŀǿȧḓ]"
 
@@ -75,51 +176,57 @@ msgstr "[Ɠḗŧ īƞ Ŧǿŭƈħ ϕǋϰ ϑϱ ΰς鶱]"
 #: templates/pages/contact.html:9
 #, python-format
 msgid ""
-"Please refer to the <a href=\"%(support_page_link)s\">Support page</a> if you need help setting up "
-"or using Mixxx. If you think you've found a bug, please file a bug report in our <a "
-"href=\"%(bug_tracker_link)s\">bug tracker</a>. If you would like to get in touch with Mixxx "
-"developers, <a href=\"%(zulip_web_link)s\">Zulip</a> is the best way to reach us."
+"Please refer to the <a href=\"%(support_page_link)s\">Support page</a> if you "
+"need help setting up or using Mixxx. If you think you've found a bug, please "
+"file a bug report in our <a href=\"%(bug_tracker_link)s\">bug tracker</a>. If "
+"you would like to get in touch with Mixxx developers, <a "
+"href=\"%(zulip_web_link)s\">Zulip</a> is the best way to reach us."
 msgstr ""
-"[Şŭƥƥǿřŧ ƒǿř ŭşḗřş ǿƒ Ḿīẋẋẋ īş ȧṽȧīŀȧƀŀḗ ŧħřǿŭɠħ ǿŭř <a href=\"%(zulip_web_link)s\">Ẑŭŀīƥ ƈħȧŧ</a> "
-"ȧş ḓḗşƈřīƀḗḓ ǿƞ ǿŭř <a href=\"%(support_page_link)s\">Şŭƥƥǿřŧ ƥȧɠḗ</a>. Īƒ ẏǿŭ ŧħīƞķ ẏǿŭ'ṽḗ ƒǿŭƞḓ "
-"ȧ ƀŭɠ, ƥŀḗȧşḗ ƒīŀḗ ȧ ƀŭɠ řḗƥǿřŧ īƞ ǿŭř <a href=\"%(bug_tracker_link)s\">ƀŭɠ ŧřȧƈķḗř</a>. Īƒ ẏǿŭ "
-"ẇǿŭŀḓ ŀīķḗ ŧǿ ɠḗŧ īƞ ŧǿŭƈħ ẇīŧħ Ḿīẋẋẋ ḓḗṽḗŀǿƥḗřş, Ẑŭŀīƥ īş ŧħḗ ƀḗşŧ ẇȧẏ ŧǿ řḗȧƈħ ŭş. ǅ鶱ϱſıẛ衋 ıϵı "
-"ǲǋΰǅϕ ǋ衋 ϐıϕ鶱ϱ ϰΐ 鶱ς鶱靐ϐſϵΐϱ ıǅΰ衋ıςϐ ϱϐϱ ẛ鶱 ςϵϐ靐ΐϑϰǅıΰıϵϵϰϑı鶱ǲ衋ϰϖǲ靐ẛϵϵϐϱ]"
+"[Şŭƥƥǿřŧ ƒǿř ŭşḗřş ǿƒ Ḿīẋẋẋ īş ȧṽȧīŀȧƀŀḗ ŧħřǿŭɠħ ǿŭř <a "
+"href=\"%(zulip_web_link)s\">Ẑŭŀīƥ ƈħȧŧ</a> ȧş ḓḗşƈřīƀḗḓ ǿƞ ǿŭř <a "
+"href=\"%(support_page_link)s\">Şŭƥƥǿřŧ ƥȧɠḗ</a>. Īƒ ẏǿŭ ŧħīƞķ ẏǿŭ'ṽḗ ƒǿŭƞḓ ȧ "
+"ƀŭɠ, ƥŀḗȧşḗ ƒīŀḗ ȧ ƀŭɠ řḗƥǿřŧ īƞ ǿŭř <a href=\"%(bug_tracker_link)s\">ƀŭɠ "
+"ŧřȧƈķḗř</a>. Īƒ ẏǿŭ ẇǿŭŀḓ ŀīķḗ ŧǿ ɠḗŧ īƞ ŧǿŭƈħ ẇīŧħ Ḿīẋẋẋ ḓḗṽḗŀǿƥḗřş, Ẑŭŀīƥ īş "
+"ŧħḗ ƀḗşŧ ẇȧẏ ŧǿ řḗȧƈħ ŭş. ǅ鶱ϱſıẛ衋 ıϵı ǲǋΰǅϕ ǋ衋 ϐıϕ鶱ϱ ϰΐ 鶱ς鶱靐ϐſϵΐϱ ıǅΰ衋"
+"ıςϐ ϱϐϱ ẛ鶱 ςϵϐ靐ΐϑϰǅıΰıϵϵϰϑı鶱ǲ衋ϰϖǲ靐ẛϵϵϐϱ]"
 
 #: templates/pages/contact.html:12
 #, python-format
 msgid ""
-"If you're a DJ hardware manufacturer and would like your product to work with Mixxx, please "
-"contact us at, <a href=\"%(project_manager_link)s\">hardware@mixxx.org</a>. We accept donations "
-"and loans of DJ equipment which we use to improve both specific and general hardware support in "
-"Mixxx."
+"If you're a DJ hardware manufacturer and would like your product to work with "
+"Mixxx, please contact us at, <a "
+"href=\"%(project_manager_link)s\">hardware@mixxx.org</a>. We accept donations "
+"and loans of DJ equipment which we use to improve both specific and general "
+"hardware support in Mixxx."
 msgstr ""
-"[Īƒ ẏǿŭ'řḗ ȧ ḒĴ ħȧřḓẇȧřḗ ḿȧƞŭƒȧƈŧŭřḗř ȧƞḓ ẇǿŭŀḓ ŀīķḗ ẏǿŭř ƥřǿḓŭƈŧ ŧǿ ẇǿřķ ẇīŧħ Ḿīẋẋẋ, ƥŀḗȧşḗ "
-"ƈǿƞŧȧƈŧ ŭş ȧŧ, <a href=\"%(project_manager_link)s\">ħȧřḓẇȧřḗ@ḿīẋẋẋ.ǿřɠ</a>. Ẇḗ ȧƈƈḗƥŧ ḓǿƞȧŧīǿƞş "
-"ȧƞḓ ŀǿȧƞş ǿƒ ḒĴ ḗɋŭīƥḿḗƞŧ ẇħīƈħ ẇḗ ŭşḗ ŧǿ īḿƥřǿṽḗ ƀǿŧħ şƥḗƈīƒīƈ ȧƞḓ ɠḗƞḗřȧŀ ħȧřḓẇȧřḗ şŭƥƥǿřŧ īƞ "
-"Ḿīẋẋẋ. ǅſ ẛϕ衋ǲẛǅ ϖ 鶱ϰ ǅΐǲϱ衋ϖΰ鶱 ΐ衋ǋǈ靐ϑϐıϑϵΰ衋 ϑǋ鶱 ϕǋǅΐı ϐςẛϵ ſΰǋ]"
+"[Īƒ ẏǿŭ'řḗ ȧ ḒĴ ħȧřḓẇȧřḗ ḿȧƞŭƒȧƈŧŭřḗř ȧƞḓ ẇǿŭŀḓ ŀīķḗ ẏǿŭř ƥřǿḓŭƈŧ ŧǿ ẇǿřķ ẇīŧħ "
+"Ḿīẋẋẋ, ƥŀḗȧşḗ ƈǿƞŧȧƈŧ ŭş ȧŧ, <a "
+"href=\"%(project_manager_link)s\">ħȧřḓẇȧřḗ@ḿīẋẋẋ.ǿřɠ</a>. Ẇḗ ȧƈƈḗƥŧ ḓǿƞȧŧīǿƞş "
+"ȧƞḓ ŀǿȧƞş ǿƒ ḒĴ ḗɋŭīƥḿḗƞŧ ẇħīƈħ ẇḗ ŭşḗ ŧǿ īḿƥřǿṽḗ ƀǿŧħ şƥḗƈīƒīƈ ȧƞḓ ɠḗƞḗřȧŀ "
+"ħȧřḓẇȧřḗ şŭƥƥǿřŧ īƞ Ḿīẋẋẋ. ǅſ ẛϕ衋ǲẛǅ ϖ 鶱ϰ ǅΐǲϱ衋ϖΰ鶱 ΐ衋ǋǈ靐ϑϐıϑϵΰ衋 ϑǋ鶱 "
+"ϕǋǅΐı ϐςẛϵ ſΰǋ]"
 
 #: templates/pages/contact.html:15
 #, python-format
-msgid "For other inquiries, please contact <a href=\"%(project_manager_link)s\">press@mixxx.org</a>."
+msgid ""
+"For other inquiries, please contact <a "
+"href=\"%(project_manager_link)s\">press@mixxx.org</a>."
 msgstr ""
-"[Ƒǿř ǿŧħḗř īƞɋŭīřīḗş, ƥŀḗȧşḗ ƈǿƞŧȧƈŧ <a href=\"%(project_manager_link)s\">ƥřḗşş@ḿīẋẋẋ.ǿřɠ</a>. ẛϕǋ "
-"ΐǲſẛǅ ϵ靐ǋϰ衋]"
-
-#: templates/pages/contact.html:20
-msgid "Mixxx Development Team"
-msgstr "[Ḿīẋẋẋ 2.0.0 Ḓḗṽḗŀǿƥḿḗƞŧ Ŧḗȧḿ ΰϰſǅẛ ǲϐẛı]"
+"[Ƒǿř ǿŧħḗř īƞɋŭīřīḗş, ƥŀḗȧşḗ ƈǿƞŧȧƈŧ <a "
+"href=\"%(project_manager_link)s\">ƥřḗşş@ḿīẋẋẋ.ǿřɠ</a>. ẛϕǋ ΐǲſẛǅ ϵ靐ǋϰ衋]"
 
 #: templates/pages/contact.html:22
 #, python-format
 msgid ""
-"In 2001, Mixxx was started by Ken and <a href=\"%(tue_anderson_link)s\">Tue</a> Haste Andersen. "
-"Today, development is done by an open source development team from around the world."
+"In 2001, Mixxx was started by Ken and <a href=\"%(tue_anderson_link)s\">Tue</a> "
+"Haste Andersen. Today, development is done by an open source development team "
+"from around the world."
 msgstr ""
-"[Īƞ 2001, Ḿīẋẋẋ ẇȧş şŧȧřŧḗḓ ƀẏ Ķḗƞ ȧƞḓ <a href=\"%(tue_anderson_link)s\">Ŧŭḗ</a> Ħȧşŧḗ Ȧƞḓḗřşḗƞ. "
-"Ŧǿḓȧẏ, ḓḗṽḗŀǿƥḿḗƞŧ īş ḓǿƞḗ ƀẏ ȧƞ ǿƥḗƞ şǿŭřƈḗ ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ ƒřǿḿ ȧřǿŭƞḓ ŧħḗ ẇǿřŀḓ, ŀḗḓ ƀẏ ŘĴ "
-"Řẏȧƞ (Ŀḗȧḓ Ḓḗṽḗŀǿƥḗř), Ǿẇḗƞ Ẇīŀŀīȧḿş (Ŭşḗř Ḗẋƥḗřīḗƞƈḗ Ŀḗȧḓ), Şḗȧƞ Ƥȧƥƥȧŀȧřḓǿ (Ƈǿƞŧřǿŀŀḗř Ḿȧƞȧɠḗř), "
-"ȧƞḓ Ş. Ɓřȧƞḓŧ (Ŀḗȧḓ Ȧřŧīşŧ). ǅϐ ſϵſϐϵ ϰϖϐϖϑ 衋ıϖ ǋſ鶱ϐϐϖǋ ΰẛ ΰϑǲ ǈΰϵ ΰΰ ςıϐǲǲΰǈΐǲǈϑǋ靐鶱ıϱıǈſ]"
+"[Īƞ 2001, Ḿīẋẋẋ ẇȧş şŧȧřŧḗḓ ƀẏ Ķḗƞ ȧƞḓ <a href=\"%(tue_anderson_link)s\">Ŧŭḗ</"
+"a> Ħȧşŧḗ Ȧƞḓḗřşḗƞ. Ŧǿḓȧẏ, ḓḗṽḗŀǿƥḿḗƞŧ īş ḓǿƞḗ ƀẏ ȧƞ ǿƥḗƞ şǿŭřƈḗ ḓḗṽḗŀǿƥḿḗƞŧ "
+"ŧḗȧḿ ƒřǿḿ ȧřǿŭƞḓ ŧħḗ ẇǿřŀḓ, ŀḗḓ ƀẏ ŘĴ Řẏȧƞ (Ŀḗȧḓ Ḓḗṽḗŀǿƥḗř), Ǿẇḗƞ Ẇīŀŀīȧḿş "
+"(Ŭşḗř Ḗẋƥḗřīḗƞƈḗ Ŀḗȧḓ), Şḗȧƞ Ƥȧƥƥȧŀȧřḓǿ (Ƈǿƞŧřǿŀŀḗř Ḿȧƞȧɠḗř), ȧƞḓ Ş. Ɓřȧƞḓŧ "
+"(Ŀḗȧḓ Ȧřŧīşŧ). ǅϐ ſϵſϐϵ ϰϖϐϖϑ 衋ıϖ ǋſ鶱ϐϐϖǋ ΰẛ ΰϑǲ ǈΰϵ ΰΰ ςıϐǲǲΰǈΐǲǈϑǋ靐鶱ıϱıǈſ]"
 
 #: templates/pages/contact.html:41
 msgid "With contributions from:"
@@ -140,22 +247,20 @@ msgstr "[Ƥȧşŧ Ƈǿƞŧřīƀŭŧǿřş ϕΐıẛ ϖϱ靐ϱǅ]"
 #: templates/pages/contact.html:401
 #, python-format
 msgid ""
-"Mixxx also depends on a number of software libraries. Without these, Mixxx would not be possible, "
-"especially as a cross-platform application. Big thanks to <a href=\"%(qt_link)s\">Qt</a>, <a "
-"href=\"%(portaudio_link)s\">PortAudio</a>, and <a href=\"%(portmidi_link)s\">PortMidi</a> for "
-"being fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs that have helped "
-"in designing Mixxx."
+"Mixxx also depends on a number of software libraries. Without these, Mixxx "
+"would not be possible, especially as a cross-platform application. Big thanks "
+"to <a href=\"%(qt_link)s\">Qt</a>, <a href=\"%(portaudio_link)s\">PortAudio</"
+"a>, and <a href=\"%(portmidi_link)s\">PortMidi</a> for being fantastic.<br/><br/"
+">Lastly, we'd like to thank the many musicians and DJs that have helped in "
+"designing Mixxx."
 msgstr ""
-"[Ḿīẋẋẋ ȧŀşǿ ḓḗƥḗƞḓş ǿƞ ȧ ƞŭḿƀḗř ǿƒ şǿƒŧẇȧřḗ ŀīƀřȧřīḗş. Ẇīŧħǿŭŧ ŧħḗşḗ, Ḿīẋẋẋ ẇǿŭŀḓ ƞǿŧ ƀḗ ƥǿşşīƀŀḗ, "
-"ḗşƥḗƈīȧŀŀẏ ȧş ȧ ƈřǿşş-ƥŀȧŧƒǿřḿ ȧƥƥŀīƈȧŧīǿƞ. Ɓīɠ ŧħȧƞķş ŧǿ <a href=\"%(qt_link)s\">Ɋŧ</a>, <a "
-"href=\"%(portaudio_link)s\">ƤǿřŧȦŭḓīǿ</a>, ȧƞḓ <a href=\"%(portmidi_link)s\">ƤǿřŧḾīḓī</a> ƒǿř "
-"ƀḗīƞɠ ƒȧƞŧȧşŧīƈ.<br/><br/>Ŀȧşŧŀẏ, ẇḗ'ḓ ŀīķḗ ŧǿ ŧħȧƞķ ŧħḗ ḿȧƞẏ ḿŭşīƈīȧƞş ȧƞḓ ḒĴş ŧħȧŧ ħȧṽḗ ħḗŀƥḗḓ "
-"īƞ ḓḗşīɠƞīƞɠ Ḿīẋẋẋ. ıǲ衋鶱ǲ 衋靐ϕϱ ϕ鶱ςϖϵϰΰ ſΐ 衋 ǈǈſΰ衋鶱 ǲΐ ϱϰǋǋ靐ϵſϖ 靐鶱ϖǅ靐ΐǅ鶱ςϐ ǅϵϕϱϰΐǋ "
-"ǲϱϱϰϖſ ı衋ϵϵϵ ΰ衋]"
-
-#: templates/pages/discover.html:3 templates/pages/press.html:3 templates/pages/press.html:11
-msgid "Press"
-msgstr "[Ƥřḗşş ϰ衋ϰẛϕ]"
+"[Ḿīẋẋẋ ȧŀşǿ ḓḗƥḗƞḓş ǿƞ ȧ ƞŭḿƀḗř ǿƒ şǿƒŧẇȧřḗ ŀīƀřȧřīḗş. Ẇīŧħǿŭŧ ŧħḗşḗ, Ḿīẋẋẋ "
+"ẇǿŭŀḓ ƞǿŧ ƀḗ ƥǿşşīƀŀḗ, ḗşƥḗƈīȧŀŀẏ ȧş ȧ ƈřǿşş-ƥŀȧŧƒǿřḿ ȧƥƥŀīƈȧŧīǿƞ. Ɓīɠ ŧħȧƞķş "
+"ŧǿ <a href=\"%(qt_link)s\">Ɋŧ</a>, <a href=\"%(portaudio_link)s\">ƤǿřŧȦŭḓīǿ</"
+"a>, ȧƞḓ <a href=\"%(portmidi_link)s\">ƤǿřŧḾīḓī</a> ƒǿř ƀḗīƞɠ ƒȧƞŧȧşŧīƈ.<br/><br/"
+">Ŀȧşŧŀẏ, ẇḗ'ḓ ŀīķḗ ŧǿ ŧħȧƞķ ŧħḗ ḿȧƞẏ ḿŭşīƈīȧƞş ȧƞḓ ḒĴş ŧħȧŧ ħȧṽḗ ħḗŀƥḗḓ īƞ "
+"ḓḗşīɠƞīƞɠ Ḿīẋẋẋ. ıǲ衋鶱ǲ 衋靐ϕϱ ϕ鶱ςϖϵϰΰ ſΐ 衋 ǈǈſΰ衋鶱 ǲΐ ϱϰǋǋ靐ϵſϖ 靐鶱ϖǅ靐ΐǅ"
+"鶱ςϐ ǅϵϕϱϰΐǋ ǲϱϱϰϖſ ı衋ϵϵϵ ΰ衋]"
 
 #: templates/pages/discover.html:7
 msgid "About Mixxx"
@@ -163,60 +268,67 @@ msgstr "[Ȧƀǿŭŧ Ḿīẋẋẋ]"
 
 #: templates/pages/discover.html:9
 msgid ""
-"Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces for DJing by Tue "
-"Haste Andersen.  After releasing the project as open source, dozens of contributors began "
-"modifying and improving Mixxx."
+"Mixxx was originally created in 2002 as part of a PhD thesis on new interfaces "
+"for DJing by Tue Haste Andersen.  After releasing the project as open source, "
+"dozens of contributors began modifying and improving Mixxx."
 msgstr ""
-"[Ḿīẋẋẋ ẇȧş ǿřīɠīƞȧŀŀẏ ƈřḗȧŧḗḓ īƞ 2002 ȧş ƥȧřŧ ǿƒ ȧ ƤħḒ ŧħḗşīş ǿƞ ƞḗẇ īƞŧḗřƒȧƈḗş ƒǿř ḒĴīƞɠ ƀẏ Ŧŭḗ "
-"Ħȧşŧḗ Ȧƞḓḗřşḗƞ.  Ȧƒŧḗř řḗŀḗȧşīƞɠ ŧħḗ ƥřǿĵḗƈŧ ȧş ǿƥḗƞ şǿŭřƈḗ, ḓǿzḗƞş ǿƒ ƈǿƞŧřīƀŭŧǿřş ƀḗɠȧƞ "
-"ḿǿḓīƒẏīƞɠ ȧƞḓ īḿƥřǿṽīƞɠ Ḿīẋẋẋ. ıϖıςϰ ẛ衋ϵ ϖ衋ΰǈẛϑϵϖẛǅ ϱϱǈςϵıı ϵ靐 ϰϱǅı ǲſ]"
+"[Ḿīẋẋẋ ẇȧş ǿřīɠīƞȧŀŀẏ ƈřḗȧŧḗḓ īƞ 2002 ȧş ƥȧřŧ ǿƒ ȧ ƤħḒ ŧħḗşīş ǿƞ ƞḗẇ īƞŧḗřƒȧƈḗş "
+"ƒǿř ḒĴīƞɠ ƀẏ Ŧŭḗ Ħȧşŧḗ Ȧƞḓḗřşḗƞ.  Ȧƒŧḗř řḗŀḗȧşīƞɠ ŧħḗ ƥřǿĵḗƈŧ ȧş ǿƥḗƞ şǿŭřƈḗ, "
+"ḓǿzḗƞş ǿƒ ƈǿƞŧřīƀŭŧǿřş ƀḗɠȧƞ ḿǿḓīƒẏīƞɠ ȧƞḓ īḿƥřǿṽīƞɠ Ḿīẋẋẋ. ıϖıςϰ ẛ衋ϵ ϖ衋"
+"ΰǈẛϑϵϖẛǅ ϱϱǈςϵıı ϵ靐 ϰϱǅı ǲſ]"
 
 #: templates/pages/discover.html:13
 msgid ""
-"In 2006, a new development team lead by Adam Davison and Albert Santoni began reorganizing the "
-"project to ensure smooth growth of both the codebase and the number of contributors. A renewed "
-"focus on usability and stability has helped Mixxx grow to become the most popular free DJ software "
-"in the world, receiving <b>over 1,000,000 downloads annually</b>. Our committed team has worked "
-"hard to create great DJ software, and this growth is a sign of our success."
+"In 2006, a new development team lead by Adam Davison and Albert Santoni began "
+"reorganizing the project to ensure smooth growth of both the codebase and the "
+"number of contributors. A renewed focus on usability and stability has helped "
+"Mixxx grow to become the most popular free DJ software in the world, receiving "
+"<b>over 1,000,000 downloads annually</b>. Our committed team has worked hard to "
+"create great DJ software, and this growth is a sign of our success."
 msgstr ""
-"[Īƞ 2006, ȧ ƞḗẇ ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ ŀḗȧḓ ƀẏ Ȧḓȧḿ Ḓȧṽīşǿƞ ȧƞḓ Ȧŀƀḗřŧ Şȧƞŧǿƞī ƀḗɠȧƞ řḗǿřɠȧƞīzīƞɠ ŧħḗ "
-"ƥřǿĵḗƈŧ ŧǿ ḗƞşŭřḗ şḿǿǿŧħ ɠřǿẇŧħ ǿƒ ƀǿŧħ ŧħḗ ƈǿḓḗƀȧşḗ ȧƞḓ ŧħḗ ƞŭḿƀḗř ǿƒ ƈǿƞŧřīƀŭŧǿřş. Ȧ řḗƞḗẇḗḓ "
-"ƒǿƈŭş ǿƞ ŭşȧƀīŀīŧẏ ȧƞḓ şŧȧƀīŀīŧẏ ħȧş ħḗŀƥḗḓ Ḿīẋẋẋ ɠřǿẇ ŧǿ ƀḗƈǿḿḗ ŧħḗ ḿǿşŧ ƥǿƥŭŀȧř ƒřḗḗ ḒĴ şǿƒŧẇȧřḗ "
-"īƞ ŧħḗ ẇǿřŀḓ, řḗƈḗīṽīƞɠ <b>ǿṽḗř 1,000,000 ḓǿẇƞŀǿȧḓş ȧƞƞŭȧŀŀẏ</b>. Ǿŭř ƈǿḿḿīŧŧḗḓ ŧḗȧḿ ħȧş ẇǿřķḗḓ "
-"ħȧřḓ ŧǿ ƈřḗȧŧḗ ɠřḗȧŧ ḒĴ şǿƒŧẇȧřḗ, ȧƞḓ ŧħīş ɠřǿẇŧħ īş ȧ şīɠƞ ǿƒ ǿŭř şŭƈƈḗşş. ϐϕ 靐鶱ϰΰς ϐ ǈ鶱ǅ ϱıϐǋſ"
-"鶱ΰϖ靐ǋ衋 ϱ衋ϐǅ ſΐϖΐ 靐ϖ ǅſϱϑ 鶱ΰ衋ϕϵıı ǈϱǅ ǲ衋ϵς衋ϖ ϖϐ衋ǋϰ衋ϵ ϖϕϐϰς ΰϰſςſ靐衋ϕϑϵϖ]"
+"[Īƞ 2006, ȧ ƞḗẇ ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ ŀḗȧḓ ƀẏ Ȧḓȧḿ Ḓȧṽīşǿƞ ȧƞḓ Ȧŀƀḗřŧ Şȧƞŧǿƞī ƀḗɠȧƞ "
+"řḗǿřɠȧƞīzīƞɠ ŧħḗ ƥřǿĵḗƈŧ ŧǿ ḗƞşŭřḗ şḿǿǿŧħ ɠřǿẇŧħ ǿƒ ƀǿŧħ ŧħḗ ƈǿḓḗƀȧşḗ ȧƞḓ ŧħḗ "
+"ƞŭḿƀḗř ǿƒ ƈǿƞŧřīƀŭŧǿřş. Ȧ řḗƞḗẇḗḓ ƒǿƈŭş ǿƞ ŭşȧƀīŀīŧẏ ȧƞḓ şŧȧƀīŀīŧẏ ħȧş ħḗŀƥḗḓ "
+"Ḿīẋẋẋ ɠřǿẇ ŧǿ ƀḗƈǿḿḗ ŧħḗ ḿǿşŧ ƥǿƥŭŀȧř ƒřḗḗ ḒĴ şǿƒŧẇȧřḗ īƞ ŧħḗ ẇǿřŀḓ, řḗƈḗīṽīƞɠ "
+"<b>ǿṽḗř 1,000,000 ḓǿẇƞŀǿȧḓş ȧƞƞŭȧŀŀẏ</b>. Ǿŭř ƈǿḿḿīŧŧḗḓ ŧḗȧḿ ħȧş ẇǿřķḗḓ ħȧřḓ ŧǿ "
+"ƈřḗȧŧḗ ɠřḗȧŧ ḒĴ şǿƒŧẇȧřḗ, ȧƞḓ ŧħīş ɠřǿẇŧħ īş ȧ şīɠƞ ǿƒ ǿŭř şŭƈƈḗşş. ϐϕ 靐鶱ϰΰς "
+"ϐ ǈ鶱ǅ ϱıϐǋſ鶱ΰϖ靐ǋ衋 ϱ衋ϐǅ ſΐϖΐ 靐ϖ ǅſϱϑ 鶱ΰ衋ϕϵıı ǈϱǅ ǲ衋ϵς衋ϖ ϖϐ衋ǋϰ衋ϵ "
+"ϖϕϐϰς ΰϰſςſ靐衋ϕϑϵϖ]"
 
 #: templates/pages/discover.html:17
 msgid ""
-"In 2011, RJ Ryan took over as Lead Developer to successfully continue the team's endeavor to make "
-"Mixxx a world-class DJ software."
+"In 2011, RJ Ryan took over as Lead Developer to successfully continue the "
+"team's endeavor to make Mixxx a world-class DJ software."
 msgstr ""
-"[Īƞ 2011, ŘĴ Řẏȧƞ ŧǿǿķ ǿṽḗř ȧş Ŀḗȧḓ Ḓḗṽḗŀǿƥḗř ŧǿ şŭƈƈḗşşƒŭŀŀẏ ƈǿƞŧīƞŭḗ ŧħḗ ŧḗȧḿ'ş ḗƞḓḗȧṽǿř ŧǿ ḿȧķḗ "
-"Ḿīẋẋẋ ȧ ẇǿřŀḓ-ƈŀȧşş ḒĴ şǿƒŧẇȧřḗ. 靐ς ǲϖıǈϰ ΰϵ ϱϖΐϱ ϐΐ靐ϕ 鶱]"
+"[Īƞ 2011, ŘĴ Řẏȧƞ ŧǿǿķ ǿṽḗř ȧş Ŀḗȧḓ Ḓḗṽḗŀǿƥḗř ŧǿ şŭƈƈḗşşƒŭŀŀẏ ƈǿƞŧīƞŭḗ ŧħḗ "
+"ŧḗȧḿ'ş ḗƞḓḗȧṽǿř ŧǿ ḿȧķḗ Ḿīẋẋẋ ȧ ẇǿřŀḓ-ƈŀȧşş ḒĴ şǿƒŧẇȧřḗ. 靐ς ǲϖıǈϰ ΰϵ ϱϖΐϱ ϐΐ靐"
+"ϕ 鶱]"
 
 #: templates/pages/discover.html:21
 msgid ""
-"As our user community grows, so does our development team - As of Mixxx 2.0, <b>over 100 "
-"developers and artists</b> have helped create Mixxx!"
+"As our user community grows, so does our development team - As of Mixxx 2.0, "
+"<b>over 100 developers and artists</b> have helped create Mixxx!"
 msgstr ""
-"[Ȧş ǿŭř ŭşḗř ƈǿḿḿŭƞīŧẏ ɠřǿẇş, şǿ ḓǿḗş ǿŭř ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ - Ȧş ǿƒ Ḿīẋẋẋ 2.0, <b>ǿṽḗř 100 "
-"ḓḗṽḗŀǿƥḗřş ȧƞḓ ȧřŧīşŧş</b> ħȧṽḗ ħḗŀƥḗḓ ƈřḗȧŧḗ Ḿīẋẋẋ!]"
+"[Ȧş ǿŭř ŭşḗř ƈǿḿḿŭƞīŧẏ ɠřǿẇş, şǿ ḓǿḗş ǿŭř ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ - Ȧş ǿƒ Ḿīẋẋẋ 2.0, "
+"<b>ǿṽḗř 100 ḓḗṽḗŀǿƥḗřş ȧƞḓ ȧřŧīşŧş</b> ħȧṽḗ ħḗŀƥḗḓ ƈřḗȧŧḗ Ḿīẋẋẋ!]"
 
 #: templates/pages/discover.html:25
 #, python-format
 msgid ""
-"Mixxx also participated in <a href=\"%(gsoc_link)s\">Google Summer of Code</a> in 2007, 2008, and "
-"2010-2014. Google Summer of Code is a program that provides college students with a stipend over "
-"the summer to work on open source projects. Mentors from Mixxx introduced students to open source "
-"software development and helped them gain experience working with multi-threaded, real-time "
-"multimedia software."
+"Mixxx also participated in <a href=\"%(gsoc_link)s\">Google Summer of Code</a> "
+"in 2007, 2008, and 2010-2014. Google Summer of Code is a program that provides "
+"college students with a stipend over the summer to work on open source "
+"projects. Mentors from Mixxx introduced students to open source software "
+"development and helped them gain experience working with multi-threaded, real-"
+"time multimedia software."
 msgstr ""
-"[Ḿīẋẋẋ ȧŀşǿ ƥȧřŧīƈīƥȧŧḗḓ īƞ <a href=\"%(gsoc_link)s\">Ɠǿǿɠŀḗ Şŭḿḿḗř ǿƒ Ƈǿḓḗ</a> īƞ 2007, 2008, ȧƞḓ "
-"2010-2014. Ɠǿǿɠŀḗ Şŭḿḿḗř ǿƒ Ƈǿḓḗ īş ȧ ƥřǿɠřȧḿ ŧħȧŧ ƥřǿṽīḓḗş ƈǿŀŀḗɠḗ şŧŭḓḗƞŧş ẇīŧħ ȧ şŧīƥḗƞḓ ǿṽḗř "
-"ŧħḗ şŭḿḿḗř ŧǿ ẇǿřķ ǿƞ ǿƥḗƞ şǿŭřƈḗ ƥřǿĵḗƈŧş. Ḿḗƞŧǿřş ƒřǿḿ Ḿīẋẋẋ īƞŧřǿḓŭƈḗḓ şŧŭḓḗƞŧş ŧǿ ǿƥḗƞ şǿŭřƈḗ "
-"şǿƒŧẇȧřḗ ḓḗṽḗŀǿƥḿḗƞŧ ȧƞḓ ħḗŀƥḗḓ ŧħḗḿ ɠȧīƞ ḗẋƥḗřīḗƞƈḗ ẇǿřķīƞɠ ẇīŧħ ḿŭŀŧī-ŧħřḗȧḓḗḓ, řḗȧŀ-ŧīḿḗ "
-"ḿŭŀŧīḿḗḓīȧ şǿƒŧẇȧřḗ. ϑ衋ϕΰ靐 ϕϖϑǈ ςΐΰϕǋςǅǲ靐ǅǅϑ ǅϵ ǋẛ ςϵςϐϱϵϕϑϕ衋ıẛǅϕΰϑ靐ϱǅ衋ıſıǅ靐ǋǅẛẛ ııϱςΐϵ ϱǈ "
-"ǋǅϖ靐ſǈſΐ]"
+"[Ḿīẋẋẋ ȧŀşǿ ƥȧřŧīƈīƥȧŧḗḓ īƞ <a href=\"%(gsoc_link)s\">Ɠǿǿɠŀḗ Şŭḿḿḗř ǿƒ Ƈǿḓḗ</a> "
+"īƞ 2007, 2008, ȧƞḓ 2010-2014. Ɠǿǿɠŀḗ Şŭḿḿḗř ǿƒ Ƈǿḓḗ īş ȧ ƥřǿɠřȧḿ ŧħȧŧ ƥřǿṽīḓḗş "
+"ƈǿŀŀḗɠḗ şŧŭḓḗƞŧş ẇīŧħ ȧ şŧīƥḗƞḓ ǿṽḗř ŧħḗ şŭḿḿḗř ŧǿ ẇǿřķ ǿƞ ǿƥḗƞ şǿŭřƈḗ "
+"ƥřǿĵḗƈŧş. Ḿḗƞŧǿřş ƒřǿḿ Ḿīẋẋẋ īƞŧřǿḓŭƈḗḓ şŧŭḓḗƞŧş ŧǿ ǿƥḗƞ şǿŭřƈḗ şǿƒŧẇȧřḗ "
+"ḓḗṽḗŀǿƥḿḗƞŧ ȧƞḓ ħḗŀƥḗḓ ŧħḗḿ ɠȧīƞ ḗẋƥḗřīḗƞƈḗ ẇǿřķīƞɠ ẇīŧħ ḿŭŀŧī-ŧħřḗȧḓḗḓ, řḗȧŀ-"
+"ŧīḿḗ ḿŭŀŧīḿḗḓīȧ şǿƒŧẇȧřḗ. ϑ衋ϕΰ靐 ϕϖϑǈ ςΐΰϕǋςǅǲ靐ǅǅϑ ǅϵ ǋẛ ςϵςϐϱϵϕϑϕ衋ıẛǅϕΰϑ靐ϱǅ"
+"衋ıſıǅ靐ǋǅẛẛ ııϱςΐϵ ϱǈ ǋǅϖ靐ſǈſΐ]"
 
 #: templates/pages/discover.html:30
 msgid "Why?"
@@ -224,34 +336,39 @@ msgstr "[Ẇħẏ? ϰ鶱ϱΰ]"
 
 #: templates/pages/discover.html:33
 msgid ""
-"Mixxx started as an open source project because of demand for DJing software on Linux, and "
-"discontent with proprietary DJ software on Windows and Mac OS X. Today, Mixxx development is "
-"driven by the simple idea that together we can create a better way to DJ, and that has brought "
-"Mixxx to the cutting edge. Mixxx is the only free cross-platform vinyl control software and has "
-"the most advanced controller support via our innovative Javascript-based MIDI and HID scripting "
-"engine. We are continuing to pursue new and exciting features that give DJs more tools to create "
-"better live mixes."
+"Mixxx started as an open source project because of demand for DJing software on "
+"Linux, and discontent with proprietary DJ software on Windows and Mac OS X. "
+"Today, Mixxx development is driven by the simple idea that together we can "
+"create a better way to DJ, and that has brought Mixxx to the cutting edge. "
+"Mixxx is the only free cross-platform vinyl control software and has the most "
+"advanced controller support via our innovative Javascript-based MIDI and HID "
+"scripting engine. We are continuing to pursue new and exciting features that "
+"give DJs more tools to create better live mixes."
 msgstr ""
-"[Ḿīẋẋẋ şŧȧřŧḗḓ ȧş ȧƞ ǿƥḗƞ şǿŭřƈḗ ƥřǿĵḗƈŧ ƀḗƈȧŭşḗ ǿƒ ḓḗḿȧƞḓ ƒǿř ḒĴīƞɠ şǿƒŧẇȧřḗ ǿƞ Ŀīƞŭẋ, ȧƞḓ "
-"ḓīşƈǿƞŧḗƞŧ ẇīŧħ ƥřǿƥřīḗŧȧřẏ ḒĴ şǿƒŧẇȧřḗ ǿƞ Ẇīƞḓǿẇş ȧƞḓ Ḿȧƈ ǾŞ Ẋ. Ŧǿḓȧẏ, Ḿīẋẋẋ ḓḗṽḗŀǿƥḿḗƞŧ īş "
-"ḓřīṽḗƞ ƀẏ ŧħḗ şīḿƥŀḗ īḓḗȧ ŧħȧŧ ŧǿɠḗŧħḗř ẇḗ ƈȧƞ ƈřḗȧŧḗ ȧ ƀḗŧŧḗř ẇȧẏ ŧǿ ḒĴ, ȧƞḓ ŧħȧŧ ħȧş ƀřǿŭɠħŧ "
-"Ḿīẋẋẋ ŧǿ ŧħḗ ƈŭŧŧīƞɠ ḗḓɠḗ. Ḿīẋẋẋ īş ŧħḗ ǿƞŀẏ ƒřḗḗ ƈřǿşş-ƥŀȧŧƒǿřḿ ṽīƞẏŀ ƈǿƞŧřǿŀ şǿƒŧẇȧřḗ ȧƞḓ ħȧş "
-"ŧħḗ ḿǿşŧ ȧḓṽȧƞƈḗḓ ƈǿƞŧřǿŀŀḗř şŭƥƥǿřŧ ṽīȧ ǿŭř īƞƞǿṽȧŧīṽḗ Ĵȧṽȧşƈřīƥŧ-ƀȧşḗḓ ḾĪḒĪ ȧƞḓ ĦĪḒ şƈřīƥŧīƞɠ "
-"ḗƞɠīƞḗ. Ẇḗ ȧřḗ ƈǿƞŧīƞŭīƞɠ ŧǿ ƥŭřşŭḗ ƞḗẇ ȧƞḓ ḗẋƈīŧīƞɠ ƒḗȧŧŭřḗş ŧħȧŧ ɠīṽḗ ḒĴş ḿǿřḗ ŧǿǿŀş ŧǿ ƈřḗȧŧḗ "
-"ƀḗŧŧḗř ŀīṽḗ ḿīẋḗş. ςǲǈςϑ ϑϱǈϕϑıϕ ǈǅ ǈΰ ϱıϕϑ ΐϖς衋ςϱ ΐΰΐϵς鶱ǅ 衋鶱ϑ靐靐ǅϑ ϵϱ ǅ鶱靐ϖϖϑ ΰǅ靐 ϱϐϵςϕ "
-"ıΰϕΐϕϱ靐ǲ ςϰ 靐ΰΐǅΐΰ ẛǋϰ ſ衋ΐϱǲǋıϕϵǈ ẛΐſ靐 ϐς靐ǋςǋϑ]"
+"[Ḿīẋẋẋ şŧȧřŧḗḓ ȧş ȧƞ ǿƥḗƞ şǿŭřƈḗ ƥřǿĵḗƈŧ ƀḗƈȧŭşḗ ǿƒ ḓḗḿȧƞḓ ƒǿř ḒĴīƞɠ şǿƒŧẇȧřḗ "
+"ǿƞ Ŀīƞŭẋ, ȧƞḓ ḓīşƈǿƞŧḗƞŧ ẇīŧħ ƥřǿƥřīḗŧȧřẏ ḒĴ şǿƒŧẇȧřḗ ǿƞ Ẇīƞḓǿẇş ȧƞḓ Ḿȧƈ ǾŞ Ẋ. "
+"Ŧǿḓȧẏ, Ḿīẋẋẋ ḓḗṽḗŀǿƥḿḗƞŧ īş ḓřīṽḗƞ ƀẏ ŧħḗ şīḿƥŀḗ īḓḗȧ ŧħȧŧ ŧǿɠḗŧħḗř ẇḗ ƈȧƞ "
+"ƈřḗȧŧḗ ȧ ƀḗŧŧḗř ẇȧẏ ŧǿ ḒĴ, ȧƞḓ ŧħȧŧ ħȧş ƀřǿŭɠħŧ Ḿīẋẋẋ ŧǿ ŧħḗ ƈŭŧŧīƞɠ ḗḓɠḗ. "
+"Ḿīẋẋẋ īş ŧħḗ ǿƞŀẏ ƒřḗḗ ƈřǿşş-ƥŀȧŧƒǿřḿ ṽīƞẏŀ ƈǿƞŧřǿŀ şǿƒŧẇȧřḗ ȧƞḓ ħȧş ŧħḗ ḿǿşŧ "
+"ȧḓṽȧƞƈḗḓ ƈǿƞŧřǿŀŀḗř şŭƥƥǿřŧ ṽīȧ ǿŭř īƞƞǿṽȧŧīṽḗ Ĵȧṽȧşƈřīƥŧ-ƀȧşḗḓ ḾĪḒĪ ȧƞḓ ĦĪḒ "
+"şƈřīƥŧīƞɠ ḗƞɠīƞḗ. Ẇḗ ȧřḗ ƈǿƞŧīƞŭīƞɠ ŧǿ ƥŭřşŭḗ ƞḗẇ ȧƞḓ ḗẋƈīŧīƞɠ ƒḗȧŧŭřḗş ŧħȧŧ "
+"ɠīṽḗ ḒĴş ḿǿřḗ ŧǿǿŀş ŧǿ ƈřḗȧŧḗ ƀḗŧŧḗř ŀīṽḗ ḿīẋḗş. ςǲǈςϑ ϑϱǈϕϑıϕ ǈǅ ǈΰ ϱıϕϑ ΐϖς衋"
+"ςϱ ΐΰΐϵς鶱ǅ 衋鶱ϑ靐靐ǅϑ ϵϱ ǅ鶱靐ϖϖϑ ΰǅ靐 ϱϐϵςϕ ıΰϕΐϕϱ靐ǲ ςϰ 靐ΰΐǅΐΰ ẛǋϰ ſ衋"
+"ΐϱǲǋıϕϵǈ ẛΐſ靐 ϐς靐ǋςǋϑ]"
 
 #: templates/pages/discover.html:37
 msgid ""
-"Besides scratching our own itches, many people work on Mixxx as a way to learn about audio "
-"programming, or even just because it's fun and they enjoy programming. The creative aspect of "
-"Mixxx attracts developers with a broad range of skills and talents, and that makes for a fun "
-"development team that helps Mixxx continue to grow."
+"Besides scratching our own itches, many people work on Mixxx as a way to learn "
+"about audio programming, or even just because it's fun and they enjoy "
+"programming. The creative aspect of Mixxx attracts developers with a broad "
+"range of skills and talents, and that makes for a fun development team that "
+"helps Mixxx continue to grow."
 msgstr ""
-"[Ɓḗşīḓḗş şƈřȧŧƈħīƞɠ ǿŭř ǿẇƞ īŧƈħḗş, ḿȧƞẏ ƥḗǿƥŀḗ ẇǿřķ ǿƞ Ḿīẋẋẋ ȧş ȧ ẇȧẏ ŧǿ ŀḗȧřƞ ȧƀǿŭŧ ȧŭḓīǿ "
-"ƥřǿɠřȧḿḿīƞɠ, ǿř ḗṽḗƞ ĵŭşŧ ƀḗƈȧŭşḗ īŧ'ş ƒŭƞ ȧƞḓ ŧħḗẏ ḗƞĵǿẏ ƥřǿɠřȧḿḿīƞɠ. Ŧħḗ ƈřḗȧŧīṽḗ ȧşƥḗƈŧ ǿƒ "
-"Ḿīẋẋẋ ȧŧŧřȧƈŧş ḓḗṽḗŀǿƥḗřş ẇīŧħ ȧ ƀřǿȧḓ řȧƞɠḗ ǿƒ şķīŀŀş ȧƞḓ ŧȧŀḗƞŧş, ȧƞḓ ŧħȧŧ ḿȧķḗş ƒǿř ȧ ƒŭƞ "
-"ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ ŧħȧŧ ħḗŀƥş Ḿīẋẋẋ ƈǿƞŧīƞŭḗ ŧǿ ɠřǿẇ.]"
+"[Ɓḗşīḓḗş şƈřȧŧƈħīƞɠ ǿŭř ǿẇƞ īŧƈħḗş, ḿȧƞẏ ƥḗǿƥŀḗ ẇǿřķ ǿƞ Ḿīẋẋẋ ȧş ȧ ẇȧẏ ŧǿ ŀḗȧřƞ "
+"ȧƀǿŭŧ ȧŭḓīǿ ƥřǿɠřȧḿḿīƞɠ, ǿř ḗṽḗƞ ĵŭşŧ ƀḗƈȧŭşḗ īŧ'ş ƒŭƞ ȧƞḓ ŧħḗẏ ḗƞĵǿẏ "
+"ƥřǿɠřȧḿḿīƞɠ. Ŧħḗ ƈřḗȧŧīṽḗ ȧşƥḗƈŧ ǿƒ Ḿīẋẋẋ ȧŧŧřȧƈŧş ḓḗṽḗŀǿƥḗřş ẇīŧħ ȧ ƀřǿȧḓ "
+"řȧƞɠḗ ǿƒ şķīŀŀş ȧƞḓ ŧȧŀḗƞŧş, ȧƞḓ ŧħȧŧ ḿȧķḗş ƒǿř ȧ ƒŭƞ ḓḗṽḗŀǿƥḿḗƞŧ ŧḗȧḿ ŧħȧŧ "
+"ħḗŀƥş Ḿīẋẋẋ ƈǿƞŧīƞŭḗ ŧǿ ɠřǿẇ.]"
 
 #: templates/pages/download.html:3
 msgid "Download the Best Free DJ Mixing Software App"
@@ -264,31 +381,31 @@ msgstr "[Ḿīẋẋẋ īş ȧṽȧīŀȧƀŀḗ ƒǿř Ẇīƞḓǿẇş, ḿ�
 #: templates/pages/download.html:17
 #, python-format
 msgid ""
-"For live use, we recommend to download the stable <a href=\"#stable\">%(stable_version)s</a> "
-"version."
+"For live use, we recommend to download the stable <a "
+"href=\"#stable\">%(stable_version)s</a> version."
 msgstr ""
-"[For liv3 us3, w3 r3comm3nd to downlo4ad the st4bl3 <a href=\"#stable\">%(stable_version)s</a> "
-"v3rsion]."
+"[For liv3 us3, w3 r3comm3nd to downlo4ad the st4bl3 <a "
+"href=\"#stable\">%(stable_version)s</a> v3rsion]."
 
 #: templates/pages/download.html:22
 #, python-format
 msgid ""
-"If you want to test the latest features of the upcoming %(next_stable_version)s release, check out "
-"<a href=\"#unstable\">%(unstable_version)s</a>."
+"If you want to test the latest features of the upcoming %(next_stable_version)s "
+"release, check out <a href=\"#unstable\">%(unstable_version)s</a>."
 msgstr ""
-"[If y0u w4nt to t3st th3 l4t3st f34tur3s of th3 upc0ming %(next_stable_version)s r3l34se, ch3ck "
-"0ut <a href=\"#unstable\">%(unstable_version)s</a>]."
+"[If y0u w4nt to t3st th3 l4t3st f34tur3s of th3 upc0ming "
+"%(next_stable_version)s r3l34se, ch3ck 0ut <a "
+"href=\"#unstable\">%(unstable_version)s</a>]."
 
 #: templates/pages/download.html:26
 msgid ""
-"More conservative users can still download one of the <a href=\"#previous\">older and unsupported "
-"versions of Mixxx</a> instead."
+"More conservative users can still download one of the <a "
+"href=\"#previous\">older and unsupported versions of Mixxx</a> instead."
 msgstr ""
-"[Mor3 cons3rvativ3 us3rs c4n still downlo4d on3 of th3 <a href=\"#previous\">old3r and unsupport3d "
-"v3rsions of Mixxx</a> inst3ad.]"
+"[Mor3 cons3rvativ3 us3rs c4n still downlo4d on3 of th3 <a "
+"href=\"#previous\">old3r and unsupport3d v3rsions of Mixxx</a> inst3ad.]"
 
 #: templates/pages/download.html:31
-#, python-format
 msgid "Download stable version of Mixxx"
 msgstr "[Ḓǿẇƞŀǿȧḓ stable Şǿŭřƈḗ Ƈǿḓḗ]"
 
@@ -305,11 +422,11 @@ msgstr "[Ḓǿẇƞŀǿȧḓ Ƞǿẇ (%(stable_version)s)]"
 #: templates/pages/download.html:32
 #, python-format
 msgid ""
-"Want to download Mixxx for a different OS? Then select it manually &lt;a href=&quot;"
-"%(stable_link)s&quot;&gt;below&lt;/a&gt;."
+"Want to download Mixxx for a different OS? Then select it manually &lt;a "
+"href=&quot;%(stable_link)s&quot;&gt;below&lt;/a&gt;."
 msgstr ""
-"[w4nt to downlo4d Mixxx for 4 diff3r3nt OS? Th3n s3l3ct it m4nu4lly &lt;a href=&quot;"
-"%(stable_link)s&quot;&gt;b3low&lt;/a&gt;]."
+"[w4nt to downlo4d Mixxx for 4 diff3r3nt OS? Th3n s3l3ct it m4nu4lly &lt;a "
+"href=&quot;%(stable_link)s&quot;&gt;b3low&lt;/a&gt;]."
 
 #: templates/pages/download.html:32
 #, python-format
@@ -318,23 +435,27 @@ msgstr "[S3L3CT Y0UR 0P3R4TLNG SYSTEM <a href=\"%(stable_link)s\">b3l0w</a>]."
 
 #: templates/pages/download.html:39
 msgid ""
-"You don't need to pay for Mixxx because you can get it here for free. There is no official paid or "
-"&quot;pro&quot; version of Mixxx. The version available here is the full version."
+"You don't need to pay for Mixxx because you can get it here for free. There is "
+"no official paid or &quot;pro&quot; version of Mixxx. The version available "
+"here is the full version."
 msgstr ""
-"[You don't n33d to p4y for Mixxx b3c4us3 you c4n g3t it h3r3 for fr33. Th3r3 is no official p4id "
-"or &quot;pr0&quot; v3rsion of Mixxx. Th3 v3rsion av4il4ble h3r3 is the full v3rsion.]"
+"[You don't n33d to p4y for Mixxx b3c4us3 you c4n g3t it h3r3 for fr33. Th3r3 is "
+"no official p4id or &quot;pr0&quot; v3rsion of Mixxx. Th3 v3rsion av4il4ble "
+"h3r3 is the full v3rsion.]"
 
 #: templates/pages/download.html:42
-msgid "We happily provide Mixxx for free and donations are appreciated but not required."
+msgid ""
+"We happily provide Mixxx for free and donations are appreciated but not "
+"required."
 msgstr ""
-"[Ḿīẋẋẋ īş ȧṽȧīŀȧƀŀḗ ƒǿř Ẇīƞḓǿẇş, ḿȧƈǾŞ, ȧƞḓ Ŀīƞŭẋ. Ẇḗ ħȧƥƥīŀẏ ƥřǿṽīḓḗ Ḿīẋẋẋ ƒǿř ƒřḗḗ ȧƞḓ ḓǿƞȧŧīǿƞş "
-"ȧřḗ ȧƥƥřḗƈīȧŧḗḓ! ΰ靐ǋ靐ΐ ǲı ẛſϖϑϰ鶱ǲ鶱ǈ]"
+"[Ḿīẋẋẋ īş ȧṽȧīŀȧƀŀḗ ƒǿř Ẇīƞḓǿẇş, ḿȧƈǾŞ, ȧƞḓ Ŀīƞŭẋ. Ẇḗ ħȧƥƥīŀẏ ƥřǿṽīḓḗ Ḿīẋẋẋ ƒǿř "
+"ƒřḗḗ ȧƞḓ ḓǿƞȧŧīǿƞş ȧřḗ ȧƥƥřḗƈīȧŧḗḓ! ΰ靐ǋ靐ΐ ǲı ẛſϖϑϰ鶱ǲ鶱ǈ]"
 
 #: templates/pages/download.html:49
 msgid "View Source Code on GitHub"
 msgstr "[Vi3w Sourc3 Cod3 on GitHub]"
 
-#: templates/pages/download.html:49 templates/pages/index.html:113
+#: templates/pages/download.html:49 templates/pages/index.html:112
 msgid "Source Code"
 msgstr "[Şǿŭřƈḗ Ƈǿḓḗ ϵǅ衋ıϐ衋 ϰϐ衋]"
 
@@ -356,8 +477,8 @@ msgstr "[MLxxx %(version_name)s]"
 #: templates/pages/download.html:80
 #, python-format
 msgid ""
-"For live use, we recommend to download the stable <a href=\"%(stable_link)s\">%(stable_version)s</"
-"a> version instead."
+"For live use, we recommend to download the stable <a "
+"href=\"%(stable_link)s\">%(stable_version)s</a> version instead."
 msgstr ""
 "[For liv3 us3, w3 r3comm3nd to downlo4ad the st4bl3 <a "
 "href=\"%(stable_link)s\">%(stable_version)s</a>  v3rsion int34d]."
@@ -365,12 +486,13 @@ msgstr ""
 #: templates/pages/download.html:85
 #, python-format
 msgid ""
-"The Mixxx team has been working hard on the next version of Mixxx. Check out the <a "
-"href=\"%(release_announcement)s\">release announcement</a> for a list of the new features."
+"The Mixxx team has been working hard on the next version of Mixxx. Check out "
+"the <a href=\"%(release_announcement)s\">release announcement</a> for a list of "
+"the new features."
 msgstr ""
-"[Ŧħḗ Ḿīẋẋẋ ŧḗȧḿ ħȧş ƀḗḗƞ ẇǿřķīƞɠ ħȧřḓ ƒǿř 2 ẏḗȧřş ǿƞ Ḿīẋẋẋ 2.1. Ƈħḗƈķ ǿŭŧ ŧħḗ <a "
-"href=\"%(release_announcement)s\">řḗŀḗȧşḗ ȧƞƞǿŭƞƈḗḿḗƞŧ</a> ƒǿř ȧ ŀīşŧ ǿƒ ŧħḗ ƞḗẇ ƒḗȧŧŭřḗş. ǅϑẛ ΐΐΐ"
-"衋ς ǈ衋ẛǈ ϑ衋ΰ 靐ǅςſ ǋΐ鶱ϵǋǲǋ]"
+"[Ŧħḗ Ḿīẋẋẋ ŧḗȧḿ ħȧş ƀḗḗƞ ẇǿřķīƞɠ ħȧřḓ ƒǿř 2 ẏḗȧřş ǿƞ Ḿīẋẋẋ 2.1. Ƈħḗƈķ ǿŭŧ ŧħḗ "
+"<a href=\"%(release_announcement)s\">řḗŀḗȧşḗ ȧƞƞǿŭƞƈḗḿḗƞŧ</a> ƒǿř ȧ ŀīşŧ ǿƒ ŧħḗ "
+"ƞḗẇ ƒḗȧŧŭřḗş. ǅϑẛ ΐΐΐ衋ς ǈ衋ẛǈ ϑ衋ΰ 靐ǅςſ ǋΐ鶱ϵǋǲǋ]"
 
 #: templates/pages/download.html:89
 msgid "Important:"
@@ -379,41 +501,42 @@ msgstr "[Īḿƥǿřŧȧƞŧ: ΐǈϰǈϱǈϐϵϰ]"
 #: templates/pages/download.html:90
 #, python-format
 msgid ""
-"While %(version_name)s has been stable in testing it is not yet recommended for live use unless "
-"you are willing to risk a crash. Looking for the stable release? <a "
-"href=\"%(stable_link)s\">Scroll on down."
+"While %(version_name)s has been stable in testing it is not yet recommended for "
+"live use unless you are willing to risk a crash. Looking for the stable "
+"release? <a href=\"%(stable_link)s\">Scroll on down."
 msgstr ""
-"[Ẇħīŀḗ %(version_name)s ħȧş ƀḗḗƞ şŧȧƀŀḗ īƞ ŧḗşŧīƞɠ īŧ īş ƞǿŧ ẏḗŧ řḗƈǿḿḿḗƞḓḗḓ ƒǿř ŀīṽḗ ŭşḗ ŭƞŀḗşş "
-"ẏǿŭ ȧřḗ ẇīŀŀīƞɠ ŧǿ řīşķ ȧ ƈřȧşħ. Ŀǿǿķīƞɠ ƒǿř ŧħḗ şŧȧƀŀḗ řḗŀḗȧşḗ? <a "
-"href=\"%(stable_link)s\">Şƈřǿŀŀ ǿƞ ḓǿẇƞ.]"
+"[Ẇħīŀḗ %(version_name)s ħȧş ƀḗḗƞ şŧȧƀŀḗ īƞ ŧḗşŧīƞɠ īŧ īş ƞǿŧ ẏḗŧ řḗƈǿḿḿḗƞḓḗḓ "
+"ƒǿř ŀīṽḗ ŭşḗ ŭƞŀḗşş ẏǿŭ ȧřḗ ẇīŀŀīƞɠ ŧǿ řīşķ ȧ ƈřȧşħ. Ŀǿǿķīƞɠ ƒǿř ŧħḗ şŧȧƀŀḗ "
+"řḗŀḗȧşḗ? <a href=\"%(stable_link)s\">Şƈřǿŀŀ ǿƞ ḓǿẇƞ.]"
 
 #: templates/pages/download.html:97
 msgid ""
-"This is the current stable version of Mixxx, which means it has been thoroughly tested and is "
-"considered stable enough for live use."
+"This is the current stable version of Mixxx, which means it has been thoroughly "
+"tested and is considered stable enough for live use."
 msgstr ""
-"[This is th3 curr3nt st4bl3 v3rsion of Mixxx, which m34ns it h4s b33n thoroughly t3st3d and is "
-"consid3r3d st4bl3 3nough for liv3 us3.]"
+"[This is th3 curr3nt st4bl3 v3rsion of Mixxx, which m34ns it h4s b33n "
+"thoroughly t3st3d and is consid3r3d st4bl3 3nough for liv3 us3.]"
 
 #: templates/pages/download.html:102
 #, python-format
 msgid ""
 "If you're upgrading from an older version of Mixxx, check out the <a "
-"href=\"%(release_announcement)s\">release announcement</a> for a list of the new features."
+"href=\"%(release_announcement)s\">release announcement</a> for a list of the "
+"new features."
 msgstr ""
-"[Ƈħḗƈķ ǿŭŧ ŧħḗ <a href=\"%(release_announcement)s\">řḗŀḗȧşḗ ȧƞƞǿŭƞƈḗḿḗƞŧ</a> ƒǿř ȧ ŀīşŧ ǿƒ ƞḗẇ "
-"ƒḗȧŧŭřḗş. ẛ衋ϵıϵ ϕϖǋ ǅϵϕ ΰǋ ϖ]"
+"[Ƈħḗƈķ ǿŭŧ ŧħḗ <a href=\"%(release_announcement)s\">řḗŀḗȧşḗ ȧƞƞǿŭƞƈḗḿḗƞŧ</a> "
+"ƒǿř ȧ ŀīşŧ ǿƒ ƞḗẇ ƒḗȧŧŭřḗş. ẛ衋ϵıϵ ϕϖǋ ǅϵϕ ΰǋ ϖ]"
 
 #: templates/pages/download.html:106
 #, python-format
 msgid ""
-"Although Mixxx %(version_name)s contains many important updates and bugfixes, it's possible some "
-"users may experience issues. If you do, you can still get one of our <a "
-"href=\"#previous\">previous versions</a>."
+"Although Mixxx %(version_name)s contains many important updates and bugfixes, "
+"it's possible some users may experience issues. If you do, you can still get "
+"one of our <a href=\"#previous\">previous versions</a>."
 msgstr ""
-"[(Ȧŀŧħǿŭɠħ %(version_name)s ƈǿƞŧȧīƞş ḿȧƞẏ īḿƥǿřŧȧƞŧ ŭƥḓȧŧḗş ȧƞḓ ƀŭɠƒīẋḗş, īŧ'ş ƥǿşşīƀŀḗ şǿḿḗ ŭşḗřş "
-"ḿȧẏ ḗẋƥḗřīḗƞƈḗ īşşŭḗş. Īƒ ẏǿŭ ḓǿ, ẏǿŭ ƈȧƞ şŧīŀŀ ɠḗŧ ǿŭř ƥřḗṽīǿŭş şŧȧƀŀḗ ṽḗřşīǿƞ, <a "
-"href=\"#previous\">previous versions</a>.]"
+"[(Ȧŀŧħǿŭɠħ %(version_name)s ƈǿƞŧȧīƞş ḿȧƞẏ īḿƥǿřŧȧƞŧ ŭƥḓȧŧḗş ȧƞḓ ƀŭɠƒīẋḗş, īŧ'ş "
+"ƥǿşşīƀŀḗ şǿḿḗ ŭşḗřş ḿȧẏ ḗẋƥḗřīḗƞƈḗ īşşŭḗş. Īƒ ẏǿŭ ḓǿ, ẏǿŭ ƈȧƞ şŧīŀŀ ɠḗŧ ǿŭř "
+"ƥřḗṽīǿŭş şŧȧƀŀḗ ṽḗřşīǿƞ, <a href=\"#previous\">previous versions</a>.]"
 
 #: templates/pages/download.html:134
 msgid "Not Available"
@@ -463,22 +586,25 @@ msgstr "[Pr3ious Mixxx V3rsions]"
 
 #: templates/pages/download.html:206
 msgid ""
-"Although we heartily recommend using latest <a href=\"#stable\">stable version of Mixxx</a>, you "
-"can still find previous versions of Mixxx on <a href=\"http://downloads.mixxx.org/\" "
-"target=\"_blank\">our download server</a>."
+"Although we heartily recommend using latest <a href=\"#stable\">stable version "
+"of Mixxx</a>, you can still find previous versions of Mixxx on <a href=\"http://"
+"downloads.mixxx.org/\" target=\"_blank\">our download server</a>."
 msgstr ""
-"[4LTH0UGH W3 H3ARTLY R3Commend....<a href=\"#stable\">st4ble v3rsion of Mixxx</a> y0u c4n...<a "
-"href=\"http://downloads.mixxx.org/\" target=\"_blank\">0ur d0wnl04d s3rv3r</a>]."
+"[4LTH0UGH W3 H3ARTLY R3Commend....<a href=\"#stable\">st4ble v3rsion of Mixxx</"
+"a> y0u c4n...<a href=\"http://downloads.mixxx.org/\" target=\"_blank\">0ur "
+"d0wnl04d s3rv3r</a>]."
 
 #: templates/pages/download.html:207
 msgid ""
-"Please note that old versions are unsupported, which means that there won't be any bug fixes. If "
-"possible, please try to help us fix the issues that prevent you from upgrading to the latest "
-"version instead of resorting to an old Mixxx release."
+"Please note that old versions are unsupported, which means that there won't be "
+"any bug fixes. If possible, please try to help us fix the issues that prevent "
+"you from upgrading to the latest version instead of resorting to an old Mixxx "
+"release."
 msgstr ""
-"[Pl34s3 not3 th4t old v3rsions ar3 unsupport3d, which m34ns th4t th3r3 won't be any bug fix3s. If "
-"possibl3, pl34se try to h3lp us fix th3 issu3s th4t pr3v3nt you from upgr4ding to the l4t3st "
-"v3rsion inst34d of r3sorting to 4n old Mixxx r3l34se]."
+"[Pl34s3 not3 th4t old v3rsions ar3 unsupport3d, which m34ns th4t th3r3 won't be "
+"any bug fix3s. If possibl3, pl34se try to h3lp us fix th3 issu3s th4t pr3v3nt "
+"you from upgr4ding to the l4t3st v3rsion inst34d of r3sorting to 4n old Mixxx "
+"r3l34se]."
 
 #: templates/pages/error.html:7
 msgid "We're sorry!"
@@ -487,10 +613,6 @@ msgstr "[Ẇḗ'řḗ şǿřřẏ! ǅϱǅϖſ ǲϑǲǈ]"
 #: templates/pages/error.html:8
 msgid "The page <strong id=\"error-path\"></strong> couldn't be found."
 msgstr "[Ŧħḗ ƥȧɠḗ <b id=\"url\"></b> ƈǿŭŀḓƞ'ŧ ƀḗ ƒǿŭƞḓ. ϵςẛ 衋ǋ衋ΰ ϵ]"
-
-#: templates/pages/features.html:3
-msgid "Features"
-msgstr "[Ƒḗȧŧŭřḗş ϖẛϱıΐϱǅı]"
 
 #: templates/pages/features.html:11
 msgid "Everything You Need, However You DJ"
@@ -502,13 +624,13 @@ msgstr "[Ƒǿŭř Ḓḗƈķş ϵ靐ΰς ϐ靐ϐ鶱]"
 
 #: templates/pages/features.html:17
 msgid ""
-"Drop a song onto a deck in Mixxx to start playing right away. Keep your eye on beats and cue "
-"points with a scratchable, scrolling waveform together with a whole-song overview waveform for "
-"quick seeking."
+"Drop a song onto a deck in Mixxx to start playing right away. Keep your eye on "
+"beats and cue points with a scratchable, scrolling waveform together with a "
+"whole-song overview waveform for quick seeking."
 msgstr ""
-"[Ḓřǿƥ ȧ şǿƞɠ ǿƞŧǿ ȧ ḓḗƈķ īƞ Ḿīẋẋẋ ŧǿ şŧȧřŧ ƥŀȧẏīƞɠ řīɠħŧ ȧẇȧẏ. Ķḗḗƥ ẏǿŭř ḗẏḗ ǿƞ ƀḗȧŧş ȧƞḓ ƈŭḗ "
-"ƥǿīƞŧş ẇīŧħ ȧ şƈřȧŧƈħȧƀŀḗ, şƈřǿŀŀīƞɠ ẇȧṽḗƒǿřḿ ŧǿɠḗŧħḗř ẇīŧħ ȧ ẇħǿŀḗ-şǿƞɠ ǿṽḗřṽīḗẇ ẇȧṽḗƒǿřḿ ƒǿř "
-"ɋŭīƈķ şḗḗķīƞɠ.]"
+"[Ḓřǿƥ ȧ şǿƞɠ ǿƞŧǿ ȧ ḓḗƈķ īƞ Ḿīẋẋẋ ŧǿ şŧȧřŧ ƥŀȧẏīƞɠ řīɠħŧ ȧẇȧẏ. Ķḗḗƥ ẏǿŭř ḗẏḗ ǿƞ "
+"ƀḗȧŧş ȧƞḓ ƈŭḗ ƥǿīƞŧş ẇīŧħ ȧ şƈřȧŧƈħȧƀŀḗ, şƈřǿŀŀīƞɠ ẇȧṽḗƒǿřḿ ŧǿɠḗŧħḗř ẇīŧħ ȧ "
+"ẇħǿŀḗ-şǿƞɠ ǿṽḗřṽīḗẇ ẇȧṽḗƒǿřḿ ƒǿř ɋŭīƈķ şḗḗķīƞɠ.]"
 
 #: templates/pages/features.html:20
 msgid "Pitch and Key Control"
@@ -516,13 +638,15 @@ msgstr "[Ƥīŧƈħ ȧƞḓ Ķḗẏ Ƈǿƞŧřǿŀ 鶱靐ϑςǲ ς靐ǈ]"
 
 #: templates/pages/features.html:22
 msgid ""
-"Change the tempo of songs without changing their pitch with keylock, or change the pitch without "
-"breaking sync so your songs play in harmony. Temporarily nudge the tempo faster or slower for "
-"manual beatmatching, with smooth changes in pitch just like vinyl."
+"Change the tempo of songs without changing their pitch with keylock, or change "
+"the pitch without breaking sync so your songs play in harmony. Temporarily "
+"nudge the tempo faster or slower for manual beatmatching, with smooth changes "
+"in pitch just like vinyl."
 msgstr ""
-"[Ƈħȧƞɠḗ ŧħḗ ŧḗḿƥǿ ǿƒ şǿƞɠş ẇīŧħǿŭŧ ƈħȧƞɠīƞɠ ŧħḗīř ƥīŧƈħ ẇīŧħ ķḗẏŀǿƈķ, ǿř ƈħȧƞɠḗ ŧħḗ ƥīŧƈħ ẇīŧħǿŭŧ "
-"ƀřḗȧķīƞɠ şẏƞƈ şǿ ẏǿŭř şǿƞɠş ƥŀȧẏ īƞ ħȧřḿǿƞẏ. Ŧḗḿƥǿřȧřīŀẏ ƞŭḓɠḗ ŧħḗ ŧḗḿƥǿ ƒȧşŧḗř ǿř şŀǿẇḗř ƒǿř "
-"ḿȧƞŭȧŀ ƀḗȧŧḿȧŧƈħīƞɠ, ẇīŧħ şḿǿǿŧħ ƈħȧƞɠḗş īƞ ƥīŧƈħ ĵŭşŧ ŀīķḗ ṽīƞẏŀ.]"
+"[Ƈħȧƞɠḗ ŧħḗ ŧḗḿƥǿ ǿƒ şǿƞɠş ẇīŧħǿŭŧ ƈħȧƞɠīƞɠ ŧħḗīř ƥīŧƈħ ẇīŧħ ķḗẏŀǿƈķ, ǿř ƈħȧƞɠḗ "
+"ŧħḗ ƥīŧƈħ ẇīŧħǿŭŧ ƀřḗȧķīƞɠ şẏƞƈ şǿ ẏǿŭř şǿƞɠş ƥŀȧẏ īƞ ħȧřḿǿƞẏ. Ŧḗḿƥǿřȧřīŀẏ "
+"ƞŭḓɠḗ ŧħḗ ŧḗḿƥǿ ƒȧşŧḗř ǿř şŀǿẇḗř ƒǿř ḿȧƞŭȧŀ ƀḗȧŧḿȧŧƈħīƞɠ, ẇīŧħ şḿǿǿŧħ ƈħȧƞɠḗş "
+"īƞ ƥīŧƈħ ĵŭşŧ ŀīķḗ ṽīƞẏŀ.]"
 
 #: templates/pages/features.html:25
 msgid "Beat Looping"
@@ -530,11 +654,12 @@ msgstr "[Ɓḗȧŧ Ŀǿǿƥīƞɠ]"
 
 #: templates/pages/features.html:27
 msgid ""
-"Need to extend your mix while you bring in the next track? Instantly loop a 4, 8, or 16 beat "
-"segment with ease. Save loops to hotcue slots for complex re-arrangements."
+"Need to extend your mix while you bring in the next track? Instantly loop a 4, "
+"8, or 16 beat segment with ease. Save loops to hotcue slots for complex re-"
+"arrangements."
 msgstr ""
-"[Ƞḗḗḓ ŧǿ ḗẋŧḗƞḓ ẏǿŭř ḿīẋ ẇħīŀḗ ẏǿŭ ƀřīƞɠ īƞ ŧħḗ ƞḗẋŧ ŧřȧƈķ? Īƞşŧȧƞŧŀẏ ŀǿǿƥ ȧ 4, 8, ǿř 16 ƀḗȧŧ "
-"şḗɠḿḗƞŧ ẇīŧħ ḗȧşḗ. ǅẛϵǈ ϖΰ ϑϐϕǅ衋ẛ ϵϰ靐ſ]"
+"[Ƞḗḗḓ ŧǿ ḗẋŧḗƞḓ ẏǿŭř ḿīẋ ẇħīŀḗ ẏǿŭ ƀřīƞɠ īƞ ŧħḗ ƞḗẋŧ ŧřȧƈķ? Īƞşŧȧƞŧŀẏ ŀǿǿƥ ȧ 4, "
+"8, ǿř 16 ƀḗȧŧ şḗɠḿḗƞŧ ẇīŧħ ḗȧşḗ. ǅẛϵǈ ϖΰ ϑϐϕǅ衋ẛ ϵϰ靐ſ]"
 
 #: templates/pages/features.html:30
 msgid "Sync Lock"
@@ -542,13 +667,14 @@ msgstr "[Sync L0ck]"
 
 #: templates/pages/features.html:32
 msgid ""
-"Engage Sync Lock on your decks and they'll stay locked in time even if you change speed. Construct "
-"remixes on the fly with multiple tracks and loops without losing control. Pick which deck you want "
-"to be Sync Leader or let Mixxx choose it for you."
+"Engage Sync Lock on your decks and they'll stay locked in time even if you "
+"change speed. Construct remixes on the fly with multiple tracks and loops "
+"without losing control. Pick which deck you want to be Sync Leader or let Mixxx "
+"choose it for you."
 msgstr ""
-"[Ḗƞɠȧɠḗ ḿȧşŧḗř şẏƞƈ ǿƞ ẏǿŭř ḓḗƈķş ȧƞḓ ŧħḗẏ'ŀŀ şŧȧẏ ŀǿƈķḗḓ īƞ ŧīḿḗ ḗṽḗƞ īƒ ẏǿŭ ƈħȧƞɠḗ şƥḗḗḓ.  "
-"Ƈǿƞşŧřŭƈŧ řḗḿīẋḗş ǿƞ ŧħḗ ƒŀẏ ẇīŧħ ḿŭŀŧīƥŀḗ ŧřȧƈķş ȧƞḓ ŀǿǿƥş ẇīŧħǿŭŧ ŀǿşīƞɠ ƈǿƞŧřǿŀ. ǈǋϰϖςϕ ΐϑςϕϵϑ "
-"ǋǋ衋ϱ ϑς 靐ǈſϰ ſǋΰϐϖ]"
+"[Ḗƞɠȧɠḗ ḿȧşŧḗř şẏƞƈ ǿƞ ẏǿŭř ḓḗƈķş ȧƞḓ ŧħḗẏ'ŀŀ şŧȧẏ ŀǿƈķḗḓ īƞ ŧīḿḗ ḗṽḗƞ īƒ ẏǿŭ "
+"ƈħȧƞɠḗ şƥḗḗḓ.  Ƈǿƞşŧřŭƈŧ řḗḿīẋḗş ǿƞ ŧħḗ ƒŀẏ ẇīŧħ ḿŭŀŧīƥŀḗ ŧřȧƈķş ȧƞḓ ŀǿǿƥş "
+"ẇīŧħǿŭŧ ŀǿşīƞɠ ƈǿƞŧřǿŀ. ǈǋϰϖςϕ ΐϑςϕϵϑ ǋǋ衋ϱ ϑς 靐ǈſϰ ſǋΰϐϖ]"
 
 #: templates/pages/features.html:35
 msgid "Hotcues"
@@ -556,11 +682,11 @@ msgstr "[Ħǿŧƈŭḗş ΐϑϑẛϐϕϕ]"
 
 #: templates/pages/features.html:37
 msgid ""
-"Set hotcues to mark places in tracks. Remix and mash up tracks with accurate, rapid-fire hotcue "
-"triggering."
+"Set hotcues to mark places in tracks. Remix and mash up tracks with accurate, "
+"rapid-fire hotcue triggering."
 msgstr ""
-"[Şḗŧ ħǿŧƈŭḗş ŧǿ ḿȧřķ ƥŀȧƈḗş īƞ ŧřȧƈķş. Řḗḿīẋ ȧƞḓ ḿȧşħ ŭƥ ŧřȧƈķş ẇīŧħ ȧƈƈŭřȧŧḗ, řȧƥīḓ-ƒīřḗ ħǿŧƈŭḗ "
-"ŧřīɠɠḗřīƞɠ. ǈſϐ ǋſſϵǈϑϰ ϱϑ ϱǈΐ]"
+"[Şḗŧ ħǿŧƈŭḗş ŧǿ ḿȧřķ ƥŀȧƈḗş īƞ ŧřȧƈķş. Řḗḿīẋ ȧƞḓ ḿȧşħ ŭƥ ŧřȧƈķş ẇīŧħ ȧƈƈŭřȧŧḗ, "
+"řȧƥīḓ-ƒīřḗ ħǿŧƈŭḗ ŧřīɠɠḗřīƞɠ. ǈſϐ ǋſſϵǈϑϰ ϱϑ ϱǈΐ]"
 
 #: templates/pages/features.html:42
 msgid "Beat Rolls and Censor"
@@ -568,11 +694,11 @@ msgstr "[Ɓḗȧŧ Řǿŀŀş ȧƞḓ Ƈḗƞşǿř]"
 
 #: templates/pages/features.html:44
 msgid ""
-"Play with rhythm by triggering short loops and reverse-playback effects. The track stays in time "
-"so you don't miss a beat."
+"Play with rhythm by triggering short loops and reverse-playback effects. The "
+"track stays in time so you don't miss a beat."
 msgstr ""
-"[Ƥŀȧẏ ẇīŧħ řħẏŧħḿ ƀẏ ŧřīɠɠḗřīƞɠ şħǿřŧ ŀǿǿƥş ȧƞḓ řḗṽḗřşḗ-ƥŀȧẏƀȧƈķ ḗƒƒḗƈŧş. Ŧħḗ ŧřȧƈķ şŧȧẏş īƞ ŧīḿḗ "
-"şǿ ẏǿŭ ḓǿƞ'ŧ ḿīşş ȧ ƀḗȧŧ. ıǈ鶱ϕ ΐ衋ΰϵ 靐ϱϵϵǅǈ ϑϐ ϖ]"
+"[Ƥŀȧẏ ẇīŧħ řħẏŧħḿ ƀẏ ŧřīɠɠḗřīƞɠ şħǿřŧ ŀǿǿƥş ȧƞḓ řḗṽḗřşḗ-ƥŀȧẏƀȧƈķ ḗƒƒḗƈŧş. Ŧħḗ "
+"ŧřȧƈķ şŧȧẏş īƞ ŧīḿḗ şǿ ẏǿŭ ḓǿƞ'ŧ ḿīşş ȧ ƀḗȧŧ. ıǈ鶱ϕ ΐ衋ΰϵ 靐ϱϵϵǅǈ ϑϐ ϖ]"
 
 #: templates/pages/features.html:48
 msgid "Quantization"
@@ -580,7 +706,9 @@ msgstr "[Ɋŭȧƞŧīzȧŧīǿƞ ǅǈǈẛ鶱ϵϰǋς靐]"
 
 #: templates/pages/features.html:50
 msgid "Mark and activate cue points and loops exactly on beat every time."
-msgstr "[Ḿȧřķ ȧƞḓ ȧƈŧīṽȧŧḗ ƈŭḗ ƥǿīƞŧş ȧƞḓ ŀǿǿƥş ḗẋȧƈŧŀẏ ǿƞ ƀḗȧŧ ḗṽḗřẏ ŧīḿḗ. ς靐ſ衋 衋ϕǋ ς]"
+msgstr ""
+"[Ḿȧřķ ȧƞḓ ȧƈŧīṽȧŧḗ ƈŭḗ ƥǿīƞŧş ȧƞḓ ŀǿǿƥş ḗẋȧƈŧŀẏ ǿƞ ƀḗȧŧ ḗṽḗřẏ ŧīḿḗ. ς靐ſ衋 衋ϕǋ "
+"ς]"
 
 #: templates/pages/features.html:53
 msgid "Broad Format Support"
@@ -588,11 +716,11 @@ msgstr "[Ɓřǿȧḓ Ƒǿřḿȧŧ Şŭƥƥǿřŧ]"
 
 #: templates/pages/features.html:55
 msgid ""
-"Compatible with music files in lossless FLAC, WAV, and AIFF formats as well as lossy MP3, M4A/AAC, "
-"Ogg Vorbis, and Opus formats."
+"Compatible with music files in lossless FLAC, WAV, and AIFF formats as well as "
+"lossy MP3, M4A/AAC, Ogg Vorbis, and Opus formats."
 msgstr ""
-"[Ƈǿḿƥȧŧīƀŀḗ ẇīŧħ ḿŭşīƈ ƒīŀḗş īƞ ŀǿşşŀḗşş ƑĿȦƇ, ẆȦṼ, ȧƞḓ ȦĪƑƑ ƒǿřḿȧŧş ȧş ẇḗŀŀ ȧş ŀǿşşẏ ḾƤ3, Ḿ4Ȧ/"
-"ȦȦƇ, Ǿɠɠ Ṽǿřƀīş, ȧƞḓ Ǿƥŭş ƒǿřḿȧŧş.]"
+"[Ƈǿḿƥȧŧīƀŀḗ ẇīŧħ ḿŭşīƈ ƒīŀḗş īƞ ŀǿşşŀḗşş ƑĿȦƇ, ẆȦṼ, ȧƞḓ ȦĪƑƑ ƒǿřḿȧŧş ȧş ẇḗŀŀ ȧş "
+"ŀǿşşẏ ḾƤ3, Ḿ4Ȧ/ȦȦƇ, Ǿɠɠ Ṽǿřƀīş, ȧƞḓ Ǿƥŭş ƒǿřḿȧŧş.]"
 
 #: templates/pages/features.html:58
 msgid "EQ and Crossfader Control"
@@ -600,11 +728,12 @@ msgstr "[ḖɊ ȧƞḓ Ƈřǿşşƒȧḓḗř Ƈǿƞŧřǿŀ ẛϵ ǲϖ靐 ıϖ�
 
 #: templates/pages/features.html:60
 msgid ""
-"Choose between multiple equalizers and isolators with adjustable shelves. Crossfader curve control "
-"lets you deliver quick cuts or long, smooth crossfades."
+"Choose between multiple equalizers and isolators with adjustable shelves. "
+"Crossfader curve control lets you deliver quick cuts or long, smooth crossfades."
 msgstr ""
-"[Ƈħǿǿşḗ ƀḗŧẇḗḗƞ ḿŭŀŧīƥŀḗ ḗɋŭȧŀīzḗřş ȧƞḓ īşǿŀȧŧǿřş ẇīŧħ ȧḓĵŭşŧȧƀŀḗ şħḗŀṽḗş. Ƈřǿşşƒȧḓḗř ƈŭřṽḗ "
-"ƈǿƞŧřǿŀ ŀḗŧş ẏǿŭ ḓḗŀīṽḗř ɋŭīƈķ ƈŭŧş ǿř ŀǿƞɠ, şḿǿǿŧħ ƈřǿşşƒȧḓḗş.]"
+"[Ƈħǿǿşḗ ƀḗŧẇḗḗƞ ḿŭŀŧīƥŀḗ ḗɋŭȧŀīzḗřş ȧƞḓ īşǿŀȧŧǿřş ẇīŧħ ȧḓĵŭşŧȧƀŀḗ şħḗŀṽḗş. "
+"Ƈřǿşşƒȧḓḗř ƈŭřṽḗ ƈǿƞŧřǿŀ ŀḗŧş ẏǿŭ ḓḗŀīṽḗř ɋŭīƈķ ƈŭŧş ǿř ŀǿƞɠ, şḿǿǿŧħ "
+"ƈřǿşşƒȧḓḗş.]"
 
 #: templates/pages/features.html:68
 msgid "Customizable DJ Hardware Support"
@@ -612,24 +741,25 @@ msgstr "[Ƈŭşŧǿḿīzȧƀŀḗ ḒĴ Ħȧřḓẇȧřḗ Şŭƥƥǿřŧ]"
 
 #: templates/pages/features.html:70
 msgid ""
-"Mixxx plays nice with a variety of hardware without artificial restrictions or exclusive vendor "
-"lock-ins. Use whatever gear you want to build your unique setup."
+"Mixxx plays nice with a variety of hardware without artificial restrictions or "
+"exclusive vendor lock-ins. Use whatever gear you want to build your unique "
+"setup."
 msgstr ""
-"[Ḿīẋẋẋ ƥŀȧẏş ƞīƈḗ ẇīŧħ ȧ ṽȧřīḗŧẏ ǿƒ ħȧřḓẇȧřḗ ẇīŧħǿŭŧ ȧřŧīƒīƈīȧŀ řḗşŧřīƈŧīǿƞş ǿř ḗẋƈŀŭşīṽḗ ṽḗƞḓǿř "
-"ŀǿƈķ-īƞş. Ŭşḗ ẇħȧŧḗṽḗř ɠḗȧř ẏǿŭ ẇȧƞŧ ŧǿ ƀŭīŀḓ ẏǿŭř ŭƞīɋŭḗ şḗŧŭƥ. ϕſςẛſ ϖ鶱靐ǅϰ ϑſǋı ϱϐẛı ǋ ϖǅſǅǲ]"
+"[Ḿīẋẋẋ ƥŀȧẏş ƞīƈḗ ẇīŧħ ȧ ṽȧřīḗŧẏ ǿƒ ħȧřḓẇȧřḗ ẇīŧħǿŭŧ ȧřŧīƒīƈīȧŀ řḗşŧřīƈŧīǿƞş ǿř "
+"ḗẋƈŀŭşīṽḗ ṽḗƞḓǿř ŀǿƈķ-īƞş. Ŭşḗ ẇħȧŧḗṽḗř ɠḗȧř ẏǿŭ ẇȧƞŧ ŧǿ ƀŭīŀḓ ẏǿŭř ŭƞīɋŭḗ "
+"şḗŧŭƥ. ϕſςẛſ ϖ鶱靐ǅϰ ϑſǋı ϱϐẛı ǋ ϖǅſǅǲ]"
 
 #: templates/pages/features.html:79
 msgid "MIDI and HID Controller Support"
 msgstr "[ḾĪḒĪ ȧƞḓ ĦĪḒ Ƈǿƞŧřǿŀŀḗř Şŭƥƥǿřŧ ϕϰ鶱ϵ ǈϐǅ 衋]"
 
 #: templates/pages/features.html:82
-#, python-format
 msgid ""
-"for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; Heath Xone K2, "
-"Hercules DJ Console Series, and many more."
+"for controllers such as the Pioneer DDJ-SB2, Numark Mixtrack Pro 3, Allen &amp; "
+"Heath Xone K2, Hercules DJ Console Series, and many more."
 msgstr ""
-"[ƒǿř ƈǿƞŧřǿŀŀḗřş şŭƈħ ȧş ŧħḗ Ƥīǿƞḗḗř ḒḒĴ-ŞƁ2, Ƞŭḿȧřķ Ḿīẋŧřȧƈķ Ƥřǿ 3, Ȧŀŀḗƞ &amp; Ħḗȧŧħ Ẋǿƞḗ Ķ2, "
-"Ħḗřƈŭŀḗş ḒĴ Ƈǿƞşǿŀḗ Şḗřīḗş, ȧƞḓ ḿȧƞẏ ḿǿřḗ.]"
+"[ƒǿř ƈǿƞŧřǿŀŀḗřş şŭƈħ ȧş ŧħḗ Ƥīǿƞḗḗř ḒḒĴ-ŞƁ2, Ƞŭḿȧřķ Ḿīẋŧřȧƈķ Ƥřǿ 3, Ȧŀŀḗƞ "
+"&amp; Ħḗȧŧħ Ẋǿƞḗ Ķ2, Ħḗřƈŭŀḗş ḒĴ Ƈǿƞşǿŀḗ Şḗřīḗş, ȧƞḓ ḿȧƞẏ ḿǿřḗ.]"
 
 #: templates/pages/features.html:84
 msgid "Supported Devices"
@@ -640,15 +770,14 @@ msgid "Programmable Mapping Engine"
 msgstr "[Ƥřǿɠřȧḿḿȧƀŀḗ Ḿȧƥƥīƞɠ Ḗƞɠīƞḗ ſ鶱ıΰ靐ıϱ衋ẛϖ]"
 
 #: templates/pages/features.html:88
-#, python-format
 msgid ""
-"For creative tinkerers, controller mappings can be customized with the full flexibility of the "
-"JavaScript programming language. MIDI or HID messages can be mapped onto custom functions which "
-"execute complex behaviour."
+"For creative tinkerers, controller mappings can be customized with the full "
+"flexibility of the JavaScript programming language. MIDI or HID messages can be "
+"mapped onto custom functions which execute complex behaviour."
 msgstr ""
-"[Ƒǿř ƈřḗȧŧīṽḗ ŧīƞķḗřḗřş, ƈǿƞŧřǿŀŀḗř ḿȧƥƥīƞɠş ƈȧƞ ƀḗ ƈŭşŧǿḿīzḗḓ ẇīŧħ ŧħḗ ƒŭŀŀ ƒŀḗẋīƀīŀīŧẏ ǿƒ ŧħḗ "
-"ĴȧṽȧŞƈřīƥŧ ƥřǿɠřȧḿḿīƞɠ ŀȧƞɠŭȧɠḗ. ḾĪḒĪ ǿř ĦĪḒ ḿḗşşȧɠḗş ƈȧƞ ƀḗ ḿȧƥƥḗḓ ǿƞŧǿ ƈŭşŧǿḿ ƒŭƞƈŧīǿƞş ẇħīƈħ "
-"ḗẋḗƈŭŧḗ ƈǿḿƥŀḗẋ ƀḗħȧṽīǿŭř.]"
+"[Ƒǿř ƈřḗȧŧīṽḗ ŧīƞķḗřḗřş, ƈǿƞŧřǿŀŀḗř ḿȧƥƥīƞɠş ƈȧƞ ƀḗ ƈŭşŧǿḿīzḗḓ ẇīŧħ ŧħḗ ƒŭŀŀ "
+"ƒŀḗẋīƀīŀīŧẏ ǿƒ ŧħḗ ĴȧṽȧŞƈřīƥŧ ƥřǿɠřȧḿḿīƞɠ ŀȧƞɠŭȧɠḗ. ḾĪḒĪ ǿř ĦĪḒ ḿḗşşȧɠḗş ƈȧƞ ƀḗ "
+"ḿȧƥƥḗḓ ǿƞŧǿ ƈŭşŧǿḿ ƒŭƞƈŧīǿƞş ẇħīƈħ ḗẋḗƈŭŧḗ ƈǿḿƥŀḗẋ ƀḗħȧṽīǿŭř.]"
 
 #: templates/pages/features.html:90 templates/pages/features.html:102
 msgid "Read more"
@@ -659,15 +788,16 @@ msgid "Free Timecode Vinyl Control"
 msgstr "[Ƒřḗḗ Ŧīḿḗƈǿḓḗ Ṽīƞẏŀ Ƈǿƞŧřǿŀ ϕΰ靐ϑ ϰςǅ衋ẛ]"
 
 #: templates/pages/features.html:100
-#, python-format
 msgid ""
-"Control your digital music files from turntables or CDJs and a mixer using timecoded vinyl or CDs. "
-"Grab the music as if it was pressed onto wax and scratch to your heart's content. Mixxx is the "
-"only free timecode vinyl control software for Windows, macOS, and Linux."
+"Control your digital music files from turntables or CDJs and a mixer using "
+"timecoded vinyl or CDs. Grab the music as if it was pressed onto wax and "
+"scratch to your heart's content. Mixxx is the only free timecode vinyl control "
+"software for Windows, macOS, and Linux."
 msgstr ""
-"[Ƈǿƞŧřǿŀ ẏǿŭř ḓīɠīŧȧŀ ḿŭşīƈ ƒīŀḗş ƒřǿḿ ŧŭřƞŧȧƀŀḗş ǿř ƇḒĴş ȧƞḓ ȧ ḿīẋḗř ŭşīƞɠ ŧīḿḗƈǿḓḗḓ ṽīƞẏŀ ǿř "
-"ƇḒş. Ɠřȧƀ ŧħḗ ḿŭşīƈ ȧş īƒ īŧ ẇȧş ƥřḗşşḗḓ ǿƞŧǿ ẇȧẋ ȧƞḓ şƈřȧŧƈħ ŧǿ ẏǿŭř ħḗȧřŧ'ş ƈǿƞŧḗƞŧ. Ḿīẋẋẋ īş "
-"ŧħḗ ǿƞŀẏ ƒřḗḗ ŧīḿḗƈǿḓḗ ṽīƞẏŀ ƈǿƞŧřǿŀ şǿƒŧẇȧřḗ ƒǿř Ẇīƞḓǿẇş, ḿȧƈǾŞ, ȧƞḓ Ŀīƞŭẋ.]"
+"[Ƈǿƞŧřǿŀ ẏǿŭř ḓīɠīŧȧŀ ḿŭşīƈ ƒīŀḗş ƒřǿḿ ŧŭřƞŧȧƀŀḗş ǿř ƇḒĴş ȧƞḓ ȧ ḿīẋḗř ŭşīƞɠ "
+"ŧīḿḗƈǿḓḗḓ ṽīƞẏŀ ǿř ƇḒş. Ɠřȧƀ ŧħḗ ḿŭşīƈ ȧş īƒ īŧ ẇȧş ƥřḗşşḗḓ ǿƞŧǿ ẇȧẋ ȧƞḓ "
+"şƈřȧŧƈħ ŧǿ ẏǿŭř ħḗȧřŧ'ş ƈǿƞŧḗƞŧ. Ḿīẋẋẋ īş ŧħḗ ǿƞŀẏ ƒřḗḗ ŧīḿḗƈǿḓḗ ṽīƞẏŀ ƈǿƞŧřǿŀ "
+"şǿƒŧẇȧřḗ ƒǿř Ẇīƞḓǿẇş, ḿȧƈǾŞ, ȧƞḓ Ŀīƞŭẋ.]"
 
 #: templates/pages/features.html:109
 msgid "Sampler Decks"
@@ -675,7 +805,8 @@ msgstr "[Şȧḿƥŀḗř Ḓḗƈķş 鶱ϐΰǈǲ靐ϱ ıǲ]"
 
 #: templates/pages/features.html:111
 msgid "Load up to 64 sampler decks full of sounds to layer over your mix."
-msgstr "[Ŀǿȧḓ ŭƥ ŧǿ 64 şȧḿƥŀḗř ḓḗƈķş ƒŭŀŀ ǿƒ şǿŭƞḓş ŧǿ ŀȧẏḗř ǿṽḗř ẏǿŭř ḿīẋ. ϱϵıς ſϑ 鶱ΐ]"
+msgstr ""
+"[Ŀǿȧḓ ŭƥ ŧǿ 64 şȧḿƥŀḗř ḓḗƈķş ƒŭŀŀ ǿƒ şǿŭƞḓş ŧǿ ŀȧẏḗř ǿṽḗř ẏǿŭř ḿīẋ. ϱϵıς ſϑ 鶱ΐ]"
 
 #: templates/pages/features.html:118
 msgid "Effects Chains"
@@ -683,19 +814,21 @@ msgstr "[Ḗƒƒḗƈŧş Ƈħȧīƞş]"
 
 #: templates/pages/features.html:120
 msgid ""
-"Link up to three effects in a chain for a unique twist on your mix. Fine tune your sound by "
-"tweaking each parameter individually. Customize your workflow by assigning different parameters to "
-"adjust with the effect's metaknob. Focus different effects from a controller for flexible control "
-"of effect chains, whether your controller has a full effects section or a single knob. Rearrange "
-"and hide parameters, and set defaults. Export your custom effect chains to share it with others. "
-"Assign your custom chains to the Filter/QuickEffect knob to add color right from your mixer "
-"controls."
+"Link up to three effects in a chain for a unique twist on your mix. Fine tune "
+"your sound by tweaking each parameter individually. Customize your workflow by "
+"assigning different parameters to adjust with the effect's metaknob. Focus "
+"different effects from a controller for flexible control of effect chains, "
+"whether your controller has a full effects section or a single knob. Rearrange "
+"and hide parameters, and set defaults. Export your custom effect chains to "
+"share it with others. Assign your custom chains to the Filter/QuickEffect knob "
+"to add color right from your mixer controls."
 msgstr ""
-"[Ŀīƞķ ŭƥ ŧǿ ŧħřḗḗ ḗƒƒḗƈŧş īƞ ȧ ƈħȧīƞ ƒǿř ȧ ŭƞīɋŭḗ ŧẇīşŧ ǿƞ ẏǿŭř ḿīẋ. Ƒīƞḗ ŧŭƞḗ ẏǿŭř şǿŭƞḓ ƀẏ "
-"ŧẇḗȧķīƞɠ ḗȧƈħ ƥȧřȧḿḗŧḗř īƞḓīṽīḓŭȧŀŀẏ. Ƈŭşŧǿḿīzḗ ẏǿŭř ẇǿřķƒŀǿẇ ƀẏ ȧşşīɠƞīƞɠ ḓīƒƒḗřḗƞŧ ƥȧřȧḿḗŧḗřş ŧǿ "
-"ȧḓĵŭşŧ ẇīŧħ ŧħḗ ḗƒƒḗƈŧ'ş ḿḗŧȧķƞǿƀ. Ƒǿƈŭş ḓīƒƒḗřḗƞŧ ḗƒƒḗƈŧş ƒřǿḿ ȧ ƈǿƞŧřǿŀŀḗř ƒǿř ƒŀḗẋīƀŀḗ ƈǿƞŧřǿŀ "
-"ǿƒ ḗƒƒḗƈŧ ƈħȧīƞş, ẇħḗŧħḗř ẏǿŭř ƈǿƞŧřǿŀŀḗř ħȧş ȧ ƒŭŀŀ ḗƒƒḗƈŧş şḗƈŧīǿƞ ǿř ȧ şīƞɠŀḗ ķƞǿƀ. ǋıϱϐ ϖϵ ǅ衋 "
-"衋ǋΰϑǲ 靐ı鶱ΐǲıϐ ſϐ ϑ ϰı衋鶱鶱 ıϰſ ſ ϵǋΰ鶱ϖϰ ẛǋǅ靐ı ΰΐ ΰςǈϕ ϱ鶱靐ς ǲǲẛ衋]"
+"[Ŀīƞķ ŭƥ ŧǿ ŧħřḗḗ ḗƒƒḗƈŧş īƞ ȧ ƈħȧīƞ ƒǿř ȧ ŭƞīɋŭḗ ŧẇīşŧ ǿƞ ẏǿŭř ḿīẋ. Ƒīƞḗ ŧŭƞḗ "
+"ẏǿŭř şǿŭƞḓ ƀẏ ŧẇḗȧķīƞɠ ḗȧƈħ ƥȧřȧḿḗŧḗř īƞḓīṽīḓŭȧŀŀẏ. Ƈŭşŧǿḿīzḗ ẏǿŭř ẇǿřķƒŀǿẇ ƀẏ "
+"ȧşşīɠƞīƞɠ ḓīƒƒḗřḗƞŧ ƥȧřȧḿḗŧḗřş ŧǿ ȧḓĵŭşŧ ẇīŧħ ŧħḗ ḗƒƒḗƈŧ'ş ḿḗŧȧķƞǿƀ. Ƒǿƈŭş "
+"ḓīƒƒḗřḗƞŧ ḗƒƒḗƈŧş ƒřǿḿ ȧ ƈǿƞŧřǿŀŀḗř ƒǿř ƒŀḗẋīƀŀḗ ƈǿƞŧřǿŀ ǿƒ ḗƒƒḗƈŧ ƈħȧīƞş, "
+"ẇħḗŧħḗř ẏǿŭř ƈǿƞŧřǿŀŀḗř ħȧş ȧ ƒŭŀŀ ḗƒƒḗƈŧş şḗƈŧīǿƞ ǿř ȧ şīƞɠŀḗ ķƞǿƀ. ǋıϱϐ ϖϵ ǅ"
+"衋 衋ǋΰϑǲ 靐ı鶱ΐǲıϐ ſϐ ϑ ϰı衋鶱鶱 ıϰſ ſ ϵǋΰ鶱ϖϰ ẛǋǅ靐ı ΰΐ ΰςǈϕ ϱ鶱靐ς ǲǲẛ衋]"
 
 #: templates/pages/features.html:127
 msgid "Sophisticated Music Library"
@@ -703,13 +836,13 @@ msgstr "[Şǿƥħīşŧīƈȧŧḗḓ Ḿŭşīƈ Ŀīƀřȧřẏ 衋ϵϐϱ靐ϑ
 
 #: templates/pages/features.html:129
 msgid ""
-"Designed by DJs, for DJs, Mixxx's music library helps organize your music so you can find the "
-"perfect next track to play. Powered by a high-performance database, searching your collection is "
-"intuitive and fast."
+"Designed by DJs, for DJs, Mixxx's music library helps organize your music so "
+"you can find the perfect next track to play. Powered by a high-performance "
+"database, searching your collection is intuitive and fast."
 msgstr ""
-"[Ḓḗşīɠƞḗḓ ƀẏ ḒĴş, ƒǿř ḒĴş, Ḿīẋẋẋ'ş ḿŭşīƈ ŀīƀřȧřẏ ħḗŀƥş ǿřɠȧƞīzḗ ẏǿŭř ḿŭşīƈ şǿ ẏǿŭ ƈȧƞ ƒīƞḓ ŧħḗ "
-"ƥḗřƒḗƈŧ ƞḗẋŧ ŧřȧƈķ ŧǿ ƥŀȧẏ. Ƥǿẇḗřḗḓ ƀẏ ȧ ħīɠħ-ƥḗřƒǿřḿȧƞƈḗ ḓȧŧȧƀȧşḗ, şḗȧřƈħīƞɠ ẏǿŭř ƈǿŀŀḗƈŧīǿƞ īş "
-"īƞŧŭīŧīṽḗ ȧƞḓ ƒȧşŧ.]"
+"[Ḓḗşīɠƞḗḓ ƀẏ ḒĴş, ƒǿř ḒĴş, Ḿīẋẋẋ'ş ḿŭşīƈ ŀīƀřȧřẏ ħḗŀƥş ǿřɠȧƞīzḗ ẏǿŭř ḿŭşīƈ şǿ "
+"ẏǿŭ ƈȧƞ ƒīƞḓ ŧħḗ ƥḗřƒḗƈŧ ƞḗẋŧ ŧřȧƈķ ŧǿ ƥŀȧẏ. Ƥǿẇḗřḗḓ ƀẏ ȧ ħīɠħ-ƥḗřƒǿřḿȧƞƈḗ "
+"ḓȧŧȧƀȧşḗ, şḗȧřƈħīƞɠ ẏǿŭř ƈǿŀŀḗƈŧīǿƞ īş īƞŧŭīŧīṽḗ ȧƞḓ ƒȧşŧ.]"
 
 #: templates/pages/features.html:135
 msgid "Organization"
@@ -721,11 +854,11 @@ msgstr "[Ƈřȧŧḗş ȧƞḓ Ƥŀȧẏŀīşŧş]"
 
 #: templates/pages/features.html:139
 msgid ""
-"Sort your music the way you want. Use playlists to plan your set and use crates to build your own "
-"categorization system."
+"Sort your music the way you want. Use playlists to plan your set and use crates "
+"to build your own categorization system."
 msgstr ""
-"[Şǿřŧ ẏǿŭř ḿŭşīƈ ŧħḗ ẇȧẏ ẏǿŭ ẇȧƞŧ. Ŭşḗ ƥŀȧẏŀīşŧş ŧǿ ƥŀȧƞ ẏǿŭř şḗŧ ȧƞḓ ŭşḗ ƈřȧŧḗş ŧǿ ƀŭīŀḓ ẏǿŭř ǿẇƞ "
-"ƈȧŧḗɠǿřīzȧŧīǿƞ şẏşŧḗḿ. ΰςς鶱 ǋ鶱ϵϐ ϵΐǈΰϵ ϱıς ϱ]"
+"[Şǿřŧ ẏǿŭř ḿŭşīƈ ŧħḗ ẇȧẏ ẏǿŭ ẇȧƞŧ. Ŭşḗ ƥŀȧẏŀīşŧş ŧǿ ƥŀȧƞ ẏǿŭř şḗŧ ȧƞḓ ŭşḗ "
+"ƈřȧŧḗş ŧǿ ƀŭīŀḓ ẏǿŭř ǿẇƞ ƈȧŧḗɠǿřīzȧŧīǿƞ şẏşŧḗḿ. ΰςς鶱 ǋ鶱ϵϐ ϵΐǈΰϵ ϱıς ϱ]"
 
 #: templates/pages/features.html:142
 msgid "Search &amp; Sort"
@@ -733,11 +866,13 @@ msgstr "[Şḗȧřƈħ &amp; Şǿřŧ ΰϖϱϵẛ靐 ΐϖı]"
 
 #: templates/pages/features.html:144
 msgid ""
-"Start typing to find the track you're thinking of, or narrow your search to a specific tag. Sort "
-"the library table hierarchically with multiple tags at a time."
+"Start typing to find the track you're thinking of, or narrow your search to a "
+"specific tag. Sort the library table hierarchically with multiple tags at a "
+"time."
 msgstr ""
-"[Şŧȧřŧ ŧẏƥīƞɠ ŧǿ ƒīƞḓ ŧħḗ ŧřȧƈķ ẏǿŭ'řḗ ŧħīƞķīƞɠ ǿƒ, ǿř ƞȧřřǿẇ ẏǿŭř şḗȧřƈħ ŧǿ ȧ şƥḗƈīƒīƈ ŧȧɠ. Şǿřŧ "
-"ŧħḗ ŀīƀřȧřẏ ŧȧƀŀḗ ħīḗřȧřƈħīƈȧŀŀẏ ẇīŧħ ḿŭŀŧīƥŀḗ ŧȧɠş ȧŧ ȧ ŧīḿḗ. ıϐςſ衋 ϱϱẛΐ鶱ϕ 衋鶱 ϐϰϖǅ ẛǈǋ ΐϰϑ]"
+"[Şŧȧřŧ ŧẏƥīƞɠ ŧǿ ƒīƞḓ ŧħḗ ŧřȧƈķ ẏǿŭ'řḗ ŧħīƞķīƞɠ ǿƒ, ǿř ƞȧřřǿẇ ẏǿŭř şḗȧřƈħ ŧǿ ȧ "
+"şƥḗƈīƒīƈ ŧȧɠ. Şǿřŧ ŧħḗ ŀīƀřȧřẏ ŧȧƀŀḗ ħīḗřȧřƈħīƈȧŀŀẏ ẇīŧħ ḿŭŀŧīƥŀḗ ŧȧɠş ȧŧ ȧ "
+"ŧīḿḗ. ıϐςſ衋 ϱϱẛΐ鶱ϕ 衋鶱 ϐϰϖǅ ẛǈǋ ΐϰϑ]"
 
 #: templates/pages/features.html:149
 msgid "iTunes and Traktor Library Integration"
@@ -745,7 +880,8 @@ msgstr "[īŦŭƞḗş ȧƞḓ Ŧřȧķŧǿř Ŀīƀřȧřẏ Īƞŧḗɠřȧŧ�
 
 #: templates/pages/features.html:150
 msgid "Drop fresh tracks from your iTunes or Traktor library right into your mix."
-msgstr "[Ḓřǿƥ ƒřḗşħ ŧřȧƈķş ƒřǿḿ ẏǿŭř īŦŭƞḗş ǿř Ŧřȧķŧǿř ŀīƀřȧřẏ řīɠħŧ īƞŧǿ ẏǿŭř ḿīẋ.]"
+msgstr ""
+"[Ḓřǿƥ ƒřḗşħ ŧřȧƈķş ƒřǿḿ ẏǿŭř īŦŭƞḗş ǿř Ŧřȧķŧǿř ŀīƀřȧřẏ řīɠħŧ īƞŧǿ ẏǿŭř ḿīẋ.]"
 
 #: templates/pages/features.html:152
 msgid "MusicBrainz Tag Lookup"
@@ -753,7 +889,8 @@ msgstr "[ḾŭşīƈƁřȧīƞz Ŧȧɠ Ŀǿǿķŭƥ ϕ靐ΐǅϐ鶱ǋϰſϱ]"
 
 #: templates/pages/features.html:153
 msgid "Fingerprint your tracks and fetch missing tags from MusicBrainz."
-msgstr "[Ƒīƞɠḗřƥřīƞŧ ẏǿŭř ŧřȧƈķş ȧƞḓ ƒḗŧƈħ ḿīşşīƞɠ ŧȧɠş ƒřǿḿ ḾŭşīƈƁřȧīƞz. ς靐ϵ靐ǈ鶱ǅςϵ]"
+msgstr ""
+"[Ƒīƞɠḗřƥřīƞŧ ẏǿŭř ŧřȧƈķş ȧƞḓ ƒḗŧƈħ ḿīşşīƞɠ ŧȧɠş ƒřǿḿ ḾŭşīƈƁřȧīƞz. ς靐ϵ靐ǈ鶱ǅςϵ]"
 
 #: templates/pages/features.html:157
 msgid "BPM &amp; Key Detection"
@@ -761,13 +898,13 @@ msgstr "[ƁƤḾ &amp; Ķḗẏ Ḓḗŧḗƈŧīǿƞ]"
 
 #: templates/pages/features.html:159
 msgid ""
-"BPM detection finds the beat in even the toughest rhythms. Musical key detection helps identify "
-"tracks that are in harmony. Sort your library by BPM and key to quickly find tracks that will "
-"blend in seamlessly."
+"BPM detection finds the beat in even the toughest rhythms. Musical key "
+"detection helps identify tracks that are in harmony. Sort your library by BPM "
+"and key to quickly find tracks that will blend in seamlessly."
 msgstr ""
-"[ƁƤḾ ḓḗŧḗƈŧīǿƞ ƒīƞḓş ŧħḗ ƀḗȧŧ īƞ ḗṽḗƞ ŧħḗ ŧǿŭɠħḗşŧ řħẏŧħḿş. Ḿŭşīƈȧŀ ķḗẏ ḓḗŧḗƈŧīǿƞ ħḗŀƥş īḓḗƞŧīƒẏ "
-"ŧřȧƈķş ŧħȧŧ ȧřḗ īƞ ħȧřḿǿƞẏ. Şǿřŧ ẏǿŭř ŀīƀřȧřẏ ƀẏ ƁƤḾ ȧƞḓ ķḗẏ ŧǿ ɋŭīƈķŀẏ ƒīƞḓ ŧřȧƈķş ŧħȧŧ ẇīŀŀ "
-"ƀŀḗƞḓ īƞ şḗȧḿŀḗşşŀẏ]."
+"[ƁƤḾ ḓḗŧḗƈŧīǿƞ ƒīƞḓş ŧħḗ ƀḗȧŧ īƞ ḗṽḗƞ ŧħḗ ŧǿŭɠħḗşŧ řħẏŧħḿş. Ḿŭşīƈȧŀ ķḗẏ "
+"ḓḗŧḗƈŧīǿƞ ħḗŀƥş īḓḗƞŧīƒẏ ŧřȧƈķş ŧħȧŧ ȧřḗ īƞ ħȧřḿǿƞẏ. Şǿřŧ ẏǿŭř ŀīƀřȧřẏ ƀẏ ƁƤḾ "
+"ȧƞḓ ķḗẏ ŧǿ ɋŭīƈķŀẏ ƒīƞḓ ŧřȧƈķş ŧħȧŧ ẇīŀŀ ƀŀḗƞḓ īƞ şḗȧḿŀḗşşŀẏ]."
 
 #: templates/pages/features.html:164
 msgid "Auto DJ"
@@ -775,21 +912,23 @@ msgstr "[Ȧŭŧǿ ḒĴ]"
 
 #: templates/pages/features.html:166
 msgid ""
-"Need a break? Create a quick playlist and let Auto DJ take over. Automatic crossfading watches "
-"your back until you return."
+"Need a break? Create a quick playlist and let Auto DJ take over. Automatic "
+"crossfading watches your back until you return."
 msgstr ""
-"[Ƞḗḗḓ ȧ ƀřḗȧķ? Ƈřḗȧŧḗ ȧ ɋŭīƈķ ƥŀȧẏŀīşŧ ȧƞḓ ŀḗŧ Ȧŭŧǿ ḒĴ ŧȧķḗ ǿṽḗř. Ȧŭŧǿḿȧŧīƈ ƈřǿşşƒȧḓīƞɠ ẇȧŧƈħḗş "
-"ẏǿŭř ƀȧƈķ ŭƞŧīŀ ẏǿŭ řḗŧŭřƞ. ϵϱǲς ϵ ſǋϖſſǈ 靐ǋſ鶱ıϑ]"
+"[Ƞḗḗḓ ȧ ƀřḗȧķ? Ƈřḗȧŧḗ ȧ ɋŭīƈķ ƥŀȧẏŀīşŧ ȧƞḓ ŀḗŧ Ȧŭŧǿ ḒĴ ŧȧķḗ ǿṽḗř. Ȧŭŧǿḿȧŧīƈ "
+"ƈřǿşşƒȧḓīƞɠ ẇȧŧƈħḗş ẏǿŭř ƀȧƈķ ŭƞŧīŀ ẏǿŭ řḗŧŭřƞ. ϵϱǲς ϵ ſǋϖſſǈ 靐ǋſ鶱ıϑ]"
 
 #: templates/pages/features.html:174
 msgid "Choose Your Skin"
 msgstr "[Ƈħǿǿşḗ Ẏǿŭř Şķīƞ]"
 
 #: templates/pages/features.html:175
-msgid "Mixxx includes four different skins, each with a different look and a configurable layout."
+msgid ""
+"Mixxx includes four different skins, each with a different look and a "
+"configurable layout."
 msgstr ""
-"[Ḿīẋẋẋ īƞƈŀŭḓḗş ƒǿŭř ḓīƒƒḗřḗƞŧ şķīƞş, ḗȧƈħ ẇīŧħ ȧ ḓīƒƒḗřḗƞŧ ŀǿǿķ ȧƞḓ ȧ ƈǿƞƒīɠŭřȧƀŀḗ ŀȧẏǿŭŧ ϖẛϱǅϕ "
-"ΰςΐϵϖϕ鶱ǅ]"
+"[Ḿīẋẋẋ īƞƈŀŭḓḗş ƒǿŭř ḓīƒƒḗřḗƞŧ şķīƞş, ḗȧƈħ ẇīŧħ ȧ ḓīƒƒḗřḗƞŧ ŀǿǿķ ȧƞḓ ȧ "
+"ƈǿƞƒīɠŭřȧƀŀḗ ŀȧẏǿŭŧ ϖẛϱǅϕ ΰςΐϵϖϕ鶱ǅ]"
 
 #: templates/pages/features.html:194
 msgid "Record and Broadcast"
@@ -797,21 +936,22 @@ msgstr "[Řḗƈǿřḓ ȧƞḓ Ɓřǿȧḓƈȧşŧ ǅϰϕıǅǅ ϰ鶱ẛ]"
 
 #: templates/pages/features.html:196
 msgid ""
-"Mixxx includes a number of recording and broadcasting features to help you share your mixes and "
-"spread your name."
+"Mixxx includes a number of recording and broadcasting features to help you "
+"share your mixes and spread your name."
 msgstr ""
-"[Ḿīẋẋẋ īƞƈŀŭḓḗş ȧ ƞŭḿƀḗř ǿƒ řḗƈǿřḓīƞɠ ȧƞḓ ƀřǿȧḓƈȧşŧīƞɠ ƒḗȧŧŭřḗş ŧǿ ħḗŀƥ ẏǿŭ şħȧřḗ ẏǿŭř ḿīẋḗş ȧƞḓ "
-"şƥřḗȧḓ ẏǿŭř ƞȧḿḗ. ΰϵ靐ϰı ẛſϖϱſǅϵǅ ϐ ǈς]"
+"[Ḿīẋẋẋ īƞƈŀŭḓḗş ȧ ƞŭḿƀḗř ǿƒ řḗƈǿřḓīƞɠ ȧƞḓ ƀřǿȧḓƈȧşŧīƞɠ ƒḗȧŧŭřḗş ŧǿ ħḗŀƥ ẏǿŭ "
+"şħȧřḗ ẏǿŭř ḿīẋḗş ȧƞḓ şƥřḗȧḓ ẏǿŭř ƞȧḿḗ. ΰϵ靐ϰı ẛſϖϱſǅϵǅ ϐ ǈς]"
 
 #: templates/pages/features.html:203
 msgid ""
-"Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis format, with MP3 "
-"recording enabled by the separate LAME library. Recordings are automatically archived in the "
-"library for fast access."
+"Record your live mixes to the lossless WAV and FLAC formats or lossy Ogg Vorbis "
+"format, with MP3 recording enabled by the separate LAME library. Recordings are "
+"automatically archived in the library for fast access."
 msgstr ""
-"[Řḗƈǿřḓ ẏǿŭř ŀīṽḗ ḿīẋḗş ŧǿ ŧħḗ ŀǿşşŀḗşş ẆȦṼ ȧƞḓ ƑĿȦƇ ƒǿřḿȧŧş ǿř ŀǿşşẏ Ǿɠɠ Ṽǿřƀīş ƒǿřḿȧŧ, ẇīŧħ ḾƤ3 "
-"řḗƈǿřḓīƞɠ ḗƞȧƀŀḗḓ ƀẏ ŧħḗ şḗƥȧřȧŧḗ ĿȦḾḖ ŀīƀřȧřẏ. Řḗƈǿřḓīƞɠş ȧřḗ ȧŭŧǿḿȧŧīƈȧŀŀẏ ȧřƈħīṽḗḓ īƞ ŧħḗ "
-"ŀīƀřȧřẏ ƒǿř ƒȧşŧ ȧƈƈḗşş. ϖǋϵǅ靐ϕ ϕΰϐı ϰẛϵı ϐϑϰΐϑ ΐǲ 鶱ſϐ ϑϑ鶱ǅϰςǅ衋]"
+"[Řḗƈǿřḓ ẏǿŭř ŀīṽḗ ḿīẋḗş ŧǿ ŧħḗ ŀǿşşŀḗşş ẆȦṼ ȧƞḓ ƑĿȦƇ ƒǿřḿȧŧş ǿř ŀǿşşẏ Ǿɠɠ "
+"Ṽǿřƀīş ƒǿřḿȧŧ, ẇīŧħ ḾƤ3 řḗƈǿřḓīƞɠ ḗƞȧƀŀḗḓ ƀẏ ŧħḗ şḗƥȧřȧŧḗ ĿȦḾḖ ŀīƀřȧřẏ. "
+"Řḗƈǿřḓīƞɠş ȧřḗ ȧŭŧǿḿȧŧīƈȧŀŀẏ ȧřƈħīṽḗḓ īƞ ŧħḗ ŀīƀřȧřẏ ƒǿř ƒȧşŧ ȧƈƈḗşş. ϖǋϵǅ靐ϕ "
+"ϕΰϐı ϰẛϵı ϐϑϰΐϑ ΐǲ 鶱ſϐ ϑϑ鶱ǅϰςǅ衋]"
 
 #: templates/pages/features.html:209
 msgid "Live Broadcasting"
@@ -819,11 +959,11 @@ msgstr "[Ŀīṽḗ Ɓřǿȧḓƈȧşŧīƞɠ ẛϕ衋ǲ ϵ靐ϕϕϐ]"
 
 #: templates/pages/features.html:211
 msgid ""
-"Stream your mixes live over the Internet to your audience and friends through a Shoutcast or "
-"Icecast server."
+"Stream your mixes live over the Internet to your audience and friends through a "
+"Shoutcast or Icecast server."
 msgstr ""
-"[Şŧřḗȧḿ ẏǿŭř ḿīẋḗş ŀīṽḗ ǿṽḗř ŧħḗ Īƞŧḗřƞḗŧ ŧǿ ẏǿŭř ȧŭḓīḗƞƈḗ ȧƞḓ ƒřīḗƞḓş ŧħřǿŭɠħ ȧ Şħǿŭŧƈȧşŧ ǿř "
-"Īƈḗƈȧşŧ şḗřṽḗř. ϕ靐ǋΐ靐ẛ ϰ靐ǅǈ ẛẛςıς]"
+"[Şŧřḗȧḿ ẏǿŭř ḿīẋḗş ŀīṽḗ ǿṽḗř ŧħḗ Īƞŧḗřƞḗŧ ŧǿ ẏǿŭř ȧŭḓīḗƞƈḗ ȧƞḓ ƒřīḗƞḓş ŧħřǿŭɠħ "
+"ȧ Şħǿŭŧƈȧşŧ ǿř Īƈḗƈȧşŧ şḗřṽḗř. ϕ靐ǋΐ靐ẛ ϰ靐ǅǈ ẛẛςıς]"
 
 #: templates/pages/features.html:217
 msgid "ReplayGain Normalization"
@@ -831,12 +971,13 @@ msgstr "[ŘḗƥŀȧẏƓȧīƞ Ƞǿřḿȧŀīzȧŧīǿƞ ΰΰ靐ıǈϱϵϰǲϱ
 
 #: templates/pages/features.html:219
 msgid ""
-"Song loudness is automatically adjusted when loading a deck so your mixes maintain a consistent "
-"volume. Mixxx reads existing ReplayGain tags and analyzes songs that don't have them."
+"Song loudness is automatically adjusted when loading a deck so your mixes "
+"maintain a consistent volume. Mixxx reads existing ReplayGain tags and analyzes "
+"songs that don't have them."
 msgstr ""
-"[Şǿƞɠ ŀǿŭḓƞḗşş īş ȧŭŧǿḿȧŧīƈȧŀŀẏ ȧḓĵŭşŧḗḓ ẇħḗƞ ŀǿȧḓīƞɠ ȧ ḓḗƈķ şǿ ẏǿŭř ḿīẋḗş ḿȧīƞŧȧīƞ ȧ ƈǿƞşīşŧḗƞŧ "
-"ṽǿŀŭḿḗ. Ḿīẋẋẋ řḗȧḓş ḗẋīşŧīƞɠ ŘḗƥŀȧẏƓȧīƞ ŧȧɠş ȧƞḓ ȧƞȧŀẏzḗş şǿƞɠş ŧħȧŧ ḓǿƞ'ŧ ħȧṽḗ ŧħḗḿ. ǅẛǈ靐 "
-"ıϰǅẛςıſϕ ǅı ıǈſϵǈǈϕǋıǲ靐ſı ſΐ]"
+"[Şǿƞɠ ŀǿŭḓƞḗşş īş ȧŭŧǿḿȧŧīƈȧŀŀẏ ȧḓĵŭşŧḗḓ ẇħḗƞ ŀǿȧḓīƞɠ ȧ ḓḗƈķ şǿ ẏǿŭř ḿīẋḗş "
+"ḿȧīƞŧȧīƞ ȧ ƈǿƞşīşŧḗƞŧ ṽǿŀŭḿḗ. Ḿīẋẋẋ řḗȧḓş ḗẋīşŧīƞɠ ŘḗƥŀȧẏƓȧīƞ ŧȧɠş ȧƞḓ ȧƞȧŀẏzḗş "
+"şǿƞɠş ŧħȧŧ ḓǿƞ'ŧ ħȧṽḗ ŧħḗḿ. ǅẛǈ靐 ıϰǅẛςıſϕ ǅı ıǈſϵǈǈϕǋıǲ靐ſı ſΐ]"
 
 #: templates/pages/features.html:225
 msgid "Microphone &amp; Auxiliary Inputs"
@@ -844,15 +985,17 @@ msgstr "[Ḿīƈřǿƥħǿƞḗ &amp; Ȧŭẋīŀīȧřẏ Īƞƥŭŧş 鶱ςϐ�
 
 #: templates/pages/features.html:227
 msgid ""
-"Whether you're collaborating with a vocalist, giving shoutouts on the air, or improvising on your "
-"guitar, integrate live audio input into your mix. Four microphone inputs and four auxiliary inputs "
-"let you include different sound sources without needing an external hardware mixer. Latency "
-"compensation keeps your recorded and broadcasted mixes in time when using direct monitoring."
+"Whether you're collaborating with a vocalist, giving shoutouts on the air, or "
+"improvising on your guitar, integrate live audio input into your mix. Four "
+"microphone inputs and four auxiliary inputs let you include different sound "
+"sources without needing an external hardware mixer. Latency compensation keeps "
+"your recorded and broadcasted mixes in time when using direct monitoring."
 msgstr ""
-"[Ẇħḗŧħḗř ẏǿŭ'řḗ ƈǿŀŀȧƀǿřȧŧīƞɠ ẇīŧħ ȧ ṽǿƈȧŀīşŧ, ɠīṽīƞɠ şħǿŭŧǿŭŧş ǿƞ ŧħḗ ȧīř, ǿř īḿƥřǿṽīşīƞɠ ǿƞ ẏǿŭř "
-"ɠŭīŧȧř, īƞŧḗɠřȧŧḗ ŀīṽḗ ȧŭḓīǿ īƞƥŭŧ īƞŧǿ ẏǿŭř ḿīẋ. Ƒǿŭř ḿīƈřǿƥħǿƞḗ īƞƥŭŧş ȧƞḓ ƒǿŭř ȧŭẋīŀīȧřẏ īƞƥŭŧş "
-"ŀḗŧ ẏǿŭ īƞƈŀŭḓḗ ḓīƒƒḗřḗƞŧ şǿŭƞḓ şǿŭřƈḗş ẇīŧħǿŭŧ ƞḗḗḓīƞɠ ȧƞ ḗẋŧḗřƞȧŀ ħȧřḓẇȧřḗ ḿīẋḗř. Ŀȧŧḗƞƈẏ "
-"ƈǿḿƥḗƞşȧŧīǿƞ ķḗḗƥş ẏǿŭř řḗƈǿřḓḗḓ ȧƞḓ ƀřǿȧḓƈȧşŧḗḓ ḿīẋḗş īƞ ŧīḿḗ ẇħḗƞ ŭşīƞɠ ḓīřḗƈŧ ḿǿƞīŧǿřīƞɠ. "
+"[Ẇħḗŧħḗř ẏǿŭ'řḗ ƈǿŀŀȧƀǿřȧŧīƞɠ ẇīŧħ ȧ ṽǿƈȧŀīşŧ, ɠīṽīƞɠ şħǿŭŧǿŭŧş ǿƞ ŧħḗ ȧīř, ǿř "
+"īḿƥřǿṽīşīƞɠ ǿƞ ẏǿŭř ɠŭīŧȧř, īƞŧḗɠřȧŧḗ ŀīṽḗ ȧŭḓīǿ īƞƥŭŧ īƞŧǿ ẏǿŭř ḿīẋ. Ƒǿŭř "
+"ḿīƈřǿƥħǿƞḗ īƞƥŭŧş ȧƞḓ ƒǿŭř ȧŭẋīŀīȧřẏ īƞƥŭŧş ŀḗŧ ẏǿŭ īƞƈŀŭḓḗ ḓīƒƒḗřḗƞŧ şǿŭƞḓ "
+"şǿŭřƈḗş ẇīŧħǿŭŧ ƞḗḗḓīƞɠ ȧƞ ḗẋŧḗřƞȧŀ ħȧřḓẇȧřḗ ḿīẋḗř. Ŀȧŧḗƞƈẏ ƈǿḿƥḗƞşȧŧīǿƞ ķḗḗƥş "
+"ẏǿŭř řḗƈǿřḓḗḓ ȧƞḓ ƀřǿȧḓƈȧşŧḗḓ ḿīẋḗş īƞ ŧīḿḗ ẇħḗƞ ŭşīƞɠ ḓīřḗƈŧ ḿǿƞīŧǿřīƞɠ. "
 "ϑǈſϰϐϑǲ ϕǅẛϵϱǈ ǲΰ衋ϑǋϑΐϐϱǲǋϐǅ ıΐΐϱ ſ ΐẛΐẛ衋ϐǅǈǲ ϑΐǅ靐ϰı ǲΐǅϵǅϕǅΰϱ ϕΰ 鶱ǅϵ ǈΰϕ]"
 
 #: templates/pages/features.html:235
@@ -862,17 +1005,13 @@ msgstr "[Ƞȧŧīṽḗ Ŀȧƞɠŭȧɠḗ Şŭƥƥǿřŧ ǈ靐ǈϕϑϰ ϑſ靐]"
 #: templates/pages/features.html:238
 #, python-format
 msgid ""
-" Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, Czech, Dutch, Polish, "
-"or Japanese... and more! See our <a href=\"%(com_transifex_mixxxdj_link)s\">Translation overview</"
-"a> page."
+" Use Mixxx in Spanish, Catalan, French, German, Italian, Russian, Finnish, "
+"Czech, Dutch, Polish, or Japanese... and more! See our <a "
+"href=\"%(com_transifex_mixxxdj_link)s\">Translation overview</a> page."
 msgstr ""
-" [ Ŭşḗ Ḿīẋẋẋ īƞ Şƥȧƞīşħ, Ƈȧŧȧŀȧƞ, Ƒřḗƞƈħ, Ɠḗřḿȧƞ, Īŧȧŀīȧƞ, Řŭşşīȧƞ, Ƒīƞƞīşħ, Ƈzḗƈħ, Ḓŭŧƈħ, Ƥǿŀīşħ, "
-"ǿř Ĵȧƥȧƞḗşḗ... ȧƞḓ ḿǿřḗ! Şḗḗ ǿŭř <a href=\"%(com_transifex_mixxxdj_link)s\">Ŧřȧƞşŀȧŧīǿƞ ǿṽḗřṽīḗẇ</"
-"a> ƥȧɠḗ.]"
-
-#: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
-msgid "Get Involved"
-msgstr "[Ɠḗŧ Īƞṽǿŀṽḗḓ ǅ衋ϕ ΐΰ鶱ςϑϵ]"
+" [ Ŭşḗ Ḿīẋẋẋ īƞ Şƥȧƞīşħ, Ƈȧŧȧŀȧƞ, Ƒřḗƞƈħ, Ɠḗřḿȧƞ, Īŧȧŀīȧƞ, Řŭşşīȧƞ, Ƒīƞƞīşħ, "
+"Ƈzḗƈħ, Ḓŭŧƈħ, Ƥǿŀīşħ, ǿř Ĵȧƥȧƞḗşḗ... ȧƞḓ ḿǿřḗ! Şḗḗ ǿŭř <a "
+"href=\"%(com_transifex_mixxxdj_link)s\">Ŧřȧƞşŀȧŧīǿƞ ǿṽḗřṽīḗẇ</a> ƥȧɠḗ.]"
 
 #: templates/pages/get-involved.html:8
 msgid "Not a coder? Scroll down!"
@@ -885,25 +1024,26 @@ msgstr "[Şǿƒŧẇȧřḗ Ḓḗṽḗŀǿƥḗřş ϵϕΰϱϕ鶱ϱ鶱 ΰ]"
 #: templates/pages/get-involved.html:15
 #, python-format
 msgid ""
-"Mixxx is written in C++ and uses the <a href=\"%(qt_link)s\">Qt</a> platform library for most data "
-"structures, graphics drawing, and window handling. Fortunately, Qt is easy to use and very well "
-"documented, <b>so you don't need any prior Qt or audio programming experience to start hacking on "
-"Mixxx</b>."
+"Mixxx is written in C++ and uses the <a href=\"%(qt_link)s\">Qt</a> platform "
+"library for most data structures, graphics drawing, and window handling. "
+"Fortunately, Qt is easy to use and very well documented, <b>so you don't need "
+"any prior Qt or audio programming experience to start hacking on Mixxx</b>."
 msgstr ""
-"[Ḿīẋẋẋ īş ẇřīŧŧḗƞ īƞ Ƈ++ ȧƞḓ ŭşḗş ŧħḗ <a href=\"%(qt_link)s\">Ɋŧ</a> ƥŀȧŧƒǿřḿ ŀīƀřȧřẏ ƒǿř ḿǿşŧ "
-"ḓȧŧȧ şŧřŭƈŧŭřḗş, ɠřȧƥħīƈş ḓřȧẇīƞɠ, ȧƞḓ ẇīƞḓǿẇ ħȧƞḓŀīƞɠ. Ƒǿřŧŭƞȧŧḗŀẏ, Ɋŧ īş ḗȧşẏ ŧǿ ŭşḗ ȧƞḓ ṽḗřẏ "
-"ẇḗŀŀ ḓǿƈŭḿḗƞŧḗḓ, <b>şǿ ẏǿŭ ḓǿƞ'ŧ ƞḗḗḓ ȧƞẏ ƥřīǿř Ɋŧ ǿř ȧŭḓīǿ ƥřǿɠřȧḿḿīƞɠ ḗẋƥḗřīḗƞƈḗ ŧǿ şŧȧřŧ "
-"ħȧƈķīƞɠ ǿƞ Ḿīẋẋẋ</b>. ϕ鶱ϕǅϱ ϵϱ ǲΰϰΰẛϐǈ ẛǋ ǲϵϐ ǲ鶱鶱 ǲΰ靐ı ΐϱϰ ϵǈ ϐϑıǲϵϐẛς鶱ſΐǅ鶱ϐ鶱ẛǲ]"
+"[Ḿīẋẋẋ īş ẇřīŧŧḗƞ īƞ Ƈ++ ȧƞḓ ŭşḗş ŧħḗ <a href=\"%(qt_link)s\">Ɋŧ</a> ƥŀȧŧƒǿřḿ "
+"ŀīƀřȧřẏ ƒǿř ḿǿşŧ ḓȧŧȧ şŧřŭƈŧŭřḗş, ɠřȧƥħīƈş ḓřȧẇīƞɠ, ȧƞḓ ẇīƞḓǿẇ ħȧƞḓŀīƞɠ. "
+"Ƒǿřŧŭƞȧŧḗŀẏ, Ɋŧ īş ḗȧşẏ ŧǿ ŭşḗ ȧƞḓ ṽḗřẏ ẇḗŀŀ ḓǿƈŭḿḗƞŧḗḓ, <b>şǿ ẏǿŭ ḓǿƞ'ŧ ƞḗḗḓ "
+"ȧƞẏ ƥřīǿř Ɋŧ ǿř ȧŭḓīǿ ƥřǿɠřȧḿḿīƞɠ ḗẋƥḗřīḗƞƈḗ ŧǿ şŧȧřŧ ħȧƈķīƞɠ ǿƞ Ḿīẋẋẋ</b>. ϕ鶱"
+"ϕǅϱ ϵϱ ǲΰϰΰẛϐǈ ẛǋ ǲϵϐ ǲ鶱鶱 ǲΰ靐ı ΐϱϰ ϵǈ ϐϑıǲϵϐẛς鶱ſΐǅ鶱ϐ鶱ẛǲ]"
 
 #: templates/pages/get-involved.html:18
 msgid ""
-"Besides creating cool DJ software and working with a fun team, contributing to Mixxx also looks "
-"great on your resume or CV. It's also an ideal way to learn about real-time audio programming, Qt, "
-"or even just hone your C++ skills."
+"Besides creating cool DJ software and working with a fun team, contributing to "
+"Mixxx also looks great on your resume or CV. It's also an ideal way to learn "
+"about real-time audio programming, Qt, or even just hone your C++ skills."
 msgstr ""
-"[Ɓḗşīḓḗş ƈřḗȧŧīƞɠ ƈǿǿŀ ḒĴ şǿƒŧẇȧřḗ ȧƞḓ ẇǿřķīƞɠ ẇīŧħ ȧ ƒŭƞ ŧḗȧḿ, ƈǿƞŧřīƀŭŧīƞɠ ŧǿ Ḿīẋẋẋ ȧŀşǿ ŀǿǿķş "
-"ɠřḗȧŧ ǿƞ ẏǿŭř řḗşŭḿḗ ǿř ƇṼ. Īŧ'ş ȧŀşǿ ȧƞ īḓḗȧŀ ẇȧẏ ŧǿ ŀḗȧřƞ ȧƀǿŭŧ řḗȧŀ-ŧīḿḗ ȧŭḓīǿ ƥřǿɠřȧḿḿīƞɠ, Ɋŧ, "
-"ǿř ḗṽḗƞ ĵŭşŧ ħǿƞḗ ẏǿŭř Ƈ++ şķīŀŀş.]"
+"[Ɓḗşīḓḗş ƈřḗȧŧīƞɠ ƈǿǿŀ ḒĴ şǿƒŧẇȧřḗ ȧƞḓ ẇǿřķīƞɠ ẇīŧħ ȧ ƒŭƞ ŧḗȧḿ, ƈǿƞŧřīƀŭŧīƞɠ ŧǿ "
+"Ḿīẋẋẋ ȧŀşǿ ŀǿǿķş ɠřḗȧŧ ǿƞ ẏǿŭř řḗşŭḿḗ ǿř ƇṼ. Īŧ'ş ȧŀşǿ ȧƞ īḓḗȧŀ ẇȧẏ ŧǿ ŀḗȧřƞ "
+"ȧƀǿŭŧ řḗȧŀ-ŧīḿḗ ȧŭḓīǿ ƥřǿɠřȧḿḿīƞɠ, Ɋŧ, ǿř ḗṽḗƞ ĵŭşŧ ħǿƞḗ ẏǿŭř Ƈ++ şķīŀŀş.]"
 
 #: templates/pages/get-involved.html:22
 msgid "Start Developing Now"
@@ -912,40 +1052,43 @@ msgstr "[Şŧȧřŧ Ḓḗṽḗŀǿƥīƞɠ Ƞǿẇ 鶱ϕϕıǅ ϐ衋ϱǲ]"
 #: templates/pages/get-involved.html:25
 #, python-format
 msgid ""
-"Introduce yourself to the community on our <a href=\"%(zulip_web_link)s\">Zulip chat</a>. Please "
-"do not ask for help using Mixxx on Zulip; use the <a href=\"%(forum_link)s\">forum</a> for that "
-"instead."
+"Introduce yourself to the community on our <a href=\"%(zulip_web_link)s\">Zulip "
+"chat</a>. Please do not ask for help using Mixxx on Zulip; use the <a "
+"href=\"%(forum_link)s\">forum</a> for that instead."
 msgstr ""
-"[Introduc3 y0urself t0 the c0mmunity on 0ur <a href=\"%(zulip_web_link)s\">Zulip ch4t</a>. Pl34s3 "
-"do not 4sk for h3lp using Mixxx on Zulip; us3 th3 <a href=\"%(forum_link)s\">f0rum</a> for th4t "
-"inst34d.]"
+"[Introduc3 y0urself t0 the c0mmunity on 0ur <a "
+"href=\"%(zulip_web_link)s\">Zulip ch4t</a>. Pl34s3 do not 4sk for h3lp using "
+"Mixxx on Zulip; us3 th3 <a href=\"%(forum_link)s\">f0rum</a> for th4t inst34d.]"
 
 #: templates/pages/get-involved.html:28
 #, python-format
 msgid ""
-"Get a <a href=\"%(com_github_link)s\">GitHub</a> account and <a href=\"%(using_git_wiki_link)s "
-"\">fork your own branch</a>!"
+"Get a <a href=\"%(com_github_link)s\">GitHub</a> account and <a "
+"href=\"%(using_git_wiki_link)s \">fork your own branch</a>!"
 msgstr ""
-"[Ɠḗŧ ȧ <a href=\"%(com_github_link)s\">Ɠīŧħŭƀ</a> ȧƈƈǿŭƞŧ ȧƞḓ <a href=\"%(using_git_wiki_link)s "
-"\">ƒǿřķ ẏǿŭř ǿẇƞ ƀřȧƞƈħ</a>! ϱΐſ ǈ ǅſ 衋ǈẛϐſΰϱςϕſ衋鶱]"
+"[Ɠḗŧ ȧ <a href=\"%(com_github_link)s\">Ɠīŧħŭƀ</a> ȧƈƈǿŭƞŧ ȧƞḓ <a "
+"href=\"%(using_git_wiki_link)s \">ƒǿřķ ẏǿŭř ǿẇƞ ƀřȧƞƈħ</a>! ϱΐſ ǈ ǅſ 衋ǈẛϐſΰϱςϕſ"
+"衋鶱]"
 
 #: templates/pages/get-involved.html:31
 #, python-format
 msgid ""
-"Pick a bug off our <a href=\"%(easy_bug_list_link)s \">Easy Bugs List</a> and start hacking!"
-"<br><br> Fixed it? Your name will be in the <a href=\"%(mixxx_credits_link)s\">Mixxx credits</a>!"
+"Pick a bug off our <a href=\"%(easy_bug_list_link)s \">Easy Bugs List</a> and "
+"start hacking!<br><br> Fixed it? Your name will be in the <a "
+"href=\"%(mixxx_credits_link)s\">Mixxx credits</a>!"
 msgstr ""
-"[Ƥīƈķ ȧ ƀŭɠ ǿƒƒ ǿŭř <a href=\"%(easy_bug_list_link)s \">Ḗȧşẏ Ɓŭɠş Ŀīşŧ</a> ȧƞḓ şŧȧřŧ ħȧƈķīƞɠ!"
-"<br><br> Ƒīẋḗḓ īŧ? Ẏǿŭř ƞȧḿḗ ẇīŀŀ ƀḗ īƞ ŧħḗ <a href=\"%(mixxx_credits_link)s\">Ḿīẋẋẋ ƈřḗḓīŧş</a>! "
-"ΰϕϵẛ ϵ ϐǈϱ ϵϵſ ΐϵς ǋǅ 靐ΰΐϵϵϖǋϵǲ靐ϵϑ]"
+"[Ƥīƈķ ȧ ƀŭɠ ǿƒƒ ǿŭř <a href=\"%(easy_bug_list_link)s \">Ḗȧşẏ Ɓŭɠş Ŀīşŧ</a> ȧƞḓ "
+"şŧȧřŧ ħȧƈķīƞɠ!<br><br> Ƒīẋḗḓ īŧ? Ẏǿŭř ƞȧḿḗ ẇīŀŀ ƀḗ īƞ ŧħḗ <a "
+"href=\"%(mixxx_credits_link)s\">Ḿīẋẋẋ ƈřḗḓīŧş</a>! ΰϕϵẛ ϵ ϐǈϱ ϵϵſ ΐϵς ǋǅ 靐"
+"ΰΐϵϵϖǋϵǲ靐ϵϑ]"
 
 #: templates/pages/get-involved.html:34
 msgid ""
-"You don't even have to know C++. There are developers who got into Mixxx development while "
-"learning C++ along the way."
+"You don't even have to know C++. There are developers who got into Mixxx "
+"development while learning C++ along the way."
 msgstr ""
-"[Ẏǿŭ ḓǿƞ'ŧ ḗṽḗƞ ħȧṽḗ ŧǿ ķƞǿẇ Ƈ++. Ŧħḗřḗ ȧřḗ ḓḗṽḗŀǿƥḗřş ẇħǿ ɠǿŧ īƞŧǿ Ḿīẋẋẋ ḓḗṽḗŀǿƥḿḗƞŧ ẇħīŀḗ "
-"ŀḗȧřƞīƞɠ Ƈ++ ȧŀǿƞɠ ŧħḗ ẇȧẏ. ϖϖǲ 衋ϕϐϱı ıǈ衋ǋ ϰſſϰ]"
+"[Ẏǿŭ ḓǿƞ'ŧ ḗṽḗƞ ħȧṽḗ ŧǿ ķƞǿẇ Ƈ++. Ŧħḗřḗ ȧřḗ ḓḗṽḗŀǿƥḗřş ẇħǿ ɠǿŧ īƞŧǿ Ḿīẋẋẋ "
+"ḓḗṽḗŀǿƥḿḗƞŧ ẇħīŀḗ ŀḗȧřƞīƞɠ Ƈ++ ȧŀǿƞɠ ŧħḗ ẇȧẏ. ϖϖǲ 衋ϕϐϱı ıǈ衋ǋ ϰſſϰ]"
 
 #: templates/pages/get-involved.html:41
 msgid "Development Cycle in a Nutshell"
@@ -965,8 +1108,12 @@ msgstr "[Ŧħḗřḗ ȧřḗ ḿȧƞẏ ẇȧẏş ŧǿ ħḗŀƥ ǿŭŧ ȧş �
 
 #: templates/pages/get-involved.html:53
 #, python-format
-msgid "<a href=\"%(controller_wiki_link)s\">Create or improve mappings</a> for your controller."
-msgstr "[<a href=\"%(controller_wiki_link)s\">Ƈřḗȧŧḗ ǿř īḿƥřǿṽḗ ḿȧƥƥīƞɠş</a> ƒǿř ẏǿŭř ƈǿƞŧřǿŀŀḗř.]"
+msgid ""
+"<a href=\"%(controller_wiki_link)s\">Create or improve mappings</a> for your "
+"controller."
+msgstr ""
+"[<a href=\"%(controller_wiki_link)s\">Ƈřḗȧŧḗ ǿř īḿƥřǿṽḗ ḿȧƥƥīƞɠş</a> ƒǿř ẏǿŭř "
+"ƈǿƞŧřǿŀŀḗř.]"
 
 #: templates/pages/get-involved.html:56
 #, python-format
@@ -976,15 +1123,17 @@ msgstr "[<a href=\"%(bug_tracker_link)s\">Řḗƥǿřŧ ƀŭɠş</a> ȧş ẏǿ�
 #: templates/pages/get-involved.html:59
 #, python-format
 msgid "Help keep our <a href=\"%(mixxx_wiki_link)s\">Wiki</a> up-to-date."
-msgstr "[Ħḗŀƥ ķḗḗƥ ǿŭř <a href=\"%(mixxx_wiki_link)s\">Ẇīķī</a> ŭƥ-ŧǿ-ḓȧŧḗ. ǲϱ鶱ϐ ςϐϰ鶱]"
+msgstr ""
+"[Ħḗŀƥ ķḗḗƥ ǿŭř <a href=\"%(mixxx_wiki_link)s\">Ẇīķī</a> ŭƥ-ŧǿ-ḓȧŧḗ. ǲϱ鶱ϐ ςϐϰ鶱]"
 
 #: templates/pages/get-involved.html:62
 #, python-format
 msgid ""
-"Support other DJs with their technical questions on <a href=\"%(forum_link)s\">the forums</a>."
+"Support other DJs with their technical questions on <a "
+"href=\"%(forum_link)s\">the forums</a>."
 msgstr ""
-"[Şŭƥƥǿřŧ ǿŧħḗř ḒĴş ẇīŧħ ŧħḗīř ŧḗƈħƞīƈȧŀ ɋŭḗşŧīǿƞş ǿƞ <a href=\"%(forum_link)s\">ŧħḗ ƒǿřŭḿş</a>. 衋"
-"ϵǲǅϑ鶱ſ ϵǋϰǅſ ıϵı ǅΰǅϕ ΰΐΐ]"
+"[Şŭƥƥǿřŧ ǿŧħḗř ḒĴş ẇīŧħ ŧħḗīř ŧḗƈħƞīƈȧŀ ɋŭḗşŧīǿƞş ǿƞ <a "
+"href=\"%(forum_link)s\">ŧħḗ ƒǿřŭḿş</a>. 衋ϵǲǅϑ鶱ſ ϵǋϰǅſ ıϵı ǅΰǅϕ ΰΐΐ]"
 
 #: templates/pages/get-involved.html:65
 msgid "Promote Mixxx:"
@@ -992,17 +1141,22 @@ msgstr "[Ƥřǿḿǿŧḗ Ḿīẋẋẋ: ıϵςϑǋΰǈ ϰϖ]"
 
 #: templates/pages/get-involved.html:65
 msgid ""
-"Write an article about how you use Mixxx for your blog, or mention us when new releases come out. "
-"Any exposure on the web and in print helps our project grow, and is much appreciated!"
+"Write an article about how you use Mixxx for your blog, or mention us when new "
+"releases come out. Any exposure on the web and in print helps our project grow, "
+"and is much appreciated!"
 msgstr ""
-"[Ẇřīŧḗ ȧƞ ȧřŧīƈŀḗ ȧƀǿŭŧ ħǿẇ ẏǿŭ ŭşḗ Ḿīẋẋẋ ƒǿř ẏǿŭř ƀŀǿɠ, ǿř ḿḗƞŧīǿƞ ŭş ẇħḗƞ ƞḗẇ řḗŀḗȧşḗş ƈǿḿḗ ǿŭŧ. "
-"Ȧƞẏ ḗẋƥǿşŭřḗ ǿƞ ŧħḗ ẇḗƀ ȧƞḓ īƞ ƥřīƞŧ ħḗŀƥş ǿŭř ƥřǿĵḗƈŧ ɠřǿẇ, ȧƞḓ īş ḿŭƈħ ȧƥƥřḗƈīȧŧḗḓ! ǋẛϖΐſ ϕſ 衋"
-"ςΰǋςςǅ 靐ςϐΐ鶱 ΐϕϖ ẛǈ衋 ϐ靐]"
+"[Ẇřīŧḗ ȧƞ ȧřŧīƈŀḗ ȧƀǿŭŧ ħǿẇ ẏǿŭ ŭşḗ Ḿīẋẋẋ ƒǿř ẏǿŭř ƀŀǿɠ, ǿř ḿḗƞŧīǿƞ ŭş ẇħḗƞ ƞḗẇ "
+"řḗŀḗȧşḗş ƈǿḿḗ ǿŭŧ. Ȧƞẏ ḗẋƥǿşŭřḗ ǿƞ ŧħḗ ẇḗƀ ȧƞḓ īƞ ƥřīƞŧ ħḗŀƥş ǿŭř ƥřǿĵḗƈŧ ɠřǿẇ, "
+"ȧƞḓ īş ḿŭƈħ ȧƥƥřḗƈīȧŧḗḓ! ǋẛϖΐſ ϕſ 衋ςΰǋςςǅ 靐ςϐΐ鶱 ΐϕϖ ẛǈ衋 ϐ靐]"
 
 #: templates/pages/get-involved.html:68
 #, python-format
-msgid "<a href=\"%(photos_forum_link)s\">Post some photos</a> of you using Mixxx at a gig!"
-msgstr "[<a href=\"%(photos_forum_link)s\">Ƥǿşŧ şǿḿḗ ƥħǿŧǿş</a> ǿƒ ẏǿŭ ŭşīƞɠ Ḿīẋẋẋ ȧŧ ȧ ɠīɠ!]"
+msgid ""
+"<a href=\"%(photos_forum_link)s\">Post some photos</a> of you using Mixxx at a "
+"gig!"
+msgstr ""
+"[<a href=\"%(photos_forum_link)s\">Ƥǿşŧ şǿḿḗ ƥħǿŧǿş</a> ǿƒ ẏǿŭ ŭşīƞɠ Ḿīẋẋẋ ȧŧ ȧ "
+"ɠīɠ!]"
 
 #: templates/pages/get-involved.html:73
 msgid "Translators"
@@ -1010,25 +1164,28 @@ msgstr "[Ŧřȧƞşŀȧŧǿřş ϕΰẛΰǋııϕſϰ]"
 
 #: templates/pages/get-involved.html:75
 msgid ""
-"We're pleased to offer Mixxx in many languages. Our translations are entirely community provided, "
-"so we need your help to spread Mixxx with translations into more languages, as well as to update "
-"and ensure the accuracy of existing translations."
+"We're pleased to offer Mixxx in many languages. Our translations are entirely "
+"community provided, so we need your help to spread Mixxx with translations into "
+"more languages, as well as to update and ensure the accuracy of existing "
+"translations."
 msgstr ""
-"[Ẇḗ'řḗ ƥŀḗȧşḗḓ ŧǿ ǿƒƒḗř Ḿīẋẋẋ īƞ ḿȧƞẏ ŀȧƞɠŭȧɠḗş. Ǿŭř ŧřȧƞşŀȧŧīǿƞş ȧřḗ ḗƞŧīřḗŀẏ ƈǿḿḿŭƞīŧẏ ƥřǿṽīḓḗḓ, "
-"şǿ ẇḗ ƞḗḗḓ ẏǿŭř ħḗŀƥ ŧǿ şƥřḗȧḓ Ḿīẋẋẋ ẇīŧħ ŧřȧƞşŀȧŧīǿƞş īƞŧǿ ḿǿřḗ ŀȧƞɠŭȧɠḗş, ȧş ẇḗŀŀ ȧş ŧǿ ŭƥḓȧŧḗ "
-"ȧƞḓ ḗƞşŭřḗ ŧħḗ ȧƈƈŭřȧƈẏ ǿƒ ḗẋīşŧīƞɠ ŧřȧƞşŀȧŧīǿƞş. ſϱϰΐ鶱 ẛǅϕϵϱǅΐ ϑς 衋ςΰ靐ǈ ı靐ǅ鶱ǋ ϖǈ ϑẛϖ靐 ϰǈ鶱"
-"ϰǋı靐ǲ]"
+"[Ẇḗ'řḗ ƥŀḗȧşḗḓ ŧǿ ǿƒƒḗř Ḿīẋẋẋ īƞ ḿȧƞẏ ŀȧƞɠŭȧɠḗş. Ǿŭř ŧřȧƞşŀȧŧīǿƞş ȧřḗ ḗƞŧīřḗŀẏ "
+"ƈǿḿḿŭƞīŧẏ ƥřǿṽīḓḗḓ, şǿ ẇḗ ƞḗḗḓ ẏǿŭř ħḗŀƥ ŧǿ şƥřḗȧḓ Ḿīẋẋẋ ẇīŧħ ŧřȧƞşŀȧŧīǿƞş īƞŧǿ "
+"ḿǿřḗ ŀȧƞɠŭȧɠḗş, ȧş ẇḗŀŀ ȧş ŧǿ ŭƥḓȧŧḗ ȧƞḓ ḗƞşŭřḗ ŧħḗ ȧƈƈŭřȧƈẏ ǿƒ ḗẋīşŧīƞɠ "
+"ŧřȧƞşŀȧŧīǿƞş. ſϱϰΐ鶱 ẛǅϕϵϱǅΐ ϑς 衋ςΰ靐ǈ ı靐ǅ鶱ǋ ϖǈ ϑẛϖ靐 ϰǈ鶱ϰǋı靐ǲ]"
 
 #: templates/pages/get-involved.html:78
 #, python-format
 msgid ""
-"You can help translate by visiting our <a href=\"%(com_transifex_mixxxdj_link)s\">translations "
-"page</a>. To get help when translating, visit the <a href=\"%(i18n_forum_link)s\">Mixxx "
-"Localization forum</a>."
+"You can help translate by visiting our <a "
+"href=\"%(com_transifex_mixxxdj_link)s\">translations page</a>. To get help when "
+"translating, visit the <a href=\"%(i18n_forum_link)s\">Mixxx Localization "
+"forum</a>."
 msgstr ""
-"[Ẏǿŭ ƈȧƞ ħḗŀƥ ŧřȧƞşŀȧŧḗ ƀẏ ṽīşīŧīƞɠ ǿŭř <a href=\"%(com_transifex_mixxxdj_link)s\">ŧřȧƞşŀȧŧīǿƞş "
-"ƥȧɠḗ</a>. Ŧǿ ɠḗŧ ħḗŀƥ ẇħḗƞ ŧřȧƞşŀȧŧīƞɠ, ṽīşīŧ ŧħḗ <a href=\"%(i18n_forum_link)s\">Ḿīẋẋẋ "
-"Ŀǿƈȧŀīzȧŧīǿƞ ƒǿřŭḿ</a>. 靐靐ΰ ǋẛ衋 ϰ靐ǅΐ ΰϵΐǲςϱςǅǈ ǅΰ ǲςϵϑẛıϵ鶱 ǅϖı]"
+"[Ẏǿŭ ƈȧƞ ħḗŀƥ ŧřȧƞşŀȧŧḗ ƀẏ ṽīşīŧīƞɠ ǿŭř <a "
+"href=\"%(com_transifex_mixxxdj_link)s\">ŧřȧƞşŀȧŧīǿƞş ƥȧɠḗ</a>. Ŧǿ ɠḗŧ ħḗŀƥ ẇħḗƞ "
+"ŧřȧƞşŀȧŧīƞɠ, ṽīşīŧ ŧħḗ <a href=\"%(i18n_forum_link)s\">Ḿīẋẋẋ Ŀǿƈȧŀīzȧŧīǿƞ "
+"ƒǿřŭḿ</a>. 靐靐ΰ ǋẛ衋 ϰ靐ǅΐ ΰϵΐǲςϱςǅǈ ǅΰ ǲςϵϑẛıϵ鶱 ǅϖı]"
 
 #: templates/pages/get-involved.html:81
 msgid "Graphic Artists"
@@ -1057,13 +1214,14 @@ msgstr "[Ƥǿẇḗřƒŭŀ Ƒḗȧŧŭřḗş Ƒǿř Ȧŀŀ ḒĴş 鶱ϰϖϖǲ
 
 #: templates/pages/index.html:52
 msgid ""
-"Mixxx integrates the tools DJs need to perform creative live mixes with digital music files.<br /"
-">Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your "
-"style and techniques of mixing."
+"Mixxx integrates the tools DJs need to perform creative live mixes with digital "
+"music files.<br />Whether you are a new DJ with just a laptop or an experienced "
+"turntablist, Mixxx can support your style and techniques of mixing."
 msgstr ""
-"[Ḿīẋẋẋ īƞŧḗɠřȧŧḗş ŧħḗ ŧǿǿŀş ḒĴş ƞḗḗḓ ŧǿ ƥḗřƒǿřḿ ƈřḗȧŧīṽḗ ŀīṽḗ ḿīẋḗş ẇīŧħ ḓīɠīŧȧŀ ḿŭşīƈ ƒīŀḗş. "
-"Ẇħḗŧħḗř ẏǿŭ ȧřḗ ȧ ƞḗẇ ḒĴ ẇīŧħ ĵŭşŧ ȧ ŀȧƥŧǿƥ ǿř ȧƞ ḗẋƥḗřīḗƞƈḗḓ ŧŭřƞŧȧƀŀīşŧ, Ḿīẋẋẋ ƈȧƞ şŭƥƥǿřŧ ẏǿŭř "
-"şŧẏŀḗ ȧƞḓ ŧḗƈħƞīɋŭḗş ǿƒ ḿīẋīƞɠ. ϖϵϱǲϑ ǅǋ衋ϱǲΰǈıςǲ ſϐẛ ςςǅǅΐ ẛẛ鶱 ǅϱ靐ı ΐı 靐ΰ]"
+"[Ḿīẋẋẋ īƞŧḗɠřȧŧḗş ŧħḗ ŧǿǿŀş ḒĴş ƞḗḗḓ ŧǿ ƥḗřƒǿřḿ ƈřḗȧŧīṽḗ ŀīṽḗ ḿīẋḗş ẇīŧħ "
+"ḓīɠīŧȧŀ ḿŭşīƈ ƒīŀḗş. Ẇħḗŧħḗř ẏǿŭ ȧřḗ ȧ ƞḗẇ ḒĴ ẇīŧħ ĵŭşŧ ȧ ŀȧƥŧǿƥ ǿř ȧƞ "
+"ḗẋƥḗřīḗƞƈḗḓ ŧŭřƞŧȧƀŀīşŧ, Ḿīẋẋẋ ƈȧƞ şŭƥƥǿřŧ ẏǿŭř şŧẏŀḗ ȧƞḓ ŧḗƈħƞīɋŭḗş ǿƒ ḿīẋīƞɠ. "
+"ϖϵϱǲϑ ǅǋ衋ϱǲΰǈıςǲ ſϐẛ ςςǅǅΐ ẛẛ鶱 ǅϱ靐ı ΐı 靐ΰ]"
 
 #: templates/pages/index.html:56 templates/pages/index.html:57
 msgid "BPM, Key Detection & Sync"
@@ -1071,11 +1229,13 @@ msgstr "[ƁƤḾ, Ķḗẏ Ḓḗŧḗƈŧīǿƞ ȧƞḓ Şẏƞƈ]"
 
 #: templates/pages/index.html:59
 msgid ""
-"BPM and musical key detection help you find the perfect next track from your library. Use Sync "
-"Lock to match the tempo and beats of four songs for seamless mixing."
+"BPM and musical key detection help you find the perfect next track from your "
+"library. Use Sync Lock to match the tempo and beats of four songs for seamless "
+"mixing."
 msgstr ""
-"[ƁƤḾ ȧƞḓ ḿŭşīƈȧŀ ķḗẏ ḓḗŧḗƈŧīǿƞ ħḗŀƥ ẏǿŭ ƒīƞḓ ŧħḗ ƥḗřƒḗƈŧ ƞḗẋŧ ŧřȧƈķ ƒřǿḿ ẏǿŭř ŀīƀřȧřẏ. Ŭşḗ ḿȧşŧḗř "
-"şẏƞƈ ŧǿ ḿȧŧƈħ ŧħḗ ŧḗḿƥǿ ȧƞḓ ƀḗȧŧş ǿƒ ƒǿŭř şǿƞɠş ƒǿř şḗȧḿŀḗşş ḿīẋīƞɠ.]"
+"[ƁƤḾ ȧƞḓ ḿŭşīƈȧŀ ķḗẏ ḓḗŧḗƈŧīǿƞ ħḗŀƥ ẏǿŭ ƒīƞḓ ŧħḗ ƥḗřƒḗƈŧ ƞḗẋŧ ŧřȧƈķ ƒřǿḿ ẏǿŭř "
+"ŀīƀřȧřẏ. Ŭşḗ ḿȧşŧḗř şẏƞƈ ŧǿ ḿȧŧƈħ ŧħḗ ŧḗḿƥǿ ȧƞḓ ƀḗȧŧş ǿƒ ƒǿŭř şǿƞɠş ƒǿř "
+"şḗȧḿŀḗşş ḿīẋīƞɠ.]"
 
 #: templates/pages/index.html:64 templates/pages/index.html:65
 msgid "DJ Controller Support"
@@ -1083,13 +1243,13 @@ msgstr "[ḒĴ Ƈǿƞŧřǿŀŀḗř Şŭƥƥǿřŧ]"
 
 #: templates/pages/index.html:67
 msgid ""
-"Built-in mappings for DJ controller hardware gives you hands-on control of Mixxx's features. Use "
-"the programmable mapping system to customize your workflow and add support for any MIDI or HID "
-"device."
+"Built-in mappings for DJ controller hardware gives you hands-on control of "
+"Mixxx's features. Use the programmable mapping system to customize your "
+"workflow and add support for any MIDI or HID device."
 msgstr ""
-"[Ɓŭīŀŧ-īƞ ḿȧƥƥīƞɠş ƒǿř ḒĴ ƈǿƞŧřǿŀŀḗř ħȧřḓẇȧřḗ ɠīṽḗş ẏǿŭ ħȧƞḓş-ǿƞ ƈǿƞŧřǿŀ ǿƒ Ḿīẋẋẋ'ş ƒḗȧŧŭřḗş. Ŭşḗ "
-"ŧħḗ ƥřǿɠřȧḿḿȧƀŀḗ ḿȧƥƥīƞɠ şẏşŧḗḿ ŧǿ ƈŭşŧǿḿīzḗ ẏǿŭř ẇǿřķƒŀǿẇ ȧƞḓ ȧḓḓ şŭƥƥǿřŧ ƒǿř ȧƞẏ ḾĪḒĪ ǿř ĦĪḒ "
-"ḓḗṽīƈḗ.]"
+"[Ɓŭīŀŧ-īƞ ḿȧƥƥīƞɠş ƒǿř ḒĴ ƈǿƞŧřǿŀŀḗř ħȧřḓẇȧřḗ ɠīṽḗş ẏǿŭ ħȧƞḓş-ǿƞ ƈǿƞŧřǿŀ ǿƒ "
+"Ḿīẋẋẋ'ş ƒḗȧŧŭřḗş. Ŭşḗ ŧħḗ ƥřǿɠřȧḿḿȧƀŀḗ ḿȧƥƥīƞɠ şẏşŧḗḿ ŧǿ ƈŭşŧǿḿīzḗ ẏǿŭř "
+"ẇǿřķƒŀǿẇ ȧƞḓ ȧḓḓ şŭƥƥǿřŧ ƒǿř ȧƞẏ ḾĪḒĪ ǿř ĦĪḒ ḓḗṽīƈḗ.]"
 
 #: templates/pages/index.html:72 templates/pages/index.html:73
 msgid "Effects"
@@ -1097,11 +1257,11 @@ msgstr "[Ḗƒƒḗƈŧş]"
 
 #: templates/pages/index.html:75
 msgid ""
-"Add your unique spin to tracks with sound effects. Get creative by chaining multiple effects "
-"together and twisting all their knobs."
+"Add your unique spin to tracks with sound effects. Get creative by chaining "
+"multiple effects together and twisting all their knobs."
 msgstr ""
-"[Ȧḓḓ ẏǿŭř ŭƞīɋŭḗ şƥīƞ ŧǿ ŧřȧƈķş ẇīŧħ şǿŭƞḓ ḗƒƒḗƈŧş. Ɠḗŧ ƈřḗȧŧīṽḗ ƀẏ ƈħȧīƞīƞɠ ḿŭŀŧīƥŀḗ ḗƒƒḗƈŧş "
-"ŧǿɠḗŧħḗř ȧƞḓ ŧẇīşŧīƞɠ ȧŀŀ ŧħḗīř ķƞǿƀş.]"
+"[Ȧḓḓ ẏǿŭř ŭƞīɋŭḗ şƥīƞ ŧǿ ŧřȧƈķş ẇīŧħ şǿŭƞḓ ḗƒƒḗƈŧş. Ɠḗŧ ƈřḗȧŧīṽḗ ƀẏ ƈħȧīƞīƞɠ "
+"ḿŭŀŧīƥŀḗ ḗƒƒḗƈŧş ŧǿɠḗŧħḗř ȧƞḓ ŧẇīşŧīƞɠ ȧŀŀ ŧħḗīř ķƞǿƀş.]"
 
 #: templates/pages/index.html:80 templates/pages/index.html:81
 msgid "Vinyl Record Control"
@@ -1109,108 +1269,121 @@ msgstr "[Ṽīƞẏŀ Řḗƈǿřḓ Ƈǿƞŧřǿŀ ςǲϕϖϱ ϰϑẛΰ]"
 
 #: templates/pages/index.html:83
 msgid ""
-"Use turntables with timecode vinyl records to control playback and scratch your digital music "
-"files as if they were pressed on vinyl. Mix music vinyls into your set by toggling vinyl "
-"passthrough mode."
+"Use turntables with timecode vinyl records to control playback and scratch your "
+"digital music files as if they were pressed on vinyl. Mix music vinyls into "
+"your set by toggling vinyl passthrough mode."
 msgstr ""
-"[Ŭşḗ ŧŭřƞŧȧƀŀḗş ẇīŧħ ŧīḿḗƈǿḓḗ ṽīƞẏŀ řḗƈǿřḓş ŧǿ ƈǿƞŧřǿŀ ƥŀȧẏƀȧƈķ ȧƞḓ şƈřȧŧƈħ ẏǿŭř ḓīɠīŧȧŀ ḿŭşīƈ "
-"ƒīŀḗş ȧş īƒ ŧħḗẏ ẇḗřḗ ƥřḗşşḗḓ ǿƞ ṽīƞẏŀ. Ḿīẋ ḿŭşīƈ ṽīƞẏŀş īƞŧǿ ẏǿŭř şḗŧ ƀẏ ŧǿɠɠŀīƞɠ ṽīƞẏŀ "
-"ƥȧşşŧħřǿŭɠħ ḿǿḓḗ.]"
+"[Ŭşḗ ŧŭřƞŧȧƀŀḗş ẇīŧħ ŧīḿḗƈǿḓḗ ṽīƞẏŀ řḗƈǿřḓş ŧǿ ƈǿƞŧřǿŀ ƥŀȧẏƀȧƈķ ȧƞḓ şƈřȧŧƈħ "
+"ẏǿŭř ḓīɠīŧȧŀ ḿŭşīƈ ƒīŀḗş ȧş īƒ ŧħḗẏ ẇḗřḗ ƥřḗşşḗḓ ǿƞ ṽīƞẏŀ. Ḿīẋ ḿŭşīƈ ṽīƞẏŀş "
+"īƞŧǿ ẏǿŭř şḗŧ ƀẏ ŧǿɠɠŀīƞɠ ṽīƞẏŀ ƥȧşşŧħřǿŭɠħ ḿǿḓḗ.]"
 
-#: templates/pages/index.html:92
+#: templates/pages/index.html:91
 #, python-format
 msgid ""
-"See dozens <a href=\"%(features_link)s\">more features</a> or download Mixxx and start DJing now!"
+"See dozens <a href=\"%(features_link)s\">more features</a> or download Mixxx "
+"and start DJing now!"
 msgstr ""
-"[Şḗḗ <a href=\"%(features_link)s\">ḓǿzḗƞş ḿǿřḗ ƒḗȧŧŭřḗş</a> ǿř şŧȧřŧ ḓǿẇƞŀǿȧḓīƞɠ Ḿīẋẋẋ ƒǿř ƒřḗḗ "
-"ƞǿẇ]"
+"[Şḗḗ <a href=\"%(features_link)s\">ḓǿzḗƞş ḿǿřḗ ƒḗȧŧŭřḗş</a> ǿř şŧȧřŧ "
+"ḓǿẇƞŀǿȧḓīƞɠ Ḿīẋẋẋ ƒǿř ƒřḗḗ ƞǿẇ]"
 
-#: templates/pages/index.html:100
+#: templates/pages/index.html:99
 msgid "Free &amp; Open Source"
 msgstr "[Fr33 &amp; Op3n Sourc3]"
 
-#: templates/pages/index.html:102
+#: templates/pages/index.html:101
 msgid ""
-"Mixxx is free open-source software and entirely community-driven. There is no company behind Mixxx "
-"&mdash; the development is shouldered by passionate DJs and programmers that dedicate their free "
-"time to working on their favorite DJ software. Mixxx is and always will be free!"
+"Mixxx is free open-source software and entirely community-driven. There is no "
+"company behind Mixxx &mdash; the development is shouldered by passionate DJs "
+"and programmers that dedicate their free time to working on their favorite DJ "
+"software. Mixxx is and always will be free!"
 msgstr ""
-"[Mixxx is fr33 op3n-sourc3 softwar3 4nd 3ntir3ly community-driv3n. The3r3 is no comp4ny b3hind "
-"Mixxx &mdash; th3 d3v3lopment is should3r3d by passion4t3 DJs and progr4mm3rs th4t d3dicat3 th3ir "
-"fr33 time to working on th3ir favorit3 DJ softwar3. Mixxx is and alw4ys will be fr33!]"
+"[Mixxx is fr33 op3n-sourc3 softwar3 4nd 3ntir3ly community-driv3n. The3r3 is no "
+"comp4ny b3hind Mixxx &mdash; th3 d3v3lopment is should3r3d by passion4t3 DJs "
+"and progr4mm3rs th4t d3dicat3 th3ir fr33 time to working on th3ir favorit3 DJ "
+"softwar3. Mixxx is and alw4ys will be fr33!]"
 
-#: templates/pages/index.html:120
+#: templates/pages/index.html:119
 msgid "Latest News"
 msgstr "[L4t3st N3ws]"
 
-#: templates/pages/index.html:122
+#: templates/pages/index.html:121
 #, python-format
 msgid ""
-"To see a list of all news and announcements, head over to <a href=\"%(SITEURL)s/news\">our news "
-"page</a> or subscribe to the <a href=\"%(FEED_ATOM)s\">Atom feed</a>."
+"To see a list of all news and announcements, head over to <a href=\"%(SITEURL)s/"
+"news\">our news page</a> or subscribe to the <a href=\"%(FEED_ATOM)s\">Atom "
+"feed</a>."
 msgstr ""
-"[To s33 4 list of 4ll n3ws 4nd 4nnounc3m3nts, h34d ov3r to <a href=\"%(SITEURL)s/news\">our n3ws "
-"p4g3</a> or subscrib3 to th3 <a href=\"%(FEED_ATOM)s\">Atom f33d</a>.]"
+"[To s33 4 list of 4ll n3ws 4nd 4nnounc3m3nts, h34d ov3r to <a "
+"href=\"%(SITEURL)s/news\">our n3ws p4g3</a> or subscrib3 to th3 <a "
+"href=\"%(FEED_ATOM)s\">Atom f33d</a>.]"
 
-#: templates/pages/index.html:140
+#: templates/pages/index.html:139
 msgid "Friendly Community"
 msgstr "[Ƒřīḗƞḓŀẏ Ƈǿḿḿŭƞīŧẏ ϖϕı靐ϖϵſϖ ı]"
 
-#: templates/pages/index.html:142
+#: templates/pages/index.html:141
 msgid ""
-"Mixxx is developed by an international community of DJs, programmers, and artists. Because Mixxx "
-"is <b>free (<a href=\"https://www.gnu.org/philosophy/free-sw.html\">as in freedom</a> and price), "
-"open source</b> software, anyone can contribute to make Mixxx even better&mdash;including you!"
+"Mixxx is developed by an international community of DJs, programmers, and "
+"artists. Because Mixxx is <b>free (<a href=\"https://www.gnu.org/philosophy/"
+"free-sw.html\">as in freedom</a> and price), open source</b> software, anyone "
+"can contribute to make Mixxx even better&mdash;including you!"
 msgstr ""
-"[Ḿīẋẋẋ īş ḓḗṽḗŀǿƥḗḓ ƀẏ ȧƞ īƞŧḗřƞȧŧīǿƞȧŀ ƈǿḿḿŭƞīŧẏ ǿƒ ḒĴş, ƥřǿɠřȧḿḿḗřş, ȧƞḓ ȧřŧīşŧş. Ɓḗƈȧŭşḗ Ḿīẋẋẋ "
-"īş <b>ƒřḗḗ (<a href=\"https://www.gnu.org/philosophy/free-sw.html\">ȧş īƞ ƒřḗḗḓǿḿ</a> ȧƞḓ ƥřīƈḗ), "
-"ǿƥḗƞ şǿŭřƈḗ</b> şǿƒŧẇȧřḗ, ȧƞẏǿƞḗ ƈȧƞ ƈǿƞŧřīƀŭŧḗ ŧǿ ḿȧķḗ Ḿīẋẋẋ ḗṽḗƞ ƀḗŧŧḗř&mdash;īƞƈŀŭḓīƞɠ ẏǿŭ! 衋"
-"ϖϱϖǅ ϰϖ ΐϖǋ鶱ϰϖςı靐 ǲ鶱 ǅϖ ϑ靐ẛΰϖſ鶱ẛϱϖϕǅǲ ǈǅΰẛϐϑǋϑϑ ϐ衋 ǲǈ]"
+"[Ḿīẋẋẋ īş ḓḗṽḗŀǿƥḗḓ ƀẏ ȧƞ īƞŧḗřƞȧŧīǿƞȧŀ ƈǿḿḿŭƞīŧẏ ǿƒ ḒĴş, ƥřǿɠřȧḿḿḗřş, ȧƞḓ "
+"ȧřŧīşŧş. Ɓḗƈȧŭşḗ Ḿīẋẋẋ īş <b>ƒřḗḗ (<a href=\"https://www.gnu.org/philosophy/"
+"free-sw.html\">ȧş īƞ ƒřḗḗḓǿḿ</a> ȧƞḓ ƥřīƈḗ), ǿƥḗƞ şǿŭřƈḗ</b> şǿƒŧẇȧřḗ, ȧƞẏǿƞḗ "
+"ƈȧƞ ƈǿƞŧřīƀŭŧḗ ŧǿ ḿȧķḗ Ḿīẋẋẋ ḗṽḗƞ ƀḗŧŧḗř&mdash;īƞƈŀŭḓīƞɠ ẏǿŭ! 衋ϖϱϖǅ ϰϖ ΐϖǋ鶱"
+"ϰϖςı靐 ǲ鶱 ǅϖ ϑ靐ẛΰϖſ鶱ẛϱϖϕǅǲ ǈǅΰẛϐϑǋϑϑ ϐ衋 ǲǈ]"
 
-#: templates/pages/index.html:146
+#: templates/pages/index.html:145
 #, python-format
 msgid ""
-"You can get involved with Mixxx today by <a href=\"%(github_issues)s\">reporting bugs and "
-"suggesting features</a>, <a href=\"%(mapping_link)s\">making a controller mapping</a>, <a "
+"You can get involved with Mixxx today by <a "
+"href=\"%(github_issues)s\">reporting bugs and suggesting features</a>, <a "
+"href=\"%(mapping_link)s\">making a controller mapping</a>, <a "
 "href=\"%(create_a_branch_link)s\">adding features &amp; fixing bugs</a>, <a "
-"href=\"%(help_with_translations_link)s\">helping with translations</a>, or working on one of our "
-"other <a href=\"%(starter_tasks_link)s\">starter tasks</a>."
+"href=\"%(help_with_translations_link)s\">helping with translations</a>, or "
+"working on one of our other <a href=\"%(starter_tasks_link)s\">starter tasks</"
+"a>."
 msgstr ""
-"[ Ẏǿŭ ƈȧƞ ɠḗŧ īƞṽǿŀṽḗḓ ẇīŧħ Ḿīẋẋẋ ŧǿḓȧẏ ƀẏ <a href=\"%(github_issues)s\">řḗƥǿřŧīƞɠ ƀŭɠş ȧƞḓ "
-"şŭɠɠḗşŧīƞɠ ƒḗȧŧŭřḗş</a>, <a href=\"%(mapping_link)s\">ḿȧķīƞɠ ȧ ƈǿƞŧřǿŀŀḗř ḿȧƥƥīƞɠ</a>, <a "
+"[ Ẏǿŭ ƈȧƞ ɠḗŧ īƞṽǿŀṽḗḓ ẇīŧħ Ḿīẋẋẋ ŧǿḓȧẏ ƀẏ <a "
+"href=\"%(github_issues)s\">řḗƥǿřŧīƞɠ ƀŭɠş ȧƞḓ şŭɠɠḗşŧīƞɠ ƒḗȧŧŭřḗş</a>, <a "
+"href=\"%(mapping_link)s\">ḿȧķīƞɠ ȧ ƈǿƞŧřǿŀŀḗř ḿȧƥƥīƞɠ</a>, <a "
 "href=\"%(create_a_branch_link)s\">ȧḓḓīƞɠ ƒḗȧŧŭřḗş &amp; ƒīẋīƞɠ ƀŭɠş</a>, <a "
-"href=\"%(help_with_translations_link)s\">ħḗŀƥīƞɠ ẇīŧħ ŧřȧƞşŀȧŧīǿƞş</a>, ǿř ẇǿřķīƞɠ ǿƞ ǿƞḗ ǿƒ ǿŭř "
-"ǿŧħḗř <a href=\"%(starter_tasks_link)s\">şŧȧřŧḗř ŧȧşķş</a>. ϐςẛ ϰ靐鶱 ΐǈ靐 ǋΐſΰıϖϐϰ 靐ϱǅϕ ǲΰ鶱ǋΰ "
-"ϰϵϖς鶱 ſǋ ϰϖ 衋ǲϕıΐǈϵǈϖϰϕϰ鶱ςẛ鶱ǲǲıΰΰǲſǈΐẛϐǅϑΐϐǲςΰ]"
+"href=\"%(help_with_translations_link)s\">ħḗŀƥīƞɠ ẇīŧħ ŧřȧƞşŀȧŧīǿƞş</a>, ǿř "
+"ẇǿřķīƞɠ ǿƞ ǿƞḗ ǿƒ ǿŭř ǿŧħḗř <a href=\"%(starter_tasks_link)s\">şŧȧřŧḗř ŧȧşķş</"
+"a>. ϐςẛ ϰ靐鶱 ΐǈ靐 ǋΐſΰıϖϐϰ 靐ϱǅϕ ǲΰ鶱ǋΰ ϰϵϖς鶱 ſǋ ϰϖ 衋ǲϕıΐǈϵǈϖϰϕϰ鶱ςẛ鶱"
+"ǲǲıΰΰǲſǈΐẛϐǅϑΐϐǲςΰ]"
 
-#: templates/pages/index.html:155
+#: templates/pages/index.html:154
 msgid "#1 Top Free Mac App Worldwide"
 msgstr "[#1 Ŧǿƥ Ƒřḗḗ Ḿȧƈ Ȧƥƥ Ẇǿřŀḓẇīḓḗ]"
 
-#: templates/pages/index.html:157 templates/pages/index.html:174
+#: templates/pages/index.html:156 templates/pages/index.html:173
 msgid "February 2011"
 msgstr "[Ƒḗƀřŭȧřẏ 2011 ϕǈǈǲϰ鶱ſς ϵ]"
 
-#: templates/pages/index.html:166
+#: templates/pages/index.html:165
 msgid "Free Pick of the Month"
 msgstr "[Ƒřḗḗ Ƥīƈķ ǿƒ ŧħḗ Ḿǿƞŧħ ſϕſẛ ϖΐ鶱ϵ]"
 
-#: templates/pages/index.html:167
+#: templates/pages/index.html:166
 msgid "September 2007"
 msgstr "[Şḗƥŧḗḿƀḗř 2007 ǅϰǈǈΐǅϱǲẛ]"
 
-#: templates/pages/index.html:173
+#: templates/pages/index.html:172
 msgid "\"The coolest open source<br>application ever?\""
 msgstr "[\"Ŧħḗ ƈǿǿŀḗşŧ ǿƥḗƞ şǿŭřƈḗ<br>ȧƥƥŀīƈȧŧīǿƞ ḗṽḗř?\"]"
 
 #: templates/pages/press.html:13
 #, python-format
 msgid ""
-"If you want to report on Mixxx and like to get information or interviews, please contact us at <a "
-"href=\"%(project_manager_mail_link)s\">press@mixxx.org</a>. We won't bite, we promise."
+"If you want to report on Mixxx and like to get information or interviews, "
+"please contact us at <a href=\"%(project_manager_mail_link)s\">press@mixxx.org</"
+"a>. We won't bite, we promise."
 msgstr ""
-"[Ƥŀḗȧşḗ ƈǿƞŧȧƈŧ ŭş ȧŧ <a href=\"%(project_manager_mail_link)s\">ƥřḗşş@ḿīẋẋẋ.ǿřɠ</a> ƒǿř "
-"īƞƒǿřḿȧŧīǿƞ ǿř īƞŧḗřṽīḗẇş. Ẇḗ ẇǿƞ'ŧ ƀīŧḗ, ẇḗ ƥřǿḿīşḗ. ǅ鶱ǋϵǲς ϑϖΰǅıǈϵ ςς ΐϖ ǅǈ ΰ]"
+"[Ƥŀḗȧşḗ ƈǿƞŧȧƈŧ ŭş ȧŧ <a "
+"href=\"%(project_manager_mail_link)s\">ƥřḗşş@ḿīẋẋẋ.ǿřɠ</a> ƒǿř īƞƒǿřḿȧŧīǿƞ ǿř "
+"īƞŧḗřṽīḗẇş. Ẇḗ ẇǿƞ'ŧ ƀīŧḗ, ẇḗ ƥřǿḿīşḗ. ǅ鶱ǋϵǲς ϑϖΰǅıǈϵ ςς ΐϖ ǅǈ ΰ]"
 
 #: templates/pages/press.html:18
 msgid "Logo"
@@ -1272,10 +1445,6 @@ msgstr "[2018-01-15:]"
 msgid "2018-10-25:"
 msgstr "[2018-10-25:]"
 
-#: templates/pages/screenshots.html:3 templates/pages/screenshots.html:7
-msgid "Screenshots"
-msgstr "[Řḗƒḗřḗƞƈḗ Şƈřḗḗƞşħǿŧş: ϕıǋǅ衋ǋϕ衋靐]"
-
 #: templates/pages/screenshots.html:9
 msgid "Here you can find some screenshots of Mixxx' user interface."
 msgstr "[H3r3 you c4n find som3 scr33nshots of Mixxx' us3r int3rf4ce.]"
@@ -1296,13 +1465,9 @@ msgstr "[Ḿīẋẋẋ ƤƤȦ ẛς鶱ẛϰ ςςǅ]"
 msgid "Mixxx 2.2"
 msgstr "[Ḿīẋẋẋ ƤƤȦ ẛς鶱ẛϰ ςςǅ]"
 
-#: templates/pages/support.html:3
-msgid "Support"
-msgstr "[Şŭƥƥǿřŧ 鶱ϰϵςςϕǅ]"
-
 #: templates/pages/support.html:7
 msgid "Support &amp; Community"
-msgstr "[Şŭƥƥǿřŧ &amp; Ƈǿḿḿŭƞīŧẏ 鶱ϵϑϑϵϐǋ ǋϕ]"
+msgstr "[Şŭƥƥǿřŧ &amp; Ƈǿḿḿŭƞīŧẏ]"
 
 #: templates/pages/support.html:11
 msgid "User Manual"
@@ -1311,32 +1476,32 @@ msgstr "[Ŭşḗř Ḿȧƞŭȧŀ ϵϱǲǅ ΰΐϱǋǋ]"
 #: templates/pages/support.html:13
 #, python-format
 msgid ""
-"The <a href=\"%(manual_latest_link)s\">Mixxx Manual</a> provides an overview of Mixxx's user "
-"interface, information about configuration and hardware, and much more. It also contains useful "
-"information for beginners under <a href=\"%(manual_beginner_link)s\">DJing with Mixxx</a>."
+"The <a href=\"%(manual_latest_link)s\">Mixxx Manual</a> provides an overview of "
+"Mixxx's user interface, information about configuration and hardware, and much "
+"more. It also contains useful information for beginners under <a "
+"href=\"%(manual_beginner_link)s\">DJing with Mixxx</a>."
 msgstr ""
-"[Ŧħḗ <a href=\"%(manual_latest_link)s\">Ḿīẋẋẋ Ḿȧƞŭȧŀ</a> ƥřǿṽīḓḗş ȧƞ ǿṽḗřṽīḗẇ ǿƒ Ḿīẋẋẋ'ş ŭşḗř "
-"īƞŧḗřƒȧƈḗ, īƞƒǿřḿȧŧīǿƞ ȧƀǿŭŧ <b>ƈǿƞƒīɠŭřȧŧīǿƞ</b> ȧƞḓ ħȧřḓẇȧřḗ, ȧƞḓ ḿŭƈħ ḿǿřḗ. Īŧ ȧŀşǿ ƈǿƞŧȧīƞş "
-"ŭşḗƒŭŀ īƞƒǿřḿȧŧīǿƞ ƒǿř <b>ƀḗɠīƞƞḗřş</b> ŭƞḓḗř <a href=\"%(manual_beginner_link)s\">ḒĴīƞɠ ẇīŧħ "
-"Ḿīẋẋẋ</a>. ϵı靐 靐ϰ ϱẛǋǅϖǋϵǈ靐ǲΰſ鶱ϖϱΰϖΰςϑıẛ衋靐ϰΰ衋ǲſϐΐϕſϕϑǈϑ ǲıǋϰǋϐǋǈ靐ϵ]"
-
-#: templates/pages/support.html:18
-msgid "Wiki"
-msgstr "[Ẇīķī ϵΰϑǋ]"
+"[Ŧħḗ <a href=\"%(manual_latest_link)s\">Ḿīẋẋẋ Ḿȧƞŭȧŀ</a> ƥřǿṽīḓḗş ȧƞ ǿṽḗřṽīḗẇ "
+"ǿƒ Ḿīẋẋẋ'ş ŭşḗř īƞŧḗřƒȧƈḗ, īƞƒǿřḿȧŧīǿƞ ȧƀǿŭŧ <b>ƈǿƞƒīɠŭřȧŧīǿƞ</b> ȧƞḓ ħȧřḓẇȧřḗ, "
+"ȧƞḓ ḿŭƈħ ḿǿřḗ. Īŧ ȧŀşǿ ƈǿƞŧȧīƞş ŭşḗƒŭŀ īƞƒǿřḿȧŧīǿƞ ƒǿř <b>ƀḗɠīƞƞḗřş</b> ŭƞḓḗř "
+"<a href=\"%(manual_beginner_link)s\">ḒĴīƞɠ ẇīŧħ Ḿīẋẋẋ</a>. ϵı靐 靐ϰ ϱẛǋǅϖǋϵǈ靐"
+"ǲΰſ鶱ϖϱΰϖΰςϑıẛ衋靐ϰΰ衋ǲſϐΐϕſϕϑǈϑ ǲıǋϰǋϐǋǈ靐ϵ]"
 
 #: templates/pages/support.html:20
 #, python-format
 msgid ""
-"The <a href=\"%(mixxx_wiki_link)s\">Mixxx Wiki</a> has a wealth of useful documentation for users "
-"and developers. New to it all and not sure how to get started? Checkout the <a "
-"href=\"%(beginner_dj_links)s\">Beginner DJ Links</a>. Running into technical issues? See the <a "
+"The <a href=\"%(mixxx_wiki_link)s\">Mixxx Wiki</a> has a wealth of useful "
+"documentation for users and developers. New to it all and not sure how to get "
+"started? Checkout the <a href=\"%(beginner_dj_links)s\">Beginner DJ Links</a>. "
+"Running into technical issues? See the <a "
 "href=\"%(wiki_troubleshooting)s\">Troubleshooting</a> guide."
 msgstr ""
-"[Ŧħḗ <a href=\"%(mixxx_wiki_link)s\">Ḿīẋẋẋ Ẇīķī</a> ħȧş ȧ ẇḗȧŀŧħ ǿƒ ŭşḗƒŭŀ ḓǿƈŭḿḗƞŧȧŧīǿƞ ƒǿř ŭşḗřş "
-"ȧƞḓ ḓḗṽḗŀǿƥḗřş. Ƞḗẇ ŧǿ īŧ ȧŀŀ ȧƞḓ ƞǿŧ şŭřḗ ħǿẇ ŧǿ ɠḗŧ şŧȧřŧḗḓ? Ƈħḗƈķǿŭŧ ŧħḗ <a "
-"href=\"%(beginner_dj_links)s\">Ɓḗɠīƞƞḗř ḒĴ Ŀīƞķş</a>. Řŭƞƞīƞɠ īƞŧǿ ŧḗƈħƞīƈȧŀ īşşŭḗş? Şḗḗ ŧħḗ <a "
-"href=\"%(wiki_troubleshooting)s\">Ŧřǿŭƀŀḗşħǿǿŧīƞɠ</a> ɠŭīḓḗ.  ΐϱẛ ϑς ıǲϰϑϑ衋鶱ſϵſϵſſ靐ϱ鶱"
-"ǈϰǋϵǅϑϱϕǋſϰ靐ϱϐϵϱϕΐ ΐϱẛΰǲϰϵǋ ẛϱǅ ς ϖΰı鶱ϱ衋]"
+"[Ŧħḗ <a href=\"%(mixxx_wiki_link)s\">Ḿīẋẋẋ Ẇīķī</a> ħȧş ȧ ẇḗȧŀŧħ ǿƒ ŭşḗƒŭŀ "
+"ḓǿƈŭḿḗƞŧȧŧīǿƞ ƒǿř ŭşḗřş ȧƞḓ ḓḗṽḗŀǿƥḗřş. Ƞḗẇ ŧǿ īŧ ȧŀŀ ȧƞḓ ƞǿŧ şŭřḗ ħǿẇ ŧǿ ɠḗŧ "
+"şŧȧřŧḗḓ? Ƈħḗƈķǿŭŧ ŧħḗ <a href=\"%(beginner_dj_links)s\">Ɓḗɠīƞƞḗř ḒĴ Ŀīƞķş</a>. "
+"Řŭƞƞīƞɠ īƞŧǿ ŧḗƈħƞīƈȧŀ īşşŭḗş? Şḗḗ ŧħḗ <a "
+"href=\"%(wiki_troubleshooting)s\">Ŧřǿŭƀŀḗşħǿǿŧīƞɠ</a> ɠŭīḓḗ.  ΐϱẛ ϑς ıǲϰϑϑ衋鶱"
+"ſϵſϵſſ靐ϱ鶱ǈϰǋϵǅϑϱϕǋſϰ靐ϱϐϵϱϕΐ ΐϱẛΰǲϰϵǋ ẛϱǅ ς ϖΰı鶱ϱ衋]"
 
 #: templates/pages/support.html:25
 msgid "Community Forums"
@@ -1345,25 +1510,23 @@ msgstr "[Ƈǿḿḿŭƞīŧẏ Ƒǿřŭḿş]"
 #: templates/pages/support.html:27
 #, python-format
 msgid ""
-"If you need help setting up or using Mixxx, ask in the <a href=\"%(forums_link)s\">Mixxx Community "
-"Forums</a>. This is also the place to find or share unofficial controller mappings, keyboard "
-"mappings, and skins."
+"If you need help setting up or using Mixxx, ask in the <a "
+"href=\"%(forums_link)s\">Mixxx Community Forums</a>. This is also the place to "
+"find or share unofficial controller mappings, keyboard mappings, and skins."
 msgstr ""
-"[If y-o0u n33d h3lp s3tting up or usLng Mixxx, 4sk in th3 <a href=\"%(forums_link)s\">MLxxx "
-"CommunLty F0rums</a>. ThLs is als0 th3 pl4c3 to find or sh4r3 unoffici4l controll3r m4ppings, "
-"k3ybo4rd m4ppings, 4nd skins.]"
-
-#: templates/pages/support.html:32
-msgid "Bug Tracker"
-msgstr "[Ɓŭɠ Ŧřȧƈķḗř]"
+"[If y-o0u n33d h3lp s3tting up or usLng Mixxx, 4sk in th3 <a "
+"href=\"%(forums_link)s\">MLxxx CommunLty F0rums</a>. ThLs is als0 th3 pl4c3 to "
+"find or sh4r3 unoffici4l controll3r m4ppings, k3ybo4rd m4ppings, 4nd skins.]"
 
 #: templates/pages/support.html:34
 #, python-format
 msgid ""
-"Please report any bugs you find to our <a href=\" %(bug_tracker_link)s\">Bug Tracker</a>. The bug "
-"tracker gives us a centralized place to pool our information on bugs, and prevents us from getting "
-"disorganized and forgetting about them."
+"Please report any bugs you find to our <a href=\" %(bug_tracker_link)s\">Bug "
+"Tracker</a>. The bug tracker gives us a centralized place to pool our "
+"information on bugs, and prevents us from getting disorganized and forgetting "
+"about them."
 msgstr ""
-"[Ƥŀḗȧşḗ řḗƥǿřŧ ȧƞẏ ƀŭɠş ẏǿŭ ƒīƞḓ ŧǿ ǿŭř <a href=\" %(bug_tracker_link)s\">Ɓŭɠ Ŧřȧƈķḗř</a>. Ŧħḗ ƀŭɠ "
-"ŧřȧƈķḗř ɠīṽḗş ŭş ȧ ƈḗƞŧřȧŀīzḗḓ ƥŀȧƈḗ ŧǿ ƥǿǿŀ ǿŭř īƞƒǿřḿȧŧīǿƞ ǿƞ ƀŭɠş, ȧƞḓ ƥřḗṽḗƞŧş ŭş ƒřǿḿ ɠḗŧŧīƞɠ "
-"ḓīşǿřɠȧƞīzḗḓ ȧƞḓ ƒǿřɠḗŧŧīƞɠ ȧƀǿŭŧ ŧħḗḿ. 鶱衋ϕǋǈϖ ϖ衋ϵϰϕǋ ϱϐϕ ϰϱſẛ ǲΐ靐 ſ鶱ΐϑ ıǈ ǋ衋鶱 ΐϵ ϑϵ]"
+"[Ƥŀḗȧşḗ řḗƥǿřŧ ȧƞẏ ƀŭɠş ẏǿŭ ƒīƞḓ ŧǿ ǿŭř <a href=\" %(bug_tracker_link)s\">Ɓŭɠ "
+"Ŧřȧƈķḗř</a>. Ŧħḗ ƀŭɠ ŧřȧƈķḗř ɠīṽḗş ŭş ȧ ƈḗƞŧřȧŀīzḗḓ ƥŀȧƈḗ ŧǿ ƥǿǿŀ ǿŭř "
+"īƞƒǿřḿȧŧīǿƞ ǿƞ ƀŭɠş, ȧƞḓ ƥřḗṽḗƞŧş ŭş ƒřǿḿ ɠḗŧŧīƞɠ ḓīşǿřɠȧƞīzḗḓ ȧƞḓ ƒǿřɠḗŧŧīƞɠ "
+"ȧƀǿŭŧ ŧħḗḿ. 鶱衋ϕǋǈϖ ϖ衋ϵϰϕǋ ϱϐϕ ϰϱſẛ ǲΐ靐 ſ鶱ΐϑ ıǈ ǋ衋鶱 ΐϵ ϑϵ]"

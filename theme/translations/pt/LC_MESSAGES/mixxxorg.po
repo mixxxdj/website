@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mixxx DJ website\n"
 "Report-Msgid-Bugs-To: https://github.com/mixxxdj/mixxx/issues/\n"
-"POT-Creation-Date: 2025-07-12 16:12+0200\n"
+"POT-Creation-Date: 2025-07-14 15:21+0200\n"
 "PO-Revision-Date: 2015-05-14 03:50+0000\n"
 "Last-Translator: Léo <leonardoleozinho576@gmail.com>, 2025\n"
 "Language: pt_BR\n"
@@ -48,25 +48,133 @@ msgstr ""
 msgid "Donate"
 msgstr ""
 
-#: templates/footer.html:54
+#: templates/footer.html:5
+#, fuzzy
+msgid "Pages"
+msgstr "Imprensa"
+
+#: templates/footer.html:7
+msgid "Overview"
+msgstr ""
+
+#: templates/footer.html:8 templates/navbar.html:19
+#: templates/pages/features.html:3
+msgid "Features"
+msgstr "Funcionalidades"
+
+#: templates/footer.html:9 templates/pages/support.html:3
+msgid "Support"
+msgstr "Suporte"
+
+#: templates/footer.html:10 templates/navbar.html:48
+#: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
+msgid "Get Involved"
+msgstr "Envolva-se"
+
+#: templates/footer.html:14
+#, fuzzy
+msgid "Community"
+msgstr "Fóruns da Comunidade"
+
+#: templates/footer.html:16 templates/navbar.html:39
+msgid "Forums"
+msgstr ""
+
+#: templates/footer.html:44
+#, fuzzy
+msgid "About"
+msgstr "Sobre o Mixx"
+
+#: templates/footer.html:46 templates/index.html:3 templates/navbar.html:13
+msgid "News"
+msgstr ""
+
+#: templates/footer.html:46
+msgid "Archives"
+msgstr ""
+
+#: templates/footer.html:46
+msgid "Feed"
+msgstr ""
+
+#: templates/footer.html:47 templates/navbar.html:25
+#: templates/pages/discover.html:3 templates/pages/press.html:3
+#: templates/pages/press.html:11
+msgid "Press"
+msgstr "Imprensa"
+
+#: templates/footer.html:48
+#, fuzzy
+msgid "Contact"
+msgstr "Contato"
+
+#: templates/footer.html:49
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/footer.html:50 templates/navbar.html:45
+#: templates/pages/support.html:18
+msgid "Wiki"
+msgstr "Wiki"
+
+#: templates/footer.html:57
 #, fuzzy
 msgid "Site Language"
 msgstr "Suporte Nativo de Linguagem"
 
-#: templates/index.html:3
-msgid "News"
+#: templates/footer.html:71 templates/pages/contact.html:20
+#, fuzzy
+msgid "Mixxx Development Team"
+msgstr "Equipe de Desenvolvimento do Mixxx 2.0.0"
+
+#: templates/footer.html:72
+#, fuzzy
+msgid "Logo by"
+msgstr "Blog"
+
+#: templates/footer.html:73
+msgid "This site is powered by"
 msgstr ""
 
 #: templates/index.html:6
 msgid "News and Announcements"
 msgstr ""
 
-#: templates/index.html:48 templates/pages/index.html:131
+#: templates/index.html:48 templates/pages/index.html:130
 #, fuzzy
 msgid "Read More"
 msgstr "Leia mais"
 
-#: templates/navbar.html:28 templates/pages/index.html:107
+#: templates/navbar.html:16
+msgid "Discover"
+msgstr ""
+
+#: templates/navbar.html:22 templates/pages/screenshots.html:3
+#: templates/pages/screenshots.html:7
+#, fuzzy
+msgid "Screenshots"
+msgstr "Captura de ecrã de referência:"
+
+#: templates/navbar.html:28
+#, fuzzy
+msgid "Contact & Team"
+msgstr "Contato"
+
+#: templates/navbar.html:33
+#, fuzzy
+msgid "Support & Community"
+msgstr "Suporte &amp; Comunidade"
+
+#: templates/navbar.html:36
+#, fuzzy
+msgid "Manual"
+msgstr "Manual do Usuário"
+
+#: templates/navbar.html:42 templates/pages/support.html:32
+msgid "Bug Tracker"
+msgstr "Rastreador de Bugs"
+
+#: templates/navbar.html:54 templates/pages/index.html:106
 #, fuzzy
 msgid "Download"
 msgstr "Baixar"
@@ -112,11 +220,6 @@ msgid ""
 "href=\"%(project_manager_link)s\">press@mixxx.org</a>."
 msgstr ""
 
-#: templates/pages/contact.html:20
-#, fuzzy
-msgid "Mixxx Development Team"
-msgstr "Equipe de Desenvolvimento do Mixxx 2.0.0"
-
 #: templates/pages/contact.html:22
 #, python-format
 msgid ""
@@ -152,11 +255,6 @@ msgid ""
 "fantastic.<br/><br/>Lastly, we'd like to thank the many musicians and DJs"
 " that have helped in designing Mixxx."
 msgstr ""
-
-#: templates/pages/discover.html:3 templates/pages/press.html:3
-#: templates/pages/press.html:11
-msgid "Press"
-msgstr "Imprensa"
 
 #: templates/pages/discover.html:7
 msgid "About Mixxx"
@@ -311,7 +409,7 @@ msgstr ""
 msgid "View Source Code on GitHub"
 msgstr ""
 
-#: templates/pages/download.html:49 templates/pages/index.html:113
+#: templates/pages/download.html:49 templates/pages/index.html:112
 msgid "Source Code"
 msgstr "Código-fonte"
 
@@ -449,10 +547,6 @@ msgstr "Nós lamentamos! "
 #, fuzzy
 msgid "The page <strong id=\"error-path\"></strong> couldn't be found."
 msgstr "A página <b id=\"url\"></b> não pôde ser encontrada."
-
-#: templates/pages/features.html:3
-msgid "Features"
-msgstr "Funcionalidades"
 
 #: templates/pages/features.html:11
 msgid "Everything You Need, However You DJ"
@@ -781,10 +875,6 @@ msgid ""
 "href=\"%(com_transifex_mixxxdj_link)s\">Translation overview</a> page."
 msgstr ""
 
-#: templates/pages/get-involved.html:3 templates/pages/get-involved.html:7
-msgid "Get Involved"
-msgstr "Envolva-se"
-
 #: templates/pages/get-involved.html:8
 msgid "Not a coder? Scroll down!"
 msgstr "Não é programador? Role para baixo!"
@@ -1007,18 +1097,18 @@ msgid ""
 "music vinyls into your set by toggling vinyl passthrough mode."
 msgstr ""
 
-#: templates/pages/index.html:92
+#: templates/pages/index.html:91
 #, python-format
 msgid ""
 "See dozens <a href=\"%(features_link)s\">more features</a> or download "
 "Mixxx and start DJing now!"
 msgstr ""
 
-#: templates/pages/index.html:100
+#: templates/pages/index.html:99
 msgid "Free &amp; Open Source"
 msgstr ""
 
-#: templates/pages/index.html:102
+#: templates/pages/index.html:101
 msgid ""
 "Mixxx is free open-source software and entirely community-driven. There "
 "is no company behind Mixxx &mdash; the development is shouldered by "
@@ -1026,11 +1116,11 @@ msgid ""
 "on their favorite DJ software. Mixxx is and always will be free!"
 msgstr ""
 
-#: templates/pages/index.html:120
+#: templates/pages/index.html:119
 msgid "Latest News"
 msgstr ""
 
-#: templates/pages/index.html:122
+#: templates/pages/index.html:121
 #, python-format
 msgid ""
 "To see a list of all news and announcements, head over to <a "
@@ -1038,11 +1128,11 @@ msgid ""
 "href=\"%(FEED_ATOM)s\">Atom feed</a>."
 msgstr ""
 
-#: templates/pages/index.html:140
+#: templates/pages/index.html:139
 msgid "Friendly Community"
 msgstr "Comunidade Amigável"
 
-#: templates/pages/index.html:142
+#: templates/pages/index.html:141
 msgid ""
 "Mixxx is developed by an international community of DJs, programmers, and"
 " artists. Because Mixxx is <b>free (<a "
@@ -1051,7 +1141,7 @@ msgid ""
 " even better&mdash;including you!"
 msgstr ""
 
-#: templates/pages/index.html:146
+#: templates/pages/index.html:145
 #, python-format
 msgid ""
 "You can get involved with Mixxx today by <a "
@@ -1063,23 +1153,23 @@ msgid ""
 "href=\"%(starter_tasks_link)s\">starter tasks</a>."
 msgstr ""
 
-#: templates/pages/index.html:155
+#: templates/pages/index.html:154
 msgid "#1 Top Free Mac App Worldwide"
 msgstr ""
 
-#: templates/pages/index.html:157 templates/pages/index.html:174
+#: templates/pages/index.html:156 templates/pages/index.html:173
 msgid "February 2011"
 msgstr "Fevereiro de 2011"
 
-#: templates/pages/index.html:166
+#: templates/pages/index.html:165
 msgid "Free Pick of the Month"
 msgstr "Escolha Grátis do Mês"
 
-#: templates/pages/index.html:167
+#: templates/pages/index.html:166
 msgid "September 2007"
 msgstr "Setembro de 2007"
 
-#: templates/pages/index.html:173
+#: templates/pages/index.html:172
 msgid "\"The coolest open source<br>application ever?\""
 msgstr "\"A aplicação de código aberto<br>mais legal de todos os tempos?\""
 
@@ -1156,11 +1246,6 @@ msgstr ""
 msgid "2018-10-25:"
 msgstr ""
 
-#: templates/pages/screenshots.html:3 templates/pages/screenshots.html:7
-#, fuzzy
-msgid "Screenshots"
-msgstr "Captura de ecrã de referência:"
-
 #: templates/pages/screenshots.html:9
 msgid "Here you can find some screenshots of Mixxx' user interface."
 msgstr ""
@@ -1185,10 +1270,6 @@ msgstr "PPA do Mixxx"
 msgid "Mixxx 2.2"
 msgstr "PPA do Mixxx"
 
-#: templates/pages/support.html:3
-msgid "Support"
-msgstr "Suporte"
-
 #: templates/pages/support.html:7
 #, fuzzy
 msgid "Support &amp; Community"
@@ -1207,10 +1288,6 @@ msgid ""
 "beginners under <a href=\"%(manual_beginner_link)s\">DJing with "
 "Mixxx</a>."
 msgstr ""
-
-#: templates/pages/support.html:18
-msgid "Wiki"
-msgstr "Wiki"
 
 #: templates/pages/support.html:20
 #, python-format
@@ -1235,10 +1312,6 @@ msgid ""
 " and skins."
 msgstr ""
 
-#: templates/pages/support.html:32
-msgid "Bug Tracker"
-msgstr "Rastreador de Bugs"
-
 #: templates/pages/support.html:34
 #, python-format
 msgid ""
@@ -1253,4 +1326,7 @@ msgstr ""
 #~ "features</a> or download Mixxx and start"
 #~ " DJing now!"
 #~ msgstr ""
+
+#~ msgid "Site Language"
+#~ msgstr "Suporte Nativo de Linguagem"
 

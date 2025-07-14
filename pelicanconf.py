@@ -93,83 +93,83 @@ PLUGINS = [
 ]
 
 
-class MenuItem:
-    def __init__(
-        self, url, title, context, css="", external=False, children=()
-    ):
-        self.url = url
-        self.title = title
-        self.context = context
-        self.css = css
-        self.external = external
-        self.children = children
-
-
-NAV_MENU = (
-    MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
-    MenuItem(
-        "/discover",
-        "Discover",
-        "Navigation bar link to Mixxx discover page.",
-        children=(
-            MenuItem(
-                "/features",
-                "Features",
-                "Navigation bar link to Mixxx features page.",
-            ),
-            MenuItem(
-                "/screenshots",
-                "Screenshots",
-                "Navigation bar link to Mixxx Screenshots page.",
-            ),
-            MenuItem(
-                "/press",
-                "Press",
-                "Navigation bar link to Mixxx Press page",
-            ),
-            MenuItem(
-                "/contact",
-                "Contact & Team",
-                "Navigation bar link to Mixxx contact page.",
-            ),
-        ),
-    ),
-    MenuItem(
-        "/support",
-        "Support & Community",
-        "Navigation bar link to Mixxx support page.",
-        children=(
-            MenuItem(
-                "/manual/latest",
-                "Manual",
-                "Navigation bar link to Mixxx Manual.",
-            ),
-            MenuItem(
-                "https://mixxx.discourse.group/",
-                "Forums",
-                "Navigation bar link to Mixxx Forums.",
-                external=True,
-            ),
-            MenuItem(
-                "https://github.com/mixxxdj/mixxx/issues/",
-                "Bug Tracker",
-                "Navigation bar link to Mixxx Bug Tracker.",
-                external=True,
-            ),
-            MenuItem(
-                "https://github.com/mixxxdj/mixxx/wiki",
-                "Wiki",
-                "Navigation bar link to Mixxx Wiki.",
-                external=True,
-            ),
-            MenuItem(
-                "/get-involved",
-                "Get Involved",
-                "Navigation bar link to Mixxx Get Involved page.",
-            ),
-        ),
-    ),
-)
+##class MenuItem:
+##    def __init__(
+##        self, url, title, context, css="", external=False, children=()
+##    ):
+##        self.url = url
+##        self.title = title
+##        self.context = context
+##        self.css = css
+##        self.external = external
+##        self.children = children
+##
+##
+##NAV_MENU = (
+##    MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
+##    MenuItem(
+##        "/discover",
+##        "Discover",
+##        "Navigation bar link to Mixxx discover page.",
+##        children=(
+##            MenuItem(
+##                "/features",
+##                "Features",
+##                "Navigation bar link to Mixxx features page.",
+##            ),
+##            MenuItem(
+##                "/screenshots",
+##                "Screenshots",
+##                "Navigation bar link to Mixxx Screenshots page.",
+##            ),
+##            MenuItem(
+##                "/press",
+##                "Press",
+##                "Navigation bar link to Mixxx Press page",
+##            ),
+##            MenuItem(
+##                "/contact",
+##                "Contact & Team",
+##                "Navigation bar link to Mixxx contact page.",
+##            ),
+##        ),
+##    ),
+##    MenuItem(
+##        "/support",
+##        "Support & Community",
+##        "Navigation bar link to Mixxx support page.",
+##        children=(
+##            MenuItem(
+##                "/manual/latest",
+##                "Manual",
+##                "Navigation bar link to Mixxx Manual.",
+##            ),
+##            MenuItem(
+##                "https://mixxx.discourse.group/",
+##                "Forums",
+##                "Navigation bar link to Mixxx Forums.",
+##                external=True,
+##            ),
+##            MenuItem(
+##                "https://github.com/mixxxdj/mixxx/issues/",
+##                "Bug Tracker",
+##                "Navigation bar link to Mixxx Bug Tracker.",
+##                external=True,
+##            ),
+##            MenuItem(
+##                "https://github.com/mixxxdj/mixxx/wiki",
+##                "Wiki",
+##                "Navigation bar link to Mixxx Wiki.",
+##                external=True,
+##            ),
+##            MenuItem(
+##                "/get-involved",
+##                "Get Involved",
+##                "Navigation bar link to Mixxx Get Involved page.",
+##            ),
+##        ),
+##    ),
+##)
 
 
 AUTHOR_METADATA = {
@@ -299,7 +299,7 @@ md = markdown.Markdown()
 
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
-    "NAV_MENU": NAV_MENU,
+    ##    "NAV_MENU": NAV_MENU,
 }
 JINJA_ENVIRONMENT = {
     "trim_blocks": True,
