@@ -124,7 +124,7 @@
   <div class="grid-container halves u-align-left">
     {% for article in articles[:2] %}
     <div>
-      <time>{{ article.locale_date }}</time>
+      <time>{{ format_date(article.date, format='long', locale=DEFAULT_LANG if DEFAULT_LANG!="pseudo" else "en") }}</time>
       <h5>{{ article.title }}</h5>
       {{ article.summary }}
       <a class="button button-secondary" href="{{ SITETURL }}/{{ article.url }}">{% trans %}Read More{% endtrans %}</a>

@@ -11,7 +11,7 @@
     <p class="news-meta">
       <span class="date">
         <img class="icon" src="{{ main_siteurl }}/theme/images/icons/date.svg" alt="Date" />
-        <time>{{ article.locale_date }}</time>
+        <time>{{ format_date(article.date, format='long', locale=DEFAULT_LANG if DEFAULT_LANG!="pseudo" else "en") }}</time>
       </span>
       {% if article.authors %}
       <span class="authors">

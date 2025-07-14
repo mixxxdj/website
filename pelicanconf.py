@@ -3,6 +3,7 @@
 import jinja2
 import markupsafe
 import markdown
+from babel.dates import format_date
 
 AUTHOR = "Mixxx DJ Team"
 SITENAME = "Mixxx"
@@ -299,6 +300,7 @@ md = markdown.Markdown()
 
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
+    "format_date": format_date,
     ##    "NAV_MENU": NAV_MENU,
 }
 JINJA_ENVIRONMENT = {
