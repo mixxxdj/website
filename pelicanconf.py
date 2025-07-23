@@ -323,12 +323,7 @@ I18N_SUBSITES = {
     "it": {},
     "nl": {},
     "pt": {},
-    "ru": {},
     "sl": {},
-    "sq": {},
-    "sv": {},
-    "zh_cn": {},
-    "zh_tw": {},
 }
 
 languages_lookup = {
