@@ -14,7 +14,7 @@ The new waveform types are marked "(GLSL)" in the Waveforms section in the setti
 
 Visually, the new waveforms follow the design of the legacy waveforms, with some minor tweaks. Note for example the semi-transparently filled triangles pre- and post track. This also serves as a quick indication that you are using the new waveforms.
 
-![RGB L/R (GLSL) Waveform type with pre-track trianges]({static}/images/news/glsl-rgb-lr-waveform.png)
+![RGB L/R (GLSL) Waveform type with pre-track triangles]({static}/images/news/glsl-rgb-lr-waveform.png)
 
 The newly implemented GLSL waveforms have been beta-tested for several months now and are considered stable and recommended. The old waveform types remain available, just in case, as an option in the Waveforms section of the settings dialog, marked with "(legacy)", and might be removed in future versions. If you experience issues with the new waveform types, you are encouraged to file a bug report!
 

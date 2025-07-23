@@ -12,14 +12,15 @@ dependencies.
     $ pip install -r requirements.txt
 
 Then build the site from its templates, run this in root directory of the git
-repository:
+repository (Note: don't forget to compile the translations first as explained below):
 
     $ pelican
 
 If all goes well, you should have the rendered HTML in your `output/`
-directory. To stand up a development server to test out your change, type:
+directory. To start up a development server to test out your change, type:
 
-    $ pelican --listen --autoreload
+    $ Linux: pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
+    $ Windows: pelican --listen --autoreload --extra-settings SITEURL=\"http://localhost:8000\"
 
 You can then visit ```http://127.0.0.1:8000``` to see your development version
 of the site.
@@ -82,6 +83,27 @@ stored in `theme/templates/pages/`. If there is a snippet of code you want to
 use in multiple places on the site, place it in the `/theme/templates/` folder
 -- for example [theme/templates/download_button.html][download_button.html].
 
+To generate the site:
+```
+pelican
+```
+
+If there are problems, running in debug can help:
+```
+pelican -D
+```
+
+For interactive development, run it as an http server and will update the contents as you modify it.
+```
+pelican --listen --autoreload --extra-settings SITEURL='"http://localhost:8000"'
+```
+Note that on windows console, you need to write: SITEURL=\"http://localhost:8000\" instead
+
+Then open this site on your browser:
+*http://127.0.0.1:8000*
+
+
+
 * [Jinja2 template language][jinja2_templates]
 * [template internationalization][jinja2_template_i18n]
 * [Pelican documentation][pelican_docs]
@@ -91,6 +113,31 @@ use in multiple places on the site, place it in the `/theme/templates/` folder
 All strings wrapped with `{% trans %}Hello World {% endtrans %}` are flagged
 for translation. Whenever adding new English strings to the website, please
 wrap them in a `{% trans %}Hello World{% endtrans %}` block.
+A more compact way is using gettext
+
+```
+{% trans %}translatable content{% endtrans %}
+{{ gettext('translatable content') }}
+```
+
+To create new languages, or to update existing languages once there are new
+translations, execute the following inside the //theme// subfolder.
+
+
+In order to create a new language (replace LANG with locale):
+```
+pybabel extract --mapping babel.cfg --output mixxxorg.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version="DJ website" ./
+pybabel init --input-file mixxxorg.pot --output-dir translations/ --locale *LANG* --domain mixxxorg
+pybabel compile --directory translations/ --domain mixxxorg
+```
+
+In order to update all existing languages when new content needs translation:
+```
+pybabel extract --mapping babel.cfg --output mixxxorg.pot --msgid-bugs-address=https://github.com/mixxxdj/mixxx/issues/ --copyright-holder="Mixxx Development Team" --project=Mixxx --version="DJ website" ./
+pybabel update --input-file mixxxorg.pot --output-dir translations/ --domain mixxxorg
+pybabel compile --directory translations/ --domain mixxxorg
+```
+
 
 [mixxx.org]: http://mixxx.org/
 [pelican]: https://github.com/getpelican/pelican

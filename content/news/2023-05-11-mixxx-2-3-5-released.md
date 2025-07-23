@@ -51,7 +51,7 @@ Here is the full change log if you're interested:
   [#11327](https://github.com/mixxxdj/mixxx/issues/11327)
 * LateNight: brighter fx parameter buttons
   [#11397](https://github.com/mixxxdj/mixxx/pull/11397)
-* Fix drift in analyzis data after exporting metadata to MP3 files with ID3v1.1 tags
+* Fix drift in analysis data after exporting metadata to MP3 files with ID3v1.1 tags
   [#11168](https://github.com/mixxxdj/mixxx/pull/11168)
   [#11159](https://github.com/mixxxdj/mixxx/issues/11159)
 * Fix broadcasting using Opus encoding

@@ -6,7 +6,7 @@ date: 2021-02-08 11:18:15
 As all of you probably know, Mixxx is the best DJ software in the market.
 However, we've recently been made aware that a minor competitor has emerged and tries to steal that title from us - [Serato DJ Pro](https://serato.com/dj/pro).
 The hardware support is nice, but since Serato is neither open-source nor as customizable, we're not too concerned.
-From the user's perpective, switching to the most popular open-source DJ software in world seems like the obvious choice.
+From the user's perspective, switching to the most popular open-source DJ software in world seems like the obvious choice.
 
 Unfortunately, migrating from Serato to Mixxx is a lot of work - apart from familiarizing yourself with a new tool, all the countless hours you spent to organize and prepare the tracks in your old library are lost, and you need to start from scratch.
 At least until now - if you're a Serato user and cast an eye on Mixxx, we've got a nice surprise for you.

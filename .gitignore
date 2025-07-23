@@ -1,5 +1,6 @@
 # default destination for files rendered by pelican
-/output
+/output/
 # python bytecode cache
-__pycache__
-.venv/
+__pycache__/
+/.venv/
+*.mo

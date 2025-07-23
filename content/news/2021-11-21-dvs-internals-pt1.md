@@ -9,7 +9,7 @@ Since the dawn of DJing, spinning vinyl records has never really gone out of fas
 Even when CDs became popular in 90s and most music listeners happily phased out their record players, the classical "two turntables and a mixer" setup stayed the epitome of DJing.
 In recent years, digital DJ controllers became more popular, but there are still many DJs that stick with their notorious Technics SL-1210s turntables.
 
-There's a reason for that: the tactile feeling of manipulating music with your hands is something that controllers have had trouble archieving.
+There's a reason for that: the tactile feeling of manipulating music with your hands is something that controllers have had trouble achieving.
 Motorized controllers like the Rane One try to provide a similar workflow, but it's still to be seen whether they will be able to take significant market share and replace vinyl setups or if they stay a niche product.
 
 On the other hand, going digital has its benefits:

@@ -198,7 +198,7 @@ which results in the state (1, 0, 0), which is exactly the state we started with
 From now on, the table rows would just repeat forever.
 
 This means that this LFSR has a period of 7 (because it repeats after 7 steps).
-That is the maximal period length you can archieve with a 3-bit LFSR.
+That is the maximal period length you can achieve with a 3-bit LFSR.
 
 Other 3-bit LFSRs that have a *shorter* period length exist, e.g. if you have an LFSR where the feedback bit is calculated as *x = s<sub>0</sub>* it will already repeats after 3 steps, no 3-bit LFSR will have a longer period.
 

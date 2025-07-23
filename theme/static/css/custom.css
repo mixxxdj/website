@@ -146,7 +146,6 @@ i.fas, i.fab {
     align-items: center;
 }
 .navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
-    display: none;
     margin-left: 5px;
     display: block;
     background-image: url('../images/dropdown.svg');
@@ -299,7 +298,9 @@ img.responsive {
     .navbar-item .navbar-dropdown:hover {
         visibility: visible;
         opacity: 1;
-        display: block;
+        display: flex;
+        /* wrapping doesn't work because size isn't limited. and if we add some random limit, then the box is not resizing correctly */
+        flex-flow: column wrap;
     }
     .navbar-item .navbar-dropdown .navbar-item {
         clear: both;
@@ -307,6 +308,7 @@ img.responsive {
     }
     .navbar-main > .navbar-list > .navbar-item.has-dropdown > a::after {
         display: flex;
+        flex-flow: column wrap;
         content: "";
     }
 }

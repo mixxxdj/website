@@ -3,6 +3,7 @@
 import jinja2
 import markupsafe
 import markdown
+from babel.dates import format_date
 
 AUTHOR = "Mixxx DJ Team"
 SITENAME = "Mixxx"
@@ -89,80 +90,87 @@ PLUGINS = [
     "download_metadata",
     "draft_override",
     "md_yaml",
+    "i18n_subsites",
 ]
 
 
-class MenuItem:
-    def __init__(self, url, title, context, css="", children=()):
-        self.url = url
-        self.title = title
-        self.context = context
-        self.css = css
-        self.children = children
-
-
-NAV_MENU = (
-    MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
-    MenuItem(
-        "/discover",
-        "Discover",
-        "Navigation bar link to Mixxx discover page.",
-        children=(
-            MenuItem(
-                "/features",
-                "Features",
-                "Navigation bar link to Mixxx features page.",
-            ),
-            MenuItem(
-                "/screenshots",
-                "Screenshots",
-                "Navigation bar link to Mixxx Screenshots page.",
-            ),
-            MenuItem(
-                "/press",
-                "Press",
-                "Navigation bar link to Mixxx Press page",
-            ),
-            MenuItem(
-                "/contact",
-                "Contact & Team",
-                "Navigation bar link to Mixxx contact page.",
-            ),
-        ),
-    ),
-    MenuItem(
-        "/support",
-        "Support & Community",
-        "Navigation bar link to Mixxx support page.",
-        children=(
-            MenuItem(
-                "/manual/latest",
-                "Manual",
-                "Navigation bar link to Mixxx Manual.",
-            ),
-            MenuItem(
-                "https://mixxx.discourse.group/",
-                "Forums",
-                "Navigation bar link to Mixxx Forums.",
-            ),
-            MenuItem(
-                "https://github.com/mixxxdj/mixxx/issues/",
-                "Bug Tracker",
-                "Navigation bar link to Mixxx Bug Tracker.",
-            ),
-            MenuItem(
-                "https://github.com/mixxxdj/mixxx/wiki",
-                "Wiki",
-                "Navigation bar link to Mixxx Wiki.",
-            ),
-            MenuItem(
-                "/get-involved",
-                "Get Involved",
-                "Navigation bar link to Mixxx Get Involved page.",
-            ),
-        ),
-    ),
-)
+##class MenuItem:
+##    def __init__(
+##        self, url, title, context, css="", external=False, children=()
+##    ):
+##        self.url = url
+##        self.title = title
+##        self.context = context
+##        self.css = css
+##        self.external = external
+##        self.children = children
+##
+##
+##NAV_MENU = (
+##    MenuItem("/news", "News", "Navigation bar link to Mixxx News page."),
+##    MenuItem(
+##        "/discover",
+##        "Discover",
+##        "Navigation bar link to Mixxx discover page.",
+##        children=(
+##            MenuItem(
+##                "/features",
+##                "Features",
+##                "Navigation bar link to Mixxx features page.",
+##            ),
+##            MenuItem(
+##                "/screenshots",
+##                "Screenshots",
+##                "Navigation bar link to Mixxx Screenshots page.",
+##            ),
+##            MenuItem(
+##                "/press",
+##                "Press",
+##                "Navigation bar link to Mixxx Press page",
+##            ),
+##            MenuItem(
+##                "/contact",
+##                "Contact & Team",
+##                "Navigation bar link to Mixxx contact page.",
+##            ),
+##        ),
+##    ),
+##    MenuItem(
+##        "/support",
+##        "Support & Community",
+##        "Navigation bar link to Mixxx support page.",
+##        children=(
+##            MenuItem(
+##                "/manual/latest",
+##                "Manual",
+##                "Navigation bar link to Mixxx Manual.",
+##            ),
+##            MenuItem(
+##                "https://mixxx.discourse.group/",
+##                "Forums",
+##                "Navigation bar link to Mixxx Forums.",
+##                external=True,
+##            ),
+##            MenuItem(
+##                "https://github.com/mixxxdj/mixxx/issues/",
+##                "Bug Tracker",
+##                "Navigation bar link to Mixxx Bug Tracker.",
+##                external=True,
+##            ),
+##            MenuItem(
+##                "https://github.com/mixxxdj/mixxx/wiki",
+##                "Wiki",
+##                "Navigation bar link to Mixxx Wiki.",
+##                external=True,
+##            ),
+##            MenuItem(
+##                "/get-involved",
+##                "Get Involved",
+##                "Navigation bar link to Mixxx Get Involved page.",
+##            ),
+##        ),
+##    ),
+##)
 
 
 AUTHOR_METADATA = {
@@ -292,7 +300,8 @@ md = markdown.Markdown()
 
 JINJA_GLOBALS = {
     "gettext": lambda x: x,
-    "NAV_MENU": NAV_MENU,
+    "format_date": format_date,
+    ##    "NAV_MENU": NAV_MENU,
 }
 JINJA_ENVIRONMENT = {
     "trim_blocks": True,
@@ -302,7 +311,62 @@ JINJA_ENVIRONMENT = {
         "jinja2.ext.i18n",
     ],
 }
-JINJA_FILTERS = {"markdown": lambda text: markupsafe.Markup(md.convert(text))}
+# Currently the order in the navbar is determined by the order of this list.
+# Note; For development, it's recommended to comment all but one language to speed-up compilation.
+# mapping: language_code -> settings_overrides_dict
+I18N_SUBSITES = {
+    "ca": {},
+    "pseudo": {},
+    "de": {},
+    "es": {},
+    "fr": {},
+    "it": {},
+    "nl": {},
+    "pt": {},
+    "sl": {},
+}
+
+languages_lookup = {
+    "pseudo": "Fake english",
+    "bg": "Български",
+    "ca": "Català",
+    "cs": "Čeština",
+    "de": "Deutsch",
+    "el": "Ελληνικά",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "pt": "Português",
+    "ru": "Русский",
+    "sl": "Slovenščina",
+    "sq": "shqip",
+    "sv": "Svenska",
+    "tr": "Türkçe",
+    "zh_cn": "简体中文",
+    "zh_tw": "繁體中文",
+}
+
+
+def lookup_lang_name(lang_code):
+    return languages_lookup[lang_code]
+
+
+JINJA_FILTERS = {
+    "markdown": lambda text: markupsafe.Markup(md.convert(text)),
+    "lookup_lang_name": lookup_lang_name,
+}
+
+# Default localedir is "translations" subfolder inside the selected "THEME"
+# default domain is "messages". In pybabel that's the --domain value.
+##I18N_GETTEXT_LOCALEDIR = "some/path/"
+I18N_GETTEXT_DOMAIN = "mixxxorg"
+
+I18N_UNTRANSLATED_ARTICLES = "keep"
+I18N_UNTRANSLATED_PAGES = "keep"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

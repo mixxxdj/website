@@ -8,7 +8,7 @@
 
   <dl>
   {% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
+    <dt>{{ format_date(article.date, format='long', locale=DEFAULT_LANG if DEFAULT_LANG!="pseudo" else "en") }}</dt>
     <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
   {% endfor %}
   </dl>

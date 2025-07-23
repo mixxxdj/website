@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="{{ LANGUAGE_CODE }}" data-theme="dark">
+<html prefix="og: http://ogp.me/ns#" lang="{{ DEFAULT_LANG }}" data-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,12 @@
     <meta name="keywords" content="{% block meta_keywords %}dj, dj software, free dj software, mixxx, dj mix, mp3 dj, mix mp3, download, crossfader, digital dj, beatmix, beatmixing, mp3, open source, mixing, mixer{% endblock %}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link href="https://plus.google.com/102441931224839455484" rel="publisher">
-    <link href="{{ SITEURL }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="Mixxx Atom Feed" />
+    <link href="{{ main_siteurl }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="Mixxx Atom Feed" />
 
     <!-- Open Graph Protocol metadata (e.g. for Facebook, https://ogp.me/) -->
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ SITEURL }}/{{ output_file }}"/>
-    <meta property="og:image" content="{{ SITEURL }}/theme/images/splash-1080x717.png"/>
+    <meta property="og:image" content="{{ main_siteurl }}/theme/images/splash-1080x717.png"/>
     <meta property="og:image:width" content="1080"/>
     <meta property="og:image:height" content="717"/>
 
@@ -26,19 +26,19 @@
     <meta property="article:publisher" content="https://www.facebook.com/pages/Mixxx-DJ-Software/21723485212"/>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/favicon.ico">
+    <link rel="shortcut icon" href="{{ main_siteurl }}/theme/images/favicon.ico">
 
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/raleway.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/barebones.css">
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css">
+    <link rel="stylesheet" href="{{ main_siteurl }}/theme/css/raleway.css">
+    <link rel="stylesheet" href="{{ main_siteurl }}/theme/css/normalize.css">
+    <link rel="stylesheet" href="{{ main_siteurl }}/theme/css/barebones.css">
+    <link rel="stylesheet" href="{{ main_siteurl }}/theme/css/custom.css">
 
-    <script src="{{ SITEURL }}/theme/js/video.js"></script>
+    <script src="{{ main_siteurl }}/theme/js/video.js"></script>
 
     <!-- Preload fonts to avoid flash of unstyled text (FOUT) -->
-    <link rel="preload" href="{{ SITEURL }}/theme/fonts/raleway-v14-latin-ext_latin-300.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ SITEURL }}/theme/fonts/raleway-v14-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ SITEURL }}/theme/fonts/raleway-v14-latin-ext_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ main_siteurl }}/theme/fonts/raleway-v14-latin-ext_latin-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ main_siteurl }}/theme/fonts/raleway-v14-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ main_siteurl }}/theme/fonts/raleway-v14-latin-ext_latin-600.woff2" as="font" type="font/woff2" crossorigin>
 
     {% block extra_head %}
     {% endblock %}
