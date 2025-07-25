@@ -89,7 +89,14 @@ PLUGINS = [
     "download_metadata",
     "draft_override",
     "md_yaml",
+    "render_math",
 ]
+
+MATH_JAX = {
+    # Disable auto_insert because we insert our own MathJax3 <script> into the needed articles.
+    # This also means that any settings created here are not relayed to mathjax (see templates/article.html instead)
+    "auto_insert": False,
+}
 
 
 class MenuItem:

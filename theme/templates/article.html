@@ -69,4 +69,9 @@
 {% if article.comments and article.comments in ("true", "yes") %}
 <script src="{{ SITEURL }}/theme/js/discourse.js"></script>
 {% endif %}
+{% if article.math and article.math in ("true", "yes") %}
+{# Note that we don't insert any mathjax config. If you want to configure mathjax, see https://docs.mathjax.org/en/latest/web/configuration.html#configuring-mathjax #}
+{# pinning the latest MathJax and using Subresource integrity (since that allows us to avoid whitelisting all of jsdelivr in the CSP) #}
+<script id="MathJax-script" type="text/javascript" integrity="sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII=" crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+{% endif %}
 {% endblock %}
