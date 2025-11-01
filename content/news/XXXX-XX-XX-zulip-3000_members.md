@@ -33,6 +33,10 @@ Thanks to Zulip, it’s now much easier to stay up to date. Our team collaborati
 improved significantly. Zulip works particularly well for open-source projects where many topics run in parallel, and where structure and focus are key to success.
 It can be used with a web frontend of a Mobile app for Android and IOs.
 
+In addition to the web interface, Zulip has also a nice mobile app forAndroid or iOS.
+It has recently received mayor update, a full Flutter rewrite with fast natively compiled code.
+This allows to stay in touch while commuting or similar.
+
 ### Conclusion
 
 The introduction of Zulip was the right move for us. If you are in the same situation and still using a mailing list or chat rooms, give **Zulip** a try.  
