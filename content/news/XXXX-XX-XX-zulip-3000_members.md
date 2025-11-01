@@ -35,7 +35,9 @@ It can be used with a web frontend or a mobile app for Android and iOS.
 
 In addition to the web interface, Zulip has also a nice mobile app forAndroid or iOS.
 It has recently received mayor update, a full Flutter rewrite with fast natively compiled code.
-This allows to stay in touch while commuting or similar.
+This allows to stay in touch easily while commuting or when away from a desktop.
+
+New contributors might be sceptical of using a niche FOSS tool like Zulip. But we got feedback that they later consider it as one of the best tool for managing communication across projects. The growing number of members confirms this.
 
 ### Conclusion
 
