@@ -4,7 +4,7 @@ status: draft
 tags: zulip
 comments: yes
 
-#### Our Zulip Chat Exceeds 3,000 Members
+#### Mixxx Zulip Chat Exceeds 3,000 Members
 
 Since moving our community discussions from our mailing list to **Zulip** in 2018, we have never looked back.  
 This month, for the first time, we have more than 3,000 registered users in our Mixxx Zulip community!
@@ -36,6 +36,8 @@ It can be used with a web frontend or a mobile app for Android and iOS.
 In addition to the web interface, Zulip has also a nice mobile app forAndroid or iOS.
 It has recently received mayor update, a full Flutter rewrite with fast natively compiled code.
 This allows to stay in touch easily while commuting or when away from a desktop.
+
+We enjoy unique feature like the time widget which is always showing local time, the poll widget for fast decision making and the pronouns fieldthe pronouns fieldthat helps people address others correctly when the gender associated with their name isn’t clear.
 
 New contributors might be sceptical of using a niche FOSS tool like Zulip. But we got feedback that they later consider it as one of the best tool for managing communication across projects. The growing number of members confirms this.
 
