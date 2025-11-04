@@ -6,7 +6,7 @@ comments: yes
 
 #### Mixxx Zulip Chat Exceeds 3,000 Members
 
-Since moving our community discussions from our mailing list to **Zulip** in 2018, we have never looked back.  
+Since moving our community discussions from our mailing list to [Zulip](https://mixxx.zulipchat.com) in 2018, we have never looked back.  
 This month, for the first time, we have more than 3,000 registered users in our Mixxx Zulip community!
 
 We now exchange around 4,000 messages every month, something a mailing list could never handle effectively. The community continues to grow steadily, both in users and in activity, with over 60 individuals actively participating in discussions every month.  
@@ -31,22 +31,21 @@ No need to hang around in chat rooms to avoid missing an important conversation.
 
 Thanks to Zulip, it’s now much easier to stay up to date. Our team collaboration and community engagement have both
 improved significantly. Zulip works particularly well for open-source projects where many topics run in parallel, and where structure and focus are key to success.
-It can be used with a web frontend or a mobile app for Android and iOS.
 
 In addition to the web interface, Zulip has also a nice mobile app forAndroid or iOS.
-It has recently received mayor update, a full Flutter rewrite with fast natively compiled code.
+It has recently received a major update, a full Flutter rewrite with fast natively compiled code.
 This allows to stay in touch easily while commuting or when away from a desktop.
 
-We enjoy unique feature like the time widget which is always showing local time, the poll widget for fast decision making and the pronouns fieldthe pronouns fieldthat helps people address others correctly when the gender associated with their name isn’t clear.
+We enjoy unique features, like the time widget, which is always showing local time, the poll widget for fast decision making, and the pronouns field that helps people address others correctly when the gender associated with their name isn’t clear.
 
 New contributors might be sceptical of using a niche FOSS tool like Zulip. But we got feedback that they later consider it as one of the best tool for managing communication across projects. The growing number of members confirms this.
 
 ### Conclusion
 
-The introduction of Zulip was the right move for us. If you are in the same situation and still using a mailing list or chat rooms, give **Zulip** a try.  
+The introduction of Zulip was the right move for us. If you are in the same situation and still using a mailing list or chat rooms, give [Zulip](https://zulip.com) a try.  
 You can self-host or use Zulip’s hosted service, and you don’t depend on a single provider for all your services.
 
-If you'd like to join us on Zulip, create an account and say hello at https://mixxx.zulipchat.com/#narrow/channel/109123-introduce-yourself
+If you'd like to join us on Zulip, create an account and say hello at [introduce-yourself](https://mixxx.zulipchat.com/#narrow/channel/109123-introduce-yourself)
 
 ### Thanks
 
