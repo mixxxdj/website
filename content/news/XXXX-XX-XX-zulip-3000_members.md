@@ -34,7 +34,7 @@ improved significantly. Zulip works particularly well for open-source projects w
 
 In addition to the web interface, Zulip has also a nice mobile app forAndroid or iOS.
 It has recently received a major update, a full Flutter rewrite with fast natively compiled code.
-This allows to stay in touch easily while commuting or when away from a desktop.
+This allows us to stay in touch easily while commuting or when away from a desktop.
 
 We enjoy unique features, like the time widget, which is always showing local time, the poll widget for fast decision making, and the pronouns field that helps people address others correctly when the gender associated with their name isn’t clear.
 
