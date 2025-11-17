@@ -32,7 +32,7 @@ No need to hang around in chat rooms to avoid missing an important conversation.
 Thanks to Zulip, it’s now much easier to stay up to date. Our team collaboration and community engagement have both
 improved significantly. Zulip works particularly well for open-source projects where many topics run in parallel, and where structure and focus are key to success.
 
-In addition to the web interface, Zulip has also a nice mobile app forAndroid or iOS.
+In addition to the web interface, Zulip has also a nice mobile app for Android or iOS.
 It has recently received a major update, a full Flutter rewrite with fast natively compiled code.
 This allows us to stay in touch easily while commuting or when away from a desktop.
 
