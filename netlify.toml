@@ -46,6 +46,23 @@
     X-XSS-Protection = "1; mode=block"
 
 [[headers]]
+  for = "/theme/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Access-Control-Allow-Origin = "*"
+    Vary = "Origin"
+
+[[headers]]
+  for = "/theme/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "/theme/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
  for = "/news/*"
  [headers.values]
    # Additionally allow YouTube/Discourse frames and scripts and MathJax
