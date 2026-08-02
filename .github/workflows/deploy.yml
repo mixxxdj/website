@@ -9,13 +9,37 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-approval:
+    runs-on: ubuntu-latest
+    outputs:
+      approved: ${{ steps.check.outputs.approved }}
+    steps:
+      - id: check
+        env:
+          IS_PUSH_OR_DISPATCH: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) }}
+          AUTHOR_TRUSTED: ${{ contains(fromJSON('["MEMBER","OWNER","COLLABORATOR","CONTRIBUTOR"]'), github.event.pull_request.author_association) }}
+          HAS_APPROVAL_LABEL: ${{ contains(github.event.pull_request.labels.*.name, 'preview-approved') }}
+        run: |
+          if [ "$IS_PUSH_OR_DISPATCH" = "true" ] || [ "$AUTHOR_TRUSTED" = "true" ] || [ "$HAS_APPROVAL_LABEL" = "true" ]; then
+            echo "approved=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "approved=false" >> "$GITHUB_OUTPUT"
+          fi
+
   deploy:
-    if: github.event_name == 'push' || (github.event.action != 'closed' && github.event.action != 'labeled')
+    needs: [check-approval]
+    if: |
+      github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (
+        github.event.action != 'closed' &&
+        (github.event.action != 'labeled' || github.event.label.name == 'preview-approved')
+      )
     uses: ./.github/workflows/ovh.yaml
     with:
       environment_name: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) && 'production' || format('pull/{0}', github.event.pull_request.number) }}
       url: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) && format('https://{0}', vars.MAIN_WEBSITE) || format('https://{0}/pr/{1}', vars.PREVIEW_WEBSITE, github.event.pull_request.number) }}
       target: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) && 'www' || format('pulls/pr/{0}', github.event.pull_request.number) }}
+      ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      approval_required: ${{ needs.check-approval.outputs.approved == 'false' }}
       action: deploy
     secrets: inherit
 
