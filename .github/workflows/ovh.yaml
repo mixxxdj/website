@@ -17,6 +17,13 @@ on:
         required: false
         type: string
         default: 'deploy' # Or 'teardown'
+      ref:
+        required: false
+        type: string
+      approval_required:
+        required: false
+        type: boolean
+        default: false
     secrets:
       OVH_USERNAME:
         required: true
@@ -34,6 +41,11 @@ jobs:
       name: ${{ inputs.environment_name }}
       url: ${{ inputs.url }}
     steps:
+    - name: Require maintainer approval
+      if: ${{ inputs.action != 'teardown' && inputs.approval_required }}
+      run: |
+        echo "::error::Preview deploy requires a maintainer to add the 'preview-approved' label on this pull request."
+        exit 1
     - name: Forbid tearing down production
       if: ${{ inputs.target == 'www' && inputs.action == 'teardown' }}
       run: |
@@ -44,6 +56,7 @@ jobs:
       uses: actions/checkout@v4.2.2
       with:
         fetch-depth: 0
+        ref: ${{ inputs.ref }}
     - name: Set up Python
       if: ${{ inputs.action != 'teardown' }}
       uses: actions/setup-python@v6
