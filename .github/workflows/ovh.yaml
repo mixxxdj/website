@@ -70,8 +70,18 @@ jobs:
         mkdir -p ${HOME}/.ssh/
         ssh-keyscan "${OVH_HOSTNAME}" >> "${HOME}/.ssh/known_hosts"
         cat > .htaccess <<EOF
-        Options -Indexes
+        Options -ExecCGI -Indexes
         ErrorDocument 403 https://${MAIN_WEBSITE}
+
+        RemoveHandler .php .phtml .phar .cgi .pl .py
+        RemoveType .php .phtml .phar
+
+        <FilesMatch "\.(php|phtml|phar|cgi|pl|py)$">
+            Require all denied
+        </FilesMatch>
+        <IfModule mod_php.c>
+            php_flag engine off
+        </IfModule>
         EOF
         lftp --env-password -u ${OVH_USERNAME} sftp://${OVH_HOSTNAME} \
           -e "put .htaccess -o /home/${OVH_USERNAME}/pulls/.htaccess"
