@@ -34,12 +34,12 @@ repos:
     ]
     exclude: ^(.*\.svg|locale/.*|pages/(?:contact|press)\.html)$
 - repo: https://github.com/psf/black
-  rev: 22.12.0
+  rev: 24.10.0
   hooks:
   - id: black
     name: "Reformat Python code"
 - repo: https://github.com/pycqa/flake8
-  rev: '6.0.0'
+  rev: '7.1.1'
   hooks:
   - id: flake8
     name: "Check for Python warnings"

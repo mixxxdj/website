@@ -105,23 +105,11 @@ jobs:
         SITEURL: ${{ inputs.url }}
       run: |
         pelican -e SITEURL="\"$SITEURL\""
-        sed -E '/\{% (end)?verbatim %\}/d' htaccess > ./output/.htaccess
-        # Migrated from netlify.toml
-        cat >> ./output/.htaccess <<EOF
-        <IfModule mod_headers.c>
-          # Global security headers
-          Header set Content-Security-Policy "default-src 'self'; style-src 'self'; script-src 'self'"
-          Header set Permissions-Policy "ambient-light-sensor=(); autoplay=(); accelerometer=(); camera=(); display-capture=(); document-domain=(); encrypted-media=(); fullscreen=(); gyroscope=(); magnetometer=(); microphone=(); midi=(); payment=(); picture-in-picture=(); sync-xhr=(); usb=(); wake-lock=(); xr-spatial-tracking=()"
-          Header set Referrer-Policy "no-referrer-when-downgrade"
-          Header set X-Content-Type-Options "nosniff"
-          Header set X-Frame-Options "DENY"
-          Header set X-XSS-Protection "1; mode=block"
-
-          # Override CSP for /news/* pages
-          SetEnvIf Request_URI "^/news/" is_news
-          Header set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-UPkidoMErzWw1gW/eY4LhAi9ZkPch3PP31d6KQoJ6Yc=' 'sha256-G40wI6OaLZXCtrb02xUq1H1kEVWjstzoQ0FXKwsWxPw=' 'sha256-1CldwzdEg2k1wTmf7s5RWVd7NMXI/7nxxjJM2C4DqII=' https://mixxx.discourse.group/javascripts/embed.js *.discourse-cdn.com; frame-src 'self' https://www.youtube-nocookie.com https://mixxx.discourse.group ; img-src 'self' https://i.ytimg.com https://raw.githubusercontent.com/mixxxdj/ ; connect-src 'self' https://mixxx.discourse.group https://*.discourse-cdn.com" env=is_news
-        </IfModule>
-        EOF
+        python tools/generate_htaccess.py \
+          --template htaccess \
+          --redirects content/_redirects \
+          --netlify-config netlify.toml \
+          --output ./output/.htaccess
         sed -E '/\{% (end)?verbatim %\}/d' content/robots.txt > ./output/robots.txt
     - name: Deploy website
       if: ${{ inputs.action != 'teardown' }}
