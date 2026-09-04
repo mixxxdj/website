@@ -4,46 +4,59 @@
 
 {% block extra_head %}
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages/index.css">
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages/banner-rotation.css">
 {% endblock %}
 
 {% block header %}
 <div class="header splash cover-bg">
   <div class="container">
     <img class="splash-logo drop-shadow" src="{{ SITEURL }}/theme/images/mixxx-logo.svg" alt="Mixxx Logo">
-    <div class="splash-text">
-      <h2>{% trans %}DJ Your Way{% endtrans %}</h2>
-      <p>Free and open source DJ software for Windows, macOS, and Linux</p>
-      <ul class="splash-social">
-        <li>
-          <a rel="me" class="mastodon social_icon" href="https://floss.social/@mixxx" target="_blank">
-            <img src="{{ SITEURL }}/theme/images/social_icons/mastodon.svg" alt="Mastodon" title="Follow Mixxx on Mastodon">
-          </a>
-        </li>
-        <li>
-          <a class="bluesky social_icon" href="https://bsky.app/profile/mixxx.bsky.social" target="_blank">
-            <img src="{{ SITEURL }}/theme/images/social_icons/bluesky.svg" alt="Bluesky" title="Follow Mixxx on Bluesky">
-          </a>
-        </li>
-        <li>
-          <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
-            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/facebook.svg" alt="Facebook" title="Follow Mixxx on Facebook">
-          </a>
-        </li>
-        <li>
-          <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
-            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/zulip.svg" alt="Zulip" title="Chat on Zulip">
-          </a>
-        </li>
-        <li>
-          <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
-            <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/github.svg" alt="GitHub" title="Get the source on GitHub">
-          </a>
-        </li>
-      </ul>
-    </div>
+<div class="splash-text">
+  <!-- BANNER ROTATION -->
+  <div class="banner-rotation-container" id="bannerRotation">
+    <a href="#" class="banner-link" id="bannerLink" target="_self">
+      <div class="banner-content" id="bannerContent">
+        <!-- Dynamic content inserted by JavaScript -->
+      </div>
+    </a>
+
+    <!-- SOCIAL ICONS -->
+    <ul class="splash-social" id="socialIcons">
+      <li>
+        <a rel="me" class="mastodon social_icon" href="https://floss.social/@mixxx" target="_blank">
+          <img src="{{ SITEURL }}/theme/images/social_icons/mastodon.svg" alt="Mastodon" title="Follow Mixxx on Mastodon">
+        </a>
+      </li>
+      <li>
+        <a class="bluesky social_icon" href="https://bsky.app/profile/mixxx.bsky.social" target="_blank">
+          <img src="{{ SITEURL }}/theme/images/social_icons/bluesky.svg" alt="Bluesky" title="Follow Mixxx on Bluesky">
+        </a>
+      </li>
+      <li>
+        <a class="facebook social_icon" href="https://facebook.com/mixxxdj/" target="_blank">
+          <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/facebook.svg" alt="Facebook" title="Follow Mixxx on Facebook">
+        </a>
+      </li>
+      <li>
+        <a class="zulip social_icon" href="https://mixxx.zulipchat.com" target="_blank">
+          <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/zulip.svg" alt="Zulip" title="Chat on Zulip">
+        </a>
+      </li>
+      <li>
+        <a class="github social_icon" href="https://github.com/mixxxdj/mixxx" target="_blank">
+          <img class="drop-shadow" src="{{ SITEURL }}/theme/images/social_icons/github.svg" alt="GitHub" title="Get the source on GitHub">
+        </a>
+      </li>
+    </ul>
+
+    <!-- DOTS - Always at the bottom -->
+    <div class="banner-dots" id="bannerDots"></div>
+  </div>
+</div>
   </div>
 </div>
 {% endblock %}
+
 
 {% block body %}
 <div id="features" class="docs-section container">

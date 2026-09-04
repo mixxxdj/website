@@ -19,7 +19,19 @@ ARTICLE_PATHS = [
     "news",
 ]
 
-STATIC_PATHS = ["audio", "images", "_redirects", ".well-known"]
+STATIC_PATHS = [
+    "audio",
+    "images",
+    "_redirects",
+    ".well-known",
+    "theme/static/js",
+]
+
+EXTRA_PATH_METADATA = {
+    "theme/static/js/banner-rotation.js": {
+        "path": "theme/js/banner-rotation.js"
+    },
+}
 
 MARKDOWN = {
     "extension_configs": {

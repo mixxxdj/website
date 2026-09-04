@@ -1,0 +1,185 @@
+/* Banner rotation styles */
+/* trying to stay as close as possible to the original design */
+.banner-rotation-container {
+    position: relative;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    margin: -1rem 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.banner-rotation-container .banner-content {
+    transition: opacity 0.4s ease;
+    width: 100%;
+    text-align: center;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-rotation-container .banner-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #f0f0ff;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    white-space: pre-line;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: -0.02em;
+}
+
+.banner-rotation-container .banner-text .subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: block;
+    margin-top: 0.05rem;
+}
+
+/* Remove link styling */
+.banner-rotation-container .banner-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+    width: 100%;
+}
+
+.banner-rotation-container .banner-link:hover,
+.banner-rotation-container .banner-link:visited,
+.banner-rotation-container .banner-link:active,
+.banner-rotation-container .banner-link:focus {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Social icons */
+.splash-social {
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    opacity: 1;
+    visibility: visible;
+    min-height: 25px;
+    display: flex !important;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splash-social.hidden {
+    opacity: 0;
+    visibility: hidden;
+    min-height: 25px;
+}
+
+.splash-social img {
+    height: 1.2em;
+}
+
+.splash-social li {
+    display: inline;
+    list-style-type: none;
+}
+
+/* Dots - at the bottom */
+.banner-rotation-container .banner-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    min-height: 15px;
+    margin-top: 0;
+    padding-bottom: 2px;
+}
+
+.banner-rotation-container .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.banner-rotation-container .dot.active {
+    background: #f7b731;
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(247, 183, 49, 0.4);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .banner-rotation-container {
+        min-height: 90px;
+        margin: -0.8rem 0 0 0;
+    }
+    .banner-rotation-container .banner-text {
+        font-size: 3rem;
+    }
+    .banner-rotation-container .banner-text .subtitle {
+        font-size: 1.4rem;
+        margin-top: 0.05rem;
+    }
+    .banner-rotation-container .banner-content {
+        min-height: 60px;
+    }
+    .banner-rotation-container .banner-dots {
+        gap: 6px;
+        min-height: 12px;
+    }
+    .banner-rotation-container .dot {
+        width: 6px;
+        height: 6px;
+    }
+    .splash-social {
+        min-height: 20px;
+        gap: 10px;
+        width: 8em;
+    }
+    .splash-social img {
+        height: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-rotation-container {
+        margin: -0.5rem 0 0 0;
+        min-height: 70px;
+    }
+    .banner-rotation-container .banner-text {
+        font-size: 2.2rem;
+    }
+    .banner-rotation-container .banner-text .subtitle {
+        font-size: 1.1rem;
+        margin-top: 0.05rem;
+    }
+    .banner-rotation-container .banner-content {
+        min-height: 50px;
+    }
+    .splash-social {
+        width: 6em;
+        gap: 8px;
+        min-height: 15px;
+    }
+    .splash-social img {
+        height: 0.9em;
+    }
+}
