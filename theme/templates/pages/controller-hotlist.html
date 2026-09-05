@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{% trans %}List the hottest controllers based on forums activity{% endtrans %}{% endblock %}
+
+{% block body %}
+
+<div id="controller-hotlist" class="docs-section container">
+  <h1><a class="headline-link" href="#controller-hotlist">Controller Hotlist</a></h1>
+  <p>{% trans %}This is the list of hottest controllers based on forums activity.{% endtrans %}</p>
+  <p>
+    <ul>
+      {% for controller, controller_data in page.controllers.items() %}
+        <li>
+        {{ controller_data.name }} &nbsp;&nbsp;&nbsp; &#x1F525; {{ controller_data.heat }} &nbsp;&nbsp;&nbsp; <a href="{{ controller_data.forum_link }}">&#x2197;</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </p>
+</div>
+
+<div id="donate" class="docs-section container">
+  <p>
+    {% with controller_mappings_forums_link="https://mixxx.discourse.group/c/controller-mappings" %}
+    {% trans %}
+    This list is created based on recent forums aktivity in the
+    <a href="{{ controller_mappings_forums_link }}">Controller Mapping</a> category.
+    To keep this list updated you are encouraged to created topics in the forums named
+    like an not yet supported controller. Even if you are not able to take the technical
+    challenge and create a mapping on your own, it helps us to keep this list updated.
+    If your controller is already on the list, you can leave a &#9829; (a like).
+    This is taken into account when generating this list and will help to give us a good
+    overview of the controller market in relation to Mixxx. However, a high number of likes
+    alone does not mean that Mixxx will support that controller soon. To create an official
+    controller we need the controller itself a contributor who has interest to create the
+    controller mapping along with documentation and a tester/reviewer who verifies the quality of the
+    mapping.
+    {% endtrans %}
+    {% endwith %}
+  </p>
+</div>
+
+{% endblock %}

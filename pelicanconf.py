@@ -100,6 +100,7 @@ PLUGINS = [
     "auto_siteurl",
     "author_metadata",
     "download_metadata",
+    "discourse_hotlist",
     "draft_override",
     "md_yaml",
     "render_math",
