@@ -1,0 +1,50 @@
+title: Concluding GSoC 2020: Mixxx Macros
+author: xerus
+date: 2020-08-31 12:00:00
+comments: yes
+
+{% extends "post.html" %}
+
+{% block post %}
+
+{% load markup %}
+{% filter markdown %}
+
+I am Janek, a Software Engineering student who has been in touch with the community and using Mixxx on and off for about two years.
+Throughout the last 3 months I have worked on a new feature called "Mixxx Macros", inspired by [Serato Flip](https://serato.com/dj/pro/expansions/flip), as part of the [Google Summer of Code 2020](https://summerofcode.withgoogle.com/projects/#4641898733502464).
+It enables you to create edits of your tracks without having to dive into a DAW and modify the audio files!
+
+## Usage
+Let us have a look at how to use this new feature with a common use-case:  
+You want to create an intro for a track by playing a part of the breakdown twice, then jump to the beginning.
+Since the first drop is a bit bland, you additionally want to jump straight to the second drop after the buildup.
+
+#### Preparation
+  - Make sure quantize is enabled so everything is aligned to the beats
+  - Set hotcue 1 before and hotcue 2 after the part of the breakdown to loop (hotcue 2 is merely a marker for orientation) and hotcue 4 at the start of the second drop. You also check the position of the cue at the beginning of the track.
+
+#### Recording
+  1. To record the Macro to the first slot, press the first button on the Macro row of your controller. (WIP: It starts blinking.)
+  2. Activate hotcue 1 to start the recording.
+  3. Either let the track play or scroll until you reach hotcue 2. Once at it, activate hotcue 1 again.
+  4. Again, move to hotcue 2 (but don't activate it!). Then invoke the cue.
+  5. Since the buildup is long and the drop transition should be very clean, stop the track if it is playing.
+  6. Scroll or scratch to the start of the first drop. Activate hotcue 4.
+  7. Stop recording by pressing Macro slot 1 again.
+
+#### Playback
+The newly recorded Macro will automatically play from the start (i.e. hotcue 1) so you can immediately review (/listen back to) your creation.
+Invoking the Macro while it is playing will start it again from its initial position.
+
+Whenever you load this track now, unless another Macro is recorded or you manually disable it, this Macro will automatically be enabled.
+... explain looping
+
+## Advanced Usage
+For already mapped controllers (you are encouraged to [add more](https://github.com/mixxxdj/mixxx/wiki#controller-mapping-documentation)!), either start recording via a dedicated button [WIP] or by activating an empty macro slot - note that not always both are available, depending on the capabilities of the controller.
+Mixxx will keep account of all hotcue jumps in that deck until that button is pressed again to stop recording.
+- toggle/enable
+- quantizing
+- This also allows for looping live cue point drumming.
+
+{% endfilter %}
+{% endblock %}
