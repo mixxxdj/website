@@ -9,7 +9,7 @@ summary: A final report on rebuilding Mixxx's LateNight skin in QML, from the le
 
 <!-- DRAFT: Add final screenshots/video and update the publication date before publishing. -->
 
-> **Disclaimer:** This post primarily serves as the documentation for my Google Summer of Code (GSoC) 2026 project, “Rebuilding the LateNight Theme in QML”. It is therefore longer and more technical than a typical Mixxx news post.
+Disclaimer: *The blog post primarily serves as the documentation for the [Google Summer of Code](https://summerofcode.withgoogle.com/) 2026 project: "Rebuilding the LateNight Theme in QML". Thus, it contains a lot more detailed description than the other Mixxx blog posts.*
 
 Hi everyone! I am Ayush Sah (arsenic), and I am back with the final report for my Google Summer of Code (GSoC) 2026 project with Mixxx.
 
