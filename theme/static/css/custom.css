@@ -390,6 +390,7 @@ img.responsive {
     display: block;
     border: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .navbar .navbar-hamburger-button {
@@ -762,3 +763,10 @@ article.news + article.news {
     padding: 1em;
     margin: 0 0 2em 0;
 }
+
+#page-wrapper.scroll-lock {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none;
+  -webkit-overflow-scrolling: none;
+  }
