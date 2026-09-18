@@ -116,6 +116,18 @@ The largest practical challenge was coordinating QML state with Mixxx’s existi
 
 The project reinforced two architectural lessons: keep reusable behavior in shared `res/qml` components, and give an experimental interface production-minded checks. Theme validation, startup smoke tests, explicit fallback behavior, and testing across layouts make the result easier for the wider Mixxx community to review and continue.
 
+## Protecting user data
+
+Most of this project changes presentation and runtime controls, but several surfaces can affect persistent user data. The main risks were accidental changes to the Library or track metadata, invalid saved preferences, and automated tests running against a real user profile. The mixer, effects, samplers, and styling work do not introduce direct paths for writing to audio files or the Library database.
+
+For the Library, the project kept the established QWidget implementation behind `QmlLegacyLibraryItem` instead of rewriting collection storage at the same time as the skin. QML menu and deck actions go through Mixxx’s existing Library, player, and `ControlProxy` backends rather than a skin-specific persistence layer. The File menu asks for confirmation before replacing a track on a playing deck, while shared drop handling ignores empty URLs and prevents a deck from being dropped onto itself.
+
+Hotcue labels, colors, types, and clear actions can alter saved track metadata. The QML controls use the existing cue and control APIs, reject missing tracks, cues, or invalid cue positions, close the editor if the loaded track changes, and suppress keyboard mappings while label text is being edited. The clear action is a separate explicit control in the hotcue popup rather than part of ordinary cue triggering. Focused tests cover the new proxy and cue-direction behavior.
+
+Preferences carry a separate risk because invalid values could persist across sessions. The waveform-preferences work stages edits until the user selects Save, provides Cancel and Reset paths, constrains values in the interface, and sanitizes supported ranges before they reach the configuration. Settings unsupported by the QML renderer are hidden or disabled instead of being silently applied.
+
+Finally, the QML startup smoke tests use an isolated temporary profile, a no-audio configuration, and offscreen rendering, so they do not run against a user’s normal settings or Library. LateNight QML also remains explicitly marked as experimental and is only exposed from developer mode while this wider testing continues.
+
 ## Testing and validation
 
 Validation combined automated checks with manual testing. Theme colors and SVG assets have dedicated validation, the shared effects infrastructure includes tests, and the QML skin has a startup smoke-test path in CI. These checks catch malformed assets, missing QML registrations, and regressions that are easy to overlook when the main focus is visual work.
