@@ -29,11 +29,11 @@ You can take a look at the video below to see LateNight QML in action.
 
 The first milestone was deliberately modest. It introduced the QML skin shell and the `QmlLegacyLibraryItem`, a bridge that hosts the existing QWidget-based Library inside the QML scene.
 
-That bridge was important for two reasons. It made the experimental skin usable early in the project, and it let the rest of the interface be ported incrementally instead of waiting for a complete Library rewrite. It also exposed a number of details that are easy to miss when porting a skin: scrollbar and header behavior, sorting, search input, keyboard focus, drag-and-drop, splitters, preview controls, palette changes, and repaint scheduling.
+That bridge was important for two reasons. It made the experimental skin usable early in the project and let the rest of the interface be ported incrementally while keeping the Library in its existing QWidget implementation. It also exposed a number of details that are easy to miss when porting a skin: scrollbar and header behavior, sorting, search input, keyboard focus, drag-and-drop, splitters, preview controls, palette changes, and repaint scheduling.
 
-The Library, its cover-art and Preview deck components, and the Preferences dialog remain deliberate QWidget transition boundaries in the current scope. The wider New UI migration is already underway: native Library and Settings work is progressing, while native replacements for the Preview deck and cover art remain follow-up work.
+The Library, its cover art and preview deck components, and the Preferences dialog remain deliberate QWidget transition boundaries in the current scope. Work on the wider New UI is progressing: the native Library and Settings work is underway, while native replacements for the preview deck and cover art remain follow-up work.
 
-Once the bridge was stable, the work could proceed from the outside in. LateNight-specific composition lives in `res/skins/LateNightQML`, while generic infrastructure was added to Mixxx’s shared `res/qml` layer. This separation makes the project more than a one-off skin port. It also provides a roadmap for future skin ports and independent skin implementations: developers of custom skins can move toward QML and use LateNight QML as a reference, building on shared controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
+Once the bridge was stable, the work could proceed from the outside in. LateNight-specific composition lives in `res/skins/LateNightQML`, while generic infrastructure was added to Mixxx’s shared `res/qml` layer. Splitting these layers makes the project more than a one-off skin port. It provides building blocks for future skin ports and independent skin implementations: developers of custom skins can move toward QML and use LateNight QML as a reference, building on shared controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
 
 <!-- TODO: Add a comparison Legacy vs LateNightQML Classic and PaleMoon end to end connection screenshots. -->
 
@@ -43,17 +43,17 @@ The styling work focused on the places where QML could preserve the LateNight ex
 
 ### Toolbar
 
-The old Settings button was removed from the toolbar. It was a long-standing discoverability issue: a small button acted as the entry point for skin and layout settings, but its purpose was not obvious to new users and its behavior was often discovered only by accident. Users could also confuse it with the application Preferences entry, which was available from the menu bar. The relevant skin and layout settings are now exposed through dropdowns next to the toolbar sections. These dropdowns are implemented as overlays, so they can open above the skin without forcing the rest of the layout to move. This keeps the toolbar compact while making its controls easier to discover.
+The old “Settings” button was removed from the toolbar. It was a long-standing discoverability issue: a small button acted as the entry point for skin and layout settings, but its purpose was not clear to new users and its behavior was often discovered only by accident. Users might also confuse it with the application Preferences entry, which was available from the menu bar. The relevant skin and layout settings are now exposed through dropdowns next to the toolbar sections. These dropdowns are implemented as overlays, so they can open over the skin without forcing the rest of the layout to move. This keeps the toolbar compact while making its controls easier to discover.
 
 <!-- TODO: Add a toolbar GIF, video, or screenshot here. -->
 
-On platforms and desktop environments that use in-window menus, including Windows and some Linux desktop environments, the traditional menu bar is replaced by a hamburger icon in the toolbar. It provides access to the same application actions through a hierarchical menu while saving vertical space. That gives DJs more room for the decks, mixer, and library without hiding essential application functions. On desktop environments that provide a native application menu, such as macOS and some Linux desktop setups, actions continue to use that system menu.
+On platforms and desktop environments that use in-window menus, including Windows and some Linux desktop environments, the traditional menu bar is replaced by a hamburger icon in the toolbar. The menu opens as an overlay, so it does not add another layout row or push the decks, mixer, or Library out of place. In the legacy layout, users could reclaim that vertical space only by hiding the menu bar. The QML menu keeps the application actions available without requiring that trade-off. On desktop environments that provide a native application menu, such as macOS and some Linux desktop setups, actions continue to use that system menu.
 
 <!-- TODO: Add a hamburger GIF, video, or screenshot here. -->
 
 ### Waveform stem and beatgrid control overlays
 
-The waveform reskin places stem and beatgrid controls over the waveform instead of taking space away from it. This is difficult to express cleanly in the old widget layout, but is natural in QML: controls can sit above the waveform without changing the geometry underneath it. The split-stem display and its states are styled as part of the waveform surface rather than as a separate block below it. The implementation restores the backgrounds, markers, gutters, separators, splitters, and filter-menu sizing needed to make the waveform area feel like LateNight while keeping both control sets available without introducing another layout row.
+The waveform reskin places stem and beatgrid controls over the waveform. This was a problem in the legacy layout, while QML allows controls to be positioned over other elements without changing their geometry. The split-stem display and its states are now styled as part of the waveform surface. The implementation also restores the backgrounds, markers, gutters, separators, splitters, and filter-menu sizing needed to make the waveform area feel like LateNight while keeping both control sets available without introducing another layout row.
 
 <!-- TODO: Add a waveform overlay GIF, video, or screenshot here. -->
 
@@ -65,11 +65,11 @@ The effects rack supports a space-saving arrangement in which Effects 1 and 4 ca
 
 ### 64 samplers without a separate skin
 
-The old widget-based LateNight setup used a separate `LateNight (64 Samplers)` skin for a high sampler count. LateNight QML can expose 4, 8, 16, 32, 48, and 64 samplers directly from the same skin without constructing every expanded sampler at once. Rows are reused, expanded content is cached, and warming happens sequentially, keeping the larger rack manageable while preserving the rest of the layout. This is one of the places where QML’s dynamic composition makes a unified skin possible without giving up the practical performance considerations that made a separate skin useful before.
+The legacy widget-based LateNight skin offered up to 16 samplers, while the separate `LateNight (64 Samplers)` skin supported higher sampler counts. LateNight QML brings these choices into the same skin, exposing 4, 8, 16, 32, 48, and 64 samplers without constructing every expanded sampler at once. Expanded sampler rows are cached and warmed sequentially, meaning the expanded content is prepared one row at a time. This keeps the larger rack manageable while preserving the rest of the layout. It is one of the places where QML’s dynamic composition makes a unified skin possible without giving up the practical performance considerations that made a separate skin useful before.
 
 <!-- TODO: Add a 64-sampler GIF, video, or screenshot here. -->
 
-The final result is intentionally recognisable. QML gives us a different implementation and more adaptable layout primitives, but the Classic scheme should still feel like LateNight, and PaleMoon should still feel like the alternate LateNight scheme that existing users know.
+Although QML requires a different implementation, it offers more flexible layout building blocks. The Classic color scheme is still reminiscent of the old LateNight skin, and the QML adaptation for PaleMoon helps existing users feel right at home.
 
 ## Startup experience and performance improvements
 
