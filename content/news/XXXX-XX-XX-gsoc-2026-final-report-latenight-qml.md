@@ -13,15 +13,15 @@ Disclaimer: *The blog post primarily serves as the documentation for the [Google
 
 Hi everyone! I am Ayush Sah (arsenic), and I am back with the final report for my Google Summer of Code (GSoC) 2026 project with Mixxx.
 
-In my [introductory post](https://mixxx.org/news/2026-06-06-gsoc-2026-rebuild-latenight-qml/), I described the plan to rebuild Mixxx’s iconic LateNight skin in native QML. The motivation was simple: preserve the dense, familiar workflow that makes LateNight useful to DJs while moving the skin’s presentation and interaction layer to a more flexible and modern UI technology.
+In my [introductory post](https://mixxx.org/news/2026-06-06-gsoc-2026-rebuild-latenight-qml/), I described the plan to rebuild Mixxx’s iconic LateNight skin in native QML. The motivation was simple: preserve the dense, familiar LateNight experience that makes the skin useful to DJs while moving its presentation and interaction layer to a more flexible and modern UI technology.
 
 The introductory post described a 12-week implementation plan. The project ultimately ran for 16 weeks, giving enough time to take the initial shell through the major LateNight workflows and the shared infrastructure needed to support them.
 
 The result is a substantially complete LateNight QML interface with native QML decks, waveform integration and controls, toolbar, mixer, effects rack, samplers, microphone and auxiliary-input racks, menus, responsive deck layouts, and the theme infrastructure needed for Classic and PaleMoon styling.
 
-The short version is that the original goal was not to make a new skin that merely looked like LateNight. It was to make the LateNight workflow available in QML, with the same controls, states, layouts, and visual language wherever the scope allowed.
+The short version is that the original goal was not just to make a new skin that merely looked like LateNight. The aim was also to make the LateNight workflow available in QML, with the same controls, states, layouts, and visual language wherever the scope allowed.
 
-You can also take a look at the video below to see LateNight QML in action.
+You can take a look at the video below to see LateNight QML in action.
 
 <!-- YouTube video to be added -->
 
@@ -31,15 +31,15 @@ The first milestone was deliberately modest. It introduced the QML skin shell an
 
 That bridge was important for two reasons. It made the experimental skin usable early in the project, and it let the rest of the interface be ported incrementally instead of waiting for a complete Library rewrite. It also exposed a number of details that are easy to miss when porting a skin: scrollbar and header behavior, sorting, search input, keyboard focus, drag-and-drop, splitters, preview controls, palette changes, and repaint scheduling.
 
-The Library, its cover-art and Preview deck components, and the Preferences dialog remain deliberate QWidget transition boundaries in the current scope. The wider QML migration is already underway: native Library and Settings work is progressing, while QML replacements for the Preview deck and cover art remain follow-up work.
+The Library, its cover-art and Preview deck components, and the Preferences dialog remain deliberate QWidget transition boundaries in the current scope. The wider New UI migration is already underway: native Library and Settings work is progressing, while native replacements for the Preview deck and cover art remain follow-up work.
 
-Once the bridge was stable, the work could proceed from the outside in. Shared controls and behaviors were added to `res/qml`, while the LateNight-specific composition lives in `res/skins/LateNightQML`. This separation makes the project more than a one-off skin port. It also provides a roadmap for future skin ports and independent skin implementations: enthusiasts can build on the shared QML controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
+Once the bridge was stable, the work could proceed from the outside in. LateNight-specific composition lives in `res/skins/LateNightQML`, while generic infrastructure was added to Mixxx’s shared `res/qml` layer. This separation makes the project more than a one-off skin port. It also provides a roadmap for future skin ports and independent skin implementations: developers of custom skins can move toward QML and use LateNight QML as a reference, building on shared controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
 
 <!-- TODO: Add a comparison Legacy vs LateNightQML Classic and PaleMoon end to end connection screenshots. -->
 
 ## Styling changes
 
-The styling work focused on the places where QML could preserve the LateNight workflow while making the interface clearer or more space-efficient.
+The styling work focused on the places where QML could preserve the LateNight experience while making the interface clearer or more space-efficient.
 
 ### Toolbar
 
@@ -47,7 +47,7 @@ The old Settings button was removed from the toolbar. It was a long-standing dis
 
 <!-- TODO: Add a toolbar GIF, video, or screenshot here. -->
 
-On Windows and Linux desktop environments where a global application menu is not used, the traditional menu bar is replaced by a hamburger icon in the toolbar. It provides access to the same application actions through a hierarchical menu while saving vertical space. That gives DJs more room for the decks, mixer, and library without hiding essential application functions. On macOS, the actions continue to use the native system menu bar.
+On platforms and desktop environments that use in-window menus, including Windows and some Linux desktop environments, the traditional menu bar is replaced by a hamburger icon in the toolbar. It provides access to the same application actions through a hierarchical menu while saving vertical space. That gives DJs more room for the decks, mixer, and library without hiding essential application functions. On desktop environments that provide a native application menu, such as macOS and some Linux desktop setups, actions continue to use that system menu.
 
 <!-- TODO: Add a hamburger GIF, video, or screenshot here. -->
 
@@ -65,7 +65,7 @@ The effects rack supports a space-saving arrangement in which Effects 1 and 4 ca
 
 ### 64 samplers without a separate skin
 
-The old widget-based LateNight workflow used a separate `LateNight (64 Samplers)` skin for a high sampler count. LateNight QML can expose 4, 8, 16, 32, 48, and 64 samplers directly from the same skin without constructing every expanded sampler at once. Rows are reused, expanded content is cached, and warming happens sequentially, keeping the larger rack manageable while preserving the rest of the layout. This is one of the places where QML’s dynamic composition makes a unified skin possible without giving up the practical performance considerations that made a separate skin useful before.
+The old widget-based LateNight setup used a separate `LateNight (64 Samplers)` skin for a high sampler count. LateNight QML can expose 4, 8, 16, 32, 48, and 64 samplers directly from the same skin without constructing every expanded sampler at once. Rows are reused, expanded content is cached, and warming happens sequentially, keeping the larger rack manageable while preserving the rest of the layout. This is one of the places where QML’s dynamic composition makes a unified skin possible without giving up the practical performance considerations that made a separate skin useful before.
 
 <!-- TODO: Add a 64-sampler GIF, video, or screenshot here. -->
 
@@ -90,15 +90,15 @@ The LateNight QML surface now covers:
 - Microphone and auxiliary-input racks with configured and unconfigured states, up to four units of each type, talkover and ducking, pregain, PFL, effects, VU metering, main-mix routing, and crossfader assignment.
 - Responsive library arrangements and layout transitions that make the skin usable at different window sizes.
 
-This is feature and visual parity for the intended LateNight QML scope, not a claim that every Mixxx subsystem has already moved to QML. The remaining QWidget boundaries are intentional: Library and Preferences migrations are underway, while the Preview deck and cover-art path remain to be ported.
+This is feature and visual parity for the intended LateNight QML scope, not a claim that every Mixxx interface surface already has a native QML implementation. The remaining QWidget boundaries are intentional: the Library and Preferences migrations for the New UI are underway, while the Preview deck and cover-art path remain to be ported.
 
 ## New work in `res/qml`
 
-Beyond the skin itself, the project contributed reusable QML work to `res/qml`.
+Beyond the skin itself, the project contributed reusable QML infrastructure to `res/qml`, Mixxx’s common QML layer. Some of these generic pieces were not yet available as reusable components for the New UI, so they were implemented in the shared layer rather than duplicated inside LateNight QML. That gives LateNight QML and future custom skins a common foundation to build on.
 
-The QML Settings work extended this migration. Native pages now cover sound hardware, the Library, controllers, and interface settings. Antoine's open [QML waveform-settings work](https://github.com/mixxxdj/mixxx/pull/15381) fills in the remaining waveform controls. In QML mode, the legacy Interface page is hidden to avoid presenting duplicate or misleading settings that do not apply to the new skin, while the Preferences action remains available through the application menu.
+Work on the New UI Settings window has extended this migration. Native pages now cover sound hardware, the Library, controllers, and interface settings. Antoine's open [waveform-settings work](https://github.com/mixxxdj/mixxx/pull/15381) fills in the remaining waveform controls. In the New UI, the legacy Interface page is hidden to avoid presenting duplicate or misleading settings that do not apply to the new skin, while the Preferences action remains available through the application menu.
 
-The waveform work adds a dedicated QML Waveforms page and connects shared waveform preferences to the active QML waveforms. It supports waveform type, zoom, visual gain, stem, marker, and related overview and scrolling-waveform settings, refreshing renderer stacks when renderer-affecting options change. Overview waveform caching remains unchanged, and analyzer status and progress reporting are retained without progressive waveform repainting. Some settings are intentionally unavailable in the current QML renderer: the frame-rate control is hidden, the legacy High Detail setting is disabled because it is not supported by the QML scene-graph renderer, and Split stereo signal is available only when the RGB waveform renderer is selected.
+The waveform work adds a dedicated Waveforms page to the New UI and connects shared waveform preferences to the active QML waveforms. It supports waveform type, zoom, visual gain, stem, marker, and related overview and scrolling-waveform settings, refreshing renderer stacks when renderer-affecting options change. Overview waveform caching remains unchanged, and analyzer status and progress reporting are retained without progressive waveform repainting. Some settings are intentionally unavailable in the current QML renderer: the frame-rate control is hidden, the legacy High Detail setting is disabled because it is not supported by the QML scene-graph renderer, and Split stereo signal is available only when the RGB waveform renderer is selected.
 
 The deck port led to reusable button, cycle-control, overview-marker, hotcue, intro/outro, beat-size, beatgrid, and marker behaviors. Key formatting and harmonic-display support was exposed to QML and is used by the deck key display and the key-color indicator logic.
 
@@ -106,7 +106,7 @@ The control layer gained reusable QML knobs, faders, orientation controls, relat
 
 Larger surfaces also benefited from shared infrastructure. Application-menu and action proxies connect QML menus to Mixxx commands and dialogs. Effects infrastructure provides effect selectors, presets, parameter controls, routing, and tests. Reusable sampler, microphone, auxiliary-input, and ducking components keep rack implementations consistent while allowing the LateNight layout to control their presentation.
 
-Finally, the project added QML-focused validation and CI smoke coverage so the interface can behave like a first-class Mixxx UI rather than a special demo mode.
+Finally, the project added QML-focused validation and CI smoke coverage. These checks help catch regressions and ensure that the interface is tested as a first-class Mixxx UI rather than as a special demo mode.
 
 ## Challenges and lessons learned
 
@@ -120,7 +120,7 @@ The project reinforced two architectural lessons: keep reusable behavior in shar
 
 Validation combined automated checks with manual testing. Theme colors and SVG assets have dedicated validation, the shared effects infrastructure includes tests, and the QML skin has a startup smoke-test path in CI. These checks catch malformed assets, missing QML registrations, and regressions that are easy to overlook when the main focus is visual work.
 
-Manual testing focused on both color schemes, two- and four-deck layouts, different window sizes, high sampler counts, effects routing, library searches, track actions, and switching between the legacy skin and LateNight QML. The remaining issues in the triage list show where broader hardware, platform, display-scale, and accessibility testing is still needed.
+Manual testing focused on both color schemes, two- and four-deck layouts, different window sizes, high sampler counts, effects routing, library searches, track actions, and switching between the legacy skin and LateNight QML. The remaining issues collected under the LateNight QML triage label point to areas where broader hardware, platform, display-scale, and accessibility testing is still needed. Representative issues and the full label are listed in the Future work and known issues section below.
 
 ## Trying LateNight QML
 
@@ -140,7 +140,7 @@ The Classic and PaleMoon schemes can be selected from the QML interface preferen
 
 ## Pull requests
 
-The following list records the project work as of 17 September 2026. It includes 37 project contributions: 35 merged and 2 still open. An earlier closed bootstrap attempt is intentionally excluded because it was superseded by the merged Library-integration path listed below.
+The following list records the project work as of 17 September 2026. It includes 37 project contributions: 35 merged and 2 still open.
 
 ### Feature PRs
 
@@ -204,9 +204,9 @@ The following list records the project work as of 17 September 2026. It includes
 The project reached the intended GSoC milestone, but LateNight QML is still marked experimental. The next steps are clear:
 
 1. Continue the QML work in the open scaling and waveform PRs, and validate it across more operating systems, display scales, graphics backends, and window configurations.
-2. Replace the current QWidget implementation of the Library with a native QML Library when [Antoine's Library splitview and search work](https://github.com/mixxxdj/mixxx/pull/16686) is ready. The current bridge is an intentional transition point, not the final architecture.
-3. Complete the QML Settings migration by finishing the remaining QML preference categories, routing all Preferences entry points to the QML Settings window, and eventually replacing the QWidget `DlgPreferences` shell. The current dialog is an intentional transition boundary, not the final architecture.
-4. Replace the current Preview deck and cover-art implementation with QML once their native components are ready.
+2. Replace the current QWidget implementation of the Library with the New UI's native QML Library when [Antoine's Library splitview and search work](https://github.com/mixxxdj/mixxx/pull/16686) is ready. That work relies on newer Qt APIs requiring Qt 6.10, so the current bridge is an intentional transition point until that dependency is available across supported builds.
+3. Complete the New UI Settings migration by finishing the remaining preference categories, routing all Preferences entry points to the New UI Settings window, and eventually replacing the QWidget `DlgPreferences` shell. The current dialog is an intentional transition boundary, not the final architecture.
+4. Replace the current Preview deck and cover-art implementation with native QML components in the New UI once they are ready.
 5. Add tooltips to LateNight QML and the New UI. This is tracked in [issue #17038](https://github.com/mixxxdj/mixxx/issues/17038), which covers both normal and `--developer` modes.
 6. Continue accessibility and interaction polish, including [screen-reader support](https://github.com/mixxxdj/mixxx/issues/17051), [consistent keyboard focus on startup](https://github.com/mixxxdj/mixxx/issues/17052), and [QML focus scopes](https://github.com/mixxxdj/mixxx/issues/17053), alongside the smaller visual issues that emerge from wider testing.
 
@@ -214,11 +214,11 @@ There are also a few cleanup items already in triage, including startup warnings
 
 ### AI-assisted work disclosure
 
-The [scaling follow-up in PR #17020](https://github.com/mixxxdj/mixxx/pull/17020) is the only contribution in this GSoC effort where I used GPT Astra for code generation. It helped prepare a plan, generate small code snippets, and review branch changes; implementation decisions, testing, and validation remained my responsibility.
+The [scaling follow-up in PR #17020](https://github.com/mixxxdj/mixxx/pull/17020) is the only contribution in this GSoC effort where I used GPT Astra for code generation. It helped prepare a plan, generate small code snippets, and review branch changes; implementation decisions, testing, and validation remained my responsibility. For larger or deeper tasks, relying on AI would require many iterations, substantial context, and careful handling of hallucinations, which can become counterproductive. In this project, using it for review, validation, and a starter blueprint was more useful than relying on it for most of the development; responsible use still requires human review and judgment.
 
 ## Testing request
 
-A lot of care has gone into making DJs feel at home with LateNight QML. The goal has been to [“restore the same look and feel”](https://mixxx.org/news/2026-06-06-gsoc-2026-rebuild-latenight-qml/) of the original skin. Please test it in real DJ workflows, especially for performance and visual parity with the legacy LateNight skin across both Classic and PaleMoon. Tell us what feels right, what feels different, and what needs work through Zulip or GitHub issue trackers.
+Please test LateNight QML in real DJ workflows, especially for performance and visual parity with the legacy LateNight skin across both Classic and PaleMoon. A lot of care has gone into making DJs feel at home with LateNight QML, with the goal of [“restoring the same look and feel”](https://mixxx.org/news/2026-06-06-gsoc-2026-rebuild-latenight-qml/) of the original skin. Tell us what feels right, what feels different, and what needs work through Zulip or GitHub issue trackers.
 
 ## Acknowledgments
 
@@ -232,7 +232,7 @@ I am also grateful to Google for making this opportunity possible through [Googl
 
 ## Closing
 
-At the end of the 16-week GSoC period, LateNight QML is a working experimental skin that preserves the familiar LateNight workflow while establishing a reusable QML foundation for future Mixxx interfaces.
+At the end of the 16-week GSoC period, LateNight QML is a working experimental skin that preserves the familiar LateNight experience while establishing a reusable QML foundation for future Mixxx interfaces.
 
 The remaining QWidget boundaries are intentional follow-up work, not a gap in the project’s direction. The central migration is no longer hypothetical, and the next steps have a clear roadmap.
 
@@ -240,7 +240,7 @@ The remaining QWidget boundaries are intentional follow-up work, not a gap in th
 
 This project is fully open source, and I would love to hear feedback and ideas from the community, especially regarding accessibility and touch-screen usability.
 
-- **Follow the Issues**: Keep track of LateNight QML work in the [GitHub issue tracker](https://github.com/mixxxdj/mixxx/issues?q=is%3Aissue+label%3A%22LateNight+QML%22).
+- **Follow the Issues**: Keep track of LateNight QML work in the [GitHub issue tracker](https://github.com/mixxxdj/mixxx/issues?q=is%3Aissue+label%3A%22LateNight+QML%22). If you encounter a bug, usability issue, or have other feedback about LateNight QML, open an issue with steps to reproduce and relevant platform details. Mixxx maintainers will triage the report and apply the appropriate labels.
 - **Join the Community**: Come chat with us in the [Mixxx Zulip organization](https://mixxx.zulipchat.com/) and follow the project discussions there.
 - **Learn More**: Read about the wider [QML project](https://mixxx.org/news/2025-08-06-qml-project/) and its direction for Mixxx.
 - **Contribute**: If you're familiar with QML or C++, we are always looking for reviewers and testers!
