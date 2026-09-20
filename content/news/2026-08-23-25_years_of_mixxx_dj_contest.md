@@ -5,13 +5,13 @@ comments: yes
 date: 2026-08-23 01:01:23
 
 
-To celebrate the 25th anniversary of [Mixxx](https://mixxx.org) and its community, we want to organize an event where everyone can show how they use Mixxx, what tricks Mixxx makes possible, to demonstrate that Mixxx is designed to 'DJ your way' and how much fun we have with it.
+To celebrate the 25ᵗʰ anniversary of [Mixxx](https://mixxx.org) and its community, we want to organize an event where everyone can show how they use Mixxx, what tricks Mixxx makes possible, to demonstrate that Mixxx is designed to 'DJ your way' and how much fun we have with it.
 
 ## Who?
-Everyone who loves music and DJing, whether you DJ for yourself, for friends and family or in public, whether you are a bedroom DJ, a tango DJ, a wedding DJ, a club DJ, or a Famous DJ playing on big events, whether you're a beginner or already experienced — everyone is invited to join.  
+Everyone who loves music and DJing, whether you DJ for yourself, for friends and family or in public, whether you are a bedroom DJ, a tango DJ, a wedding DJ, a club DJ, or a famous DJ playing on big events, whether you're a beginner or already experienced, everyone is invited to join & participate.  
 Music is about emotions, DJing is about evoking emotions in others: with music you can make others happy, cheerful, enthusiastic or excited, but you can also make others melancholic, sad, or withdrawn.  
 
-If you would rather share a ‘Happy 25th Anniversary Mixxx’-mix without participating in the DJ contest, or if you simply want to share anniversary wishes… please do so in the [Happy 25th Anniversary Mixxx](https://mixxx.discourse.group/t/happy-25th-anniversary-mixxx/34142)-topic on our forum.
+If you would rather share a ‘Happy 25ᵗʰ Anniversary Mixxx’-mix without participating in the DJ contest, or if you simply want to share anniversary wishes… please do so in the [Happy 25ᵗʰ Anniversary Mixxx](https://mixxx.discourse.group/t/happy-25th-anniversary-mixxx/34142)-topic on our forum.
 
 Take the audience along, DJ your way and entertain us.
 
@@ -19,10 +19,11 @@ Take the audience along, DJ your way and entertain us.
 
 When playing some music styles, tricks and techniques can be complement and reinforce each other, whereas in other styles this is not the case.  
 Show us your style, show us how you experience music, share the vibe and let others experience music.  
-There is no jury in this competition judging based on technique, music choice, or ... In this contest, everything is up to the community; everyone is free to decide on which criteria they base their vote for you.  
+There is no jury at this competition to judge based on technique, music choice, or ... In this contest, everything is up to the community; everyone is free to decide on which criteria they base their vote for you.  
 Every style is welcome, whether it is classical, R&B, metal... but we prefer music created with human creativity.  
 
 In 3 rounds (or 2 if there are no more than 25 candidates), our community chooses who will be the **'25 Years of Mixxx DJ Contest Laureats'**.
+
 * **Round 1** = up to 100 candidates (limited to 100 to keep it manageable).
 * **Round 2** = 25 candidates (skipped if fewer than 25 total participants in the first round)  
 * **Final** = 10 finalists
@@ -32,6 +33,7 @@ In 3 rounds (or 2 if there are no more than 25 candidates), our community choose
 [![DJ Contest Prize Table]({static}/images/news/djcontest_prizetable.png)]({static}/images/news/djcontest_prizetable.png)
 
 Prizes on the prizetable (alphabetical on brand)  
+
 * 2x [Adam Audio H 200 Headphones](https://www.adam-audio.com/en/headphones/h200/)  
 * 3x [Beyerdynamic DJ 300 PRO X headphones](https://global.beyerdynamic.com/p/dj-300-pro-x)  
 * 1x [Reloop Ready DJ Controller](https://www.reloop.com/reloop-ready)  
@@ -41,7 +43,7 @@ Prizes on the prizetable (alphabetical on brand)
 
 In addition to unlimited fame and honor, thanks to the valued support of manufacturers and vendors, we can also honor the laureates with fantastic prizes.  
 All prizes will be displayed on a prize table (similar to a table-quiz) throughout the contest.  
-As soon as the result of the final vote round is known, the laureates can to choose a prize from the prize table in the order of the final results: first the highest-ranked finalist, then the runner-up... and so on, as long as there are prizes on the table.
+As soon as the results of the final round of voting are known, the laureats can choose a prize from the prize table in the order of the final results: first the highest-ranked finalist, then the runner-up... and so on, as long as there are prizes on the table.
 If finalists finish tied, the points earned in the second and (if necessary) first rounds will be counted. If this does not lead to a clearer ranking, the order in which the candidates submitted their first video will be taken into account (numbering in the first round).  
 
 To vendors and manufacturers:  
@@ -114,9 +116,9 @@ We apologize if our communication did not reach you or was lost. You can still a
 * You must perform **live** (no pre-recorded set).
 * Create your video preferable with 1080p HD and HQ Audio.
 * Mouse movements do not need to be visible (captured in the video).
-* Do **not** add subtitles, captions of titles to the video.
-* To ensure that the same video and audio compression is used for all participants' videos, we ask you to upload your video to **YouTube as a private video (unlisted, non-publicn)** (only visible to those with the link). Share the link with **no one other than Mixxx**. See below for more information on uploading a video to YouTube.
-* Example of the format we expect: Happy 25th Anniversary Mixxx (with an abundance of samples)
+* Do **not** add subtitles, captions or titles to the video.
+* To ensure that the same video and audio compression is used for all participants' videos, we ask you to upload your video to **YouTube as a private video (unlisted, non-public)** (only visible to those with the link). Share the link with **no one other than Mixxx**. See below for more information on uploading a video to YouTube.
+* Example of the format we expect: Happy 25ᵗʰ Anniversary Mixxx (with an abundance of samples)
 
 @Video(https://www.youtube.com/watch?v=lIK-3mwuYeU)
 
@@ -159,7 +161,7 @@ What (DJname) loves about DJing is ...
     - Your DJ name (and age if permitted)
     - We add the text you wrote about yourself as information overlay to your videp.
 * Check if the video meets the requirements. We highlight (subtitle) the moments where the required samples and tracks appear.
-* Check whether the videos contain offensive language (including unintended combinations of examples); if so, they will be excluded.
+* Check whether the videos contains offensive language (including unintended combinations of samples); if so, they will be excluded.
 * We will send you one response after your video has been reviewed: approved or rejected (with the reason). We will not comment on the reasons.
 * Upload the video to the **Mixxx YouTube channel**
 * Create a voting topic on our **Discourse forum** and open it for voting on the correct date and time.
