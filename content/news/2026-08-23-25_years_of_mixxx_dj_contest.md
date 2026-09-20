@@ -161,7 +161,7 @@ What (DJname) loves about DJing is ...
     - Your DJ name (and age if permitted)
     - We add the text you wrote about yourself as information overlay to your videp.
 * Check if the video meets the requirements. We highlight (subtitle) the moments where the required samples and tracks appear.
-* Check whether the videos contains offensive language (including unintended combinations of examples); if so, they will be excluded.
+* Check whether the videos contains offensive language (including unintended combinations of samples); if so, they will be excluded.
 * We will send you one response after your video has been reviewed: approved or rejected (with the reason). We will not comment on the reasons.
 * Upload the video to the **Mixxx YouTube channel**
 * Create a voting topic on our **Discourse forum** and open it for voting on the correct date and time.
