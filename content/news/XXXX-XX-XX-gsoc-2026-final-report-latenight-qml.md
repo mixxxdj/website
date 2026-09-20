@@ -45,40 +45,76 @@ The styling work focused on the places where QML could preserve the LateNight ex
 
 The old “Settings” button was removed from the toolbar. It was a long-standing discoverability issue: a small button acted as the entry point for skin and layout settings, but its purpose was not clear to new users and its behavior was often discovered only by accident. Users might also confuse it with the application Preferences entry, which was available from the menu bar. The relevant skin and layout settings are now exposed through dropdowns next to the toolbar sections. These dropdowns are implemented as overlays, so they can open over the skin without forcing the rest of the layout to move. This keeps the toolbar compact while making its controls easier to discover.
 
-<video controls preload="metadata" style="max-width: 100%; height: auto;">
-  <source src="{static}/images/news/latenight-qml-toolbar.mp4" type="video/mp4">
-  Your browser does not support embedded videos.
-</video>
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <video controls preload="metadata" style="max-width: 100%; height: auto;">
+    <source src="{static}/images/news/latenight-qml-toolbar.mp4" type="video/mp4">
+    Your browser does not support embedded videos.
+  </video>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    Toolbar layout and skin controls in LateNight QML
+  </figcaption>
+</figure>
 
 On platforms and desktop environments that use an in-window menu bar, including Windows and some Linux desktop environments, the in-window menu bar is replaced by a hamburger button in the toolbar. The button opens the main menu as an overlay, so the menu itself does not add another layout row or push the decks, mixer, or Library out of place. In the legacy layout, users could reclaim the menu bar’s vertical space only by hiding it. On desktop environments that provide a native application menu, such as macOS and some Linux desktop setups, actions continue to use that system menu.
 
-<video controls preload="metadata" style="max-width: 100%; height: auto;">
-  <source src="{static}/images/news/latenight-qml-windows-hamburger-menu.mp4" type="video/mp4">
-  Your browser does not support embedded videos.
-</video>
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <video controls preload="metadata" style="max-width: 100%; height: auto;">
+    <source src="{static}/images/news/latenight-qml-windows-hamburger-menu.mp4" type="video/mp4">
+    Your browser does not support embedded videos.
+  </video>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    Hamburger Menu in action
+  </figcaption>
+</figure>
 
 ### Waveform stem and beatgrid control overlays
 
 The waveform reskin places stem and beatgrid controls over the waveform. This was a problem in the legacy layout, while QML allows controls to be positioned over other elements without changing their geometry. The split-stem display and its states are now styled as part of the waveform surface. The implementation also restores the backgrounds, markers, gutters, separators, splitters, and filter-menu sizing needed to make the waveform area feel like LateNight while keeping both control sets available without introducing another layout row.
 
-<video controls preload="metadata" style="max-width: 100%; height: auto;">
-  <source src="{static}/images/news/latenight-qml-stem-beatgrid-overlay.mp4" type="video/mp4">
-  Your browser does not support embedded videos.
-</video>
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <video controls preload="metadata" style="max-width: 100%; height: auto;">
+    <source src="{static}/images/news/latenight-qml-stem-beatgrid-overlay.mp4" type="video/mp4">
+    Your browser does not support embedded videos.
+  </video>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    Stem and beatgrid controls are displayed as overlays on the waveform
+  </figcaption>
+</figure>
 
 ### Effects Rack space saving
 
 The effects rack supports a space-saving arrangement in which Effects 1 and 4 can remain compact while Effects 2 and 3 are open, and vice versa. This keeps the parameter-rich middle of the rack accessible without making the whole interface unnecessarily tall.
 
-[![Effects 1 and 4 open in LateNight QML]({static}/images/news/latenight-qml-effects-1-4.png)]({static}/images/news/latenight-qml-effects-1-4.png)
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <a href="{static}/images/news/latenight-qml-effects-1-4.png">
+    <img src="{static}/images/news/latenight-qml-effects-1-4.png" alt="Effects 1 and 4 open in LateNight QML">
+  </a>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    Effects 1 and 4 open while Effects 2 and 3 remain compact
+  </figcaption>
+</figure>
 
-[![Effects 2 and 3 open in LateNight QML]({static}/images/news/latenight-qml-effects-2-3.png)]({static}/images/news/latenight-qml-effects-2-3.png)
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <a href="{static}/images/news/latenight-qml-effects-2-3.png">
+    <img src="{static}/images/news/latenight-qml-effects-2-3.png" alt="Effects 2 and 3 open in LateNight QML">
+  </a>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    Effects 2 and 3 open while Effects 1 and 4 remain compact
+  </figcaption>
+</figure>
 
 ### 64 samplers without a separate skin
 
 The legacy widget-based LateNight skin offered up to 16 samplers, while the separate `LateNight (64 Samplers)` skin supported higher sampler counts. LateNight QML brings these choices into the same skin, exposing 4, 8, 16, 32, 48, and 64 samplers without constructing every expanded sampler at once. Expanded sampler rows are cached and warmed sequentially, meaning the expanded content is prepared one row at a time. This keeps the larger rack manageable while preserving the rest of the layout. It is one of the places where QML’s dynamic composition makes a unified skin possible without giving up the practical performance considerations that made a separate skin useful before.
 
-[![64-sampler layout in LateNight QML]({static}/images/news/latenight-qml-64-samplers.png)]({static}/images/news/latenight-qml-64-samplers.png)
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <a href="{static}/images/news/latenight-qml-64-samplers.png">
+    <img src="{static}/images/news/latenight-qml-64-samplers.png" alt="64-sampler layout in LateNight QML">
+  </a>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    LateNight QML displaying the 64-sampler layout
+  </figcaption>
+</figure>
 
 ## Startup experience and performance improvements
 
