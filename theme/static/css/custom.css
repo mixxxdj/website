@@ -254,6 +254,30 @@ input[type="button"].button-primary:disabled:hover {
     margin-right:auto;
 }
 
+.news .performance-metrics {
+    overflow-x: auto;
+}
+
+.news .performance-metrics table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.news .performance-metrics th,
+.news .performance-metrics td {
+    overflow-wrap: anywhere;
+    vertical-align: top;
+}
+
+.news .performance-metrics th:first-child,
+.news .performance-metrics td:first-child {
+    width: 30%;
+}
+
+.news .performance-metrics table ul {
+    margin-bottom: 0;
+}
+
 .news img {
     display:block;
     max-width: 100%;
