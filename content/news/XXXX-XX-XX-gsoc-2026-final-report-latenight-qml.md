@@ -39,11 +39,13 @@ Once the bridge was stable, the work could proceed from the outside in. LateNigh
   <a href="{static}/images/news/latenight-qml-palemoon.png">
     <img src="{static}/images/news/latenight-qml-palemoon.png" alt="LateNight QML PaleMoon">
   </a>
+  <div style="font-size: small; margin: 5px 0; font-weight: normal;">
+    [Top] LateNight QML PaleMoon
+  </div>
   <a href="{static}/images/news/latenight-palemoon.png">
     <img src="{static}/images/news/latenight-palemoon.png" alt="LateNight PaleMoon">
   </a>
   <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
-    [Top] LateNight QML PaleMoon<br>
     [Bottom] LateNight PaleMoon
   </figcaption>
 </figure>
@@ -52,11 +54,13 @@ Once the bridge was stable, the work could proceed from the outside in. LateNigh
   <a href="{static}/images/news/latenight-qml-classic.png">
     <img src="{static}/images/news/latenight-qml-classic.png" alt="LateNight QML Classic">
   </a>
+  <div style="font-size: small; margin: 5px 0; font-weight: normal;">
+    [Top] LateNight QML Classic
+  </div>
   <a href="{static}/images/news/latenight-classic.png">
     <img src="{static}/images/news/latenight-classic.png" alt="LateNight Classic">
   </a>
   <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
-    [Top] LateNight QML Classic<br>
     [Bottom] LateNight Classic
   </figcaption>
 </figure>
@@ -129,7 +133,9 @@ The effects rack supports a space-saving arrangement in which Effects 1 and 4 ca
 
 ### 64 samplers without a separate skin
 
-The legacy widget-based LateNight skin offered up to 16 samplers, while the separate `LateNight (64 Samplers)` skin supported higher sampler counts. LateNight QML brings these choices into the same skin, exposing 4, 8, 16, 32, 48, and 64 samplers without constructing every expanded sampler at once. Expanded sampler rows are cached and warmed sequentially, meaning the expanded content is prepared one row at a time. This keeps the larger rack manageable while preserving the rest of the layout. It is one of the places where QML’s dynamic composition makes a unified skin possible without giving up the practical performance considerations that made a separate skin useful before.
+The legacy widget-based LateNight implementation is split into two skins because sampler count affects startup time. `LateNight` starts Mixxx with 16 samplers, while `LateNight (64 Samplers)` starts it with 64 and includes the additional static sampler-row hierarchy. Initializing that larger hierarchy creates and configures far more sampler controls and their UI at startup, even when most of the rack is collapsed. Keeping the 64-sampler layout in a separate skin meant that DJs who did not need it did not pay that startup cost.
+
+LateNight QML brings these choices into one skin, exposing 4, 8, 16, 32, 48, and 64 samplers without constructing every expanded sampler at once. It creates the compact rows for the selected count, then caches and warms expanded content one row at a time. The higher sampler count still needs its underlying Mixxx sampler channels, but QML avoids eagerly building the entire expanded visual rack. This keeps the larger layout manageable while preserving the rest of the interface, and removes the need to choose between separate LateNight skins.
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <a href="{static}/images/news/latenight-qml-64-samplers.png">
@@ -284,7 +290,7 @@ The Classic and PaleMoon schemes can be selected from the QML interface preferen
 
 ## Pull requests
 
-The following list records the merged project work as of 20 September 2026. It includes 40 merged project contributions. In-progress and planned LateNight QML work is listed separately below.
+The following list records the merged project work as of 21 September 2026. It includes 42 merged project contributions. In-progress and planned LateNight QML work is listed separately below.
 
 ### Feature PRs
 
@@ -319,6 +325,8 @@ The following list records the merged project work as of 20 September 2026. It i
 | [#17101](https://github.com/mixxxdj/mixxx/pull/17101) | Merged | Removes redundant toolbar options and compacts the relevant popups. |
 | [#17103](https://github.com/mixxxdj/mixxx/pull/17103) | Merged | Aligns scheme-specific rack gutters and deck, mixer, sampler, and VU-meter margins. |
 | [#17104](https://github.com/mixxxdj/mixxx/pull/17104) | Merged | Matches the legacy vinyl-control layout. |
+| [#17108](https://github.com/mixxxdj/mixxx/pull/17108) | Merged | Fixes clipped deck transport buttons with the mixer visible and uses the correct Play button SVG in Full and Compact layouts. |
+| [#17109](https://github.com/mixxxdj/mixxx/pull/17109) | Merged | Adds waveform track-drop support to LateNight QML. |
 
 ### Shared `res/qml` work
 
