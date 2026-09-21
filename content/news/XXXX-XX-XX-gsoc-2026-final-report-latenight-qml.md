@@ -164,6 +164,8 @@ The first startup frame was submitted in under 2 seconds. The base LateNight QML
 | Outer `Loader.Ready`             | Main LateNight QML component finished loading                     | 42.03–79.21 seconds |
 | `visible_content_ready`          | Startup overlay removed and LateNight QML interface became visible | 45.97–84.21 seconds |
 
+<div class="performance-metrics" markdown="1">
+
 ### Frame Metrics
 
 Once loaded, the Library became the main performance concern in this capture. LateNight QML currently displays the Library through a legacy QWidget hierarchy rendered offscreen by `QmlLegacyLibraryItem`, so repeated Library redraws cross a bridge between the legacy widget path and QML. The frame timings record when Mixxx produced frames, not when they appeared on the display or how long the GPU took. This was an idle loaded-state capture, so it does not support claims about waveform smoothness during active playback. Waveform rendering did not stand out as the main CPU cost here: `updatePaintNode` was negligible, while repeated Library bridge work used much of the 16.67 ms main-thread budget and the first Library render was substantially more expensive. This highlights the importance of a native QML Library.
@@ -202,6 +204,8 @@ Once loaded, the Library became the main performance concern in this capture. La
 | First Library `update_polish` | <ul><li>Maximum 85.08 ms</li></ul> |
 | Frame intervals | <ul><li>p95: 46.83 ms</li><li>Maximum: 579.95 ms</li></ul> |
 | Over 16.67 ms | <ul><li>49 of 95 frame intervals</li></ul> |
+
+</div>
 
 ## Reaching parity within the GSoC scope
 
