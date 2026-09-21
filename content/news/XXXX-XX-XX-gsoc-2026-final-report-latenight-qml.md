@@ -117,8 +117,61 @@ The legacy widget-based LateNight skin offered up to 16 samplers, while the sepa
 </figure>
 
 ## Startup experience and performance improvements
+*As of 20th September, 2026.*
 
-<!-- To be worked upon -->
+Performance work covered two parts of the experience: startup and responsiveness after loading. The measurements came from three repeated launches on a MacBook Air with Apple’s M2 chip (macOS ARM64), using a Release Qt 6.10.3 build with `LateNightQML` enabled through `--developer`.
+
+### Startup experience
+
+Each run started from a temporary copy of the same frozen Mixxx profile: a prepared, unchanged snapshot of the settings, local tracks, analysis data, display configuration, and audio device. These are repeated-launch measurements rather than cold-boot results.
+
+The first startup frame was submitted in under 2 seconds. The base LateNight QML layout was constructed within about 11 seconds, while the remaining startup work continued preparing sampler content before the loading overlay was removed. This longer preparation phase does not represent the time before Mixxx first begins rendering. The median time until the LateNight QML interface became visible was **78.96 seconds**, and every measured launch completed in under 2 minutes.
+
+| Benchmark event                  | What it means in Mixxx                                            |       Measured time |
+| -------------------------------- | ----------------------------------------------------------------- | ------------------: |
+| First submitted frame            | Mixxx produced its first startup frame                            |   0.74–1.63 seconds |
+| `MainWindow` component completed | Base LateNight QML layout was constructed                         |  9.61–10.69 seconds |
+| Outer `Loader.Ready`             | Main LateNight QML component finished loading                     | 42.03–79.21 seconds |
+| `visible_content_ready`          | Startup overlay removed and LateNight QML interface became visible | 45.97–84.21 seconds |
+
+### Frame Metrics
+
+Once loaded, the Library became the main performance concern in this capture. LateNight QML currently displays the Library through a legacy QWidget hierarchy rendered offscreen by `QmlLegacyLibraryItem`, so repeated Library redraws cross a bridge between the legacy widget path and QML. The frame timings record when Mixxx produced frames, not when they appeared on the display or how long the GPU took. This was an idle loaded-state capture, so it does not support claims about waveform smoothness during active playback. Waveform rendering did not stand out as the main CPU cost here: `updatePaintNode` was negligible, while repeated Library bridge work used much of the 16.67 ms main-thread budget and the first Library render was substantially more expensive. This highlights the importance of a native QML Library.
+
+#### Frame timing measurements
+
+| Metric | Value |
+| ------ | ----- |
+| Frame counts | <ul><li>Frames measured: 442</li><li>Intervals measured: 441</li></ul> |
+| Effective rate | 91.74 FPS |
+| Frame intervals | <ul><li>Median: 11.49 ms</li><li>p95: 24.30 ms</li><li>p99: 27.64 ms</li><li>Maximum: 108.21 ms</li></ul> |
+| Over 16.67 ms | <ul><li>91 of 441 intervals exceeded 16.67 ms</li><li>4 exceeded 33.33 ms</li><li>2 exceeded 50 ms</li></ul> |
+
+#### Library bridge
+
+| Metric | Value |
+| ------ | ----- |
+| During capture | <ul><li>Render requests: 1,030</li><li>Coalesced requests: 723</li></ul> |
+| `update_polish` | <ul><li>Samples: 306</li><li>Median: 10.83 ms</li><li>p95: 12.12 ms</li><li>p99: 12.25 ms</li><li>Maximum: 12.47 ms</li></ul> |
+| Over 16.67 ms | 0 `update_polish` samples |
+| Whole process | 326 Library bridge renders |
+
+#### Waveform and GUI
+
+| Metric | Value |
+| ------ | ----- |
+| `updatePaintNode` | <ul><li>Samples: 442</li><li>p95: 0.01 ms</li><li>Maximum: 0.01 ms</li></ul> |
+| GUI-thread timing signal | <ul><li>Records how late the GUI thread handled the timing check</li><li>p95 lateness: 11.78 ms</li><li>Maximum: 118.22 ms</li></ul> |
+| Over 16.67 ms | <ul><li>`updatePaintNode`: 0 samples</li><li>GUI-thread timing: 9 checks</li></ul> |
+| Over 33.33 ms | GUI-thread timing: 3 checks |
+
+#### Initial Library-render capture
+
+| Metric | Value |
+| ------ | ----- |
+| First Library `update_polish` | Maximum 85.08 ms |
+| Frame intervals | <ul><li>p95: 46.83 ms</li><li>Maximum: 579.95 ms</li></ul> |
+| Over 16.67 ms | 49 of 95 frame intervals |
 
 ## Reaching parity within the GSoC scope
 
@@ -181,7 +234,7 @@ Manual testing focused on both color schemes, two- and four-deck layouts, differ
 
 ## Trying LateNight QML
 
-LateNight QML will be available in Mixxx 2.7 as an experimental skin. To try it from a developer build, start Mixxx with the developer flag:
+LateNight QML will be available to everyone as an experimental skin in Mixxx 2.7. As of today, you can try it in a current developer build.  Start Mixxx with the developer flag:
 
 ```text
 ./build/mixxx --developer
@@ -223,6 +276,7 @@ The following list records the merged project work as of 20 September 2026. It i
 
 | PR | Status | Contribution |
 |---|---|---|
+| [#16463](https://github.com/mixxxdj/mixxx/pull/16463) | Merged | Fixes stale QML waveform marker geometry and textures after resizing. |
 | [#16596](https://github.com/mixxxdj/mixxx/pull/16596) | Merged | Fixes the Library column-header assertion crash in the QML skin. |
 | [#16992](https://github.com/mixxxdj/mixxx/pull/16992) | Merged | Fixes the menu-bar Preferences action and start-in-full-screen behavior. |
 | [#17035](https://github.com/mixxxdj/mixxx/pull/17035) | Merged | Matches toolbar settings indicators and check states. |
@@ -236,7 +290,6 @@ The following list records the merged project work as of 20 September 2026. It i
 
 | PR | Status | Contribution |
 |---|---|---|
-| [#16463](https://github.com/mixxxdj/mixxx/pull/16463) | Merged | Fixes stale QML waveform marker geometry and textures after resizing. |
 | [#16464](https://github.com/mixxxdj/mixxx/pull/16464) | Merged | Adds validation tests for QML theme colors and SVG assets. |
 | [#16475](https://github.com/mixxxdj/mixxx/pull/16475) | Merged | Improves screen and HiDPI handling for QML preference windows. |
 | [#16476](https://github.com/mixxxdj/mixxx/pull/16476) | Merged | Hides the legacy Interface preferences page in QML mode. |
@@ -284,7 +337,7 @@ LateNight QML is currently a dense desktop interface. QML makes direct-touch int
 
 LateNight QML is also a practical reference for a broader transition away from the legacy QWidget-based skinning system, but retiring legacy skin support would be a long-term project rather than a consequence of this GSoC alone. Tango and Deere share much of the existing infrastructure used by LateNight, so their ports could reuse much of the QML foundation established here. Shade has considerably more Shade-specific C++ code and would be rather difficult to port to QML. Any decision to remove the legacy-skinning system must wait until the official skins, custom-skin users, and their extension points have an equally capable and supportable QML path.
 
-There are also a few cleanup items already in triage, including startup warnings and control-registration messages ([#16996](https://github.com/mixxxdj/mixxx/issues/16996), [#17048](https://github.com/mixxxdj/mixxx/issues/17048), [#17049](https://github.com/mixxxdj/mixxx/issues/17049)), effects-rack knob sizing ([#17040](https://github.com/mixxxdj/mixxx/issues/17040)), minimum-window-size handling ([#16997](https://github.com/mixxxdj/mixxx/issues/16997)), and preview color-scheme fallback ([#17050](https://github.com/mixxxdj/mixxx/issues/17050)). The complete list can be followed through the [LateNight QML triage label](https://github.com/mixxxdj/mixxx/issues?q=is%3Aissue+label%3A%22LateNight+QML%22).
+There are also a few cleanup items already in triage, including startup warnings and control-registration messages ([#16996](https://github.com/mixxxdj/mixxx/issues/16996), [#17048](https://github.com/mixxxdj/mixxx/issues/17048), [#17049](https://github.com/mixxxdj/mixxx/issues/17049)), effects-rack knob sizing ([#17040](https://github.com/mixxxdj/mixxx/issues/17040)), minimum-window-size handling ([#16997](https://github.com/mixxxdj/mixxx/issues/16997)), preview color-scheme fallback ([#17050](https://github.com/mixxxdj/mixxx/issues/17050)), and reskinning the track-scan dialog ([#17110](https://github.com/mixxxdj/mixxx/issues/17110)). The complete list can be followed through the [LateNight QML triage label](https://github.com/mixxxdj/mixxx/issues?q=is%3Aissue+label%3A%22LateNight+QML%22).
 
 ### AI-assisted work disclosure
 
@@ -300,7 +353,7 @@ A project of this size is never a solo effort. I want to thank [Jörg Wartenberg
 
 I am especially grateful to [ronso0](https://github.com/ronso0) for doing so much work on the original LateNight skin and for helping preserve the details that make it so familiar. This project stands on the work of everyone who has contributed to the legacy LateNight skin over the years. It is arguably Mixxx’s favourite skin.
 
-Thank you also to the people who tested the new skin across different configurations and helped uncover issues that code review alone could not: [Eve (@Eve00000)](https://github.com/Eve00000), [VespaDJ (@vespadj)](https://github.com/vespadj), [Sam McFly (@SammyMcFly)](https://github.com/SammyMcFly), [nomiapps (@nomiapps)](https://github.com/nomiapps), and [Owen Williams (@ywwg)](https://github.com/ywwg). Everyone else who tried the skin, reported a problem, or shared feedback during the project also helped make it better.
+Thank you also to the people who tested the new skin across different configurations and helped uncover issues that code review alone could not: [Evelynne Veys (@Eve00000)](https://github.com/Eve00000), [VespaDJ (@vespadj)](https://github.com/vespadj), [Lysander Treumann (@SammyMcFly)](https://github.com/SammyMcFly), [nomiapps (@nomiapps)](https://github.com/nomiapps), and [Owen Williams (@ywwg)](https://github.com/ywwg). Everyone else who tried the skin, reported a problem, or shared feedback during the project also helped make it better.
 
 I am also grateful to Google for making this opportunity possible through [Google Summer of Code](https://summerofcode.withgoogle.com/), a program that brings open-source contributors and communities together.
 
