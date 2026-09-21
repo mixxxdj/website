@@ -31,7 +31,7 @@ The first milestone was deliberately modest. It introduced the QML skin shell an
 
 That bridge was important for two reasons. It made the experimental skin usable early in the project and let the rest of the interface be ported incrementally while keeping the Library in its existing QWidget implementation. It also exposed a number of details that are easy to miss when porting a skin: scrollbar and header behavior, sorting, search input, keyboard focus, drag-and-drop, splitters, preview controls, palette changes, and repaint scheduling.
 
-The Library, its cover art and preview deck components, and the Preferences dialog remain deliberate QWidget transition boundaries in the current scope. Work on the wider New UI is progressing: the native Library and Settings work is underway, while native replacements for the preview deck and cover art remain follow-up work.
+The Library, its cover art and preview deck components, and the Preferences dialog remain deliberate QWidget transition boundaries in the current scope. Work on the wider New UI is progressing: the native Library and Settings work is underway, while the [interim QWidget bridge for the preview deck and cover art is in progress](https://github.com/mixxxdj/mixxx/pull/17099). Native QML replacements for those components remain follow-up work.
 
 Once the bridge was stable, the work could proceed from the outside in. LateNight-specific composition lives in `res/skins/LateNightQML`, while generic infrastructure was added to Mixxx’s shared `res/qml` layer. Splitting these layers makes the project more than a one-off skin port. It provides building blocks for future skin ports and independent skin implementations: developers of custom skins can move toward QML and use LateNight QML as a reference, building on shared controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
 
@@ -212,7 +212,7 @@ The LateNight QML surface now covers:
 - Microphone and auxiliary-input racks with configured and unconfigured states, up to four units of each type, talkover and ducking, pregain, PFL, effects, VU metering, main-mix routing, and crossfader assignment.
 - Responsive library arrangements and layout transitions that make the skin usable at different window sizes.
 
-This is feature and visual parity for the intended LateNight QML scope, not a claim that every Mixxx interface surface already has a native QML implementation. The remaining QWidget boundaries are intentional: the Library and Preferences migrations for the New UI are underway, while the Preview deck and cover-art path remain to be ported.
+This is feature and visual parity for the intended LateNight QML scope, not a claim that every Mixxx interface surface already has a native QML implementation. The remaining QWidget boundaries are intentional: the Library and Preferences migrations for the New UI are underway, while the interim Preview deck and cover-art bridge is in progress and native QML replacements remain to be ported.
 
 ## New work in `res/qml`
 
@@ -346,6 +346,7 @@ The following list records the merged project work as of 20 September 2026. It i
 | PR | Status | Contribution |
 |---|---|---|
 | [#17020](https://github.com/mixxxdj/mixxx/pull/17020) | Open | Fixes LateNight QML scaling across high-DPI and fractional-scale configurations, with DPR-aware rendering, reload safety, and focused tests. |
+| [#17099](https://github.com/mixxxdj/mixxx/pull/17099) | Open | Adds the interim QWidget Preview deck and cover-art bridge, preserving legacy behavior and styling while native QML replacements are developed. |
 
 ## Planned LateNightQML Work
 
@@ -362,7 +363,7 @@ The project reached the intended GSoC milestone, and the next steps are clear:
 1. Continue the open scaling work and validate LateNight QML across more operating systems, display scales, graphics backends, and window configurations.
 2. Replace the current QWidget implementation of the Library with the New UI's native QML Library when [Antoine's Library splitview and search work](https://github.com/mixxxdj/mixxx/pull/16686) is ready. That work relies on newer Qt APIs requiring Qt 6.10, so the current bridge is an intentional transition point until that dependency is available across supported builds.
 3. Complete the New UI Settings migration by finishing the remaining preference categories, routing all Preferences entry points to the New UI Settings window, and eventually replacing the QWidget `DlgPreferences` shell. The current dialog is an intentional transition boundary, not the final architecture.
-4. Replace the current Preview deck and cover-art implementation with native QML components in the New UI once they are ready.
+4. Replace the in-progress QWidget Preview deck and cover-art bridge with native QML components in the New UI once they are ready.
 5. Give every QML control support for the MIDI Learning Wizard and tooltips. Tooltips are tracked in [issue #17038](https://github.com/mixxxdj/mixxx/issues/17038), which covers both normal and `--developer` modes. The learning workflow will need every QML control to be discoverable through the same control metadata and interaction path as its QWidget counterpart.
 6. Continue accessibility and interaction polish, including [screen-reader support](https://github.com/mixxxdj/mixxx/issues/17051), [consistent keyboard focus on startup](https://github.com/mixxxdj/mixxx/issues/17052), and [QML focus scopes](https://github.com/mixxxdj/mixxx/issues/17053), alongside the smaller visual issues that emerge from wider testing.
 7. Port controller-display offscreen rendering from its legacy OpenGL-specific path to a solution compatible with the modern graphics acceleration APIs used by the QML scene graph.
