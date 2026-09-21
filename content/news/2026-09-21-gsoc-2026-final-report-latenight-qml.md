@@ -5,7 +5,6 @@ tags: gsoc, gsoc-2026, development, UI, QML, LateNight
 comments: yes
 summary: A final report on rebuilding Mixxx's LateNight skin in QML, from the legacy library bridge to native decks, mixer, effects, samplers, Mic/Aux, menus, responsive layouts, and waveform work.
 ---
-date: 2026-09-21 18:31:36
 
 <!-- DRAFT: Add final screenshots/video and update the publication date before publishing. -->
 
@@ -21,9 +20,9 @@ The result is a substantially complete LateNight QML interface with native QML d
 
 The short version is that the original goal was not just to make a new skin that merely looked like LateNight. The aim was also to make the LateNight workflow available in QML, with the same controls, states, layouts, and visual language wherever the scope allowed.
 
-You can take a look at the video below to see LateNight QML in action.
+You can take a look at the video below to see LateNight QML in action:
 
-<!-- YouTube video to be added -->
+@Video(https://www.youtube.com/watch?v=sjlBAVZFUqQ)
 
 ## From a bridge to a working skin
 
@@ -35,18 +34,20 @@ The Library, its cover art and preview deck components, and the Preferences dial
 
 Once the bridge was stable, the work could proceed from the outside in. LateNight-specific composition lives in `res/skins/LateNightQML`, while generic infrastructure was added to Mixxx’s shared `res/qml` layer. Splitting these layers makes the project more than a one-off skin port. It provides building blocks for future skin ports and independent skin implementations: developers of custom skins can move toward QML and use LateNight QML as a reference, building on shared controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
 
+## Screenshots of LateNight QML: PaleMoon and Classic
+
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <a href="{static}/images/news/latenight-qml-palemoon.png">
     <img src="{static}/images/news/latenight-qml-palemoon.png" alt="LateNight QML PaleMoon">
   </a>
   <div style="font-size: small; margin: 5px 0; font-weight: normal;">
-    [Top] LateNight QML PaleMoon
+    LateNight QML PaleMoon
   </div>
   <a href="{static}/images/news/latenight-palemoon.png">
     <img src="{static}/images/news/latenight-palemoon.png" alt="LateNight PaleMoon">
   </a>
   <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
-    [Bottom] LateNight PaleMoon
+    LateNight PaleMoon
   </figcaption>
 </figure>
 
@@ -55,13 +56,13 @@ Once the bridge was stable, the work could proceed from the outside in. LateNigh
     <img src="{static}/images/news/latenight-qml-classic.png" alt="LateNight QML Classic">
   </a>
   <div style="font-size: small; margin: 5px 0; font-weight: normal;">
-    [Top] LateNight QML Classic
+    LateNight QML Classic
   </div>
   <a href="{static}/images/news/latenight-classic.png">
     <img src="{static}/images/news/latenight-classic.png" alt="LateNight Classic">
   </a>
   <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
-    [Bottom] LateNight Classic
+    LateNight Classic
   </figcaption>
 </figure>
 
@@ -331,6 +332,7 @@ The following list records the merged project work as of 21 September 2026. It i
 | [#17104](https://github.com/mixxxdj/mixxx/pull/17104) | Merged | Matches the legacy vinyl-control layout. |
 | [#17108](https://github.com/mixxxdj/mixxx/pull/17108) | Merged | Fixes clipped deck transport buttons with the mixer visible and uses the correct Play button SVG in Full and Compact layouts. |
 | [#17109](https://github.com/mixxxdj/mixxx/pull/17109) | Merged | Adds waveform track-drop support to LateNight QML. |
+| [#17112](https://github.com/mixxxdj/mixxx/pull/17112) | Merged | Matches legacy key-control sizing and fixes the overflowing key control in Full and Compact layouts. |
 
 ### Shared `res/qml` work
 
