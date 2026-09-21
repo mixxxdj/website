@@ -3,9 +3,9 @@ title: "Final GSoC 2026 Report: Rebuilding the LateNight Theme in QML"
 authors: Ayush Sah (arsenic)
 tags: gsoc, gsoc-2026, development, UI, QML, LateNight
 comments: yes
-status: draft
 summary: A final report on rebuilding Mixxx's LateNight skin in QML, from the legacy library bridge to native decks, mixer, effects, samplers, Mic/Aux, menus, responsive layouts, and waveform work.
 ---
+date: 2026-09-21 18:31:36
 
 <!-- DRAFT: Add final screenshots/video and update the publication date before publishing. -->
 
