@@ -173,7 +173,7 @@ Once loaded, the Library became the main performance concern in this capture. La
 | Metric | Value |
 | ------ | ----- |
 | Frame counts | <ul><li>Frames measured: 442</li><li>Intervals measured: 441</li></ul> |
-| Effective rate | 91.74 FPS |
+| Effective rate | <ul><li>91.74 FPS</li></ul> |
 | Frame intervals | <ul><li>Median: 11.49 ms</li><li>p95: 24.30 ms</li><li>p99: 27.64 ms</li><li>Maximum: 108.21 ms</li></ul> |
 | Over 16.67 ms | <ul><li>91 of 441 intervals exceeded 16.67 ms</li><li>4 exceeded 33.33 ms</li><li>2 exceeded 50 ms</li></ul> |
 
@@ -183,8 +183,8 @@ Once loaded, the Library became the main performance concern in this capture. La
 | ------ | ----- |
 | During capture | <ul><li>Render requests: 1,030</li><li>Coalesced requests: 723</li></ul> |
 | `update_polish` | <ul><li>Samples: 306</li><li>Median: 10.83 ms</li><li>p95: 12.12 ms</li><li>p99: 12.25 ms</li><li>Maximum: 12.47 ms</li></ul> |
-| Over 16.67 ms | 0 `update_polish` samples |
-| Whole process | 326 Library bridge renders |
+| Over 16.67 ms | <ul><li>0 `update_polish` samples</li></ul> |
+| Whole process | <ul><li>326 Library bridge renders</li></ul> |
 
 #### Waveform and GUI
 
@@ -193,15 +193,15 @@ Once loaded, the Library became the main performance concern in this capture. La
 | `updatePaintNode` | <ul><li>Samples: 442</li><li>p95: 0.01 ms</li><li>Maximum: 0.01 ms</li></ul> |
 | GUI-thread timing signal | <ul><li>Records how late the GUI thread handled the timing check</li><li>p95 lateness: 11.78 ms</li><li>Maximum: 118.22 ms</li></ul> |
 | Over 16.67 ms | <ul><li>`updatePaintNode`: 0 samples</li><li>GUI-thread timing: 9 checks</li></ul> |
-| Over 33.33 ms | GUI-thread timing: 3 checks |
+| Over 33.33 ms | <ul><li>GUI-thread timing: 3 checks</li></ul> |
 
 #### Initial Library-render capture
 
 | Metric | Value |
 | ------ | ----- |
-| First Library `update_polish` | Maximum 85.08 ms |
+| First Library `update_polish` | <ul><li>Maximum 85.08 ms</li></ul> |
 | Frame intervals | <ul><li>p95: 46.83 ms</li><li>Maximum: 579.95 ms</li></ul> |
-| Over 16.67 ms | 49 of 95 frame intervals |
+| Over 16.67 ms | <ul><li>49 of 95 frame intervals</li></ul> |
 
 ## Reaching parity within the GSoC scope
 
