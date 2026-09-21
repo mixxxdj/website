@@ -35,7 +35,31 @@ The Library, its cover art and preview deck components, and the Preferences dial
 
 Once the bridge was stable, the work could proceed from the outside in. LateNight-specific composition lives in `res/skins/LateNightQML`, while generic infrastructure was added to Mixxx’s shared `res/qml` layer. Splitting these layers makes the project more than a one-off skin port. It provides building blocks for future skin ports and independent skin implementations: developers of custom skins can move toward QML and use LateNight QML as a reference, building on shared controls, action proxies, effect infrastructure, and input behaviors instead of starting every skin from scratch.
 
-<!-- TODO: Add a comparison Legacy vs LateNightQML Classic and PaleMoon end to end connection screenshots. -->
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <a href="{static}/images/news/latenight-qml-palemoon.png">
+    <img src="{static}/images/news/latenight-qml-palemoon.png" alt="LateNight QML PaleMoon">
+  </a>
+  <a href="{static}/images/news/latenight-palemoon.png">
+    <img src="{static}/images/news/latenight-palemoon.png" alt="LateNight PaleMoon">
+  </a>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    [Top] LateNight QML PaleMoon<br>
+    [Bottom] LateNight PaleMoon
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <a href="{static}/images/news/latenight-qml-classic.png">
+    <img src="{static}/images/news/latenight-qml-classic.png" alt="LateNight QML Classic">
+  </a>
+  <a href="{static}/images/news/latenight-classic.png">
+    <img src="{static}/images/news/latenight-classic.png" alt="LateNight Classic">
+  </a>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    [Top] LateNight QML Classic<br>
+    [Bottom] LateNight Classic
+  </figcaption>
+</figure>
 
 ## Styling changes
 
