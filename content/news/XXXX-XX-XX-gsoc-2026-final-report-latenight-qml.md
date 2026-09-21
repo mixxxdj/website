@@ -222,6 +222,16 @@ Work on the New UI Settings window has extended this migration. Antoine's open [
 
 The merged waveform work extends the shared QML Settings infrastructure used by the New UI: it moves waveform preferences into a dedicated Waveforms page and connects those shared settings to active QML scrolling and overview waveforms. It supports waveform type, zoom, visual gain, stem, marker, and related overview settings, refreshing renderer stacks when renderer-affecting options change. Overview waveform caching remains unchanged, and analyzer status and progress reporting are retained without progressive waveform repainting. Some settings are intentionally unavailable in the current QML renderer: the frame-rate control is hidden, and the legacy High Detail setting is disabled because it is not supported by the QML scene-graph renderer. Adding High Detail rendering to the SceneGraph backend is tracked in [issue #14990](https://github.com/mixxxdj/mixxx/issues/14990). Split stereo signal is available only when the RGB waveform renderer is selected.
 
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <video controls preload="metadata" style="max-width: 100%; height: auto;">
+    <source src="{static}/images/news/latenight-qml-waveform-settings.mp4" type="video/mp4">
+    Your browser does not support embedded videos.
+  </video>
+  <figcaption style="font-size: small; margin-top: 5px; font-weight: normal;">
+    Waveform Settings in LateNightQML
+  </figcaption>
+</figure>
+
 The deck port led to reusable button, cycle-control, overview-marker, hotcue, intro/outro, beat-size, beatgrid, and marker behaviors. Key formatting and harmonic-display support was exposed to QML and is used by the deck key display and the key-color indicator logic.
 
 The control layer gained reusable QML knobs, faders, orientation controls, relative dragging, right-click reset behavior, slider-bar settings, and backend proxies for toolbar state. These pieces keep interaction behavior in one place instead of reimplementing it in every skin component. The `SkinControlCreator` infrastructure also lets QML skins create their own [Mixxx Control Objects (COs)](https://manual.mixxx.org/2.5/en/chapters/appendix/mixxx_controls.html), including `[Skin]`-prefixed objects. It retains the control names expected by existing controller mappings while tying their creation, persistence, and lifetime to QML components. This makes skin-control lifetime explicit while preserving controller-mapping compatibility.
