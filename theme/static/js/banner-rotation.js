@@ -47,7 +47,7 @@
         const socialIcons = document.getElementById("socialIcons");
 
         if (!bannerContent || !bannerLink || !dotsContainer || !bannerContainer || !socialIcons) {
-            console.error("Required elements not found!");
+            console.log("No banner rotation on this page -> skipping elementsd.");
             return;
         }
 
