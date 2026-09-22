@@ -23,7 +23,8 @@
     # Only allow resources to be loaded from the current origin. Styles may
     # also be specified inline, and allow the Google Analytics scripts.
     # Allow scripts from self and inline scripts for banner-rotation
-    Content-Security-Policy = "default-src 'self'; style-src 'self'; script-src 'self'"
+    # original csp Content-Security-Policy = "default-src 'self'; style-src 'self'; script-src 'self'"
+    Content-Security-Policy = "default-src 'self'; style-src 'self'; script-src 'self'; frame-src 'self' https://www.youtube-nocookie.com https://mixxx.discourse.group"
 
     # Disable all browser features that we don't need. Unfortunately
     # there is no way to specify a default for all directives yet, so
