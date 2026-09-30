@@ -23,7 +23,7 @@ Round 1 set: max 6 min, must include the samples (or song lyrics containing the 
 Video deadline: 4 Nov 2026, 18:00 CET
 
 
-[more info  about the 25 Years of Mixxx Intergalactic DJ Contest]({{ SITEURL }}/news/2026-08-23-25_years_of_mixxx_dj_contest/)
+[more info  about the 25 Years of Mixxx Intergalactic DJ Contest](https://mixxx.org/news/2026-08-23-25_years_of_mixxx_dj_contest/)
 
 
 ##Prizetable
