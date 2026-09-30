@@ -34,7 +34,7 @@
             {
                 type: "text",
                 main: "25ᵗʰ Anniversary Intergalactic DJ Contest",
-                subtitle: "Submit your video before September 30th",
+                subtitle: "Submit your video before November 4th",
                 url: "https://mixxx.org/news/2026-08-23-25_years_of_mixxx_dj_contest/",
                 target: "_blank"
             }
