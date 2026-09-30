@@ -24,9 +24,12 @@ on:
         required: true
       OVH_PASSWORD:
         required: true
+      MIXXX_WEBSITE_ENV_CLEANUP_PAT:
+        required: true
 
 jobs:
   apply:
+    name: ${{ format('{0} environment "{1}"', inputs.action == 'teardown' && 'Tearing down' || 'Deploying', inputs.environment_name) }}
     runs-on: ubuntu-latest
     concurrency:
       group: website-ovh-${{ inputs.target }}
@@ -116,3 +119,30 @@ jobs:
         mkdir empty
         ssh-keyscan "${OVH_HOSTNAME}" >> "${HOME}/.ssh/known_hosts"
         lftp --env-password -u ${OVH_USERNAME} sftp://${OVH_HOSTNAME} -e "set sftp:connect-program \"ssh -o Compression=no\"; set mirror:parallel-transfer-count 16; set mirror:parallel-directories yes; mirror -vv --delete -P 16 -R ./empty /home/${OVH_USERNAME}/${TARGET}; rmdir /home/${OVH_USERNAME}/${TARGET}; quit"
+
+    - name: Deleting environment
+      if: ${{ inputs.action == 'teardown' && inputs.target != 'www' }}
+      env:
+        ENVIRONMENT_NAME: ${{ inputs.environment_name }}
+      uses: actions/github-script@v9
+      with:
+        github-token: ${{ secrets.MIXXX_WEBSITE_ENV_CLEANUP_PAT }}
+        script: |
+          const environment = process.env.ENVIRONMENT_NAME;
+
+          try {
+
+            await github.rest.repos.deleteAnEnvironment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              environment_name: environment,
+            });
+
+            console.log(`Deleted environment '${environment}'`);
+          } catch (err) {
+            if (err.status === 404) {
+              console.log(`Environment '${environment}' does not exist.`);
+            } else {
+              throw err;
+            }
+          }
