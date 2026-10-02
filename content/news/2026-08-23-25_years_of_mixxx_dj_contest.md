@@ -5,6 +5,18 @@ comments: yes
 date: 2026-08-23 01:01:23
 
 
+## Update: Deadline Round 1 extended
+
+Thanks to the publicity surrounding Mixxx's 25th Anniversary, many DJs and music enthusiasts have recently discovered Mixxx and its community.
+
+We received numerous requests to extend the video submission deadline for the 1st Round of the Mixxx 25th Anniversary Intergalactic DJ contest, giving these new users a chance to participate as well.
+
+Therefore, Round 2 will be merged with Round 1, and the deadline for submitting a video for Round 1 has been extended to November 4 (the original deadline for Round 2). The community will then choose its finalists.
+
+This newsarticle is updated.
+
+
+
 To celebrate the 25ᵗʰ anniversary of [Mixxx](https://mixxx.org) and its community, we want to organize an event where everyone can show how they use Mixxx, what tricks Mixxx makes possible, to demonstrate that Mixxx is designed to 'DJ your way' and how much fun we have with it.
 
 ## Who?
@@ -22,10 +34,15 @@ Show us your style, show us how you experience music, share the vibe and let oth
 There is no jury at this competition to judge based on technique, music choice, or ... In this contest, everything is up to the community; everyone is free to decide on which criteria they base their vote for you.  
 Every style is welcome, whether it is classical, R&B, metal... but we prefer music created with human creativity.  
 
-In 3 rounds (or 2 if there are no more than 25 candidates), our community chooses who will be the **'25 Years of Mixxx DJ Contest Laureats'**.
+In 2 rounds our community chooses who will be the **'25 Years of Mixxx DJ Contest Laureats'**.~
 
 * **Round 1** = up to 100 candidates (limited to 100 to keep it manageable).
-* **Round 2** = 25 candidates (skipped if fewer than 25 total participants in the first round)  
+* **Final** = 10 finalists~
+
+
+In 2 rounds, our community chooses who will be the **'25 Years of Mixxx DJ Contest Laureats'**.
+
+* **Round 1** = up to 100 candidates (limited to 100 to keep it manageable).
 * **Final** = 10 finalists
 
 ##Prizetable
@@ -68,30 +85,12 @@ We apologize if our communication did not reach you or was lost. You can still a
 
 ### Important Dates – Round 1
 
-* **Video submission deadline:** September 30th, 18:00 CET
-* **Voting opens:** October 7th, 18:00 CET
-* **Voting closes:** October 18th, 18:00 CET
-* **5 votes per community member**
-
-
-## Round 2 – 25 candidates
-
-> This round will be skipped if there are fewer than 25 participants in the first round.  
-> Participants in the second round are the DJs whose videos are in the **top 25** of the votes after round 1.
-
-* Prepare a set of **maximum 8 minutes** and practice it. (videos with a duration of maximum 8:10 are accepted)
-* The specific samples and tracks required for round 2 will be announced at the start of the voting round for round 1.
-* Because the time between submitting your mix for round 2 is limited, we recommend that you prepare a set as soon as the voting round for round 1 begins.
-
-### Important Dates – Round 2
-
 * **Video submission deadline:** November 4th, 18:00 CET
 * **Voting opens:** November 11th, 18:00 CET
 * **Voting closes:** November 22nd, 18:00 CET
 * **3 votes per community member**
 
-
-## Round 3 – 10 finalists
+## Final – 10 finalists
 
 * Prepare a set of **maximum 10 minutes** and practice it. (videos with a duration of maximum 10:10 are accepted)
 * The specific samples and tracks required for the final will be announced at the start of the voting round for round 2.
