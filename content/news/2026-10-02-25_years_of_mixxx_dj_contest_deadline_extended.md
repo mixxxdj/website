@@ -1,8 +1,8 @@
 title: 25 Years of Mixxx Intergalactic DJ Contest Deadline Round 1 extended
 authors: Evelynne Veys
 tags: 25 Years of Mixxx, Intergalactic DJ Contest Deadline Round 1 extended
-status: draft
 comments: yes
+date: 2026-10-02 08:24:07
 
 
 Thanks to the publicity surrounding Mixxx's 25th Anniversary, many DJs and music enthusiasts have recently discovered Mixxx and its community.
