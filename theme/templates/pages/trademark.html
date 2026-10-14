@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}{% trans %}Trademark Policy{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="docs-section container">
+<h1>{% trans %}Protecting the Mixxx brand{% endtrans %}</h1>
+<p>{% trans %}Mixxx is registered as a trademark by Mixxx e.V. continuously used by the Mixxx developers since 2003 and is a well-recognized brand. If you want to start a company or create a product related to Mixxx, avoid using the name Mixxx in it.{% endtrans %}</p>
+<p>{% trans %}Mixxx is published under the GNU GPL which guarantees your freedom to fork the source code, modify, and run it. If you wish to distribute such a derived work independently please use a distinct name and keep the original author attributions and copyright notices. We however do invite you to work with us to reach your goals (even commercial) as part of our community. {% endtrans %}</p>
+<p>{% trans %}The Mixxx e.V. represents Mixxx in legal and financial matters. Having a non-profit entity allows the Mixxx project to collect donations directly, take advantage of reduced fees for certain services, and shields individual members from legal liability.{% endtrans %}</p>
+<p>{% trans %}This document has the goal to:{% endtrans %}</p>
+<ul>
+<li>{% trans %}Make it possible for anyone to use the Mixxx name or logo for community-oriented efforts that help spread and improve Mixxx.{% endtrans %}</li>
+<li>{% trans %}Make it clear how Mixxx-related businesses and projects can (and cannot) use the Mixxx name and logo.{% endtrans %}</li>
+<li>{% trans %}Ensure that users know which versions of Mixxx are official and supported by the Mixxx organizations.{% endtrans %}</li>
+<li>{% trans %}Make it hard for anyone to use the Mixxx name and logo to unfairly profit from, trick or confuse people who are looking for official Mixxx resources.{% endtrans %}</li>
+</ul>
+
+<h2>{% trans %}Mixxx e.V. Trademark Usage Policy{% endtrans %}</h2>
+
+<p>{% trans %}Provided your use is truthful, non-misleading, and complies with honest commercial practices, you may do the following <i>without</i> receiving specific permission from Mixxx e.V.:{% endtrans %}</p>
+
+<ul>
+  <li>{% trans %}Use the Mixxx wordmark (the “Mixxx” name) in text to truthfully refer to and/or link to the unmodified Mixxx software (signed executable), products, services and technologies published by Mixxx e.V.{% endtrans %}</li>
+  <li>{% trans %}Use Mixxx logos in visuals to truthfully refer to and/or to link to the applicable programs, products, services and technologies hosted under the Mixxx.org domain or operated by Mixxx e.V..{% endtrans %}</li>
+  <li>{% trans %}Create and distribute packages and builds of Mixxx from the source code of a released version published at <a href="https://github.com/mixxxdj/mixxx/releases">https://github.com/mixxxdj/mixxx/releases</a> under the following conditions:{% endtrans %}</li>
+    <ul>
+      <li>{% trans %}The distribution does not enable additional features that are not enabled by default in the CMakelists.txt of the release.{% endtrans %}</li>
+      <li>{% trans %}The distribution does not disable features that are enabled by default in the CMakelists.txt of the release.{% endtrans %}</li>
+      <li>{% trans %}The distribution uses only dependencies/libraries in the version range that is supported in the CMakelists.txt of the release.{% endtrans %}</li>
+      <li>{% trans %}The source code is unmodified/unpatched, except for changes technically necessary to support the target platform.{% endtrans %}</li>
+    </ul>
+  <li>{% trans %}Create and distribute a controller mapping configuration or custom skin for Mixxx without suggesting that it  is published by, affiliated with, or endorsed by Mixxx.{% endtrans %}</li>
+<li>{% trans %}Use the Mixxx wordmark in a descriptive way to explain that your software is based on Mixxx’s open source code, or is compatible with Mixxx’s software.{% endtrans %}</li>
+<li>{% trans %}Create a social media account, page, or community pertaining to Mixxx, provided that their name or handle does not begin with “Mixxx”. In addition, Mixxx logos cannot be used in a way that might suggest direct affiliation with or operation by Mixxx, including, but not limited to, the account, profile, or header images.{% endtrans %}</li>
+</ul>
+
+<p>{% trans %}All other uses of the Mixxx trademark require our prior written permission. But Mixxx e.V. is always open to discuss collaborations and individual permissions, please contact <a href="mailto:ev@mixxx.org?subject=Trademark Use Inquiry">ev@mixxx.org</a> to discuss special permissions. Please refrain from the following without working with us first:{% endtrans %}</p>
+
+<ul>
+  <li>{% trans %}Don’t use the Mixxx trademark in the name of your business, product, service, app, domain name, publication, or other offering.
+{% endtrans %}</li>
+  <li>{% trans %}Don’t use marks, logos, company names, slogans, domain names, or designs that are confusingly similar to Mixxx trademarks.{% endtrans %}</li>
+  <li>{% trans %}Don’t use the Mixxx trademark in a way that incorrectly implies affiliation with, or sponsorship, endorsement, or approval by Mixxx e.V. of your products or services.
+{% endtrans %}</li>
+  <li>{% trans %}Don’t display the Mixxx trademark more prominently than your product, service, or company name.{% endtrans %}</li>
+  <li>{% trans %}Don’t use the Mixxx trademark on merchandise for sale (e.g., selling t-shirts, mugs, etc.){% endtrans %}</li>
+  <li>{% trans %}Don’t use the Mixxx trademark for any other form of commercial use (e.g. offering technical support services), unless such use is limited to a truthful and descriptive reference (e.g. “Independent technical support for Mixxx”).
+{% endtrans %}</li>
+  <li>{% trans %}Don’t modify engage in the above behavior with an alteration or abbreviation or alteration of Mixxx’s trademark.{% endtrans %}</li>
+</ul>
+
+<p>{% trans %}Please note that it is not the goal of this policy to limit commercial activity around Mixxx. We are excited to see all of the innovation happening around Mixxx and want to provide a clear path for creators looking to experiment in this way.{% endtrans %}</p>
+<p>{% trans %}If you have any additional questions, please feel free to drop us a message at <a href="mailto:ev@mixxx.org?subject=Trademark Use Inquiry">ev@mixxx.org</a>.{% endtrans %}</p>
+
+<h2>{% trans %}Acknowledgements{% endtrans %}</h2>
+<p>{% trans %}This document is inspired by the <a href="https://www.blender.org/about/trademark-policy/">Blender trademark policy page</a>.{% endtrans %}</p>
+
+</div>
+{% endblock %}
