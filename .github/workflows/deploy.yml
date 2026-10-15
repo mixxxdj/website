@@ -8,20 +8,70 @@ on:
     types: [opened, synchronize, reopened, closed, labeled]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  issues: write # For label revoke
+  pull-requests: write
+
 jobs:
+  check-approval:
+    runs-on: ubuntu-latest
+    outputs:
+      approved: ${{ steps.check.outputs.approved }}
+      revoked: ${{ steps.check.outputs.revoked }}
+    steps:
+      - id: check
+        env:
+          IS_PUSH_OR_DISPATCH: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) }}
+          AUTHOR_TRUSTED: ${{ contains(fromJSON('["MEMBER","OWNER","COLLABORATOR","CONTRIBUTOR"]'), github.event.pull_request.author_association) }}
+          HAS_APPROVAL_LABEL: ${{ contains(github.event.pull_request.labels.*.name, 'preview-approved') }}
+          IS_PR_PUSH: ${{ github.event_name == 'pull_request_target' && github.event.action == 'synchronize' }}
+        run: |
+          if [ "$IS_PUSH_OR_DISPATCH" = "true" ] || [ "$AUTHOR_TRUSTED" = "true" ] || ( [ "$HAS_APPROVAL_LABEL" = "true" ] && [ "$IS_PR_PUSH" != "true" ] ); then
+            echo "approved=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "approved=false" >> "$GITHUB_OUTPUT"
+          fi
+          if [ "$IS_PR_PUSH" = "true" ] && [ "$HAS_APPROVAL_LABEL" = "true" ] && [ "$AUTHOR_TRUSTED" != "true" ]; then
+            echo "revoked=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "revoked=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Revoke approval on new commits
+        if: ${{ github.event_name == 'pull_request_target' && github.event.action == 'synchronize' && contains(github.event.pull_request.labels.*.name, 'preview-approved') }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr edit "$PR_NUMBER" --remove-label preview-approved
+
   deploy:
-    if: github.event_name == 'push' || (github.event.action != 'closed' && github.event.action != 'labeled')
+    needs: [check-approval]
+    if: |
+      github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (
+        github.event.action != 'closed' &&
+        (github.event.action != 'labeled' || github.event.label.name == 'preview-approved') &&
+        needs.check-approval.outputs.revoked != 'true'
+      )
     uses: ./.github/workflows/ovh.yaml
     with:
       environment_name: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) && 'production' || format('pull/{0}', github.event.pull_request.number) }}
       url: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) && format('https://{0}', vars.MAIN_WEBSITE) || format('https://{0}/pr/{1}', vars.PREVIEW_WEBSITE, github.event.pull_request.number) }}
       target: ${{ contains(fromJSON('["push", "workflow_dispatch"]'), github.event_name) && 'www' || format('pulls/pr/{0}', github.event.pull_request.number) }}
+      ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      approval_required: ${{ needs.check-approval.outputs.approved == 'false' }}
       action: deploy
     secrets: inherit
 
   cleanup:
+    needs: [check-approval]
     if: |
-      github.event_name == 'pull_request_target' && (github.event.action == 'closed' || contains(github.event.pull_request.labels.*.name, 'stale'))
+      github.event_name == 'pull_request_target' && (
+        github.event.action == 'closed' ||
+        contains(github.event.pull_request.labels.*.name, 'stale') ||
+        needs.check-approval.outputs.revoked == 'true'
+      )
     uses: ./.github/workflows/ovh.yaml
     with:
       environment_name: ${{ format('pull/{0}', github.event.pull_request.number) }}
