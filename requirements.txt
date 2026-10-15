@@ -12,7 +12,7 @@ pelican==4.9.1
 pelican-render-math==1.0.5
 Pygments==2.21.0
 python-dateutil==2.9.0.post0
-pytz==2023.3.post1
+pytz==2026.5
 PyYAML==5.3.1
 rich==13.7.0
 six==1.17.0
