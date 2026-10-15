@@ -2,7 +2,7 @@ blinker==1.7.0
 colorama==0.4.6
 commonmark==0.9.1
 docutils==0.20.1
-feedgenerator==2.1.0
+feedgenerator==2.2.1
 Jinja2==3.1.6
 Markdown==3.8.1
 markdown-full-yaml-metadata @ git+https://github.com/Holzhaus/python-markdown-full-yaml-metadata@9af69835fa1ca154776a788666280a7019c6c636
