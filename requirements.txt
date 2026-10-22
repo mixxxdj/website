@@ -4,7 +4,7 @@ commonmark==0.9.1
 docutils==0.23
 feedgenerator==2.2.1
 Jinja2==3.1.6
-Markdown==3.8.1
+Markdown==3.11.2
 markdown-full-yaml-metadata @ git+https://github.com/Holzhaus/python-markdown-full-yaml-metadata@9af69835fa1ca154776a788666280a7019c6c636
 Markdown-Video @ git+https://github.com/Holzhaus/Python-Markdown-Video@98725ee09995fdeb05597d82defacaa7ceeca546
 MarkupSafe==2.1.3
