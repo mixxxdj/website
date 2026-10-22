@@ -8,7 +8,7 @@ Markdown==3.8.1
 markdown-full-yaml-metadata @ git+https://github.com/Holzhaus/python-markdown-full-yaml-metadata@9af69835fa1ca154776a788666280a7019c6c636
 Markdown-Video @ git+https://github.com/Holzhaus/Python-Markdown-Video@98725ee09995fdeb05597d82defacaa7ceeca546
 MarkupSafe==2.1.3
-pelican==4.9.1
+pelican==4.12.0
 pelican-render-math==1.0.5
 Pygments==2.21.0
 python-dateutil==2.9.0.post0
