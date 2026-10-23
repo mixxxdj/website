@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v7
       with:
-        python-version: 3.9
+        python-version: 3.15
     - name: Update dates of news posts
       run: tools/update_news_date.py -b website content/news/
     - name: Check if changes any changes were made
