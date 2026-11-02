@@ -5,7 +5,7 @@ status: draft
 comments: yes
 
 
-For years, Mixxx supported the Raspberry Pi and friends as a popular platform for users looking to DJ without needing a companion laptop. Recently, we have seen more inspiring projects porting Mixxx to embedded hardware. We are proud to see what the community can accomplish with Single Board Computers, which have become affordable since the introduction of the Raspberry Pi. Tech enthusiasts have made incredible ideas real: from flashing custom Linux images to hardware, builders crafting custom 3D-printed controllers, and engineers tweaking real-time kernels to squeeze microsecond audio latency out of low-power CPUs. Every single one of these DIY projects solves critical tasks, proving that standard, portable ARM hardware can handle multi-deck performance.
+For years, Mixxx supported the Raspberry Pi and friends as a popular platform for users looking to DJ without needing a companion laptop. Recently, we have seen more inspiring projects porting Mixxx to embedded hardware. We are proud to see what the community can accomplish with Single Board Computers, which have become affordable since the introduction of the Raspberry Pi. Tech enthusiasts have made incredible ideas real: from flashing custom Linux images to hardware, builders crafting custom [3D-printed controllers](https://mixxx.discourse.group/t/diy-open-source-dj-controller-djc-diy/32343), and engineers tweaking real-time kernels to squeeze microsecond audio latency out of low-power CPUs. Every single one of these DIY projects solves critical tasks, proving that standard, portable ARM hardware can handle multi-deck performance.
 
 [![Raspberry Pi Setup]({static}/images/news/RaspiSetup.svg)]({static}/images/news/RaspiSetup.svg)
 
