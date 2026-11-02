@@ -11,7 +11,7 @@ For years, Mixxx has supported the Raspberry Pi and friends as a popular platfor
 
 For example, here is a blog post about [The smallest possible digital DJ-Setup](https://andyland.info/wordpress/the-smallest-possible-digital-dj-setup/) from Andy Fischer.  
 
-We love these projects, and we want to support them as best as we can and help them step out of isolation. The Mixxx team and Mixxx e.V. are ready to offer the infrastructure, build systems, testing pipelines, and legal backbone to bring these efforts together. By unifying our efforts, we can break down the silos of individual forks, integrate them into a single upstream codebase, and ensure that anyone building an embedded DJ setup gets a rock-solid, officially supported build right out of the box.
+We love these projects and we want to support them as best as we can and help them step out of isolation. The Mixxx team and Mixxx e.V. are ready to offer the infrastructure, build systems, testing pipelines, and legal backbone to bring these efforts together. By unifying our efforts, we can break down the silos of individual forks, integrate them into a single upstream codebase, and ensure that anyone building an embedded DJ setup gets a rock-solid, officially supported build right out of the box.
 
 @Video(https://www.youtube.com/watch?v=u8P3oG6rvr0)
 <center><p>Phil Willoughby (DJ WillerZ) showing Mixxx running on his Denon DJ SC Live 4</p></center>
