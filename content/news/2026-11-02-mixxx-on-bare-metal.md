@@ -1,8 +1,8 @@
 title: "Unlocking Standalone DJing: Mixxx on Bare Metal"
 authors: Daniel Schürmann
 tags: embedded raspberryPi behringer klark teknik anima
-status: draft
 comments: yes
+date: 2026-11-02 12:28:42
 
 
 For years, Mixxx has supported the Raspberry Pi and friends as a popular platform for users looking to DJ without needing a companion laptop. Recently, we have seen more inspiring projects porting Mixxx to embedded hardware. We are proud to see what the community can accomplish with Single Board Computers, which have become affordable since the introduction of the Raspberry Pi. Tech enthusiasts have made incredible ideas real: from flashing custom Linux images to hardware, builders crafting custom [3D-printed controllers](https://mixxx.discourse.group/t/diy-open-source-dj-controller-djc-diy/32343), and engineers tweaking real-time kernels to squeeze microsecond audio latency out of low-power CPUs. Every single one of these DIY projects solves critical problems, proving that standard, portable ARM hardware can handle multi-deck performance.
