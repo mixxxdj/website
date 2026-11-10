@@ -8,13 +8,35 @@ Since 2001, Mixxx has stood as an outstanding digital DJ application that staunc
 
 In the past year, the widespread availability of LLM-based coding tools has resulted in an explosion of activity and interest around Mixxx DJ Software. With satisfaction in the existing DJ ecosystem at an all-time low, developers are leveraging LLM tools to turn Mixxx into the DJ platform they’ve always wanted. With all this new activity, we wanted to clarify our position on these projects, including the process by which some of their new features could be upstreamed into Mixxx. We also need to address a recurring issue around how these projects market themselves, often by reusing the Mixxx name without permission.
 
+<figure>
+<img class="responsive drop-shadow" src="{static}/images/news/mixxx_forks_all.svg" alt="Mixxx forks over time -- A steady increase from the beginning and then a sharp increase in velocity starting in 2025."/><figcaption style="font-size: small; margin-top: -10px; font-weight: normal;">Mixxx fork velocity sharply increased starting in 2025</figcaption>
+</figure>
+
 Improvements to Mixxx have traditionally come from developers submitting specific changes to us directly, but this has started changing. Big AI models frequently default to suggesting forking an open source project when a developer wants a specific custom feature, rather than guiding them to contribute upstream. LLMs are trained to get things done in a single user session. They lack social and community awareness and a fork is the quickest path to the goal of fulfilling the user’s prompt.
 
 ### Don't Stop The Party
 
+#### TKTKTKT image of a bluescreened DJ laptop (not mixxx)
+
 With so many people newly empowered to make Mixxx their own, a growing number of DJ software projects based on Mixxx have appeared recently implementing many of Mixxx’s long-standing feature requests and using the advantages of free and open source software to innovate without limits. The Mixxx Core Team is excited by this activity and is eager to invite new contributors into our community. But we will not take short cuts; we must maintain a unified and rock-solid ecosystem. For many years our top user priority has been **“Don’t Stop the Party”**. There is nothing worse than a DJ system failing mid-set, and we take threats to the stability of Mixxx extremely seriously.
 
-So our position on these forks is nuanced. We have reached out to developers of many of these forks to see if they are interested in going through the standard contribution process to get their improvements merged into Mixxx itself. We hope that with thorough review and collaboration, we can extend Mixxx’s capabilities in ways that we are comfortable putting our name on. We are committed only to including code into Mixxx that is thoroughly reviewed and understood by its human developers.
+To support this priority, the process of adopting a change into Mixxx is slow and careful by design:
+
+1. Changes are proposed and discussed by a developer and the Core Team, honing the design and approach.
+1. Changes are authored by a developer and submitted. to the Mixxx Github.
+1. The change is reviewed by one or more developers and at least one Core Team member.
+1. The developer makes changes and fixes in response to reviews.
+1. The change is often tested by users of our three target operating systems, Windows, macOS, and Linux.
+1. After everyone is confident in the change, it is merged to our `main` branch, which is used and tested by our bleeding edge developers and users.
+1. We release multiple beta versions of the new version Mixxx, gathering more input and feedback.
+1. Any regressions are found, analyzed, and addressed.
+1. We publish a "Release Candidate", which we believe to be a version ready for release.
+1. We do extensive testing on the Release Candidate, fixing any last issues.
+1. We release the new version.
+
+### Where We Stand
+
+Our position on these forks is nuanced. We are excited by the new features being developed but we want to make sure they are written well before including them in Mixxx. We have reached out to developers of many of these forks to see if they are interested in going through the standard contribution process. We hope that with thorough review and collaboration, we can extend Mixxx’s capabilities in ways that we are comfortable putting our name on. We are committed only to including code into Mixxx that is thoroughly reviewed and understood by its human developers and proven correct by its testers.
 
 Generating code with AI consumes real power and has a significant environmental footprint. Building in isolation dilutes the very open-source ecosystem that makes Mixxx possible. Instead of spending tokens to maintain a solitary island with close to no user base, we strongly encourage developers to channel that energy back home. Bring those changes upstream. Be part of the Mixxx community and build features that reach real DJs.
 
