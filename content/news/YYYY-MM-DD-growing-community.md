@@ -23,7 +23,7 @@ With so many people newly empowered to make Mixxx their own, a growing number of
 To support this priority, the process of adopting a change into Mixxx is slow and careful by design:
 
 1. Changes are proposed and discussed by a developer and the Core Team, honing the design and approach.
-1. Changes are authored by a developer and submitted. to the Mixxx Github.
+1. Changes are authored by a developer and submitted to the Mixxx Github.
 1. The change is reviewed by one or more developers and at least one Core Team member.
 1. The developer makes changes and fixes in response to reviews.
 1. The change is often tested by users of our three target operating systems, Windows, macOS, and Linux.
@@ -33,6 +33,8 @@ To support this priority, the process of adopting a change into Mixxx is slow an
 1. We publish a "Release Candidate", which we believe to be a version ready for release.
 1. We do extensive testing on the Release Candidate, fixing any last issues.
 1. We release the new version.
+
+This process might help explain why we often go two years between releases, but it is also the reason why Mixxx is so stable.
 
 ### Where We Stand
 
