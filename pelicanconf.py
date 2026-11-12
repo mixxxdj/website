@@ -234,7 +234,7 @@ AUTHOR_METADATA = {
     "Owen Williams": {
         "github": "ywwg",
         "discourse": "owilliams",
-        "tagline": "Mixxx Core Developer",
+        "tagline": "Mixxx Core Developer, Mixxx e.V. Chair",
     },
     "Uwe Klotz": {
         "github": "uklotzde",
@@ -266,7 +266,7 @@ AUTHOR_METADATA = {
         "github": "daschuer",
         "discourse": "daschuer",
         "email": "daschuer@mixxx.org",
-        "tagline": "Mixxx Core Developer",
+        "tagline": "Mixxx Core Developer, Mixxx e.V. Treasurer",
     },
     "Nikolaus Einhauser": {
         "github": "Swiftb0y",
@@ -308,7 +308,7 @@ AUTHOR_METADATA = {
         "github": "JoergAtGithub",
         "discourse": "DJ_D-Town",
         "email": "joerg.wartenberg@mixxx.org",
-        "tagline": "Mixxx Core Developer",
+        "tagline": "Mixxx Core Developer, Mixxx e.V. Co-Chair",
     },
     "Antoine Colombier": {
         "github": "acolombier",
