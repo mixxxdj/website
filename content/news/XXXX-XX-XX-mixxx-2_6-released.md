@@ -4,34 +4,36 @@ tags: 2.6, release announcement
 comments: yes
 status: draft
 
-#### Mixxx 2.6 A new stable version containing STEMS, Library upgrades and much more.
+#### Mixxx 2.6: A new stable version containing STEMS, Library upgrades and much more.
 
 We're excited to announce Mixxx 2.6!
-This release brings stem file support to Mixxx for the first time in a stable release version, along with a substantial set of library improvements, waveform enhancements and workflow refinements that will benefit every DJ, music lover and sound enthusiast, whether you're working with stems or not.
-Let’s go back in time for a moment:
-With [Antoine's newspost about Adding Stem mixing support to Mixxx](https://mixxx.org/news/2024-08-26-stem-mixing/) and when we announced Mixxx 2.6 Beta, about 18 months ago in [Mixxx 2.6 beta Released](https://mixxx.org/news/2025-05-11-mixxx-2_6_beta-released/), we demonstrated the use of STEMS with a example that made use of text.
+This release brings STEM-file support to Mixxx for the first time in a stable release version, along with a substantial set of library improvements, waveform enhancements and workflow refinements that will benefit every DJ, music lover and sound enthusiast, whether you're working with STEMS or not.
+Let's go back in time for a moment:
+With [Antoine's newspost about Adding Stem mixing support to Mixxx](https://mixxx.org/news/2024-08-26-stem-mixing/) and when we announced Mixxx 2.6 Beta, about 18 months ago in [Mixxx 2.6 beta Released](https://mixxx.org/news/2025-05-11-mixxx-2_6_beta-released/), we demonstrated the use of STEMS with an example that made use of text.
 In that example we showed the use of 'Mute' and 'Effect', at that time we described the use of STEMS for a DJ as a game-changer.
 
-The time between those newspost could be easily described as a rollercoaster:
+The time between those newsposts could be easily described as a rollercoaster:
+
 - people started exploring the use of STEMS,
 - people started developing STEM-generators (tools to create STEM-containers from an original track) based on different models and architecture,
 - DJs developed their own tricks and workflow with STEMS in their sets
 - Mixxx-users asked for a lot of features regarding STEM-use,
 - Mixxx-contributors developed a lot of features regarding representation of STEMS in waveform, controlling STEMS, controlling effects etc.
-- Mixxx beta-users reported issues, regression etc.
+- Mixxx-beta-users reported issues, regressions etc.
 
-We took the time to combine all request, development and above all: have the STEM-engine profoundly tested: double tested, triple tested ...
+We took the time to combine all requests, development and above all: have the STEM-engine profoundly tested, double tested, triple tested ...
 
-Therefore we are very proud to present our users the 1st Official Mixxx Release containing our STEMS-functionality and that in our 25th year of existence.
+Therefore we are very proud to present our users the first 'Official Mixxx Release' containing our STEMS-functionality and we're especially proud to do so in our 25th year of existence.
 
 
 #### STEMS ??
 
 For those who need a small recap:
-STEM containers contain the original track + the original track split into its individual components, typically drums, bass, "other" (melody, guitar) & vocals. Controls let you mute, solo, set the volume on individual 'STEMS' or apply effects to each 'STEM' independently.
+STEM-containers contain the original track + the original track split into its individual components, typically drums, bass, "other" (melody, guitar) & vocals.
+Controls let you mute, solo, set the volume on individual 'STEMS' or apply effects to each 'STEM' independently.
 Drop the bass out while keeping vocals and drums running. Layer effects on just the melody. Deconstruct a track live in ways that simply weren't possible before.
 
-see the example used in the Beta release
+See the example used in the Beta release
 
 @Video(https://www.youtube.com/watch?v=oEJuvVFSbnE)
 
@@ -51,6 +53,7 @@ In Mixxx 2.6, stem files load like any other track. Mixxx handles analysis autom
 #### Library Improvements
 
 The library got a lot of attention in this release:
+
 - Key color coding: the Key column can now be color-coded, with customizable palettes to match your workflow. If you've been using color as a visual aid for harmonic mixing, this makes it much easier.
 - Overview column: a new column shows a small waveform for each track, giving you a quick visual reference without loading anything.
 - Search filters: search has become much more powerful. You can now filter by BPM (including bpm:locked and bpm:const), by directory, and use field shortcuts like t|title, a|artist, cm|comment, or y|year. The not operator has also been fixed.
@@ -65,6 +68,7 @@ The library got a lot of attention in this release:
 #### Waveform and Visual Updates
 
 The waveform system received significant attention:
+
 - A new rendergraph library now powers waveform rendering, improving performance and consistency
 - Minute markers appear on the horizontal waveform overview
 - Slip waveform visualization is now available in Textured/High Details mode
@@ -82,7 +86,9 @@ The waveform system received significant attention:
 - Auto-DJ: a new transition mode, "Skip Silence, Start with Xfader Centered," gives you more control over automatic mixing. There's also an option to recenter the crossfader when turning Auto-DJ off (default off), and a context menu action for enabling/disabling Auto-DJ.
 - Effects: the Compressor effect has an adjusted Makeup Time constant calculation, White Noise leveling and ramp logic have been improved, and QuickEffect crackling when switching has been fixed.
 - Preferences: controller preferences have been reorganized into tabs with extended device information. The Mixer preferences now show the "real" crossfader configuration. Sound Hardware preferences open with the specific I/O tab selected.
-Controller Backend
+
+
+#### Controller Backend
 - A screen renderer now supports controllers with displays (///// picture of NI S4 MK2)
 - New beats_translate_half control moves the beatgrid a half beat
 - File and color controller setting types have been added
@@ -104,8 +110,12 @@ Controller Backend
 
 
 As always, Mixxx is built by and for its community. This release represents countless hours of work from developers, designers, translators and testers around the world. Thank you to everyone for contributing, filing bug reports, testing builds.
-We 've got a lot of attention during the last year regarding out 25th Anniversary, [get your Mixxx T-Shirts](https://shop.mixxx.org/).
+We've got a lot of attention during the last year regarding our 25th Anniversary celebration: [get your Mixxx T-Shirts](https://shop.mixxx.org/).
 
-Download your [Mixxx 2.6 version](https://mixxx.org/download/) and spread the word about our Magic Mixxx Tool.
+Download [Mixxx 2.6](https://mixxx.org/download/) and spread the word about our Magic Mixxx Tool.
 
 If you encounter any issues, please report them on our GitHub issue tracker, if you create something amazing with stems or just have a great mix to share: we'd love to hear (and see) about it.
+
+#### 2.6 Changelog
+
+The complete changelog can be found [here](https://github.com/mixxxdj/mixxx/blob/main/CHANGELOG.md).
