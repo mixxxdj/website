@@ -49,6 +49,7 @@ repos:
   rev: v8.31.0
   hooks:
   - id: eslint
+    language_version: lts
     args: [--fix, --report-unused-disable-directives]
     stages:
     - pre-commit

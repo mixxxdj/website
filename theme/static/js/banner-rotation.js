@@ -34,8 +34,8 @@
             {
                 type: "text",
                 main: "25ᵗʰ Anniversary Intergalactic DJ Contest",
-                subtitle: "Submit your video before November 4th",
-                url: "https://mixxx.org/news/2026-08-23-25_years_of_mixxx_dj_contest/",
+                subtitle: "Vote now for your 3 favourite Intergalactic DJ Contest Round 1-videos",
+                url: "https://mixxx.discourse.group/t/25-years-of-mixxx-intergalactic-dj-contest-round-1-voting/34526",
                 target: "_blank"
             }
         ];
