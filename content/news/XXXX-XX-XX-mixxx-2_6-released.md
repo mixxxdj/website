@@ -114,7 +114,7 @@ We've got a lot of attention during the last year regarding our 25th Anniversary
 
 Download [Mixxx 2.6](https://mixxx.org/download/) and spread the word about our Magic Mixxx Tool.
 
-If you encounter any issues, please report them on our GitHub issue tracker, if you create something amazing with stems or just have a great mix to share: we'd love to hear (and see) about it.
+If you encounter any issues, please report them on our GitHub issue tracker. If you created something amazing with stems or just have a great mix to share: we'd love to hear (and see) about it.
 
 #### 2.6 Changelog
 
