@@ -29,7 +29,7 @@ Therefore we are very proud to present our users the first 'Official Mixxx Relea
 #### STEMS ??
 
 For those who need a small recap:
-STEM-containers contain the original track + the original track split into its individual components, typically drums, bass, "other" (melody, guitar) & vocals.
+STEM containers hold the original track + its individual components, typically drums, bass, "other" (melody, guitar) & vocals.
 Controls let you mute, solo, set the volume on individual STEMS, or apply effects to each STEM independently.
 Drop the bass out while keeping vocals and drums running. Layer effects on just the melody. Deconstruct a track live in ways that simply weren't possible before.
 
