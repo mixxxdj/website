@@ -7,7 +7,7 @@ status: draft
 #### Mixxx 2.6: A new stable version containing STEMS, Library upgrades and much more.
 
 We're excited to announce Mixxx 2.6!
-This release brings STEM-file support to Mixxx for the first time in a stable release version, along with a substantial set of library improvements, waveform enhancements and workflow refinements that will benefit every DJ, music lover and sound enthusiast, whether you're working with STEMS or not.
+This release finally brings STEM-file support to Mixxx, along with a substantial set of library improvements, waveform enhancements and workflow refinements that will benefit every DJ, music lover and sound enthusiast, whether you're working with STEMS or not.
 Let's go back in time for a moment:
 With [Antoine's newspost about Adding Stem mixing support to Mixxx](https://mixxx.org/news/2024-08-26-stem-mixing/) and when we announced Mixxx 2.6 Beta, about 18 months ago in [Mixxx 2.6 beta Released](https://mixxx.org/news/2025-05-11-mixxx-2_6_beta-released/), we demonstrated the use of STEMS with an example that made use of text.
 In that example we showed the use of 'Mute' and 'Effect', at that time we described the use of STEMS for a DJ as a game-changer.
