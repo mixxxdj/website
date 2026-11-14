@@ -44,7 +44,7 @@ In Mixxx 2.6, stem files load like any other track. Mixxx handles analysis autom
 - The Rubberband stretcher engine (used for adapting the rate or key of the track) is extended with multithreaded processing keeping everything in sync.
 - Each deck now features controls for every stem in your track (mute, volume and quick effects).
 - The waveforms display stem information in an overlapping (all stems combined) or stacked mode (a separate mini waveform for each STEM)
-- Controller support for stems is growing too: a lot of Mixxx-user were keen on adding STEM-support to their favourite controllers. The new stem controls are also available for custom mapping through the controller preferences, so you can set up your own hardware "Your Way".
+- Controller support for stems is growing too: a lot of Mixxx users were keen on adding Stem support to their favourite controllers. The new stem controls are also available for custom mappings through the controller preferences, so you can set up your own hardware "Your Way".
 
 
 ////// I'll create (a) videos:  walkthrough demonstrating the controls & waveforms & different skins & Effects and Creative Mixing
