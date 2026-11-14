@@ -23,7 +23,7 @@ The time between those newsposts could be easily described as a rollercoaster:
 
 We took the time to combine all requests, development and above all: have the STEM-engine profoundly tested, double tested, triple tested ...
 
-Therefore we are very proud to present our users the first 'Official Mixxx Release' containing our STEMS-functionality and we're especially proud to do so in our 25th year of existence.
+Therefore we are very proud to present our users the first 'Official Mixxx Release' containing our STEMS-functionality and we're especially proud to do so in our 25th year of existence 🎉 
 
 
 #### STEMS ??
