@@ -57,7 +57,7 @@ The library got a lot of attention in this release:
 - Key color coding: the Key column can now be color-coded, with customizable palettes to match your workflow. If you've been using color as a visual aid for harmonic mixing, this makes it much easier.
 - Overview column: a new column shows a small waveform for each track, giving you a quick visual reference without loading anything.
 - Search filters: search has become much more powerful. You can now filter by locked or constant BPM (bpm:locked and bpm:const), by directory, and use field shortcuts like t|title, a|artist, cm|comment, or y|year. The NOT operator (e.g. ``-artist:""``) has also been fixed.
-- Library scanning: Scans now show a progress bar and a summary popup when complete (with an opt-out if you prefer the old behavior). You can also rescan the library on startup with the new --rescan-library command-line option.
+- Library scanning: Scans now show a progress bar and a summary popup when complete (with an opt-out if you prefer the old behavior). You can also rescan the library on startup with the new ``--rescan-library`` command line option.
 - Directory drag-and-drop: you can now drag and drop directories directly into the library.
 - Playlist management: Playlists now support "Unlock all" and "Delete all unlocked" actions, making it easier to manage large collections.
 - Column and display fixes: BPM and Bitrate column widths are restored properly, key text elides from the right, and the overview column has been refined across several iterations.
