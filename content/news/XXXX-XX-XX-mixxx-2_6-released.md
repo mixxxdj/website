@@ -109,7 +109,7 @@ The waveform system received significant attention:
 
 
 
-As always, Mixxx is built by and for its community. This release represents countless hours of work from developers, designers, translators and testers around the world. Thank you to everyone for contributing, filing bug reports, testing builds.
+As always, Mixxx is built by and for its community. This release represents countless hours of work from developers, designers, translators and testers from all around the world. Thank you to everyone for contributing, filing bug reports, testing builds!
 We've got a lot of attention during the last year regarding our 25th Anniversary celebration: [get your Mixxx T-Shirts](https://shop.mixxx.org/).
 
 Download [Mixxx 2.6](https://mixxx.org/download/) and spread the word about our Magic Mixxx Tool.
