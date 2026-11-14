@@ -85,7 +85,7 @@ The waveform system received significant attention:
 - Hotcue improvements: you can now swap hotcues by dragging and dropping hotcue buttons in the skin. Hotcues can be ordered by position in the track. Dropping a hotcue or the main cue button onto the Play button latches play.
 - Auto-DJ: a new transition mode, "Skip Silence, Start with Xfader Centered," gives you more control over automatic mixing. There's also an option to recenter the crossfader when turning Auto-DJ off (default off), and a context menu action for enabling/disabling Auto-DJ.
 - Effects: the Compressor effect has an adjusted Makeup Time constant calculation, White Noise leveling and ramp logic have been improved, and QuickEffect crackling when switching has been fixed.
-- Preferences: controller preferences have been reorganized into tabs with extended device information. The Mixer preferences now show the "real" crossfader configuration. Sound Hardware preferences open with the specific I/O tab selected.
+- Preferences: controller preferences have been reorganized into tabs with extended device information. The Mixer preferences now show the "real" crossfader configuration applied by controller mappings. Sound Hardware preferences open with the specific I/O tab selected.
 
 
 #### Controller Backend
