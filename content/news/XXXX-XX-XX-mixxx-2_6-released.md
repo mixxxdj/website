@@ -33,7 +33,7 @@ STEM-containers contain the original track + the original track split into its i
 Controls let you mute, solo, set the volume on individual STEMS, or apply effects to each STEM independently.
 Drop the bass out while keeping vocals and drums running. Layer effects on just the melody. Deconstruct a track live in ways that simply weren't possible before.
 
-See the example used in the Beta release
+See the example used in the Beta release:
 
 @Video(https://www.youtube.com/watch?v=oEJuvVFSbnE)
 
