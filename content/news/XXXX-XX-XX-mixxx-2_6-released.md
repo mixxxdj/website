@@ -1,12 +1,12 @@
-title: Mixxx 2.6 Released
+title: Mixxx 2.6.0 Released
 authors: Evelynne Veys
 tags: 2.6, release announcement
 comments: yes
 status: draft
 
-#### Mixxx 2.6: A new stable version containing STEMS, Library upgrades and much more.
+#### Mixxx 2.6.0: A new stable version containing STEMS, Library upgrades and much more.
 
-We're excited to announce Mixxx 2.6!
+We're excited to announce Mixxx 2.6.0!
 This release finally brings STEM-file support to Mixxx, along with a substantial set of library improvements, waveform enhancements and workflow refinements that will benefit every DJ, music lover and sound enthusiast, whether you're working with STEMS or not.
 Let's go back in time for a moment:
 With [Antoine's newspost about Adding Stem mixing support to Mixxx](https://mixxx.org/news/2024-08-26-stem-mixing/) and when we announced Mixxx 2.6 Beta, about 18 months ago in [Mixxx 2.6 beta Released](https://mixxx.org/news/2025-05-11-mixxx-2_6_beta-released/), we demonstrated the use of STEMS with an example that made use of text.
@@ -17,13 +17,13 @@ The time between those newsposts could be easily described as a rollercoaster:
 - people started exploring the use of STEMS,
 - people started developing STEM-generators (tools to create STEM-containers from an original track) based on different models and architecture,
 - DJs developed their own tricks and workflow with STEMS in their sets
-- Mixxx-users asked for a lot of features regarding STEM-use,
-- Mixxx-contributors developed a lot of features regarding representation of STEMS in waveform, controlling STEMS, controlling effects etc.
-- Mixxx-beta-users reported issues, regressions etc.
+- Mixxx users asked for a lot of features regarding STEM-use,
+- Mixxx contributors developed a lot of features regarding representation of STEMS in waveform, controlling STEMS, controlling effects etc.
+- Mixxx beta users reported issues, regressions etc.
 
 We took the time to combine all requests, development and above all: have the STEM-engine profoundly tested, double tested, triple tested ...
 
-Therefore we are very proud to present our users the first 'Official Mixxx Release' containing our STEMS-functionality and we're especially proud to do so in our 25th year of existence 🎉
+Therefore we are very proud to present to our users the first official Mixxx release containing STEMS-functionality and we're especially proud to do so in our 25th year of existence 🎉!
 
 
 #### STEMS ??
@@ -112,10 +112,10 @@ The waveform system received significant attention:
 As always, Mixxx is built by and for its community. This release represents countless hours of work from developers, designers, translators and testers from all around the world. Thank you to everyone for contributing, filing bug reports, testing builds!
 We've got a lot of attention during the last year regarding our 25th Anniversary celebration: [get your Mixxx T-Shirts](https://shop.mixxx.org/).
 
-Download [Mixxx 2.6](https://mixxx.org/download/) and spread the word about our Magic Mixxx Tool.
+Download [Mixxx 2.6](https://mixxx.org/download/) and spread the word about Mixxx DJ Software!
 
 If you encounter any issues, please report them on our GitHub issue tracker. If you created something amazing with stems or just have a great mix to share: we'd love to hear (and see) about it.
 
-#### 2.6 Changelog
+#### 2.6.0 Changelog
 
 The complete changelog can be found [here](https://github.com/mixxxdj/mixxx/blob/main/CHANGELOG.md).
