@@ -16,7 +16,9 @@ Improvements to Mixxx have traditionally come from developers submitting specifi
 
 ### Don't Stop The Party
 
-#### TKTKTKT image of a bluescreened DJ laptop (not mixxx)
+<figure>
+<img class="responsive drop-shadow" src="{static}/images/news/party_stop.jpg" alt="An illustration of a wolf DJ recoiling in horror as their laptop bluescreens in a the middle of a set.  The audience is shocked into stillness.  The party is stopped, tragically."/>
+</figure>
 
 With so many people newly empowered to make Mixxx their own, a growing number of DJ software projects based on Mixxx have appeared recently implementing many of Mixxx’s long-standing feature requests and using the advantages of free and open source software to innovate without limits. The Mixxx Core Team is excited by this activity and is eager to invite new contributors into our community. But we will not take short cuts; we must maintain a unified and rock-solid ecosystem. For many years our top user priority has been **“Don’t Stop the Party”**. There is nothing worse than a DJ system failing mid-set, and we take threats to the stability of Mixxx extremely seriously.
 
