@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 def download_avatar(username):
-    url = f"https://avatars.githubusercontent.com/{username}?size=60"
+    url = f"https://avatars.githubusercontent.com/{username}?size=256"
     with urllib.request.urlopen(url) as response:
         data = response.read()
     return data
